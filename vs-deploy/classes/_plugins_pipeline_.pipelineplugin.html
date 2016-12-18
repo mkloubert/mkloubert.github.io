@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ScriptPlugin | vs-deploy</title>
+	<title>PipelinePlugin | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_plugins_script_.html">&quot;plugins/script&quot;</a>
+					<a href="../modules/_plugins_pipeline_.html">&quot;plugins/pipeline&quot;</a>
 				</li>
 				<li>
-					<a href="_plugins_script_.scriptplugin.html">ScriptPlugin</a>
+					<a href="_plugins_pipeline_.pipelineplugin.html">PipelinePlugin</a>
 				</li>
 			</ul>
-			<h1>Class ScriptPlugin</h1>
+			<h1>Class PipelinePlugin</h1>
 		</div>
 	</div>
 </header>
@@ -73,10 +73,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_objects_.deploypluginbase.html" class="tsd-signature-type">DeployPluginBase</a>
+						<a href="_objects_.multitargetdeploypluginbase.html" class="tsd-signature-type">MultiTargetDeployPluginBase</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ScriptPlugin</span>
+								<span class="target">PipelinePlugin</span>
 							</li>
 						</ul>
 					</li>
@@ -95,27 +95,29 @@
 						<section class="tsd-index-section tsd-is-inherited tsd-is-not-exported">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#_context" class="tsd-kind-icon">_context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#_context" class="tsd-kind-icon">_context</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited tsd-is-not-exported">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#context" class="tsd-kind-icon">context</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#info" class="tsd-kind-icon">info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#createcontext" class="tsd-kind-icon">create<wbr>Context</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#gettargetswithplugins" class="tsd-kind-icon">get<wbr>Targets<wbr>With<wbr>Plugins</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#info" class="tsd-kind-icon">info</a></li>
 							</ul>
 						</section>
 					</div>
@@ -127,7 +129,7 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Script<wbr>Plugin<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_plugins_script_.scriptplugin.html" class="tsd-signature-type">ScriptPlugin</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Pipeline<wbr>Plugin<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_plugins_pipeline_.pipelineplugin.html" class="tsd-signature-type">PipelinePlugin</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -148,7 +150,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> ctx: <a href="../interfaces/_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_plugins_script_.scriptplugin.html" class="tsd-signature-type">ScriptPlugin</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_plugins_pipeline_.pipelineplugin.html" class="tsd-signature-type">PipelinePlugin</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -200,27 +202,58 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-					<a name="deployfile" class="tsd-anchor"></a>
-					<h3>deploy<wbr>File</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">deploy<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_script_.deploytargetscript.html" class="tsd-signature-type">DeployTargetScript</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+					<a name="createcontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Context<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_pipeline_.deploytargetpipeline.html" class="tsd-signature-type">DeployTargetPipeline</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_pipeline_.pipecontext.html" class="tsd-signature-type">PipeContext</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#deployfile">deployFile</a></p>
+								<p>Overrides <a href="_objects_.multitargetdeploypluginbase.html">MultiTargetDeployPluginBase</a>.<a href="_objects_.multitargetdeploypluginbase.html#createcontext">createContext</a></p>
 								<ul>
-									<li>Defined in plugins/script.ts:140</li>
+									<li>Defined in plugins/pipeline.ts:137</li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_plugins_pipeline_.deploytargetpipeline.html" class="tsd-signature-type">DeployTargetPipeline</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_plugins_pipeline_.pipecontext.html" class="tsd-signature-type">PipeContext</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="deployfile" class="tsd-anchor"></a>
+					<h3>deploy<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">deploy<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#deployfile">deployFile</a></p>
+								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#deployfile">deployFile</a></p>
+								<ul>
+									<li>Defined in objects.ts:181</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>file: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>target: <a href="../interfaces/_plugins_script_.deploytargetscript.html" class="tsd-signature-type">DeployTargetScript</a></h5>
+									<h5>target: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a></h5>
@@ -234,14 +267,14 @@
 					<a name="deployworkspace" class="tsd-anchor"></a>
 					<h3>deploy<wbr>Workspace</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">deploy<wbr>Workspace<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_script_.deploytargetscript.html" class="tsd-signature-type">DeployTargetScript</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployworkspaceoptions.html" class="tsd-signature-type">DeployWorkspaceOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">deploy<wbr>Workspace<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_pipeline_.deploytargetpipeline.html" class="tsd-signature-type">DeployTargetPipeline</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployworkspaceoptions.html" class="tsd-signature-type">DeployWorkspaceOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#deployworkspace">deployWorkspace</a></p>
+								<p>Overrides <a href="_objects_.multitargetdeploypluginbase.html">MultiTargetDeployPluginBase</a>.<a href="_objects_.multitargetdeploypluginbase.html#deployworkspace">deployWorkspace</a></p>
 								<ul>
-									<li>Defined in plugins/script.ts:200</li>
+									<li>Defined in plugins/pipeline.ts:143</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -250,13 +283,52 @@
 									<h5>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>target: <a href="../interfaces/_plugins_script_.deploytargetscript.html" class="tsd-signature-type">DeployTargetScript</a></h5>
+									<h5>target: <a href="../interfaces/_plugins_pipeline_.deploytargetpipeline.html" class="tsd-signature-type">DeployTargetPipeline</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_contracts_.deployworkspaceoptions.html" class="tsd-signature-type">DeployWorkspaceOptions</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="gettargetswithplugins" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Targets<wbr>With<wbr>Plugins</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Targets<wbr>With<wbr>Plugins<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, otherTargets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytargetwithplugins.html" class="tsd-signature-type">DeployTargetWithPlugins</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_objects_.multitargetdeploypluginbase.html">MultiTargetDeployPluginBase</a>.<a href="_objects_.multitargetdeploypluginbase.html#gettargetswithplugins">getTargetsWithPlugins</a></p>
+								<ul>
+									<li>Defined in objects.ts:603</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the others targets and their plugins.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target for this plugin.</p>
+									</div>
+								</li>
+								<li>
+									<h5>otherTargets: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The list of names of the &quot;others&quot; targets.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.deploytargetwithplugins.html" class="tsd-signature-type">DeployTargetWithPlugins</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The targets and their plugins.</p>
 						</li>
 					</ul>
 				</section>
@@ -270,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/script.ts:263</li>
+									<li>Defined in plugins/pipeline.ts:254</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.deployplugininfo.html" class="tsd-signature-type">DeployPluginInfo</a></h4>
@@ -312,13 +384,13 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_plugins_mail_.html">"plugins/mail"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_plugins_pipeline_.html">"plugins/pipeline"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_plugins_remote_.html">"plugins/remote"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_plugins_script_.html">"plugins/script"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -337,53 +409,56 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_script_.scriptplugin.html" class="tsd-kind-icon">Script<wbr>Plugin</a>
+						<a href="_plugins_pipeline_.pipelineplugin.html" class="tsd-kind-icon">Pipeline<wbr>Plugin</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-								<a href="_plugins_script_.scriptplugin.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_plugins_pipeline_.pipelineplugin.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
-								<a href="_plugins_script_.scriptplugin.html#_context" class="tsd-kind-icon">_context</a>
+								<a href="_plugins_pipeline_.pipelineplugin.html#_context" class="tsd-kind-icon">_context</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-								<a href="_plugins_script_.scriptplugin.html#context" class="tsd-kind-icon">context</a>
+								<a href="_plugins_pipeline_.pipelineplugin.html#context" class="tsd-kind-icon">context</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_pipeline_.pipelineplugin.html#createcontext" class="tsd-kind-icon">create<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_pipeline_.pipelineplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-								<a href="_plugins_script_.scriptplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a>
+								<a href="_plugins_pipeline_.pipelineplugin.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-								<a href="_plugins_script_.scriptplugin.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_pipeline_.pipelineplugin.html#gettargetswithplugins" class="tsd-kind-icon">get<wbr>Targets<wbr>With<wbr>Plugins</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-								<a href="_plugins_script_.scriptplugin.html#info" class="tsd-kind-icon">info</a>
+								<a href="_plugins_pipeline_.pipelineplugin.html#info" class="tsd-kind-icon">info</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_script_.deployarguments.html" class="tsd-kind-icon">Deploy<wbr>Arguments</a>
+						<a href="../interfaces/_plugins_pipeline_.deploytargetpipeline.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Pipeline</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_script_.deployfilearguments.html" class="tsd-kind-icon">Deploy<wbr>File<wbr>Arguments</a>
+						<a href="../interfaces/_plugins_pipeline_.pipearguments.html" class="tsd-kind-icon">Pipe<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_plugins_pipeline_.pipecontext.html" class="tsd-kind-icon">Pipe<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_script_.deploytargetscript.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Script</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_script_.deployworkspacearguments.html" class="tsd-kind-icon">Deploy<wbr>Workspace<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_script_.scriptmodule.html" class="tsd-kind-icon">Script<wbr>Module</a>
+						<a href="../interfaces/_plugins_pipeline_.pipelinemodule.html" class="tsd-kind-icon">Pipeline<wbr>Module</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_script_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>
+						<a href="../modules/_plugins_pipeline_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_plugins_script_.html#getscriptfile" class="tsd-kind-icon">get<wbr>Script<wbr>File</a>
+						<a href="../modules/_plugins_pipeline_.html#getscriptfile" class="tsd-kind-icon">get<wbr>Script<wbr>File</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_plugins_script_.html#loadscriptmodule" class="tsd-kind-icon">load<wbr>Script<wbr>Module</a>
+						<a href="../modules/_plugins_pipeline_.html#loadscriptmodule" class="tsd-kind-icon">load<wbr>Script<wbr>Module</a>
 					</li>
 				</ul>
 			</nav>

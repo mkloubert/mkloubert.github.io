@@ -103,6 +103,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#require" class="tsd-kind-icon">require</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#targets" class="tsd-kind-icon">targets</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#warn" class="tsd-kind-icon">warn</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#workspace" class="tsd-kind-icon">workspace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#write" class="tsd-kind-icon">write</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#writeline" class="tsd-kind-icon">write<wbr>Line</a></li>
 							</ul>
@@ -131,6 +132,7 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_contracts_.deployconfiguration.html" class="tsd-signature-type">DeployConfiguration</a></h4>
+							<p>The current config.</p>
 						</li>
 					</ul>
 				</section>
@@ -293,7 +295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:256</li>
+									<li>Defined in contracts.ts:258</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -302,6 +304,7 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a></h4>
+							<p>The data of the package file.</p>
 						</li>
 					</ul>
 				</section>
@@ -315,7 +318,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:262</li>
+									<li>Defined in contracts.ts:264</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -324,6 +327,7 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_contracts_.deploypackage.html" class="tsd-signature-type">DeployPackage</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The packages.</p>
 						</li>
 					</ul>
 				</section>
@@ -337,7 +341,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:268</li>
+									<li>Defined in contracts.ts:270</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -346,6 +350,7 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_contracts_.deployplugin.html" class="tsd-signature-type">DeployPlugin</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The list of (other) plugins.</p>
 						</li>
 					</ul>
 				</section>
@@ -359,7 +364,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:276</li>
+									<li>Defined in contracts.ts:278</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -391,7 +396,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:306</li>
+									<li>Defined in contracts.ts:314</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -400,6 +405,7 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The targets.</p>
 						</li>
 					</ul>
 				</section>
@@ -413,7 +419,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:284</li>
+									<li>Defined in contracts.ts:286</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -436,6 +442,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="workspace" class="tsd-anchor"></a>
+					<h3>workspace</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">workspace<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in contracts.ts:292</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the root directory of the current workspace.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The root directory of the current workspace.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
 					<a name="write" class="tsd-anchor"></a>
 					<h3>write</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
@@ -445,7 +474,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:292</li>
+									<li>Defined in contracts.ts:300</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -480,7 +509,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:300</li>
+									<li>Defined in contracts.ts:308</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -539,6 +568,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_plugins_mail_.html">"plugins/mail"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_plugins_pipeline_.html">"plugins/pipeline"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_plugins_remote_.html">"plugins/remote"</a>
@@ -625,6 +657,9 @@
 								<a href="_contracts_.deploycontext.html#warn" class="tsd-kind-icon">warn</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_contracts_.deploycontext.html#workspace" class="tsd-kind-icon">workspace</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="_contracts_.deploycontext.html#write" class="tsd-kind-icon">write</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
@@ -672,6 +707,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.deploytargetquickpickitem.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Quick<wbr>Pick<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.deploytargetwithplugins.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>With<wbr>Plugins</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.deployworkspaceoptions.html" class="tsd-kind-icon">Deploy<wbr>Workspace<wbr>Options</a>

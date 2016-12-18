@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AfterDeployedOpenOperation | vs-deploy</title>
+	<title>DeployTargetBatch | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,35 +56,27 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
+					<a href="../modules/_plugins_batch_.html">&quot;plugins/batch&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.afterdeployedopenoperation.html">AfterDeployedOpenOperation</a>
+					<a href="_plugins_batch_.deploytargetbatch.html">DeployTargetBatch</a>
 				</li>
 			</ul>
-			<h1>Interface AfterDeployedOpenOperation</h1>
+			<h1>Interface DeployTargetBatch</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>An operation that opens something like an URI and is invoked AFTER
-						ALL files have been deployed.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_contracts_.afterdeployedoperation.html" class="tsd-signature-type">AfterDeployedOperation</a>
+						<a href="_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">AfterDeployedOpenOperation</span>
+								<span class="target">DeployTargetBatch</span>
 							</li>
 						</ul>
 					</li>
@@ -94,41 +86,122 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.afterdeployedopenoperation.html#target" class="tsd-kind-icon">target</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.afterdeployedopenoperation.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_batch_.deploytargetbatch.html#deployed" class="tsd-kind-icon">deployed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_batch_.deploytargetbatch.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_batch_.deploytargetbatch.html#mappings" class="tsd-kind-icon">mappings</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_batch_.deploytargetbatch.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_batch_.deploytargetbatch.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_batch_.deploytargetbatch.html#targets" class="tsd-kind-icon">targets</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_batch_.deploytargetbatch.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="target" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> target</h3>
-					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="deployed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> deployed</h3>
+					<div class="tsd-signature tsd-kind-icon">deployed<span class="tsd-signature-symbol">:</span> <a href="_contracts_.afterdeployedoperation.html" class="tsd-signature-type">AfterDeployedOperation</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#deployed">deployed</a></p>
 						<ul>
-							<li>Defined in contracts.ts:65</li>
+							<li>Defined in contracts.ts:514</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The thing should be opened. Can be a URL, file or executable.</p>
+							<p>List of operations that should be invoked AFTER
+							ALL files have been deployed.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="description" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#description">description</a></p>
+						<ul>
+							<li>Defined in contracts.ts:518</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The description.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="mappings" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> mappings</h3>
+					<div class="tsd-signature tsd-kind-icon">mappings<span class="tsd-signature-symbol">:</span> <a href="_contracts_.deploytargetmapping.html" class="tsd-signature-type">DeployTargetMapping</a><span class="tsd-signature-symbol"> | </span><a href="_contracts_.deploytargetmapping.html" class="tsd-signature-type">DeployTargetMapping</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#mappings">mappings</a></p>
+						<ul>
+							<li>Defined in contracts.ts:522</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more folder mapping.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#name">name</a></p>
+						<ul>
+							<li>Defined in contracts.ts:526</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="sortorder" class="tsd-anchor"></a>
+					<h3>sort<wbr>Order</h3>
+					<div class="tsd-signature tsd-kind-icon">sort<wbr>Order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#sortorder">sortOrder</a></p>
+						<ul>
+							<li>Defined in contracts.ts:530</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The sort order.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="targets" class="tsd-anchor"></a>
+					<h3>targets</h3>
+					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/batch.ts:37</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="type" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.afterdeployedoperation.html">AfterDeployedOperation</a>.<a href="_contracts_.afterdeployedoperation.html#type">type</a></p>
+						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#type">type</a></p>
 						<ul>
-							<li>Defined in contracts.ts:54</li>
+							<li>Defined in contracts.ts:534</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -145,7 +218,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_contracts_.html">"contracts"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -157,7 +230,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_plugins_app_.html">"plugins/app"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_plugins_batch_.html">"plugins/batch"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -191,119 +264,47 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_contracts_.datatransformermode.html" class="tsd-kind-icon">Data<wbr>Transformer<wbr>Mode</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_plugins_batch_.batchplugin.html" class="tsd-kind-icon">Batch<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_batch_.batchcontext.html" class="tsd-kind-icon">Batch<wbr>Context</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.afterdeployedopenoperation.html" class="tsd-kind-icon">After<wbr>Deployed<wbr>Open<wbr>Operation</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_batch_.deploytargetbatch.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Batch</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.afterdeployedopenoperation.html#target" class="tsd-kind-icon">target</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_batch_.deploytargetbatch.html#deployed" class="tsd-kind-icon">deployed</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.afterdeployedopenoperation.html#type" class="tsd-kind-icon">type</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_batch_.deploytargetbatch.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_batch_.deploytargetbatch.html#mappings" class="tsd-kind-icon">mappings</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_batch_.deploytargetbatch.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_batch_.deploytargetbatch.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_plugins_batch_.deploytargetbatch.html#targets" class="tsd-kind-icon">targets</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_batch_.deploytargetbatch.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.afterdeployedoperation.html" class="tsd-kind-icon">After<wbr>Deployed<wbr>Operation</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_batch_.targetwithplugins.html" class="tsd-kind-icon">Target<wbr>With<wbr>Plugins</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.beforedeployfileeventarguments.html" class="tsd-kind-icon">Before<wbr>Deploy<wbr>File<wbr>Event<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.datatransformmodule.html" class="tsd-kind-icon">Data<wbr>Transform<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.datatransformercontext.html" class="tsd-kind-icon">Data<wbr>Transformer<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployactionquickpick.html" class="tsd-kind-icon">Deploy<wbr>Action<wbr>Quick<wbr>Pick</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployconfiguration.html" class="tsd-kind-icon">Deploy<wbr>Configuration</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deploycontext.html" class="tsd-kind-icon">Deploy<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployeventarguments.html" class="tsd-kind-icon">Deploy<wbr>Event<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployfileeventarguments.html" class="tsd-kind-icon">Deploy<wbr>File<wbr>Event<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployfileoptions.html" class="tsd-kind-icon">Deploy<wbr>File<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployfilequickpickitem.html" class="tsd-kind-icon">Deploy<wbr>File<wbr>Quick<wbr>Pick<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deploypackage.html" class="tsd-kind-icon">Deploy<wbr>Package</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deploypackagequickpickitem.html" class="tsd-kind-icon">Deploy<wbr>Package<wbr>Quick<wbr>Pick<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployplugin.html" class="tsd-kind-icon">Deploy<wbr>Plugin</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployplugininfo.html" class="tsd-kind-icon">Deploy<wbr>Plugin<wbr>Info</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deploypluginmodule.html" class="tsd-kind-icon">Deploy<wbr>Plugin<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployquickpickitem.html" class="tsd-kind-icon">Deploy<wbr>Quick<wbr>Pick<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deploytarget.html" class="tsd-kind-icon">Deploy<wbr>Target</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deploytargetmapping.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Mapping</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deploytargetquickpickitem.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Quick<wbr>Pick<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployworkspaceoptions.html" class="tsd-kind-icon">Deploy<wbr>Workspace<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.filedeployedcompletedeventarguments.html" class="tsd-kind-icon">File<wbr>Deployed<wbr>Completed<wbr>Event<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.workspacedeployedeventarguments.html" class="tsd-kind-icon">Workspace<wbr>Deployed<wbr>Event<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#beforedeployfileeventhandler" class="tsd-kind-icon">Before<wbr>Deploy<wbr>File<wbr>Event<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#datatransformer" class="tsd-kind-icon">Data<wbr>Transformer</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#filedeployedcompletedeventhandler" class="tsd-kind-icon">File<wbr>Deployed<wbr>Completed<wbr>Event<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#workspacedeployedeventhandler" class="tsd-kind-icon">Workspace<wbr>Deployed<wbr>Event<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#default_host" class="tsd-kind-icon">DEFAULT_<wbr>HOST</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#default_host_dir" class="tsd-kind-icon">DEFAULT_<wbr>HOST_<wbr>DIR</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#default_max_message_size" class="tsd-kind-icon">DEFAULT_<wbr>MAX_<wbr>MESSAGE_<wbr>SIZE</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#default_port" class="tsd-kind-icon">DEFAULT_<wbr>PORT</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_plugins_batch_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>
 					</li>
 				</ul>
 			</nav>

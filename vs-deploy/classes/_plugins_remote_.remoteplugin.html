@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_objects_.deploypluginbase.html" class="tsd-signature-type">DeployPluginBase</a>
+						<a href="_objects_.deploypluginwithcontextbase.html" class="tsd-signature-type">DeployPluginWithContextBase</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_plugins_remote_.remotecontext.html" class="tsd-signature-type">RemoteContext</a><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">RemotePlugin</span>
@@ -113,8 +113,10 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_remote_.remoteplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_remote_.remoteplugin.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported"><a href="_plugins_remote_.remoteplugin.html#createcontext" class="tsd-kind-icon">create<wbr>Context</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_remote_.remoteplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported"><a href="_plugins_remote_.remoteplugin.html#deployfilewithcontext" class="tsd-kind-icon">deploy<wbr>File<wbr>With<wbr>Context</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_remote_.remoteplugin.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_plugins_remote_.remoteplugin.html#info" class="tsd-kind-icon">info</a></li>
 							</ul>
 						</section>
@@ -200,22 +202,89 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-					<a name="deployfile" class="tsd-anchor"></a>
-					<h3>deploy<wbr>File</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">deploy<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_remote_.deploytargetremote.html" class="tsd-signature-type">DeployTargetRemote</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+					<a name="createcontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Context<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_remote_.deploytargetremote.html" class="tsd-signature-type">DeployTargetRemote</a>, files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_objects_.deployplugincontextwrapper.html" class="tsd-signature-type">DeployPluginContextWrapper</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_plugins_remote_.remotecontext.html" class="tsd-signature-type">RemoteContext</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#deployfile">deployFile</a></p>
+								<p>Overrides <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#createcontext">createContext</a></p>
 								<ul>
-									<li>Defined in plugins/remote.ts:48</li>
+									<li>Defined in plugins/remote.ts:64</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_plugins_remote_.deploytargetremote.html" class="tsd-signature-type">DeployTargetRemote</a></h5>
+								</li>
+								<li>
+									<h5>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_objects_.deployplugincontextwrapper.html" class="tsd-signature-type">DeployPluginContextWrapper</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_plugins_remote_.remotecontext.html" class="tsd-signature-type">RemoteContext</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+					<a name="deployfile" class="tsd-anchor"></a>
+					<h3>deploy<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">deploy<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#deployfile">deployFile</a></p>
+								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#deployfile">deployFile</a></p>
+								<ul>
+									<li>Defined in objects.ts:181</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>file: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>target: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+					<a name="deployfilewithcontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> deploy<wbr>File<wbr>With<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">deploy<wbr>File<wbr>With<wbr>Context<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_remote_.remotecontext.html" class="tsd-signature-type">RemoteContext</a>, file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_remote_.deploytargetremote.html" class="tsd-signature-type">DeployTargetRemote</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#deployfilewithcontext">deployFileWithContext</a></p>
+								<ul>
+									<li>Defined in plugins/remote.ts:96</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ctx: <a href="../interfaces/_plugins_remote_.remotecontext.html" class="tsd-signature-type">RemoteContext</a></h5>
+								</li>
 								<li>
 									<h5>file: <span class="tsd-signature-type">string</span></h5>
 								</li>
@@ -230,18 +299,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 					<a name="deployworkspace" class="tsd-anchor"></a>
 					<h3>deploy<wbr>Workspace</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">deploy<wbr>Workspace<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployworkspaceoptions.html" class="tsd-signature-type">DeployWorkspaceOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#deployworkspace">deployWorkspace</a></p>
+								<p>Inherited from <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#deployworkspace">deployWorkspace</a></p>
+								<p>Overrides <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#deployworkspace">deployWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:88</li>
+									<li>Defined in objects.ts:244</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -276,7 +346,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/remote.ts:249</li>
+									<li>Defined in plugins/remote.ts:321</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.deployplugininfo.html" class="tsd-signature-type">DeployPluginInfo</a></h4>
@@ -354,10 +424,16 @@
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_remote_.remoteplugin.html#context" class="tsd-kind-icon">context</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_remote_.remoteplugin.html#createcontext" class="tsd-kind-icon">create<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_remote_.remoteplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_remote_.remoteplugin.html#deployfilewithcontext" class="tsd-kind-icon">deploy<wbr>File<wbr>With<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_remote_.remoteplugin.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
@@ -371,7 +447,13 @@
 						<a href="../interfaces/_plugins_remote_.deploytargetremote.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Remote</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_plugins_remote_.remotecontext.html" class="tsd-kind-icon">Remote<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_plugins_remote_.remotefile.html" class="tsd-kind-icon">Remote<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_remote_.html#uuid" class="tsd-kind-icon">UUID</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_plugins_remote_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>

@@ -101,6 +101,9 @@
 										<a href="_plugins_ftp_.ftpplugin.html" class="tsd-signature-type">FtpPlugin</a>
 									</li>
 									<li>
+										<a href="_plugins_remote_.remoteplugin.html" class="tsd-signature-type">RemotePlugin</a>
+									</li>
+									<li>
 										<a href="_plugins_sftp_.sftpplugin.html" class="tsd-signature-type">SFtpPlugin</a>
 									</li>
 								</ul>
@@ -232,13 +235,13 @@
 					<a name="createcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Context<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_objects_.deployplugincontextwrapper.html" class="tsd-signature-type">DeployPluginContextWrapper</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContext</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Context<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_objects_.deployplugincontextwrapper.html" class="tsd-signature-type">DeployPluginContextWrapper</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TContext</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:228</li>
+									<li>Defined in objects.ts:229</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -252,6 +255,12 @@
 									<h5>target: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The target.</p>
+									</div>
+								</li>
+								<li>
+									<h5>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The files to deploy.</p>
 									</div>
 								</li>
 							</ul>
@@ -307,7 +316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:238</li>
+									<li>Defined in objects.ts:240</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -354,7 +363,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#deployworkspace">deployWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:242</li>
+									<li>Defined in objects.ts:244</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

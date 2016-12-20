@@ -89,6 +89,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_local_.deploytargetlocal.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_local_.deploytargetlocal.html#deployed" class="tsd-kind-icon">deployed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_local_.deploytargetlocal.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_local_.deploytargetlocal.html#dir" class="tsd-kind-icon">dir</a></li>
@@ -105,13 +106,30 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="beforedeploy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before<wbr>Deploy</h3>
+					<div class="tsd-signature tsd-kind-icon">before<wbr>Deploy<span class="tsd-signature-symbol">:</span> <a href="_contracts_.beforedeployopenoperation.html" class="tsd-signature-type">BeforeDeployOpenOperation</a><span class="tsd-signature-symbol"> | </span><a href="_contracts_.beforedeployopenoperation.html" class="tsd-signature-type">BeforeDeployOpenOperation</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#beforedeploy">beforeDeploy</a></p>
+						<ul>
+							<li>Defined in contracts.ts:552</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>List of operations that should be invoked BEFORE
+							target is being deployed.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="deployed" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> deployed</h3>
-					<div class="tsd-signature tsd-kind-icon">deployed<span class="tsd-signature-symbol">:</span> <a href="_contracts_.afterdeployedoperation.html" class="tsd-signature-type">AfterDeployedOperation</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">deployed<span class="tsd-signature-symbol">:</span> <a href="_contracts_.afterdeployedoperation.html" class="tsd-signature-type">AfterDeployedOperation</a><span class="tsd-signature-symbol"> | </span><a href="_contracts_.afterdeployedoperation.html" class="tsd-signature-type">AfterDeployedOperation</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#deployed">deployed</a></p>
 						<ul>
-							<li>Defined in contracts.ts:508</li>
+							<li>Defined in contracts.ts:557</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -128,7 +146,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#description">description</a></p>
 						<ul>
-							<li>Defined in contracts.ts:512</li>
+							<li>Defined in contracts.ts:561</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -164,7 +182,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#mappings">mappings</a></p>
 						<ul>
-							<li>Defined in contracts.ts:516</li>
+							<li>Defined in contracts.ts:565</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -180,7 +198,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#name">name</a></p>
 						<ul>
-							<li>Defined in contracts.ts:520</li>
+							<li>Defined in contracts.ts:569</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -196,7 +214,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#sortorder">sortOrder</a></p>
 						<ul>
-							<li>Defined in contracts.ts:524</li>
+							<li>Defined in contracts.ts:573</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -212,7 +230,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#type">type</a></p>
 						<ul>
-							<li>Defined in contracts.ts:528</li>
+							<li>Defined in contracts.ts:577</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -289,6 +307,9 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_local_.deploytargetlocal.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Local</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_local_.deploytargetlocal.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_local_.deploytargetlocal.html#deployed" class="tsd-kind-icon">deployed</a>
 							</li>

@@ -83,32 +83,19 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_plugins_s3bucket_.s3context.html" class="tsd-kind-icon">S3<wbr>Context</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_plugins_s3bucket_.html#aws" class="tsd-kind-icon">AWS</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_plugins_s3bucket_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported"><a href="_plugins_s3bucket_.html#known_credential_classes" class="tsd-kind-icon">KNOWN_<wbr>CREDENTIAL_<wbr>CLASSES</a></li>
+							</ul>
+						</section>
 					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="aws" class="tsd-anchor"></a>
-					<h3>AWS</h3>
-					<div class="tsd-signature tsd-kind-icon">AWS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;aws-sdk&#x27;)</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in plugins/s3bucket.ts:26</li>
-						</ul>
-					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -123,7 +110,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/s3bucket.ts:183</li>
+									<li>Defined in plugins/s3bucket.ts:224</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -144,6 +131,109 @@
 							<p>The new instance.</p>
 						</li>
 					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="known_credential_classes" class="tsd-anchor"></a>
+					<h3>KNOWN_<wbr>CREDENTIAL_<wbr>CLASSES</h3>
+					<div class="tsd-signature tsd-kind-icon">KNOWN_<wbr>CREDENTIAL_<wbr>CLASSES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/s3bucket.ts:49</li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="known_credential_classes.cognito" class="tsd-anchor"></a>
+						<h3>cognito</h3>
+						<div class="tsd-signature tsd-kind-icon">cognito<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CognitoIdentityCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.CognitoIdentityCredentials</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in plugins/s3bucket.ts:50</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="known_credential_classes.ec2" class="tsd-anchor"></a>
+						<h3>ec2</h3>
+						<div class="tsd-signature tsd-kind-icon">ec2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ECSCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.ECSCredentials</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in plugins/s3bucket.ts:51</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="known_credential_classes.ec2meta" class="tsd-anchor"></a>
+						<h3>ec2meta</h3>
+						<div class="tsd-signature tsd-kind-icon">ec2meta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EC2MetadataCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.EC2MetadataCredentials</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in plugins/s3bucket.ts:52</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="known_credential_classes.environment" class="tsd-anchor"></a>
+						<h3>environment</h3>
+						<div class="tsd-signature tsd-kind-icon">environment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EnvironmentCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.EnvironmentCredentials</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in plugins/s3bucket.ts:53</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="known_credential_classes.file" class="tsd-anchor"></a>
+						<h3>file</h3>
+						<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FileSystemCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.FileSystemCredentials</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in plugins/s3bucket.ts:54</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="known_credential_classes.saml" class="tsd-anchor"></a>
+						<h3>saml</h3>
+						<div class="tsd-signature tsd-kind-icon">saml<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SAMLCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.SAMLCredentials</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in plugins/s3bucket.ts:55</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="known_credential_classes.shared" class="tsd-anchor"></a>
+						<h3>shared</h3>
+						<div class="tsd-signature tsd-kind-icon">shared<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SharedIniFileCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.SharedIniFileCredentials</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in plugins/s3bucket.ts:56</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="known_credential_classes.temp" class="tsd-anchor"></a>
+						<h3>temp</h3>
+						<div class="tsd-signature tsd-kind-icon">temp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TemporaryCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.TemporaryCredentials</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in plugins/s3bucket.ts:57</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="known_credential_classes.web" class="tsd-anchor"></a>
+						<h3>web</h3>
+						<div class="tsd-signature tsd-kind-icon">web<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebIdentityCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.WebIdentityCredentials</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in plugins/s3bucket.ts:58</li>
+							</ul>
+						</aside>
+					</section>
 				</section>
 			</section>
 		</div>
@@ -167,6 +257,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_plugins_app_.html">"plugins/app"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_plugins_azureblob_.html">"plugins/azureblob"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_plugins_batch_.html">"plugins/batch"</a>
@@ -217,11 +310,11 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_plugins_s3bucket_.s3context.html" class="tsd-kind-icon">S3<wbr>Context</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_s3bucket_.html#aws" class="tsd-kind-icon">AWS</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_plugins_s3bucket_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_s3bucket_.html#known_credential_classes" class="tsd-kind-icon">KNOWN_<wbr>CREDENTIAL_<wbr>CLASSES</a>
 					</li>
 				</ul>
 			</nav>

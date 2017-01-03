@@ -115,6 +115,9 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.filedeploycompletedeventarguments.html" class="tsd-kind-icon">File<wbr>Deploy<wbr>Completed<wbr>Event<wbr>Arguments</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.popupbutton.html" class="tsd-kind-icon">Popup<wbr>Button</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.sortable.html" class="tsd-kind-icon">Sortable</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_contracts_.validatorarguments.html" class="tsd-kind-icon">Validator<wbr>Arguments</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_contracts_.validatormodule.html" class="tsd-kind-icon">Validator<wbr>Module</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.workspacedeployedeventarguments.html" class="tsd-kind-icon">Workspace<wbr>Deployed<wbr>Event<wbr>Arguments</a></li>
 							</ul>
 						</section>
@@ -125,6 +128,8 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#datatransformer" class="tsd-kind-icon">Data<wbr>Transformer</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#filedeploycompletedeventhandler" class="tsd-kind-icon">File<wbr>Deploy<wbr>Completed<wbr>Event<wbr>Handler</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#popupbuttonaction" class="tsd-kind-icon">Popup<wbr>Button<wbr>Action</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#validator" class="tsd-kind-icon">Validator</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#valueprovider" class="tsd-kind-icon">Value<wbr>Provider</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#workspacedeployedeventhandler" class="tsd-kind-icon">Workspace<wbr>Deployed<wbr>Event<wbr>Handler</a></li>
 							</ul>
 						</section>
@@ -239,7 +244,7 @@
 					<div class="tsd-signature tsd-kind-icon">File<wbr>Deploy<wbr>Completed<wbr>Event<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:799</li>
+							<li>Defined in contracts.ts:811</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -286,7 +291,7 @@
 					<div class="tsd-signature tsd-kind-icon">Popup<wbr>Button<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:836</li>
+							<li>Defined in contracts.ts:849</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -311,12 +316,91 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="validator" class="tsd-anchor"></a>
+					<h3>Validator</h3>
+					<div class="tsd-signature tsd-kind-icon">Validator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:868</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A function that validates a value.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The arguments.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The promise.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.validatorarguments.html" class="tsd-signature-type">ValidatorArguments</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_contracts_.validatorarguments.html" class="tsd-signature-type">ValidatorArguments</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="valueprovider" class="tsd-anchor"></a>
+					<h3>Value<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">Value<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:903</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Describes a function that provides a value.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>returns</dt>
+							<dd><p>The value.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TValue</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TValue</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="workspacedeployedeventhandler" class="tsd-anchor"></a>
 					<h3>Workspace<wbr>Deployed<wbr>Event<wbr>Handler</h3>
 					<div class="tsd-signature tsd-kind-icon">Workspace<wbr>Deployed<wbr>Event<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:844</li>
+							<li>Defined in contracts.ts:911</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -428,6 +512,9 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class="label tsd-is-external">
+						<span>Internals</span>
+					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="_contracts_.html">"contracts"</a>
 					</li>
@@ -484,6 +571,12 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_plugins_zip_.html">"plugins/zip"</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="_host_.html">"host"</a>
 					</li>
 				</ul>
 			</nav>
@@ -601,6 +694,15 @@
 						<a href="../interfaces/_contracts_.popupbutton.html" class="tsd-kind-icon">Popup<wbr>Button</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.sortable.html" class="tsd-kind-icon">Sortable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../interfaces/_contracts_.validatorarguments.html" class="tsd-kind-icon">Validator<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../interfaces/_contracts_.validatormodule.html" class="tsd-kind-icon">Validator<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_contracts_.workspacedeployedeventarguments.html" class="tsd-kind-icon">Workspace<wbr>Deployed<wbr>Event<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -614,6 +716,12 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_contracts_.html#popupbuttonaction" class="tsd-kind-icon">Popup<wbr>Button<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_contracts_.html#validator" class="tsd-kind-icon">Validator</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_contracts_.html#valueprovider" class="tsd-kind-icon">Value<wbr>Provider</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_contracts_.html#workspacedeployedeventhandler" class="tsd-kind-icon">Workspace<wbr>Deployed<wbr>Event<wbr>Handler</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DataTransformerContext | vs-deploy</title>
+	<title>TransformationType | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
+					<a href="../modules/_host_.html">&quot;host&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.datatransformercontext.html">DataTransformerContext</a>
+					<a href="_host_.transformationtype.html">TransformationType</a>
 				</li>
 			</ul>
-			<h1>Interface DataTransformerContext</h1>
+			<h1>Enumeration TransformationType</h1>
 		</div>
 	</div>
 </header>
@@ -72,93 +72,53 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The context of data transformer.</p>
+						<p>Transformation type.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">DataTransformerContext</span>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformercontext.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformercontext.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformercontext.html#mode" class="tsd-kind-icon">mode</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformercontext.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_host_.transformationtype.html#filedata" class="tsd-kind-icon">File<wbr>Data</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_host_.transformationtype.html#message" class="tsd-kind-icon">Message</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="context" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> context</h3>
-					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="filedata" class="tsd-anchor"></a>
+					<h3>File<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">File<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:136</li>
+							<li>Defined in host.ts:133</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An optional context / object value defined by the &quot;sender&quot;.</p>
+							<p>File data</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="data" class="tsd-anchor"></a>
-					<h3>data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="message" class="tsd-anchor"></a>
+					<h3>Message</h3>
+					<div class="tsd-signature tsd-kind-icon">Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:140</li>
+							<li>Defined in host.ts:137</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The data to transform.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="mode" class="tsd-anchor"></a>
-					<h3>mode</h3>
-					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../enums/_contracts_.datatransformermode.html" class="tsd-signature-type">DataTransformerMode</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:144</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The mode.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:148</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The optional options for transformation.</p>
+							<p>(JSON) message</p>
 						</div>
 					</div>
 				</section>
@@ -170,7 +130,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_contracts_.html">"contracts"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -179,7 +139,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_helpers_.html">"helpers"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_host_.html">"host"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -236,25 +196,43 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.datatransformercontext.html" class="tsd-kind-icon">Data<wbr>Transformer<wbr>Context</a>
+					<li class="current tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_host_.transformationtype.html" class="tsd-kind-icon">Transformation<wbr>Type</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformercontext.html#context" class="tsd-kind-icon">context</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_host_.transformationtype.html#filedata" class="tsd-kind-icon">File<wbr>Data</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformercontext.html#data" class="tsd-kind-icon">data</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformercontext.html#mode" class="tsd-kind-icon">mode</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformercontext.html#options" class="tsd-kind-icon">options</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_host_.transformationtype.html#message" class="tsd-kind-icon">Message</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_host_.deployhost.html" class="tsd-kind-icon">Deploy<wbr>Host</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_host_.filedatatransformercontext.html" class="tsd-kind-icon">File<wbr>Data<wbr>Transformer<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_host_.messagetransformercontext.html" class="tsd-kind-icon">Message<wbr>Transformer<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_host_.remoteclient.html" class="tsd-kind-icon">Remote<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_host_.remotefile.html" class="tsd-kind-icon">Remote<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_host_.tranformercontext.html" class="tsd-kind-icon">Tranformer<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_host_.validatorcontext.html" class="tsd-kind-icon">Validator<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_host_.html#fsextra" class="tsd-kind-icon">FSExtra</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

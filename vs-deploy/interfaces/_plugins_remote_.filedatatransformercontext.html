@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DataTransformerContext | vs-deploy</title>
+	<title>FileDataTransformerContext | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
+					<a href="../modules/_plugins_remote_.html">&quot;plugins/remote&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.datatransformercontext.html">DataTransformerContext</a>
+					<a href="_plugins_remote_.filedatatransformercontext.html">FileDataTransformerContext</a>
 				</li>
 			</ul>
-			<h1>Interface DataTransformerContext</h1>
+			<h1>Interface FileDataTransformerContext</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The context of data transformer.</p>
+						<p>A file data transformer sub context.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DataTransformerContext</span>
+						<a href="_plugins_remote_.transformercontext.html" class="tsd-signature-type">TransformerContext</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">FileDataTransformerContext</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -91,10 +96,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformercontext.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformercontext.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformercontext.html#mode" class="tsd-kind-icon">mode</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformercontext.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_remote_.filedatatransformercontext.html#compress" class="tsd-kind-icon">compress</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_remote_.filedatatransformercontext.html#file" class="tsd-kind-icon">file</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_remote_.filedatatransformercontext.html#remotefile" class="tsd-kind-icon">remote<wbr>File</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,62 +107,44 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="context" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> context</h3>
-					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="compress" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> compress</h3>
+					<div class="tsd-signature tsd-kind-icon">compress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:136</li>
+							<li>Defined in plugins/remote.ts:99</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="file" class="tsd-anchor"></a>
+					<h3>file</h3>
+					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_plugins_remote_.transformercontext.html">TransformerContext</a>.<a href="_plugins_remote_.transformercontext.html#file">file</a></p>
+						<ul>
+							<li>Defined in plugins/remote.ts:115</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An optional context / object value defined by the &quot;sender&quot;.</p>
+							<p>The path of the local file.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="data" class="tsd-anchor"></a>
-					<h3>data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="remotefile" class="tsd-anchor"></a>
+					<h3>remote<wbr>File</h3>
+					<div class="tsd-signature tsd-kind-icon">remote<wbr>File<span class="tsd-signature-symbol">:</span> <a href="_plugins_remote_.remotefile.html" class="tsd-signature-type">RemoteFile</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_plugins_remote_.transformercontext.html">TransformerContext</a>.<a href="_plugins_remote_.transformercontext.html#remotefile">remoteFile</a></p>
 						<ul>
-							<li>Defined in contracts.ts:140</li>
+							<li>Defined in plugins/remote.ts:119</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The data to transform.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="mode" class="tsd-anchor"></a>
-					<h3>mode</h3>
-					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../enums/_contracts_.datatransformermode.html" class="tsd-signature-type">DataTransformerMode</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:144</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The mode.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:148</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The optional options for transformation.</p>
+							<p>The file to send.</p>
 						</div>
 					</div>
 				</section>
@@ -170,7 +156,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_contracts_.html">"contracts"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -212,7 +198,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_plugins_pipeline_.html">"plugins/pipeline"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_plugins_remote_.html">"plugins/remote"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -234,27 +220,48 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_plugins_remote_.remoteplugin.html" class="tsd-kind-icon">Remote<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_remote_.deploytargetremote.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Remote</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.datatransformercontext.html" class="tsd-kind-icon">Data<wbr>Transformer<wbr>Context</a>
+						<a href="_plugins_remote_.filedatatransformercontext.html" class="tsd-kind-icon">File<wbr>Data<wbr>Transformer<wbr>Context</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformercontext.html#context" class="tsd-kind-icon">context</a>
+								<a href="_plugins_remote_.filedatatransformercontext.html#compress" class="tsd-kind-icon">compress</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformercontext.html#data" class="tsd-kind-icon">data</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_plugins_remote_.filedatatransformercontext.html#file" class="tsd-kind-icon">file</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformercontext.html#mode" class="tsd-kind-icon">mode</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformercontext.html#options" class="tsd-kind-icon">options</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_plugins_remote_.filedatatransformercontext.html#remotefile" class="tsd-kind-icon">remote<wbr>File</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_plugins_remote_.messagetransformercontext.html" class="tsd-kind-icon">Message<wbr>Transformer<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_remote_.remotecontext.html" class="tsd-kind-icon">Remote<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_plugins_remote_.remotefile.html" class="tsd-kind-icon">Remote<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_plugins_remote_.transformercontext.html" class="tsd-kind-icon">Transformer<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_remote_.html#uuid" class="tsd-kind-icon">UUID</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_plugins_remote_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

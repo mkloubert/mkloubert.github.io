@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DataTransformModule | vs-deploy</title>
+	<title>DeployScriptOperationArguments | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.datatransformmodule.html">DataTransformModule</a>
+					<a href="_contracts_.deployscriptoperationarguments.html">DeployScriptOperationArguments</a>
 				</li>
 			</ul>
-			<h1>Interface DataTransformModule</h1>
+			<h1>Interface DeployScriptOperationArguments</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Describes a &quot;data transformer&quot; module.</p>
+						<p>The arguments for a script of a deploy operation.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DataTransformModule</span>
+						<span class="target">DeployScriptOperationArguments</span>
 					</li>
 				</ul>
 			</section>
@@ -91,8 +91,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformmodule.html#restoredata" class="tsd-kind-icon">restore<wbr>Data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformmodule.html#transformdata" class="tsd-kind-icon">transform<wbr>Data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployscriptoperationarguments.html#files" class="tsd-kind-icon">files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployscriptoperationarguments.html#globals" class="tsd-kind-icon">globals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployscriptoperationarguments.html#kind" class="tsd-kind-icon">kind</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployscriptoperationarguments.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployscriptoperationarguments.html#require" class="tsd-kind-icon">require</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,33 +104,107 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="restoredata" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> restore<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">restore<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#datatransformer" class="tsd-signature-type">DataTransformer</a></div>
+					<a name="files" class="tsd-anchor"></a>
+					<h3>files</h3>
+					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:186</li>
+							<li>Defined in contracts.ts:680</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Restores transformed / encoded / crypted data.</p>
+							<p>The files that should be deployed.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="transformdata" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> transform<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">transform<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#datatransformer" class="tsd-signature-type">DataTransformer</a></div>
+					<a name="globals" class="tsd-anchor"></a>
+					<h3>globals</h3>
+					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#globalvariables" class="tsd-signature-type">GlobalVariables</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:191</li>
+							<li>Defined in contracts.ts:688</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Transforms data into new format.</p>
+							<p>Gets the list of global vars.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="kind" class="tsd-anchor"></a>
+					<h3>kind</h3>
+					<div class="tsd-signature tsd-kind-icon">kind<span class="tsd-signature-symbol">:</span> <a href="../enums/_contracts_.deployoperationkind.html" class="tsd-signature-type">DeployOperationKind</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:684</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The kind of operation.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:692</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The addtional options.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="require" class="tsd-anchor"></a>
+					<h3>require</h3>
+					<div class="tsd-signature tsd-kind-icon">require<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:700</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Loads a module from the script context.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The ID / path to the module.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The loaded module.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>id: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -205,13 +282,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.datatransformmodule.html" class="tsd-kind-icon">Data<wbr>Transform<wbr>Module</a>
+						<a href="_contracts_.deployscriptoperationarguments.html" class="tsd-kind-icon">Deploy<wbr>Script<wbr>Operation<wbr>Arguments</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformmodule.html#restoredata" class="tsd-kind-icon">restore<wbr>Data</a>
+								<a href="_contracts_.deployscriptoperationarguments.html#files" class="tsd-kind-icon">files</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformmodule.html#transformdata" class="tsd-kind-icon">transform<wbr>Data</a>
+								<a href="_contracts_.deployscriptoperationarguments.html#globals" class="tsd-kind-icon">globals</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deployscriptoperationarguments.html#kind" class="tsd-kind-icon">kind</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deployscriptoperationarguments.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deployscriptoperationarguments.html#require" class="tsd-kind-icon">require</a>
 							</li>
 						</ul>
 					</li>

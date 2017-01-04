@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DataTransformModule | vs-deploy</title>
+	<title>DeployScriptOperation | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.datatransformmodule.html">DataTransformModule</a>
+					<a href="_contracts_.deployscriptoperation.html">DeployScriptOperation</a>
 				</li>
 			</ul>
-			<h1>Interface DataTransformModule</h1>
+			<h1>Interface DeployScriptOperation</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Describes a &quot;data transformer&quot; module.</p>
+						<p>A deploy operation that uses a script.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,20 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DataTransformModule</span>
+						<a href="_contracts_.deployoperation.html" class="tsd-signature-type">DeployOperation</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">DeployScriptOperation</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_contracts_.afterdeployscriptoperation.html" class="tsd-signature-type">AfterDeployScriptOperation</a>
+									</li>
+									<li>
+										<a href="_contracts_.beforedeployscriptoperation.html" class="tsd-signature-type">BeforeDeployScriptOperation</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -91,8 +104,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformmodule.html#restoredata" class="tsd-kind-icon">restore<wbr>Data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformmodule.html#transformdata" class="tsd-kind-icon">transform<wbr>Data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployscriptoperation.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployscriptoperation.html#script" class="tsd-kind-icon">script</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deployscriptoperation.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,32 +115,48 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="restoredata" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> restore<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">restore<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#datatransformer" class="tsd-signature-type">DataTransformer</a></div>
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:186</li>
+							<li>Defined in contracts.ts:666</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Restores transformed / encoded / crypted data.</p>
+							<p>Addtional data for the script.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="transformdata" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> transform<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">transform<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#datatransformer" class="tsd-signature-type">DataTransformer</a></div>
+					<a name="script" class="tsd-anchor"></a>
+					<h3>script</h3>
+					<div class="tsd-signature tsd-kind-icon">script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:191</li>
+							<li>Defined in contracts.ts:670</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Transforms data into new format.</p>
+							<p>The path to the script.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deployoperation.html">DeployOperation</a>.<a href="_contracts_.deployoperation.html#type">type</a></p>
+						<ul>
+							<li>Defined in contracts.ts:510</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type.</p>
 						</div>
 					</div>
 				</section>
@@ -205,13 +235,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.datatransformmodule.html" class="tsd-kind-icon">Data<wbr>Transform<wbr>Module</a>
+						<a href="_contracts_.deployscriptoperation.html" class="tsd-kind-icon">Deploy<wbr>Script<wbr>Operation</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformmodule.html#restoredata" class="tsd-kind-icon">restore<wbr>Data</a>
+								<a href="_contracts_.deployscriptoperation.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformmodule.html#transformdata" class="tsd-kind-icon">transform<wbr>Data</a>
+								<a href="_contracts_.deployscriptoperation.html#script" class="tsd-kind-icon">script</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.deployscriptoperation.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>

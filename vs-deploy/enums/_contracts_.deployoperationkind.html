@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DataTransformModule | vs-deploy</title>
+	<title>DeployOperationKind | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.datatransformmodule.html">DataTransformModule</a>
+					<a href="_contracts_.deployoperationkind.html">DeployOperationKind</a>
 				</li>
 			</ul>
-			<h1>Interface DataTransformModule</h1>
+			<h1>Enumeration DeployOperationKind</h1>
 		</div>
 	</div>
 </header>
@@ -72,61 +72,53 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Describes a &quot;data transformer&quot; module.</p>
+						<p>List of deploy operation kinds.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">DataTransformModule</span>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformmodule.html#restoredata" class="tsd-kind-icon">restore<wbr>Data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.datatransformmodule.html#transformdata" class="tsd-kind-icon">transform<wbr>Data</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.deployoperationkind.html#after" class="tsd-kind-icon">After</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.deployoperationkind.html#before" class="tsd-kind-icon">Before</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="restoredata" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> restore<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">restore<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#datatransformer" class="tsd-signature-type">DataTransformer</a></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="after" class="tsd-anchor"></a>
+					<h3>After</h3>
+					<div class="tsd-signature tsd-kind-icon">After<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:186</li>
+							<li>Defined in contracts.ts:524</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Restores transformed / encoded / crypted data.</p>
+							<p>After successful deployment.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="transformdata" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> transform<wbr>Data</h3>
-					<div class="tsd-signature tsd-kind-icon">transform<wbr>Data<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#datatransformer" class="tsd-signature-type">DataTransformer</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="before" class="tsd-anchor"></a>
+					<h3>Before</h3>
+					<div class="tsd-signature tsd-kind-icon">Before<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:191</li>
+							<li>Defined in contracts.ts:520</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Transforms data into new format.</p>
+							<p>Before deployment starts.</p>
 						</div>
 					</div>
 				</section>
@@ -204,14 +196,14 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.datatransformmodule.html" class="tsd-kind-icon">Data<wbr>Transform<wbr>Module</a>
+					<li class="current tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_contracts_.deployoperationkind.html" class="tsd-kind-icon">Deploy<wbr>Operation<wbr>Kind</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformmodule.html#restoredata" class="tsd-kind-icon">restore<wbr>Data</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_contracts_.deployoperationkind.html#after" class="tsd-kind-icon">After</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.datatransformmodule.html#transformdata" class="tsd-kind-icon">transform<wbr>Data</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_contracts_.deployoperationkind.html#before" class="tsd-kind-icon">Before</a>
 							</li>
 						</ul>
 					</li>

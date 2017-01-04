@@ -87,6 +87,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#asarray" class="tsd-kind-icon">as<wbr>Array</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#cloneobject" class="tsd-kind-icon">clone<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#comparevalues" class="tsd-kind-icon">compare<wbr>Values</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#createfilequickpick" class="tsd-kind-icon">create<wbr>File<wbr>Quick<wbr>Pick</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#createpackagequickpick" class="tsd-kind-icon">create<wbr>Package<wbr>Quick<wbr>Pick</a></li>
@@ -100,6 +101,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#isemptystring" class="tsd-kind-icon">is<wbr>Empty<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#isnullorundefined" class="tsd-kind-icon">is<wbr>Null<wbr>OrUndefined</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#loaddatatransformermodule" class="tsd-kind-icon">load<wbr>Data<wbr>Transformer<wbr>Module</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#loaddeployscriptoperationmodule" class="tsd-kind-icon">load<wbr>Deploy<wbr>Script<wbr>Operation<wbr>Module</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#loadmodule" class="tsd-kind-icon">load<wbr>Module</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#loadvalidatormodule" class="tsd-kind-icon">load<wbr>Validator<wbr>Module</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#log" class="tsd-kind-icon">log</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#normalizestring" class="tsd-kind-icon">normalize<wbr>String</a></li>
@@ -184,6 +187,44 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="cloneobject" class="tsd-anchor"></a>
+					<h3>clone<wbr>Object</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">clone<wbr>Object&lt;T&gt;<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:78</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Clones an object / value deep.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value / object to clone.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
+							<p>The cloned value / object.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="comparevalues" class="tsd-anchor"></a>
 					<h3>compare<wbr>Values</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
@@ -193,7 +234,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:79</li>
+									<li>Defined in helpers.ts:94</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -237,7 +278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:104</li>
+									<li>Defined in helpers.ts:119</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -281,7 +322,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:119</li>
+									<li>Defined in helpers.ts:134</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -319,7 +360,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:142</li>
+									<li>Defined in helpers.ts:157</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -357,7 +398,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:165</li>
+									<li>Defined in helpers.ts:180</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -395,7 +436,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:190</li>
+									<li>Defined in helpers.ts:205</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -433,7 +474,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:208</li>
+									<li>Defined in helpers.ts:223</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -468,7 +509,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:220</li>
+									<li>Defined in helpers.ts:235</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -503,7 +544,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:288</li>
+									<li>Defined in helpers.ts:303</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -535,7 +576,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:341</li>
+									<li>Defined in helpers.ts:356</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -570,7 +611,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:388</li>
+									<li>Defined in helpers.ts:403</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -603,7 +644,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:399</li>
+									<li>Defined in helpers.ts:414</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -635,7 +676,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:412</li>
+									<li>Defined in helpers.ts:427</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -663,6 +704,88 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="loaddeployscriptoperationmodule" class="tsd-anchor"></a>
+					<h3>load<wbr>Deploy<wbr>Script<wbr>Operation<wbr>Module</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Deploy<wbr>Script<wbr>Operation<wbr>Module<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, useCache<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deployscriptoperationmodule.html" class="tsd-signature-type">DeployScriptOperationModule</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:439</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Loads a module for a deploy operation.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>file: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path of the module&#39;s file.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> useCache: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Use cache or not.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.deployscriptoperationmodule.html" class="tsd-signature-type">DeployScriptOperationModule</a></h4>
+							<p>The loaded module.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="loadmodule" class="tsd-anchor"></a>
+					<h3>load<wbr>Module</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Module&lt;TModule&gt;<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, useCache<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TModule</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:451</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Loads a module.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TModule</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>file: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path of the module&#39;s file.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> useCache: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Use cache or not.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TModule</span></h4>
+							<p>The loaded module.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="loadvalidatormodule" class="tsd-anchor"></a>
 					<h3>load<wbr>Validator<wbr>Module</h3>
@@ -673,7 +796,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:438</li>
+									<li>Defined in helpers.ts:477</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -717,7 +840,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:461</li>
+									<li>Defined in helpers.ts:486</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -748,7 +871,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:476</li>
+									<li>Defined in helpers.ts:501</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -801,7 +924,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:492</li>
+									<li>Defined in helpers.ts:517</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -835,7 +958,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:622</li>
+									<li>Defined in helpers.ts:647</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -864,7 +987,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:639</li>
+									<li>Defined in helpers.ts:664</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -902,7 +1025,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:671</li>
+									<li>Defined in helpers.ts:696</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -946,7 +1069,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:688</li>
+									<li>Defined in helpers.ts:713</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -981,7 +1104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:729</li>
+									<li>Defined in helpers.ts:754</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1016,7 +1139,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:768</li>
+									<li>Defined in helpers.ts:793</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1054,7 +1177,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:783</li>
+									<li>Defined in helpers.ts:808</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1086,7 +1209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:805</li>
+									<li>Defined in helpers.ts:830</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1124,7 +1247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:852</li>
+									<li>Defined in helpers.ts:877</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1169,7 +1292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:899</li>
+									<li>Defined in helpers.ts:924</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1207,7 +1330,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:918</li>
+									<li>Defined in helpers.ts:943</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1320,6 +1443,9 @@
 						<a href="_helpers_.html#asarray" class="tsd-kind-icon">as<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_helpers_.html#cloneobject" class="tsd-kind-icon">clone<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_helpers_.html#comparevalues" class="tsd-kind-icon">compare<wbr>Values</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -1357,6 +1483,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#loaddatatransformermodule" class="tsd-kind-icon">load<wbr>Data<wbr>Transformer<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#loaddeployscriptoperationmodule" class="tsd-kind-icon">load<wbr>Deploy<wbr>Script<wbr>Operation<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_helpers_.html#loadmodule" class="tsd-kind-icon">load<wbr>Module</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_helpers_.html#loadvalidatormodule" class="tsd-kind-icon">load<wbr>Validator<wbr>Module</a>

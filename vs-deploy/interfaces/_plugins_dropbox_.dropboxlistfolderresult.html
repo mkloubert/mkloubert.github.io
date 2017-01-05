@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DropboxContext | vs-deploy</title>
+	<title>DropboxListFolderResult | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_plugins_dropbox_.html">&quot;plugins/dropbox&quot;</a>
 				</li>
 				<li>
-					<a href="_plugins_dropbox_.dropboxcontext.html">DropboxContext</a>
+					<a href="_plugins_dropbox_.dropboxlistfolderresult.html">DropboxListFolderResult</a>
 				</li>
 			</ul>
-			<h1>Interface DropboxContext</h1>
+			<h1>Interface DropboxListFolderResult</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DropboxContext</span>
+						<span class="target">DropboxListFolderResult</span>
 					</li>
 				</ul>
 			</section>
@@ -84,9 +84,9 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_dropbox_.dropboxcontext.html#dir" class="tsd-kind-icon">dir</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_dropbox_.dropboxcontext.html#token" class="tsd-kind-icon">token</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_dropbox_.dropboxcontext.html#transformer" class="tsd-kind-icon">transformer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_dropbox_.dropboxlistfolderresult.html#cursor" class="tsd-kind-icon">cursor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_dropbox_.dropboxlistfolderresult.html#entries" class="tsd-kind-icon">entries</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_dropbox_.dropboxlistfolderresult.html#has_more" class="tsd-kind-icon">has_<wbr>more</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,32 +95,32 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="dir" class="tsd-anchor"></a>
-					<h3>dir</h3>
-					<div class="tsd-signature tsd-kind-icon">dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="cursor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cursor</h3>
+					<div class="tsd-signature tsd-kind-icon">cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/dropbox.ts:46</li>
+							<li>Defined in plugins/dropbox.ts:57</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="token" class="tsd-anchor"></a>
-					<h3>token</h3>
-					<div class="tsd-signature tsd-kind-icon">token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="entries" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> entries</h3>
+					<div class="tsd-signature tsd-kind-icon">entries<span class="tsd-signature-symbol">:</span> <a href="_plugins_dropbox_.dropboxlistfolderentry.html" class="tsd-signature-type">DropboxListFolderEntry</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/dropbox.ts:48</li>
+							<li>Defined in plugins/dropbox.ts:56</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="transformer" class="tsd-anchor"></a>
-					<h3>transformer</h3>
-					<div class="tsd-signature tsd-kind-icon">transformer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.DataTransformer</span></div>
+					<a name="has_more" class="tsd-anchor"></a>
+					<h3>has_<wbr>more</h3>
+					<div class="tsd-signature tsd-kind-icon">has_<wbr>more<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/dropbox.ts:47</li>
+							<li>Defined in plugins/dropbox.ts:58</li>
 						</ul>
 					</aside>
 				</section>
@@ -205,30 +205,30 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_dropbox_.deploytargetdropbox.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Dropbox</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_dropbox_.dropboxcontext.html" class="tsd-kind-icon">Dropbox<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_dropbox_.dropboxlistfolderentry.html" class="tsd-kind-icon">Dropbox<wbr>List<wbr>Folder<wbr>Entry</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_dropbox_.dropboxcontext.html" class="tsd-kind-icon">Dropbox<wbr>Context</a>
+						<a href="_plugins_dropbox_.dropboxlistfolderresult.html" class="tsd-kind-icon">Dropbox<wbr>List<wbr>Folder<wbr>Result</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_plugins_dropbox_.dropboxcontext.html#dir" class="tsd-kind-icon">dir</a>
+								<a href="_plugins_dropbox_.dropboxlistfolderresult.html#cursor" class="tsd-kind-icon">cursor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_plugins_dropbox_.dropboxcontext.html#token" class="tsd-kind-icon">token</a>
+								<a href="_plugins_dropbox_.dropboxlistfolderresult.html#entries" class="tsd-kind-icon">entries</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_plugins_dropbox_.dropboxcontext.html#transformer" class="tsd-kind-icon">transformer</a>
+								<a href="_plugins_dropbox_.dropboxlistfolderresult.html#has_more" class="tsd-kind-icon">has_<wbr>more</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_dropbox_.dropboxlistfolderentry.html" class="tsd-kind-icon">Dropbox<wbr>List<wbr>Folder<wbr>Entry</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_dropbox_.dropboxlistfolderresult.html" class="tsd-kind-icon">Dropbox<wbr>List<wbr>Folder<wbr>Result</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_dropbox_.transformercontext.html" class="tsd-kind-icon">Transformer<wbr>Context</a>
 					</li>

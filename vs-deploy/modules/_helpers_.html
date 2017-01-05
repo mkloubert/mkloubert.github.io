@@ -96,6 +96,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#distinctarray" class="tsd-kind-icon">distinct<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#format" class="tsd-kind-icon">format</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#formatarray" class="tsd-kind-icon">format<wbr>Array</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#getfilesbyfilter" class="tsd-kind-icon">get<wbr>Files<wbr>ByFilter</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#getfilesofpackage" class="tsd-kind-icon">get<wbr>Files<wbr>OfPackage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#gethttpbody" class="tsd-kind-icon">get<wbr>Http<wbr>Body</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#getsortvalue" class="tsd-kind-icon">get<wbr>Sort<wbr>Value</a></li>
@@ -119,6 +120,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#torelativetargetpath" class="tsd-kind-icon">to<wbr>Relative<wbr>Target<wbr>Path</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#tostringsafe" class="tsd-kind-icon">to<wbr>String<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#tovalidatorsafe" class="tsd-kind-icon">to<wbr>Validator<wbr>Safe</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#trydispose" class="tsd-kind-icon">try<wbr>Dispose</a></li>
 							</ul>
 						</section>
 					</div>
@@ -536,10 +538,10 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="getfilesofpackage" class="tsd-anchor"></a>
-					<h3>get<wbr>Files<wbr>OfPackage</h3>
+					<a name="getfilesbyfilter" class="tsd-anchor"></a>
+					<h3>get<wbr>Files<wbr>ByFilter</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<wbr>OfPackage<span class="tsd-signature-symbol">(</span>pkg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploypackage.html" class="tsd-signature-type">DeployPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<wbr>ByFilter<span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.filefilter.html" class="tsd-signature-type">FileFilter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -550,7 +552,39 @@
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Returns the list of a package that should be deployed.</p>
+									<p>Returns the list of files by a filter that should be deployed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>filter: <a href="../interfaces/_contracts_.filefilter.html" class="tsd-signature-type">FileFilter</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The filter.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The list of files.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getfilesofpackage" class="tsd-anchor"></a>
+					<h3>get<wbr>Files<wbr>OfPackage</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<wbr>OfPackage<span class="tsd-signature-symbol">(</span>pkg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploypackage.html" class="tsd-signature-type">DeployPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:354</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the list of files of a package that should be deployed.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -577,7 +611,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:356</li>
+									<li>Defined in helpers.ts:365</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -609,7 +643,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:424</li>
+									<li>Defined in helpers.ts:433</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -644,7 +678,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:471</li>
+									<li>Defined in helpers.ts:480</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -677,7 +711,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:482</li>
+									<li>Defined in helpers.ts:491</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -709,7 +743,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:495</li>
+									<li>Defined in helpers.ts:504</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -747,7 +781,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:507</li>
+									<li>Defined in helpers.ts:516</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -785,7 +819,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:519</li>
+									<li>Defined in helpers.ts:528</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -829,7 +863,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:545</li>
+									<li>Defined in helpers.ts:554</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -873,7 +907,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:554</li>
+									<li>Defined in helpers.ts:563</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -904,7 +938,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:569</li>
+									<li>Defined in helpers.ts:578</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -957,7 +991,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:585</li>
+									<li>Defined in helpers.ts:594</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -991,7 +1025,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:715</li>
+									<li>Defined in helpers.ts:724</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1020,7 +1054,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:732</li>
+									<li>Defined in helpers.ts:741</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1058,7 +1092,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:764</li>
+									<li>Defined in helpers.ts:773</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1102,7 +1136,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:781</li>
+									<li>Defined in helpers.ts:790</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1137,7 +1171,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:822</li>
+									<li>Defined in helpers.ts:831</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1172,7 +1206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:861</li>
+									<li>Defined in helpers.ts:870</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1210,7 +1244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:876</li>
+									<li>Defined in helpers.ts:885</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1242,7 +1276,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:898</li>
+									<li>Defined in helpers.ts:907</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1280,7 +1314,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:945</li>
+									<li>Defined in helpers.ts:954</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1325,7 +1359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:992</li>
+									<li>Defined in helpers.ts:1001</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1363,7 +1397,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1011</li>
+									<li>Defined in helpers.ts:1020</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1388,6 +1422,38 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">deploy_contracts.Validator</span></h4>
 							<p>The output value.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="trydispose" class="tsd-anchor"></a>
+					<h3>try<wbr>Dispose</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Dispose<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:1041</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tries to dispose an object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">Disposable</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The object to dispose.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Operation was successful or not.</p>
 						</li>
 					</ul>
 				</section>
@@ -1506,6 +1572,9 @@
 						<a href="_helpers_.html#formatarray" class="tsd-kind-icon">format<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#getfilesbyfilter" class="tsd-kind-icon">get<wbr>Files<wbr>ByFilter</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#getfilesofpackage" class="tsd-kind-icon">get<wbr>Files<wbr>OfPackage</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -1573,6 +1642,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_helpers_.html#tovalidatorsafe" class="tsd-kind-icon">to<wbr>Validator<wbr>Safe</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#trydispose" class="tsd-kind-icon">try<wbr>Dispose</a>
 					</li>
 				</ul>
 			</nav>

@@ -102,6 +102,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_package_file" class="tsd-kind-icon">_PACKAGE_<wbr>FILE</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_quick_deploy_status_item" class="tsd-kind-icon">_QUICK_<wbr>DEPLOY_<wbr>STATUS_<wbr>ITEM</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_config" class="tsd-kind-icon">_config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_filesystemwatcher" class="tsd-kind-icon">_file<wbr>System<wbr>Watcher</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_host" class="tsd-kind-icon">_host</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_iscancelling" class="tsd-kind-icon">_is<wbr>Cancelling</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_plugins" class="tsd-kind-icon">_plugins</a></li>
@@ -143,12 +144,16 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#listen" class="tsd-kind-icon">listen</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#log" class="tsd-kind-icon">log</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#onactivated" class="tsd-kind-icon">on<wbr>Activated</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#ondeactivate" class="tsd-kind-icon">on<wbr>Deactivate</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#ondidchangeconfiguration" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Configuration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#ondidsavefile" class="tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#ondidsavetextdocument" class="tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>Text<wbr>Document</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#onfilechange" class="tsd-kind-icon">on<wbr>File<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#quickdeploy" class="tsd-kind-icon">quick<wbr>Deploy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#reloadconfiguration" class="tsd-kind-icon">reload<wbr>Configuration</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#reloadplugins" class="tsd-kind-icon">reload<wbr>Plugins</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#resetiscancelling" class="tsd-kind-icon">reset<wbr>IsCancelling</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#setupfilesystemwatcher" class="tsd-kind-icon">setup<wbr>File<wbr>System<wbr>Watcher</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#showextensioninfopopups" class="tsd-kind-icon">show<wbr>Extension<wbr>Info<wbr>Popups</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#shownewversionpopup" class="tsd-kind-icon">show<wbr>New<wbr>Version<wbr>Popup</a></li>
 							</ul>
@@ -168,7 +173,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:78</li>
+									<li>Defined in deploy.ts:82</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -231,7 +236,7 @@
 					<div class="tsd-signature tsd-kind-icon">_OUTPUT_<wbr>CHANNEL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OutputChannel</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:62</li>
+							<li>Defined in deploy.ts:66</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -246,7 +251,7 @@
 					<div class="tsd-signature tsd-kind-icon">_PACKAGE_<wbr>FILE<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:66</li>
+							<li>Defined in deploy.ts:70</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -261,7 +266,7 @@
 					<div class="tsd-signature tsd-kind-icon">_QUICK_<wbr>DEPLOY_<wbr>STATUS_<wbr>ITEM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StatusBarItem</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:74</li>
+							<li>Defined in deploy.ts:78</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -286,12 +291,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_filesystemwatcher" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _file<wbr>System<wbr>Watcher</h3>
+					<div class="tsd-signature tsd-kind-icon">_file<wbr>System<wbr>Watcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FileSystemWatcher</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in deploy.ts:54</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The global file system watcher.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_host" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _host</h3>
 					<div class="tsd-signature tsd-kind-icon">_host<span class="tsd-signature-symbol">:</span> <a href="_host_.deployhost.html" class="tsd-signature-type">DeployHost</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:54</li>
+							<li>Defined in deploy.ts:58</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -306,7 +326,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Cancelling<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:58</li>
+							<li>Defined in deploy.ts:62</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -321,7 +341,7 @@
 					<div class="tsd-signature tsd-kind-icon">_plugins<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_contracts_.deployplugin.html" class="tsd-signature-type">DeployPlugin</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:70</li>
+							<li>Defined in deploy.ts:74</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -336,7 +356,7 @@
 					<div class="tsd-signature tsd-kind-icon">_server<wbr>Status<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StatusBarItem</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:78</li>
+							<li>Defined in deploy.ts:82</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -358,7 +378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:253</li>
+									<li>Defined in deploy.ts:257</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -380,7 +400,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:260</li>
+									<li>Defined in deploy.ts:264</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -402,7 +422,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1351</li>
+									<li>Defined in deploy.ts:1355</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -424,7 +444,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1465</li>
+									<li>Defined in deploy.ts:1469</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -446,7 +466,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1639</li>
+									<li>Defined in deploy.ts:1762</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -468,7 +488,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1646</li>
+									<li>Defined in deploy.ts:1769</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -490,7 +510,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1653</li>
+									<li>Defined in deploy.ts:1776</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -515,7 +535,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:106</li>
+									<li>Defined in deploy.ts:110</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -553,7 +573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:172</li>
+									<li>Defined in deploy.ts:176</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -591,7 +611,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:233</li>
+									<li>Defined in deploy.ts:237</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -613,7 +633,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:244</li>
+									<li>Defined in deploy.ts:248</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -635,7 +655,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:269</li>
+									<li>Defined in deploy.ts:273</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -666,7 +686,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:315</li>
+									<li>Defined in deploy.ts:319</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -694,7 +714,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:373</li>
+									<li>Defined in deploy.ts:377</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -726,7 +746,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:539</li>
+									<li>Defined in deploy.ts:543</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -757,7 +777,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:602</li>
+									<li>Defined in deploy.ts:606</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -779,7 +799,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:749</li>
+									<li>Defined in deploy.ts:753</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -817,7 +837,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:951</li>
+									<li>Defined in deploy.ts:955</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -839,7 +859,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1001</li>
+									<li>Defined in deploy.ts:1005</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -871,7 +891,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1039</li>
+									<li>Defined in deploy.ts:1043</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -894,7 +914,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1055</li>
+									<li>Defined in deploy.ts:1059</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -917,7 +937,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1084</li>
+									<li>Defined in deploy.ts:1088</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -940,7 +960,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1115</li>
+									<li>Defined in deploy.ts:1119</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -972,7 +992,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1159</li>
+									<li>Defined in deploy.ts:1163</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1022,7 +1042,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1358</li>
+									<li>Defined in deploy.ts:1362</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1044,7 +1064,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1452</li>
+									<li>Defined in deploy.ts:1456</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1079,12 +1099,34 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1473</li>
+									<li>Defined in deploy.ts:1477</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>The &#39;on activated&#39; event.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondeactivate" class="tsd-anchor"></a>
+					<h3>on<wbr>Deactivate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Deactivate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in deploy.ts:1488</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The &#39;on deactivate&#39; event.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1101,7 +1143,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1482</li>
+									<li>Defined in deploy.ts:1497</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1109,6 +1151,40 @@
 									<p>Event after configuration changed.</p>
 								</div>
 							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ondidsavefile" class="tsd-anchor"></a>
+					<h3>on<wbr>Did<wbr>Save<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>File<span class="tsd-signature-symbol">(</span>fileName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, packagesToDeploy<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deploypackage.html" class="tsd-signature-type">DeployPackage</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in deploy.ts:1507</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Event after a document has been saved.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path of the file.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> packagesToDeploy: <a href="../interfaces/_contracts_.deploypackage.html" class="tsd-signature-type">DeployPackage</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -1123,7 +1199,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1491</li>
+									<li>Defined in deploy.ts:1680</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1144,6 +1220,43 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="onfilechange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>File<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>File<wbr>Change<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uri</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in deploy.ts:1697</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Is invoked on a file / directory change.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>e: <span class="tsd-signature-type">Uri</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The URI of the item.</p>
+									</div>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The type of change.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="quickdeploy" class="tsd-anchor"></a>
 					<h3>quick<wbr>Deploy</h3>
@@ -1154,7 +1267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1660</li>
+									<li>Defined in deploy.ts:1783</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1176,7 +1289,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1789</li>
+									<li>Defined in deploy.ts:1912</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1198,7 +1311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1838</li>
+									<li>Defined in deploy.ts:1961</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1220,7 +1333,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2015</li>
+									<li>Defined in deploy.ts:2138</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1242,6 +1355,28 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="setupfilesystemwatcher" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> setup<wbr>File<wbr>System<wbr>Watcher</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">setup<wbr>File<wbr>System<wbr>Watcher<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in deploy.ts:2145</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Set ups the file system watcher.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="showextensioninfopopups" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> show<wbr>Extension<wbr>Info<wbr>Popups</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
@@ -1251,7 +1386,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2022</li>
+									<li>Defined in deploy.ts:2188</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1273,7 +1408,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2029</li>
+									<li>Defined in deploy.ts:2195</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1384,6 +1519,9 @@
 								<a href="_deploy_.deployer.html#_config" class="tsd-kind-icon">_config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_deploy_.deployer.html#_filesystemwatcher" class="tsd-kind-icon">_file<wbr>System<wbr>Watcher</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_deploy_.deployer.html#_host" class="tsd-kind-icon">_host</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -1477,10 +1615,19 @@
 								<a href="_deploy_.deployer.html#onactivated" class="tsd-kind-icon">on<wbr>Activated</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_deploy_.deployer.html#ondeactivate" class="tsd-kind-icon">on<wbr>Deactivate</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_deploy_.deployer.html#ondidchangeconfiguration" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Configuration</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_deploy_.deployer.html#ondidsavefile" class="tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_deploy_.deployer.html#ondidsavetextdocument" class="tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>Text<wbr>Document</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_deploy_.deployer.html#onfilechange" class="tsd-kind-icon">on<wbr>File<wbr>Change</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_deploy_.deployer.html#quickdeploy" class="tsd-kind-icon">quick<wbr>Deploy</a>
@@ -1493,6 +1640,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_deploy_.deployer.html#resetiscancelling" class="tsd-kind-icon">reset<wbr>IsCancelling</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_deploy_.deployer.html#setupfilesystemwatcher" class="tsd-kind-icon">setup<wbr>File<wbr>System<wbr>Watcher</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_deploy_.deployer.html#showextensioninfopopups" class="tsd-kind-icon">show<wbr>Extension<wbr>Info<wbr>Popups</a>

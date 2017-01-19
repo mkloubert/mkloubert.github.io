@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeployOperationKind | vs-deploy</title>
+	<title>DeployVSCommandOperation | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.deployoperationkind.html">DeployOperationKind</a>
+					<a href="_contracts_.deployvscommandoperation.html">DeployVSCommandOperation</a>
 				</li>
 			</ul>
-			<h1>Enumeration DeployOperationKind</h1>
+			<h1>Interface DeployVSCommandOperation</h1>
 		</div>
 	</div>
 </header>
@@ -72,53 +72,91 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>List of deploy operation kinds.</p>
+						<p>An operation that executes a Visual Studio Code command.</p>
 					</div>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="_contracts_.deployoperation.html" class="tsd-signature-type">DeployOperation</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">DeployVSCommandOperation</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_contracts_.afterdeployedvscommandoperation.html" class="tsd-signature-type">AfterDeployedVSCommandOperation</a>
+									</li>
+									<li>
+										<a href="_contracts_.beforedeployvscommandoperation.html" class="tsd-signature-type">BeforeDeployVSCommandOperation</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.deployoperationkind.html#after" class="tsd-kind-icon">After</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.deployoperationkind.html#before" class="tsd-kind-icon">Before</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperation.html#arguments" class="tsd-kind-icon">arguments</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperation.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deployvscommandoperation.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="after" class="tsd-anchor"></a>
-					<h3>After</h3>
-					<div class="tsd-signature tsd-kind-icon">After<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="arguments" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> arguments</h3>
+					<div class="tsd-signature tsd-kind-icon">arguments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:611</li>
+							<li>Defined in contracts.ts:940</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>After successful deployment.</p>
+							<p>The arguments for the command.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="before" class="tsd-anchor"></a>
-					<h3>Before</h3>
-					<div class="tsd-signature tsd-kind-icon">Before<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="command" class="tsd-anchor"></a>
+					<h3>command</h3>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:607</li>
+							<li>Defined in contracts.ts:944</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Before deployment starts.</p>
+							<p>The command to execute.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deployoperation.html">DeployOperation</a>.<a href="_contracts_.deployoperation.html#type">type</a></p>
+						<ul>
+							<li>Defined in contracts.ts:597</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type.</p>
 						</div>
 					</div>
 				</section>
@@ -208,14 +246,17 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="_contracts_.deployoperationkind.html" class="tsd-kind-icon">Deploy<wbr>Operation<wbr>Kind</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.deployvscommandoperation.html" class="tsd-kind-icon">DeployVSCommand<wbr>Operation</a>
 						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_contracts_.deployoperationkind.html#after" class="tsd-kind-icon">After</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deployvscommandoperation.html#arguments" class="tsd-kind-icon">arguments</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_contracts_.deployoperationkind.html#before" class="tsd-kind-icon">Before</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deployvscommandoperation.html#command" class="tsd-kind-icon">command</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.deployvscommandoperation.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>

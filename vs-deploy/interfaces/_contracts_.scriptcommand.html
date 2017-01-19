@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeployVSCommandOperation | vs-deploy</title>
+	<title>ScriptCommand | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.deployvscommandoperation.html">DeployVSCommandOperation</a>
+					<a href="_contracts_.scriptcommand.html">ScriptCommand</a>
 				</li>
 			</ul>
-			<h1>Interface DeployVSCommandOperation</h1>
+			<h1>Interface ScriptCommand</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An operation that executes a Visual Studio Code command.</p>
+						<p>A startup command.</p>
 					</div>
 				</div>
 			</section>
@@ -80,18 +80,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_contracts_.deployoperation.html" class="tsd-signature-type">DeployOperation</a>
+						<a href="_contracts_.command.html" class="tsd-signature-type">Command</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">DeployVSCommandOperation</span>
-								<ul class="tsd-hierarchy">
-									<li>
-										<a href="_contracts_.afterdeployedvscommandoperation.html" class="tsd-signature-type">AfterDeployedVSCommandOperation</a>
-									</li>
-									<li>
-										<a href="_contracts_.beforedeployvscommandoperation.html" class="tsd-signature-type">BeforeDeployVSCommandOperation</a>
-									</li>
-								</ul>
+								<span class="target">ScriptCommand</span>
 							</li>
 						</ul>
 					</li>
@@ -104,9 +96,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperation.html#arguments" class="tsd-kind-icon">arguments</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperation.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deployvscommandoperation.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.scriptcommand.html#button" class="tsd-kind-icon">button</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.scriptcommand.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.scriptcommand.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.scriptcommand.html#script" class="tsd-kind-icon">script</a></li>
 							</ul>
 						</section>
 					</div>
@@ -115,48 +108,116 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="arguments" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> arguments</h3>
-					<div class="tsd-signature tsd-kind-icon">arguments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="button" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> button</h3>
+					<div class="tsd-signature tsd-kind-icon">button<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:954</li>
+							<li>Defined in contracts.ts:1170</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The arguments for the command.</p>
+							<p>Settings for optional button in the status bar.</p>
 						</div>
 					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> color<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The custom (text) color for the button.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Right<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Set button on the right side or not.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> priority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The custom priority.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> show<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Show button on startup or not.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> text<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The caption for the button.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> tooltip<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The tooltip for the button.</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="command" class="tsd-anchor"></a>
 					<h3>command</h3>
 					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.command.html">Command</a>.<a href="_contracts_.command.html#command">command</a></p>
 						<ul>
-							<li>Defined in contracts.ts:958</li>
+							<li>Defined in contracts.ts:173</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The command to execute.</p>
+							<p>The ID of the command.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.deployoperation.html">DeployOperation</a>.<a href="_contracts_.deployoperation.html#type">type</a></p>
 						<ul>
-							<li>Defined in contracts.ts:611</li>
+							<li>Defined in contracts.ts:1199</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The type.</p>
+							<p>Optional data for the execution.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="script" class="tsd-anchor"></a>
+					<h3>script</h3>
+					<div class="tsd-signature tsd-kind-icon">script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:1203</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The path to the script that is run when command is executed.</p>
 						</div>
 					</div>
 				</section>
@@ -247,16 +308,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployvscommandoperation.html" class="tsd-kind-icon">DeployVSCommand<wbr>Operation</a>
+						<a href="_contracts_.scriptcommand.html" class="tsd-kind-icon">Script<wbr>Command</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deployvscommandoperation.html#arguments" class="tsd-kind-icon">arguments</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deployvscommandoperation.html#command" class="tsd-kind-icon">command</a>
+								<a href="_contracts_.scriptcommand.html#button" class="tsd-kind-icon">button</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.deployvscommandoperation.html#type" class="tsd-kind-icon">type</a>
+								<a href="_contracts_.scriptcommand.html#command" class="tsd-kind-icon">command</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.scriptcommand.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.scriptcommand.html#script" class="tsd-kind-icon">script</a>
 							</li>
 						</ul>
 					</li>

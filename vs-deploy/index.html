@@ -183,7 +183,17 @@
                 <span class="hljs-attr">"dir"</span>: <span class="hljs-string">"/my_package_files"</span>,
                 <span class="hljs-attr">"host"</span>: <span class="hljs-string">"localhost"</span>, <span class="hljs-attr">"port"</span>: <span class="hljs-number">21</span>,
                 <span class="hljs-attr">"user"</span>: <span class="hljs-string">"anonymous"</span>, <span class="hljs-attr">"password"</span>: <span class="hljs-string">""</span>,
+
                 <span class="hljs-attr">"deployed"</span>: [
+                    {
+                        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"sql"</span>,
+                        <span class="hljs-attr">"engine"</span>: <span class="hljs-string">"mysql"</span>,
+
+                        <span class="hljs-attr">"queries"</span>: [
+                            <span class="hljs-string">"TRUNCATE TABLE `debug`"</span>,
+                            <span class="hljs-string">"TRUNCATE TABLE `logs`"</span>
+                        ]
+                    },
                     {
                         <span class="hljs-attr">"target"</span>: <span class="hljs-string">"https://github.com/mkloubert"</span>
                     }
@@ -315,6 +325,9 @@
 				<ul>
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_compilers_.html">"compilers"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_contracts_.html">"contracts"</a>

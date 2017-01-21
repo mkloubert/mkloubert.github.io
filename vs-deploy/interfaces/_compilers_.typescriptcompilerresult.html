@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LessCompilerError | vs-deploy</title>
+	<title>TypeScriptCompilerResult | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_compilers_.html">&quot;compilers&quot;</a>
 				</li>
 				<li>
-					<a href="_compilers_.lesscompilererror.html">LessCompilerError</a>
+					<a href="_compilers_.typescriptcompilerresult.html">TypeScriptCompilerResult</a>
 				</li>
 			</ul>
-			<h1>Interface LessCompilerError</h1>
+			<h1>Interface TypeScriptCompilerResult</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A LESS compiler error entry.</p>
+						<p>A TypeScript compiler result.</p>
 					</div>
 				</div>
 			</section>
@@ -80,10 +80,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_compilers_.compilererror.html" class="tsd-signature-type">CompilerError</a>
+						<a href="_compilers_.compilerresult.html" class="tsd-signature-type">CompilerResult</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">LessCompilerError</span>
+								<span class="target">TypeScriptCompilerResult</span>
 							</li>
 						</ul>
 					</li>
@@ -93,47 +93,48 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_.lesscompilererror.html#error" class="tsd-kind-icon">error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_.lesscompilererror.html#file" class="tsd-kind-icon">file</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="_compilers_.typescriptcompilerresult.html#errors" class="tsd-kind-icon">errors</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_.typescriptcompilerresult.html#files" class="tsd-kind-icon">files</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="error" class="tsd-anchor"></a>
-					<h3>error</h3>
-					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+					<a name="errors" class="tsd-anchor"></a>
+					<h3>errors</h3>
+					<div class="tsd-signature tsd-kind-icon">errors<span class="tsd-signature-symbol">:</span> <a href="_compilers_.typescriptcompilererror.html" class="tsd-signature-type">TypeScriptCompilerError</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_compilers_.compilererror.html">CompilerError</a>.<a href="_compilers_.compilererror.html#error">error</a></p>
+						<p>Overrides <a href="_compilers_.compilerresult.html">CompilerResult</a>.<a href="_compilers_.compilerresult.html#errors">errors</a></p>
 						<ul>
-							<li>Defined in compilers.ts:71</li>
+							<li>Defined in compilers.ts:169</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The error.</p>
-						</div>
+						<dl class="tsd-comment-tags">
+							<dt>inheritdoc</dt>
+							<dd></dd>
+						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="file" class="tsd-anchor"></a>
-					<h3>file</h3>
-					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="files" class="tsd-anchor"></a>
+					<h3>files</h3>
+					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_compilers_.compilererror.html">CompilerError</a>.<a href="_compilers_.compilererror.html#file">file</a></p>
+						<p>Inherited from <a href="_compilers_.compilerresult.html">CompilerResult</a>.<a href="_compilers_.compilerresult.html#files">files</a></p>
 						<ul>
-							<li>Defined in compilers.ts:75</li>
+							<li>Defined in compilers.ts:103</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The file.</p>
+							<p>The files for the compilation.</p>
 						</div>
 					</div>
 				</section>
@@ -236,21 +237,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.compilerresult.html" class="tsd-kind-icon">Compiler<wbr>Result</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.lesscompilererror.html" class="tsd-kind-icon">Less<wbr>Compiler<wbr>Error</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_compilers_.lesscompilererror.html#error" class="tsd-kind-icon">error</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_compilers_.lesscompilererror.html#file" class="tsd-kind-icon">file</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.lesscompileroptions.html" class="tsd-kind-icon">Less<wbr>Compiler<wbr>Options</a>
 					</li>
@@ -266,9 +255,21 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.typescriptcompileroptions.html" class="tsd-kind-icon">Type<wbr>Script<wbr>Compiler<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.typescriptcompilerresult.html" class="tsd-kind-icon">Type<wbr>Script<wbr>Compiler<wbr>Result</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
+								<a href="_compilers_.typescriptcompilerresult.html#errors" class="tsd-kind-icon">errors</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_compilers_.typescriptcompilerresult.html#files" class="tsd-kind-icon">files</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_compilers_.html#glob" class="tsd-kind-icon">Glob</a>
 					</li>

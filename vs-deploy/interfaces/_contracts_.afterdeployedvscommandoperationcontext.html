@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PopupButton | vs-deploy</title>
+	<title>AfterDeployedVSCommandOperationContext | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.popupbutton.html">PopupButton</a>
+					<a href="_contracts_.afterdeployedvscommandoperationcontext.html">AfterDeployedVSCommandOperationContext</a>
 				</li>
 			</ul>
-			<h1>Interface PopupButton</h1>
+			<h1>Interface AfterDeployedVSCommandOperationContext</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Describes a button of a popup.</p>
+						<p>An execution context for a Visual Studio Code command (after deployed).</p>
 					</div>
 				</div>
 			</section>
@@ -80,100 +80,167 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">MessageItem</span>
+						<a href="_contracts_.deployvscommandoperationcontext.html" class="tsd-signature-type">DeployVSCommandOperationContext</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">PopupButton</span>
+								<span class="target">AfterDeployedVSCommandOperationContext</span>
 							</li>
 						</ul>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implemented by</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../classes/_objects_.simplepopupbutton.html" class="tsd-signature-type">SimplePopupButton</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.popupbutton.html#action" class="tsd-kind-icon">action</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.popupbutton.html#iscloseaffordance" class="tsd-kind-icon">is<wbr>Close<wbr>Affordance</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.popupbutton.html#tag" class="tsd-kind-icon">tag</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.popupbutton.html#title" class="tsd-kind-icon">title</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.afterdeployedvscommandoperationcontext.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.afterdeployedvscommandoperationcontext.html#files" class="tsd-kind-icon">files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.afterdeployedvscommandoperationcontext.html#globals" class="tsd-kind-icon">globals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.afterdeployedvscommandoperationcontext.html#kind" class="tsd-kind-icon">kind</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.afterdeployedvscommandoperationcontext.html#operation" class="tsd-kind-icon">operation</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.afterdeployedvscommandoperationcontext.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.afterdeployedvscommandoperationcontext.html#require" class="tsd-kind-icon">require</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="action" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> action</h3>
-					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#popupbuttonaction" class="tsd-signature-type">PopupButtonAction</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="command" class="tsd-anchor"></a>
+					<h3>command</h3>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deployvscommandoperationcontext.html">DeployVSCommandOperationContext</a>.<a href="_contracts_.deployvscommandoperationcontext.html#command">command</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1215</li>
+							<li>Defined in contracts.ts:998</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets the action of that button.</p>
+							<p>The ID of the command.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="iscloseaffordance" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Close<wbr>Affordance</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Close<wbr>Affordance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="files" class="tsd-anchor"></a>
+					<h3>files</h3>
+					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from MessageItem.isCloseAffordance</p>
+						<p>Inherited from <a href="_contracts_.deployvscommandoperationcontext.html">DeployVSCommandOperationContext</a>.<a href="_contracts_.deployvscommandoperationcontext.html#files">files</a></p>
 						<ul>
-							<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:1397</li>
+							<li>Defined in contracts.ts:1006</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Indicates that this item replaces the default
-							&#39;Close&#39; action.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tag" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tag</h3>
-					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:1219</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Contains an additional object that should be linked with that instance.</p>
+							<p>The files to deploy.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="title" class="tsd-anchor"></a>
-					<h3>title</h3>
-					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="globals" class="tsd-anchor"></a>
+					<h3>globals</h3>
+					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#globalvariables" class="tsd-signature-type">GlobalVariables</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from MessageItem.title</p>
+						<p>Inherited from <a href="_contracts_.deployvscommandoperationcontext.html">DeployVSCommandOperationContext</a>.<a href="_contracts_.deployvscommandoperationcontext.html#globals">globals</a></p>
 						<ul>
-							<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:1391</li>
+							<li>Defined in contracts.ts:1002</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A short title like &#39;Retry&#39;, &#39;Open Log&#39; etc.</p>
+							<p>The globals defined in the settings.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="kind" class="tsd-anchor"></a>
+					<h3>kind</h3>
+					<div class="tsd-signature tsd-kind-icon">kind<span class="tsd-signature-symbol">:</span> <a href="../enums/_contracts_.deployoperationkind.html" class="tsd-signature-type">DeployOperationKind</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deployvscommandoperationcontext.html">DeployVSCommandOperationContext</a>.<a href="_contracts_.deployvscommandoperationcontext.html#kind">kind</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1010</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The kind of operation.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="operation" class="tsd-anchor"></a>
+					<h3>operation</h3>
+					<div class="tsd-signature tsd-kind-icon">operation<span class="tsd-signature-symbol">:</span> <a href="_contracts_.deployvscommandoperation.html" class="tsd-signature-type">DeployVSCommandOperation</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deployvscommandoperationcontext.html">DeployVSCommandOperationContext</a>.<a href="_contracts_.deployvscommandoperationcontext.html#operation">operation</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1014</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The operation</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deployvscommandoperationcontext.html">DeployVSCommandOperationContext</a>.<a href="_contracts_.deployvscommandoperationcontext.html#options">options</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1018</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Options for the execution (@see DeployVSCommandOperation.contextOptions).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="require" class="tsd-anchor"></a>
+					<h3>require</h3>
+					<div class="tsd-signature tsd-kind-icon">require<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deployvscommandoperationcontext.html">DeployVSCommandOperationContext</a>.<a href="_contracts_.deployvscommandoperationcontext.html#require">require</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1022</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Loads a module from the script context.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>id: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -263,19 +330,28 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.popupbutton.html" class="tsd-kind-icon">Popup<wbr>Button</a>
+						<a href="_contracts_.afterdeployedvscommandoperationcontext.html" class="tsd-kind-icon">After<wbr>DeployedVSCommand<wbr>Operation<wbr>Context</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.popupbutton.html#action" class="tsd-kind-icon">action</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.afterdeployedvscommandoperationcontext.html#command" class="tsd-kind-icon">command</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.popupbutton.html#iscloseaffordance" class="tsd-kind-icon">is<wbr>Close<wbr>Affordance</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.popupbutton.html#tag" class="tsd-kind-icon">tag</a>
+								<a href="_contracts_.afterdeployedvscommandoperationcontext.html#files" class="tsd-kind-icon">files</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.popupbutton.html#title" class="tsd-kind-icon">title</a>
+								<a href="_contracts_.afterdeployedvscommandoperationcontext.html#globals" class="tsd-kind-icon">globals</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.afterdeployedvscommandoperationcontext.html#kind" class="tsd-kind-icon">kind</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.afterdeployedvscommandoperationcontext.html#operation" class="tsd-kind-icon">operation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.afterdeployedvscommandoperationcontext.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.afterdeployedvscommandoperationcontext.html#require" class="tsd-kind-icon">require</a>
 							</li>
 						</ul>
 					</li>

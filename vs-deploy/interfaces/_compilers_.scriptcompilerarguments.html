@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CompilerResult | vs-deploy</title>
+	<title>ScriptCompilerArguments | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_compilers_.html">&quot;compilers&quot;</a>
 				</li>
 				<li>
-					<a href="_compilers_.compilerresult.html">CompilerResult</a>
+					<a href="_compilers_.scriptcompilerarguments.html">ScriptCompilerArguments</a>
 				</li>
 			</ul>
-			<h1>Interface CompilerResult</h1>
+			<h1>Interface ScriptCompilerArguments</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A compiler result.</p>
+						<p>Arguments for the compilation.</p>
 					</div>
 				</div>
 			</section>
@@ -80,18 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CompilerResult</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_compilers_.lesscompilerresult.html" class="tsd-signature-type">LessCompilerResult</a>
-							</li>
-							<li>
-								<a href="_compilers_.scriptcompilerresult.html" class="tsd-signature-type">ScriptCompilerResult</a>
-							</li>
-							<li>
-								<a href="_compilers_.typescriptcompilerresult.html" class="tsd-signature-type">TypeScriptCompilerResult</a>
-							</li>
-						</ul>
+						<span class="target">ScriptCompilerArguments</span>
 					</li>
 				</ul>
 			</section>
@@ -102,8 +91,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.compilerresult.html#errors" class="tsd-kind-icon">errors</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.compilerresult.html#files" class="tsd-kind-icon">files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.scriptcompilerarguments.html#files" class="tsd-kind-icon">files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.scriptcompilerarguments.html#globals" class="tsd-kind-icon">globals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.scriptcompilerarguments.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.scriptcompilerarguments.html#require" class="tsd-kind-icon">require</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.scriptcompilerarguments.html#result" class="tsd-kind-icon">result</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,32 +104,98 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="errors" class="tsd-anchor"></a>
-					<h3>errors</h3>
-					<div class="tsd-signature tsd-kind-icon">errors<span class="tsd-signature-symbol">:</span> <a href="_compilers_.compilererror.html" class="tsd-signature-type">CompilerError</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in compilers.ts:104</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The list of errors.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="files" class="tsd-anchor"></a>
 					<h3>files</h3>
 					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:108</li>
+							<li>Defined in compilers.ts:159</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The files for the compilation.</p>
+							<p>The list of files to compile.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="globals" class="tsd-anchor"></a>
+					<h3>globals</h3>
+					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.GlobalVariables</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in compilers.ts:163</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The globals from the settings.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="options" class="tsd-anchor"></a>
+					<h3>options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="_compilers_.scriptcompileroptions.html" class="tsd-signature-type">ScriptCompilerOptions</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in compilers.ts:167</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The compiler options.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="require" class="tsd-anchor"></a>
+					<h3>require</h3>
+					<div class="tsd-signature tsd-kind-icon">require<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in compilers.ts:171</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Loads a module from the script context.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>id: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="result" class="tsd-anchor"></a>
+					<h3>result</h3>
+					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <a href="_compilers_.scriptcompilerresult.html" class="tsd-signature-type">ScriptCompilerResult</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in compilers.ts:175</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A preconfigured result object.</p>
 						</div>
 					</div>
 				</section>
@@ -237,21 +295,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.compileroptions.html" class="tsd-kind-icon">Compiler<wbr>Options</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.compilerresult.html" class="tsd-kind-icon">Compiler<wbr>Result</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_compilers_.compilerresult.html#errors" class="tsd-kind-icon">errors</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_compilers_.compilerresult.html#files" class="tsd-kind-icon">files</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.lesscompilererror.html" class="tsd-kind-icon">Less<wbr>Compiler<wbr>Error</a>
 					</li>
@@ -261,9 +307,30 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.lesscompilerresult.html" class="tsd-kind-icon">Less<wbr>Compiler<wbr>Result</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.scriptcompilerarguments.html" class="tsd-kind-icon">Script<wbr>Compiler<wbr>Arguments</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_compilers_.scriptcompilerarguments.html#files" class="tsd-kind-icon">files</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_compilers_.scriptcompilerarguments.html#globals" class="tsd-kind-icon">globals</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_compilers_.scriptcompilerarguments.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_compilers_.scriptcompilerarguments.html#require" class="tsd-kind-icon">require</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_compilers_.scriptcompilerarguments.html#result" class="tsd-kind-icon">result</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.scriptcompilererror.html" class="tsd-kind-icon">Script<wbr>Compiler<wbr>Error</a>
 					</li>

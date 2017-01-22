@@ -65,6 +65,9 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="vs-script-commands">vs-script-commands</h1>
+				<p><a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-script-commands"><img src="https://vsmarketplacebadge.apphb.com/version-short/mkloubert.vs-script-commands.svg" alt="Latest Release"></a>
+					<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-script-commands"><img src="https://vsmarketplacebadge.apphb.com/installs/mkloubert.vs-script-commands.svg" alt="Installs"></a>
+				<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-script-commands#review-details"><img src="https://vsmarketplacebadge.apphb.com/rating-short/mkloubert.vs-script-commands.svg" alt="Rating"></a></p>
 				<p>Adds additional commands to <a href="https://code.visualstudio.com/">Visual Studio Code</a> (VS Code) that uses scripts (JavaScript) for execution.</p>
 				<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=UHVN4LRJTEXQS"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a> <a href="https://flattr.com/submit/auto?fid=o62pkd&amp;url=https%3A%2F%2Fgithub.com%2Fmkloubert%2Fvs-script-commands"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt=""></a></p>
 				<h2 id="table-of-contents">Table of contents</h2>
@@ -75,8 +78,12 @@
 									<li><a href="#commands-">Commands</a></li>
 								</ul>
 							</li>
+							<li><a href="#key-bindinds-">Key bindinds</a></li>
+							<li><a href="#invoke-manually-">Invoke manually</a></li>
+							<li><a href="#status-bar-buttons-">Status bar buttons</a></li>
 						</ul>
 					</li>
+					<li><a href="#documentation-">Documentation</a></li>
 				</ol>
 				<h2 id="install-uarr-table-of-contents-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter:</p>
@@ -111,6 +118,10 @@
 							<td><code>showOutput</code></td>
 							<td>Open output on startup or not. Default <code>(true)</code></td>
 						</tr>
+						<tr>
+							<td><code>showInternalVSCommands</code></td>
+							<td>Open output on startup or not. Default <code>(false)</code></td>
+						</tr>
 					</tbody>
 				</table>
 				<h4 id="commands-uarr-settings-">Commands [<a href="#settings-">&uarr;</a>]</h4>
@@ -133,6 +144,7 @@
 
 exports.compile = compile;
 </code></pre>
+				<p>The <code>args</code> parameter uses the <a href="https://mkloubert.github.io/vs-script-commands/interfaces/_contracts_.scriptcommandexecutorarguments.html">ScriptCommandExecutorArguments</a> interface</p>
 				<p>You can return a number (sync execution), a <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a> or nothing (default exit code <code>0</code>).</p>
 				<p>A command entry provides the following properties:</p>
 				<table>
@@ -144,8 +156,16 @@ exports.compile = compile;
 					</thead>
 					<tbody>
 						<tr>
+							<td><code>askForArgument</code></td>
+							<td>Defines if the GUI asks for an argument when invoke manually or not. Default <code>(false)</code></td>
+						</tr>
+						<tr>
 							<td><code>async</code></td>
 							<td>Invokes command async or not. Default <code>(true)</code></td>
+						</tr>
+						<tr>
+							<td><code>button</code></td>
+							<td>Settings for optional <a href="#status-bar-buttons-">button</a> in the status bar.</td>
 						</tr>
 						<tr>
 							<td><code>continueOnError</code></td>
@@ -217,6 +237,51 @@ exports.compile = compile;
 						</tr>
 					</tbody>
 				</table>
+				<h3 id="key-bindinds-uarr-how-to-use-">Key bindinds [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>After defining one or more commands, you can open your <a href="https://code.visualstudio.com/docs/customization/keybindings#_customizing-shortcuts">keybindings.json</a> file and set shortcuts for them, by selecting <code>File &gt; Preferences &gt; Keyboard Shortcuts</code> (<code>Code &gt; Preferences &gt; Keyboard Shortcuts</code> on Mac) in your editor:</p>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-script-commands/master/img/demo1.gif" alt="Demo Key bindinds"></p>
+				<h2 id="documentation-uarr-table-of-contents-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>The full API documentation can be found <a href="https://mkloubert.github.io/vs-script-commands/">here</a>.</p>
+				<h3 id="invoke-manually-uarr-how-to-use-">Invoke manually [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Press <code>F1</code> to open the list of commands and enter one of the following commands:</p>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-script-commands/master/img/demo2.gif" alt="Demo Invoke manually"></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>Script commands: Execute command</code></td>
+							<td>Executes a command defined by that extension.</td>
+						</tr>
+						<tr>
+							<td><code>Script commands: Execute VSCode command</code></td>
+							<td>Executes another command that is available in VSCode.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="status-bar-buttons-uarr-how-to-use-">Status bar buttons [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>You can activate buttons for your commands in the status bar:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"script.commands"</span>: {
+        <span class="hljs-attr">"commands"</span>: [
+            {
+                <span class="hljs-attr">"id"</span>: <span class="hljs-string">"mkloubert.mycommand"</span>,
+                <span class="hljs-attr">"script"</span>: <span class="hljs-string">"./my-command.js"</span>,
+
+                <span class="hljs-attr">"button"</span>: {
+                    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"My command"</span>,
+                    <span class="hljs-attr">"tooltip"</span>: <span class="hljs-string">"This is a tooltip for my command"</span>
+                }
+            }
+        ]
+    }
+}
+</code></pre>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-script-commands/master/img/demo3.gif" alt="Demo Status bar buttons"></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

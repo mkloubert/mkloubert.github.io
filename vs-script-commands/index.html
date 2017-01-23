@@ -139,12 +139,23 @@
 </code></pre>
 				<p>The <code>./my-command.js</code> file must have the following structure:</p>
 				<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">execute</span>(<span class="hljs-params">args</span>) </span>{
+    <span class="hljs-comment">// access VSCode API (s. https://code.visualstudio.com/Docs/extensionAPI/vscode-api)</span>
+    <span class="hljs-keyword">var</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
+    <span class="hljs-comment">// access any NodeJS API provided by VSCode (s. https://nodejs.org/api/)</span>
+    <span class="hljs-keyword">var</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+    <span class="hljs-comment">// import an own module</span>
+    <span class="hljs-keyword">var</span> myModule = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./myModule'</span>);
+
+    <span class="hljs-comment">// use the functions and classes provides by this extension</span>
+    <span class="hljs-keyword">var</span> helpers = args.require(<span class="hljs-string">'./helpers'</span>);
+
+
     <span class="hljs-comment">// do the magic here</span>
 }
 
 exports.execute = execute;
 </code></pre>
-				<p>The <code>args</code> parameter uses the <a href="https://mkloubert.github.io/vs-script-commands/interfaces/_contracts_.scriptcommandexecutorarguments.html">ScriptCommandExecutorArguments</a> interface</p>
+				<p>The <code>args</code> parameter uses the <a href="https://mkloubert.github.io/vs-script-commands/interfaces/_contracts_.scriptcommandexecutorarguments.html">ScriptCommandExecutorArguments</a> interface.</p>
 				<p>You can return a number (sync execution), a <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a> or nothing (default exit code <code>0</code>).</p>
 				<p>A command entry provides the following properties:</p>
 				<table>

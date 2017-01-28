@@ -104,6 +104,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#config" class="tsd-kind-icon">config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#emitglobal" class="tsd-kind-icon">emit<wbr>Global</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#error" class="tsd-kind-icon">error</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#globals" class="tsd-kind-icon">globals</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploycontext.html#info" class="tsd-kind-icon">info</a></li>
@@ -178,7 +179,7 @@
 					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:451</li>
+							<li>Defined in contracts.ts:472</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -213,12 +214,59 @@
 					<div class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:458</li>
+							<li>Defined in contracts.ts:479</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Emits an event.</p>
+							<p>Emits an event of the context.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The event.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The arguments.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="emitglobal" class="tsd-anchor"></a>
+					<h3>emit<wbr>Global</h3>
+					<div class="tsd-signature tsd-kind-icon">emit<wbr>Global<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:486</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Emits a global event.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>param</dt>
@@ -260,7 +308,7 @@
 					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:466</li>
+							<li>Defined in contracts.ts:494</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -303,7 +351,7 @@
 					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:470</li>
+							<li>Defined in contracts.ts:498</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -333,7 +381,7 @@
 					<div class="tsd-signature tsd-kind-icon">info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:478</li>
+							<li>Defined in contracts.ts:506</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -376,7 +424,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Cancelling<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:484</li>
+							<li>Defined in contracts.ts:512</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -411,7 +459,7 @@
 					<div class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:492</li>
+							<li>Defined in contracts.ts:520</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -454,7 +502,7 @@
 					<div class="tsd-signature tsd-kind-icon">once<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:501</li>
+							<li>Defined in contracts.ts:529</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -503,7 +551,7 @@
 					<div class="tsd-signature tsd-kind-icon">output<wbr>Channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:506</li>
+							<li>Defined in contracts.ts:534</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -533,7 +581,7 @@
 					<div class="tsd-signature tsd-kind-icon">package<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:512</li>
+							<li>Defined in contracts.ts:540</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -568,7 +616,7 @@
 					<div class="tsd-signature tsd-kind-icon">packages<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:518</li>
+							<li>Defined in contracts.ts:546</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -603,7 +651,7 @@
 					<div class="tsd-signature tsd-kind-icon">plugins<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:524</li>
+							<li>Defined in contracts.ts:552</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -638,7 +686,7 @@
 					<div class="tsd-signature tsd-kind-icon">require<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:532</li>
+							<li>Defined in contracts.ts:560</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -682,7 +730,7 @@
 					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:568</li>
+							<li>Defined in contracts.ts:596</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -717,7 +765,7 @@
 					<div class="tsd-signature tsd-kind-icon">warn<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:540</li>
+							<li>Defined in contracts.ts:568</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -760,7 +808,7 @@
 					<div class="tsd-signature tsd-kind-icon">workspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:546</li>
+							<li>Defined in contracts.ts:574</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -795,7 +843,7 @@
 					<div class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:554</li>
+							<li>Defined in contracts.ts:582</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -838,7 +886,7 @@
 					<div class="tsd-signature tsd-kind-icon">write<wbr>Line<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:562</li>
+							<li>Defined in contracts.ts:590</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -962,80 +1010,8 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_compilers_.html">"compilers"</a>
-					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_contracts_.html">"contracts"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_deploy_.html">"deploy"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_helpers_.html">"helpers"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_host_.html">"host"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_i18_.html">"i18"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_objects_.html">"objects"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_.html">"plugins"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_app_.html">"plugins/app"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_azureblob_.html">"plugins/azureblob"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_batch_.html">"plugins/batch"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_dropbox_.html">"plugins/dropbox"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_ftp_.html">"plugins/ftp"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_http_.html">"plugins/http"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_local_.html">"plugins/local"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_mail_.html">"plugins/mail"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_pipeline_.html">"plugins/pipeline"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_remote_.html">"plugins/remote"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_s3bucket_.html">"plugins/s3bucket"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_script_.html">"plugins/script"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_sftp_.html">"plugins/sftp"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_sql_.html">"plugins/sql"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_test_.html">"plugins/test"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_zip_.html">"plugins/zip"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_sql_.html">"sql"</a>
 					</li>
 				</ul>
 			</nav>
@@ -1054,6 +1030,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.deploycontext.html#emit" class="tsd-kind-icon">emit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deploycontext.html#emitglobal" class="tsd-kind-icon">emit<wbr>Global</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.deploycontext.html#error" class="tsd-kind-icon">error</a>

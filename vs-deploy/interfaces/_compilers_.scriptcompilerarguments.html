@@ -80,7 +80,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ScriptCompilerArguments</span>
+						<a href="_contracts_.scriptarguments.html" class="tsd-signature-type">ScriptArguments</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">ScriptCompilerArguments</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -91,10 +96,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_.scriptcompilerarguments.html#emitglobal" class="tsd-kind-icon">emit<wbr>Global</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.scriptcompilerarguments.html#files" class="tsd-kind-icon">files</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.scriptcompilerarguments.html#globals" class="tsd-kind-icon">globals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_.scriptcompilerarguments.html#globals" class="tsd-kind-icon">globals</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.scriptcompilerarguments.html#options" class="tsd-kind-icon">options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.scriptcompilerarguments.html#require" class="tsd-kind-icon">require</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_.scriptcompilerarguments.html#require" class="tsd-kind-icon">require</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.scriptcompilerarguments.html#result" class="tsd-kind-icon">result</a></li>
 							</ul>
 						</section>
@@ -103,13 +109,61 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="emitglobal" class="tsd-anchor"></a>
+					<h3>emit<wbr>Global</h3>
+					<div class="tsd-signature tsd-kind-icon">emit<wbr>Global<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#emitglobal">emitGlobal</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1282</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Emits a global event.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The event.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The arguments.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="files" class="tsd-anchor"></a>
 					<h3>files</h3>
 					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:159</li>
+							<li>Defined in compilers.ts:160</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -118,18 +172,19 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="globals" class="tsd-anchor"></a>
 					<h3>globals</h3>
-					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.GlobalVariables</span></div>
+					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#globalvariables" class="tsd-signature-type">GlobalVariables</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globals">globals</a></p>
 						<ul>
-							<li>Defined in compilers.ts:163</li>
+							<li>Defined in contracts.ts:1286</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The globals from the settings.</p>
+							<p>The global variables from the settings.</p>
 						</div>
 					</div>
 				</section>
@@ -139,7 +194,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="_compilers_.scriptcompileroptions.html" class="tsd-signature-type">ScriptCompilerOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:167</li>
+							<li>Defined in compilers.ts:164</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -148,19 +203,28 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="require" class="tsd-anchor"></a>
 					<h3>require</h3>
 					<div class="tsd-signature tsd-kind-icon">require<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#require">require</a></p>
 						<ul>
-							<li>Defined in compilers.ts:171</li>
+							<li>Defined in contracts.ts:1294</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Loads a module from the script context.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The ID / path to the module.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The loaded module.</p>
+							</dd>
+						</dl>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -190,7 +254,7 @@
 					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <a href="_compilers_.scriptcompilerresult.html" class="tsd-signature-type">ScriptCompilerResult</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:175</li>
+							<li>Defined in compilers.ts:168</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -209,78 +273,6 @@
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_compilers_.html">"compilers"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_contracts_.html">"contracts"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_deploy_.html">"deploy"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_helpers_.html">"helpers"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_host_.html">"host"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_i18_.html">"i18"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_objects_.html">"objects"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_.html">"plugins"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_app_.html">"plugins/app"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_azureblob_.html">"plugins/azureblob"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_batch_.html">"plugins/batch"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_dropbox_.html">"plugins/dropbox"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_ftp_.html">"plugins/ftp"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_http_.html">"plugins/http"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_local_.html">"plugins/local"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_mail_.html">"plugins/mail"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_pipeline_.html">"plugins/pipeline"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_remote_.html">"plugins/remote"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_s3bucket_.html">"plugins/s3bucket"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_script_.html">"plugins/script"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_sftp_.html">"plugins/sftp"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_sql_.html">"plugins/sql"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_test_.html">"plugins/test"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_plugins_zip_.html">"plugins/zip"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_sql_.html">"sql"</a>
 					</li>
 				</ul>
 			</nav>
@@ -312,16 +304,19 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_compilers_.scriptcompilerarguments.html" class="tsd-kind-icon">Script<wbr>Compiler<wbr>Arguments</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_compilers_.scriptcompilerarguments.html#emitglobal" class="tsd-kind-icon">emit<wbr>Global</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_compilers_.scriptcompilerarguments.html#files" class="tsd-kind-icon">files</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_compilers_.scriptcompilerarguments.html#globals" class="tsd-kind-icon">globals</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_compilers_.scriptcompilerarguments.html#options" class="tsd-kind-icon">options</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_compilers_.scriptcompilerarguments.html#require" class="tsd-kind-icon">require</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">

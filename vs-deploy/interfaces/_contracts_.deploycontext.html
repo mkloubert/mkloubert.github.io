@@ -81,6 +81,9 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="tsd-signature-type">Disposable</span>
+					</li>
+					<li>
+						<a href="_contracts_.filedeployer.html" class="tsd-signature-type">FileDeployer</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">DeployContext</span>
@@ -126,6 +129,7 @@
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploycontext.html#deployfiles" class="tsd-kind-icon">deploy<wbr>Files</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploycontext.html#dispose" class="tsd-kind-icon">dispose</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-static"><a href="_contracts_.deploycontext.html#from" class="tsd-kind-icon">from</a></li>
 							</ul>
@@ -927,6 +931,44 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="deployfiles" class="tsd-anchor"></a>
+					<h3>deploy<wbr>Files</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">deploy<wbr>Files<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, targets<span class="tsd-signature-symbol">: </span><a href="../modules/_contracts_.html#deploytargetlist" class="tsd-signature-type">DeployTargetList</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_contracts_.deployfileseventarguments.html" class="tsd-signature-type">DeployFilesEventArguments</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_contracts_.filedeployer.html">FileDeployer</a>.<a href="_contracts_.filedeployer.html#deployfiles">deployFiles</a></p>
+								<ul>
+									<li>Defined in contracts.ts:1268</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Deploys files.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The files to deploy.</p>
+									</div>
+								</li>
+								<li>
+									<h5>targets: <a href="../modules/_contracts_.html#deploytargetlist" class="tsd-signature-type">DeployTargetList</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The targets to deploy to.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_contracts_.deployfileseventarguments.html" class="tsd-signature-type">DeployFilesEventArguments</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 					<a name="dispose" class="tsd-anchor"></a>
 					<h3>dispose</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
@@ -1081,6 +1123,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.deploycontext.html#writeline" class="tsd-kind-icon">write<wbr>Line</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.deploycontext.html#deployfiles" class="tsd-kind-icon">deploy<wbr>Files</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.deploycontext.html#dispose" class="tsd-kind-icon">dispose</a>

@@ -98,10 +98,12 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected tsd-is-not-exported">
+						<section class="tsd-index-section tsd-is-private-protected tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#_context" class="tsd-kind-icon">_context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#_globalstate" class="tsd-kind-icon">_global<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#_scriptstates" class="tsd-kind-icon">_script<wbr>States</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited tsd-is-not-exported">
@@ -119,6 +121,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#gettargetswithplugins" class="tsd-kind-icon">get<wbr>Targets<wbr>With<wbr>Plugins</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#info" class="tsd-kind-icon">info</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#oncancelling" class="tsd-kind-icon">on<wbr>Cancelling</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported"><a href="_plugins_pipeline_.pipelineplugin.html#onconfigreloaded" class="tsd-kind-icon">on<wbr>Config<wbr>Reloaded</a></li>
 							</ul>
 						</section>
 					</div>
@@ -137,7 +140,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in objects.ts:71</li>
+									<li>Defined in objects.ts:72</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -156,7 +159,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 					<a name="_context" class="tsd-anchor"></a>
@@ -165,7 +168,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#_context">_context</a></p>
 						<ul>
-							<li>Defined in objects.ts:71</li>
+							<li>Defined in objects.ts:72</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -173,6 +176,26 @@
 							<p>Stores the deploy context.</p>
 						</div>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="_globalstate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _global<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">_global<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/pipeline.ts:148</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="_scriptstates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _script<wbr>States</h3>
+					<div class="tsd-signature tsd-kind-icon">_script<wbr>States<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/pipeline.ts:149</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-not-exported">
@@ -188,7 +211,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#context">context</a></p>
 								<ul>
-									<li>Defined in objects.ts:85</li>
+									<li>Defined in objects.ts:89</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -214,7 +237,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.multitargetdeploypluginbase.html">MultiTargetDeployPluginBase</a>.<a href="_objects_.multitargetdeploypluginbase.html#createcontext">createContext</a></p>
 								<ul>
-									<li>Defined in plugins/pipeline.ts:138</li>
+									<li>Defined in plugins/pipeline.ts:151</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -239,7 +262,7 @@
 								<p>Inherited from <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#deployfile">deployFile</a></p>
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#deployfile">deployFile</a></p>
 								<ul>
-									<li>Defined in objects.ts:212</li>
+									<li>Defined in objects.ts:224</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -275,7 +298,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.multitargetdeploypluginbase.html">MultiTargetDeployPluginBase</a>.<a href="_objects_.multitargetdeploypluginbase.html#deployworkspace">deployWorkspace</a></p>
 								<ul>
-									<li>Defined in plugins/pipeline.ts:145</li>
+									<li>Defined in plugins/pipeline.ts:158</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -305,7 +328,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.multitargetdeploypluginbase.html">MultiTargetDeployPluginBase</a>.<a href="_objects_.multitargetdeploypluginbase.html#gettargetswithplugins">getTargetsWithPlugins</a></p>
 								<ul>
-									<li>Defined in objects.ts:666</li>
+									<li>Defined in objects.ts:678</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -343,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/pipeline.ts:271</li>
+									<li>Defined in plugins/pipeline.ts:305</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.deployplugininfo.html" class="tsd-signature-type">DeployPluginInfo</a></h4>
@@ -361,7 +384,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#oncancelling">onCancelling</a></p>
 								<ul>
-									<li>Defined in objects.ts:191</li>
+									<li>Defined in objects.ts:195</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -379,6 +402,30 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.deployworkspaceoptions.html" class="tsd-signature-type">DeployWorkspaceOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+					<a name="onconfigreloaded" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Config<wbr>Reloaded</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Config<wbr>Reloaded<span class="tsd-signature-symbol">(</span>cfg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deployconfiguration.html" class="tsd-signature-type">DeployConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#onconfigreloaded">onConfigReloaded</a></p>
+								<ul>
+									<li>Defined in plugins/pipeline.ts:311</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cfg: <a href="../interfaces/_contracts_.deployconfiguration.html" class="tsd-signature-type">DeployConfiguration</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -411,6 +458,12 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="_plugins_pipeline_.pipelineplugin.html#_context" class="tsd-kind-icon">_context</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_pipeline_.pipelineplugin.html#_globalstate" class="tsd-kind-icon">_global<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_pipeline_.pipelineplugin.html#_scriptstates" class="tsd-kind-icon">_script<wbr>States</a>
+							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_pipeline_.pipelineplugin.html#context" class="tsd-kind-icon">context</a>
 							</li>
@@ -431,6 +484,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="_plugins_pipeline_.pipelineplugin.html#oncancelling" class="tsd-kind-icon">on<wbr>Cancelling</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_pipeline_.pipelineplugin.html#onconfigreloaded" class="tsd-kind-icon">on<wbr>Config<wbr>Reloaded</a>
 							</li>
 						</ul>
 					</li>

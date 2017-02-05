@@ -117,10 +117,12 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_quick_deploy_status_item" class="tsd-kind-icon">_QUICK_<wbr>DEPLOY_<wbr>STATUS_<wbr>ITEM</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_config" class="tsd-kind-icon">_config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_filesystemwatcher" class="tsd-kind-icon">_file<wbr>System<wbr>Watcher</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_globalscriptoperationstate" class="tsd-kind-icon">_global<wbr>Script<wbr>Operation<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_host" class="tsd-kind-icon">_host</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_isdeployonchangeenabled" class="tsd-kind-icon">_is<wbr>Deploy<wbr>OnChange<wbr>Enabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_isdeployonsaveenabled" class="tsd-kind-icon">_is<wbr>Deploy<wbr>OnSave<wbr>Enabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_plugins" class="tsd-kind-icon">_plugins</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_scriptoperationstates" class="tsd-kind-icon">_script<wbr>Operation<wbr>States</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#_serverstatusitem" class="tsd-kind-icon">_server<wbr>Status<wbr>Item</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_deploy_.deployer.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
@@ -211,7 +213,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:111</li>
+									<li>Defined in deploy.ts:119</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -319,7 +321,7 @@
 					<div class="tsd-signature tsd-kind-icon">_OUTPUT_<wbr>CHANNEL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OutputChannel</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:95</li>
+							<li>Defined in deploy.ts:99</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -334,7 +336,7 @@
 					<div class="tsd-signature tsd-kind-icon">_PACKAGE_<wbr>FILE<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:99</li>
+							<li>Defined in deploy.ts:103</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -349,7 +351,7 @@
 					<div class="tsd-signature tsd-kind-icon">_QUICK_<wbr>DEPLOY_<wbr>STATUS_<wbr>ITEM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StatusBarItem</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:107</li>
+							<li>Defined in deploy.ts:111</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -389,12 +391,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_globalscriptoperationstate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _global<wbr>Script<wbr>Operation<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">_global<wbr>Script<wbr>Operation<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in deploy.ts:83</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The global state value for deploy operation scripts.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_host" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _host</h3>
 					<div class="tsd-signature tsd-kind-icon">_host<span class="tsd-signature-symbol">:</span> <a href="_host_.deployhost.html" class="tsd-signature-type">DeployHost</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:83</li>
+							<li>Defined in deploy.ts:87</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -409,7 +426,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Deploy<wbr>OnChange<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:87</li>
+							<li>Defined in deploy.ts:91</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -424,7 +441,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Deploy<wbr>OnSave<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:91</li>
+							<li>Defined in deploy.ts:95</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -439,7 +456,7 @@
 					<div class="tsd-signature tsd-kind-icon">_plugins<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_contracts_.deploypluginwithcontext.html" class="tsd-signature-type">DeployPluginWithContext</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:103</li>
+							<li>Defined in deploy.ts:107</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -449,12 +466,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_scriptoperationstates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _script<wbr>Operation<wbr>States</h3>
+					<div class="tsd-signature tsd-kind-icon">_script<wbr>Operation<wbr>States<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in deploy.ts:115</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The states values for deploy operation scripts.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_serverstatusitem" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _server<wbr>Status<wbr>Item</h3>
 					<div class="tsd-signature tsd-kind-icon">_server<wbr>Status<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StatusBarItem</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in deploy.ts:111</li>
+							<li>Defined in deploy.ts:119</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -487,7 +519,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:281</li>
+									<li>Defined in deploy.ts:289</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -509,7 +541,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:288</li>
+									<li>Defined in deploy.ts:296</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -531,7 +563,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1936</li>
+									<li>Defined in deploy.ts:1990</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -553,7 +585,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2362</li>
+									<li>Defined in deploy.ts:2436</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -575,7 +607,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2369</li>
+									<li>Defined in deploy.ts:2443</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -597,7 +629,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2376</li>
+									<li>Defined in deploy.ts:2450</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -619,7 +651,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2384</li>
+									<li>Defined in deploy.ts:2458</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -671,7 +703,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:145</li>
+									<li>Defined in deploy.ts:153</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -709,7 +741,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:211</li>
+									<li>Defined in deploy.ts:219</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -747,7 +779,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:272</li>
+									<li>Defined in deploy.ts:280</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -769,7 +801,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:297</li>
+									<li>Defined in deploy.ts:305</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -800,7 +832,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:343</li>
+									<li>Defined in deploy.ts:369</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -828,7 +860,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:401</li>
+									<li>Defined in deploy.ts:427</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -860,7 +892,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:622</li>
+									<li>Defined in deploy.ts:648</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -891,7 +923,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:685</li>
+									<li>Defined in deploy.ts:711</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -913,7 +945,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:832</li>
+									<li>Defined in deploy.ts:858</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -951,7 +983,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1124</li>
+									<li>Defined in deploy.ts:1150</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -979,7 +1011,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1174</li>
+									<li>Defined in deploy.ts:1200</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1030,7 +1062,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1190</li>
+									<li>Defined in deploy.ts:1216</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1089,7 +1121,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1199</li>
+									<li>Defined in deploy.ts:1225</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1111,7 +1143,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1262</li>
+									<li>Defined in deploy.ts:1288</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1143,7 +1175,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1300</li>
+									<li>Defined in deploy.ts:1326</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1185,7 +1217,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1316</li>
+									<li>Defined in deploy.ts:1342</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1208,7 +1240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1345</li>
+									<li>Defined in deploy.ts:1371</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1231,7 +1263,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1376</li>
+									<li>Defined in deploy.ts:1402</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1263,7 +1295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1420</li>
+									<li>Defined in deploy.ts:1446</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1313,7 +1345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1822</li>
+									<li>Defined in deploy.ts:1876</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1335,7 +1367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1829</li>
+									<li>Defined in deploy.ts:1883</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1407,7 +1439,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1923</li>
+									<li>Defined in deploy.ts:1977</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1469,7 +1501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1944</li>
+									<li>Defined in deploy.ts:1998</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1491,7 +1523,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1957</li>
+									<li>Defined in deploy.ts:2011</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1522,7 +1554,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1970</li>
+									<li>Defined in deploy.ts:2024</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1544,7 +1576,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1979</li>
+									<li>Defined in deploy.ts:2033</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1566,7 +1598,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1989</li>
+									<li>Defined in deploy.ts:2043</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1600,7 +1632,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2138</li>
+									<li>Defined in deploy.ts:2212</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1631,7 +1663,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2157</li>
+									<li>Defined in deploy.ts:2231</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1695,7 +1727,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2223</li>
+									<li>Defined in deploy.ts:2297</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1717,7 +1749,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2353</li>
+									<li>Defined in deploy.ts:2427</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1793,7 +1825,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2391</li>
+									<li>Defined in deploy.ts:2465</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1815,7 +1847,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2523</li>
+									<li>Defined in deploy.ts:2597</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1837,7 +1869,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2652</li>
+									<li>Defined in deploy.ts:2726</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1859,7 +1891,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2812</li>
+									<li>Defined in deploy.ts:2886</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1881,7 +1913,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2868</li>
+									<li>Defined in deploy.ts:2949</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1984,7 +2016,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3036</li>
+									<li>Defined in deploy.ts:3117</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2006,7 +2038,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3077</li>
+									<li>Defined in deploy.ts:3158</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2028,7 +2060,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3084</li>
+									<li>Defined in deploy.ts:3165</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2050,7 +2082,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3150</li>
+									<li>Defined in deploy.ts:3231</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2152,6 +2184,9 @@
 								<a href="_deploy_.deployer.html#_filesystemwatcher" class="tsd-kind-icon">_file<wbr>System<wbr>Watcher</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_deploy_.deployer.html#_globalscriptoperationstate" class="tsd-kind-icon">_global<wbr>Script<wbr>Operation<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_deploy_.deployer.html#_host" class="tsd-kind-icon">_host</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
@@ -2162,6 +2197,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_deploy_.deployer.html#_plugins" class="tsd-kind-icon">_plugins</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_deploy_.deployer.html#_scriptoperationstates" class="tsd-kind-icon">_script<wbr>Operation<wbr>States</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_deploy_.deployer.html#_serverstatusitem" class="tsd-kind-icon">_server<wbr>Status<wbr>Item</a>

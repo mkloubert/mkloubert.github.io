@@ -99,6 +99,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_pipeline_.deploytargetpipeline.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_pipeline_.deploytargetpipeline.html#deployed" class="tsd-kind-icon">deployed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_pipeline_.deploytargetpipeline.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_pipeline_.deploytargetpipeline.html#globalstate" class="tsd-kind-icon">global<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_pipeline_.deploytargetpipeline.html#hideif" class="tsd-kind-icon">hide<wbr>If</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_pipeline_.deploytargetpipeline.html#isfor" class="tsd-kind-icon">is<wbr>For</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_pipeline_.deploytargetpipeline.html#mappings" class="tsd-kind-icon">mappings</a></li>
@@ -107,6 +108,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_pipeline_.deploytargetpipeline.html#script" class="tsd-kind-icon">script</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_pipeline_.deploytargetpipeline.html#showif" class="tsd-kind-icon">show<wbr>If</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_pipeline_.deploytargetpipeline.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_pipeline_.deploytargetpipeline.html#state" class="tsd-kind-icon">state</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_pipeline_.deploytargetpipeline.html#target" class="tsd-kind-icon">target</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_pipeline_.deploytargetpipeline.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
@@ -123,7 +125,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#beforedeploy">beforeDeploy</a></p>
 						<ul>
-							<li>Defined in contracts.ts:993</li>
+							<li>Defined in contracts.ts:1008</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -140,7 +142,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#deployed">deployed</a></p>
 						<ul>
-							<li>Defined in contracts.ts:998</li>
+							<li>Defined in contracts.ts:1013</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -157,12 +159,28 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#description">description</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1002</li>
+							<li>Defined in contracts.ts:1017</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The description.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="globalstate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> global<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">global<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/pipeline.ts:42</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A state value for the ALL scripts that exists while the
+							current session.</p>
 						</div>
 					</div>
 				</section>
@@ -173,7 +191,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#hideif">hideIf</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1007</li>
+							<li>Defined in contracts.ts:1022</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -190,7 +208,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#isfor">isFor</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1011</li>
+							<li>Defined in contracts.ts:1026</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -206,7 +224,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#mappings">mappings</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1015</li>
+							<li>Defined in contracts.ts:1030</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -222,7 +240,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#name">name</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1019</li>
+							<li>Defined in contracts.ts:1034</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -237,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/pipeline.ts:41</li>
+							<li>Defined in plugins/pipeline.ts:46</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -252,7 +270,7 @@
 					<div class="tsd-signature tsd-kind-icon">script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/pipeline.ts:45</li>
+							<li>Defined in plugins/pipeline.ts:50</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -268,7 +286,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#showif">showIf</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1024</li>
+							<li>Defined in contracts.ts:1039</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -285,7 +303,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.sortable.html">Sortable</a>.<a href="_contracts_.sortable.html#sortorder">sortOrder</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1471</li>
+							<li>Defined in contracts.ts:1486</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -295,12 +313,28 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="state" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> state</h3>
+					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/pipeline.ts:55</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A state value for the current script that exists while the
+							current session.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="target" class="tsd-anchor"></a>
 					<h3>target</h3>
 					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/pipeline.ts:49</li>
+							<li>Defined in plugins/pipeline.ts:59</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -316,7 +350,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#type">type</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1028</li>
+							<li>Defined in contracts.ts:1043</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -357,6 +391,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_plugins_pipeline_.deploytargetpipeline.html#description" class="tsd-kind-icon">description</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_plugins_pipeline_.deploytargetpipeline.html#globalstate" class="tsd-kind-icon">global<wbr>State</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_plugins_pipeline_.deploytargetpipeline.html#hideif" class="tsd-kind-icon">hide<wbr>If</a>
 							</li>
@@ -380,6 +417,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_plugins_pipeline_.deploytargetpipeline.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_plugins_pipeline_.deploytargetpipeline.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_plugins_pipeline_.deploytargetpipeline.html#target" class="tsd-kind-icon">target</a>

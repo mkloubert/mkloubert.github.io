@@ -1,0 +1,386 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>vs-rest-api</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">vs-rest-api</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> vs-rest-api</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 id="vs-rest-api">vs-rest-api</h1>
+				<p>A <a href="https://code.visualstudio.com/">Visual Studio Code</a> (VS Code) extension that provides a REST API to control your editor.</p>
+				<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=9J3ZR95RJE2BA"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a> <a href="https://flattr.com/submit/auto?fid=o62pkd&amp;url=https%3A%2F%2Fgithub.com%2Fmkloubert%2Fvs-rest-api"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt=""></a></p>
+				<h2 id="table-of-contents">Table of contents</h2>
+				<ol>
+					<li><a href="#install-">Install</a></li>
+					<li><a href="#how-to-use-">How to use</a><ul>
+							<li><a href="#settings-">Settings</a><pre><code><span class="hljs-bullet">* </span>[<span class="hljs-string">Users</span>](<span class="hljs-link">#users-</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">HTTPs</span>](<span class="hljs-link">#https-</span>)
+</code></pre></li>
+							<li><a href="#build-in-endpoints-">Build-in endpoints</a><pre><code><span class="hljs-bullet">* </span>[<span class="hljs-string">Workspace</span>](<span class="hljs-link">#workspace-</span>)
+<span class="hljs-bullet">* </span>[<span class="hljs-string">Editor</span>](<span class="hljs-link">#editor-</span>)
+</code></pre></li>
+							<li><a href="#custom-endpoints-">Custom endpoints</a></li>
+						</ul>
+					</li>
+				</ol>
+				<h2 id="install-uarr-table-of-contents-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter:</p>
+				<pre><code class="lang-bash">ext install vs-rest-api
+</code></pre>
+				<p>Or search for things like <code>vs-deploy</code> in your editor.</p>
+				<h2 id="how-to-use-uarr-table-of-contents-">How to use [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="settings-uarr-how-to-use-">Settings [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Open (or create) your <code>settings.json</code> in your <code>.vscode</code> subfolder of your workspace.</p>
+				<p>Add a <code>deploy</code> section:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"rest.api"</span>: {
+        <span class="hljs-attr">"autoStart"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"openInBrowser"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"port"</span>: <span class="hljs-number">1781</span>
+    }
+}
+</code></pre>
+				<p>This example will run the host on port <code>1781</code> on startup and opens the URL <code>https://localhost:1781/</code> in your default application, like your browser.</p>
+				<h4 id="users-uarr-settings-">Users [<a href="#settings-">&uarr;</a>]</h4>
+				<p>By default anyone can access the API with read-only access.</p>
+				<p>You can define one or more users, that can access the API via <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic Authentification</a>: </p>
+				<pre><code class="lang-json">{
+    &quot;rest.api&quot;: {
+        // ...
+
+        &quot;guest&quot;: false,
+        &quot;users&quot;: [
+            {
+                &quot;name&quot;: &quot;mkloubert&quot;,
+                &quot;password&quot;: &quot;P@sswort123!&quot;
+            },
+            {
+                &quot;name&quot;: &quot;jlpicard&quot;,
+                &quot;password&quot;: &quot;NCC-1701-D&quot;
+            },
+            {
+                &quot;name&quot;: &quot;neo&quot;,
+                &quot;password&quot;: &quot;Follow_the_white_rabbit&quot;
+            }
+        ]
+    }
+}
+</code></pre>
+				<p>By default any user (and guest) have read-only access.</p>
+				<h4 id="https-uarr-settings-">HTTPs [<a href="#settings-">&uarr;</a>]</h4>
+				<p>For secure access, you can define a SSL certificate:</p>
+				<pre><code class="lang-json">{
+    &quot;rest.api&quot;: {
+        // ...
+
+        &quot;ssl&quot;: {
+            &quot;cert&quot;: &quot;./api-host.crt&quot;,
+            &quot;key&quot;: &quot;./api-host.key&quot;
+        }
+    }
+}
+</code></pre>
+				<h3 id="build-in-endpoints-uarr-how-to-use-">Build-in endpoints [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<h4 id="workspace-uarr-build-in-endpoints-">Workspace [<a href="#build-in-endpoints-">&uarr;</a>]</h4>
+				<h5 id="-get-api-workspace-path-">[GET] /api/workspace{/path}</h5>
+				<p>Lists a directory inside the workspace or returns the content of a file:</p>
+				<pre><code>GET <span class="hljs-regexp">/api/</span>workspace
+</code></pre><p>This will list the root root directory of your workspace. A possible result can be:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"data"</span>: {
+        <span class="hljs-attr">"dirs"</span>: [
+            {
+                <span class="hljs-attr">"creationTime"</span>: <span class="hljs-string">"2017-01-22T14:26:56.482Z"</span>,
+                <span class="hljs-attr">"lastChangeTime"</span>: <span class="hljs-string">"2017-01-22T14:27:26.147Z"</span>,
+                <span class="hljs-attr">"lastModifiedTime"</span>: <span class="hljs-string">"2017-01-22T14:26:56.488Z"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"css"</span>,
+                <span class="hljs-attr">"path"</span>: <span class="hljs-string">"/api/workspace/css"</span>,
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"dir"</span>
+            },
+            {
+                <span class="hljs-attr">"creationTime"</span>: <span class="hljs-string">"2017-01-22T14:26:56.888Z"</span>,
+                <span class="hljs-attr">"lastChangeTime"</span>: <span class="hljs-string">"2017-01-22T14:27:26.152Z"</span>,
+                <span class="hljs-attr">"lastModifiedTime"</span>: <span class="hljs-string">"2017-01-22T14:26:56.908Z"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"js"</span>,
+                <span class="hljs-attr">"path"</span>: <span class="hljs-string">"/api/workspace/js"</span>,
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"dir"</span>
+            },
+            {
+                <span class="hljs-attr">"creationTime"</span>: <span class="hljs-string">"2017-01-22T14:26:26.631Z"</span>,
+                <span class="hljs-attr">"lastChangeTime"</span>: <span class="hljs-string">"2017-01-22T14:26:27.005Z"</span>,
+                <span class="hljs-attr">"lastModifiedTime"</span>: <span class="hljs-string">"2017-01-22T14:26:26.669Z"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"_res"</span>,
+                <span class="hljs-attr">"path"</span>: <span class="hljs-string">"/api/workspace/_res"</span>,
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"dir"</span>
+            }
+        ],
+        <span class="hljs-attr">"files"</span>: [
+            {
+                <span class="hljs-attr">"creationTime"</span>: <span class="hljs-string">"2017-01-22T14:27:47.902Z"</span>,
+                <span class="hljs-attr">"lastChangeTime"</span>: <span class="hljs-string">"2017-01-23T21:07:37.595Z"</span>,
+                <span class="hljs-attr">"lastModifiedTime"</span>: <span class="hljs-string">"2017-01-23T21:07:37.595Z"</span>,
+                <span class="hljs-attr">"mime"</span>: <span class="hljs-string">"application/octet-stream"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"index.php"</span>,
+                <span class="hljs-attr">"path"</span>: <span class="hljs-string">"/api/workspace/index.php"</span>,
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"file"</span>
+            },
+            {
+                <span class="hljs-attr">"creationTime"</span>: <span class="hljs-string">"2017-02-01T23:58:54.173Z"</span>,
+                <span class="hljs-attr">"lastChangeTime"</span>: <span class="hljs-string">"2017-02-04T20:17:12.811Z"</span>,
+                <span class="hljs-attr">"lastModifiedTime"</span>: <span class="hljs-string">"2017-02-04T20:17:12.811Z"</span>,
+                <span class="hljs-attr">"mime"</span>: <span class="hljs-string">"text/html"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"test.html"</span>,
+                <span class="hljs-attr">"path"</span>: <span class="hljs-string">"/api/workspace/test.html"</span>,
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"file"</span>
+            }
+        ]
+    }
+}
+</code></pre>
+				<p>You also can define an additional path argument to the endpoint that can list a sub directory or return the content of a file:</p>
+				<pre><code>GET <span class="hljs-regexp">/api/</span>workspace<span class="hljs-regexp">/test.php</span>
+</code></pre><p>If the result is a file or a directory can be checked by the HTTP response header value <code>X-Vscode-Restapi-Type</code>, which can be <code>directory</code> or <code>file</code>.</p>
+				<h5 id="-post-api-workspace-file-">[POST] /api/workspace{/file}</h5>
+				<p>Opens a text editor of the given file inside VS Code:</p>
+				<pre><code><span class="hljs-keyword">POST</span> /api/workspace/<span class="hljs-keyword">test</span>.html
+</code></pre><p><img src="https://raw.githubusercontent.com/mkloubert/vs-rest-api/master/demos/demo1.gif" alt="Demo Open file in editor"></p>
+				<h4 id="editor-uarr-build-in-endpoints-">Editor [<a href="#build-in-endpoints-">&uarr;</a>]</h4>
+				<h5 id="-get-api-editor">[GET] /api/editor</h5>
+				<p>Returns information about the active text editor:</p>
+				<pre><code>GET <span class="hljs-regexp">/api/</span>editor
+</code></pre><p>Possible result:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"code"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"data"</span>: {
+        <span class="hljs-attr">"content"</span>: <span class="hljs-string">"&lt;html&gt;\r\n    \r\nHello, guys!\r\n\r\nThis file is currently edited!\r\n\r\n&lt;/html&gt;"</span>,
+        <span class="hljs-attr">"file"</span>: {
+            <span class="hljs-attr">"mime"</span>: <span class="hljs-string">"text/html"</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"test.html"</span>,
+            <span class="hljs-attr">"path"</span>: <span class="hljs-string">"/api/workspace/test.html"</span>
+        },
+        <span class="hljs-attr">"isDirty"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"isUntitled"</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-attr">"lang"</span>: <span class="hljs-string">"html"</span>,
+        <span class="hljs-attr">"lines"</span>: <span class="hljs-number">7</span>
+    }
+}
+</code></pre>
+				<p>If no editor is currently opened, a <code>404</code> response will be returned.</p>
+				<h3 id="custom-endpoints-uarr-how-to-use-">Custom endpoints [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>You can define custom endpoints that are executed via script.</p>
+				<p>Define one ore more regular expressions in your <a href="#settings-">settings</a> and the scripts that should be executed, if a patter matches:</p>
+				<pre><code class="lang-json">{
+    &quot;rest.api&quot;: {
+        // ...
+
+        &quot;enpoints&quot;: {
+            &quot;myendpoint&quot;: {
+                &quot;script&quot;: &quot;./my-endpoint.js&quot;
+            }
+        }
+    }
+}
+</code></pre>
+				<p>The <code>./my-endpoint.js</code> must contain a public function with the name of the current HTTP request method (lower case).</p>
+				<p>For example if you want to make a simple <code>GET</code> request</p>
+				<pre><code>GET <span class="hljs-regexp">/api/my</span>endpoint
+</code></pre><p>your script should look like this:</p>
+				<pre><code class="lang-javascript">exports.get = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+    <span class="hljs-comment">// do the magic here</span>
+}
+</code></pre>
+				<p>You are also able to define functions for other request methods, like <code>POST</code> or <code>DELETE</code>:</p>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// [FOO]  /api/myendpoint</span>
+exports.foo = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+    <span class="hljs-comment">// for custom request methods</span>
+}
+
+<span class="hljs-comment">// [DELETE]  /api/myendpoint</span>
+exports.delete = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+        <span class="hljs-comment">// for async executions</span>
+    });
+}
+
+<span class="hljs-comment">// [POST]  /api/myendpoint</span>
+exports.post = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+    <span class="hljs-comment">// no (promise) result means: sync execution</span>
+}
+</code></pre>
+				<p>HINT: Custom endpoints will always overwrite build-in ones!</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_editor_.html">"api/editor"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_workspace_.html">"api/workspace"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_contracts_.html">"contracts"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_controller_.html">"controller"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_helpers_.html">"helpers"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_host_.html">"host"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_host_dirs_.html">"host/dirs"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_host_files_.html">"host/files"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_host_helpers_.html">"host/helpers"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_host_users_.html">"host/users"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_i18_.html">"i18"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

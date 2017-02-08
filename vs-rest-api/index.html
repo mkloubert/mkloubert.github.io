@@ -78,6 +78,7 @@
 <span class="hljs-bullet">* </span>[<span class="hljs-string">Editor</span>](<span class="hljs-link">#editor-</span>)
 </code></pre></li>
 							<li><a href="#custom-endpoints-">Custom endpoints</a></li>
+							<li><a href="#commands-">Commands</a></li>
 						</ul>
 					</li>
 				</ol>
@@ -234,7 +235,8 @@
 
         &quot;enpoints&quot;: {
             &quot;myendpoint&quot;: {
-                &quot;script&quot;: &quot;./my-endpoint.js&quot;
+                &quot;script&quot;: &quot;./my-endpoint.js&quot;,
+                &quot;options&quot;: &quot;Hello!&quot;
             }
         }
     }
@@ -245,9 +247,67 @@
 				<pre><code>GET <span class="hljs-regexp">/api/my</span>endpoint
 </code></pre><p>your script should look like this:</p>
 				<pre><code class="lang-javascript">exports.get = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
-    <span class="hljs-comment">// do the magic here</span>
+    <span class="hljs-comment">// access VS Code API (s. https://code.visualstudio.com/Docs/extensionAPI/vscode-api)</span>
+    <span class="hljs-keyword">var</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
+
+    <span class="hljs-comment">// access NodeJS API provided by VS Code</span>
+    <span class="hljs-comment">// s.  (s. https://nodejs.org/api/)</span>
+    <span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+    <span class="hljs-comment">// access an own module</span>
+    <span class="hljs-keyword">var</span> myModule = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./my-module.js'</span>);
+
+    <span class="hljs-comment">// access a module used by the extension:</span>
+    <span class="hljs-comment">// s. https://mkloubert.github.io/vs-rest-api/modules/_helpers_.html</span>
+    <span class="hljs-keyword">var</span> helpers = args.require(<span class="hljs-string">'./helpers'</span>);
+    <span class="hljs-comment">// s. https://mkloubert.github.io/vs-rest-api/modules/_host_helpers_.html</span>
+    <span class="hljs-keyword">var</span> hostHelpers = args.require(<span class="hljs-string">'./host/helpers'</span>);
+
+    <span class="hljs-comment">// access a module that is part of the extentsion</span>
+    <span class="hljs-comment">// s. https://github.com/mkloubert/vs-rest-api/blob/master/package.json</span>
+    <span class="hljs-keyword">var</span> glob = args.require(<span class="hljs-string">'glob'</span>);
+
+    <span class="hljs-comment">// access the data from the settings</span>
+    <span class="hljs-comment">// from the example above this is: "Hello!"</span>
+    <span class="hljs-keyword">var</span> opts = args.options;
+
+    <span class="hljs-comment">// share / store data (while current session)...</span>
+    <span class="hljs-comment">// ... for this script</span>
+    <span class="hljs-keyword">var</span> myState = args.state;
+    args.state = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+    <span class="hljs-comment">// ... with other scripts of this type</span>
+    args.globalState[<span class="hljs-string">'myEndpoint'</span>] = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+    <span class="hljs-comment">// ... with the whole workspace</span>
+    args.workspaceState[<span class="hljs-string">'myEndpoint'</span>] = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+
+    <span class="hljs-comment">// if you want to return an AJAX response object:</span>
+    <span class="hljs-comment">// s. https://mkloubert.github.io/vs-rest-api/interfaces/_contracts_.apiresponse.html</span>
+    {
+        args.response.code = <span class="hljs-number">666</span>;  <span class="hljs-comment">// the response code (not the HTTP response code!)</span>
+        args.response.msg = <span class="hljs-string">'Result of the evil!'</span>;  <span class="hljs-comment">// a custom message for more information</span>
+        args.response.data = {
+            <span class="hljs-string">'mk'</span>: <span class="hljs-number">23979</span>,
+            <span class="hljs-string">'TM'</span>: <span class="hljs-string">'5979'</span>
+        };
+    }
+
+    <span class="hljs-comment">// if you want to return custom content</span>
+    <span class="hljs-comment">// instead of the object in 'args.response'</span>
+    <span class="hljs-comment">// s. https://mkloubert.github.io/vs-rest-api/interfaces/_contracts_.apimethodarguments.html#setcontent</span>
+    {
+        <span class="hljs-keyword">var</span> html = fs.readFileSync(<span class="hljs-string">'/path/to/my/file.html'</span>);
+
+        args.setContent(html, <span class="hljs-string">'text/html'</span>);
+    }
+
+    <span class="hljs-comment">// custom HTTP status code</span>
+    args.statusCode = <span class="hljs-number">202</span>;
+
+    <span class="hljs-comment">// ...</span>
 }
 </code></pre>
+				<p>The <code>args</code> parameter of the function uses the <a href="https://mkloubert.github.io/vs-rest-api/interfaces/_contracts_.apimethodarguments.html">ApiMethodArguments</a> interface.</p>
+				<p>You can return a <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a> for async executions or nothing for sync executions (as in this example).</p>
 				<p>You are also able to define functions for other request methods, like <code>POST</code> or <code>DELETE</code>:</p>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// [FOO]  /api/myendpoint</span>
 exports.foo = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
@@ -258,6 +318,17 @@ exports.foo = <span class="hljs-function"><span class="hljs-keyword">function</s
 exports.delete = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
         <span class="hljs-comment">// for async executions</span>
+
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">// ...</span>
+
+            resolve();  <span class="hljs-comment">// MUST be called at the end</span>
+                        <span class="hljs-comment">// on SUCCESS</span>
+        }
+        <span class="hljs-keyword">catch</span> (e) {
+            reject(e);  <span class="hljs-comment">// MUST be called at the end</span>
+                        <span class="hljs-comment">// on ERROR</span>
+        }
     });
 }
 
@@ -267,6 +338,35 @@ exports.post = <span class="hljs-function"><span class="hljs-keyword">function</
 }
 </code></pre>
 				<p>HINT: Custom endpoints will always overwrite build-in ones!</p>
+				<h3 id="commands-uarr-how-to-use-">Commands [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Press <code>F1</code> to open the list of commands and select one of the following commands:</p>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-rest-api/master/demos/demo2.gif" alt="Demo How to execute"></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+							<th>ID</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>REST API: Starts or stops the api server</code></td>
+							<td>Toggles the state of the API&#39;s HTTP server.</td>
+							<td><code>extension.restApi.toggleHostState</code></td>
+						</tr>
+						<tr>
+							<td><code>REST API: (Re)start the api server</code></td>
+							<td>(Re-)Starts the API&#39;s HTTP server.</td>
+							<td><code>extension.restApi.startHost</code></td>
+						</tr>
+						<tr>
+							<td><code>REST API: Stop the api server</code></td>
+							<td>Stops the API.</td>
+							<td><code>extension.restApi.stopHost</code></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -274,6 +374,9 @@ exports.post = <span class="hljs-function"><span class="hljs-keyword">function</
 				<ul>
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_commands_.html">"api/commands"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_api_editor_.html">"api/editor"</a>

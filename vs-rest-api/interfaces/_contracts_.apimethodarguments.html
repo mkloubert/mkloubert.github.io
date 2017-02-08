@@ -99,6 +99,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#compress" class="tsd-kind-icon">compress</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#content" class="tsd-kind-icon">content</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#encoding" class="tsd-kind-icon">encoding</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#getbody" class="tsd-kind-icon">get<wbr>Body</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.apimethodarguments.html#globalstate" class="tsd-kind-icon">global<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.apimethodarguments.html#globals" class="tsd-kind-icon">globals</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#headers" class="tsd-kind-icon">headers</a></li>
@@ -107,6 +108,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#request" class="tsd-kind-icon">request</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.apimethodarguments.html#require" class="tsd-kind-icon">require</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#response" class="tsd-kind-icon">response</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#senderror" class="tsd-kind-icon">send<wbr>Error</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#sendmethodnotallowed" class="tsd-kind-icon">send<wbr>Method<wbr>Not<wbr>Allowed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#sendnotfound" class="tsd-kind-icon">send<wbr>Not<wbr>Found</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#setcontent" class="tsd-kind-icon">set<wbr>Content</a></li>
@@ -114,6 +116,12 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#statuscode" class="tsd-kind-icon">status<wbr>Code</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.apimethodarguments.html#workspacestate" class="tsd-kind-icon">workspace<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#write" class="tsd-kind-icon">write</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="_contracts_.apimethodarguments.html#getjson" class="tsd-kind-icon">getJSON</a></li>
 							</ul>
 						</section>
 					</div>
@@ -127,7 +135,7 @@
 					<div class="tsd-signature tsd-kind-icon">compress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:93</li>
+							<li>Defined in contracts.ts:94</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -142,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:97</li>
+							<li>Defined in contracts.ts:98</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -157,13 +165,48 @@
 					<div class="tsd-signature tsd-kind-icon">encoding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:101</li>
+							<li>Defined in contracts.ts:102</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The text encoding to use.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="getbody" class="tsd-anchor"></a>
+					<h3>get<wbr>Body</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:108</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the body.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>returns</dt>
+							<dd><p>The promise.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -173,7 +216,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalstate">globalState</a></p>
 						<ul>
-							<li>Defined in contracts.ts:365</li>
+							<li>Defined in contracts.ts:411</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -189,7 +232,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globals">globals</a></p>
 						<ul>
-							<li>Defined in contracts.ts:361</li>
+							<li>Defined in contracts.ts:407</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -204,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:105</li>
+							<li>Defined in contracts.ts:120</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -227,7 +270,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:109</li>
+							<li>Defined in contracts.ts:124</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -242,7 +285,7 @@
 					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:113</li>
+							<li>Defined in contracts.ts:128</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -257,7 +300,7 @@
 					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <a href="_contracts_.requestcontext.html" class="tsd-signature-type">RequestContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:117</li>
+							<li>Defined in contracts.ts:132</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -273,7 +316,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#require">require</a></p>
 						<ul>
-							<li>Defined in contracts.ts:369</li>
+							<li>Defined in contracts.ts:415</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -309,7 +352,7 @@
 					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <a href="_contracts_.apiresponse.html" class="tsd-signature-type">ApiResponse</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:121</li>
+							<li>Defined in contracts.ts:136</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -319,12 +362,55 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="senderror" class="tsd-anchor"></a>
+					<h3>send<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">send<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:144</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Sends an error response.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The error.</p>
+							</dd>
+							<dt>chainable</dt>
+							<dd></dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>err: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="sendmethodnotallowed" class="tsd-anchor"></a>
 					<h3>send<wbr>Method<wbr>Not<wbr>Allowed</h3>
 					<div class="tsd-signature tsd-kind-icon">send<wbr>Method<wbr>Not<wbr>Allowed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:127</li>
+							<li>Defined in contracts.ts:150</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -358,7 +444,7 @@
 					<div class="tsd-signature tsd-kind-icon">send<wbr>Not<wbr>Found<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:133</li>
+							<li>Defined in contracts.ts:156</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -392,7 +478,7 @@
 					<div class="tsd-signature tsd-kind-icon">set<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:142</li>
+							<li>Defined in contracts.ts:165</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -442,7 +528,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#state">state</a></p>
 						<ul>
-							<li>Defined in contracts.ts:373</li>
+							<li>Defined in contracts.ts:419</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -457,7 +543,7 @@
 					<div class="tsd-signature tsd-kind-icon">status<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:146</li>
+							<li>Defined in contracts.ts:169</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -473,7 +559,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#workspacestate">workspaceState</a></p>
 						<ul>
-							<li>Defined in contracts.ts:377</li>
+							<li>Defined in contracts.ts:423</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -488,7 +574,7 @@
 					<div class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:152</li>
+							<li>Defined in contracts.ts:175</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -523,12 +609,56 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+					<a name="getjson" class="tsd-anchor"></a>
+					<h3>getJSON</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">getJSON&lt;T&gt;<span class="tsd-signature-symbol">(</span>encoding<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in contracts.ts:116</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the body as parsed JSON object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> encoding: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The custom text encoding to use.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_api_commands_.html">"api/commands"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_api_editor_.html">"api/editor"</a>
@@ -587,6 +717,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.apimethodarguments.html#encoding" class="tsd-kind-icon">encoding</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.apimethodarguments.html#getbody" class="tsd-kind-icon">get<wbr>Body</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.apimethodarguments.html#globalstate" class="tsd-kind-icon">global<wbr>State</a>
 							</li>
@@ -612,6 +745,9 @@
 								<a href="_contracts_.apimethodarguments.html#response" class="tsd-kind-icon">response</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.apimethodarguments.html#senderror" class="tsd-kind-icon">send<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.apimethodarguments.html#sendmethodnotallowed" class="tsd-kind-icon">send<wbr>Method<wbr>Not<wbr>Allowed</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -632,6 +768,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.apimethodarguments.html#write" class="tsd-kind-icon">write</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+								<a href="_contracts_.apimethodarguments.html#getjson" class="tsd-kind-icon">getJSON</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -647,6 +786,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.popupbutton.html" class="tsd-kind-icon">Popup<wbr>Button</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.remoteclient.html" class="tsd-kind-icon">Remote<wbr>Client</a>
@@ -674,6 +816,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_contracts_.html#apimethod" class="tsd-kind-icon">Api<wbr>Method</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_contracts_.html#popupbuttonaction" class="tsd-kind-icon">Popup<wbr>Button<wbr>Action</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_contracts_.html#validator" class="tsd-kind-icon">Validator</a>

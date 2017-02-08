@@ -352,7 +352,7 @@
 }
 </code></pre>
 				<p>The <code>args</code> parameter of the function uses the <a href="https://mkloubert.github.io/vs-rest-api/interfaces/_contracts_.apimethodarguments.html">ApiMethodArguments</a> interface.</p>
-				<p>You can return a <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a> for async executions or nothing for sync executions (as in this example).</p>
+				<p>You can return a <a href="https://github.com/Microsoft/vscode-extension-vscode/blob/master/thenable.d.ts">Promise</a> for async executions or nothing for sync executions (as in this example).</p>
 				<p>You are also able to define functions for other request methods, like <code>POST</code> or <code>DELETE</code>:</p>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// [FOO]  /api/myendpoint</span>
 exports.foo = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{

@@ -79,7 +79,7 @@
 <span class="hljs-bullet">* </span>[<span class="hljs-string">Workspace</span>](<span class="hljs-link">#workspace-</span>)
 </code></pre></li>
 							<li><a href="#custom-endpoints-">Custom endpoints</a></li>
-							<li><a href="#commands-">Commands</a></li>
+							<li><a href="#commands--1">Commands</a></li>
 						</ul>
 					</li>
 				</ol>
@@ -167,10 +167,24 @@
     ]
 }
 </code></pre>
+				<p><a href="https://mkloubert.github.io/vs-rest-api/interfaces/_contracts_.account.html#canexecute">canExecute</a> property must be set to <code>(true)</code> for an user or guest in the <a href="#settings-">settings</a>, otherwise a <code>404</code> response is returned.</p>
 				<h5 id="-post-api-commands-commandid-">[POST] /api/commands/{commandId}</h5>
 				<p>Executes a command.</p>
 				<pre><code>POST /api/commands/editor<span class="hljs-selector-class">.action</span><span class="hljs-selector-class">.selectAll</span>
-</code></pre><h4 id="editor-uarr-build-in-endpoints-">Editor [<a href="#build-in-endpoints-">&uarr;</a>]</h4>
+</code></pre><p>If the command requires arguments, you can submit them as JSON array in the request body:</p>
+				<pre><code>POST /api/commands/myCommand
+
+[
+    <span class="hljs-string">'argument1'</span>,
+    <span class="hljs-number">2</span>,
+    <span class="hljs-literal">true</span>,
+    <span class="hljs-number">4.5</span>
+    <span class="hljs-literal">null</span>,
+    <span class="hljs-literal">undefined</span>,
+    <span class="hljs-literal">false</span>
+]
+</code></pre><p><a href="https://mkloubert.github.io/vs-rest-api/interfaces/_contracts_.account.html#canexecute">canExecute</a> property must be set to <code>(true)</code> for an user or guest in the <a href="#settings-">settings</a>, otherwise a <code>404</code> response is returned.</p>
+				<h4 id="editor-uarr-build-in-endpoints-">Editor [<a href="#build-in-endpoints-">&uarr;</a>]</h4>
 				<h5 id="-get-api-editor">[GET] /api/editor</h5>
 				<p>Returns information about the active text editor:</p>
 				<pre><code>GET <span class="hljs-regexp">/api/</span>editor
@@ -192,6 +206,11 @@
 }
 </code></pre>
 				<p>If no editor is currently opened, a <code>404</code> response will be returned.</p>
+				<h5 id="-post-api-editor-file-">[POST] /api/editor{/file}</h5>
+				<p>Opens a text editor of the given file inside VS Code:</p>
+				<pre><code><span class="hljs-keyword">POST</span> /api/editor/<span class="hljs-keyword">test</span>.html
+</code></pre><p><img src="https://raw.githubusercontent.com/mkloubert/vs-rest-api/master/demos/demo1.gif" alt="Demo Open file in editor"></p>
+				<p>If no file is defined, an untiled tab is opened.</p>
 				<h4 id="workspace-uarr-build-in-endpoints-">Workspace [<a href="#build-in-endpoints-">&uarr;</a>]</h4>
 				<h5 id="-get-api-workspace-path-">[GET] /api/workspace{/path}</h5>
 				<p>Lists a directory inside the workspace or returns the content of a file:</p>
@@ -251,11 +270,7 @@
 </code></pre>
 				<p>You also can define an additional path argument to the endpoint that can list a sub directory or return the content of a file:</p>
 				<pre><code>GET <span class="hljs-regexp">/api/</span>workspace<span class="hljs-regexp">/test.php</span>
-</code></pre><p>If the result is a file or a directory can be checked by the HTTP response header value <code>X-Vscode-Restapi-Type</code>, which can be <code>directory</code> or <code>file</code>.</p>
-				<h5 id="-post-api-workspace-file-">[POST] /api/workspace{/file}</h5>
-				<p>Opens a text editor of the given file inside VS Code:</p>
-				<pre><code><span class="hljs-keyword">POST</span> /api/workspace/<span class="hljs-keyword">test</span>.html
-</code></pre><p><img src="https://raw.githubusercontent.com/mkloubert/vs-rest-api/master/demos/demo1.gif" alt="Demo Open file in editor"></p>
+</code></pre><p>You can check if the result is a file or directory, if you read the HTTP response header value <code>X-Vscode-Restapi-Type</code>, which can be <code>directory</code> or <code>file</code>.</p>
 				<h3 id="custom-endpoints-uarr-how-to-use-">Custom endpoints [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>You can define custom endpoints that are executed via script.</p>
 				<p>Define one ore more regular expressions in your <a href="#settings-">settings</a> and the scripts that should be executed, if a patter matches:</p>

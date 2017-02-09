@@ -295,7 +295,7 @@
     <span class="hljs-comment">// access VS Code API (s. https://code.visualstudio.com/Docs/extensionAPI/vscode-api)</span>
     <span class="hljs-keyword">var</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
 
-    <span class="hljs-comment">// access NodeJS API provided by VS Code</span>
+    <span class="hljs-comment">// access Node.js API provided by VS Code</span>
     <span class="hljs-comment">// s.  (s. https://nodejs.org/api/)</span>
     <span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
 
@@ -353,13 +353,8 @@
 </code></pre>
 				<p>The <code>args</code> parameter of the function uses the <a href="https://mkloubert.github.io/vs-rest-api/interfaces/_contracts_.apimethodarguments.html">ApiMethodArguments</a> interface.</p>
 				<p>You can return a <a href="https://github.com/Microsoft/vscode-extension-vscode/blob/master/thenable.d.ts">Promise</a> for async executions or nothing for sync executions (as in this example).</p>
-				<p>You are also able to define functions for other request methods, like <code>POST</code> or <code>DELETE</code>:</p>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// [FOO]  /api/myendpoint</span>
-exports.FOO = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
-    <span class="hljs-comment">// for custom request methods</span>
-}
-
-<span class="hljs-comment">// [DELETE]  /api/myendpoint</span>
+				<p>You are also able to define functions for other request methods, like <code>POST</code> or <code>DELETE</code>, which are supported by <a href="https://nodejs.org/api/http.html">http</a> / <a href="https://nodejs.org/api/https.html">https</a> modules of <a href="https://nodejs.org/api/">Node.js</a>:</p>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// [DELETE]  /api/myendpoint</span>
 exports.DELETE = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
         <span class="hljs-comment">// for async executions</span>

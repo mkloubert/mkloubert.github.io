@@ -97,8 +97,10 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.account.html#___globals" class="tsd-kind-icon">___globals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.account.html#candelete" class="tsd-kind-icon">can<wbr>Delete</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.account.html#canexecute" class="tsd-kind-icon">can<wbr>Execute</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.account.html#canopen" class="tsd-kind-icon">can<wbr>Open</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.account.html#canwrite" class="tsd-kind-icon">can<wbr>Write</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.account.html#exclude" class="tsd-kind-icon">exclude</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.account.html#files" class="tsd-kind-icon">files</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.account.html#isactive" class="tsd-kind-icon">is<wbr>Active</a></li>
@@ -134,6 +136,21 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="candelete" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> can<wbr>Delete</h3>
+					<div class="tsd-signature tsd-kind-icon">can<wbr>Delete<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:45</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines if account is able to delete files or folders.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="canexecute" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> can<wbr>Execute</h3>
 					<div class="tsd-signature tsd-kind-icon">can<wbr>Execute<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
@@ -154,7 +171,7 @@
 					<div class="tsd-signature tsd-kind-icon">can<wbr>Open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:45</li>
+							<li>Defined in contracts.ts:53</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -164,12 +181,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="canwrite" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> can<wbr>Write</h3>
+					<div class="tsd-signature tsd-kind-icon">can<wbr>Write<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:57</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines if account has write access or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="exclude" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> exclude</h3>
 					<div class="tsd-signature tsd-kind-icon">exclude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:53</li>
+							<li>Defined in contracts.ts:61</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -184,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:57</li>
+							<li>Defined in contracts.ts:65</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -199,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:61</li>
+							<li>Defined in contracts.ts:69</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -214,7 +246,7 @@
 					<div class="tsd-signature tsd-kind-icon">with<wbr>Dot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:65</li>
+							<li>Defined in contracts.ts:73</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -280,10 +312,16 @@
 								<a href="_contracts_.account.html#___globals" class="tsd-kind-icon">___globals</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.account.html#candelete" class="tsd-kind-icon">can<wbr>Delete</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.account.html#canexecute" class="tsd-kind-icon">can<wbr>Execute</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.account.html#canopen" class="tsd-kind-icon">can<wbr>Open</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.account.html#canwrite" class="tsd-kind-icon">can<wbr>Write</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.account.html#exclude" class="tsd-kind-icon">exclude</a>
@@ -315,6 +353,15 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.directory.html" class="tsd-kind-icon">Directory</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.file.html" class="tsd-kind-icon">File</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.filesystemitem.html" class="tsd-kind-icon">File<wbr>System<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>

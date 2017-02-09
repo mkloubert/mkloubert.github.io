@@ -287,11 +287,11 @@
     }
 }
 </code></pre>
-				<p>The <code>./my-endpoint.js</code> must contain a public function with the name of the current HTTP request method (lower case).</p>
+				<p>The <code>./my-endpoint.js</code> must contain a public function with the name of the current HTTP request method (upper case).</p>
 				<p>For example if you want to make a simple <code>GET</code> request</p>
 				<pre><code>GET <span class="hljs-regexp">/api/my</span>endpoint
 </code></pre><p>your script should look like this:</p>
-				<pre><code class="lang-javascript">exports.get = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+				<pre><code class="lang-javascript">exports.GET = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
     <span class="hljs-comment">// access VS Code API (s. https://code.visualstudio.com/Docs/extensionAPI/vscode-api)</span>
     <span class="hljs-keyword">var</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
 
@@ -355,12 +355,12 @@
 				<p>You can return a <a href="https://github.com/Microsoft/vscode-extension-vscode/blob/master/thenable.d.ts">Promise</a> for async executions or nothing for sync executions (as in this example).</p>
 				<p>You are also able to define functions for other request methods, like <code>POST</code> or <code>DELETE</code>:</p>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// [FOO]  /api/myendpoint</span>
-exports.foo = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+exports.FOO = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
     <span class="hljs-comment">// for custom request methods</span>
 }
 
 <span class="hljs-comment">// [DELETE]  /api/myendpoint</span>
-exports.delete = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+exports.DELETE = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
         <span class="hljs-comment">// for async executions</span>
 
@@ -378,7 +378,7 @@ exports.delete = <span class="hljs-function"><span class="hljs-keyword">function
 }
 
 <span class="hljs-comment">// [POST]  /api/myendpoint</span>
-exports.post = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+exports.POST = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
     <span class="hljs-comment">// no (promise) result means: sync execution</span>
 }
 </code></pre>

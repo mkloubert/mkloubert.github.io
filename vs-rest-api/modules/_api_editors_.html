@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;api/editor&quot; | vs-rest-api</title>
+	<title>&quot;api/editors&quot; | vs-rest-api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_api_editor_.html">&quot;api/editor&quot;</a>
+					<a href="_api_editors_.html">&quot;api/editors&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;api/editor&quot;</h1>
+			<h1>External module &quot;api/editors&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -70,11 +70,22 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_api_editors_.editorwithid.html" class="tsd-kind-icon">Editor<wbr>With<wbr>Id</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_editor_.html#get" class="tsd-kind-icon">GET</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_editor_.html#post" class="tsd-kind-icon">POST</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_editors_.html#delete" class="tsd-kind-icon">DELETE</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_editors_.html#get" class="tsd-kind-icon">GET</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_editors_.html#patch" class="tsd-kind-icon">PATCH</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_editors_.html#post" class="tsd-kind-icon">POST</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_editors_.html#put" class="tsd-kind-icon">PUT</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_api_editors_.html#editortoobject" class="tsd-kind-icon">editor<wbr>ToObject</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_api_editors_.html#geteditorbyid" class="tsd-kind-icon">get<wbr>Editor<wbr>ById</a></li>
 							</ul>
 						</section>
 					</div>
@@ -82,6 +93,29 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="delete" class="tsd-anchor"></a>
+					<h3>DELETE</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">DELETE<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in api/editors.ts:36</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="get" class="tsd-anchor"></a>
 					<h3>GET</h3>
@@ -92,7 +126,30 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in api/editor.ts:36</li>
+									<li>Defined in api/editors.ts:100</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="patch" class="tsd-anchor"></a>
+					<h3>PATCH</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">PATCH<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in api/editors.ts:186</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -115,7 +172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in api/editor.ts:73</li>
+									<li>Defined in api/editors.ts:238</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -125,6 +182,78 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="put" class="tsd-anchor"></a>
+					<h3>PUT</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">PUT<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in api/editors.ts:276</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="editortoobject" class="tsd-anchor"></a>
+					<h3>editor<wbr>ToObject</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">editor<wbr>ToObject<span class="tsd-signature-symbol">(</span>editor<span class="tsd-signature-symbol">: </span><a href="../interfaces/_api_editors_.editorwithid.html" class="tsd-signature-type">EditorWithId</a>, user<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in api/editors.ts:68</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>editor: <a href="../interfaces/_api_editors_.editorwithid.html" class="tsd-signature-type">EditorWithId</a></h5>
+								</li>
+								<li>
+									<h5>user: <a href="../interfaces/_contracts_.user.html" class="tsd-signature-type">User</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="geteditorbyid" class="tsd-anchor"></a>
+					<h3>get<wbr>Editor<wbr>ById</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Editor<wbr>ById<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_api_editors_.editorwithid.html" class="tsd-signature-type">EditorWithId</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in api/editors.ts:152</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_api_editors_.editorwithid.html" class="tsd-signature-type">EditorWithId</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -139,10 +268,10 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_api_commands_.html">"api/commands"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_api_editor_.html">"api/editor"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_api_editors_.html">"api/editors"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -182,11 +311,29 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_api_editor_.html#get" class="tsd-kind-icon">GET</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_api_editors_.editorwithid.html" class="tsd-kind-icon">Editor<wbr>With<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_api_editor_.html#post" class="tsd-kind-icon">POST</a>
+						<a href="_api_editors_.html#delete" class="tsd-kind-icon">DELETE</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_api_editors_.html#get" class="tsd-kind-icon">GET</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_api_editors_.html#patch" class="tsd-kind-icon">PATCH</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_api_editors_.html#post" class="tsd-kind-icon">POST</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_api_editors_.html#put" class="tsd-kind-icon">PUT</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_api_editors_.html#editortoobject" class="tsd-kind-icon">editor<wbr>ToObject</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_api_editors_.html#geteditorbyid" class="tsd-kind-icon">get<wbr>Editor<wbr>ById</a>
 					</li>
 				</ul>
 			</nav>

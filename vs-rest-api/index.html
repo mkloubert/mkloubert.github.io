@@ -79,6 +79,7 @@
 							<li><a href="#commands--1">Commands</a></li>
 						</ul>
 					</li>
+					<li><a href="#documentation-">Documentation</a></li>
 				</ol>
 				<h2 id="install-uarr-table-of-contents-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter:</p>
@@ -192,8 +193,9 @@
 </code></pre>
 				<p>The <code>./my-endpoint.js</code> must contain a public function with the name of the current HTTP request method (upper case).</p>
 				<p>For example if you want to make a simple <code>GET</code> request</p>
-				<pre><code>GET <span class="hljs-regexp">/api/my</span>endpoint
-</code></pre><p>your script should look like this:</p>
+				<pre><code class="lang-http">GET /api/myendpoint
+</code></pre>
+				<p>your script should look like this:</p>
 				<pre><code class="lang-javascript">exports.GET = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
     <span class="hljs-comment">// access VS Code API (s. https://code.visualstudio.com/Docs/extensionAPI/vscode-api)</span>
     <span class="hljs-keyword">var</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
@@ -310,6 +312,9 @@ exports.POST = <span class="hljs-function"><span class="hljs-keyword">function</
 						</tr>
 					</tbody>
 				</table>
+				<h2 id="documentation-uarr-table-of-contents-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>The full documentation of the extension&#39;s API can be found <a href="https://mkloubert.github.io/vs-rest-api/">here</a>.</p>
+				<p>Detailed information on how to use the extension, can be found at the <a href="https://github.com/mkloubert/vs-rest-api/wiki">wiki</a>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

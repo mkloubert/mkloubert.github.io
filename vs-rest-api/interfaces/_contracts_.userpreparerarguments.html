@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RequestContext | vs-rest-api</title>
+	<title>UserPreparerArguments | vs-rest-api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.requestcontext.html">RequestContext</a>
+					<a href="_contracts_.userpreparerarguments.html">UserPreparerArguments</a>
 				</li>
 			</ul>
-			<h1>Interface RequestContext</h1>
+			<h1>Interface UserPreparerArguments</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A request context.</p>
+						<p>Arguments for a user preparer.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">RequestContext</span>
+						<a href="_contracts_.scriptarguments.html" class="tsd-signature-type">ScriptArguments</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">UserPreparerArguments</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -91,16 +96,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.requestcontext.html#get" class="tsd-kind-icon">GET</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.requestcontext.html#client" class="tsd-kind-icon">client</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.requestcontext.html#config" class="tsd-kind-icon">config</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.requestcontext.html#method" class="tsd-kind-icon">method</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.requestcontext.html#request" class="tsd-kind-icon">request</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.requestcontext.html#response" class="tsd-kind-icon">response</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.requestcontext.html#time" class="tsd-kind-icon">time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.requestcontext.html#url" class="tsd-kind-icon">url</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.requestcontext.html#user" class="tsd-kind-icon">user</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.requestcontext.html#workspacestate" class="tsd-kind-icon">workspace<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.userpreparerarguments.html#globalstate" class="tsd-kind-icon">global<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.userpreparerarguments.html#globals" class="tsd-kind-icon">globals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.userpreparerarguments.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.userpreparerarguments.html#require" class="tsd-kind-icon">require</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.userpreparerarguments.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.userpreparerarguments.html#user" class="tsd-kind-icon">user</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.userpreparerarguments.html#workspacestate" class="tsd-kind-icon">workspace<wbr>State</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,161 +110,135 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>GET</h3>
-					<div class="tsd-signature tsd-kind-icon">GET<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="globalstate" class="tsd-anchor"></a>
+					<h3>global<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">global<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalstate">globalState</a></p>
 						<ul>
-							<li>Defined in contracts.ts:468</li>
+							<li>Defined in contracts.ts:510</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The GET parameters.</p>
+							<p>Gets the object to share data between all scripts of this type.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="globals" class="tsd-anchor"></a>
+					<h3>globals</h3>
+					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globals">globals</a></p>
+						<ul>
+							<li>Defined in contracts.ts:506</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the global data from the settings.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="options" class="tsd-anchor"></a>
+					<h3>options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#options">options</a></p>
+						<ul>
+							<li>Defined in contracts.ts:514</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Options for the execution.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="require" class="tsd-anchor"></a>
+					<h3>require</h3>
+					<div class="tsd-signature tsd-kind-icon">require<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#require">require</a></p>
+						<ul>
+							<li>Defined in contracts.ts:518</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Loads a module from the script / extension context.</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></h5>
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>id: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="client" class="tsd-anchor"></a>
-					<h3>client</h3>
-					<div class="tsd-signature tsd-kind-icon">client<span class="tsd-signature-symbol">:</span> <a href="_contracts_.remoteclient.html" class="tsd-signature-type">RemoteClient</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="state" class="tsd-anchor"></a>
+					<h3>state</h3>
+					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#state">state</a></p>
 						<ul>
-							<li>Defined in contracts.ts:460</li>
+							<li>Defined in contracts.ts:522</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Data of the client.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="config" class="tsd-anchor"></a>
-					<h3>config</h3>
-					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <a href="_contracts_.configuration.html" class="tsd-signature-type">Configuration</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:464</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The current configuration.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="method" class="tsd-anchor"></a>
-					<h3>method</h3>
-					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:472</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The name of the request method.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="request" class="tsd-anchor"></a>
-					<h3>request</h3>
-					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IncomingMessage</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:476</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Gets the HTTP request context.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="response" class="tsd-anchor"></a>
-					<h3>response</h3>
-					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ServerResponse</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:480</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Gets the HTTP response context.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="time" class="tsd-anchor"></a>
-					<h3>time</h3>
-					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:484</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The request time.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="url" class="tsd-anchor"></a>
-					<h3>url</h3>
-					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Url</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:488</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The URL as object.</p>
+							<p>Stores a permanent value for the current session for THIS script.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="user" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> user</h3>
+					<h3>user</h3>
 					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <a href="_contracts_.user.html" class="tsd-signature-type">User</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:492</li>
+							<li>Defined in contracts.ts:649</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The current user.</p>
+							<p>The user to prepare.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="workspacestate" class="tsd-anchor"></a>
 					<h3>workspace<wbr>State</h3>
 					<div class="tsd-signature tsd-kind-icon">workspace<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#workspacestate">workspaceState</a></p>
 						<ul>
-							<li>Defined in contracts.ts:496</li>
+							<li>Defined in contracts.ts:526</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Object to share and access data workspace wide.</p>
+							<p>Gets the workspace wide object to share data, between ALL scripts e.g.</p>
 						</div>
 					</div>
 				</section>
@@ -359,45 +335,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.remoteclient.html" class="tsd-kind-icon">Remote<wbr>Client</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.requestcontext.html" class="tsd-kind-icon">Request<wbr>Context</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.requestcontext.html#get" class="tsd-kind-icon">GET</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.requestcontext.html#client" class="tsd-kind-icon">client</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.requestcontext.html#config" class="tsd-kind-icon">config</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.requestcontext.html#method" class="tsd-kind-icon">method</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.requestcontext.html#request" class="tsd-kind-icon">request</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.requestcontext.html#response" class="tsd-kind-icon">response</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.requestcontext.html#time" class="tsd-kind-icon">time</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.requestcontext.html#url" class="tsd-kind-icon">url</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.requestcontext.html#user" class="tsd-kind-icon">user</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.requestcontext.html#workspacestate" class="tsd-kind-icon">workspace<wbr>State</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.scriptarguments.html" class="tsd-kind-icon">Script<wbr>Arguments</a>
 					</li>
@@ -413,9 +353,36 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.userpreparer.html" class="tsd-kind-icon">User<wbr>Preparer</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.userpreparerarguments.html" class="tsd-kind-icon">User<wbr>Preparer<wbr>Arguments</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.userpreparerarguments.html#globalstate" class="tsd-kind-icon">global<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.userpreparerarguments.html#globals" class="tsd-kind-icon">globals</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.userpreparerarguments.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.userpreparerarguments.html#require" class="tsd-kind-icon">require</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.userpreparerarguments.html#state" class="tsd-kind-icon">state</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.userpreparerarguments.html#user" class="tsd-kind-icon">user</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.userpreparerarguments.html#workspacestate" class="tsd-kind-icon">workspace<wbr>State</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.userpreparermodule.html" class="tsd-kind-icon">User<wbr>Preparer<wbr>Module</a>
 					</li>

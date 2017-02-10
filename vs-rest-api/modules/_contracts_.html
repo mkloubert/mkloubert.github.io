@@ -90,6 +90,9 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.scriptmodule.html" class="tsd-kind-icon">Script<wbr>Module</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.user.html" class="tsd-kind-icon">User</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.useraccount.html" class="tsd-kind-icon">User<wbr>Account</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.userpreparer.html" class="tsd-kind-icon">User<wbr>Preparer</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.userpreparerarguments.html" class="tsd-kind-icon">User<wbr>Preparer<wbr>Arguments</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.userpreparermodule.html" class="tsd-kind-icon">User<wbr>Preparer<wbr>Module</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_contracts_.validatorarguments.html" class="tsd-kind-icon">Validator<wbr>Arguments</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_contracts_.validatormodule.html" class="tsd-kind-icon">Validator<wbr>Module</a></li>
 							</ul>
@@ -99,6 +102,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#apimethod" class="tsd-kind-icon">Api<wbr>Method</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#popupbuttonaction" class="tsd-kind-icon">Popup<wbr>Button<wbr>Action</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#userpreparerexecutor" class="tsd-kind-icon">User<wbr>Preparer<wbr>Executor</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#validator" class="tsd-kind-icon">Validator</a></li>
 							</ul>
 						</section>
@@ -113,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">Api<wbr>Method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:117</li>
+							<li>Defined in contracts.ts:121</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -160,7 +164,7 @@
 					<div class="tsd-signature tsd-kind-icon">Popup<wbr>Button<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:433</li>
+							<li>Defined in contracts.ts:437</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -185,12 +189,59 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="userpreparerexecutor" class="tsd-anchor"></a>
+					<h3>User<wbr>Preparer<wbr>Executor</h3>
+					<div class="tsd-signature tsd-kind-icon">User<wbr>Preparer<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:640</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prepares an user.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The arguments for the execution.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.userpreparerarguments.html" class="tsd-signature-type">UserPreparerArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_contracts_.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_contracts_.userpreparerarguments.html" class="tsd-signature-type">UserPreparerArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_contracts_.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">&gt;</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">void</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="validator" class="tsd-anchor"></a>
 					<h3>Validator</h3>
 					<div class="tsd-signature tsd-kind-icon">Validator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:614</li>
+							<li>Defined in contracts.ts:669</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -339,6 +390,15 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_contracts_.useraccount.html" class="tsd-kind-icon">User<wbr>Account</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.userpreparer.html" class="tsd-kind-icon">User<wbr>Preparer</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.userpreparerarguments.html" class="tsd-kind-icon">User<wbr>Preparer<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.userpreparermodule.html" class="tsd-kind-icon">User<wbr>Preparer<wbr>Module</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../interfaces/_contracts_.validatorarguments.html" class="tsd-kind-icon">Validator<wbr>Arguments</a>
 					</li>
@@ -350,6 +410,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_contracts_.html#popupbuttonaction" class="tsd-kind-icon">Popup<wbr>Button<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_contracts_.html#userpreparerexecutor" class="tsd-kind-icon">User<wbr>Preparer<wbr>Executor</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_contracts_.html#validator" class="tsd-kind-icon">Validator</a>

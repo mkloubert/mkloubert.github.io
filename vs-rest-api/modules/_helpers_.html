@@ -106,6 +106,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#getbase64contentfromobjects" class="tsd-kind-icon">get<wbr>Base64<wbr>Content<wbr>From<wbr>Objects</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#getheadervalue" class="tsd-kind-icon">get<wbr>Header<wbr>Value</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#getstaterepository" class="tsd-kind-icon">get<wbr>State<wbr>Repository</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#geturlparam" class="tsd-kind-icon">get<wbr>Url<wbr>Param</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#isbinarycontent" class="tsd-kind-icon">is<wbr>Binary<wbr>Content</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#isemptystring" class="tsd-kind-icon">is<wbr>Empty<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#isnullorundefined" class="tsd-kind-icon">is<wbr>Null<wbr>OrUndefined</a></li>
@@ -115,6 +116,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#open" class="tsd-kind-icon">open</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#readhttpbody" class="tsd-kind-icon">read<wbr>Http<wbr>Body</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#readhttpbodyasjson" class="tsd-kind-icon">read<wbr>Http<wbr>Body<wbr>AsJSON</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#removedocuments" class="tsd-kind-icon">remove<wbr>Documents</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#replaceallstrings" class="tsd-kind-icon">replace<wbr>All<wbr>Strings</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#requiremodule" class="tsd-kind-icon">require<wbr>Module</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#setcontentoftexteditor" class="tsd-kind-icon">set<wbr>Content<wbr>OfText<wbr>Editor</a></li>
@@ -124,6 +126,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#tostringsafe" class="tsd-kind-icon">to<wbr>String<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#tovalidatorsafe" class="tsd-kind-icon">to<wbr>Validator<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#trydispose" class="tsd-kind-icon">try<wbr>Dispose</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#uriparamstoobject" class="tsd-kind-icon">uri<wbr>Params<wbr>ToObject</a></li>
 							</ul>
 						</section>
 					</div>
@@ -760,6 +763,44 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="geturlparam" class="tsd-anchor"></a>
+					<h3>get<wbr>Url<wbr>Param</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Url<wbr>Param<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:459</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the value from a &quot;parameter&quot; object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>params: <span class="tsd-signature-type">Object</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The object.</p>
+									</div>
+								</li>
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the parameter.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The value of the parameter (if found).</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="isbinarycontent" class="tsd-anchor"></a>
 					<h3>is<wbr>Binary<wbr>Content</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -769,7 +810,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:458</li>
+									<li>Defined in helpers.ts:478</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -801,7 +842,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:490</li>
+									<li>Defined in helpers.ts:510</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -834,7 +875,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:501</li>
+									<li>Defined in helpers.ts:521</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -866,7 +907,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:514</li>
+									<li>Defined in helpers.ts:534</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -910,7 +951,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:537</li>
+									<li>Defined in helpers.ts:557</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -941,7 +982,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:552</li>
+									<li>Defined in helpers.ts:572</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -994,7 +1035,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:568</li>
+									<li>Defined in helpers.ts:588</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1028,7 +1069,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:698</li>
+									<li>Defined in helpers.ts:718</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1060,7 +1101,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:735</li>
+									<li>Defined in helpers.ts:755</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1095,6 +1136,44 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="removedocuments" class="tsd-anchor"></a>
+					<h3>remove<wbr>Documents</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Documents<span class="tsd-signature-symbol">(</span>docs<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol">[]</span>, storage<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:790</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes documents from a storage.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>docs: <a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The document(s) to remove.</p>
+									</div>
+								</li>
+								<li>
+									<h5>storage: <a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The storage.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The removed documents.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="replaceallstrings" class="tsd-anchor"></a>
 					<h3>replace<wbr>All<wbr>Strings</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -1104,7 +1183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:771</li>
+									<li>Defined in helpers.ts:822</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1148,7 +1227,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:787</li>
+									<li>Defined in helpers.ts:838</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1180,7 +1259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:799</li>
+									<li>Defined in helpers.ts:850</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1217,7 +1296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:837</li>
+									<li>Defined in helpers.ts:888</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1255,7 +1334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:934</li>
+									<li>Defined in helpers.ts:985</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1293,7 +1372,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:950</li>
+									<li>Defined in helpers.ts:1001</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1331,7 +1410,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:994</li>
+									<li>Defined in helpers.ts:1045</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1369,7 +1448,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1013</li>
+									<li>Defined in helpers.ts:1064</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1407,7 +1486,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1032</li>
+									<li>Defined in helpers.ts:1083</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1426,6 +1505,38 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>Operation was successful or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="uriparamstoobject" class="tsd-anchor"></a>
+					<h3>uri<wbr>Params<wbr>ToObject</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">uri<wbr>Params<wbr>ToObject<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:1105</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Extracts the query parameters of an URI to an object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <span class="tsd-signature-type">Uri</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The URI.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Object</span></h4>
+							<p>The parameters of the URI as object.</p>
 						</li>
 					</ul>
 				</section>
@@ -1460,6 +1571,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_api_globals_.html">"api/globals"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_api_html_.html">"api/html"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_api_languages_.html">"api/languages"</a>
@@ -1559,6 +1673,9 @@
 						<a href="_helpers_.html#getstaterepository" class="tsd-kind-icon">get<wbr>State<wbr>Repository</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#geturlparam" class="tsd-kind-icon">get<wbr>Url<wbr>Param</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#isbinarycontent" class="tsd-kind-icon">is<wbr>Binary<wbr>Content</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -1586,6 +1703,9 @@
 						<a href="_helpers_.html#readhttpbodyasjson" class="tsd-kind-icon">read<wbr>Http<wbr>Body<wbr>AsJSON</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#removedocuments" class="tsd-kind-icon">remove<wbr>Documents</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#replaceallstrings" class="tsd-kind-icon">replace<wbr>All<wbr>Strings</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -1611,6 +1731,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#trydispose" class="tsd-kind-icon">try<wbr>Dispose</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#uriparamstoobject" class="tsd-kind-icon">uri<wbr>Params<wbr>ToObject</a>
 					</li>
 				</ul>
 			</nav>

@@ -80,6 +80,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.apiresponse.html" class="tsd-kind-icon">Api<wbr>Response</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.directory.html" class="tsd-kind-icon">Directory</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.document.html" class="tsd-kind-icon">Document</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.file.html" class="tsd-kind-icon">File</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.filesystemitem.html" class="tsd-kind-icon">File<wbr>System<wbr>Item</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a></li>
@@ -113,6 +114,8 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_contracts_.html#var_html_docs" class="tsd-kind-icon">VAR_<wbr>HTML_<wbr>DOCS</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_contracts_.html#var_next_html_doc_id" class="tsd-kind-icon">VAR_<wbr>NEXT_<wbr>HTML_<wbr>DOC_<wbr>ID</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_contracts_.html#var_state" class="tsd-kind-icon">VAR_<wbr>STATE</a></li>
 							</ul>
 						</section>
@@ -127,7 +130,7 @@
 					<div class="tsd-signature tsd-kind-icon">Api<wbr>Method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:124</li>
+							<li>Defined in contracts.ts:132</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -171,7 +174,7 @@
 					<div class="tsd-signature tsd-kind-icon">Api<wbr>Method<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:239</li>
+							<li>Defined in contracts.ts:247</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -186,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">Popup<wbr>Button<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:492</li>
+							<li>Defined in contracts.ts:526</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -216,7 +219,7 @@
 					<div class="tsd-signature tsd-kind-icon">User<wbr>Preparer<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:737</li>
+							<li>Defined in contracts.ts:771</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -263,7 +266,7 @@
 					<div class="tsd-signature tsd-kind-icon">Validator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:766</li>
+							<li>Defined in contracts.ts:800</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -308,12 +311,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="var_html_docs" class="tsd-anchor"></a>
+					<h3>VAR_<wbr>HTML_<wbr>DOCS</h3>
+					<div class="tsd-signature tsd-kind-icon">VAR_<wbr>HTML_<wbr>DOCS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vsraHtmlDoc&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:34</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Variable for storing HTML documents.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="var_next_html_doc_id" class="tsd-anchor"></a>
+					<h3>VAR_<wbr>NEXT_<wbr>HTML_<wbr>DOC_<wbr>ID</h3>
+					<div class="tsd-signature tsd-kind-icon">VAR_<wbr>NEXT_<wbr>HTML_<wbr>DOC_<wbr>ID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vsraNextHtmlDocId&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:38</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Variable for storing the next ID for HTML documents.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="var_state" class="tsd-anchor"></a>
 					<h3>VAR_<wbr>STATE</h3>
 					<div class="tsd-signature tsd-kind-icon">VAR_<wbr>STATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vsraState&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:34</li>
+							<li>Defined in contracts.ts:42</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -353,6 +386,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_api_globals_.html">"api/globals"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_api_html_.html">"api/html"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_api_languages_.html">"api/languages"</a>
@@ -417,6 +453,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_contracts_.directory.html" class="tsd-kind-icon">Directory</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.document.html" class="tsd-kind-icon">Document</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_contracts_.file.html" class="tsd-kind-icon">File</a>
@@ -486,6 +525,12 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_contracts_.html#validator" class="tsd-kind-icon">Validator</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_contracts_.html#var_html_docs" class="tsd-kind-icon">VAR_<wbr>HTML_<wbr>DOCS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_contracts_.html#var_next_html_doc_id" class="tsd-kind-icon">VAR_<wbr>NEXT_<wbr>HTML_<wbr>DOC_<wbr>ID</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_contracts_.html#var_state" class="tsd-kind-icon">VAR_<wbr>STATE</a>

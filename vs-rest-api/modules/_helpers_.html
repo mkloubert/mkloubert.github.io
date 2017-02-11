@@ -105,6 +105,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#formatarray" class="tsd-kind-icon">format<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#getbase64contentfromobjects" class="tsd-kind-icon">get<wbr>Base64<wbr>Content<wbr>From<wbr>Objects</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#getheadervalue" class="tsd-kind-icon">get<wbr>Header<wbr>Value</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#getstaterepository" class="tsd-kind-icon">get<wbr>State<wbr>Repository</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#isbinarycontent" class="tsd-kind-icon">is<wbr>Binary<wbr>Content</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#isemptystring" class="tsd-kind-icon">is<wbr>Empty<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#isnullorundefined" class="tsd-kind-icon">is<wbr>Null<wbr>OrUndefined</a></li>
@@ -724,6 +725,41 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getstaterepository" class="tsd-anchor"></a>
+					<h3>get<wbr>State<wbr>Repository</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>State<wbr>Repository<span class="tsd-signature-symbol">(</span>memento<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Memento</span>, varName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.staterepository.html" class="tsd-signature-type">StateRepository</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:434</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the state repository item for a memento.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>memento: <span class="tsd-signature-type">Memento</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The memento.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> varName: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;rapi_contracts.VAR_STATE</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.staterepository.html" class="tsd-signature-type">StateRepository</a></h4>
+							<p>The item.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="isbinarycontent" class="tsd-anchor"></a>
 					<h3>is<wbr>Binary<wbr>Content</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -733,7 +769,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:433</li>
+									<li>Defined in helpers.ts:459</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -765,7 +801,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:465</li>
+									<li>Defined in helpers.ts:491</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -798,7 +834,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:476</li>
+									<li>Defined in helpers.ts:502</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -830,7 +866,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:489</li>
+									<li>Defined in helpers.ts:515</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -874,7 +910,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:512</li>
+									<li>Defined in helpers.ts:538</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -905,7 +941,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:527</li>
+									<li>Defined in helpers.ts:553</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -958,7 +994,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:543</li>
+									<li>Defined in helpers.ts:569</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -992,7 +1028,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:673</li>
+									<li>Defined in helpers.ts:699</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1024,7 +1060,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:710</li>
+									<li>Defined in helpers.ts:736</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1068,7 +1104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:746</li>
+									<li>Defined in helpers.ts:772</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1112,7 +1148,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:762</li>
+									<li>Defined in helpers.ts:788</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1144,7 +1180,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:774</li>
+									<li>Defined in helpers.ts:800</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1181,7 +1217,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:812</li>
+									<li>Defined in helpers.ts:838</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1219,7 +1255,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:909</li>
+									<li>Defined in helpers.ts:935</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1257,7 +1293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:925</li>
+									<li>Defined in helpers.ts:951</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1295,7 +1331,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:969</li>
+									<li>Defined in helpers.ts:995</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1333,7 +1369,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:988</li>
+									<li>Defined in helpers.ts:1014</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1371,7 +1407,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1007</li>
+									<li>Defined in helpers.ts:1033</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1402,6 +1438,12 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_api_appglobals_.html">"api/appglobals"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_api_appstate_.html">"api/appstate"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_api_commands_.html">"api/commands"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -1414,10 +1456,16 @@
 						<a href="_api_extensions_.html">"api/extensions"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_api_globals_.html">"api/globals"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_api_languages_.html">"api/languages"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_api_outputs_.html">"api/outputs"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_api_state_.html">"api/state"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_api_workspace_.html">"api/workspace"</a>
@@ -1503,6 +1551,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#getheadervalue" class="tsd-kind-icon">get<wbr>Header<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#getstaterepository" class="tsd-kind-icon">get<wbr>State<wbr>Repository</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#isbinarycontent" class="tsd-kind-icon">is<wbr>Binary<wbr>Content</a>

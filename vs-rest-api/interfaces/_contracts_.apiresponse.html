@@ -93,6 +93,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apiresponse.html#code" class="tsd-kind-icon">code</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apiresponse.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apiresponse.html#env" class="tsd-kind-icon">env</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apiresponse.html#msg" class="tsd-kind-icon">msg</a></li>
 							</ul>
 						</section>
@@ -107,7 +108,7 @@
 					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:233</li>
+							<li>Defined in contracts.ts:241</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -122,7 +123,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:237</li>
+							<li>Defined in contracts.ts:245</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -132,12 +133,90 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="env" class="tsd-anchor"></a>
+					<h3>env</h3>
+					<div class="tsd-signature tsd-kind-icon">env<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:249</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Information about the environment.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Information about the app.</p>
+									</div>
+								</div>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The name.</p>
+											</div>
+										</div>
+									</li>
+									<li class="tsd-parameter">
+										<h5>version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>The version.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Hostname of the machine.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>lang<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The language.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>machine<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>ID of the machine.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>session<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The ID of the session.</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="msg" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> msg</h3>
 					<div class="tsd-signature tsd-kind-icon">msg<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:241</li>
+							<li>Defined in contracts.ts:283</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -155,6 +234,12 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_api_appglobals_.html">"api/appglobals"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_api_appstate_.html">"api/appstate"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_api_commands_.html">"api/commands"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -167,10 +252,16 @@
 						<a href="../modules/_api_extensions_.html">"api/extensions"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_api_globals_.html">"api/globals"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_api_languages_.html">"api/languages"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_api_outputs_.html">"api/outputs"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_api_state_.html">"api/state"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_api_workspace_.html">"api/workspace"</a>
@@ -230,6 +321,9 @@
 								<a href="_contracts_.apiresponse.html#data" class="tsd-kind-icon">data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.apiresponse.html#env" class="tsd-kind-icon">env</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.apiresponse.html#msg" class="tsd-kind-icon">msg</a>
 							</li>
 						</ul>
@@ -267,6 +361,15 @@
 						<a href="_contracts_.scriptmodule.html" class="tsd-kind-icon">Script<wbr>Module</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.staterepository.html" class="tsd-kind-icon">State<wbr>Repository</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.staterepositoryitem.html" class="tsd-kind-icon">State<wbr>Repository<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.staterepositorywithitem.html" class="tsd-kind-icon">State<wbr>Repository<wbr>With<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.user.html" class="tsd-kind-icon">User</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -298,6 +401,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_contracts_.html#validator" class="tsd-kind-icon">Validator</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_contracts_.html#var_state" class="tsd-kind-icon">VAR_<wbr>STATE</a>
 					</li>
 				</ul>
 			</nav>

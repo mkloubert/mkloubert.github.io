@@ -98,6 +98,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.user.html#account" class="tsd-kind-icon">account</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.user.html#can" class="tsd-kind-icon">can</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.user.html#context" class="tsd-kind-icon">context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.user.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.user.html#isdirvisible" class="tsd-kind-icon">is<wbr>Dir<wbr>Visible</a></li>
@@ -124,7 +125,7 @@
 					<div class="tsd-signature tsd-kind-icon">account<span class="tsd-signature-symbol">:</span> <a href="_contracts_.account.html" class="tsd-signature-type">Account</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:673</li>
+							<li>Defined in contracts.ts:677</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -134,12 +135,59 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="can" class="tsd-anchor"></a>
+					<h3>can</h3>
+					<div class="tsd-signature tsd-kind-icon">can<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:689</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Checks if this user is able to do something.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The name of the (ACL) resource.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>Is able to do or not.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>acl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>acl: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> defaultValue: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="context" class="tsd-anchor"></a>
 					<h3>context</h3>
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="_contracts_.requestcontext.html" class="tsd-signature-type">RequestContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:677</li>
+							<li>Defined in contracts.ts:681</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -154,7 +202,7 @@
 					<div class="tsd-signature tsd-kind-icon">has<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:694</li>
+							<li>Defined in contracts.ts:706</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -198,7 +246,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Dir<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:707</li>
+							<li>Defined in contracts.ts:719</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -248,7 +296,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>File<wbr>Visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:716</li>
+							<li>Defined in contracts.ts:728</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -298,7 +346,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Guest<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:698</li>
+							<li>Defined in contracts.ts:710</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,7 +361,7 @@
 					<div class="tsd-signature tsd-kind-icon">unset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:733</li>
+							<li>Defined in contracts.ts:745</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -363,7 +411,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:686</li>
+									<li>Defined in contracts.ts:698</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -404,7 +452,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:725</li>
+									<li>Defined in contracts.ts:737</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -583,6 +631,9 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.user.html#account" class="tsd-kind-icon">account</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.user.html#can" class="tsd-kind-icon">can</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.user.html#context" class="tsd-kind-icon">context</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StateRepository | vs-rest-api</title>
+	<title>ValidateConnectionContext | vs-rest-api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
+					<a href="../modules/_host_.html">&quot;host&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.staterepository.html">StateRepository</a>
+					<a href="_host_.validateconnectioncontext.html">ValidateConnectionContext</a>
 				</li>
 			</ul>
-			<h1>Interface StateRepository</h1>
+			<h1>Interface ValidateConnectionContext</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A state repository.</p>
+						<p>Context for validating a connection / user.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">StateRepository</span>
+						<span class="target">ValidateConnectionContext</span>
 					</li>
 				</ul>
 			</section>
@@ -91,9 +91,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.staterepository.html#globals" class="tsd-kind-icon">globals</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.staterepository.html#guest" class="tsd-kind-icon">guest</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.staterepository.html#users" class="tsd-kind-icon">users</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_host_.validateconnectioncontext.html#config" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_host_.validateconnectioncontext.html#method" class="tsd-kind-icon">method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_host_.validateconnectioncontext.html#request" class="tsd-kind-icon">request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_host_.validateconnectioncontext.html#response" class="tsd-kind-icon">response</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_host_.validateconnectioncontext.html#statuscode" class="tsd-kind-icon">status<wbr>Code</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_host_.validateconnectioncontext.html#time" class="tsd-kind-icon">time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_host_.validateconnectioncontext.html#user" class="tsd-kind-icon">user</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,56 +106,108 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="globals" class="tsd-anchor"></a>
-					<h3>globals</h3>
-					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <a href="_contracts_.staterepositoryitem.html" class="tsd-signature-type">StateRepositoryItem</a></div>
+					<a name="config" class="tsd-anchor"></a>
+					<h3>config</h3>
+					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <a href="_contracts_.configuration.html" class="tsd-signature-type">Configuration</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:597</li>
+							<li>Defined in host.ts:63</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An item for all accounts.</p>
+							<p>The app settings.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="guest" class="tsd-anchor"></a>
-					<h3>guest</h3>
-					<div class="tsd-signature tsd-kind-icon">guest<span class="tsd-signature-symbol">:</span> <a href="_contracts_.staterepositoryitem.html" class="tsd-signature-type">StateRepositoryItem</a></div>
+					<a name="method" class="tsd-anchor"></a>
+					<h3>method</h3>
+					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:601</li>
+							<li>Defined in host.ts:67</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An item for the guest account.</p>
+							<p>The request method.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="users" class="tsd-anchor"></a>
-					<h3>users</h3>
-					<div class="tsd-signature tsd-kind-icon">users<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<a name="request" class="tsd-anchor"></a>
+					<h3>request</h3>
+					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IncomingMessage</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:605</li>
+							<li>Defined in host.ts:71</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The items for the user accounts.</p>
+							<p>The request context.</p>
 						</div>
 					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="_contracts_.staterepositoryitem.html" class="tsd-signature-type">StateRepositoryItem</a></h5>
-							</li>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="response" class="tsd-anchor"></a>
+					<h3>response</h3>
+					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ServerResponse</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in host.ts:75</li>
 						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The response context.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="statuscode" class="tsd-anchor"></a>
+					<h3>status<wbr>Code</h3>
+					<div class="tsd-signature tsd-kind-icon">status<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in host.ts:79</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The status code to return if connection is invalid.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="time" class="tsd-anchor"></a>
+					<h3>time</h3>
+					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in host.ts:83</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The timestamp.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="user" class="tsd-anchor"></a>
+					<h3>user</h3>
+					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <a href="_contracts_.user.html" class="tsd-signature-type">User</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in host.ts:87</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The user.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -204,7 +260,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_api_workspace_.html">"api/workspace"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_contracts_.html">"contracts"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -213,7 +269,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_helpers_.html">"helpers"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_host_.html">"host"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -229,113 +285,47 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.account.html" class="tsd-kind-icon">Account</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.apiendpoint.html" class="tsd-kind-icon">Api<wbr>Endpoint</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.apimethodarguments.html" class="tsd-kind-icon">Api<wbr>Method<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.apimodule.html" class="tsd-kind-icon">Api<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.apiresponse.html" class="tsd-kind-icon">Api<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.directory.html" class="tsd-kind-icon">Directory</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.file.html" class="tsd-kind-icon">File</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.filesystemitem.html" class="tsd-kind-icon">File<wbr>System<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.popupbutton.html" class="tsd-kind-icon">Popup<wbr>Button</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.remoteclient.html" class="tsd-kind-icon">Remote<wbr>Client</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.requestcontext.html" class="tsd-kind-icon">Request<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.scriptarguments.html" class="tsd-kind-icon">Script<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.scriptmodule.html" class="tsd-kind-icon">Script<wbr>Module</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_host_.apihost.html" class="tsd-kind-icon">Api<wbr>Host</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.staterepository.html" class="tsd-kind-icon">State<wbr>Repository</a>
+						<a href="_host_.validateconnectioncontext.html" class="tsd-kind-icon">Validate<wbr>Connection<wbr>Context</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.staterepository.html#globals" class="tsd-kind-icon">globals</a>
+								<a href="_host_.validateconnectioncontext.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.staterepository.html#guest" class="tsd-kind-icon">guest</a>
+								<a href="_host_.validateconnectioncontext.html#method" class="tsd-kind-icon">method</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.staterepository.html#users" class="tsd-kind-icon">users</a>
+								<a href="_host_.validateconnectioncontext.html#request" class="tsd-kind-icon">request</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_host_.validateconnectioncontext.html#response" class="tsd-kind-icon">response</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_host_.validateconnectioncontext.html#statuscode" class="tsd-kind-icon">status<wbr>Code</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_host_.validateconnectioncontext.html#time" class="tsd-kind-icon">time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_host_.validateconnectioncontext.html#user" class="tsd-kind-icon">user</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.staterepositoryitem.html" class="tsd-kind-icon">State<wbr>Repository<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.staterepositorywithitem.html" class="tsd-kind-icon">State<wbr>Repository<wbr>With<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.user.html" class="tsd-kind-icon">User</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.useraccount.html" class="tsd-kind-icon">User<wbr>Account</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.userpreparer.html" class="tsd-kind-icon">User<wbr>Preparer</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.userpreparerarguments.html" class="tsd-kind-icon">User<wbr>Preparer<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.userpreparermodule.html" class="tsd-kind-icon">User<wbr>Preparer<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_contracts_.validatorarguments.html" class="tsd-kind-icon">Validator<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_contracts_.validatormodule.html" class="tsd-kind-icon">Validator<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#apimethod" class="tsd-kind-icon">Api<wbr>Method</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#apimethodresult" class="tsd-kind-icon">Api<wbr>Method<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#popupbuttonaction" class="tsd-kind-icon">Popup<wbr>Button<wbr>Action</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#userpreparerexecutor" class="tsd-kind-icon">User<wbr>Preparer<wbr>Executor</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#validator" class="tsd-kind-icon">Validator</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_host_.html#default_encoding" class="tsd-kind-icon">DEFAULT_<wbr>ENCODING</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#var_state" class="tsd-kind-icon">VAR_<wbr>STATE</a>
+						<a href="../modules/_host_.html#default_port" class="tsd-kind-icon">DEFAULT_<wbr>PORT</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_host_.html#regex_api" class="tsd-kind-icon">REGEX_<wbr>API</a>
 					</li>
 				</ul>
 			</nav>

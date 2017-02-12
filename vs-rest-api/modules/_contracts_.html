@@ -75,6 +75,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.account.html" class="tsd-kind-icon">Account</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.apiendpoint.html" class="tsd-kind-icon">Api<wbr>Endpoint</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.apihook.html" class="tsd-kind-icon">Api<wbr>Hook</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.apihookexecutorarguments.html" class="tsd-kind-icon">Api<wbr>Hook<wbr>Executor<wbr>Arguments</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.apihookmodule.html" class="tsd-kind-icon">Api<wbr>Hook<wbr>Module</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-kind-icon">Api<wbr>Method<wbr>Arguments</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.apimodule.html" class="tsd-kind-icon">Api<wbr>Module</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.apiresponse.html" class="tsd-kind-icon">Api<wbr>Response</a></li>
@@ -104,6 +107,9 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#apihookexecutor" class="tsd-kind-icon">Api<wbr>Hook<wbr>Executor</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#apihookresult" class="tsd-kind-icon">Api<wbr>Hook<wbr>Result</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#apihooktype" class="tsd-kind-icon">Api<wbr>Hook<wbr>Type</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#apimethod" class="tsd-kind-icon">Api<wbr>Method</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#apimethodresult" class="tsd-kind-icon">Api<wbr>Method<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#popupbuttonaction" class="tsd-kind-icon">Popup<wbr>Button<wbr>Action</a></li>
@@ -125,12 +131,86 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="apihookexecutor" class="tsd-anchor"></a>
+					<h3>Api<wbr>Hook<wbr>Executor</h3>
+					<div class="tsd-signature tsd-kind-icon">Api<wbr>Hook<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:150</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Executes an api hook.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The arguments for the execution.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apihookexecutorarguments.html" class="tsd-signature-type">ApiHookExecutorArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_contracts_.html#apihookresult" class="tsd-signature-type">ApiHookResult</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_contracts_.apihookexecutorarguments.html" class="tsd-signature-type">ApiHookExecutorArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_contracts_.html#apihookresult" class="tsd-signature-type">ApiHookResult</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="apihookresult" class="tsd-anchor"></a>
+					<h3>Api<wbr>Hook<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Api<wbr>Hook<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:179</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The result of an API hook execution.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="apihooktype" class="tsd-anchor"></a>
+					<h3>Api<wbr>Hook<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">Api<wbr>Hook<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.apihook.html" class="tsd-signature-type">ApiHook</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:184</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Type of an API hook entry.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="apimethod" class="tsd-anchor"></a>
 					<h3>Api<wbr>Method</h3>
 					<div class="tsd-signature tsd-kind-icon">Api<wbr>Method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:136</li>
+							<li>Defined in contracts.ts:193</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,7 +254,7 @@
 					<div class="tsd-signature tsd-kind-icon">Api<wbr>Method<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:251</li>
+							<li>Defined in contracts.ts:325</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -189,7 +269,7 @@
 					<div class="tsd-signature tsd-kind-icon">Popup<wbr>Button<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:530</li>
+							<li>Defined in contracts.ts:608</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -219,7 +299,7 @@
 					<div class="tsd-signature tsd-kind-icon">User<wbr>Preparer<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:783</li>
+							<li>Defined in contracts.ts:869</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -266,7 +346,7 @@
 					<div class="tsd-signature tsd-kind-icon">Validator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:812</li>
+							<li>Defined in contracts.ts:898</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -363,6 +443,9 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
+					<li class="label tsd-is-external">
+						<span>Internals</span>
+					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_api_appglobals_.html">"api/appglobals"</a>
 					</li>
@@ -429,6 +512,12 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_i18_.html">"i18"</a>
 					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="_hooks_.html">"hooks"</a>
+					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -438,6 +527,15 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_contracts_.apiendpoint.html" class="tsd-kind-icon">Api<wbr>Endpoint</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.apihook.html" class="tsd-kind-icon">Api<wbr>Hook</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.apihookexecutorarguments.html" class="tsd-kind-icon">Api<wbr>Hook<wbr>Executor<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.apihookmodule.html" class="tsd-kind-icon">Api<wbr>Hook<wbr>Module</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-kind-icon">Api<wbr>Method<wbr>Arguments</a>
@@ -510,6 +608,15 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../interfaces/_contracts_.validatormodule.html" class="tsd-kind-icon">Validator<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_contracts_.html#apihookexecutor" class="tsd-kind-icon">Api<wbr>Hook<wbr>Executor</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_contracts_.html#apihookresult" class="tsd-kind-icon">Api<wbr>Hook<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_contracts_.html#apihooktype" class="tsd-kind-icon">Api<wbr>Hook<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_contracts_.html#apimethod" class="tsd-kind-icon">Api<wbr>Method</a>

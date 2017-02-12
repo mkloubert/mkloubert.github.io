@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;api/appstate&quot; | vs-rest-api</title>
+	<title>&quot;hooks&quot; | vs-rest-api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_api_appstate_.html">&quot;api/appstate&quot;</a>
+					<a href="_hooks_.html">&quot;hooks&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;api/appstate&quot;</h1>
+			<h1>External module &quot;hooks&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -70,133 +70,43 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-external">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_appstate_.html#delete" class="tsd-kind-icon">DELETE</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_appstate_.html#get" class="tsd-kind-icon">GET</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_appstate_.html#put" class="tsd-kind-icon">PUT</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_api_appstate_.html#getrepoitem" class="tsd-kind-icon">get<wbr>Repo<wbr>Item</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_api_appstate_.html#getvarname" class="tsd-kind-icon">get<wbr>Var<wbr>Name</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="_hooks_.html#emithooks" class="tsd-kind-icon">emit<wbr>Hooks</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="delete" class="tsd-anchor"></a>
-					<h3>DELETE</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">DELETE<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="emithooks" class="tsd-anchor"></a>
+					<h3>emit<wbr>Hooks</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">emit<wbr>Hooks<span class="tsd-signature-symbol">(</span>apiArgs<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a>, hookToEmit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, hookArgs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in api/appstate.ts:32</li>
+									<li>Defined in hooks.ts:37</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
+									<h5>apiArgs: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
 								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>GET</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">GET<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in api/appstate.ts:70</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
 								<li>
-									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
+									<h5>hookToEmit: <span class="tsd-signature-type">string</span></h5>
 								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="put" class="tsd-anchor"></a>
-					<h3>PUT</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">PUT<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in api/appstate.ts:122</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
 								<li>
-									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
+									<h5>hookArgs: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="getrepoitem" class="tsd-anchor"></a>
-					<h3>get<wbr>Repo<wbr>Item</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Repo<wbr>Item<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.staterepositorywithitem.html" class="tsd-signature-type">StateRepositoryWithItem</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in api/appstate.ts:87</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.staterepositorywithitem.html" class="tsd-signature-type">StateRepositoryWithItem</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="getvarname" class="tsd-anchor"></a>
-					<h3>get<wbr>Var<wbr>Name</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Var<wbr>Name<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in api/appstate.ts:110</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -214,7 +124,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_api_appglobals_.html">"api/appglobals"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_api_appstate_.html">"api/appstate"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -280,27 +190,15 @@
 					<li class="label tsd-is-external">
 						<span>Externals</span>
 					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
+					<li class="current tsd-kind-external-module tsd-is-external">
 						<a href="_hooks_.html">"hooks"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_api_appstate_.html#delete" class="tsd-kind-icon">DELETE</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_api_appstate_.html#get" class="tsd-kind-icon">GET</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_api_appstate_.html#put" class="tsd-kind-icon">PUT</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_api_appstate_.html#getrepoitem" class="tsd-kind-icon">get<wbr>Repo<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_api_appstate_.html#getvarname" class="tsd-kind-icon">get<wbr>Var<wbr>Name</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="_hooks_.html#emithooks" class="tsd-kind-icon">emit<wbr>Hooks</a>
 					</li>
 				</ul>
 			</nav>

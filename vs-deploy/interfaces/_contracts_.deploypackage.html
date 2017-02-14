@@ -80,6 +80,9 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
+						<a href="_contracts_.hideable.html" class="tsd-signature-type">Hideable</a>
+					</li>
+					<li>
 						<a href="_contracts_.sortable.html" class="tsd-signature-type">Sortable</a>
 						<ul class="tsd-hierarchy">
 							<li>
@@ -102,7 +105,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#exclude" class="tsd-kind-icon">exclude</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#files" class="tsd-kind-icon">files</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#isfor" class="tsd-kind-icon">is<wbr>For</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploypackage.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#nonodemodules" class="tsd-kind-icon">no<wbr>Node<wbr>Modules</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploypackage.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#targets" class="tsd-kind-icon">targets</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#usetargetlistfordeployonsave" class="tsd-kind-icon">use<wbr>Target<wbr>List<wbr>For<wbr>Deploy<wbr>OnSave</a></li>
@@ -203,6 +208,22 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="ishidden" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Hidden</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Hidden<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.hideable.html">Hideable</a>.<a href="_contracts_.hideable.html#ishidden">isHidden</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1328</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Is hidden or not.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
@@ -218,6 +239,21 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="nonodemodules" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Node<wbr>Modules</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Node<wbr>Modules<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:806</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Exclude &#39;node_modules&#39; directory by default or not.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="sortorder" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> sort<wbr>Order</h3>
@@ -225,7 +261,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.sortable.html">Sortable</a>.<a href="_contracts_.sortable.html#sortorder">sortOrder</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1494</li>
+							<li>Defined in contracts.ts:1508</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -240,7 +276,7 @@
 					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:806</li>
+							<li>Defined in contracts.ts:810</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -255,7 +291,7 @@
 					<div class="tsd-signature tsd-kind-icon">use<wbr>Target<wbr>List<wbr>For<wbr>Deploy<wbr>OnSave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:811</li>
+							<li>Defined in contracts.ts:815</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -303,8 +339,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.deploypackage.html#isfor" class="tsd-kind-icon">is<wbr>For</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.deploypackage.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.deploypackage.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deploypackage.html#nonodemodules" class="tsd-kind-icon">no<wbr>Node<wbr>Modules</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.deploypackage.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a>

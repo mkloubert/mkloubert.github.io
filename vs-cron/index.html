@@ -356,9 +356,9 @@
     <span class="hljs-comment">// ... with other scripts of this type</span>
     args.globalState[<span class="hljs-string">'myScript'</span>] = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
 
-    <span class="hljs-comment">// access permantent data storages</span>
+    <span class="hljs-comment">// access permanent data storages</span>
     <span class="hljs-comment">// s. https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/common/memento.ts</span>
-    <span class="hljs-keyword">let</span> myAppWideValue = args.appState.get(<span class="hljs-string">'myAppValue'</span>);  <span class="hljs-comment">// app wide</span>
+    <span class="hljs-keyword">var</span> myAppWideValue = args.appState.get(<span class="hljs-string">'myAppValue'</span>);  <span class="hljs-comment">// app wide</span>
     args.workspaceState.update(<span class="hljs-string">'myWorkspaceValue'</span>, <span class="hljs-string">'New workspace wide value'</span>);  <span class="hljs-comment">// workspace wide</span>
 
     <span class="hljs-comment">// registers for a one-time event</span>

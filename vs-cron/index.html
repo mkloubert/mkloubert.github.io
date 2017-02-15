@@ -65,8 +65,370 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="vs-cron">vs-cron</h1>
+				<p><a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-cron"><img src="https://vsmarketplacebadge.apphb.com/version-short/mkloubert.vs-cron.svg" alt="Latest Release"></a>
+					<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-cron"><img src="https://vsmarketplacebadge.apphb.com/installs/mkloubert.vs-cron.svg" alt="Installs"></a>
+				<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-cron#review-details"><img src="https://vsmarketplacebadge.apphb.com/rating-short/mkloubert.vs-cron.svg" alt="Rating"></a></p>
 				<p><a href="https://code.visualstudio.com/">Visual Studio Code</a> (VS Code) extension that runs tasks periodically.</p>
 				<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=W833F9G7EGBNY"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a> <a href="https://flattr.com/submit/auto?fid=o62pkd&amp;url=https%3A%2F%2Fgithub.com%2Fmkloubert%2Fvs-cron"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt=""></a></p>
+				<ol>
+					<li><a href="#install-">Install</a></li>
+					<li><a href="#how-to-use-">How to use</a><ul>
+							<li><a href="#settings-">Settings</a><ul>
+									<li><a href="#jobs-">Jobs</a><ul>
+											<li><a href="#commands-">Commands</a><ul>
+													<li><a href="#scripts-">Scripts</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#commands--1">Commands</a></li>
+						</ul>
+					</li>
+					<li><a href="#documentation-">Documentation</a></li>
+				</ol>
+				<h2 id="install-uarr-table-of-contents-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter:</p>
+				<pre><code class="lang-bash">ext install vs-cron
+</code></pre>
+				<p>Or search for things like <code>vs-cron</code> in your editor.</p>
+				<h2 id="how-to-use-uarr-table-of-contents-">How to use [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="settings-uarr-how-to-use-">Settings [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Open (or create) your <code>settings.json</code> in your <code>.vscode</code> subfolder of your workspace.</p>
+				<p>Add a <code>cron.jobs</code> section:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"cron.jobs"</span>: {
+    }
+}
+</code></pre>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>globals</code></td>
+							<td>Global data available from everywhere.</td>
+						</tr>
+						<tr>
+							<td><code>jobs</code></td>
+							<td>One or more <a href="#jobs-">job</a> to define.</td>
+						</tr>
+						<tr>
+							<td><code>timeZone</code></td>
+							<td>The custom default value for the timezone to use.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4 id="jobs-uarr-settings-">Jobs [<a href="#settings-">&uarr;</a>]</h4>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"cron.jobs"</span>: {
+        <span class="hljs-attr">"jobs"</span>: [
+            {
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My AutoSave using CronTab format"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Saves all opened files all 30 seconds."</span>,
+
+                <span class="hljs-attr">"time"</span>: <span class="hljs-string">"*/30 * * * * *"</span>,
+                <span class="hljs-attr">"action"</span>: <span class="hljs-string">"workbench.action.files.saveAll"</span>
+            },
+
+            {
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My Script using specific date"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Runs a script at a specific time."</span>,
+
+                <span class="hljs-attr">"format"</span>: <span class="hljs-string">"date"</span>,
+                <span class="hljs-attr">"time"</span>: <span class="hljs-string">"1979-09-05 23:09:00"</span>,
+                <span class="hljs-attr">"action"</span>: {
+                    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"script"</span>,
+                    <span class="hljs-attr">"script"</span>: <span class="hljs-string">"./my-cron-script.js"</span>
+                }
+            }
+        ]
+    }
+}
+</code></pre>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>action</code></td>
+							<td>The action to define. Default: <code>crontab</code></td>
+						</tr>
+						<tr>
+							<td><code>autoStart</code></td>
+							<td>Run on startup or not. Default: <code>(false)</code></td>
+						</tr>
+						<tr>
+							<td><code>description</code></td>
+							<td>The description for the job.</td>
+						</tr>
+						<tr>
+							<td><code>format</code></td>
+							<td>The format to use. Can be <code>crontab</code> or <code>date</code>. Default: <code>crontab</code></td>
+						</tr>
+						<tr>
+							<td><code>maximum</code></td>
+							<td>The maximum number of executions.</td>
+						</tr>
+						<tr>
+							<td><code>minimum</code></td>
+							<td>The minimum number of ticks before the job does its first action.</td>
+						</tr>
+						<tr>
+							<td><code>name</code></td>
+							<td>The (display) name of the job.</td>
+						</tr>
+						<tr>
+							<td><code>runParallel</code></td>
+							<td>Indicates if this job can be run parallel to another or not. Default: <code>(false)</code></td>
+						</tr>
+						<tr>
+							<td><code>startDelay</code></td>
+							<td>The start delay in milliseconds.</td>
+						</tr>
+						<tr>
+							<td><code>time</code></td>
+							<td>The time value that is used to configure the job. For <code>crontab</code> format, s. <a href="https://www.npmjs.com/package/cron">cron module</a></td>
+						</tr>
+						<tr>
+							<td><code>timeZone</code></td>
+							<td>The custom timezone to use.</td>
+						</tr>
+						<tr>
+							<td><code>validFrom</code></td>
+							<td>Defines the minumum time the job can be executed.</td>
+						</tr>
+						<tr>
+							<td><code>validUntil</code></td>
+							<td>Defines the maximum time the job can be executed.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h5 id="actions-uarr-jobs-">Actions [<a href="#jobs-">&uarr;</a>]</h5>
+				<p>The <code>action</code> can be a string, for executing a command, or an object with a <code>type</code> property:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Value</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>command</code></td>
+							<td>Execute a <a href="#commands-">command</a>.</td>
+						</tr>
+						<tr>
+							<td><code>script</code></td>
+							<td>Execute a <a href="#scripts-">script</a>.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h6 id="commands-uarr-actions-">Commands [<a href="#actions-">&uarr;</a>]</h6>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"cron.jobs"</span>: {
+        <span class="hljs-attr">"jobs"</span>: [
+            {
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My AutoSave"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Saves all opened files all 5 minutes."</span>,
+
+                <span class="hljs-attr">"time"</span>: <span class="hljs-string">"*/5 * * * *"</span>,
+                <span class="hljs-attr">"action"</span>: {
+                    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"command"</span>,
+                    <span class="hljs-attr">"command"</span>: <span class="hljs-string">"workbench.action.files.saveAll"</span>
+                }
+            }
+        ]
+    }
+}
+</code></pre>
+				<p>The <code>action</code> property has the following format:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>arguments</code></td>
+							<td>Optional / required arguments for the command.</td>
+						</tr>
+						<tr>
+							<td><code>command</code></td>
+							<td>The ID of the command to execute.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h6 id="scripts-uarr-actions-">Scripts [<a href="#actions-">&uarr;</a>]</h6>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"cron.jobs"</span>: {
+        <span class="hljs-attr">"globals"</span>: <span class="hljs-string">"Marcel K! Marcel K! Marcel K!"</span>,
+
+        <span class="hljs-attr">"jobs"</span>: [
+            {
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My Script"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Runs a script every minute."</span>,
+
+                <span class="hljs-attr">"action"</span>: {
+                    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"script"</span>,
+                    <span class="hljs-attr">"script"</span>: <span class="hljs-string">"./my-cron-script.js"</span>,
+
+                    <span class="hljs-attr">"options"</span>: <span class="hljs-string">"TM"</span>,
+                    <span class="hljs-attr">"state"</span>: <span class="hljs-number">23979</span>
+                }
+            }
+        ]
+    }
+}
+</code></pre>
+				<p>The <code>action</code> property has the following format:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>cached</code></td>
+							<td>Store script (module) in cache or not. Default: <code>(false)</code></td>
+						</tr>
+						<tr>
+							<td><code>options</code></td>
+							<td>Optional data for the execution.</td>
+						</tr>
+						<tr>
+							<td><code>script</code></td>
+							<td>The path to the script to execute.</td>
+						</tr>
+						<tr>
+							<td><code>state</code></td>
+							<td>The initial state value for the script.</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>The <code>./my-cron-script.js</code> script file should look like this:</p>
+				<pre><code class="lang-javascript">exports.tick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+    <span class="hljs-comment">// access VS Code API (s. https://code.visualstudio.com/Docs/extensionAPI/vscode-api)</span>
+    <span class="hljs-keyword">var</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
+
+    <span class="hljs-comment">// access Node.js API provided by VS Code</span>
+    <span class="hljs-comment">// s.  (s. https://nodejs.org/api/)</span>
+    <span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+    <span class="hljs-comment">// access an own module</span>
+    <span class="hljs-keyword">var</span> myModule = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./my-module.js'</span>);
+
+    <span class="hljs-comment">// access a module used by the extension:</span>
+    <span class="hljs-comment">// s. https://mkloubert.github.io/vs-cron/modules/_helpers_.html</span>
+    <span class="hljs-keyword">var</span> helpers = args.require(<span class="hljs-string">'./helpers'</span>);
+
+    <span class="hljs-comment">// access a module that is part of the extentsion</span>
+    <span class="hljs-comment">// s. https://github.com/mkloubert/vs-cron/blob/master/package.json</span>
+    <span class="hljs-keyword">var</span> moment = args.require(<span class="hljs-string">'moment'</span>);
+
+    <span class="hljs-comment">// access the global data from the settings</span>
+    <span class="hljs-comment">// </span>
+    <span class="hljs-comment">// from the example above this is: "Marcel K! Marcel K! Marcel K!"</span>
+    <span class="hljs-keyword">var</span> globals = args.globals;
+
+    <span class="hljs-comment">// access the data from the settings</span>
+    <span class="hljs-comment">// </span>
+    <span class="hljs-comment">// from the example above this is: "TM"</span>
+    <span class="hljs-keyword">var</span> opts = args.options;
+
+    <span class="hljs-comment">// share / store data (while current session)...</span>
+    <span class="hljs-comment">// ... for this script</span>
+    <span class="hljs-keyword">var</span> myState = args.state;  <span class="hljs-comment">// 23979 at the beginning (s. settings above)</span>
+    args.state = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+    <span class="hljs-comment">// ... with other scripts of this type</span>
+    args.globalState[<span class="hljs-string">'myScript'</span>] = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+
+    <span class="hljs-comment">// access permantent data storages</span>
+    <span class="hljs-comment">// s. https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/common/memento.ts</span>
+    args.appState.update(<span class="hljs-string">'myValue'</span>);  <span class="hljs-comment">// app wide</span>
+    args.workspaceState.update(<span class="hljs-string">'myValue'</span>);  <span class="hljs-comment">// workspace wide</span>
+
+    <span class="hljs-comment">// registers for a one-time event</span>
+    args.once(<span class="hljs-string">'myEvent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">v</span>) </span>{
+        <span class="hljs-comment">// 'v' should be 'Anders Hejlsberg'</span>
+        <span class="hljs-comment">// s. below</span>
+    });
+
+    <span class="hljs-comment">// emit 'myEvent' event (s. above)</span>
+    args.emit(<span class="hljs-string">'myEvent'</span>, <span class="hljs-string">'Anders Hejlsberg'</span>);
+
+    <span class="hljs-comment">// open HTML document in new tab (for repots e.g.)</span>
+    args.openHtml(<span class="hljs-string">'&lt;html&gt;This is an HTML document&lt;/html&gt;'</span>, <span class="hljs-string">'My HTML document'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// HTML opened</span>
+    }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+        <span class="hljs-comment">// opening HTML document failed</span>
+    });
+
+
+    <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+				<p>The <code>args</code> parameter uses the <a href="https://mkloubert.github.io/vs-cron/interfaces/_contracts_.jobscriptmoduleexecutorarguments.html">JobScriptModuleExecutorArguments</a> interface.</p>
+				<p>You can return a number (sync execution), a <a href="https://github.com/Microsoft/vscode-extension-vscode/blob/master/thenable.d.ts">Promise</a> or nothing (default exit code <code>0</code>).</p>
+				<h3 id="commands-uarr-how-to-use-">Commands [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Press <code>F1</code> to open the list of commands and enter one of the following commands:</p>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-cron/master/demos/demo1.gif" alt="Demo How to execute"></p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+							<th>Command</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>Cron Jobs: Restart all jobs</code></td>
+							<td>Restarts all running jobs.</td>
+							<td><code>extension.cronJons.restartRunningJobs</code></td>
+						</tr>
+						<tr>
+							<td><code>Cron Jobs: Restart job</code></td>
+							<td>Restarts a specific job.</td>
+							<td><code>extension.cronJons.restartJob</code></td>
+						</tr>
+						<tr>
+							<td><code>Cron Jobs: Start job</code></td>
+							<td>Starts a specific job.</td>
+							<td><code>extension.cronJons.startJob</code></td>
+						</tr>
+						<tr>
+							<td><code>Cron Jobs: Start all jobs</code></td>
+							<td>Starts all non-running jobs.</td>
+							<td><code>extension.cronJons.startNoRunningJobs</code></td>
+						</tr>
+						<tr>
+							<td><code>Cron Jobs: Stop all running jobs</code></td>
+							<td>Stops all running jobs.</td>
+							<td><code>extension.cronJons.stopRunningJobs</code></td>
+						</tr>
+						<tr>
+							<td><code>Cron Jobs: Stop job</code></td>
+							<td>Stops a specific job.</td>
+							<td><code>extension.cronJons.stopJob</code></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 id="documentation-uarr-table-of-contents-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>The full API documentation can be found <a href="https://mkloubert.github.io/vs-cron/">here</a>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

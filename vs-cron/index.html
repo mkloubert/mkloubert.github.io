@@ -319,7 +319,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<p>The <code>./my-cron-script.js</code> script file should look like this:</p>
+				<p>The <code>./my-cron-script.js</code> script file must have a public / exported <code>tick()</code> function:</p>
 				<pre><code class="lang-javascript">exports.tick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
     <span class="hljs-comment">// access VS Code API (s. https://code.visualstudio.com/Docs/extensionAPI/vscode-api)</span>
     <span class="hljs-keyword">var</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
@@ -360,6 +360,10 @@
     <span class="hljs-comment">// s. https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/common/memento.ts</span>
     <span class="hljs-keyword">var</span> myAppWideValue = args.appState.get(<span class="hljs-string">'myAppValue'</span>);  <span class="hljs-comment">// app wide</span>
     args.workspaceState.update(<span class="hljs-string">'myWorkspaceValue'</span>, <span class="hljs-string">'New workspace wide value'</span>);  <span class="hljs-comment">// workspace wide</span>
+
+    <span class="hljs-comment">// share data between two executions</span>
+    <span class="hljs-keyword">var</span> prevVal = args.previousValue;  <span class="hljs-comment">// data from the previous execution</span>
+    args.nextValue = <span class="hljs-string">'This is a value only for the next execution'</span>;  <span class="hljs-comment">// data for the next execution</span>
 
     <span class="hljs-comment">// registers for a one-time event</span>
     args.once(<span class="hljs-string">'myEvent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">v</span>) </span>{

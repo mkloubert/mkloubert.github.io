@@ -364,7 +364,8 @@
     <span class="hljs-comment">// registers for a one-time event</span>
     args.once(<span class="hljs-string">'myEvent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">v</span>) </span>{
         <span class="hljs-comment">// 'v' should be 'Anders Hejlsberg'</span>
-        <span class="hljs-comment">// s. below</span>
+        <span class="hljs-comment">// if upcoming 'args.emit()' is called</span>
+        args.log(<span class="hljs-string">"From 'myEvent': "</span> + v);
     });
 
     <span class="hljs-comment">// emit 'myEvent' event (s. above)</span>

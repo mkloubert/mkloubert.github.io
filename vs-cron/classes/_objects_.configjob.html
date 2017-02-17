@@ -92,7 +92,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><span class="tsd-signature-type">Disposable</span></li>
+					<li><a href="../interfaces/_contracts_.jobscheduler.html" class="tsd-signature-type">JobScheduler</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -110,6 +110,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_objects_.configjob.html#_config" class="tsd-kind-icon">_CONFIG</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_objects_.configjob.html#_controller" class="tsd-kind-icon">_CONTROLLER</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_objects_.configjob.html#_lastexecution" class="tsd-kind-icon">_last<wbr>Execution</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_objects_.configjob.html#_scheduler" class="tsd-kind-icon">_scheduler</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_objects_.configjob.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
@@ -120,6 +121,8 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_objects_.configjob.html#config" class="tsd-kind-icon">config</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_objects_.configjob.html#controller" class="tsd-kind-icon">controller</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_objects_.configjob.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_objects_.configjob.html#lastexecution" class="tsd-kind-icon">last<wbr>Execution</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_objects_.configjob.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -161,7 +164,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:60</li>
+									<li>Defined in objects.ts:64</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -226,12 +229,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_lastexecution" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _last<wbr>Execution</h3>
+					<div class="tsd-signature tsd-kind-icon">_last<wbr>Execution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in objects.ts:60</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Stores the timestamp of the last execution.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_scheduler" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _scheduler</h3>
 					<div class="tsd-signature tsd-kind-icon">_scheduler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in objects.ts:60</li>
+							<li>Defined in objects.ts:64</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -264,7 +282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:78</li>
+									<li>Defined in objects.ts:82</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -286,7 +304,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:85</li>
+									<li>Defined in objects.ts:89</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -308,7 +326,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:99</li>
+									<li>Defined in objects.ts:103</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -317,6 +335,54 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="lastexecution" class="tsd-anchor"></a>
+					<h3>last<wbr>Execution</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> lastExecution<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Moment.Moment</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in objects.ts:111</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the timestamp of the last execution.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Moment.Moment</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> name<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in objects.ts:116</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the name of the underlying job (lower case).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -359,15 +425,15 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/_contracts_.jobscheduler.html">JobScheduler</a>.<a href="../interfaces/_contracts_.jobscheduler.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in objects.ts:90</li>
+									<li>Defined in objects.ts:94</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
+								<div class="lead">
+									<p>Dispose this object.</p>
+								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
@@ -685,7 +751,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:109</li>
+									<li>Defined in objects.ts:125</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -708,7 +774,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:129</li>
+									<li>Defined in objects.ts:145</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -731,7 +797,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:813</li>
+									<li>Defined in objects.ts:858</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -754,7 +820,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:833</li>
+									<li>Defined in objects.ts:878</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -836,6 +902,9 @@
 								<a href="_objects_.configjob.html#_controller" class="tsd-kind-icon">_CONTROLLER</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_objects_.configjob.html#_lastexecution" class="tsd-kind-icon">_last<wbr>Execution</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_objects_.configjob.html#_scheduler" class="tsd-kind-icon">_scheduler</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
@@ -849,6 +918,12 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_objects_.configjob.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_objects_.configjob.html#lastexecution" class="tsd-kind-icon">last<wbr>Execution</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_objects_.configjob.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_objects_.configjob.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>

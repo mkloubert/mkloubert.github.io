@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>JobCommandAction | vs-cron</title>
+	<title>JobInfo | vs-cron</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.jobcommandaction.html">JobCommandAction</a>
+					<a href="_contracts_.jobinfo.html">JobInfo</a>
 				</li>
 			</ul>
-			<h1>Interface JobCommandAction</h1>
+			<h1>Interface JobInfo</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A job action for running a command.</p>
+						<p>Information about a job.</p>
 					</div>
 				</div>
 			</section>
@@ -80,12 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_contracts_.jobaction.html" class="tsd-signature-type">JobAction</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">JobCommandAction</span>
-							</li>
-						</ul>
+						<span class="target">JobInfo</span>
 					</li>
 				</ul>
 			</section>
@@ -96,9 +91,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.jobcommandaction.html#arguments" class="tsd-kind-icon">arguments</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.jobcommandaction.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.jobcommandaction.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.jobinfo.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.jobinfo.html#lastexecution" class="tsd-kind-icon">last<wbr>Execution</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.jobinfo.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,48 +102,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="arguments" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> arguments</h3>
-					<div class="tsd-signature tsd-kind-icon">arguments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="isrunning" class="tsd-anchor"></a>
+					<h3>is<wbr>Running</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Running<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:156</li>
+							<li>Defined in contracts.ts:170</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The optional arguments for the execution.</p>
+							<p>Gets if the job is currently running or not.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="command" class="tsd-anchor"></a>
-					<h3>command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="lastexecution" class="tsd-anchor"></a>
+					<h3>last<wbr>Execution</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Execution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:160</li>
+							<li>Defined in contracts.ts:174</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The ID of the command to execute.</p>
+							<p>Gets the timestamp of the last execution in ISO format.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.jobaction.html">JobAction</a>.<a href="_contracts_.jobaction.html#type">type</a></p>
 						<ul>
-							<li>Defined in contracts.ts:146</li>
+							<li>Defined in contracts.ts:178</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Type of the action.</p>
+							<p>Gets the name of the job.</p>
 						</div>
 					</div>
 				</section>
@@ -191,27 +185,27 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.jobaction.html" class="tsd-kind-icon">Job<wbr>Action</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.jobcommandaction.html" class="tsd-kind-icon">Job<wbr>Command<wbr>Action</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.jobcommandaction.html" class="tsd-kind-icon">Job<wbr>Command<wbr>Action</a>
+						<a href="_contracts_.jobinfo.html" class="tsd-kind-icon">Job<wbr>Info</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.jobcommandaction.html#arguments" class="tsd-kind-icon">arguments</a>
+								<a href="_contracts_.jobinfo.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.jobcommandaction.html#command" class="tsd-kind-icon">command</a>
+								<a href="_contracts_.jobinfo.html#lastexecution" class="tsd-kind-icon">last<wbr>Execution</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.jobcommandaction.html#type" class="tsd-kind-icon">type</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.jobinfo.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.jobinfo.html" class="tsd-kind-icon">Job<wbr>Info</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.jobscheduler.html" class="tsd-kind-icon">Job<wbr>Scheduler</a>
 					</li>

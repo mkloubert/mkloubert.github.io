@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;api/deploy&quot; | vs-rest-api</title>
+	<title>JobInfo | vs-rest-api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,107 +56,127 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_api_deploy_.html">&quot;api/deploy&quot;</a>
+					<a href="../modules/_api_cron_.html">&quot;api/cron&quot;</a>
+				</li>
+				<li>
+					<a href="_api_cron_.jobinfo.html">JobInfo</a>
 				</li>
 			</ul>
-			<h1>External module &quot;api/deploy&quot;</h1>
+			<h1>Interface JobInfo</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Information about a job.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">JobInfo</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_api_deploy_.deploytargetentry.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Entry</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_api_deploy_.html#deploytargets" class="tsd-kind-icon">Deploy<wbr>Targets</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_deploy_.html#get" class="tsd-kind-icon">GET</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_api_deploy_.html#post" class="tsd-kind-icon">POST</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_api_cron_.jobinfo.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_api_cron_.jobinfo.html#detail" class="tsd-kind-icon">detail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_api_cron_.jobinfo.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_api_cron_.jobinfo.html#lastexecution" class="tsd-kind-icon">last<wbr>Execution</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_api_cron_.jobinfo.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-					<a name="deploytargets" class="tsd-anchor"></a>
-					<h3>Deploy<wbr>Targets</h3>
-					<div class="tsd-signature tsd-kind-icon">Deploy<wbr>Targets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in api/deploy.ts:52</li>
+							<li>Defined in api/cron.ts:37</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Possible types for deploy targets.</p>
+							<p>The description for the job.</p>
 						</div>
 					</div>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>GET</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">GET<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in api/deploy.ts:56</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="detail" class="tsd-anchor"></a>
+					<h3>detail</h3>
+					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/cron.ts:41</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Detail information for the job.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="post" class="tsd-anchor"></a>
-					<h3>POST</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">POST<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in api/deploy.ts:116</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>args: <a href="../interfaces/_contracts_.apimethodarguments.html" class="tsd-signature-type">ApiMethodArguments</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isrunning" class="tsd-anchor"></a>
+					<h3>is<wbr>Running</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Running<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/cron.ts:45</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if the job is currently running or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="lastexecution" class="tsd-anchor"></a>
+					<h3>last<wbr>Execution</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Execution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/cron.ts:49</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the timestamp of the last execution in ISO format.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in api/cron.ts:53</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the name of the job.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -167,23 +187,53 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_api_deploy_.html">"api/deploy"</a>
+						<a href="../modules/_api_cron_.html">"api/cron"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_api_deploy_.deploytargetentry.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Entry</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_api_cron_.jobinfo.html" class="tsd-kind-icon">Job<wbr>Info</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_api_cron_.jobinfo.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_api_cron_.jobinfo.html#detail" class="tsd-kind-icon">detail</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_api_cron_.jobinfo.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_api_cron_.jobinfo.html#lastexecution" class="tsd-kind-icon">last<wbr>Execution</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_api_cron_.jobinfo.html#name" class="tsd-kind-icon">name</a>
+							</li>
+						</ul>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="_api_deploy_.html#deploytargets" class="tsd-kind-icon">Deploy<wbr>Targets</a>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_api_cron_.html#delete" class="tsd-kind-icon">DELETE</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_api_deploy_.html#get" class="tsd-kind-icon">GET</a>
+						<a href="../modules/_api_cron_.html#get" class="tsd-kind-icon">GET</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_api_deploy_.html#post" class="tsd-kind-icon">POST</a>
+						<a href="../modules/_api_cron_.html#post" class="tsd-kind-icon">POST</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_api_cron_.html#put" class="tsd-kind-icon">PUT</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_api_cron_.html#getjobs" class="tsd-kind-icon">get<wbr>Jobs</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_api_cron_.html#jobinfotoobject" class="tsd-kind-icon">job<wbr>Info<wbr>ToObject</a>
 					</li>
 				</ul>
 			</nav>

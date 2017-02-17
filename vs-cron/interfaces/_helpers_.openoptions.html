@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>JobCommandAction | vs-cron</title>
+	<title>OpenOptions | vs-cron</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
+					<a href="../modules/_helpers_.html">&quot;helpers&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.jobcommandaction.html">JobCommandAction</a>
+					<a href="_helpers_.openoptions.html">OpenOptions</a>
 				</li>
 			</ul>
-			<h1>Interface JobCommandAction</h1>
+			<h1>Interface OpenOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A job action for running a command.</p>
+						<p>Options for open function.</p>
 					</div>
 				</div>
 			</section>
@@ -80,12 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_contracts_.jobaction.html" class="tsd-signature-type">JobAction</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">JobCommandAction</span>
-							</li>
-						</ul>
+						<span class="target">OpenOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -96,9 +91,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.jobcommandaction.html#arguments" class="tsd-kind-icon">arguments</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.jobcommandaction.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.jobcommandaction.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_.openoptions.html#app" class="tsd-kind-icon">app</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_.openoptions.html#cwd" class="tsd-kind-icon">cwd</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_.openoptions.html#wait" class="tsd-kind-icon">wait</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,48 +102,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="arguments" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> arguments</h3>
-					<div class="tsd-signature tsd-kind-icon">arguments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="app" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> app</h3>
+					<div class="tsd-signature tsd-kind-icon">app<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:160</li>
+							<li>Defined in helpers.ts:41</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The optional arguments for the execution.</p>
+							<p>The app (or options) to open.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="command" class="tsd-anchor"></a>
-					<h3>command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="cwd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cwd</h3>
+					<div class="tsd-signature tsd-kind-icon">cwd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:164</li>
+							<li>Defined in helpers.ts:45</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The ID of the command to execute.</p>
+							<p>The custom working directory.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="wait" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> wait</h3>
+					<div class="tsd-signature tsd-kind-icon">wait<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.jobaction.html">JobAction</a>.<a href="_contracts_.jobaction.html#type">type</a></p>
 						<ul>
-							<li>Defined in contracts.ts:150</li>
+							<li>Defined in helpers.ts:49</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Type of the action.</p>
+							<p>Wait until exit or not.</p>
 						</div>
 					</div>
 				</section>
@@ -163,13 +157,13 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_content_.html">"content"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_contracts_.html">"contracts"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_controller_.html">"controller"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_helpers_.html">"helpers"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -179,74 +173,89 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.document.html" class="tsd-kind-icon">Document</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.job.html" class="tsd-kind-icon">Job</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.jobaction.html" class="tsd-kind-icon">Job<wbr>Action</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.jobcommandaction.html" class="tsd-kind-icon">Job<wbr>Command<wbr>Action</a>
+						<a href="_helpers_.openoptions.html" class="tsd-kind-icon">Open<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.jobcommandaction.html#arguments" class="tsd-kind-icon">arguments</a>
+								<a href="_helpers_.openoptions.html#app" class="tsd-kind-icon">app</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.jobcommandaction.html#command" class="tsd-kind-icon">command</a>
+								<a href="_helpers_.openoptions.html#cwd" class="tsd-kind-icon">cwd</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.jobcommandaction.html#type" class="tsd-kind-icon">type</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_helpers_.openoptions.html#wait" class="tsd-kind-icon">wait</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.jobinfo.html" class="tsd-kind-icon">Job<wbr>Info</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.jobscheduler.html" class="tsd-kind-icon">Job<wbr>Scheduler</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.jobscriptaction.html" class="tsd-kind-icon">Job<wbr>Script<wbr>Action</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.jobscriptmodule.html" class="tsd-kind-icon">Job<wbr>Script<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.jobscriptmoduleexecutorarguments.html" class="tsd-kind-icon">Job<wbr>Script<wbr>Module<wbr>Executor<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.popupbutton.html" class="tsd-kind-icon">Popup<wbr>Button</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.scriptarguments.html" class="tsd-kind-icon">Script<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.scriptmodule.html" class="tsd-kind-icon">Script<wbr>Module</a>
-					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#jobnames" class="tsd-kind-icon">Job<wbr>Names</a>
+						<a href="../modules/_helpers_.html#simplecompletedaction" class="tsd-kind-icon">Simple<wbr>Completed<wbr>Action</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#jobscriptmoduleexecutor" class="tsd-kind-icon">Job<wbr>Script<wbr>Module<wbr>Executor</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_helpers_.html#nexthtmldocid" class="tsd-kind-icon">next<wbr>Html<wbr>Doc<wbr>Id</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#jobscriptmoduleexecutorresult" class="tsd-kind-icon">Job<wbr>Script<wbr>Module<wbr>Executor<wbr>Result</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_helpers_.html#asarray" class="tsd-kind-icon">as<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#popupbuttonaction" class="tsd-kind-icon">Popup<wbr>Button<wbr>Action</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_helpers_.html#cloneobject" class="tsd-kind-icon">clone<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_helpers_.html#comparevalues" class="tsd-kind-icon">compare<wbr>Values</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#configjobstoquickpicks" class="tsd-kind-icon">config<wbr>Jobs<wbr>ToQuick<wbr>Picks</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_helpers_.html#createsimplepromisecompletedaction" class="tsd-kind-icon">create<wbr>Simple<wbr>Promise<wbr>Completed<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_helpers_.html#distinctarray" class="tsd-kind-icon">distinct<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#geturlparam" class="tsd-kind-icon">get<wbr>Url<wbr>Param</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#isemptystring" class="tsd-kind-icon">is<wbr>Empty<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#isnullorundefined" class="tsd-kind-icon">is<wbr>Null<wbr>OrUndefined</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_helpers_.html#loadmodulesync" class="tsd-kind-icon">load<wbr>Module<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#log" class="tsd-kind-icon">log</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#normalizestring" class="tsd-kind-icon">normalize<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#open" class="tsd-kind-icon">open</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#openhtmldocument" class="tsd-kind-icon">open<wbr>Html<wbr>Document</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#removedocuments" class="tsd-kind-icon">remove<wbr>Documents</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#requiremodule" class="tsd-kind-icon">require<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#tobooleansafe" class="tsd-kind-icon">to<wbr>Boolean<wbr>Safe</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#tostringsafe" class="tsd-kind-icon">to<wbr>String<wbr>Safe</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#trydispose" class="tsd-kind-icon">try<wbr>Dispose</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_helpers_.html#uriparamstoobject" class="tsd-kind-icon">uri<wbr>Params<wbr>ToObject</a>
 					</li>
 				</ul>
 			</nav>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StateRepository | vs-rest-api</title>
+	<title>WhiteboardRevisionFile | vs-rest-api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
+					<a href="../modules/_whiteboard_.html">&quot;whiteboard&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.staterepository.html">StateRepository</a>
+					<a href="_whiteboard_.whiteboardrevisionfile.html">WhiteboardRevisionFile</a>
 				</li>
 			</ul>
-			<h1>Interface StateRepository</h1>
+			<h1>Interface WhiteboardRevisionFile</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A state repository.</p>
+						<p>Content of a whiteboard revision file.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">StateRepository</span>
+						<span class="target">WhiteboardRevisionFile</span>
 					</li>
 				</ul>
 			</section>
@@ -88,70 +88,110 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-external">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.staterepository.html#globals" class="tsd-kind-icon">globals</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.staterepository.html#guest" class="tsd-kind-icon">guest</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.staterepository.html#users" class="tsd-kind-icon">users</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_whiteboard_.whiteboardrevisionfile.html#body" class="tsd-kind-icon">body</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_whiteboard_.whiteboardrevisionfile.html#encoding" class="tsd-kind-icon">encoding</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_whiteboard_.whiteboardrevisionfile.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_whiteboard_.whiteboardrevisionfile.html#mime" class="tsd-kind-icon">mime</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_whiteboard_.whiteboardrevisionfile.html#time" class="tsd-kind-icon">time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-external"><a href="_whiteboard_.whiteboardrevisionfile.html#title" class="tsd-kind-icon">title</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="globals" class="tsd-anchor"></a>
-					<h3>globals</h3>
-					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <a href="_contracts_.staterepositoryitem.html" class="tsd-signature-type">StateRepositoryItem</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="body" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> body</h3>
+					<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:806</li>
+							<li>Defined in whiteboard.ts:54</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An item for all accounts.</p>
+							<p>The content in Base64 format.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="guest" class="tsd-anchor"></a>
-					<h3>guest</h3>
-					<div class="tsd-signature tsd-kind-icon">guest<span class="tsd-signature-symbol">:</span> <a href="_contracts_.staterepositoryitem.html" class="tsd-signature-type">StateRepositoryItem</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="encoding" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> encoding</h3>
+					<div class="tsd-signature tsd-kind-icon">encoding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:810</li>
+							<li>Defined in whiteboard.ts:58</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An item for the guest account.</p>
+							<p>The encoding.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="users" class="tsd-anchor"></a>
-					<h3>users</h3>
-					<div class="tsd-signature tsd-kind-icon">users<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="id" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:814</li>
+							<li>Defined in whiteboard.ts:62</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The items for the user accounts.</p>
+							<p>The ID.</p>
 						</div>
 					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="_contracts_.staterepositoryitem.html" class="tsd-signature-type">StateRepositoryItem</a></h5>
-							</li>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="mime" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> mime</h3>
+					<div class="tsd-signature tsd-kind-icon">mime<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in whiteboard.ts:66</li>
 						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The MIME type.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="time" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> time</h3>
+					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in whiteboard.ts:70</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The timestamp.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+					<a name="title" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> title</h3>
+					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in whiteboard.ts:74</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The title.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -162,31 +202,55 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_contracts_.html">"contracts"</a>
+					<li class="current tsd-kind-external-module tsd-is-external">
+						<a href="../modules/_whiteboard_.html">"whiteboard"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/_whiteboard_.memorywhitespacerepository.html" class="tsd-kind-icon">Memory<wbr>Whitespace<wbr>Repository</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-external">
+						<a href="../classes/_whiteboard_.whiteboardrepositorybase.html" class="tsd-kind-icon">Whiteboard<wbr>Repository<wbr>Base</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.staterepository.html" class="tsd-kind-icon">State<wbr>Repository</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-external">
+						<a href="_whiteboard_.whiteboardrevisionfile.html" class="tsd-kind-icon">Whiteboard<wbr>Revision<wbr>File</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.staterepository.html#globals" class="tsd-kind-icon">globals</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_whiteboard_.whiteboardrevisionfile.html#body" class="tsd-kind-icon">body</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.staterepository.html#guest" class="tsd-kind-icon">guest</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_whiteboard_.whiteboardrevisionfile.html#encoding" class="tsd-kind-icon">encoding</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.staterepository.html#users" class="tsd-kind-icon">users</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_whiteboard_.whiteboardrevisionfile.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_whiteboard_.whiteboardrevisionfile.html#mime" class="tsd-kind-icon">mime</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_whiteboard_.whiteboardrevisionfile.html#time" class="tsd-kind-icon">time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-external">
+								<a href="_whiteboard_.whiteboardrevisionfile.html#title" class="tsd-kind-icon">title</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="../modules/_whiteboard_.html#fsextra" class="tsd-kind-icon">FSExtra</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/_whiteboard_.html#initial_revision_next_nr" class="tsd-kind-icon">INITIAL_<wbr>REVISION_<wbr>NEXT_<wbr>NR</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external">
+						<a href="../modules/_whiteboard_.html#regex_whiteboard_file" class="tsd-kind-icon">REGEX_<wbr>WHITEBOARD_<wbr>FILE</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

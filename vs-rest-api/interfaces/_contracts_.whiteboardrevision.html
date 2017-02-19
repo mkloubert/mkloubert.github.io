@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StateRepository | vs-rest-api</title>
+	<title>WhiteboardRevision | vs-rest-api</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.staterepository.html">StateRepository</a>
+					<a href="_contracts_.whiteboardrevision.html">WhiteboardRevision</a>
 				</li>
 			</ul>
-			<h1>Interface StateRepository</h1>
+			<h1>Interface WhiteboardRevision</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A state repository.</p>
+						<p>A revision of a whiteboard.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">StateRepository</span>
+						<span class="target">WhiteboardRevision</span>
 					</li>
 				</ul>
 			</section>
@@ -91,9 +91,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.staterepository.html#globals" class="tsd-kind-icon">globals</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.staterepository.html#guest" class="tsd-kind-icon">guest</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.staterepository.html#users" class="tsd-kind-icon">users</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.whiteboardrevision.html#___file" class="tsd-kind-icon">___file</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.whiteboardrevision.html#board" class="tsd-kind-icon">board</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.whiteboardrevision.html#next" class="tsd-kind-icon">next</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.whiteboardrevision.html#nr" class="tsd-kind-icon">nr</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.whiteboardrevision.html#previous" class="tsd-kind-icon">previous</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.whiteboardrevision.html#time" class="tsd-kind-icon">time</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,56 +105,133 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="globals" class="tsd-anchor"></a>
-					<h3>globals</h3>
-					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <a href="_contracts_.staterepositoryitem.html" class="tsd-signature-type">StateRepositoryItem</a></div>
+					<a name="___file" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ___file</h3>
+					<div class="tsd-signature tsd-kind-icon">___file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:806</li>
+							<li>Defined in contracts.ts:1076</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An item for all accounts.</p>
+							<p>[INTERNAL USE] The path to the underlying file.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="guest" class="tsd-anchor"></a>
-					<h3>guest</h3>
-					<div class="tsd-signature tsd-kind-icon">guest<span class="tsd-signature-symbol">:</span> <a href="_contracts_.staterepositoryitem.html" class="tsd-signature-type">StateRepositoryItem</a></div>
+					<a name="board" class="tsd-anchor"></a>
+					<h3>board</h3>
+					<div class="tsd-signature tsd-kind-icon">board<span class="tsd-signature-symbol">:</span> <a href="_contracts_.whiteboard.html" class="tsd-signature-type">Whiteboard</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:810</li>
+							<li>Defined in contracts.ts:1081</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An item for the guest account.</p>
+							<p>Gets the underlying document.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="users" class="tsd-anchor"></a>
-					<h3>users</h3>
-					<div class="tsd-signature tsd-kind-icon">users<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<a name="next" class="tsd-anchor"></a>
+					<h3>next</h3>
+					<div class="tsd-signature tsd-kind-icon">next<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:814</li>
+							<li>Defined in contracts.ts:1087</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The items for the user accounts.</p>
+							<p>Requests the next revision.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>returns</dt>
+							<dd><p>The promise.</p>
+							</dd>
+						</dl>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="_contracts_.staterepositoryitem.html" class="tsd-signature-type">StateRepositoryItem</a></h5>
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_contracts_.whiteboardrevision.html" class="tsd-signature-type">WhiteboardRevision</a><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_contracts_.whiteboardrevision.html" class="tsd-signature-type">WhiteboardRevision</a><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
 							</li>
 						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="nr" class="tsd-anchor"></a>
+					<h3>nr</h3>
+					<div class="tsd-signature tsd-kind-icon">nr<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:1091</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the number of the revision.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="previous" class="tsd-anchor"></a>
+					<h3>previous</h3>
+					<div class="tsd-signature tsd-kind-icon">previous<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:1097</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Requests the previous revision.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>returns</dt>
+							<dd><p>The promise.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_contracts_.whiteboardrevision.html" class="tsd-signature-type">WhiteboardRevision</a><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_contracts_.whiteboardrevision.html" class="tsd-signature-type">WhiteboardRevision</a><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="time" class="tsd-anchor"></a>
+					<h3>time</h3>
+					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:1101</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the time of the revision.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -172,16 +252,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.staterepository.html" class="tsd-kind-icon">State<wbr>Repository</a>
+						<a href="_contracts_.whiteboardrevision.html" class="tsd-kind-icon">Whiteboard<wbr>Revision</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.staterepository.html#globals" class="tsd-kind-icon">globals</a>
+								<a href="_contracts_.whiteboardrevision.html#___file" class="tsd-kind-icon">___file</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.staterepository.html#guest" class="tsd-kind-icon">guest</a>
+								<a href="_contracts_.whiteboardrevision.html#board" class="tsd-kind-icon">board</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.staterepository.html#users" class="tsd-kind-icon">users</a>
+								<a href="_contracts_.whiteboardrevision.html#next" class="tsd-kind-icon">next</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.whiteboardrevision.html#nr" class="tsd-kind-icon">nr</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.whiteboardrevision.html#previous" class="tsd-kind-icon">previous</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.whiteboardrevision.html#time" class="tsd-kind-icon">time</a>
 							</li>
 						</ul>
 					</li>

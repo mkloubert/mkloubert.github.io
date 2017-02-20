@@ -382,6 +382,13 @@
         <span class="hljs-comment">// opening HTML document failed</span>
     });
 
+    <span class="hljs-comment">// deploys 'index.html' to 'My SFTP server'</span>
+    <span class="hljs-comment">// s. https://github.com/mkloubert/vs-deploy</span>
+    args.deploy([<span class="hljs-string">'./index.html'</span>], [<span class="hljs-string">'My SFTP server'</span>]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// file deployed</span>
+    }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+        <span class="hljs-comment">// deployment failed</span>
+    });
 
     <span class="hljs-comment">// ...</span>
 }

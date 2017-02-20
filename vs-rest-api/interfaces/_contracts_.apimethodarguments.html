@@ -98,6 +98,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#compress" class="tsd-kind-icon">compress</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#content" class="tsd-kind-icon">content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#deploy" class="tsd-kind-icon">deploy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#donotemithook" class="tsd-kind-icon">do<wbr>Not<wbr>Emit<wbr>Hook</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#emithook" class="tsd-kind-icon">emit<wbr>Hook</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.apimethodarguments.html#encoding" class="tsd-kind-icon">encoding</a></li>
@@ -175,12 +176,64 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="deploy" class="tsd-anchor"></a>
+					<h3>deploy</h3>
+					<div class="tsd-signature tsd-kind-icon">deploy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:244</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Deploys one or more file to a list of targets.</p>
+						</div>
+						<p>This requires &#39;extension.deploy.filesTo&#39; command as available in extensions like &#39;vs-deploy&#39;
+						s. <a href="https://github.com/mkloubert/vs-deploy">https://github.com/mkloubert/vs-deploy</a></p>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>One or more file to deploy.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>One or more target (name) to deploy to.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The promise.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, targets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+											<li>
+												<h5>targets: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="donotemithook" class="tsd-anchor"></a>
 					<h3>do<wbr>Not<wbr>Emit<wbr>Hook</h3>
 					<div class="tsd-signature tsd-kind-icon">do<wbr>Not<wbr>Emit<wbr>Hook<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:236</li>
+							<li>Defined in contracts.ts:249</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -195,7 +248,7 @@
 					<div class="tsd-signature tsd-kind-icon">emit<wbr>Hook<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:245</li>
+							<li>Defined in contracts.ts:258</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -245,7 +298,7 @@
 					<div class="tsd-signature tsd-kind-icon">encoding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:249</li>
+							<li>Defined in contracts.ts:262</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -260,7 +313,7 @@
 					<div class="tsd-signature tsd-kind-icon">endpoint<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:253</li>
+							<li>Defined in contracts.ts:266</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -304,7 +357,7 @@
 					<div class="tsd-signature tsd-kind-icon">execute<wbr>Build<wbr>In<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:275</li>
+							<li>Defined in contracts.ts:288</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -354,7 +407,7 @@
 					<div class="tsd-signature tsd-kind-icon">extension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ExtensionContext</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:279</li>
+							<li>Defined in contracts.ts:292</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -369,7 +422,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:285</li>
+							<li>Defined in contracts.ts:298</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -404,7 +457,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>String<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:301</li>
+							<li>Defined in contracts.ts:314</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -449,7 +502,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalstate">globalState</a></p>
 						<ul>
-							<li>Defined in contracts.ts:760</li>
+							<li>Defined in contracts.ts:773</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -465,7 +518,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globals">globals</a></p>
 						<ul>
-							<li>Defined in contracts.ts:756</li>
+							<li>Defined in contracts.ts:769</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -480,7 +533,7 @@
 					<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:305</li>
+							<li>Defined in contracts.ts:318</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -504,7 +557,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#log">log</a></p>
 						<ul>
-							<li>Defined in contracts.ts:768</li>
+							<li>Defined in contracts.ts:781</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -548,7 +601,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#openhtml">openHtml</a></p>
 						<ul>
-							<li>Defined in contracts.ts:778</li>
+							<li>Defined in contracts.ts:791</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -605,7 +658,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#options">options</a></p>
 						<ul>
-							<li>Defined in contracts.ts:782</li>
+							<li>Defined in contracts.ts:795</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -620,7 +673,7 @@
 					<div class="tsd-signature tsd-kind-icon">output<wbr>Channel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OutputChannel</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:309</li>
+							<li>Defined in contracts.ts:322</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -635,7 +688,7 @@
 					<div class="tsd-signature tsd-kind-icon">package<span class="tsd-signature-symbol">:</span> <a href="_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:313</li>
+							<li>Defined in contracts.ts:326</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -650,7 +703,7 @@
 					<div class="tsd-signature tsd-kind-icon">parameters<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:317</li>
+							<li>Defined in contracts.ts:330</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -673,7 +726,7 @@
 					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:321</li>
+							<li>Defined in contracts.ts:334</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -688,7 +741,7 @@
 					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <a href="_contracts_.requestcontext.html" class="tsd-signature-type">RequestContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:325</li>
+							<li>Defined in contracts.ts:338</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -704,7 +757,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#require">require</a></p>
 						<ul>
-							<li>Defined in contracts.ts:786</li>
+							<li>Defined in contracts.ts:799</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -740,7 +793,7 @@
 					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <a href="_contracts_.apiresponse.html" class="tsd-signature-type">ApiResponse</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:329</li>
+							<li>Defined in contracts.ts:342</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -755,7 +808,7 @@
 					<div class="tsd-signature tsd-kind-icon">send<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:337</li>
+							<li>Defined in contracts.ts:350</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -798,7 +851,7 @@
 					<div class="tsd-signature tsd-kind-icon">send<wbr>Forbidden<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:343</li>
+							<li>Defined in contracts.ts:356</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -832,7 +885,7 @@
 					<div class="tsd-signature tsd-kind-icon">send<wbr>Method<wbr>Not<wbr>Allowed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:349</li>
+							<li>Defined in contracts.ts:362</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -866,7 +919,7 @@
 					<div class="tsd-signature tsd-kind-icon">send<wbr>Not<wbr>Found<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:355</li>
+							<li>Defined in contracts.ts:368</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -900,7 +953,7 @@
 					<div class="tsd-signature tsd-kind-icon">send<wbr>Response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:363</li>
+							<li>Defined in contracts.ts:376</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -943,7 +996,7 @@
 					<div class="tsd-signature tsd-kind-icon">set<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:372</li>
+							<li>Defined in contracts.ts:385</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -993,7 +1046,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#state">state</a></p>
 						<ul>
-							<li>Defined in contracts.ts:790</li>
+							<li>Defined in contracts.ts:803</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1008,7 +1061,7 @@
 					<div class="tsd-signature tsd-kind-icon">status<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:376</li>
+							<li>Defined in contracts.ts:389</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1023,7 +1076,7 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Url</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:380</li>
+							<li>Defined in contracts.ts:393</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1039,7 +1092,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#whiteboard">whiteboard</a></p>
 						<ul>
-							<li>Defined in contracts.ts:794</li>
+							<li>Defined in contracts.ts:807</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1055,7 +1108,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#workspacestate">workspaceState</a></p>
 						<ul>
-							<li>Defined in contracts.ts:798</li>
+							<li>Defined in contracts.ts:811</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1070,7 +1123,7 @@
 					<div class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:386</li>
+							<li>Defined in contracts.ts:399</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1117,7 +1170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in contracts.ts:293</li>
+									<li>Defined in contracts.ts:306</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1167,6 +1220,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.apimethodarguments.html#content" class="tsd-kind-icon">content</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.apimethodarguments.html#deploy" class="tsd-kind-icon">deploy</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.apimethodarguments.html#donotemithook" class="tsd-kind-icon">do<wbr>Not<wbr>Emit<wbr>Hook</a>

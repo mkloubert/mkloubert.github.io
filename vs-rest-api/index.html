@@ -297,8 +297,23 @@
     {
         <span class="hljs-keyword">var</span> html = fs.readFileSync(<span class="hljs-string">'/path/to/my/file.html'</span>);
 
+        <span class="hljs-comment">// open HTML document in new tab (for reports e.g.)</span>
+        args.openHtml(html.toString(<span class="hljs-string">'utf8'</span>), <span class="hljs-string">'My HTML document from "file.html"'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// HTML opened</span>
+        }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+            <span class="hljs-comment">// opening HTML document failed</span>
+        });
+
         args.setContent(html, <span class="hljs-string">'text/html'</span>);
     }
+
+    <span class="hljs-comment">// deploys 'index.html' to 'My SFTP server'</span>
+    <span class="hljs-comment">// s. https://github.com/mkloubert/vs-deploy</span>
+    args.deploy([<span class="hljs-string">'./index.html'</span>], [<span class="hljs-string">'My SFTP server'</span>]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// file deployed</span>
+    }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+        <span class="hljs-comment">// deployment failed</span>
+    });
 
     <span class="hljs-comment">// custom HTTP status code</span>
     args.statusCode = <span class="hljs-number">202</span>;

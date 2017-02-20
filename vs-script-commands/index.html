@@ -139,12 +139,14 @@
     }
 }
 </code></pre>
-				<p>The <code>./my-command.js</code> file must have the following structure:</p>
-				<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">execute</span>(<span class="hljs-params">args</span>) </span>{
+				<p>The <code>./my-command.js</code> must have a public / exported <code>execute()</code> function:</p>
+				<pre><code class="lang-javascript">exports.execute = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">args</span>) </span>{
     <span class="hljs-comment">// access VSCode API (s. https://code.visualstudio.com/Docs/extensionAPI/vscode-api)</span>
     <span class="hljs-keyword">var</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
+
     <span class="hljs-comment">// access any NodeJS API provided by VSCode (s. https://nodejs.org/api/)</span>
     <span class="hljs-keyword">var</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
+
     <span class="hljs-comment">// import an own module</span>
     <span class="hljs-keyword">var</span> myModule = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./myModule'</span>);
 
@@ -152,13 +154,53 @@
     <span class="hljs-comment">// s. https://mkloubert.github.io/vs-script-commands/modules/_helpers_.html</span>
     <span class="hljs-keyword">var</span> helpers = args.require(<span class="hljs-string">'./helpers'</span>);
 
+    <span class="hljs-comment">// access a module that is part of the extentsion</span>
+    <span class="hljs-comment">// s. https://github.com/mkloubert/vs-script-commands/blob/master/package.json</span>
+    <span class="hljs-keyword">var</span> moment = args.require(<span class="hljs-string">'moment'</span>);
+
+    <span class="hljs-comment">// access the global data from the settings</span>
+    <span class="hljs-keyword">var</span> globals = args.globals;
+
+    <span class="hljs-comment">// access the data of the entry from the settings</span>
+    <span class="hljs-keyword">var</span> opts = args.options;
+
+    <span class="hljs-comment">// share / store data (while current session)...</span>
+    <span class="hljs-comment">// ... for this script</span>
+    args.commandState = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+    <span class="hljs-comment">// ... with other scripts</span>
+    args.globalState[<span class="hljs-string">'myCommand'</span>] = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+
+    <span class="hljs-comment">// access permanent data storages</span>
+    <span class="hljs-comment">// s. https://github.com/Microsoft/vscode/blob/master/src/vs/workbench/common/memento.ts</span>
+    <span class="hljs-keyword">var</span> myAppWideValue = args.extension.globalState.get(<span class="hljs-string">'myAppValue'</span>);  <span class="hljs-comment">// app wide</span>
+    args.extension.workspaceState.update(<span class="hljs-string">'myWorkspaceValue'</span>, <span class="hljs-string">'New workspace wide value'</span>);  <span class="hljs-comment">// workspace wide</span>
+
+    <span class="hljs-comment">// share data between two executions</span>
+    <span class="hljs-keyword">var</span> prevVal = args.previousValue;  <span class="hljs-comment">// data from the previous execution</span>
+    args.nextValue = <span class="hljs-string">'This is a value only for the next execution'</span>;  <span class="hljs-comment">// data for the next execution</span>
+
+    <span class="hljs-comment">// registers for a one-time event</span>
+    args.events.once(<span class="hljs-string">'myCommandEvent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">v</span>) </span>{
+        <span class="hljs-comment">// 'v' should be 'William Henry Gates'</span>
+        <span class="hljs-comment">// if upcoming 'args.events.emit()' is called</span>
+        args.log(<span class="hljs-string">"From 'myCommandEvent': "</span> + v);
+    });
+
+    <span class="hljs-comment">// emit 'myCommandEvent' event (s. above)</span>
+    args.events.emit(<span class="hljs-string">'myCommandEvent'</span>, <span class="hljs-string">'William Henry Gates'</span>);
+
 
     <span class="hljs-keyword">var</span> scriptFile = path.basename(__filename);
 
+    <span class="hljs-comment">// open HTML document in new tab (for reports e.g.)</span>
+    args.openHtml(<span class="hljs-string">'Hello from my extension: '</span> + scriptFile, <span class="hljs-string">'My HTML document'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// HTML opened</span>
+    }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+        <span class="hljs-comment">// opening HTML document failed</span>
+    });
+
     vscode.window.showInformationMessage(<span class="hljs-string">'Hello from my extension: '</span> + scriptFile);
 }
-
-exports.execute = execute;
 </code></pre>
 				<p>The <code>args</code> parameter uses the <a href="https://mkloubert.github.io/vs-script-commands/interfaces/_contracts_.scriptcommandexecutorarguments.html">ScriptCommandExecutorArguments</a> interface.</p>
 				<p>You can return a number (sync execution), a <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a> or nothing (default exit code <code>0</code>).</p>
@@ -354,6 +396,9 @@ exports.execute = execute;
 				<ul>
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_content_.html">"content"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_contracts_.html">"contracts"</a>

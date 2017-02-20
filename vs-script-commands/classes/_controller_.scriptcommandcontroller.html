@@ -114,6 +114,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_controller_.scriptcommandcontroller.html#_package_file" class="tsd-kind-icon">_PACKAGE_<wbr>FILE</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_controller_.scriptcommandcontroller.html#_config" class="tsd-kind-icon">_config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_controller_.scriptcommandcontroller.html#_filesystemwatcher" class="tsd-kind-icon">_file<wbr>System<wbr>Watcher</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_controller_.scriptcommandcontroller.html#_htmldocs" class="tsd-kind-icon">_html<wbr>Docs</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_controller_.scriptcommandcontroller.html#_scriptevents" class="tsd-kind-icon">_script<wbr>Events</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_controller_.scriptcommandcontroller.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
@@ -122,6 +123,7 @@
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_controller_.scriptcommandcontroller.html#config" class="tsd-kind-icon">config</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_controller_.scriptcommandcontroller.html#htmldocuments" class="tsd-kind-icon">html<wbr>Documents</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_controller_.scriptcommandcontroller.html#outputchannel" class="tsd-kind-icon">output<wbr>Channel</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_controller_.scriptcommandcontroller.html#packagefile" class="tsd-kind-icon">package<wbr>File</a></li>
 							</ul>
@@ -179,7 +181,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:123</li>
+									<li>Defined in controller.ts:127</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -257,7 +259,7 @@
 					<div class="tsd-signature tsd-kind-icon">_OUTPUT_<wbr>CHANNEL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OutputChannel</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in controller.ts:115</li>
+							<li>Defined in controller.ts:119</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -272,7 +274,7 @@
 					<div class="tsd-signature tsd-kind-icon">_PACKAGE_<wbr>FILE<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in controller.ts:119</li>
+							<li>Defined in controller.ts:123</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -312,12 +314,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="_htmldocs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _html<wbr>Docs</h3>
+					<div class="tsd-signature tsd-kind-icon">_html<wbr>Docs<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in controller.ts:115</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Storage for global HTML documents.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_scriptevents" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _script<wbr>Events</h3>
 					<div class="tsd-signature tsd-kind-icon">_script<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Events.EventEmitter</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in controller.ts:123</li>
+							<li>Defined in controller.ts:127</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -350,7 +367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:145</li>
+									<li>Defined in controller.ts:149</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -359,6 +376,28 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.configuration.html" class="tsd-signature-type">Configuration</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="htmldocuments" class="tsd-anchor"></a>
+					<h3>html<wbr>Documents</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> htmlDocuments<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in controller.ts:356</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the storage of global HTML documents.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.document.html" class="tsd-signature-type">Document</a><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -372,7 +411,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:575</li>
+									<li>Defined in controller.ts:586</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -394,7 +433,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:582</li>
+									<li>Defined in controller.ts:593</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -446,7 +485,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:150</li>
+									<li>Defined in controller.ts:154</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -519,7 +558,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:162</li>
+									<li>Defined in controller.ts:166</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -541,7 +580,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:195</li>
+									<li>Defined in controller.ts:199</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -579,7 +618,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:285</li>
+									<li>Defined in controller.ts:289</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -601,7 +640,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:321</li>
+									<li>Defined in controller.ts:325</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -624,7 +663,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:338</li>
+									<li>Defined in controller.ts:342</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -716,7 +755,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:356</li>
+									<li>Defined in controller.ts:367</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -778,7 +817,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:369</li>
+									<li>Defined in controller.ts:380</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -800,7 +839,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:378</li>
+									<li>Defined in controller.ts:389</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -822,7 +861,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:395</li>
+									<li>Defined in controller.ts:406</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -844,7 +883,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:404</li>
+									<li>Defined in controller.ts:415</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -872,7 +911,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:433</li>
+									<li>Defined in controller.ts:444</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -903,7 +942,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:455</li>
+									<li>Defined in controller.ts:466</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -934,7 +973,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:477</li>
+									<li>Defined in controller.ts:488</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -965,7 +1004,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:501</li>
+									<li>Defined in controller.ts:512</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1086,7 +1125,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:589</li>
+									<li>Defined in controller.ts:600</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1108,7 +1147,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:819</li>
+									<li>Defined in controller.ts:834</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1181,7 +1220,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:854</li>
+									<li>Defined in controller.ts:870</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1233,7 +1272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in controller.ts:940</li>
+									<li>Defined in controller.ts:956</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1281,6 +1320,9 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_content_.html">"content"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_contracts_.html">"contracts"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
@@ -1320,6 +1362,9 @@
 								<a href="_controller_.scriptcommandcontroller.html#_filesystemwatcher" class="tsd-kind-icon">_file<wbr>System<wbr>Watcher</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+								<a href="_controller_.scriptcommandcontroller.html#_htmldocs" class="tsd-kind-icon">_html<wbr>Docs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_controller_.scriptcommandcontroller.html#_scriptevents" class="tsd-kind-icon">_script<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
@@ -1327,6 +1372,9 @@
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_controller_.scriptcommandcontroller.html#config" class="tsd-kind-icon">config</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_controller_.scriptcommandcontroller.html#htmldocuments" class="tsd-kind-icon">html<wbr>Documents</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_controller_.scriptcommandcontroller.html#outputchannel" class="tsd-kind-icon">output<wbr>Channel</a>

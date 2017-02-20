@@ -192,6 +192,10 @@
     <span class="hljs-comment">// logs a message to output window / channel</span>
     args.log(<span class="hljs-string">'A log message'</span>);
 
+    <span class="hljs-comment">// write to output channel of that extension</span>
+    <span class="hljs-comment">// s. https://code.visualstudio.com/Docs/extensionAPI/vscode-api#OutputChannel</span>
+    args.outputChannel.appendLine(<span class="hljs-string">'A message for the output channel.'</span>);
+
 
     <span class="hljs-keyword">var</span> scriptFile = path.basename(__filename);
 

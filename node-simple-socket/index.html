@@ -104,8 +104,8 @@ simpleSocket.listen(<span class="hljs-number">5979</span>, <span class="hljs-fun
 });
 </code></pre>
 				<h3 id="connect-to-a-server">Connect to a server</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// listening for new connection</span>
-<span class="hljs-comment">// on port 5979</span>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// connect to a server (socket)</span>
+<span class="hljs-comment">// that listens on port 5979</span>
 simpleSocket.connect(<span class="hljs-number">5979</span>, <span class="hljs-string">'server.example.com'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">clientToServerSocket</span>) </span>{
     <span class="hljs-comment">// connection established</span>
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{

@@ -79,15 +79,15 @@
 </code></pre>
 				<h2 id="usage">Usage</h2>
 				<h3 id="import">Import</h3>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> simpleSocket = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-simple-socket'</span>);
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> simpleSocketModule = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-simple-socket'</span>);
 </code></pre>
 				<p>The <a href="https://www.typescriptlang.org/">TypeScript</a> way:</p>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * as simpleSocket from <span class="hljs-string">'node-simple-socket'</span>;
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * as simpleSocketModule from <span class="hljs-string">'node-simple-socket'</span>;
 </code></pre>
 				<h3 id="create-a-server">Create a server</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// listening for new connections</span>
 <span class="hljs-comment">// on port 5979</span>
-simpleSocket.listen(<span class="hljs-number">5979</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, serverToClientSocket</span>) </span>{
+simpleSocketModule.listen(<span class="hljs-number">5979</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, serverToClientSocket</span>) </span>{
     <span class="hljs-comment">// callback for new connections</span>
 
     <span class="hljs-keyword">if</span> (err) {
@@ -96,6 +96,7 @@ simpleSocket.listen(<span class="hljs-number">5979</span>, <span class="hljs-fun
     }
     <span class="hljs-keyword">else</span> {
         <span class="hljs-comment">// work with new connection</span>
+        <span class="hljs-comment">// in wrapped 'serverToClientSocket'</span>
     }
 }).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">server</span>) </span>{
     <span class="hljs-comment">// the server is now listening</span>
@@ -106,8 +107,11 @@ simpleSocket.listen(<span class="hljs-number">5979</span>, <span class="hljs-fun
 				<h3 id="connect-to-a-server">Connect to a server</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// connect to a server (socket)</span>
 <span class="hljs-comment">// that listens on port 5979</span>
-simpleSocket.connect(<span class="hljs-number">5979</span>, <span class="hljs-string">'server.example.com'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">clientToServerSocket</span>) </span>{
+simpleSocketModule.connect(<span class="hljs-number">5979</span>, <span class="hljs-string">'server.example.com'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">clientToServerSocket</span>) </span>{
     <span class="hljs-comment">// connection established</span>
+
+    <span class="hljs-comment">// work with wrapped socket</span>
+    <span class="hljs-comment">// in 'clientToServerSocket'</span>
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
     <span class="hljs-comment">// could not connect</span>
 });
@@ -318,23 +322,39 @@ socket.on(<span class="hljs-string">'rsakey.generated'</span>, <span class="hljs
 				<p>The module provides the following (public) variables that store default settings for properties of <a href="https://mkloubert.github.io/node-simple-socket/classes/_index_.simplesocket.html">SimpleSocket</a> class.</p>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// initial value for 'compress' property</span>
 <span class="hljs-comment">// Default: (undefined)</span>
-simpleSocket.Compress = <span class="hljs-literal">true</span>;
+simpleSocketModule.Compress = <span class="hljs-literal">true</span>;
 
 <span class="hljs-comment">// initial value for 'cwd' property</span>
 <span class="hljs-comment">// Default: process.cwd()</span>
-simpleSocket.DefaultCWD = <span class="hljs-string">'E:/test'</span>;
+simpleSocketModule.DefaultCWD = <span class="hljs-string">'E:/test'</span>;
+
+<span class="hljs-comment">// initial value for 'dataTransformer' property</span>
+<span class="hljs-comment">// Default: (undefined)</span>
+simpleSocketModule.DefaultDataTransformer = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">untransformedData</span>)</span>{
+    <span class="hljs-comment">// return transformed data</span>
+};
+
+<span class="hljs-comment">// initial value for 'encoding' property</span>
+<span class="hljs-comment">// Default: utf8</span>
+simpleSocketModule.DefaultEncoding = <span class="hljs-string">'ascii'</span>;
+
+<span class="hljs-comment">// initial value for 'handshakeTransformer' property</span>
+<span class="hljs-comment">// Default: (undefined)</span>
+simpleSocketModule.DefaultHandshakeTransformer = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">untransformedData</span>)</span>{
+    <span class="hljs-comment">// return transformed data</span>
+};
 
 <span class="hljs-comment">// initial value for 'maxPackageSize' property</span>
 <span class="hljs-comment">// Default: 16777211</span>
-simpleSocket.DefaultMaxPackageSize = <span class="hljs-number">239795979</span>;
+simpleSocketModule.DefaultMaxPackageSize = <span class="hljs-number">239795979</span>;
 
 <span class="hljs-comment">// initial value for 'readBufferSize' property</span>
 <span class="hljs-comment">// Default: 8192</span>
-simpleSocket.DefaultReadBufferSize = <span class="hljs-number">10240</span>;
+simpleSocketModule.DefaultReadBufferSize = <span class="hljs-number">10240</span>;
 
 <span class="hljs-comment">// initial value for 'rsaKeySize' property</span>
 <span class="hljs-comment">// Default: 512</span>
-simpleSocket.DefaultRSAKeySize = <span class="hljs-number">4096</span>;
+simpleSocketModule.DefaultRSAKeySize = <span class="hljs-number">4096</span>;
 </code></pre>
 				<h2 id="documentation">Documentation</h2>
 				<p>The full API documentation can be found <a href="https://mkloubert.github.io/node-simple-socket/">here</a>.</p>

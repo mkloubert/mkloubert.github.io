@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>simple-socket</title>
+	<title>node-simple-socket</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">simple-socket</a>
+					<a href="index.html" class="title">node-simple-socket</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,7 +56,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> simple-socket</h1>
+			<h1> node-simple-socket</h1>
 		</div>
 	</div>
 </header>
@@ -75,19 +75,19 @@
 				<p>The new &quot;sockets&quot; make a handshake and share a (strong) random password, which is used for the &quot;live&quot; communication, with the help of RSA in the background.
 				This is done at the time, you start to send and receive data.</p>
 				<h2 id="install">Install</h2>
-				<pre><code class="lang-bash">npm install simple-socket --save
+				<pre><code class="lang-bash">npm install node-simple-socket --save
 </code></pre>
 				<h2 id="usage">Usage</h2>
 				<h3 id="import">Import</h3>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> simpleSocket = <span class="hljs-built_in">require</span>(<span class="hljs-string">'simple-socket'</span>);
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> simpleSocket = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-simple-socket'</span>);
 </code></pre>
 				<p>The <a href="https://www.typescriptlang.org/">TypeScript</a> way:</p>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * as simpleSocket from <span class="hljs-string">'simple-socket'</span>;
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * as simpleSocket from <span class="hljs-string">'node-simple-socket'</span>;
 </code></pre>
 				<h3 id="create-a-server">Create a server</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// listening for new connections</span>
 <span class="hljs-comment">// on port 5979</span>
-<span class="hljs-keyword">var</span> server = simpleSocket.listen(<span class="hljs-number">5979</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, newConnectionWithAClient</span>) </span>{
+simpleSocket.listen(<span class="hljs-number">5979</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, serverToClientSocket</span>) </span>{
     <span class="hljs-comment">// callback for new connections</span>
 
     <span class="hljs-keyword">if</span> (err) {
@@ -106,7 +106,7 @@
 				<h3 id="connect-to-a-server">Connect to a server</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// listening for new connection</span>
 <span class="hljs-comment">// on port 5979</span>
-simpleSocket.connect(<span class="hljs-number">5979</span>, <span class="hljs-string">'server.example.com'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">socket</span>) </span>{
+simpleSocket.connect(<span class="hljs-number">5979</span>, <span class="hljs-string">'server.example.com'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">clientToServerSocket</span>) </span>{
     <span class="hljs-comment">// connection established</span>
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
     <span class="hljs-comment">// could not connect</span>

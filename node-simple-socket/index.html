@@ -87,7 +87,7 @@
 				<h3 id="create-a-server">Create a server</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// listening for new connections</span>
 <span class="hljs-comment">// on port 5979</span>
-<span class="hljs-keyword">var</span> server = simpleSocket.listen(<span class="hljs-number">5979</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, newConnection</span>) </span>{
+<span class="hljs-keyword">var</span> server = simpleSocket.listen(<span class="hljs-number">5979</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, newConnectionWithAClient</span>) </span>{
     <span class="hljs-comment">// callback for new connections</span>
 
     <span class="hljs-keyword">if</span> (err) {
@@ -106,7 +106,7 @@
 				<h3 id="connect-to-a-server">Connect to a server</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// listening for new connection</span>
 <span class="hljs-comment">// on port 5979</span>
-<span class="hljs-keyword">var</span> server = simpleSocket.connect(<span class="hljs-number">5979</span>, <span class="hljs-string">'server.example.com'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">socket</span>) </span>{
+simpleSocket.connect(<span class="hljs-number">5979</span>, <span class="hljs-string">'server.example.com'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">socket</span>) </span>{
     <span class="hljs-comment">// connection established</span>
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
     <span class="hljs-comment">// could not connect</span>

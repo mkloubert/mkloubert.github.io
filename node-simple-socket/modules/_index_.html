@@ -101,10 +101,12 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_index_.html#compress" class="tsd-kind-icon">Compress</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#default_default_read_buffer_size" class="tsd-kind-icon">DEFAULT_<wbr>DEFAULT_<wbr>READ_<wbr>BUFFER_<wbr>SIZE</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_index_.html#default_encoding" class="tsd-kind-icon">DEFAULT_<wbr>ENCODING</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#default_max_package_size" class="tsd-kind-icon">DEFAULT_<wbr>MAX_<wbr>PACKAGE_<wbr>SIZE</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_index_.html#default_rsa_key_size" class="tsd-kind-icon">DEFAULT_<wbr>RSA_<wbr>KEY_<wbr>SIZE</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_index_.html#defaultcwd" class="tsd-kind-icon">DefaultCWD</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_index_.html#defaultmaxpackagesize" class="tsd-kind-icon">Default<wbr>Max<wbr>Package<wbr>Size</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_index_.html#defaultrsakeysize" class="tsd-kind-icon">DefaultRSAKey<wbr>Size</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_index_.html#defaultreadbuffersize" class="tsd-kind-icon">Default<wbr>Read<wbr>Buffer<wbr>Size</a></li>
@@ -135,7 +137,7 @@
 					<div class="tsd-signature tsd-kind-icon">Data<wbr>Transformer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:89</li>
+							<li>Defined in index.ts:100</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -179,7 +181,7 @@
 					<div class="tsd-signature tsd-kind-icon">Data<wbr>Transformer<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:122</li>
+							<li>Defined in index.ts:133</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -194,7 +196,7 @@
 					<div class="tsd-signature tsd-kind-icon">Listen<wbr>Callback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:130</li>
+							<li>Defined in index.ts:141</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -238,6 +240,21 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="compress" class="tsd-anchor"></a>
+					<h3>Compress</h3>
+					<div class="tsd-signature tsd-kind-icon">Compress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:49</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Default value that indicates if compression should be used or not.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="default_default_read_buffer_size" class="tsd-anchor"></a>
 					<h3>DEFAULT_<wbr>DEFAULT_<wbr>READ_<wbr>BUFFER_<wbr>SIZE</h3>
@@ -284,12 +301,27 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="defaultcwd" class="tsd-anchor"></a>
+					<h3>DefaultCWD</h3>
+					<div class="tsd-signature tsd-kind-icon">DefaultCWD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;process.cwd()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:53</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Default working directory.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="defaultmaxpackagesize" class="tsd-anchor"></a>
 					<h3>Default<wbr>Max<wbr>Package<wbr>Size</h3>
 					<div class="tsd-signature tsd-kind-icon">Default<wbr>Max<wbr>Package<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;DEFAULT_MAX_PACKAGE_SIZE</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:49</li>
+							<li>Defined in index.ts:57</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -304,7 +336,7 @@
 					<div class="tsd-signature tsd-kind-icon">DefaultRSAKey<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;DEFAULT_RSA_KEY_SIZE</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:54</li>
+							<li>Defined in index.ts:65</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -319,9 +351,14 @@
 					<div class="tsd-signature tsd-kind-icon">Default<wbr>Read<wbr>Buffer<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;DEFAULT_DEFAULT_READ_BUFFER_SIZE</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:50</li>
+							<li>Defined in index.ts:61</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Default buffer size for reading streams.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="rsa" class="tsd-anchor"></a>
@@ -356,7 +393,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1489</li>
+									<li>Defined in index.ts:1500</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -385,7 +422,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1375</li>
+									<li>Defined in index.ts:1386</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -423,7 +460,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1410</li>
+									<li>Defined in index.ts:1421</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -455,7 +492,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1421</li>
+									<li>Defined in index.ts:1432</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -484,7 +521,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1432</li>
+									<li>Defined in index.ts:1443</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -513,7 +550,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1444</li>
+									<li>Defined in index.ts:1455</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -551,7 +588,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:1524</li>
+									<li>Defined in index.ts:1535</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -606,6 +643,9 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_index_.html#listencallback" class="tsd-kind-icon">Listen<wbr>Callback</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_index_.html#compress" class="tsd-kind-icon">Compress</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_index_.html#default_default_read_buffer_size" class="tsd-kind-icon">DEFAULT_<wbr>DEFAULT_<wbr>READ_<wbr>BUFFER_<wbr>SIZE</a>
 					</li>
@@ -617,6 +657,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_index_.html#default_rsa_key_size" class="tsd-kind-icon">DEFAULT_<wbr>RSA_<wbr>KEY_<wbr>SIZE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_index_.html#defaultcwd" class="tsd-kind-icon">DefaultCWD</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_index_.html#defaultmaxpackagesize" class="tsd-kind-icon">Default<wbr>Max<wbr>Package<wbr>Size</a>

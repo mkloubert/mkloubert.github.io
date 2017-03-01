@@ -65,8 +65,15 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="node-simple-socket">node-simple-socket</h1>
+				<p><a href="https://www.npmjs.com/package/node-simple-socket"><img src="https://img.shields.io/npm/v/node-simple-socket.svg" alt="npm"></a>
+				<a href="https://www.npmjs.com/package/node-simple-socket"><img src="https://img.shields.io/npm/dt/node-simple-socket.svg?label=npm%20downloads" alt="npm"></a></p>
 				<p>Wrapper for <a href="https://nodejs.org/api/net.html#net_class_net_socket">Node.js sockets</a> that makes it easy to send data compressed and crypted (<a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem">RSA</a>) / <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">AES</a>).</p>
 				<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MMUUNRQ8ZUJEN"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a> <a href="https://flattr.com/submit/auto?fid=o62pkd&amp;url=https%3A%2F%2Fgithub.com%2Fmkloubert%2Fnode-simple-socket"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt=""></a></p>
+				<h2 id="how-does-it-work-">How does it work?</h2>
+				<p>Sockets are wrapped by a <a href="https://mkloubert.github.io/node-simple-socket/classes/_index_.simplesocket.html">class</a> that exchanges data between two endpoints by encrypting and compressing it.</p>
+				<p>You do not need to setup anything for the encryption and compression ... you only need to start a server and connect with a client by using the new class(es)!</p>
+				<p>The new &quot;sockets&quot; make a handshake and share a (strong) random password, which is used for the &quot;live&quot; communication, with the help of RSA in the background.
+				This is done at the time, you start to send and receive data.</p>
 				<h2 id="install">Install</h2>
 				<pre><code class="lang-bash">npm install simple-socket --save
 </code></pre>
@@ -78,7 +85,7 @@
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * as simpleSocket from <span class="hljs-string">'simple-socket'</span>;
 </code></pre>
 				<h3 id="create-a-server">Create a server</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// listening for new connection</span>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// listening for new connections</span>
 <span class="hljs-comment">// on port 5979</span>
 <span class="hljs-keyword">var</span> server = simpleSocket.listen(<span class="hljs-number">5979</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, newConnection</span>) </span>{
     <span class="hljs-comment">// callback for new connections</span>
@@ -290,7 +297,7 @@ socket.on(<span class="hljs-string">'rsakey.generated'</span>, <span class="hljs
 				<pre><code class="lang-javascript">clientSocket.rsaKeySize = <span class="hljs-number">2048</span>;  <span class="hljs-comment">// better, but takes more time</span>
 </code></pre>
 				<h4 id="custom-password-generator">Custom password generator</h4>
-				<p>While the a handshake, (server) sockets generate a random password via <a href="https://www.npmjs.com/package/randomstring">randomstring</a> module, that are exchanged with RSA encryption.</p>
+				<p>While a handshake, (server) sockets generate a random password via <a href="https://www.npmjs.com/package/randomstring">randomstring</a> module, that is exchanged with RSA encryption.</p>
 				<p>Those passwords have a size of <code>48</code> bytes and contain alphanumeric characters by default.</p>
 				<p>Passwords are used for the <code>aes-256-ctr</code> algorithm of the <a href="https://nodejs.org/api/crypto.html">crypto</a> module, which encrypts and decrypts all data of the &quot;live&quot; communication.</p>
 				<p>You can define a custom password generator by setting the <code>passwordGenerator</code> property:</p>
@@ -307,6 +314,30 @@ socket.on(<span class="hljs-string">'rsakey.generated'</span>, <span class="hljs
 				<p>You can change this, by setting the <code>maxPackageSize</code> property:</p>
 				<pre><code class="lang-javascript">socket.maxPackageSize = <span class="hljs-number">597923979</span>;
 </code></pre>
+				<h4 id="default-values">Default values</h4>
+				<p>The module provides the following (public) variables that store default settings for properties of <a href="https://mkloubert.github.io/node-simple-socket/classes/_index_.simplesocket.html">SimpleSocket</a> class.</p>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// initial value for 'compress' property</span>
+<span class="hljs-comment">// Default: (undefined)</span>
+simpleSocket.Compress = <span class="hljs-literal">true</span>;
+
+<span class="hljs-comment">// initial value for 'cwd' property</span>
+<span class="hljs-comment">// Default: process.cwd()</span>
+simpleSocket.DefaultCWD = <span class="hljs-string">'E:/test'</span>;
+
+<span class="hljs-comment">// initial value for 'maxPackageSize' property</span>
+<span class="hljs-comment">// Default: 16777211</span>
+simpleSocket.DefaultMaxPackageSize = <span class="hljs-number">239795979</span>;
+
+<span class="hljs-comment">// initial value for 'readBufferSize' property</span>
+<span class="hljs-comment">// Default: 8192</span>
+simpleSocket.DefaultReadBufferSize = <span class="hljs-number">10240</span>;
+
+<span class="hljs-comment">// initial value for 'rsaKeySize' property</span>
+<span class="hljs-comment">// Default: 512</span>
+simpleSocket.DefaultRSAKeySize = <span class="hljs-number">4096</span>;
+</code></pre>
+				<h2 id="documentation">Documentation</h2>
+				<p>The full API documentation can be found <a href="https://mkloubert.github.io/node-simple-socket/">here</a>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

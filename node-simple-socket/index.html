@@ -308,6 +308,9 @@ socket.on(<span class="hljs-string">'rsakey.generated'</span>, <span class="hljs
 				<pre><code class="lang-javascript">serverSocket.passwordGenerator = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// generate a password as</span>
     <span class="hljs-comment">// buffer or string</span>
+    <span class="hljs-comment">// that should be encrypted with the</span>
+    <span class="hljs-comment">// received RSA public key</span>
+    <span class="hljs-comment">// of the connected client</span>
     <span class="hljs-comment">// </span>
     <span class="hljs-comment">// you can return it directly</span>
     <span class="hljs-comment">// or as promise, if you work async</span>
@@ -358,6 +361,11 @@ simpleSocketModule.DefaultRSAKeySize = <span class="hljs-number">4096</span>;
 </code></pre>
 				<h2 id="documentation">Documentation</h2>
 				<p>The full API documentation can be found <a href="https://mkloubert.github.io/node-simple-socket/">here</a>.</p>
+				<h2 id="migration">Migration</h2>
+				<h3 id="1-x-x-2-x-x-and-higher">1.x.x =&gt; 2.x.x and higher</h3>
+				<ul>
+					<li>since version 2.0 there is an important protocol update to improve encryption ... communication with older versions (less than 2.0) might not work anymore, when using compression</li>
+				</ul>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

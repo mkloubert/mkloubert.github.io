@@ -71,22 +71,72 @@
 				<p><a href="https://gitter.im/mkloubert/vs-deploy?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/mkloubert/vs-deploy.svg" alt="Gitter"></a></p>
 				<p><a href="https://code.visualstudio.com/">Visual Studio Code</a> (VS Code) extension that provides commands to deploy files of a workspace to a destination.</p>
 				<p>The extension supports the following destination types:</p>
-				<ul>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_s3bucket">Amazon AWS S3 buckets</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_app">Apps / executables / scripts (bash, batch, e.g.)</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_azureblob">Azure blob storages</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_dropbox">DropBox</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_script">External Node.js based scripts</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_ftp">FTP</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_http">HTTP(s)</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_local">Local or shared network folders inside a LAN</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_mail">Mail (SMTP)</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_remote">Remote machines like other VS Code instances</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_api">REST APIs</a> like <a href="https://github.com/mkloubert/vs-rest-api">vs-rest-api</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_sftp">SFTP</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_sql">SQL</a></li>
-					<li><a href="https://github.com/mkloubert/vs-deploy/wiki/target_zip">ZIP files</a></li>
-				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Type</th>
+							<th style="text-align:center">Supports download / pull?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_s3bucket">Amazon AWS S3 buckets</a></td>
+							<td style="text-align:center">:heavy_check_mark:</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_app">Apps / executables / scripts (bash, batch, e.g.)</a></td>
+							<td style="text-align:center"></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_azureblob">Azure blob storages</a></td>
+							<td style="text-align:center">:heavy_check_mark:</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_dropbox">DropBox</a></td>
+							<td style="text-align:center">:heavy_check_mark:</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_script">External Node.js based scripts</a></td>
+							<td style="text-align:center">:heavy_check_mark:</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_ftp">FTP</a></td>
+							<td style="text-align:center">:heavy_check_mark:</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_http">HTTP(s)</a></td>
+							<td style="text-align:center"></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_local">Local or shared network folders inside a LAN</a></td>
+							<td style="text-align:center">:heavy_check_mark:</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_mail">Mail (SMTP)</a></td>
+							<td style="text-align:center"></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_remote">Remote machines like other VS Code instances</a></td>
+							<td style="text-align:center"></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_api">REST APIs</a> like <a href="https://github.com/mkloubert/vs-rest-api">vs-rest-api</a></td>
+							<td style="text-align:center">:heavy_check_mark:</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_sftp">SFTP</a></td>
+							<td style="text-align:center">:heavy_check_mark:</td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_sql">SQL</a></td>
+							<td style="text-align:center"></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vs-deploy/wiki/target_zip">ZIP files</a></td>
+							<td style="text-align:center">:heavy_check_mark:</td>
+						</tr>
+					</tbody>
+				</table>
 				<p>There is also build-in support for the following <a href="https://github.com/mkloubert/vs-deploy/wiki/targetoperations#compile-">compilers and processors</a>:</p>
 				<ul>
 					<li><a href="http://lesscss.org/">Less</a></li>
@@ -110,6 +160,7 @@
 							<li><a href="#deploy-on-save-">Deploy on save</a></li>
 							<li><a href="#deploy-to-remote-visual-studio-code-instance-">Deploy to remote Visual Studio Code instance</a></li>
 							<li><a href="#deploy-to-zip-file-">ZIP file</a></li>
+							<li><a href="#download--pull-from-sftp-">Download / pull from SFTP</a></li>
 						</ul>
 					</li>
 					<li><a href="#install-">Install</a></li>
@@ -132,6 +183,8 @@
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo3.gif" alt="Demo Remote"></p>
 				<h3 id="deploy-to-zip-file-uarr-demos-">Deploy to ZIP file [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo4.gif" alt="Demo ZIP"></p>
+				<h3 id="download-pull-from-sftp-uarr-demos-">Download / pull from SFTP [<a href="#demos-">&uarr;</a>]</h3>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo6.gif" alt="Demo pull from SFTP"></p>
 				<h2 id="install-uarr-table-of-contents-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter:</p>
 				<pre><code class="lang-bash">ext install vs-deploy
@@ -329,17 +382,27 @@
 						<tr>
 							<td><code>Deploy: Deploy current file / folder</code></td>
 							<td>Deploys the current opened file.</td>
-							<td><code>CTRL + ALT + F</code></td>
-						</tr>
-						<tr>
-							<td><code>Deploy: Start/stop listening for files</code></td>
-							<td>Start/stop listening for files from a remote machine.</td>
-							<td><code>CTRL + ALT + L</code></td>
+							<td><code>CTRL+ALT+F</code></td>
 						</tr>
 						<tr>
 							<td><code>Deploy: Deploy workspace</code></td>
 							<td>Deploys a specific package.</td>
-							<td><code>CTRL + ALT + W</code></td>
+							<td><code>CTRL+ALT+W</code></td>
+						</tr>
+						<tr>
+							<td><code>Deploy: Pull current file / folder</code></td>
+							<td>Pulls the current opened file.</td>
+							<td><code>CTRL+ALT+P, F</code></td>
+						</tr>
+						<tr>
+							<td><code>Deploy: Pull workspace</code></td>
+							<td>Pulls a specific package.</td>
+							<td><code>CTRL+ALT+P, W</code></td>
+						</tr>
+						<tr>
+							<td><code>Deploy: Start/stop listening for files</code></td>
+							<td>Start/stop listening for files from a remote machine.</td>
+							<td><code>CTRL+ALT+L</code></td>
 						</tr>
 					</tbody>
 				</table>

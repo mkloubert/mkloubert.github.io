@@ -93,6 +93,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_script_.scriptmodule.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_script_.scriptmodule.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_script_.scriptmodule.html#pullfile" class="tsd-kind-icon">pull<wbr>File</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_script_.scriptmodule.html#pullworkspace" class="tsd-kind-icon">pull<wbr>Workspace</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,7 +108,7 @@
 					<div class="tsd-signature tsd-kind-icon">deploy<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/script.ts:119</li>
+							<li>Defined in plugins/script.ts:123</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -150,12 +152,100 @@
 					<div class="tsd-signature tsd-kind-icon">deploy<wbr>Workspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/script.ts:127</li>
+							<li>Defined in plugins/script.ts:131</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Deploys the workspace.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Arguments for the execution.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The promise.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="_plugins_script_.deployworkspacearguments.html" class="tsd-signature-type">DeployWorkspaceArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_plugins_script_.deployworkspacearguments.html" class="tsd-signature-type">DeployWorkspaceArguments</a><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="_plugins_script_.deployworkspacearguments.html" class="tsd-signature-type">DeployWorkspaceArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_plugins_script_.deployworkspacearguments.html" class="tsd-signature-type">DeployWorkspaceArguments</a><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="pullfile" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> pull<wbr>File</h3>
+					<div class="tsd-signature tsd-kind-icon">pull<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/script.ts:139</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Pulls a file to the workspace.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Arguments for the execution.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The promise.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="_plugins_script_.deployfilearguments.html" class="tsd-signature-type">DeployFileArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_plugins_script_.deployfilearguments.html" class="tsd-signature-type">DeployFileArguments</a><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="_plugins_script_.deployfilearguments.html" class="tsd-signature-type">DeployFileArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_plugins_script_.deployfilearguments.html" class="tsd-signature-type">DeployFileArguments</a><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="pullworkspace" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> pull<wbr>Workspace</h3>
+					<div class="tsd-signature tsd-kind-icon">pull<wbr>Workspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/script.ts:147</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Pulls files to the workspace.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>param</dt>
@@ -228,6 +318,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_plugins_script_.scriptmodule.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_plugins_script_.scriptmodule.html#pullfile" class="tsd-kind-icon">pull<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_plugins_script_.scriptmodule.html#pullworkspace" class="tsd-kind-icon">pull<wbr>Workspace</a>
 							</li>
 						</ul>
 					</li>

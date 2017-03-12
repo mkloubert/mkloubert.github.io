@@ -1,0 +1,477 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>node-workflows</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">node-workflows</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> node-workflows</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 id="node-workflows">node-workflows</h1>
+				<p><a href="https://www.npmjs.com/package/node-workflows"><img src="https://img.shields.io/npm/v/node-workflows.svg" alt="npm"></a>
+				<a href="https://www.npmjs.com/package/node-workflows"><img src="https://img.shields.io/npm/dt/node-workflows.svg?label=npm%20downloads" alt="npm"></a></p>
+				<p>Simple and fast implementation of action-driven workflows for <a href="https://nodejs.org/">Node.js</a> written in <a href="https://www.typescriptlang.org/">TypeScript</a>.</p>
+				<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=NVXYJ2GPSFP3S"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a> <a href="https://flattr.com/submit/auto?fid=o62pkd&amp;url=https%3A%2F%2Fgithub.com%2Fmkloubert%2Fnode-workflows"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt=""></a></p>
+				<h2 id="install">Install</h2>
+				<pre><code class="lang-bash">npm install node-workflows --save
+</code></pre>
+				<h2 id="usage">Usage</h2>
+				<h3 id="import">Import</h3>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> Workflows = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-workflows'</span>);
+</code></pre>
+				<p>The <a href="https://www.typescriptlang.org/">TypeScript</a> way:</p>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * as Workflows from <span class="hljs-string">'node-workflows'</span>;
+</code></pre>
+				<h3 id="examples">Examples</h3>
+				<pre><code class="lang-javascript">Workflows.start(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #0</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Entering ACTION #0...'</span>);
+
+    <span class="hljs-comment">// will be available in</span>
+    <span class="hljs-comment">// 'previousValue' property</span>
+    <span class="hljs-comment">// of the next action</span>
+    ctx.nextValue = <span class="hljs-string">'MK'</span>;
+
+    <span class="hljs-comment">// result of the workflow</span>
+    ctx.result = <span class="hljs-number">23979</span>;
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #1</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Entering ACTION #1...'</span>);
+
+    <span class="hljs-comment">// run "async"</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">// ctx.previousValue == 'MK'</span>
+            <span class="hljs-comment">// ctx.result == 23979</span>
+
+            setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                <span class="hljs-comment">// a value for the execution</span>
+                ctx.value = <span class="hljs-number">19861222</span>;
+
+                resolve(<span class="hljs-string">'TM'</span>);  <span class="hljs-comment">// will be available in</span>
+                                <span class="hljs-comment">// 'previousValue' property</span>
+                                <span class="hljs-comment">// of the next action</span>
+            }, <span class="hljs-number">5000</span>);
+        }
+        <span class="hljs-keyword">catch</span> (e) {
+            reject(e);
+        }
+    });
+}, {
+    <span class="hljs-comment">// ACTION #2</span>
+
+    <span class="hljs-comment">// use an object</span>
+    <span class="hljs-comment">// with an 'execute()' method</span>
+    <span class="hljs-comment">// instead a function</span>
+    execute: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Entering ACTION #2...'</span>);
+
+        <span class="hljs-comment">// ctx.previousValue == 'TM'</span>
+        <span class="hljs-comment">// ctx.value == 1781</span>
+
+        ctx.result = <span class="hljs-number">5979</span>;  <span class="hljs-comment">// set a result value</span>
+                            <span class="hljs-comment">// for the workflow</span>
+    }
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #3</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Entering ACTION #3...'</span>);
+
+    <span class="hljs-comment">// ctx.previousValue == undefined</span>
+    <span class="hljs-comment">// ctx.result == 5979</span>
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-number">1781</span> !== ctx.value) {
+        <span class="hljs-comment">// ctx.value == 19861222</span>
+
+        ctx.value = <span class="hljs-number">1781</span>;
+
+        <span class="hljs-comment">// mark 'ACTION #2'</span>
+        <span class="hljs-comment">// as next action</span>
+        ctx.goto(<span class="hljs-number">2</span>);
+    }
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>) </span>{
+    <span class="hljs-comment">// finished with SUCCESS</span>
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'SUCCESS: '</span> + result);  <span class="hljs-comment">// 5979</span>
+                                        <span class="hljs-comment">// s. ctx.result</span>
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-comment">// finished with ERROR</span>
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'ERROR: '</span> + err);
+});
+</code></pre>
+				<h4 id="jump-skip">Jump / skip</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> workflow = Workflows.create(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #0</span>
+
+    <span class="hljs-comment">// skip 'ACTION #1'</span>
+    ctx.skip(<span class="hljs-number">1</span>);  <span class="hljs-comment">// alternate: ctx.skip()</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #1</span>
+
+    <span class="hljs-comment">// mark 'ACTION #0'</span>
+    <span class="hljs-comment">// as next ...</span>
+    ctx.gotoFirst();
+
+    <span class="hljs-comment">// ... but directly skip</span>
+    <span class="hljs-comment">// #0 to #2</span>
+    ctx.skipWhile = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctxToCheck</span>) </span>{
+        <span class="hljs-keyword">return</span> ctxToCheck.index &lt; <span class="hljs-number">3</span>;
+    };
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #2</span>
+
+    ctx.goto(<span class="hljs-number">1</span>);  <span class="hljs-comment">// goto 'ACTION #1'</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #3</span>
+
+    ctx.gotoLast();  <span class="hljs-comment">// goto last action ('ACTION #6')</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #4</span>
+
+    ctx.value = <span class="hljs-string">'PZ'</span>;
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #5</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #6</span>
+
+    <span class="hljs-comment">// ctx.value == undefined (because we never reached 'ACTION #4')</span>
+});
+
+workflow.on(<span class="hljs-string">'action.before'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'ACTION #'</span> + ctx.index);
+
+    ctx.result = ctx.index;
+});
+
+workflow.start().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>) </span>{
+    <span class="hljs-comment">// success</span>
+
+    <span class="hljs-comment">// result == 6</span>
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-comment">// ERROR!!!</span>
+});
+</code></pre>
+				<h4 id="share-values">Share values</h4>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// create workflow WITHOUT starting it</span>
+<span class="hljs-keyword">var</span> newWorkflow = Workflows.create(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #0</span>
+
+    <span class="hljs-comment">// ctx.value == 'PZ'  (s. below - newWorkflow.start())</span>
+
+    ctx.value = <span class="hljs-string">'MK'</span>;
+    ctx.nextValue = <span class="hljs-number">23979</span>;  <span class="hljs-comment">// will be available in 'previousValue' property</span>
+                            <span class="hljs-comment">// of 'ACTION #1'</span>
+                            <span class="hljs-comment">// and 'nextValue' will be resetted there</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #1</span>
+
+    <span class="hljs-comment">// ctx.previousValue == 23979 (from 'ACTION #0')</span>
+    <span class="hljs-comment">// ctx.value == 'MK'</span>
+
+    ctx.value = <span class="hljs-string">'TM'</span>;
+    ctx.nextValue = <span class="hljs-number">5979</span>;  <span class="hljs-comment">// for 'ACTION #2'</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #2</span>
+
+    <span class="hljs-comment">// ctx.previousValue == 5979</span>
+    <span class="hljs-comment">// ctx.value == 'TM'</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #3</span>
+
+    <span class="hljs-comment">// ctx.previousValue == undefined</span>
+    <span class="hljs-comment">// ctx.value == 'TM'</span>
+});
+
+
+<span class="hljs-comment">// START</span>
+newWorkflow.start(<span class="hljs-string">'PZ'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// success</span>
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-comment">// ERROR!!!</span>
+});
+</code></pre>
+				<h4 id="states">States</h4>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// WORKFLOW #1</span>
+Workflows.start(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// will be available for all</span>
+    <span class="hljs-comment">// actions while the current execution</span>
+    ctx.globals[<span class="hljs-string">'action0'</span>] = <span class="hljs-string">'MK'</span>;
+
+    <span class="hljs-comment">// is availabe ONLY FOR THIS ACTION</span>
+    <span class="hljs-comment">// and is availabe while the execution</span>
+    <span class="hljs-comment">// of the underlying workflow</span>
+    ctx.state = <span class="hljs-number">23979</span>;
+
+    <span class="hljs-comment">// will be available for all</span>
+    <span class="hljs-comment">// actions of all workflows</span>
+    <span class="hljs-comment">// and is stored permanent</span>
+    ctx.permanentGlobals[<span class="hljs-string">'workflow1_action0'</span>] = <span class="hljs-string">'A global value'</span>;
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #1</span>
+
+    <span class="hljs-comment">// ctx.globals.action0 == 'MK';</span>
+    <span class="hljs-comment">// ctx.state == undefined</span>
+
+    ctx.state = <span class="hljs-number">5979</span>;
+
+    <span class="hljs-comment">//TODO</span>
+});
+
+<span class="hljs-comment">// WORKFLOW #2</span>
+Workflows.start(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ctx.permanentGlobals['workflow1_action0'] == 'A global value'</span>
+});
+</code></pre>
+				<h4 id="events">Events</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> workflow = Workflows.create();
+
+<span class="hljs-comment">// workflow events ...</span>
+workflow.on(<span class="hljs-string">'action.after'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, ctx</span>) </span>{
+    <span class="hljs-comment">// AFTER workflow action has been invoked</span>
+});
+workflow.on(<span class="hljs-string">'action.before'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// BEFORE workflow action is being invoked</span>
+});
+workflow.on(<span class="hljs-string">'action.new'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">action, newActionCount</span>) </span>{
+    <span class="hljs-comment">// new action added</span>
+});
+workflow.on(<span class="hljs-string">'action.skip'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// this action has been skipped</span>
+});
+workflow.on(<span class="hljs-string">'end'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, workflowExecutionCount, result, endTime, value, previousValue, previousIndex</span>) </span>{
+    <span class="hljs-comment">// workflow has ended</span>
+});
+workflow.on(<span class="hljs-string">'reset'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// whole workflow has been resetted</span>
+});
+workflow.on(<span class="hljs-string">'reset.actions'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">oldEntries</span>) </span>{
+    <span class="hljs-comment">// workflow actions have been resetted</span>
+});
+workflow.on(<span class="hljs-string">'reset.actionstates'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">oldStates</span>) </span>{
+    <span class="hljs-comment">// states of workflow actions have</span>
+    <span class="hljs-comment">// been resetted</span>
+});
+workflow.on(<span class="hljs-string">'reset.state'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">oldValue</span>) </span>{
+    <span class="hljs-comment">// state value of workflow has been resetted</span>
+});
+workflow.on(<span class="hljs-string">'start'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">workflowExecutionCount, initialValue, startTime</span>) </span>{
+    <span class="hljs-comment">// workflow is starting</span>
+});
+
+<span class="hljs-comment">// custom events for the execution</span>
+workflow.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #0</span>
+
+    ctx.events.on(<span class="hljs-string">'myWorkflowEvent_0'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">val1, val2, val3</span>) </span>{
+        <span class="hljs-comment">// will be invoked via 'ACTION #1'</span>
+
+        <span class="hljs-comment">// v == "TM+MK"</span>
+        <span class="hljs-keyword">var</span> v = val1 + val2 + val3;
+    });
+}).next(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{  <span class="hljs-comment">// &lt;= alias for 'then()'</span>
+    <span class="hljs-comment">// ACTION #1</span>
+
+    <span class="hljs-comment">// invokes event in 'ACTION #0'</span>
+    ctx.events.emit(<span class="hljs-string">'myWorkflowEvent_0'</span>,
+                    <span class="hljs-string">'TM'</span>, <span class="hljs-string">'+'</span>, <span class="hljs-string">'MK'</span>);
+
+    ctx.events.once(<span class="hljs-string">'myWorkflowEvent_1'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// will be invoked via 'ACTION #2'</span>
+        <span class="hljs-comment">// BUT: only once!</span>
+    });
+}).next(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #2</span>
+
+    ctx.events.emit(<span class="hljs-string">'myWorkflowEvent_1'</span>);  <span class="hljs-comment">// invokes event in 'ACTION #1'</span>
+    ctx.events.emit(<span class="hljs-string">'myWorkflowEvent_1'</span>);  <span class="hljs-comment">// DOES NOT invoke event in 'ACTION #1'</span>
+                                           <span class="hljs-comment">// because it has already been invoked</span>
+
+    <span class="hljs-comment">// s. below</span>
+    ctx.globalEvents.emit(<span class="hljs-string">'myGlobalEvent'</span>, <span class="hljs-number">1234</span>);
+    ctx.globalEvents.emit(<span class="hljs-string">'myGlobalEvent'</span>, <span class="hljs-number">5678</span>);  <span class="hljs-comment">// not invoked</span>
+
+    ctx.workflowEvents.emit(<span class="hljs-string">'myCustomWorkflowEvent'</span>, <span class="hljs-string">'XyZ_1'</span>);
+    ctx.workflowEvents.emit(<span class="hljs-string">'myCustomWorkflowEvent'</span>, <span class="hljs-string">'XyZ_2'</span>);
+});
+
+<span class="hljs-comment">// a global event</span>
+Workflows.EVENTS.once(<span class="hljs-string">'myGlobalEvent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">val</span>) </span>{
+    <span class="hljs-comment">// val == 1234</span>
+});
+
+<span class="hljs-comment">// a custom workflow event</span>
+workflow.on(<span class="hljs-string">'myCustomWorkflowEvent'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">val</span>) </span>{
+    <span class="hljs-comment">// [0] val == 'XyZ_1'</span>
+    <span class="hljs-comment">// [1] val == 'XyZ_2'</span>
+});
+
+<span class="hljs-comment">// START</span>
+workflow.start().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// success</span>
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// ERROR</span>
+});
+</code></pre>
+				<h4 id="other-information">Other information</h4>
+				<pre><code class="lang-javascript">Workflows.start(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ctx.count              =&gt; the total number of all actions of that workflow</span>
+    <span class="hljs-comment">// ctx.current            =&gt; the context of the current executing action</span>
+    <span class="hljs-comment">// ctx.executions         =&gt; the number of action executions</span>
+    <span class="hljs-comment">// ctx.index              =&gt; zero based index of THAT ACTION</span>
+    <span class="hljs-comment">// ctx.isBetween          =&gt; is between first AND last action or not</span>
+    <span class="hljs-comment">// ctx.isFirst            =&gt; is FIRST action or not</span>
+    <span class="hljs-comment">// ctx.isLast             =&gt; is LAST action or not</span>
+    <span class="hljs-comment">// ctx.previousEndTime    =&gt; the end time of the PREVIOUS action</span>
+    <span class="hljs-comment">// ctx.previousIndex      =&gt; zero based index of the PREVIOUS action</span>
+    <span class="hljs-comment">// ctx.previousStartTime  =&gt; the start time of the PREVIOUS action</span>
+    <span class="hljs-comment">// ctx.startTime          =&gt; the start time of the workflow</span>
+    <span class="hljs-comment">// ctx.time               =&gt; the start time of that action</span>
+    <span class="hljs-comment">// ctx.workflowExecutions =&gt; the number workflow executions</span>
+});
+</code></pre>
+				<h2 id="documentation">Documentation</h2>
+				<p>The full API documentation can be found <a href="https://mkloubert.github.io/node-workflows/">here</a>.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_index_.html">"index"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

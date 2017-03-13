@@ -281,6 +281,14 @@ socket.on(<span class="hljs-string">'error'</span>, <span class="hljs-function">
 socket.on(<span class="hljs-string">'handshake'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">pwd</span>) </span>{
     <span class="hljs-comment">// socket has made a handshake</span>
 });
+socket.on(<span class="hljs-string">'password.generating'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// socket is generating a password for the</span>
+    <span class="hljs-comment">// symmetric encryption</span>
+});
+socket.on(<span class="hljs-string">'password.generated'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">pwd</span>) </span>{
+    <span class="hljs-comment">// password for the symmetric encryption</span>
+    <span class="hljs-comment">// has been generated</span>
+});
 socket.on(<span class="hljs-string">'rsakey.generating'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">keySize</span>) </span>{
     <span class="hljs-comment">// socket is generting a RSA key pair</span>
 });

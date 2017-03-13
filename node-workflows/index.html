@@ -187,14 +187,14 @@
 
     ctx.value = <span class="hljs-string">'PZ'</span>;
 
-    <span class="hljs-comment">// if we would reache here</span>
+    <span class="hljs-comment">// if we would reach here</span>
     <span class="hljs-comment">// we could finish</span>
     <span class="hljs-comment">// the execution by calling...</span>
     ctx.finish();
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
     <span class="hljs-comment">// ACTION #5</span>
 
-    <span class="hljs-comment">// if we would reache here</span>
+    <span class="hljs-comment">// if we would reach here</span>
     <span class="hljs-comment">// we could jump to a previous</span>
     <span class="hljs-comment">// action by calling...</span>
     ctx.goBack();  <span class="hljs-comment">// goto to 'ACTION #4'</span>
@@ -234,8 +234,8 @@ workflow.start().then(<span class="hljs-function"><span class="hljs-keyword">fun
 
     <span class="hljs-comment">// the following messages will NOT logged</span>
     <span class="hljs-comment">// by default</span>
-    <span class="hljs-comment">// you can change the minimal log level</span>
     <span class="hljs-comment">// </span>
+    <span class="hljs-comment">// you can change the minimal log level</span>
     <span class="hljs-comment">// by setting the</span>
     <span class="hljs-comment">// 'logLevel' property of 'workflow'</span>
     ctx.info(<span class="hljs-string">'informational messages'</span>, tag);

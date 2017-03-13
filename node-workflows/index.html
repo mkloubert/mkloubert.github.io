@@ -186,8 +186,19 @@
     <span class="hljs-comment">// ACTION #4</span>
 
     ctx.value = <span class="hljs-string">'PZ'</span>;
+
+    <span class="hljs-comment">// if we would reache here</span>
+    <span class="hljs-comment">// we could finish</span>
+    <span class="hljs-comment">// the execution by calling...</span>
+    ctx.finish();
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
     <span class="hljs-comment">// ACTION #5</span>
+
+    <span class="hljs-comment">// if we would reache here</span>
+    <span class="hljs-comment">// we could jump to a previous</span>
+    <span class="hljs-comment">// action by calling...</span>
+    ctx.goBack();  <span class="hljs-comment">// goto to 'ACTION #4'</span>
+    ctx.goBack(<span class="hljs-number">2</span>);  <span class="hljs-comment">// goto to 'ACTION #3'</span>
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
     <span class="hljs-comment">// ACTION #6</span>
 
@@ -204,6 +215,50 @@ workflow.start().then(<span class="hljs-function"><span class="hljs-keyword">fun
     <span class="hljs-comment">// success</span>
 
     <span class="hljs-comment">// result == 6</span>
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-comment">// ERROR!!!</span>
+});
+</code></pre>
+				<h4 id="logging">Logging</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> workflow = Workflows.create(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ACTION #0</span>
+
+    <span class="hljs-keyword">var</span> tag = <span class="hljs-string">'ACTION #1'</span>;
+
+    ctx.emerg(<span class="hljs-string">'system is unusable'</span>, tag);
+    ctx.alert(<span class="hljs-string">'an action must be taken immediately'</span>, tag);
+    ctx.crit(<span class="hljs-string">'critical conditions'</span>, tag);
+    ctx.err(<span class="hljs-string">'error conditions'</span>, tag);
+    ctx.warn(<span class="hljs-string">'warning conditions'</span>, tag);
+    ctx.note(<span class="hljs-string">'normal but significant condition'</span>, tag);
+
+    <span class="hljs-comment">// the following messages will NOT logged</span>
+    <span class="hljs-comment">// by default</span>
+    <span class="hljs-comment">// you can change the minimal log level</span>
+    <span class="hljs-comment">// </span>
+    <span class="hljs-comment">// by setting the</span>
+    <span class="hljs-comment">// 'logLevel' property of 'workflow'</span>
+    ctx.info(<span class="hljs-string">'informational messages'</span>, tag);
+    ctx.dbg(<span class="hljs-string">'debug messages'</span>, tag);
+    ctx.trace(<span class="hljs-string">'output anything'</span>, tag);
+});
+
+<span class="hljs-comment">// add loggers by function ...</span>
+workflow.addLogger(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// log level / category is stored in</span>
+    <span class="hljs-comment">// ctx.category</span>
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'['</span> + ctx.tag + <span class="hljs-string">' :: '</span> + ctx.time + <span class="hljs-string">'] '</span> + ctx.message);
+});
+<span class="hljs-comment">// ... and by object</span>
+workflow.addLogger({
+    <span class="hljs-attr">log</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+        <span class="hljs-comment">// your code</span>
+    }
+});
+
+workflow.start().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>) </span>{
+    <span class="hljs-comment">// success</span>
 }).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
     <span class="hljs-comment">// ERROR!!!</span>
 });
@@ -298,6 +353,9 @@ workflow.on(<span class="hljs-string">'action.skip'</span>, <span class="hljs-fu
 workflow.on(<span class="hljs-string">'end'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, workflowExecutionCount, result, endTime, value, previousValue, previousIndex</span>) </span>{
     <span class="hljs-comment">// workflow has ended</span>
 });
+workflow.on(<span class="hljs-string">'logger.new'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">action, newLoggerCount</span>) </span>{
+    <span class="hljs-comment">// new logger added</span>
+});
 workflow.on(<span class="hljs-string">'reset'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// whole workflow has been resetted</span>
 });
@@ -307,6 +365,9 @@ workflow.on(<span class="hljs-string">'reset.actions'</span>, <span class="hljs-
 workflow.on(<span class="hljs-string">'reset.actionstates'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">oldStates</span>) </span>{
     <span class="hljs-comment">// states of workflow actions have</span>
     <span class="hljs-comment">// been resetted</span>
+});
+workflow.on(<span class="hljs-string">'reset.loggers'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">oldLoggerActions</span>) </span>{
+    <span class="hljs-comment">// loggers have been resetted</span>
 });
 workflow.on(<span class="hljs-string">'reset.state'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">oldValue</span>) </span>{
     <span class="hljs-comment">// state value of workflow has been resetted</span>

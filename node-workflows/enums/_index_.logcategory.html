@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WorkflowActionEntry | node-workflows</title>
+	<title>LogCategory | node-workflows</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_index_.html">&quot;index&quot;</a>
 				</li>
 				<li>
-					<a href="_index_.workflowactionentry.html">WorkflowActionEntry</a>
+					<a href="_index_.logcategory.html">LogCategory</a>
 				</li>
 			</ul>
-			<h1>Interface WorkflowActionEntry</h1>
+			<h1>Enumeration LogCategory</h1>
 		</div>
 	</div>
 </header>
@@ -72,61 +72,165 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An entry of a workflow action.</p>
+						<p>List of log categories.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">WorkflowActionEntry</span>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.workflowactionentry.html#action" class="tsd-kind-icon">action</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.workflowactionentry.html#thisarg" class="tsd-kind-icon">this<wbr>Arg</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_index_.logcategory.html#alert" class="tsd-kind-icon">Alert</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_index_.logcategory.html#critical" class="tsd-kind-icon">Critical</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_index_.logcategory.html#debug" class="tsd-kind-icon">Debug</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_index_.logcategory.html#emergency" class="tsd-kind-icon">Emergency</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_index_.logcategory.html#error" class="tsd-kind-icon">Error</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_index_.logcategory.html#info" class="tsd-kind-icon">Info</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_index_.logcategory.html#notice" class="tsd-kind-icon">Notice</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_index_.logcategory.html#trace" class="tsd-kind-icon">Trace</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_index_.logcategory.html#warning" class="tsd-kind-icon">Warning</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="action" class="tsd-anchor"></a>
-					<h3>action</h3>
-					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <a href="../modules/_index_.html#workflowaction" class="tsd-signature-type">WorkflowAction</a></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="alert" class="tsd-anchor"></a>
+					<h3>Alert</h3>
+					<div class="tsd-signature tsd-kind-icon">Alert<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:120</li>
+							<li>Defined in index.ts:437</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets the underlying action.</p>
+							<p>Alert: action must be taken immediately</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="thisarg" class="tsd-anchor"></a>
-					<h3>this<wbr>Arg</h3>
-					<div class="tsd-signature tsd-kind-icon">this<wbr>Arg<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="critical" class="tsd-anchor"></a>
+					<h3>Critical</h3>
+					<div class="tsd-signature tsd-kind-icon">Critical<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:124</li>
+							<li>Defined in index.ts:441</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets the object / value that should be linked with the action.</p>
+							<p>Critical: critical conditions</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="debug" class="tsd-anchor"></a>
+					<h3>Debug</h3>
+					<div class="tsd-signature tsd-kind-icon">Debug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;7</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:461</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Debug: debug messages</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="emergency" class="tsd-anchor"></a>
+					<h3>Emergency</h3>
+					<div class="tsd-signature tsd-kind-icon">Emergency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:433</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Emergency: system is unusable</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="error" class="tsd-anchor"></a>
+					<h3>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:445</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Error: error conditions</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="info" class="tsd-anchor"></a>
+					<h3>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;6</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:457</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Informational: informational messages</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="notice" class="tsd-anchor"></a>
+					<h3>Notice</h3>
+					<div class="tsd-signature tsd-kind-icon">Notice<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:453</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Notice: normal but significant condition</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="trace" class="tsd-anchor"></a>
+					<h3>Trace</h3>
+					<div class="tsd-signature tsd-kind-icon">Trace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;8</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:465</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Trace: output the most you can</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="warning" class="tsd-anchor"></a>
+					<h3>Warning</h3>
+					<div class="tsd-signature tsd-kind-icon">Warning<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:449</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Warning: warning conditions</p>
 						</div>
 					</div>
 				</section>
@@ -145,41 +249,62 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_index_.logcategory.html" class="tsd-kind-icon">Log<wbr>Category</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_index_.workflow.html" class="tsd-kind-icon">Workflow</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_index_.logger.html" class="tsd-kind-icon">Logger</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_index_.loggercontext.html" class="tsd-kind-icon">Logger<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_index_.loggerentry.html" class="tsd-kind-icon">Logger<wbr>Entry</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_index_.workflowactioncontext.html" class="tsd-kind-icon">Workflow<wbr>Action<wbr>Context</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_index_.workflowactionentry.html" class="tsd-kind-icon">Workflow<wbr>Action<wbr>Entry</a>
+					<li class="current tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_index_.logcategory.html" class="tsd-kind-icon">Log<wbr>Category</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.workflowactionentry.html#action" class="tsd-kind-icon">action</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_index_.logcategory.html#alert" class="tsd-kind-icon">Alert</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.workflowactionentry.html#thisarg" class="tsd-kind-icon">this<wbr>Arg</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_index_.logcategory.html#critical" class="tsd-kind-icon">Critical</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_index_.logcategory.html#debug" class="tsd-kind-icon">Debug</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_index_.logcategory.html#emergency" class="tsd-kind-icon">Emergency</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_index_.logcategory.html#error" class="tsd-kind-icon">Error</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_index_.logcategory.html#info" class="tsd-kind-icon">Info</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_index_.logcategory.html#notice" class="tsd-kind-icon">Notice</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_index_.logcategory.html#trace" class="tsd-kind-icon">Trace</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_index_.logcategory.html#warning" class="tsd-kind-icon">Warning</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_index_.workflow.html" class="tsd-kind-icon">Workflow</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_index_.workflowexecutor.html" class="tsd-kind-icon">Workflow<wbr>Executor</a>
+						<a href="../interfaces/_index_.logger.html" class="tsd-kind-icon">Logger</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_index_.loggercontext.html" class="tsd-kind-icon">Logger<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_index_.loggerentry.html" class="tsd-kind-icon">Logger<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_index_.workflowactioncontext.html" class="tsd-kind-icon">Workflow<wbr>Action<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_index_.workflowactionentry.html" class="tsd-kind-icon">Workflow<wbr>Action<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_index_.workflowexecutor.html" class="tsd-kind-icon">Workflow<wbr>Executor</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_index_.html#loggeraction" class="tsd-kind-icon">Logger<wbr>Action</a>

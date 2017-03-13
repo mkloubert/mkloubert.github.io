@@ -293,7 +293,7 @@ socket.on(<span class="hljs-string">'stream.read'</span>, <span class="hljs-func
 socket.on(<span class="hljs-string">'stream.write'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">fdSrc, remainingBytes, chunk, hashOfChunk</span>) </span>{
     <span class="hljs-comment">// send stream / file chunk to remote</span>
 });
-socket.on(<span class="hljs-string">'write.after'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uncryptedData, isCompressed, dataLength, cryptedData</span>) </span>{
+socket.on(<span class="hljs-string">'write.after'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, uncryptedData, isCompressed, dataLength, cryptedData</span>) </span>{
     <span class="hljs-comment">// socket has (tried to) send data</span>
 });
 socket.on(<span class="hljs-string">'write.before'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uncryptedData, isCompressed, dataLength, cryptedData</span>) </span>{

@@ -272,33 +272,32 @@ fs.open(<span class="hljs-string">'./fileToSend.txt'</span>, <span class="hljs-s
 				<pre><code class="lang-javascript">socket.on(<span class="hljs-string">'close'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// socket closed</span>
 });
-
 socket.on(<span class="hljs-string">'disposed'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// socket has been disposed</span>
 });
-
 socket.on(<span class="hljs-string">'error'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
     <span class="hljs-comment">// an error occurred</span>
 });
-
 socket.on(<span class="hljs-string">'handshake'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">pwd</span>) </span>{
     <span class="hljs-comment">// socket has made a handshake</span>
 });
-
 socket.on(<span class="hljs-string">'rsakey.generating'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">keySize</span>) </span>{
     <span class="hljs-comment">// socket is generting a RSA key pair</span>
 });
-
 socket.on(<span class="hljs-string">'rsakey.generated'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">keyPair</span>) </span>{
     <span class="hljs-comment">// socket has been generted a RSA key pair</span>
 });
-
 socket.on(<span class="hljs-string">'stream.read'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">fdTarget, chunk, bytesWritten, hashOfChunk</span>) </span>{
     <span class="hljs-comment">// received stream / file chunk from remote</span>
 });
-
 socket.on(<span class="hljs-string">'stream.write'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">fdSrc, remainingBytes, chunk, hashOfChunk</span>) </span>{
     <span class="hljs-comment">// send stream / file chunk to remote</span>
+});
+socket.on(<span class="hljs-string">'write.after'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uncryptedData, isCompressed, dataLength, cryptedData</span>) </span>{
+    <span class="hljs-comment">// socket has (tried to) send data</span>
+});
+socket.on(<span class="hljs-string">'write.before'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">uncryptedData, isCompressed, dataLength, cryptedData</span>) </span>{
+    <span class="hljs-comment">// socket is being to send data</span>
 });
 </code></pre>
 				<h3 id="settings">Settings</h3>

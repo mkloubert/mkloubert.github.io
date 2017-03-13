@@ -180,7 +180,14 @@
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
     <span class="hljs-comment">// ACTION #2</span>
 
-    ctx.goto(<span class="hljs-number">1</span>);  <span class="hljs-comment">// goto 'ACTION #1'</span>
+    <span class="hljs-keyword">if</span> (!ctx.value) {
+        ctx.value = <span class="hljs-literal">true</span>;
+
+        ctx.repeat();
+    }
+    <span class="hljs-keyword">else</span> {
+        ctx.goto(<span class="hljs-number">1</span>);  <span class="hljs-comment">// goto 'ACTION #1'</span>
+    }
 }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
     <span class="hljs-comment">// ACTION #3</span>
 

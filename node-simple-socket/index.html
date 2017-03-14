@@ -348,8 +348,12 @@ simpleSocketModule.DefaultCWD = <span class="hljs-string">'E:/test'</span>;
 
 <span class="hljs-comment">// initial value for 'dataTransformer' property</span>
 <span class="hljs-comment">// Default: (undefined)</span>
-simpleSocketModule.DefaultDataTransformer = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">untransformedData</span>) </span>{
-    <span class="hljs-comment">// return transformed data</span>
+simpleSocketModule.DefaultDataTransformer = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ctx.data      =&gt; the data to transform</span>
+    <span class="hljs-comment">// ctx.direction =&gt; the direction, s. https://mkloubert.github.io/node-simple-socket/enums/_index_.datatransformerdirection.html</span>
+
+    <span class="hljs-comment">// return transformed data as buffer</span>
+    <span class="hljs-comment">// directly or as Promise</span>
 };
 
 <span class="hljs-comment">// initial value for 'encoding' property</span>
@@ -358,8 +362,12 @@ simpleSocketModule.DefaultEncoding = <span class="hljs-string">'ascii'</span>;
 
 <span class="hljs-comment">// initial value for 'handshakeTransformer' property</span>
 <span class="hljs-comment">// Default: (undefined)</span>
-simpleSocketModule.DefaultHandshakeTransformer = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">untransformedData</span>) </span>{
-    <span class="hljs-comment">// return transformed data</span>
+simpleSocketModule.DefaultHandshakeTransformer = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ctx</span>) </span>{
+    <span class="hljs-comment">// ctx.data      =&gt; the data to transform</span>
+    <span class="hljs-comment">// ctx.direction =&gt; the direction, s. https://mkloubert.github.io/node-simple-socket/enums/_index_.datatransformerdirection.html</span>
+
+    <span class="hljs-comment">// return transformed data as buffer</span>
+    <span class="hljs-comment">// directly or as Promise</span>
 };
 
 <span class="hljs-comment">// initial value for 'maxPackageSize' property</span>
@@ -369,7 +377,8 @@ simpleSocketModule.DefaultMaxPackageSize = <span class="hljs-number">239795979</
 <span class="hljs-comment">// initial value for 'passwordGenerator' property</span>
 <span class="hljs-comment">// Default: (undefined)</span>
 simpleSocketModule.DefaultPasswordGenerator = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-comment">// return generated password</span>
+    <span class="hljs-comment">// return transformed password as buffer</span>
+    <span class="hljs-comment">// directly or as Promise</span>
 };
 
 <span class="hljs-comment">// initial value for 'readBufferSize' property</span>

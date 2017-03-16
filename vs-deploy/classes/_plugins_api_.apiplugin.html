@@ -118,10 +118,11 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#downloadfile" class="tsd-kind-icon">download<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#info" class="tsd-kind-icon">info</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#oncancelling" class="tsd-kind-icon">on<wbr>Cancelling</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#onconfigreloaded" class="tsd-kind-icon">on<wbr>Config<wbr>Reloaded</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#pullfile" class="tsd-kind-icon">pull<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#pullfile" class="tsd-kind-icon">pull<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#pullworkspace" class="tsd-kind-icon">pull<wbr>Workspace</a></li>
 							</ul>
 						</section>
@@ -321,6 +322,42 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="downloadfile" class="tsd-anchor"></a>
+					<h3>download<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">download<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_api_.deploytargeapi.html" class="tsd-signature-type">DeployTargeApi</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#downloadfile">downloadFile</a></p>
+								<ul>
+									<li>Defined in plugins/api.ts:197</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>file: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>target: <a href="../interfaces/_plugins_api_.deploytargeapi.html" class="tsd-signature-type">DeployTargeApi</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="info" class="tsd-anchor"></a>
 					<h3>info</h3>
@@ -331,7 +368,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/api.ts:195</li>
+									<li>Defined in plugins/api.ts:367</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.deployplugininfo.html" class="tsd-signature-type">DeployPluginInfo</a></h4>
@@ -349,7 +386,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#oncancelling">onCancelling</a></p>
 								<ul>
-									<li>Defined in objects.ts:205</li>
+									<li>Defined in objects.ts:210</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -384,7 +421,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#onconfigreloaded">onConfigReloaded</a></p>
 								<ul>
-									<li>Defined in objects.ts:224</li>
+									<li>Defined in objects.ts:229</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -405,18 +442,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="pullfile" class="tsd-anchor"></a>
 					<h3>pull<wbr>File</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">pull<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_api_.deploytargeapi.html" class="tsd-signature-type">DeployTargeApi</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">pull<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#pullfile">pullFile</a></p>
+								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#pullfile">pullFile</a></p>
 								<ul>
-									<li>Defined in plugins/api.ts:202</li>
+									<li>Defined in objects.ts:233</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -431,7 +468,7 @@
 									<h5>file: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>target: <a href="../interfaces/_plugins_api_.deploytargeapi.html" class="tsd-signature-type">DeployTargeApi</a></h5>
+									<h5>target: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a></h5>
@@ -452,7 +489,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#pullworkspace">pullWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:254</li>
+									<li>Defined in objects.ts:313</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -518,6 +555,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_api_.apiplugin.html#dispose" class="tsd-kind-icon">dispose</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+								<a href="_plugins_api_.apiplugin.html#downloadfile" class="tsd-kind-icon">download<wbr>File</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="_plugins_api_.apiplugin.html#info" class="tsd-kind-icon">info</a>
 							</li>
@@ -527,7 +567,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="_plugins_api_.apiplugin.html#onconfigreloaded" class="tsd-kind-icon">on<wbr>Config<wbr>Reloaded</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_api_.apiplugin.html#pullfile" class="tsd-kind-icon">pull<wbr>File</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">

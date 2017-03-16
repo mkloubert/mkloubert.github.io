@@ -162,6 +162,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_objects_.deploypluginwithcontextbase.html#deployfilewithcontext" class="tsd-kind-icon">deploy<wbr>File<wbr>With<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_objects_.deploypluginwithcontextbase.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_objects_.deploypluginwithcontextbase.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_objects_.deploypluginwithcontextbase.html#downloadfile" class="tsd-kind-icon">download<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_objects_.deploypluginwithcontextbase.html#downloadfilewithcontext" class="tsd-kind-icon">download<wbr>File<wbr>With<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_objects_.deploypluginwithcontextbase.html#oncancelling" class="tsd-kind-icon">on<wbr>Cancelling</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_objects_.deploypluginwithcontextbase.html#onconfigreloaded" class="tsd-kind-icon">on<wbr>Config<wbr>Reloaded</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_objects_.deploypluginwithcontextbase.html#pullfile" class="tsd-kind-icon">pull<wbr>File</a></li>
@@ -288,7 +290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:478</li>
+									<li>Defined in objects.ts:538</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -340,7 +342,7 @@
 								<p>Inherited from <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#deployfile">deployFile</a></p>
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#deployfile">deployFile</a></p>
 								<ul>
-									<li>Defined in objects.ts:352</li>
+									<li>Defined in objects.ts:412</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -375,7 +377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:491</li>
+									<li>Defined in objects.ts:551</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -422,7 +424,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#deployworkspace">deployWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:495</li>
+									<li>Defined in objects.ts:555</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -471,6 +473,94 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="downloadfile" class="tsd-anchor"></a>
+					<h3>download<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">download<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#downloadfile">downloadFile</a></p>
+								<ul>
+									<li>Defined in objects.ts:685</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>file: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>target: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">Buffer</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="downloadfilewithcontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> download<wbr>File<wbr>With<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">download<wbr>File<wbr>With<wbr>Context<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TContext</span>, file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in objects.ts:768</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Downloads a file by using a context.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ctx: <span class="tsd-signature-type">TContext</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The context to use.</p>
+									</div>
+								</li>
+								<li>
+									<h5>file: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path of the local file.</p>
+									</div>
+								</li>
+								<li>
+									<h5>target: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">Buffer</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="oncancelling" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Cancelling</h3>
@@ -482,7 +572,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#oncancelling">onCancelling</a></p>
 								<ul>
-									<li>Defined in objects.ts:205</li>
+									<li>Defined in objects.ts:210</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -517,7 +607,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#onconfigreloaded">onConfigReloaded</a></p>
 								<ul>
-									<li>Defined in objects.ts:224</li>
+									<li>Defined in objects.ts:229</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -550,7 +640,7 @@
 								<p>Inherited from <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#pullfile">pullFile</a></p>
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#pullfile">pullFile</a></p>
 								<ul>
-									<li>Defined in objects.ts:389</li>
+									<li>Defined in objects.ts:449</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -585,7 +675,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:632</li>
+									<li>Defined in objects.ts:781</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -632,7 +722,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#pullworkspace">pullWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:661</li>
+									<li>Defined in objects.ts:862</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -706,6 +796,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_objects_.deploypluginwithcontextbase.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_objects_.deploypluginwithcontextbase.html#downloadfile" class="tsd-kind-icon">download<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_objects_.deploypluginwithcontextbase.html#downloadfilewithcontext" class="tsd-kind-icon">download<wbr>File<wbr>With<wbr>Context</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_objects_.deploypluginwithcontextbase.html#oncancelling" class="tsd-kind-icon">on<wbr>Cancelling</a>

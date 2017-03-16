@@ -126,6 +126,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployplugin.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployplugin.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployplugin.html#downloadfile" class="tsd-kind-icon">download<wbr>File</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployplugin.html#info" class="tsd-kind-icon">info</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployplugin.html#pullfile" class="tsd-kind-icon">pull<wbr>File</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployplugin.html#pullworkspace" class="tsd-kind-icon">pull<wbr>Workspace</a></li>
@@ -142,7 +143,7 @@
 					<div class="tsd-signature tsd-kind-icon">___file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:864</li>
+							<li>Defined in contracts.ts:868</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -158,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">___file<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:870</li>
+							<li>Defined in contracts.ts:874</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,7 +175,7 @@
 					<div class="tsd-signature tsd-kind-icon">___index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:876</li>
+							<li>Defined in contracts.ts:880</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -190,7 +191,7 @@
 					<div class="tsd-signature tsd-kind-icon">___type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:882</li>
+							<li>Defined in contracts.ts:886</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -206,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">can<wbr>Pull<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:887</li>
+							<li>Defined in contracts.ts:891</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -221,7 +222,7 @@
 					<div class="tsd-signature tsd-kind-icon">deploy<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:895</li>
+							<li>Defined in contracts.ts:899</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -274,7 +275,7 @@
 					<div class="tsd-signature tsd-kind-icon">deploy<wbr>Workspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:903</li>
+							<li>Defined in contracts.ts:907</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -327,7 +328,7 @@
 					<div class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:907</li>
+							<li>Defined in contracts.ts:911</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -352,12 +353,71 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="downloadfile" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> download<wbr>File</h3>
+					<div class="tsd-signature tsd-kind-icon">download<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:921</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Downloads a file from target.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The file to download.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The source from where to download the file from.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>Additional options.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The promise.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, opts<span class="tsd-signature-symbol">?: </span><a href="_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>file: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5>target: <a href="_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">Buffer</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="info" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> info</h3>
 					<div class="tsd-signature tsd-kind-icon">info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:913</li>
+							<li>Defined in contracts.ts:927</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -392,7 +452,7 @@
 					<div class="tsd-signature tsd-kind-icon">pull<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:921</li>
+							<li>Defined in contracts.ts:935</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -445,7 +505,7 @@
 					<div class="tsd-signature tsd-kind-icon">pull<wbr>Workspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:929</li>
+							<li>Defined in contracts.ts:943</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -535,6 +595,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.deployplugin.html#dispose" class="tsd-kind-icon">dispose</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deployplugin.html#downloadfile" class="tsd-kind-icon">download<wbr>File</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.deployplugin.html#info" class="tsd-kind-icon">info</a>

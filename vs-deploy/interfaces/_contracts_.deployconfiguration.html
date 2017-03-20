@@ -139,6 +139,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="_contracts_.deployconfiguration.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deployconfiguration.html#has" class="tsd-kind-icon">has</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deployconfiguration.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
 					</div>
@@ -623,7 +624,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from WorkspaceConfiguration.get</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2641</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2682</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -668,7 +669,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from WorkspaceConfiguration.has</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2649</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2690</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -687,6 +688,56 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p><code>true</code> iff the section doesn&#39;t resolve to <code>undefined</code>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="update" class="tsd-anchor"></a>
+					<h3>update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, global<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Thenable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from WorkspaceConfiguration.update</p>
+								<ul>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2707</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Update a configuration value. A value can be changed for the current
+										<a href="#workspace.rootPath">workspace</a> only, or globally for all instances of the
+									editor. The updated configuration values are persisted.</p>
+								</div>
+								<p><em>Note 1:</em> Setting an installation-wide value (<code>global: true</code>) in the presence of
+									a more specific workspace value has no observable effect in that workspace, but
+								in others.</p>
+								<p><em>Note 2:</em> To remove a configuration value use <code>undefined</code>, like so: <code>config.update(&#39;somekey&#39;, undefined)</code></p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>section: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Configuration name, supports <em>dotted</em> names.</p>
+									</div>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new value.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> global: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>When <code>true</code> changes the configuration value for all instances of the editor.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Thenable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -784,6 +835,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.deployconfiguration.html#has" class="tsd-kind-icon">has</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.deployconfiguration.html#update" class="tsd-kind-icon">update</a>
 							</li>
 						</ul>
 					</li>

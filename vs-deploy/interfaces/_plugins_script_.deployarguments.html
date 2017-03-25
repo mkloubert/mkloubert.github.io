@@ -112,6 +112,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_script_.deployarguments.html#emitglobal" class="tsd-kind-icon">emit<wbr>Global</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_script_.deployarguments.html#globalstate" class="tsd-kind-icon">global<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_script_.deployarguments.html#globals" class="tsd-kind-icon">globals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_script_.deployarguments.html#replacewithvalues" class="tsd-kind-icon">replace<wbr>With<wbr>Values</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_script_.deployarguments.html#require" class="tsd-kind-icon">require</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_script_.deployarguments.html#sender" class="tsd-kind-icon">sender</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_script_.deployarguments.html#state" class="tsd-kind-icon">state</a></li>
@@ -206,7 +207,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#emitglobal">emitGlobal</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1475</li>
+							<li>Defined in contracts.ts:1536</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -270,13 +271,57 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globals">globals</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1479</li>
+							<li>Defined in contracts.ts:1540</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The global variables from the settings.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="replacewithvalues" class="tsd-anchor"></a>
+					<h3>replace<wbr>With<wbr>Values</h3>
+					<div class="tsd-signature tsd-kind-icon">replace<wbr>With<wbr>Values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/script.ts:70</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Handles a value as string and replaces placeholders.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The value to parse.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The parsed value.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>val: <span class="tsd-signature-type">any</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -286,7 +331,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#require">require</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1487</li>
+							<li>Defined in contracts.ts:1548</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -330,7 +375,7 @@
 					<div class="tsd-signature tsd-kind-icon">sender<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/script.ts:66</li>
+							<li>Defined in plugins/script.ts:74</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -345,7 +390,7 @@
 					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/script.ts:71</li>
+							<li>Defined in plugins/script.ts:79</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -361,7 +406,7 @@
 					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <a href="_plugins_script_.deploytargetscript.html" class="tsd-signature-type">DeployTargetScript</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/script.ts:75</li>
+							<li>Defined in plugins/script.ts:83</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -376,7 +421,7 @@
 					<div class="tsd-signature tsd-kind-icon">target<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/script.ts:79</li>
+							<li>Defined in plugins/script.ts:87</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -431,6 +476,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_plugins_script_.deployarguments.html#globals" class="tsd-kind-icon">globals</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_plugins_script_.deployarguments.html#replacewithvalues" class="tsd-kind-icon">replace<wbr>With<wbr>Values</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_plugins_script_.deployarguments.html#require" class="tsd-kind-icon">require</a>

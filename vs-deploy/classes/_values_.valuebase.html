@@ -89,6 +89,9 @@
 								<a href="_values_.envvalue.html" class="tsd-signature-type">EnvValue</a>
 							</li>
 							<li>
+								<a href="_values_.filevalue.html" class="tsd-signature-type">FileValue</a>
+							</li>
+							<li>
 								<a href="_values_.staticvalue.html" class="tsd-signature-type">StaticValue</a>
 							</li>
 						</ul>
@@ -111,10 +114,12 @@
 								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_values_.valuebase.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_values_.valuebase.html#_item" class="tsd-kind-icon">_ITEM</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_values_.valuebase.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_values_.valuebase.html#othervalueprovider" class="tsd-kind-icon">other<wbr>Value<wbr>Provider</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -122,6 +127,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_values_.valuebase.html#item" class="tsd-kind-icon">item</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_values_.valuebase.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_values_.valuebase.html#othervalues" class="tsd-kind-icon">other<wbr>Values</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_values_.valuebase.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
@@ -140,7 +146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:40</li>
+									<li>Defined in values.ts:42</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -159,7 +165,7 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_item" class="tsd-anchor"></a>
@@ -167,13 +173,58 @@
 					<div class="tsd-signature tsd-kind-icon">_ITEM<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_contracts_.valuewithname.html" class="tsd-signature-type">ValueWithName</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in values.ts:40</li>
+							<li>Defined in values.ts:42</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Stores the underlying item.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in values.ts:63</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Anthing that identifies that value.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="othervalueprovider" class="tsd-anchor"></a>
+					<h3>other<wbr>Value<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">other<wbr>Value<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in values.ts:94</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The function that provides the &quot;other&quot; values.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -189,7 +240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:61</li>
+									<li>Defined in values.ts:68</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -211,7 +262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:66</li>
+									<li>Defined in values.ts:97</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -228,6 +279,28 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="othervalues" class="tsd-anchor"></a>
+					<h3>other<wbr>Values</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> otherValues<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in values.ts:75</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the list of &quot;other&quot; values.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="value" class="tsd-anchor"></a>
 					<h3>value</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
@@ -237,7 +310,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:71</li>
+									<li>Defined in values.ts:102</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -275,6 +348,9 @@
 						<a href="_values_.envvalue.html" class="tsd-kind-icon">Env<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_values_.filevalue.html" class="tsd-kind-icon">File<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_values_.staticvalue.html" class="tsd-kind-icon">Static<wbr>Value</a>
 					</li>
 				</ul>
@@ -288,11 +364,20 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_values_.valuebase.html#_item" class="tsd-kind-icon">_ITEM</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_values_.valuebase.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_values_.valuebase.html#othervalueprovider" class="tsd-kind-icon">other<wbr>Value<wbr>Provider</a>
+							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_values_.valuebase.html#item" class="tsd-kind-icon">item</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_values_.valuebase.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_values_.valuebase.html#othervalues" class="tsd-kind-icon">other<wbr>Values</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_values_.valuebase.html#value" class="tsd-kind-icon">value</a>
@@ -303,6 +388,9 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_values_.html#getvalues" class="tsd-kind-icon">get<wbr>Values</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_values_.html#replacewithvalues" class="tsd-kind-icon">replace<wbr>With<wbr>Values</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_values_.html#tovalueobjects" class="tsd-kind-icon">to<wbr>Value<wbr>Objects</a>

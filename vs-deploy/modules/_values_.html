@@ -75,6 +75,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.codevalue.html" class="tsd-kind-icon">Code<wbr>Value</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.envvalue.html" class="tsd-kind-icon">Env<wbr>Value</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.filevalue.html" class="tsd-kind-icon">File<wbr>Value</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.staticvalue.html" class="tsd-kind-icon">Static<wbr>Value</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.valuebase.html" class="tsd-kind-icon">Value<wbr>Base</a></li>
 							</ul>
@@ -83,6 +84,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_values_.html#getvalues" class="tsd-kind-icon">get<wbr>Values</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_values_.html#replacewithvalues" class="tsd-kind-icon">replace<wbr>With<wbr>Values</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_values_.html#tovalueobjects" class="tsd-kind-icon">to<wbr>Value<wbr>Objects</a></li>
 							</ul>
 						</section>
@@ -101,7 +103,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:184</li>
+									<li>Defined in values.ts:268</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -115,6 +117,44 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="replacewithvalues" class="tsd-anchor"></a>
+					<h3>replace<wbr>With<wbr>Values</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">replace<wbr>With<wbr>Values<span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span>, val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in values.ts:332</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handles a value as string and replaces placeholders.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>values: <a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The &quot;placeholders&quot;.</p>
+									</div>
+								</li>
+								<li>
+									<h5>val: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to parse.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The parsed value.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="tovalueobjects" class="tsd-anchor"></a>
 					<h3>to<wbr>Value<wbr>Objects</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -124,7 +164,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:247</li>
+									<li>Defined in values.ts:371</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -168,6 +208,9 @@
 						<a href="../classes/_values_.envvalue.html" class="tsd-kind-icon">Env<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_values_.filevalue.html" class="tsd-kind-icon">File<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_values_.staticvalue.html" class="tsd-kind-icon">Static<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
@@ -175,6 +218,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_values_.html#getvalues" class="tsd-kind-icon">get<wbr>Values</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_values_.html#replacewithvalues" class="tsd-kind-icon">replace<wbr>With<wbr>Values</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_values_.html#tovalueobjects" class="tsd-kind-icon">to<wbr>Value<wbr>Objects</a>

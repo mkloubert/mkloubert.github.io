@@ -80,7 +80,18 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Job</span>
+						<a href="_contracts_.conditionalitem.html" class="tsd-signature-type">ConditionalItem</a>
+					</li>
+					<li>
+						<a href="_contracts_.machineitem.html" class="tsd-signature-type">MachineItem</a>
+					</li>
+					<li>
+						<a href="_contracts_.platformitem.html" class="tsd-signature-type">PlatformItem</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Job</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -96,9 +107,12 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.job.html#autostart" class="tsd-kind-icon">auto<wbr>Start</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.job.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.job.html#format" class="tsd-kind-icon">format</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.job.html#if" class="tsd-kind-icon">if</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.job.html#isfor" class="tsd-kind-icon">is<wbr>For</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.job.html#maximum" class="tsd-kind-icon">maximum</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.job.html#minimum" class="tsd-kind-icon">minimum</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.job.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.job.html#platforms" class="tsd-kind-icon">platforms</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.job.html#runparallel" class="tsd-kind-icon">run<wbr>Parallel</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.job.html#startdelay" class="tsd-kind-icon">start<wbr>Delay</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.job.html#time" class="tsd-kind-icon">time</a></li>
@@ -118,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">___detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:87</li>
+							<li>Defined in contracts.ts:97</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -134,7 +148,7 @@
 					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="_contracts_.jobaction.html" class="tsd-signature-type">JobAction</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:92</li>
+							<li>Defined in contracts.ts:102</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -149,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">auto<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:96</li>
+							<li>Defined in contracts.ts:106</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -164,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:100</li>
+							<li>Defined in contracts.ts:110</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -179,12 +193,44 @@
 					<div class="tsd-signature tsd-kind-icon">format<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:104</li>
+							<li>Defined in contracts.ts:114</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Format.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="if" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> if</h3>
+					<div class="tsd-signature tsd-kind-icon">if<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.conditionalitem.html">ConditionalItem</a>.<a href="_contracts_.conditionalitem.html#if">if</a></p>
+						<ul>
+							<li>Defined in contracts.ts:37</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more (JavaScript) conditions that check if that item is available or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="isfor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>For</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>For<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.machineitem.html">MachineItem</a>.<a href="_contracts_.machineitem.html#isfor">isFor</a></p>
+						<ul>
+							<li>Defined in contracts.ts:434</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of one or more (host)names that item is (visible) for.</p>
 						</div>
 					</div>
 				</section>
@@ -194,7 +240,7 @@
 					<div class="tsd-signature tsd-kind-icon">maximum<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:108</li>
+							<li>Defined in contracts.ts:118</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -209,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">minimum<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:112</li>
+							<li>Defined in contracts.ts:122</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -224,12 +270,28 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:116</li>
+							<li>Defined in contracts.ts:126</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The (display) name of the job.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="platforms" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> platforms</h3>
+					<div class="tsd-signature tsd-kind-icon">platforms<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.platformitem.html">PlatformItem</a>.<a href="_contracts_.platformitem.html#platforms">platforms</a></p>
+						<ul>
+							<li>Defined in contracts.ts:462</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more platform the item is for.</p>
 						</div>
 					</div>
 				</section>
@@ -239,7 +301,7 @@
 					<div class="tsd-signature tsd-kind-icon">run<wbr>Parallel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:120</li>
+							<li>Defined in contracts.ts:130</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -254,7 +316,7 @@
 					<div class="tsd-signature tsd-kind-icon">start<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:124</li>
+							<li>Defined in contracts.ts:134</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -269,7 +331,7 @@
 					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:128</li>
+							<li>Defined in contracts.ts:138</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -284,7 +346,7 @@
 					<div class="tsd-signature tsd-kind-icon">time<wbr>Zone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:132</li>
+							<li>Defined in contracts.ts:142</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -299,7 +361,7 @@
 					<div class="tsd-signature tsd-kind-icon">valid<wbr>From<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:136</li>
+							<li>Defined in contracts.ts:146</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -314,7 +376,7 @@
 					<div class="tsd-signature tsd-kind-icon">valid<wbr>Until<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:140</li>
+							<li>Defined in contracts.ts:150</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -351,6 +413,9 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.conditionalitem.html" class="tsd-kind-icon">Conditional<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -376,6 +441,12 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.job.html#format" class="tsd-kind-icon">format</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.job.html#if" class="tsd-kind-icon">if</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.job.html#isfor" class="tsd-kind-icon">is<wbr>For</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.job.html#maximum" class="tsd-kind-icon">maximum</a>
 							</li>
@@ -384,6 +455,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.job.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.job.html#platforms" class="tsd-kind-icon">platforms</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.job.html#runparallel" class="tsd-kind-icon">run<wbr>Parallel</a>
@@ -429,7 +503,13 @@
 						<a href="_contracts_.jobscriptmoduleexecutorarguments.html" class="tsd-kind-icon">Job<wbr>Script<wbr>Module<wbr>Executor<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.machineitem.html" class="tsd-kind-icon">Machine<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.platformitem.html" class="tsd-kind-icon">Platform<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.popupbutton.html" class="tsd-kind-icon">Popup<wbr>Button</a>

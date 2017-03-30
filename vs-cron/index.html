@@ -176,6 +176,14 @@
 							<td>The format to use. Can be <code>crontab</code> or <code>date</code>. Default: <code>crontab</code></td>
 						</tr>
 						<tr>
+							<td><code>if</code></td>
+							<td>One or more conditions (as JavaScript code) that defines if job is available or not.</td>
+						</tr>
+						<tr>
+							<td><code>isFor</code></td>
+							<td>An optional list of one or more (host)names that job is available for.</td>
+						</tr>
+						<tr>
 							<td><code>maximum</code></td>
 							<td>The maximum number of executions.</td>
 						</tr>
@@ -186,6 +194,10 @@
 						<tr>
 							<td><code>name</code></td>
 							<td>The (display) name of the job.</td>
+						</tr>
+						<tr>
+							<td><code>platforms</code></td>
+							<td>One or more platform names the job is for. s. <a href="https://nodejs.org/api/process.html#process_process_platform">process.platform</a></td>
 						</tr>
 						<tr>
 							<td><code>runParallel</code></td>

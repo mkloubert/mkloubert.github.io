@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeployPluginWithContext | vs-deploy</title>
+	<title>ConditionalItem | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.deploypluginwithcontext.html">DeployPluginWithContext</a>
+					<a href="_contracts_.conditionalitem.html">ConditionalItem</a>
 				</li>
 			</ul>
-			<h1>Interface DeployPluginWithContext</h1>
+			<h1>Interface ConditionalItem</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Stores a deploy plugin with its deploy context.</p>
+						<p>An item that uses JavaScript code if it is available or not.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,18 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DeployPluginWithContext</span>
+						<span class="target">ConditionalItem</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_contracts_.deploypackage.html" class="tsd-signature-type">DeployPackage</a>
+							</li>
+							<li>
+								<a href="_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>
+							</li>
+							<li>
+								<a href="_contracts_.openfilefilter.html" class="tsd-signature-type">OpenFileFilter</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -91,8 +102,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypluginwithcontext.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypluginwithcontext.html#plugin" class="tsd-kind-icon">plugin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.conditionalitem.html#if" class="tsd-kind-icon">if</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,32 +111,17 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="context" class="tsd-anchor"></a>
-					<h3>context</h3>
-					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a></div>
+					<a name="if" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> if</h3>
+					<div class="tsd-signature tsd-kind-icon">if<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1030</li>
+							<li>Defined in contracts.ts:280</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The deploy context.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="plugin" class="tsd-anchor"></a>
-					<h3>plugin</h3>
-					<div class="tsd-signature tsd-kind-icon">plugin<span class="tsd-signature-symbol">:</span> <a href="_contracts_.deployplugin.html" class="tsd-signature-type">DeployPlugin</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:1034</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The plugin.</p>
+							<p>One or more (JavaScript) conditions that check if that item is available or not.</p>
 						</div>
 					</div>
 				</section>
@@ -148,13 +143,10 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deploypluginwithcontext.html" class="tsd-kind-icon">Deploy<wbr>Plugin<wbr>With<wbr>Context</a>
+						<a href="_contracts_.conditionalitem.html" class="tsd-kind-icon">Conditional<wbr>Item</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deploypluginwithcontext.html#context" class="tsd-kind-icon">context</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deploypluginwithcontext.html#plugin" class="tsd-kind-icon">plugin</a>
+								<a href="_contracts_.conditionalitem.html#if" class="tsd-kind-icon">if</a>
 							</li>
 						</ul>
 					</li>

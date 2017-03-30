@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeployPluginWithContext | vs-deploy</title>
+	<title>ConditionalItemFilter | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.deploypluginwithcontext.html">DeployPluginWithContext</a>
+					<a href="_contracts_.conditionalitemfilter.html">ConditionalItemFilter</a>
 				</li>
 			</ul>
-			<h1>Interface DeployPluginWithContext</h1>
+			<h1>Interface ConditionalItemFilter</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Stores a deploy plugin with its deploy context.</p>
+						<p>Filters &quot;conditional&quot; items.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DeployPluginWithContext</span>
+						<span class="target">ConditionalItemFilter</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -89,46 +94,53 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypluginwithcontext.html#context" class="tsd-kind-icon">context</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypluginwithcontext.html#plugin" class="tsd-kind-icon">plugin</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="_contracts_.conditionalitemfilter.html#filterconditionalitems" class="tsd-kind-icon">filter<wbr>Conditional<wbr>Items</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="context" class="tsd-anchor"></a>
-					<h3>context</h3>
-					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:1030</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The deploy context.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="plugin" class="tsd-anchor"></a>
-					<h3>plugin</h3>
-					<div class="tsd-signature tsd-kind-icon">plugin<span class="tsd-signature-symbol">:</span> <a href="_contracts_.deployplugin.html" class="tsd-signature-type">DeployPlugin</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:1034</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The plugin.</p>
-						</div>
-					</div>
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+					<a name="filterconditionalitems" class="tsd-anchor"></a>
+					<h3>filter<wbr>Conditional<wbr>Items</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">filter<wbr>Conditional<wbr>Items&lt;T&gt;<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in contracts.ts:294</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Filters &quot;conditional&quot; items.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="_contracts_.conditionalitem.html" class="tsd-signature-type">ConditionalItem</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The items to filter.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The filtered items.</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -148,13 +160,10 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deploypluginwithcontext.html" class="tsd-kind-icon">Deploy<wbr>Plugin<wbr>With<wbr>Context</a>
+						<a href="_contracts_.conditionalitemfilter.html" class="tsd-kind-icon">Conditional<wbr>Item<wbr>Filter</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deploypluginwithcontext.html#context" class="tsd-kind-icon">context</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deploypluginwithcontext.html#plugin" class="tsd-kind-icon">plugin</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
+								<a href="_contracts_.conditionalitemfilter.html#filterconditionalitems" class="tsd-kind-icon">filter<wbr>Conditional<wbr>Items</a>
 							</li>
 						</ul>
 					</li>

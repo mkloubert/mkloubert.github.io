@@ -76,8 +76,16 @@
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.codevalue.html" class="tsd-kind-icon">Code<wbr>Value</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.envvalue.html" class="tsd-kind-icon">Env<wbr>Value</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.filevalue.html" class="tsd-kind-icon">File<wbr>Value</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.scriptvalue.html" class="tsd-kind-icon">Script<wbr>Value</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.staticvalue.html" class="tsd-kind-icon">Static<wbr>Value</a></li>
 								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_values_.valuebase.html" class="tsd-kind-icon">Value<wbr>Base</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_values_.html#globalscriptvaluestate" class="tsd-kind-icon">global<wbr>Script<wbr>Value<wbr>State</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_values_.html#scriptvaluestates" class="tsd-kind-icon">script<wbr>Value<wbr>States</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -85,10 +93,34 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_values_.html#getvalues" class="tsd-kind-icon">get<wbr>Values</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_values_.html#replacewithvalues" class="tsd-kind-icon">replace<wbr>With<wbr>Values</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_values_.html#resetscriptstates" class="tsd-kind-icon">reset<wbr>Script<wbr>States</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_values_.html#tovalueobjects" class="tsd-kind-icon">to<wbr>Value<wbr>Objects</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="globalscriptvaluestate" class="tsd-anchor"></a>
+					<h3>global<wbr>Script<wbr>Value<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">global<wbr>Script<wbr>Value<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in values.ts:36</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="scriptvaluestates" class="tsd-anchor"></a>
+					<h3>script<wbr>Value<wbr>States</h3>
+					<div class="tsd-signature tsd-kind-icon">script<wbr>Value<wbr>States<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in values.ts:37</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -103,7 +135,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:294</li>
+									<li>Defined in values.ts:438</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -126,7 +158,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:358</li>
+									<li>Defined in values.ts:502</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -155,16 +187,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="tovalueobjects" class="tsd-anchor"></a>
-					<h3>to<wbr>Value<wbr>Objects</h3>
+					<a name="resetscriptstates" class="tsd-anchor"></a>
+					<h3>reset<wbr>Script<wbr>States</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Value<wbr>Objects<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.valuewithname.html" class="tsd-signature-type">ValueWithName</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.valuewithname.html" class="tsd-signature-type">ValueWithName</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Script<wbr>States<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:397</li>
+									<li>Defined in values.ts:537</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resets all code / script based state values and objects.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="tovalueobjects" class="tsd-anchor"></a>
+					<h3>to<wbr>Value<wbr>Objects</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Value<wbr>Objects<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.valuewithname.html" class="tsd-signature-type">ValueWithName</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.valuewithname.html" class="tsd-signature-type">ValueWithName</a><span class="tsd-signature-symbol">[]</span>, cfg<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployconfiguration.html" class="tsd-signature-type">DeployConfiguration</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in values.ts:549</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,6 +233,9 @@
 									<div class="tsd-comment tsd-typography">
 										<p>The item(s) to convert.</p>
 									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> cfg: <a href="../interfaces/_contracts_.deployconfiguration.html" class="tsd-signature-type">DeployConfiguration</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -211,16 +268,28 @@
 						<a href="../classes/_values_.filevalue.html" class="tsd-kind-icon">File<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_values_.scriptvalue.html" class="tsd-kind-icon">Script<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_values_.staticvalue.html" class="tsd-kind-icon">Static<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_values_.valuebase.html" class="tsd-kind-icon">Value<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_values_.html#globalscriptvaluestate" class="tsd-kind-icon">global<wbr>Script<wbr>Value<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_values_.html#scriptvaluestates" class="tsd-kind-icon">script<wbr>Value<wbr>States</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_values_.html#getvalues" class="tsd-kind-icon">get<wbr>Values</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_values_.html#replacewithvalues" class="tsd-kind-icon">replace<wbr>With<wbr>Values</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_values_.html#resetscriptstates" class="tsd-kind-icon">reset<wbr>Script<wbr>States</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_values_.html#tovalueobjects" class="tsd-kind-icon">to<wbr>Value<wbr>Objects</a>

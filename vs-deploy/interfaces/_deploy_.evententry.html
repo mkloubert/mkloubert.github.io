@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FileDeployCompletedEventArguments | vs-deploy</title>
+	<title>EventEntry | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,36 +56,24 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
+					<a href="../modules/_deploy_.html">&quot;deploy&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.filedeploycompletedeventarguments.html">FileDeployCompletedEventArguments</a>
+					<a href="_deploy_.evententry.html">EventEntry</a>
 				</li>
 			</ul>
-			<h1>Interface FileDeployCompletedEventArguments</h1>
+			<h1>Interface EventEntry</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Arguments for a &quot;file deployed completed&quot; event.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_contracts_.deployeventarguments.html" class="tsd-signature-type">DeployEventArguments</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">FileDeployCompletedEventArguments</span>
-							</li>
-						</ul>
+						<span class="target">EventEntry</span>
 					</li>
 				</ul>
 			</section>
@@ -93,79 +81,59 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.filedeploycompletedeventarguments.html#canceled" class="tsd-kind-icon">canceled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.filedeploycompletedeventarguments.html#error" class="tsd-kind-icon">error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.filedeploycompletedeventarguments.html#file" class="tsd-kind-icon">file</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.filedeploycompletedeventarguments.html#target" class="tsd-kind-icon">target</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_deploy_.evententry.html#event" class="tsd-kind-icon">event</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_deploy_.evententry.html#index" class="tsd-kind-icon">index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_deploy_.evententry.html#listener" class="tsd-kind-icon">listener</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_deploy_.evententry.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="canceled" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> canceled</h3>
-					<div class="tsd-signature tsd-kind-icon">canceled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="event" class="tsd-anchor"></a>
+					<h3>event</h3>
+					<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <a href="_contracts_.event.html" class="tsd-signature-type">Event</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1508</li>
+							<li>Defined in deploy.ts:73</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Gets if the operation has been canceled or not.</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="error" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> error</h3>
-					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="index" class="tsd-anchor"></a>
+					<h3>index</h3>
+					<div class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1512</li>
+							<li>Defined in deploy.ts:74</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The error (if occurred).</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="file" class="tsd-anchor"></a>
-					<h3>file</h3>
-					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="listener" class="tsd-anchor"></a>
+					<h3>listener</h3>
+					<div class="tsd-signature tsd-kind-icon">listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1516</li>
+							<li>Defined in deploy.ts:75</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The file.</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="target" class="tsd-anchor"></a>
-					<h3>target</h3>
-					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <a href="_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1520</li>
+							<li>Defined in deploy.ts:76</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The target.</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -176,33 +144,57 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_contracts_.html">"contracts"</a>
+						<a href="../modules/_deploy_.html">"deploy"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_deploy_.deployer.html" class="tsd-kind-icon">Deployer</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.filedeploycompletedeventarguments.html" class="tsd-kind-icon">File<wbr>Deploy<wbr>Completed<wbr>Event<wbr>Arguments</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_deploy_.evententry.html" class="tsd-kind-icon">Event<wbr>Entry</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.filedeploycompletedeventarguments.html#canceled" class="tsd-kind-icon">canceled</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_deploy_.evententry.html#event" class="tsd-kind-icon">event</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.filedeploycompletedeventarguments.html#error" class="tsd-kind-icon">error</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_deploy_.evententry.html#index" class="tsd-kind-icon">index</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.filedeploycompletedeventarguments.html#file" class="tsd-kind-icon">file</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_deploy_.evententry.html#listener" class="tsd-kind-icon">listener</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.filedeploycompletedeventarguments.html#target" class="tsd-kind-icon">target</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_deploy_.evententry.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_deploy_.scriptcommandwrapper.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Wrapper</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_deploy_.html#glob" class="tsd-kind-icon">Glob</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_deploy_.html#nextcanceldeployfilecommandid" class="tsd-kind-icon">next<wbr>Cancel<wbr>Deploy<wbr>File<wbr>Command<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_deploy_.html#nextcanceldeployworkspacecommandid" class="tsd-kind-icon">next<wbr>Cancel<wbr>Deploy<wbr>Workspace<wbr>Command<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_deploy_.html#nextcancelpullfilecommandid" class="tsd-kind-icon">next<wbr>Cancel<wbr>Pull<wbr>File<wbr>Command<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_deploy_.html#nextcancelpullworkspacecommandid" class="tsd-kind-icon">next<wbr>Cancel<wbr>Pull<wbr>Workspace<wbr>Command<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_deploy_.html#after_deployment_button_colors" class="tsd-kind-icon">AFTER_<wbr>DEPLOYMENT_<wbr>BUTTON_<wbr>COLORS</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

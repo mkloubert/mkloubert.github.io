@@ -139,7 +139,10 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.deploywebdeployoperation.html" class="tsd-kind-icon">Deploy<wbr>Web<wbr>Deploy<wbr>Operation</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.deployworkspaceoptions.html" class="tsd-kind-icon">Deploy<wbr>Workspace<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.envvaluewithname.html" class="tsd-kind-icon">Env<wbr>Value<wbr>With<wbr>Name</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.event.html" class="tsd-kind-icon">Event</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.eventarguments.html" class="tsd-kind-icon">Event<wbr>Arguments</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.eventmodule.html" class="tsd-kind-icon">Event<wbr>Module</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.eventmoduleexecutorarguments.html" class="tsd-kind-icon">Event<wbr>Module<wbr>Executor<wbr>Arguments</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.filedeploycompletedeventarguments.html" class="tsd-kind-icon">File<wbr>Deploy<wbr>Completed<wbr>Event<wbr>Arguments</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.filedeployer.html" class="tsd-kind-icon">File<wbr>Deployer</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.filefilter.html" class="tsd-kind-icon">File<wbr>Filter</a></li>
@@ -178,6 +181,8 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#deployscriptoperationexecutor" class="tsd-kind-icon">Deploy<wbr>Script<wbr>Operation<wbr>Executor</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#deploytargetlist" class="tsd-kind-icon">Deploy<wbr>Target<wbr>List</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#eventhandler" class="tsd-kind-icon">Event<wbr>Handler</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#eventmoduleexecutor" class="tsd-kind-icon">Event<wbr>Module<wbr>Executor</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#eventmoduleexecutorresult" class="tsd-kind-icon">Event<wbr>Module<wbr>Executor<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#filedeploycompletedeventhandler" class="tsd-kind-icon">File<wbr>Deploy<wbr>Completed<wbr>Event<wbr>Handler</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#globalvariables" class="tsd-kind-icon">Global<wbr>Variables</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#importtype" class="tsd-kind-icon">Import<wbr>Type</a></li>
@@ -313,7 +318,7 @@
 					<div class="tsd-signature tsd-kind-icon">Deploy<wbr>Script<wbr>Operation<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1114</li>
+							<li>Defined in contracts.ts:1118</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -357,7 +362,7 @@
 					<div class="tsd-signature tsd-kind-icon">Deploy<wbr>Target<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1197</li>
+							<li>Defined in contracts.ts:1201</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -372,7 +377,7 @@
 					<div class="tsd-signature tsd-kind-icon">Event<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1409</li>
+							<li>Defined in contracts.ts:1443</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -414,12 +419,71 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="eventmoduleexecutor" class="tsd-anchor"></a>
+					<h3>Event<wbr>Module<wbr>Executor</h3>
+					<div class="tsd-signature tsd-kind-icon">Event<wbr>Module<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:1462</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Describes a function for executing the logic of an event.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The arguments for the execution.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.eventmoduleexecutorarguments.html" class="tsd-signature-type">EventModuleExecutorArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_contracts_.html#eventmoduleexecutorresult" class="tsd-signature-type">EventModuleExecutorResult</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_contracts_.eventmoduleexecutorarguments.html" class="tsd-signature-type">EventModuleExecutorArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_contracts_.html#eventmoduleexecutorresult" class="tsd-signature-type">EventModuleExecutorResult</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="eventmoduleexecutorresult" class="tsd-anchor"></a>
+					<h3>Event<wbr>Module<wbr>Executor<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Event<wbr>Module<wbr>Executor<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:1467</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A possible result of an event execution.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="filedeploycompletedeventhandler" class="tsd-anchor"></a>
 					<h3>File<wbr>Deploy<wbr>Completed<wbr>Event<wbr>Handler</h3>
 					<div class="tsd-signature tsd-kind-icon">File<wbr>Deploy<wbr>Completed<wbr>Event<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1439</li>
+							<li>Defined in contracts.ts:1529</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -466,7 +530,7 @@
 					<div class="tsd-signature tsd-kind-icon">Global<wbr>Variables<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1495</li>
+							<li>Defined in contracts.ts:1585</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -481,7 +545,7 @@
 					<div class="tsd-signature tsd-kind-icon">Import<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.import.html" class="tsd-signature-type">Import</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1528</li>
+							<li>Defined in contracts.ts:1618</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -496,7 +560,7 @@
 					<div class="tsd-signature tsd-kind-icon">Popup<wbr>Button<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1621</li>
+							<li>Defined in contracts.ts:1711</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -526,7 +590,7 @@
 					<div class="tsd-signature tsd-kind-icon">Script<wbr>Command<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1698</li>
+							<li>Defined in contracts.ts:1788</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -570,7 +634,7 @@
 					<div class="tsd-signature tsd-kind-icon">Script<wbr>Value<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1767</li>
+							<li>Defined in contracts.ts:1857</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -614,7 +678,7 @@
 					<div class="tsd-signature tsd-kind-icon">Validator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1866</li>
+							<li>Defined in contracts.ts:1956</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -658,7 +722,7 @@
 					<div class="tsd-signature tsd-kind-icon">Value<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1909</li>
+							<li>Defined in contracts.ts:1999</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -693,7 +757,7 @@
 					<div class="tsd-signature tsd-kind-icon">Workspace<wbr>Deployed<wbr>Event<wbr>Handler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1935</li>
+							<li>Defined in contracts.ts:2025</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1201,7 +1265,16 @@
 						<a href="../interfaces/_contracts_.envvaluewithname.html" class="tsd-kind-icon">Env<wbr>Value<wbr>With<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.event.html" class="tsd-kind-icon">Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_contracts_.eventarguments.html" class="tsd-kind-icon">Event<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.eventmodule.html" class="tsd-kind-icon">Event<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.eventmoduleexecutorarguments.html" class="tsd-kind-icon">Event<wbr>Module<wbr>Executor<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_contracts_.filedeploycompletedeventarguments.html" class="tsd-kind-icon">File<wbr>Deploy<wbr>Completed<wbr>Event<wbr>Arguments</a>
@@ -1301,6 +1374,12 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_contracts_.html#eventhandler" class="tsd-kind-icon">Event<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_contracts_.html#eventmoduleexecutor" class="tsd-kind-icon">Event<wbr>Module<wbr>Executor</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_contracts_.html#eventmoduleexecutorresult" class="tsd-kind-icon">Event<wbr>Module<wbr>Executor<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_contracts_.html#filedeploycompletedeventhandler" class="tsd-kind-icon">File<wbr>Deploy<wbr>Completed<wbr>Event<wbr>Handler</a>

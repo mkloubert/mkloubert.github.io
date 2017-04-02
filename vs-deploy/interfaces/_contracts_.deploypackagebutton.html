@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeployVSCommandOperationContext | vs-deploy</title>
+	<title>DeployPackageButton | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.deployvscommandoperationcontext.html">DeployVSCommandOperationContext</a>
+					<a href="_contracts_.deploypackagebutton.html">DeployPackageButton</a>
 				</li>
 			</ul>
-			<h1>Interface DeployVSCommandOperationContext</h1>
+			<h1>Interface DeployPackageButton</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An execution context for a Visual Studio Code command.</p>
+						<p>A button for a package.</p>
 					</div>
 				</div>
 			</section>
@@ -80,15 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DeployVSCommandOperationContext</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_contracts_.afterdeployedvscommandoperationcontext.html" class="tsd-signature-type">AfterDeployedVSCommandOperationContext</a>
-							</li>
-							<li>
-								<a href="_contracts_.beforedeployvscommandoperationcontext.html" class="tsd-signature-type">BeforeDeployVSCommandOperationContext</a>
-							</li>
-						</ul>
+						<span class="target">DeployPackageButton</span>
 					</li>
 				</ul>
 			</section>
@@ -99,13 +91,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperationcontext.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperationcontext.html#files" class="tsd-kind-icon">files</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperationcontext.html#globals" class="tsd-kind-icon">globals</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperationcontext.html#kind" class="tsd-kind-icon">kind</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperationcontext.html#operation" class="tsd-kind-icon">operation</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperationcontext.html#options" class="tsd-kind-icon">options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployvscommandoperationcontext.html#require" class="tsd-kind-icon">require</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackagebutton.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackagebutton.html#enabled" class="tsd-kind-icon">enabled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackagebutton.html#isright" class="tsd-kind-icon">is<wbr>Right</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackagebutton.html#priority" class="tsd-kind-icon">priority</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackagebutton.html#targets" class="tsd-kind-icon">targets</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackagebutton.html#text" class="tsd-kind-icon">text</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackagebutton.html#tooltip" class="tsd-kind-icon">tooltip</a></li>
 							</ul>
 						</section>
 					</div>
@@ -115,128 +107,107 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="command" class="tsd-anchor"></a>
-					<h3>command</h3>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> command</h3>
 					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1318</li>
+							<li>Defined in contracts.ts:937</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The ID of the command.</p>
+							<p>The custom ID for the underlying command.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="files" class="tsd-anchor"></a>
-					<h3>files</h3>
-					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="enabled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1326</li>
+							<li>Defined in contracts.ts:941</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The files to deploy.</p>
+							<p>Enable button or not.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="globals" class="tsd-anchor"></a>
-					<h3>globals</h3>
-					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#globalvariables" class="tsd-signature-type">GlobalVariables</a></div>
+					<a name="isright" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Right</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Right<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1322</li>
+							<li>Defined in contracts.ts:945</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The globals defined in the settings.</p>
+							<p>Put button on the right side or not.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="kind" class="tsd-anchor"></a>
-					<h3>kind</h3>
-					<div class="tsd-signature tsd-kind-icon">kind<span class="tsd-signature-symbol">:</span> <a href="../enums/_contracts_.deployoperationkind.html" class="tsd-signature-type">DeployOperationKind</a></div>
+					<a name="priority" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> priority</h3>
+					<div class="tsd-signature tsd-kind-icon">priority<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1330</li>
+							<li>Defined in contracts.ts:949</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The kind of operation.</p>
+							<p>The priority.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="operation" class="tsd-anchor"></a>
-					<h3>operation</h3>
-					<div class="tsd-signature tsd-kind-icon">operation<span class="tsd-signature-symbol">:</span> <a href="_contracts_.deployvscommandoperation.html" class="tsd-signature-type">DeployVSCommandOperation</a></div>
+					<a name="targets" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> targets</h3>
+					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1334</li>
+							<li>Defined in contracts.ts:953</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The operation</p>
+							<p>One or more explicit targets to deploy to.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="text" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> text</h3>
+					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1338</li>
+							<li>Defined in contracts.ts:957</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Options for the execution (@see DeployVSCommandOperation.contextOptions).</p>
+							<p>A custom text for the button.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="require" class="tsd-anchor"></a>
-					<h3>require</h3>
-					<div class="tsd-signature tsd-kind-icon">require<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<a name="tooltip" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tooltip</h3>
+					<div class="tsd-signature tsd-kind-icon">tooltip<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1342</li>
+							<li>Defined in contracts.ts:961</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Loads a module from the script context.</p>
+							<p>A custom tooltip for the button.</p>
 						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>id: <span class="tsd-signature-type">string</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
 					</div>
 				</section>
 			</section>
@@ -257,28 +228,28 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.deployvscommandoperationcontext.html" class="tsd-kind-icon">DeployVSCommand<wbr>Operation<wbr>Context</a>
+						<a href="_contracts_.deploypackagebutton.html" class="tsd-kind-icon">Deploy<wbr>Package<wbr>Button</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deployvscommandoperationcontext.html#command" class="tsd-kind-icon">command</a>
+								<a href="_contracts_.deploypackagebutton.html#command" class="tsd-kind-icon">command</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deployvscommandoperationcontext.html#files" class="tsd-kind-icon">files</a>
+								<a href="_contracts_.deploypackagebutton.html#enabled" class="tsd-kind-icon">enabled</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deployvscommandoperationcontext.html#globals" class="tsd-kind-icon">globals</a>
+								<a href="_contracts_.deploypackagebutton.html#isright" class="tsd-kind-icon">is<wbr>Right</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deployvscommandoperationcontext.html#kind" class="tsd-kind-icon">kind</a>
+								<a href="_contracts_.deploypackagebutton.html#priority" class="tsd-kind-icon">priority</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deployvscommandoperationcontext.html#operation" class="tsd-kind-icon">operation</a>
+								<a href="_contracts_.deploypackagebutton.html#targets" class="tsd-kind-icon">targets</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deployvscommandoperationcontext.html#options" class="tsd-kind-icon">options</a>
+								<a href="_contracts_.deploypackagebutton.html#text" class="tsd-kind-icon">text</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.deployvscommandoperationcontext.html#require" class="tsd-kind-icon">require</a>
+								<a href="_contracts_.deploypackagebutton.html#tooltip" class="tsd-kind-icon">tooltip</a>
 							</li>
 						</ul>
 					</li>

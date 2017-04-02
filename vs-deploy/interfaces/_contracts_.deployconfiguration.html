@@ -132,6 +132,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#showdeployresultinstatusbar" class="tsd-kind-icon">show<wbr>Deploy<wbr>Result<wbr>InStatus<wbr>Bar</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#showpopuponsuccess-1" class="tsd-kind-icon">show<wbr>Popup<wbr>OnSuccess</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#showwarningsfornonexistingtargets" class="tsd-kind-icon">show<wbr>Warnings<wbr>For<wbr>Non<wbr>Existing<wbr>Targets</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#startapi" class="tsd-kind-icon">start<wbr>Api</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#startcronjobs" class="tsd-kind-icon">start<wbr>Cron<wbr>Jobs</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#startupcommands" class="tsd-kind-icon">startup<wbr>Commands</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#targets" class="tsd-kind-icon">targets</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#usetargetlistfordeployonsave" class="tsd-kind-icon">use<wbr>Target<wbr>List<wbr>For<wbr>Deploy<wbr>OnSave</a></li>
@@ -614,12 +616,44 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="startapi" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> start<wbr>Api</h3>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>Api<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:549</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Starts the REST API or not.
+							s. <a href="https://github.com/mkloubert/vs-rest-api">https://github.com/mkloubert/vs-rest-api</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="startcronjobs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> start<wbr>Cron<wbr>Jobs</h3>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>Cron<wbr>Jobs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:554</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Starts the cron jobs or not.
+							s. <a href="https://github.com/mkloubert/vs-cron">https://github.com/mkloubert/vs-cron</a></p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="startupcommands" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> startup<wbr>Commands</h3>
 					<div class="tsd-signature tsd-kind-icon">startup<wbr>Commands<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="_contracts_.startupcommand.html" class="tsd-signature-type">StartupCommand</a><span class="tsd-signature-symbol"> | </span><a href="_contracts_.startupcommand.html" class="tsd-signature-type">StartupCommand</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:548</li>
+							<li>Defined in contracts.ts:558</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -634,7 +668,7 @@
 					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <a href="_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:552</li>
+							<li>Defined in contracts.ts:562</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -649,7 +683,7 @@
 					<div class="tsd-signature tsd-kind-icon">use<wbr>Target<wbr>List<wbr>For<wbr>Deploy<wbr>OnSave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:557</li>
+							<li>Defined in contracts.ts:567</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -665,7 +699,7 @@
 					<div class="tsd-signature tsd-kind-icon">values<span class="tsd-signature-symbol">:</span> <a href="_contracts_.valuewithname.html" class="tsd-signature-type">ValueWithName</a><span class="tsd-signature-symbol"> | </span><a href="_contracts_.valuewithname.html" class="tsd-signature-type">ValueWithName</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:562</li>
+							<li>Defined in contracts.ts:572</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -894,6 +928,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.deployconfiguration.html#showwarningsfornonexistingtargets" class="tsd-kind-icon">show<wbr>Warnings<wbr>For<wbr>Non<wbr>Existing<wbr>Targets</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deployconfiguration.html#startapi" class="tsd-kind-icon">start<wbr>Api</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deployconfiguration.html#startcronjobs" class="tsd-kind-icon">start<wbr>Cron<wbr>Jobs</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.deployconfiguration.html#startupcommands" class="tsd-kind-icon">startup<wbr>Commands</a>

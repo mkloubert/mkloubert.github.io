@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HtmlViewerExecutorArguments | vs-script-commands</title>
+	<title>CronJobInfo | vs-script-commands</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_content_.html">&quot;content&quot;</a>
+					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_content_.htmlviewerexecutorarguments.html">HtmlViewerExecutorArguments</a>
+					<a href="_contracts_.cronjobinfo.html">CronJobInfo</a>
 				</li>
 			</ul>
-			<h1>Interface HtmlViewerExecutorArguments</h1>
+			<h1>Interface CronJobInfo</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Arguments for a HTML executor.</p>
+						<p>Information about a (cron) job.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">HtmlViewerExecutorArguments</span>
+						<span class="target">CronJobInfo</span>
 					</li>
 				</ul>
 			</section>
@@ -91,9 +91,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_content_.htmlviewerexecutorarguments.html#canceltoken" class="tsd-kind-icon">cancel<wbr>Token</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_content_.htmlviewerexecutorarguments.html#uri" class="tsd-kind-icon">uri</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_content_.htmlviewerexecutorarguments.html#workspacestate" class="tsd-kind-icon">workspace<wbr>State</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.cronjobinfo.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.cronjobinfo.html#detail" class="tsd-kind-icon">detail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.cronjobinfo.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.cronjobinfo.html#lastexecution" class="tsd-kind-icon">last<wbr>Execution</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.cronjobinfo.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,44 +104,79 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="canceltoken" class="tsd-anchor"></a>
-					<h3>cancel<wbr>Token</h3>
-					<div class="tsd-signature tsd-kind-icon">cancel<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CancellationToken</span></div>
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in content.ts:49</li>
+							<li>Defined in contracts.ts:59</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The cancellation token.</p>
+							<p>Gets the description of the underlying job.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="uri" class="tsd-anchor"></a>
-					<h3>uri</h3>
-					<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Uri</span></div>
+					<a name="detail" class="tsd-anchor"></a>
+					<h3>detail</h3>
+					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in content.ts:53</li>
+							<li>Defined in contracts.ts:63</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The URI.</p>
+							<p>Gets the details for the underlying job.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="workspacestate" class="tsd-anchor"></a>
-					<h3>workspace<wbr>State</h3>
-					<div class="tsd-signature tsd-kind-icon">workspace<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span></div>
+					<a name="isrunning" class="tsd-anchor"></a>
+					<h3>is<wbr>Running</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Running<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in content.ts:57</li>
+							<li>Defined in contracts.ts:67</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if the job is currently running or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="lastexecution" class="tsd-anchor"></a>
+					<h3>last<wbr>Execution</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Execution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:71</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the timestamp of the last execution in ISO format.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:75</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the name of the job.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -149,10 +186,10 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_content_.html">"content"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_contracts_.html">"contracts"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -165,35 +202,74 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_content_.htmltextdocumentcontentprovider.html" class="tsd-kind-icon">Html<wbr>Text<wbr>Document<wbr>Content<wbr>Provider</a>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_contracts_.filechangetype.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_content_.htmlviewerexecutorarguments.html" class="tsd-kind-icon">Html<wbr>Viewer<wbr>Executor<wbr>Arguments</a>
+						<a href="_contracts_.cronjobinfo.html" class="tsd-kind-icon">Cron<wbr>Job<wbr>Info</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_content_.htmlviewerexecutorarguments.html#canceltoken" class="tsd-kind-icon">cancel<wbr>Token</a>
+								<a href="_contracts_.cronjobinfo.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_content_.htmlviewerexecutorarguments.html#uri" class="tsd-kind-icon">uri</a>
+								<a href="_contracts_.cronjobinfo.html#detail" class="tsd-kind-icon">detail</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_content_.htmlviewerexecutorarguments.html#workspacestate" class="tsd-kind-icon">workspace<wbr>State</a>
+								<a href="_contracts_.cronjobinfo.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.cronjobinfo.html#lastexecution" class="tsd-kind-icon">last<wbr>Execution</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.cronjobinfo.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_content_.htmlviewermodule.html" class="tsd-kind-icon">Html<wbr>Viewer<wbr>Module</a>
+						<a href="_contracts_.document.html" class="tsd-kind-icon">Document</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.scriptcommand.html" class="tsd-kind-icon">Script<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.scriptcommandeditorchangecontext.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Editor<wbr>Change<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.scriptcommandexecutorarguments.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Executor<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.scriptcommandfilechangecontext.html" class="tsd-kind-icon">Script<wbr>Command<wbr>File<wbr>Change<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.scriptcommandmodule.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.scriptcommandquickpickitem.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Quick<wbr>Pick<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_content_.html#htmlviewerexecutor" class="tsd-kind-icon">Html<wbr>Viewer<wbr>Executor</a>
+						<a href="../modules/_contracts_.html#cronjobnames" class="tsd-kind-icon">Cron<wbr>Job<wbr>Names</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_content_.html#htmlviewerexecutorresult" class="tsd-kind-icon">Html<wbr>Viewer<wbr>Executor<wbr>Result</a>
+						<a href="../modules/_contracts_.html#globalvariables" class="tsd-kind-icon">Global<wbr>Variables</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_contracts_.html#scriptcommandargumentfactory" class="tsd-kind-icon">Script<wbr>Command<wbr>Argument<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_contracts_.html#scriptcommandexecutor" class="tsd-kind-icon">Script<wbr>Command<wbr>Executor</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_contracts_.html#valueprovider" class="tsd-kind-icon">Value<wbr>Provider</a>
 					</li>
 				</ul>
 			</nav>

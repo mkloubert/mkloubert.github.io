@@ -74,6 +74,7 @@
 				<ol>
 					<li><a href="#install-">Install</a></li>
 					<li><a href="#how-to-use-">How to use</a><ul>
+							<li><a href="#changes-">Changes</a></li>
 							<li><a href="#settings-">Settings</a><ul>
 									<li><a href="#commands-">Commands</a></li>
 								</ul>
@@ -92,6 +93,10 @@
 				<p>Or search for things like <code>vs-script-commands</code> in your editor:</p>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-script-commands/master/img/screenshot1.png" alt="Screenshot VSCode Extension search"></p>
 				<h2 id="how-to-use-uarr-table-of-contents-">How to use [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="changes-uarr-how-to-use-">Changes [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<ul>
+					<li>if you come from version 1.x, you should take a look at the <a href="https://github.com/mkloubert/vs-script-commands/wiki#since-version-2x-">wiki</a> first ... if you have problems, you can open an <a href="https://github.com/mkloubert/vs-script-commands/issues">issue</a> and/or download a version 1.x branch from <a href="https://github.com/mkloubert/vs-script-commands/releases">here</a></li>
+				</ul>
 				<h3 id="settings-uarr-how-to-use-">Settings [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>Open (or create) your <code>settings.json</code> in your <code>.vscode</code> subfolder of your workspace.</p>
 				<p>Add a <code>script.commands</code> section:</p>
@@ -127,7 +132,7 @@
 					</tbody>
 				</table>
 				<h4 id="commands-uarr-settings-">Commands [<a href="#settings-">&uarr;</a>]</h4>
-				<p>Define one or more command, by defining its <code>id</code> and the script file (relative to your workspace) which should be executed:</p>
+				<p>Define one or more command, by defining its <code>id</code> and the script file, which should be executed:</p>
 				<pre><code class="lang-json">{
     <span class="hljs-attr">"script.commands"</span>: {
         <span class="hljs-attr">"commands"</span>: [
@@ -200,7 +205,7 @@
     <span class="hljs-keyword">var</span> scriptFile = path.basename(__filename);
 
     <span class="hljs-comment">// open HTML document in new tab (for reports e.g.)</span>
-    args.openHtml(<span class="hljs-string">'Hello from my extension: '</span> + scriptFile, <span class="hljs-string">'My HTML document'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    args.openHtml(<span class="hljs-string">'&lt;html&gt;Hello from my extension: '</span> + scriptFile + <span class="hljs-string">'&lt;/html&gt;'</span>, <span class="hljs-string">'My HTML document'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
         <span class="hljs-comment">// HTML opened</span>
     }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
         <span class="hljs-comment">// opening HTML document failed</span>
@@ -215,10 +220,23 @@
     });
 
     vscode.window.showInformationMessage(<span class="hljs-string">'Hello from my extension: '</span> + scriptFile);
+
+    <span class="hljs-comment">// you also can return a Promise</span>
+    <span class="hljs-comment">// if your command is executed async</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-number">666</span>;
 }
 </code></pre>
 				<p>The <code>args</code> parameter uses the <a href="https://mkloubert.github.io/vs-script-commands/interfaces/_contracts_.scriptcommandexecutorarguments.html">ScriptCommandExecutorArguments</a> interface.</p>
-				<p>You can return a number (sync execution), a <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a> or nothing (default exit code <code>0</code>).</p>
+				<p>You can now execute the command by anything that uses the <a href="https://code.visualstudio.com/docs/extensionAPI/vscode-api#_commands">Visual Studio Code API</a>:</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
+
+vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">result</span>) </span>{
+    <span class="hljs-comment">// if we look at the upper example:</span>
+    <span class="hljs-comment">// this should be: 666</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-comment">// handle an error</span>
+});
+</code></pre>
 				<p>A command entry provides the following properties:</p>
 				<table>
 					<thead>
@@ -310,7 +328,7 @@
 						</tr>
 						<tr>
 							<td><code>script</code></td>
-							<td>The path to the script to exeute.</td>
+							<td>The path to the script to execute. IF YOU USE A RELATIVE PATH: The path is relative to your workspace.</td>
 						</tr>
 						<tr>
 							<td><code>sortOrder</code></td>

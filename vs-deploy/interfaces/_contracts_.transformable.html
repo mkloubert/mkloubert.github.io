@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TransformerContext | vs-deploy</title>
+	<title>Transformable | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,24 +56,36 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_plugins_dropbox_.html">&quot;plugins/dropbox&quot;</a>
+					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_plugins_dropbox_.transformercontext.html">TransformerContext</a>
+					<a href="_contracts_.transformable.html">Transformable</a>
 				</li>
 			</ul>
-			<h1>Interface TransformerContext</h1>
+			<h1>Interface Transformable</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>An object that can transform (its) data.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TransformerContext</span>
+						<span class="target">Transformable</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_contracts_.transformabledeploytarget.html" class="tsd-signature-type">TransformableDeployTarget</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -81,37 +93,48 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_dropbox_.transformercontext.html#file" class="tsd-kind-icon">file</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_dropbox_.transformercontext.html#globals" class="tsd-kind-icon">globals</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.transformable.html#transformer" class="tsd-kind-icon">transformer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.transformable.html#transformeroptions" class="tsd-kind-icon">transformer<wbr>Options</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="file" class="tsd-anchor"></a>
-					<h3>file</h3>
-					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="transformer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> transformer</h3>
+					<div class="tsd-signature tsd-kind-icon">transformer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/dropbox.ts:63</li>
+							<li>Defined in contracts.ts:2063</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The path to a (script) module that transforms data.</p>
+						</div>
+						<p>s. &#39;TranformerModule&#39; interface</p>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="globals" class="tsd-anchor"></a>
-					<h3>globals</h3>
-					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.GlobalVariables</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="transformeroptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> transformer<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">transformer<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/dropbox.ts:64</li>
+							<li>Defined in contracts.ts:2067</li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The optional options for the transformer script.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -122,54 +145,27 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_plugins_dropbox_.html">"plugins/dropbox"</a>
+						<a href="../modules/_contracts_.html">"contracts"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../classes/_plugins_dropbox_.dropboxplugin.html" class="tsd-kind-icon">Dropbox<wbr>Plugin</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_dropbox_.deploytargetdropbox.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Dropbox</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_dropbox_.dropboxcontext.html" class="tsd-kind-icon">Dropbox<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_dropbox_.dropboxlistfolderentry.html" class="tsd-kind-icon">Dropbox<wbr>List<wbr>Folder<wbr>Entry</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_dropbox_.dropboxlistfolderresult.html" class="tsd-kind-icon">Dropbox<wbr>List<wbr>Folder<wbr>Result</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_dropbox_.transformercontext.html" class="tsd-kind-icon">Transformer<wbr>Context</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.transformable.html" class="tsd-kind-icon">Transformable</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_plugins_dropbox_.transformercontext.html#file" class="tsd-kind-icon">file</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.transformable.html#transformer" class="tsd-kind-icon">transformer</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_plugins_dropbox_.transformercontext.html#globals" class="tsd-kind-icon">globals</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.transformable.html#transformeroptions" class="tsd-kind-icon">transformer<wbr>Options</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_plugins_dropbox_.html#path_sep" class="tsd-kind-icon">PATH_<wbr>SEP</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_dropbox_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_plugins_dropbox_.html#getdirfromtarget" class="tsd-kind-icon">get<wbr>Dir<wbr>From<wbr>Target</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_plugins_dropbox_.html#todropboxpath" class="tsd-kind-icon">to<wbr>Dropbox<wbr>Path</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

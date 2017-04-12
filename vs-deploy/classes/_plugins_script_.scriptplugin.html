@@ -117,6 +117,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#createdatatransformercontext" class="tsd-kind-icon">create<wbr>Data<wbr>Transformer<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#deployorpullfile" class="tsd-kind-icon">deploy<wbr>OrPull<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#deployorpullworkspace" class="tsd-kind-icon">deploy<wbr>OrPull<wbr>Workspace</a></li>
@@ -124,6 +125,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#dispose" class="tsd-kind-icon">dispose</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#downloadfile" class="tsd-kind-icon">download<wbr>File</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#info" class="tsd-kind-icon">info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#loaddatatransformer" class="tsd-kind-icon">load<wbr>Data<wbr>Transformer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#oncancelling" class="tsd-kind-icon">on<wbr>Cancelling</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#onconfigreloaded" class="tsd-kind-icon">on<wbr>Config<wbr>Reloaded</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#pullfile" class="tsd-kind-icon">pull<wbr>File</a></li>
@@ -250,6 +252,47 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="createdatatransformercontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Data<wbr>Transformer<wbr>Context</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Data<wbr>Transformer<wbr>Context<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.transformabledeploytarget.html" class="tsd-signature-type">TransformableDeployTarget</a>, mode<span class="tsd-signature-symbol">: </span><a href="../enums/_contracts_.datatransformermode.html" class="tsd-signature-type">DataTransformerMode</a>, subCtx<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.datatransformercontext.html" class="tsd-signature-type">DataTransformerContext</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#createdatatransformercontext">createDataTransformerContext</a></p>
+								<ul>
+									<li>Defined in objects.ts:105</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a basic data transformer context.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_contracts_.transformabledeploytarget.html" class="tsd-signature-type">TransformableDeployTarget</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target.</p>
+									</div>
+								</li>
+								<li>
+									<h5>mode: <a href="../enums/_contracts_.datatransformermode.html" class="tsd-signature-type">DataTransformerMode</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The mode.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> subCtx: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.datatransformercontext.html" class="tsd-signature-type">DataTransformerContext</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 					<a name="deployfile" class="tsd-anchor"></a>
 					<h3>deploy<wbr>File</h3>
@@ -385,7 +428,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in objects.ts:194</li>
+									<li>Defined in objects.ts:226</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -445,6 +488,72 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="loaddatatransformer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> load<wbr>Data<wbr>Transformer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Data<wbr>Transformer&lt;TTarget&gt;<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TTarget</span>, mode<span class="tsd-signature-symbol">: </span><a href="../enums/_contracts_.datatransformermode.html" class="tsd-signature-type">DataTransformerMode</a>, scriptProvider<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">deploy_contracts.DataTransformer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#loaddatatransformer">loadDataTransformer</a></p>
+								<ul>
+									<li>Defined in objects.ts:245</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Loads a data transformer by target.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TTarget<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.transformabledeploytarget.html" class="tsd-signature-type">TransformableDeployTarget</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <span class="tsd-signature-type">TTarget</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target.</p>
+									</div>
+								</li>
+								<li>
+									<h5>mode: <a href="../enums/_contracts_.datatransformermode.html" class="tsd-signature-type">DataTransformerMode</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The mode.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> scriptProvider: <span class="tsd-signature-type">function</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>t<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TTarget</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>t: <span class="tsd-signature-type">TTarget</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">deploy_contracts.DataTransformer</span></h4>
+							<p>The loaded transformer.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 					<a name="oncancelling" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Cancelling</h3>
@@ -456,7 +565,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#oncancelling">onCancelling</a></p>
 								<ul>
-									<li>Defined in objects.ts:210</li>
+									<li>Defined in objects.ts:286</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -515,7 +624,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#pullfile">pullFile</a></p>
 								<ul>
-									<li>Defined in objects.ts:233</li>
+									<li>Defined in objects.ts:309</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -551,7 +660,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#pullworkspace">pullWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:313</li>
+									<li>Defined in objects.ts:389</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -614,6 +723,9 @@
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_script_.scriptplugin.html#context" class="tsd-kind-icon">context</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_script_.scriptplugin.html#createdatatransformercontext" class="tsd-kind-icon">create<wbr>Data<wbr>Transformer<wbr>Context</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="_plugins_script_.scriptplugin.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a>
 							</li>
@@ -634,6 +746,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="_plugins_script_.scriptplugin.html#info" class="tsd-kind-icon">info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_script_.scriptplugin.html#loaddatatransformer" class="tsd-kind-icon">load<wbr>Data<wbr>Transformer</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="_plugins_script_.scriptplugin.html#oncancelling" class="tsd-kind-icon">on<wbr>Cancelling</a>

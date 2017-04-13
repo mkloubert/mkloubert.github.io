@@ -1,0 +1,19 @@
+{
+    "deploy": {
+        "targets": [
+            {
+                "type": "ftp",
+
+                "name": "My FTP on Azure",
+                "description": "Please remove the tags with the required data.",
+
+                "host": "<SUB-DOMAIN>.ftp.azurewebsites.windows.net",
+
+                "user": "<NAME-OF-YOUR-SITE>\\$<NAME-OF-YOUR-SITE>",
+                "password": "<YOUR-PASSWORD>",
+
+                "dir": "/site/wwwroot"
+            }
+        ]
+    }
+}

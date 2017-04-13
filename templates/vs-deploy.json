@@ -1,0 +1,12 @@
+{
+    "Azure": {
+        "type": "category",
+
+        "children": {
+            "FTP target": {
+                "description": "An example for connecting to an Azure site",
+                "source": "https://mkloubert.github.io/templates/azure/ftp.json"
+            }
+        }
+    }
+}

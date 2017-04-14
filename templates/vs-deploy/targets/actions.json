@@ -1,12 +1,7 @@
 {
-    "After files deployed": {
+    "Wiki": {
         "type": "link", "icon": "book",
-
-        "source": "https://goo.gl/BsBSeN"
-    },
-
-    "Before deploy files": {
-        "type": "link", "icon": "book",
+        "sortOrder": 2000000000,
 
         "source": "https://goo.gl/BsBSeN"
     }

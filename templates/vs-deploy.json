@@ -1,5 +1,5 @@
 {
-    "$version$": "0.0.5",
+    "$version$": "0.0.6",
 
     "Targets": {
         "children": {
@@ -7,7 +7,7 @@
                 "children": {
                     "Azure": {
                         "description": "An example for connecting to an Azure site via FTP",
-                        "source": "https://mkloubert.github.io/templates/targets/ftp/azure.md"
+                        "source": "https://mkloubert.github.io/templates/vs-deploy/targets/ftp/azure.md"
                     }
                 }
             }

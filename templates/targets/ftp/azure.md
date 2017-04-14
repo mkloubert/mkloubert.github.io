@@ -27,10 +27,10 @@
 
 | Name | Description | Example |
 | ---- | ---- | ---- |
-| DIRECTORY | The directory on the server. | `/site/wwwroot`  |
-| NAME-OF-YOUR-SITE | The name of your site (lower case).  |  |
-| PASSWORD | The password. |  |
-| SUB-DOMAIN | The sub domain. | `waws-prod-sn1-053` |
+| <DIRECTORY> | The directory on the server. | `/site/wwwroot`  |
+| <NAME-OF-YOUR-SITE> | The name of your site (lower case).  |  |
+| <PASSWORD> | The password. |  |
+| <SUB-DOMAIN> | The sub domain. | `waws-prod-sn1-053` |
 
 ## Resources
 

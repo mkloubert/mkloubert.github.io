@@ -32,6 +32,17 @@
         }
     },
 
+    "Batch": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/00JFHu"
+            }
+        }
+    },
+
     "DropBox": {
         "children": {
             "Wiki": {
@@ -39,6 +50,17 @@
                 "sortOrder": 2000000000,
 
                 "source": "https://goo.gl/vYIRg6"
+            }
+        }
+    },
+
+    "Each / loop": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/cHp7Mg"
             }
         }
     },
@@ -92,6 +114,17 @@
         }
     },
 
+    "Pipeline": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/qmi99V"
+            }
+        }
+    },
+
     "REST APIs": {
         "children": {
             "Wiki": {
@@ -136,13 +169,31 @@
         }
     },
 
-    "Visual Studio Code (remote)": {
+    "Test / mock": {
         "children": {
             "Wiki": {
                 "type": "link", "icon": "book",
                 "sortOrder": 2000000000,
 
+                "source": "https://goo.gl/5HtUQL"
+            }
+        }
+    },
+
+    "Visual Studio Code (remote)": {
+        "children": {
+            "[CLIENT] Deploy to remote editor": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
                 "source": "https://goo.gl/grnGF2"
+            },
+
+            "[SERVER] Wait for files": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/PtCePn"
             }
         }
     },

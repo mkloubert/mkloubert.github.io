@@ -1,5 +1,28 @@
 {
-    "$version$": "0.0.14",
+    "$version$": "0.0.15",
+
+    "Commands": {
+        "type": "repository", "icon": "book",
+
+        "source": "https://goo.gl/cggLbL"
+    },
+
+    "Deploy on change": {
+        "type": "link", "icon": "book",
+
+        "source": "https://goo.gl/tBJxtE"
+    },
+
+    "Open files on startup": {
+        "type": "link", "icon": "book",
+
+        "source": "https://goo.gl/6lTYtF"
+    },
+
+    "Packages": {
+        "type": "repository",
+        "source": "https://mkloubert.github.io/templates/vs-deploy/packages.json"
+    },
 
     "Targets": {
         "type": "repository",

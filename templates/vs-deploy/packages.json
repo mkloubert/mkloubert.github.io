@@ -1,0 +1,20 @@
+{
+    "Buttons": {
+        "type": "link", "icon": "book",
+
+        "source": "https://goo.gl/qsvvwZ"
+    },
+
+    "Quick deployment": {
+        "type": "link", "icon": "book",
+
+        "source": "https://goo.gl/jchWmS"
+    },
+
+    "Wiki": {
+        "type": "link", "icon": "book",
+        "sortOrder": 2000000000,
+
+        "source": "https://goo.gl/B5mknl"
+    }
+}

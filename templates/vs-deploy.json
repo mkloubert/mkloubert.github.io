@@ -1,5 +1,7 @@
 {
     "Targets": {
+        "type": "category",
+
         "children": {
             "Azure": {
                 "type": "category",

@@ -5,7 +5,7 @@
                 "type": "ftp",
 
                 "name": "My FTP on Azure",
-                "description": "Please remove the tags with the required data.",
+                "description": "Remove the tags with your data.",
 
                 "host": "<SUB-DOMAIN>.ftp.azurewebsites.windows.net",
 

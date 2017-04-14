@@ -1,11 +1,15 @@
 {
-    "Azure": {
-        "type": "category",
-
+    "Targets": {
         "children": {
-            "FTP target": {
-                "description": "An example for connecting to an Azure site",
-                "source": "https://mkloubert.github.io/templates/azure/ftp.json"
+            "Azure": {
+                "type": "category",
+
+                "children": {
+                    "FTP": {
+                        "description": "An example for connecting to an Azure site",
+                        "source": "https://mkloubert.github.io/templates/azure/ftp.json"
+                    }
+                }
             }
         }
     }

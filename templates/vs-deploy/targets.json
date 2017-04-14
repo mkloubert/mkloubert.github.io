@@ -1,4 +1,48 @@
 {
+    "Amazon AWS S3 buckets": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/WVWwXm"
+            }
+        }
+    },
+
+    "Apps": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/fPXftr"
+            }
+        }
+    },
+
+    "Azure blob storages": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/syovza"
+            }
+        }
+    },
+
+    "DropBox": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/vYIRg6"
+            }
+        }
+    },
+
     "FTP": {
         "children": {
             "Azure": {
@@ -13,6 +57,112 @@
                 "source": "https://goo.gl/vSrg8I"
             }
         }
+    },
+
+    "HTTP services": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/phzuxy"
+            }
+        }
+    },
+
+    "Local or (shared) network folders": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/evllgt"
+            }
+        }
+    },
+
+    "Mail (SMTP)": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/YuCcGm"
+            }
+        }
+    },
+
+    "REST APIs": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/FeUtNh"
+            }
+        }
+    },
+
+    "Scripts": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/QxyuRS"
+            }
+        }
+    },
+
+    "SFTP": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/QxdcFL"
+            }
+        }
+    },
+
+    "SQL": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/sXjAXu"
+            }
+        }
+    },
+
+    "Visual Studio Code (remote)": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/grnGF2"
+            }
+        }
+    },
+
+    "ZIP files": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/L50Caq"
+            }
+        }
+    },
+
+    "Actions": {
+        "type": "repository",
+        "sortOrder": 1,
+
+        "source": "https://mkloubert.github.io/templates/vs-deploy/targets/actions.json"
     },
 
     "Wiki": {

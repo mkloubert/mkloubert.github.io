@@ -1,0 +1,13 @@
+{
+    "After files deployed": {
+        "type": "link", "icon": "book",
+
+        "source": "https://goo.gl/BsBSeN"
+    },
+
+    "Before deploy files": {
+        "type": "link", "icon": "book",
+
+        "source": "https://goo.gl/BsBSeN"
+    }
+}

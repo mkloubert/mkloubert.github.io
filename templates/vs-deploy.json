@@ -3,10 +3,10 @@
 
     "Targets": {
         "children": {
-            "Azure": {
+            "FTP": {
                 "children": {
-                    "FTP": {
-                        "description": "An example for connecting to an Azure site",
+                    "Azure": {
+                        "description": "An example for connecting to an Azure site via FTP",
                         "source": "https://mkloubert.github.io/templates/azure/ftp.json"
                     }
                 }

@@ -1,11 +1,7 @@
 {
     "Targets": {
-        "type": "category",
-
         "children": {
             "Azure": {
-                "type": "category",
-
                 "children": {
                     "FTP": {
                         "description": "An example for connecting to an Azure site",

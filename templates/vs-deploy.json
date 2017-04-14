@@ -1,5 +1,5 @@
 {
-    "$version$": "0.0.7",
+    "$version$": "0.0.8",
 
     "Targets": {
         "children": {
@@ -22,5 +22,10 @@
                 "source": "https://goo.gl/2waBLh"
             }
         }
+    },
+
+    "Wiki": {
+        "type": "link", "icon": "book",
+        "source": "https://goo.gl/bxOcxY"
     }
 }

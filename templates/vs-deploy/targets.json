@@ -159,7 +159,7 @@
     },
 
     "Actions": {
-        "type": "repository",
+        "type": "repository", "icon": "zap",
         "sortOrder": 1,
 
         "source": "https://mkloubert.github.io/templates/vs-deploy/targets/actions.json"

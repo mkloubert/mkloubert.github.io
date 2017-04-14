@@ -1,31 +1,9 @@
 {
-    "$version$": "0.0.9",
+    "$version$": "0.0.10",
 
     "Targets": {
-        "children": {
-            "FTP": {
-                "children": {
-                    "Azure": {
-                        "description": "An example for connecting to an Azure site via FTP",
-                        "source": "https://mkloubert.github.io/templates/vs-deploy/targets/ftp/azure.md"
-                    },
-
-                    "Wiki": {
-                        "type": "link", "icon": "book",
-                        "sortOrder": 2000000000,
-
-                        "source": "https://goo.gl/vSrg8I"
-                    }
-                }
-            },
-
-            "Wiki": {
-                "type": "link", "icon": "book",
-                "sortOrder": 2000000000,
-
-                "source": "https://goo.gl/2waBLh"
-            }
-        }
+        "type": "repository",
+        "source": "https://mkloubert.github.io/templates/vs-deploy/targets.json"
     },
 
     "Translations": {

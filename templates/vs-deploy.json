@@ -1,5 +1,5 @@
 {
-    "$version$": "0.0.10",
+    "$version$": "0.0.11",
 
     "Targets": {
         "type": "repository",
@@ -11,9 +11,16 @@
         "source": "https://mkloubert.github.io/templates/vs-deploy/translations.json"
     },
 
-    "Wiki": {
+    "About templates": {
         "type": "link", "icon": "book",
         "sortOrder": 2000000000,
+
+        "source": "https://goo.gl/6lTYtF"
+    },
+    
+    "Wiki": {
+        "type": "link", "icon": "book",
+        "sortOrder": 1999999999,
 
         "source": "https://goo.gl/bxOcxY"
     }

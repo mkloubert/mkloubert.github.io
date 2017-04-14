@@ -1,5 +1,5 @@
 {
-    "$version$": "0.0.8",
+    "$version$": "0.0.9",
 
     "Targets": {
         "children": {
@@ -12,6 +12,8 @@
 
                     "Wiki": {
                         "type": "link", "icon": "book",
+                        "sortOrder": 2000000000,
+
                         "source": "https://goo.gl/vSrg8I"
                     }
                 }
@@ -19,13 +21,22 @@
 
             "Wiki": {
                 "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
                 "source": "https://goo.gl/2waBLh"
             }
         }
     },
 
+    "Translations": {
+        "type": "repository",
+        "source": "https://mkloubert.github.io/templates/vs-deploy/translations.json"
+    },
+
     "Wiki": {
         "type": "link", "icon": "book",
+        "sortOrder": 2000000000,
+
         "source": "https://goo.gl/bxOcxY"
     }
 }

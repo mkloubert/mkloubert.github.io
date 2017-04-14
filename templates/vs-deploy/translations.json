@@ -1,0 +1,24 @@
+{
+    "English": {
+        "source": "https://raw.githubusercontent.com/mkloubert/vs-deploy/master/src/lang/en.ts"
+    },
+
+    "French": {
+        "source": "https://raw.githubusercontent.com/mkloubert/vs-deploy/master/src/lang/fr.ts"
+    },
+
+    "German": {
+        "source": "https://raw.githubusercontent.com/mkloubert/vs-deploy/master/src/lang/de.ts"
+    },
+
+    "Russian": {
+        "source": "https://raw.githubusercontent.com/mkloubert/vs-deploy/master/src/lang/ru.ts"
+    },
+
+    "Submit an own translation...": {
+        "type": "link", "icon": "cloud-upload",
+        "sortOrder": 2000000000,
+
+        "source": "https://goo.gl/SvtNVJ"
+    }
+}

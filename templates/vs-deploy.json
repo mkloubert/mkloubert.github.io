@@ -1,4 +1,6 @@
 {
+    "$vsdeploy-version$": "0.0.1",
+
     "Targets": {
         "children": {
             "Azure": {

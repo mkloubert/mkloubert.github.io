@@ -1,8 +1,8 @@
 {
-    "$version$": "0.0.15",
+    "$version$": "1.0.0",
 
     "Commands": {
-        "type": "repository", "icon": "book",
+        "type": "link", "icon": "book",
 
         "source": "https://goo.gl/cggLbL"
     },

@@ -89,12 +89,13 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_templates_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_templates_.html#regex_http_url" class="tsd-kind-icon">REGEX_<wbr>HTTP_<wbr>URL</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_templates_.html#version_property" class="tsd-kind-icon">VERSION_<wbr>PROPERTY</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_templates_.html#regex_special_property" class="tsd-kind-icon">REGEX_<wbr>SPECIAL_<wbr>PROPERTY</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_templates_.html#checkforextensionversion" class="tsd-kind-icon">check<wbr>For<wbr>Extension<wbr>Version</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_templates_.html#checkofficialrepositoryversions" class="tsd-kind-icon">check<wbr>Official<wbr>Repository<wbr>Versions</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_templates_.html#extracttemplateitems" class="tsd-kind-icon">extract<wbr>Template<wbr>Items</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_templates_.html#getmarkdowncontentprovider" class="tsd-kind-icon">get<wbr>Markdown<wbr>Content<wbr>Provider</a></li>
@@ -158,9 +159,9 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="version_property" class="tsd-anchor"></a>
-					<h3>VERSION_<wbr>PROPERTY</h3>
-					<div class="tsd-signature tsd-kind-icon">VERSION_<wbr>PROPERTY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;$version$&quot;</span></div>
+					<a name="regex_special_property" class="tsd-anchor"></a>
+					<h3>REGEX_<wbr>SPECIAL_<wbr>PROPERTY</h3>
+					<div class="tsd-signature tsd-kind-icon">REGEX_<wbr>SPECIAL_<wbr>PROPERTY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;new RegExp(&quot;^(\\$)(.*)(\\$)$&quot;, &#x27;i&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in templates.ts:66</li>
@@ -170,6 +171,32 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="checkforextensionversion" class="tsd-anchor"></a>
+					<h3>check<wbr>For<wbr>Extension<wbr>Version</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>For<wbr>Extension<wbr>Version<span class="tsd-signature-symbol">(</span>requiredVersion<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, packageFile<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in templates.ts:69</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>requiredVersion: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>packageFile: <a href="../interfaces/_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="checkofficialrepositoryversions" class="tsd-anchor"></a>
 					<h3>check<wbr>Official<wbr>Repository<wbr>Versions</h3>
@@ -180,7 +207,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in templates.ts:73</li>
+									<li>Defined in templates.ts:89</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -197,19 +224,22 @@
 					<a name="extracttemplateitems" class="tsd-anchor"></a>
 					<h3>extract<wbr>Template<wbr>Items</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">extract<wbr>Template<wbr>Items<span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">deploy_contracts.TemplateItemList</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_templates_.templateitemwithname.html" class="tsd-signature-type">TemplateItemWithName</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">extract<wbr>Template<wbr>Items<span class="tsd-signature-symbol">(</span>list<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">deploy_contracts.TemplateItemList</span>, packageFile<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_templates_.templateitemwithname.html" class="tsd-signature-type">TemplateItemWithName</a><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in templates.ts:164</li>
+									<li>Defined in templates.ts:180</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>list: <span class="tsd-signature-type">deploy_contracts.TemplateItemList</span></h5>
+								</li>
+								<li>
+									<h5>packageFile: <a href="../interfaces/_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_templates_.templateitemwithname.html" class="tsd-signature-type">TemplateItemWithName</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -226,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in templates.ts:188</li>
+									<li>Defined in templates.ts:208</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -255,7 +285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in templates.ts:261</li>
+									<li>Defined in templates.ts:281</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -287,7 +317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in templates.ts:339</li>
+									<li>Defined in templates.ts:359</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -310,7 +340,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in templates.ts:352</li>
+									<li>Defined in templates.ts:372</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -332,7 +362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in templates.ts:902</li>
+									<li>Defined in templates.ts:957</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -379,7 +409,10 @@
 						<a href="_templates_.html#regex_http_url" class="tsd-kind-icon">REGEX_<wbr>HTTP_<wbr>URL</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_templates_.html#version_property" class="tsd-kind-icon">VERSION_<wbr>PROPERTY</a>
+						<a href="_templates_.html#regex_special_property" class="tsd-kind-icon">REGEX_<wbr>SPECIAL_<wbr>PROPERTY</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_templates_.html#checkforextensionversion" class="tsd-kind-icon">check<wbr>For<wbr>Extension<wbr>Version</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_templates_.html#checkofficialrepositoryversions" class="tsd-kind-icon">check<wbr>Official<wbr>Repository<wbr>Versions</a>

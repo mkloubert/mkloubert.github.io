@@ -120,6 +120,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_http_.httpplugin.html#deployworkspace" class="tsd-kind-icon">deploy<wbr>Workspace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_http_.httpplugin.html#dispose" class="tsd-kind-icon">dispose</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_http_.httpplugin.html#downloadfile" class="tsd-kind-icon">download<wbr>File</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_http_.httpplugin.html#gettargetswithplugins" class="tsd-kind-icon">get<wbr>Targets<wbr>With<wbr>Plugins</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_plugins_http_.httpplugin.html#info" class="tsd-kind-icon">info</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_http_.httpplugin.html#loaddatatransformer" class="tsd-kind-icon">load<wbr>Data<wbr>Transformer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_http_.httpplugin.html#oncancelling" class="tsd-kind-icon">on<wbr>Cancelling</a></li>
@@ -407,6 +408,45 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="gettargetswithplugins" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Targets<wbr>With<wbr>Plugins</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Targets<wbr>With<wbr>Plugins<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, otherTargets<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytargetwithplugins.html" class="tsd-signature-type">DeployTargetWithPlugins</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#gettargetswithplugins">getTargetsWithPlugins</a></p>
+								<ul>
+									<li>Defined in objects.ts:244</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the others targets and their plugins.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target for this plugin.</p>
+									</div>
+								</li>
+								<li>
+									<h5>otherTargets: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The list of names of the &quot;others&quot; targets.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.deploytargetwithplugins.html" class="tsd-signature-type">DeployTargetWithPlugins</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The targets and their plugins.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="info" class="tsd-anchor"></a>
 					<h3>info</h3>
@@ -435,7 +475,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#loaddatatransformer">loadDataTransformer</a></p>
 								<ul>
-									<li>Defined in objects.ts:245</li>
+									<li>Defined in objects.ts:317</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -501,7 +541,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#oncancelling">onCancelling</a></p>
 								<ul>
-									<li>Defined in objects.ts:286</li>
+									<li>Defined in objects.ts:358</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -536,7 +576,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#onconfigreloaded">onConfigReloaded</a></p>
 								<ul>
-									<li>Defined in objects.ts:305</li>
+									<li>Defined in objects.ts:377</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -568,7 +608,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#pullfile">pullFile</a></p>
 								<ul>
-									<li>Defined in objects.ts:309</li>
+									<li>Defined in objects.ts:381</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -604,7 +644,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#pullworkspace">pullWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:389</li>
+									<li>Defined in objects.ts:461</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -675,6 +715,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_http_.httpplugin.html#downloadfile" class="tsd-kind-icon">download<wbr>File</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_http_.httpplugin.html#gettargetswithplugins" class="tsd-kind-icon">get<wbr>Targets<wbr>With<wbr>Plugins</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="_plugins_http_.httpplugin.html#info" class="tsd-kind-icon">info</a>

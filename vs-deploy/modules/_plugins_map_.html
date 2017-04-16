@@ -82,14 +82,34 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_plugins_map_.deploytargetmap.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Map</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_plugins_map_.html#mapitem" class="tsd-kind-icon">Map<wbr>Item</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_plugins_map_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_plugins_map_.html#flattenmapitem" class="tsd-kind-icon">flatten<wbr>Map<wbr>Item</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_plugins_map_.html#parseplaceholders" class="tsd-kind-icon">parse<wbr>Place<wbr>Holders</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="mapitem" class="tsd-anchor"></a>
+					<h3>Map<wbr>Item</h3>
+					<div class="tsd-signature tsd-kind-icon">Map<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/map.ts:43</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -104,7 +124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/map.ts:219</li>
+									<li>Defined in plugins/map.ts:264</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -127,6 +147,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="flattenmapitem" class="tsd-anchor"></a>
+					<h3>flatten<wbr>Map<wbr>Item</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">flatten<wbr>Map<wbr>Item<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><a href="_plugins_map_.html#mapitem" class="tsd-signature-type">MapItem</a><span class="tsd-signature-symbol"> | </span><a href="_plugins_map_.html#mapitem" class="tsd-signature-type">MapItem</a><span class="tsd-signature-symbol">[]</span>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a>, level<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, maxDepth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in plugins/map.ts:46</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>items: <a href="_plugins_map_.html#mapitem" class="tsd-signature-type">MapItem</a><span class="tsd-signature-symbol"> | </span><a href="_plugins_map_.html#mapitem" class="tsd-signature-type">MapItem</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>context: <a href="../interfaces/_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> level: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxDepth: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;64</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="parseplaceholders" class="tsd-anchor"></a>
 					<h3>parse<wbr>Place<wbr>Holders</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
@@ -136,7 +188,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/map.ts:44</li>
+									<li>Defined in plugins/map.ts:82</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -182,8 +234,14 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_plugins_map_.deploytargetmap.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Map</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_map_.html#mapitem" class="tsd-kind-icon">Map<wbr>Item</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_plugins_map_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_map_.html#flattenmapitem" class="tsd-kind-icon">flatten<wbr>Map<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_map_.html#parseplaceholders" class="tsd-kind-icon">parse<wbr>Place<wbr>Holders</a>

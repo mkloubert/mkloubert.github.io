@@ -327,6 +327,10 @@ vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</
 							<td>Executes the command on startup or not. Default <code>(false)</code></td>
 						</tr>
 						<tr>
+							<td><code>onWillSave</code></td>
+							<td>Is invoked when a file is going to be saved. Default <code>(false)</code></td>
+						</tr>
+						<tr>
 							<td><code>options</code></td>
 							<td>Additional data for the execution.</td>
 						</tr>
@@ -345,7 +349,7 @@ vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</
 					</tbody>
 				</table>
 				<h3 id="key-bindinds-uarr-how-to-use-">Key bindinds [<a href="#how-to-use-">&uarr;</a>]</h3>
-				<p>After defining one or more commands, you can open your <a href="https://code.visualstudio.com/docs/customization/keybindings#_customizing-shortcuts">keybindings.json</a> file and set shortcuts for them, by selecting <code>File &gt; Preferences &gt; Keyboard Shortcuts</code> (<code>Code &gt; Preferences &gt; Keyboard Shortcuts</code> on Mac) in your editor:</p>
+				<p>After defining one or more commands, you can open your <a href="https://code.visualstudio.com/docs/getstarted/keybindings#_advanced-customization">keybindings.json</a> file and set shortcuts for them, by selecting <code>File &gt; Preferences &gt; Keyboard Shortcuts</code> (<code>Code &gt; Preferences &gt; Keyboard Shortcuts</code> on Mac) in your editor:</p>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-script-commands/master/img/demo1.gif" alt="Demo Key bindinds"></p>
 				<h3 id="invoke-manually-uarr-how-to-use-">Invoke manually [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>Press <code>F1</code> to open the list of commands and enter one of the following commands:</p>

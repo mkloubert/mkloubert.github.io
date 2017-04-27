@@ -92,6 +92,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_azureblob_.deploytargetazureblob.html#accesskey" class="tsd-kind-icon">access<wbr>Key</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_azureblob_.deploytargetazureblob.html#account" class="tsd-kind-icon">account</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_azureblob_.deploytargetazureblob.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_azureblob_.deploytargetazureblob.html#checkbeforedeploy" class="tsd-kind-icon">check<wbr>Before<wbr>Deploy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_azureblob_.deploytargetazureblob.html#container" class="tsd-kind-icon">container</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_azureblob_.deploytargetazureblob.html#contenttype" class="tsd-kind-icon">content<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_azureblob_.deploytargetazureblob.html#deployed" class="tsd-kind-icon">deployed</a></li>
@@ -127,7 +128,7 @@
 					<div class="tsd-signature tsd-kind-icon">access<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/azureblob.ts:36</li>
+							<li>Defined in plugins/azureblob.ts:38</li>
 						</ul>
 					</aside>
 				</section>
@@ -137,7 +138,7 @@
 					<div class="tsd-signature tsd-kind-icon">account<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/azureblob.ts:37</li>
+							<li>Defined in plugins/azureblob.ts:39</li>
 						</ul>
 					</aside>
 				</section>
@@ -148,7 +149,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#beforedeploy">beforeDeploy</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1314</li>
+							<li>Defined in contracts.ts:1343</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -158,13 +159,29 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="checkbeforedeploy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> check<wbr>Before<wbr>Deploy</h3>
+					<div class="tsd-signature tsd-kind-icon">check<wbr>Before<wbr>Deploy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#checkbeforedeploy">checkBeforeDeploy</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1347</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Check for newer files before a deployment starts or not.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="container" class="tsd-anchor"></a>
 					<h3>container</h3>
 					<div class="tsd-signature tsd-kind-icon">container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/azureblob.ts:38</li>
+							<li>Defined in plugins/azureblob.ts:40</li>
 						</ul>
 					</aside>
 				</section>
@@ -174,7 +191,7 @@
 					<div class="tsd-signature tsd-kind-icon">content<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/azureblob.ts:43</li>
+							<li>Defined in plugins/azureblob.ts:45</li>
 						</ul>
 					</aside>
 				</section>
@@ -185,7 +202,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#deployed">deployed</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1319</li>
+							<li>Defined in contracts.ts:1352</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -202,7 +219,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#description">description</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1323</li>
+							<li>Defined in contracts.ts:1356</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -218,7 +235,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#detail">detail</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1327</li>
+							<li>Defined in contracts.ts:1360</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -233,7 +250,7 @@
 					<div class="tsd-signature tsd-kind-icon">detect<wbr>Mime<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/azureblob.ts:42</li>
+							<li>Defined in plugins/azureblob.ts:44</li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +261,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#diffbeforedeploy">diffBeforeDeploy</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1331</li>
+							<li>Defined in contracts.ts:1364</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -259,7 +276,7 @@
 					<div class="tsd-signature tsd-kind-icon">dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/azureblob.ts:39</li>
+							<li>Defined in plugins/azureblob.ts:41</li>
 						</ul>
 					</aside>
 				</section>
@@ -270,7 +287,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#hideif">hideIf</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1336</li>
+							<li>Defined in contracts.ts:1369</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -286,7 +303,7 @@
 					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/azureblob.ts:40</li>
+							<li>Defined in plugins/azureblob.ts:42</li>
 						</ul>
 					</aside>
 				</section>
@@ -297,7 +314,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.conditionalitem.html">ConditionalItem</a>.<a href="_contracts_.conditionalitem.html#if">if</a></p>
 						<ul>
-							<li>Defined in contracts.ts:284</li>
+							<li>Defined in contracts.ts:285</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,7 +330,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.machineitem.html">MachineItem</a>.<a href="_contracts_.machineitem.html#isfor">isFor</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1829</li>
+							<li>Defined in contracts.ts:1906</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -329,7 +346,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.hideable.html">Hideable</a>.<a href="_contracts_.hideable.html#ishidden">isHidden</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1796</li>
+							<li>Defined in contracts.ts:1873</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -345,7 +362,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#mappings">mappings</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1340</li>
+							<li>Defined in contracts.ts:1373</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -361,7 +378,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#name">name</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1344</li>
+							<li>Defined in contracts.ts:1377</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -377,7 +394,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.platformitem.html">PlatformItem</a>.<a href="_contracts_.platformitem.html#platforms">platforms</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1893</li>
+							<li>Defined in contracts.ts:1970</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -392,7 +409,7 @@
 					<div class="tsd-signature tsd-kind-icon">public<wbr>Access<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/azureblob.ts:41</li>
+							<li>Defined in plugins/azureblob.ts:43</li>
 						</ul>
 					</aside>
 				</section>
@@ -403,7 +420,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#showif">showIf</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1349</li>
+							<li>Defined in contracts.ts:1382</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -420,7 +437,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.sortable.html">Sortable</a>.<a href="_contracts_.sortable.html#sortorder">sortOrder</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2146</li>
+							<li>Defined in contracts.ts:2223</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -436,7 +453,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.transformable.html">Transformable</a>.<a href="_contracts_.transformable.html#transformer">transformer</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2301</li>
+							<li>Defined in contracts.ts:2378</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -453,7 +470,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.transformable.html">Transformable</a>.<a href="_contracts_.transformable.html#transformeroptions">transformerOptions</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2305</li>
+							<li>Defined in contracts.ts:2382</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -469,7 +486,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#type">type</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1353</li>
+							<li>Defined in contracts.ts:1386</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -512,6 +529,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_azureblob_.deploytargetazureblob.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_azureblob_.deploytargetazureblob.html#checkbeforedeploy" class="tsd-kind-icon">check<wbr>Before<wbr>Deploy</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_plugins_azureblob_.deploytargetazureblob.html#container" class="tsd-kind-icon">container</a>

@@ -160,6 +160,7 @@
 							<li><a href="#deploy-on-save-">Deploy on save</a></li>
 							<li><a href="#download--pull-from-sftp-">Download / pull from SFTP</a></li>
 							<li><a href="#compare-files-">Compare files</a></li>
+							<li><a href="#check-for-newer-files-">Check for newer files</a></li>
 							<li><a href="#deploy-to-zip-file-">ZIP file</a></li>
 							<li><a href="#deploy-to-remote-visual-studio-code-instance-">Deploy to remote Visual Studio Code instance</a></li>
 						</ul>
@@ -184,6 +185,8 @@
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo6.gif" alt="Demo pull from SFTP"></p>
 				<h3 id="compare-files-uarr-demos-">Compare files [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo7.gif" alt="Demo compare files"></p>
+				<h3 id="check-for-newer-files-uarr-demos-">Check for newer files [<a href="#demos-">&uarr;</a>]</h3>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo9.gif" alt="Demo check for newer files"></p>
 				<h3 id="deploy-to-zip-file-uarr-demos-">Deploy to ZIP file [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo4.gif" alt="Demo ZIP"></p>
 				<h3 id="deploy-to-remote-visual-studio-code-instance-uarr-demos-">Deploy to remote Visual Studio Code instance [<a href="#demos-">&uarr;</a>]</h3>
@@ -241,6 +244,8 @@
                 <span class="hljs-attr">"dir"</span>: <span class="hljs-string">"/my_package_files"</span>,
                 <span class="hljs-attr">"host"</span>: <span class="hljs-string">"localhost"</span>, <span class="hljs-attr">"port"</span>: <span class="hljs-number">22</span>,
                 <span class="hljs-attr">"user"</span>: <span class="hljs-string">"tester"</span>, <span class="hljs-attr">"password"</span>: <span class="hljs-string">"password"</span>,
+
+                <span class="hljs-attr">"checkBeforeDeploy"</span>: <span class="hljs-literal">true</span>,
 
                 <span class="hljs-attr">"mappings"</span>: [
                     {
@@ -447,6 +452,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_deploy_.html">"deploy"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_diff_.html">"diff"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_extension_.html">"extension"</a>

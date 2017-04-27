@@ -92,6 +92,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#agent" class="tsd-kind-icon">agent</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#agentforward" class="tsd-kind-icon">agent<wbr>Forward</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#beforeupload" class="tsd-kind-icon">before<wbr>Upload</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#checkbeforedeploy" class="tsd-kind-icon">check<wbr>Before<wbr>Deploy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#deployed" class="tsd-kind-icon">deployed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#description" class="tsd-kind-icon">description</a></li>
@@ -121,6 +122,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#trykeyboard" class="tsd-kind-icon">try<wbr>Keyboard</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#type" class="tsd-kind-icon">type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#unix" class="tsd-kind-icon">unix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#uploaded" class="tsd-kind-icon">uploaded</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#user" class="tsd-kind-icon">user</a></li>
 							</ul>
 						</section>
@@ -135,7 +137,7 @@
 					<div class="tsd-signature tsd-kind-icon">agent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:53</li>
+							<li>Defined in plugins/sftp.ts:54</li>
 						</ul>
 					</aside>
 				</section>
@@ -145,7 +147,7 @@
 					<div class="tsd-signature tsd-kind-icon">agent<wbr>Forward<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:54</li>
+							<li>Defined in plugins/sftp.ts:55</li>
 						</ul>
 					</aside>
 				</section>
@@ -165,6 +167,16 @@
 							target is being deployed.</p>
 						</div>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="beforeupload" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before<wbr>Upload</h3>
+					<div class="tsd-signature tsd-kind-icon">before<wbr>Upload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/sftp.ts:59</li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="checkbeforedeploy" class="tsd-anchor"></a>
@@ -253,7 +265,7 @@
 					<div class="tsd-signature tsd-kind-icon">dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:40</li>
+							<li>Defined in plugins/sftp.ts:41</li>
 						</ul>
 					</aside>
 				</section>
@@ -263,7 +275,7 @@
 					<div class="tsd-signature tsd-kind-icon">hash<wbr>Algorithm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:41</li>
+							<li>Defined in plugins/sftp.ts:42</li>
 						</ul>
 					</aside>
 				</section>
@@ -273,7 +285,7 @@
 					<div class="tsd-signature tsd-kind-icon">hashes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:42</li>
+							<li>Defined in plugins/sftp.ts:43</li>
 						</ul>
 					</aside>
 				</section>
@@ -300,7 +312,7 @@
 					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:43</li>
+							<li>Defined in plugins/sftp.ts:44</li>
 						</ul>
 					</aside>
 				</section>
@@ -374,7 +386,7 @@
 					<div class="tsd-signature tsd-kind-icon">modes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:57</li>
+							<li>Defined in plugins/sftp.ts:58</li>
 						</ul>
 					</aside>
 				</section>
@@ -400,7 +412,7 @@
 					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:48</li>
+							<li>Defined in plugins/sftp.ts:49</li>
 						</ul>
 					</aside>
 				</section>
@@ -426,7 +438,7 @@
 					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:46</li>
+							<li>Defined in plugins/sftp.ts:47</li>
 						</ul>
 					</aside>
 				</section>
@@ -436,7 +448,7 @@
 					<div class="tsd-signature tsd-kind-icon">private<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:44</li>
+							<li>Defined in plugins/sftp.ts:45</li>
 						</ul>
 					</aside>
 				</section>
@@ -446,7 +458,7 @@
 					<div class="tsd-signature tsd-kind-icon">private<wbr>Key<wbr>Passphrase<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:45</li>
+							<li>Defined in plugins/sftp.ts:46</li>
 						</ul>
 					</aside>
 				</section>
@@ -456,7 +468,7 @@
 					<div class="tsd-signature tsd-kind-icon">ready<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:56</li>
+							<li>Defined in plugins/sftp.ts:57</li>
 						</ul>
 					</aside>
 				</section>
@@ -532,7 +544,7 @@
 					<div class="tsd-signature tsd-kind-icon">try<wbr>Keyboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:55</li>
+							<li>Defined in plugins/sftp.ts:56</li>
 						</ul>
 					</aside>
 				</section>
@@ -558,7 +570,7 @@
 					<div class="tsd-signature tsd-kind-icon">unix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:49</li>
+							<li>Defined in plugins/sftp.ts:50</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -574,12 +586,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="uploaded" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> uploaded</h3>
+					<div class="tsd-signature tsd-kind-icon">uploaded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/sftp.ts:60</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="user" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> user</h3>
 					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:47</li>
+							<li>Defined in plugins/sftp.ts:48</li>
 						</ul>
 					</aside>
 				</section>
@@ -614,6 +636,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_sftp_.deploytargetsftp.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_plugins_sftp_.deploytargetsftp.html#beforeupload" class="tsd-kind-icon">before<wbr>Upload</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_sftp_.deploytargetsftp.html#checkbeforedeploy" class="tsd-kind-icon">check<wbr>Before<wbr>Deploy</a>
@@ -703,6 +728,9 @@
 								<a href="_plugins_sftp_.deploytargetsftp.html#unix" class="tsd-kind-icon">unix</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_plugins_sftp_.deploytargetsftp.html#uploaded" class="tsd-kind-icon">uploaded</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_plugins_sftp_.deploytargetsftp.html#user" class="tsd-kind-icon">user</a>
 							</li>
 						</ul>
@@ -710,10 +738,19 @@
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_sftp_.filetoupload.html" class="tsd-kind-icon">File<wbr>ToUpload</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_sftp_.sftpcontext.html" class="tsd-kind-icon">SFTPContext</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_sftp_.html#mode_pad" class="tsd-kind-icon">MODE_<wbr>PAD</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_plugins_sftp_.html#sftp" class="tsd-kind-icon">SFTP</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_sftp_.html#touch_time_format" class="tsd-kind-icon">TOUCH_<wbr>TIME_<wbr>FORMAT</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_plugins_sftp_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>

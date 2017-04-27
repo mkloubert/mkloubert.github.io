@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SFTPContext | vs-deploy</title>
+	<title>FileToUpload | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_plugins_sftp_.html">&quot;plugins/sftp&quot;</a>
 				</li>
 				<li>
-					<a href="_plugins_sftp_.sftpcontext.html">SFTPContext</a>
+					<a href="_plugins_sftp_.filetoupload.html">FileToUpload</a>
 				</li>
 			</ul>
-			<h1>Interface SFTPContext</h1>
+			<h1>Interface FileToUpload</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SFTPContext</span>
+						<span class="target">FileToUpload</span>
 					</li>
 				</ul>
 			</section>
@@ -84,11 +84,9 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.sftpcontext.html#cachedremotedirectories" class="tsd-kind-icon">cached<wbr>Remote<wbr>Directories</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.sftpcontext.html#connection" class="tsd-kind-icon">connection</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.sftpcontext.html#datatransformer" class="tsd-kind-icon">data<wbr>Transformer</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.sftpcontext.html#datatransformeroptions" class="tsd-kind-icon">data<wbr>Transformer<wbr>Options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.sftpcontext.html#hascancelled" class="tsd-kind-icon">has<wbr>Cancelled</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.filetoupload.html#localpath" class="tsd-kind-icon">local<wbr>Path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.filetoupload.html#stats" class="tsd-kind-icon">stats</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.filetoupload.html#values" class="tsd-kind-icon">values</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,52 +95,32 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="cachedremotedirectories" class="tsd-anchor"></a>
-					<h3>cached<wbr>Remote<wbr>Directories</h3>
-					<div class="tsd-signature tsd-kind-icon">cached<wbr>Remote<wbr>Directories<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="localpath" class="tsd-anchor"></a>
+					<h3>local<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">local<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:70</li>
+							<li>Defined in plugins/sftp.ts:64</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="connection" class="tsd-anchor"></a>
-					<h3>connection</h3>
-					<div class="tsd-signature tsd-kind-icon">connection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="stats" class="tsd-anchor"></a>
+					<h3>stats</h3>
+					<div class="tsd-signature tsd-kind-icon">stats<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Stats</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:71</li>
+							<li>Defined in plugins/sftp.ts:65</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="datatransformer" class="tsd-anchor"></a>
-					<h3>data<wbr>Transformer</h3>
-					<div class="tsd-signature tsd-kind-icon">data<wbr>Transformer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.DataTransformer</span></div>
+					<a name="values" class="tsd-anchor"></a>
+					<h3>values</h3>
+					<div class="tsd-signature tsd-kind-icon">values<span class="tsd-signature-symbol">:</span> <a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:72</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="datatransformeroptions" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data<wbr>Transformer<wbr>Options</h3>
-					<div class="tsd-signature tsd-kind-icon">data<wbr>Transformer<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in plugins/sftp.ts:73</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="hascancelled" class="tsd-anchor"></a>
-					<h3>has<wbr>Cancelled</h3>
-					<div class="tsd-signature tsd-kind-icon">has<wbr>Cancelled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in plugins/sftp.ts:74</li>
+							<li>Defined in plugins/sftp.ts:66</li>
 						</ul>
 					</aside>
 				</section>
@@ -167,33 +145,27 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_sftp_.deploytargetsftp.html" class="tsd-kind-icon">Deploy<wbr>TargetSFTP</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_sftp_.filetoupload.html" class="tsd-kind-icon">File<wbr>ToUpload</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_sftp_.sftpcontext.html" class="tsd-kind-icon">SFTPContext</a>
+						<a href="_plugins_sftp_.filetoupload.html" class="tsd-kind-icon">File<wbr>ToUpload</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_plugins_sftp_.sftpcontext.html#cachedremotedirectories" class="tsd-kind-icon">cached<wbr>Remote<wbr>Directories</a>
+								<a href="_plugins_sftp_.filetoupload.html#localpath" class="tsd-kind-icon">local<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_plugins_sftp_.sftpcontext.html#connection" class="tsd-kind-icon">connection</a>
+								<a href="_plugins_sftp_.filetoupload.html#stats" class="tsd-kind-icon">stats</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_plugins_sftp_.sftpcontext.html#datatransformer" class="tsd-kind-icon">data<wbr>Transformer</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_plugins_sftp_.sftpcontext.html#datatransformeroptions" class="tsd-kind-icon">data<wbr>Transformer<wbr>Options</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_plugins_sftp_.sftpcontext.html#hascancelled" class="tsd-kind-icon">has<wbr>Cancelled</a>
+								<a href="_plugins_sftp_.filetoupload.html#values" class="tsd-kind-icon">values</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_plugins_sftp_.sftpcontext.html" class="tsd-kind-icon">SFTPContext</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_plugins_sftp_.html#mode_pad" class="tsd-kind-icon">MODE_<wbr>PAD</a>
 					</li>

@@ -160,6 +160,24 @@
 
     "SFTP": {
         "children": {
+            "Execute commands on server": {
+                "type": "link", "icon": "book",
+
+                "source": "https://goo.gl/Qof5Xn"
+            },
+
+            "Modes for specific files": {
+                "type": "link", "icon": "book",
+
+                "source": "https://goo.gl/6gxt8k"
+            },
+
+            "Using key files": {
+                "type": "link", "icon": "book",
+
+                "source": "https://goo.gl/uYkkJD"
+            },
+
             "Wiki": {
                 "type": "link", "icon": "book",
                 "sortOrder": 2000000000,

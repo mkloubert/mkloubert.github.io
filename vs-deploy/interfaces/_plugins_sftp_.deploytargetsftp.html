@@ -94,6 +94,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#beforeupload" class="tsd-kind-icon">before<wbr>Upload</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#checkbeforedeploy" class="tsd-kind-icon">check<wbr>Before<wbr>Deploy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#closing" class="tsd-kind-icon">closing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#connected" class="tsd-kind-icon">connected</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#deployed" class="tsd-kind-icon">deployed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_sftp_.deploytargetsftp.html#detail" class="tsd-kind-icon">detail</a></li>
@@ -171,7 +173,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="beforeupload" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before<wbr>Upload</h3>
-					<div class="tsd-signature tsd-kind-icon">before<wbr>Upload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">before<wbr>Upload<span class="tsd-signature-symbol">:</span> <a href="../modules/_plugins_sftp_.html#sshcommands" class="tsd-signature-type">SSHCommands</a></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in plugins/sftp.ts:59</li>
@@ -193,6 +195,26 @@
 							<p>Check for newer files before a deployment starts or not.</p>
 						</div>
 					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="closing" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> closing</h3>
+					<div class="tsd-signature tsd-kind-icon">closing<span class="tsd-signature-symbol">:</span> <a href="../modules/_plugins_sftp_.html#sshcommands" class="tsd-signature-type">SSHCommands</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/sftp.ts:62</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="connected" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> connected</h3>
+					<div class="tsd-signature tsd-kind-icon">connected<span class="tsd-signature-symbol">:</span> <a href="../modules/_plugins_sftp_.html#sshcommands" class="tsd-signature-type">SSHCommands</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/sftp.ts:61</li>
+						</ul>
+					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="deployed" class="tsd-anchor"></a>
@@ -588,7 +610,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="uploaded" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> uploaded</h3>
-					<div class="tsd-signature tsd-kind-icon">uploaded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">uploaded<span class="tsd-signature-symbol">:</span> <a href="../modules/_plugins_sftp_.html#sshcommands" class="tsd-signature-type">SSHCommands</a></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in plugins/sftp.ts:60</li>
@@ -642,6 +664,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_sftp_.deploytargetsftp.html#checkbeforedeploy" class="tsd-kind-icon">check<wbr>Before<wbr>Deploy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_plugins_sftp_.deploytargetsftp.html#closing" class="tsd-kind-icon">closing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_plugins_sftp_.deploytargetsftp.html#connected" class="tsd-kind-icon">connected</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_sftp_.deploytargetsftp.html#deployed" class="tsd-kind-icon">deployed</a>
@@ -742,6 +770,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_sftp_.sftpcontext.html" class="tsd-kind-icon">SFTPContext</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_sftp_.html#sshcommands" class="tsd-kind-icon">SSHCommands</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_plugins_sftp_.html#mode_pad" class="tsd-kind-icon">MODE_<wbr>PAD</a>

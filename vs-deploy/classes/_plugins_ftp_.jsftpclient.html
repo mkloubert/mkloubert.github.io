@@ -86,16 +86,24 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited tsd-is-not-exported">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-private-protected tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#_connection" class="tsd-kind-icon">_connection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#_context" class="tsd-kind-icon">_context</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#connection" class="tsd-kind-icon">connection</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#context" class="tsd-kind-icon">context</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -104,6 +112,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#connect" class="tsd-kind-icon">connect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#cwd" class="tsd-kind-icon">cwd</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#end" class="tsd-kind-icon">end</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#execute" class="tsd-kind-icon">execute</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#executecommands" class="tsd-kind-icon">execute<wbr>Commands</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#getfileinfo" class="tsd-kind-icon">get<wbr>File<wbr>Info</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_plugins_ftp_.jsftpclient.html#mkdir" class="tsd-kind-icon">mkdir</a></li>
@@ -111,6 +121,33 @@
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-not-exported">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>JsFTPClient<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_plugins_ftp_.jsftpclient.html" class="tsd-signature-type">JsFTPClient</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in plugins/ftp.ts:111</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <a href="../interfaces/_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_plugins_ftp_.jsftpclient.html" class="tsd-signature-type">JsFTPClient</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected tsd-is-not-exported">
@@ -121,7 +158,18 @@
 					<div class="tsd-signature tsd-kind-icon">_connection<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/ftp.ts:407</li>
+							<li>Defined in plugins/ftp.ts:515</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="_context" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _context</h3>
+					<div class="tsd-signature tsd-kind-icon">_context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#_context">_context</a></p>
+						<ul>
+							<li>Defined in plugins/ftp.ts:111</li>
 						</ul>
 					</aside>
 				</section>
@@ -138,10 +186,28 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/ftp.ts:462</li>
+									<li>Defined in plugins/ftp.ts:570</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="context" class="tsd-anchor"></a>
+					<h3>context</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#context">context</a></p>
+								<ul>
+									<li>Defined in plugins/ftp.ts:119</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.deploycontext.html" class="tsd-signature-type">DeployContext</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -159,7 +225,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#connect">connect</a></p>
 								<ul>
-									<li>Defined in plugins/ftp.ts:409</li>
+									<li>Defined in plugins/ftp.ts:517</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -183,7 +249,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#cwd">cwd</a></p>
 								<ul>
-									<li>Defined in plugins/ftp.ts:466</li>
+									<li>Defined in plugins/ftp.ts:574</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -207,10 +273,61 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#end">end</a></p>
 								<ul>
-									<li>Defined in plugins/ftp.ts:488</li>
+									<li>Defined in plugins/ftp.ts:596</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+					<a name="execute" class="tsd-anchor"></a>
+					<h3>execute</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">execute<span class="tsd-signature-symbol">(</span>cmd<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#execute">execute</a></p>
+								<ul>
+									<li>Defined in plugins/ftp.ts:621</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cmd: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="executecommands" class="tsd-anchor"></a>
+					<h3>execute<wbr>Commands</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>Commands<span class="tsd-signature-symbol">(</span>commands<span class="tsd-signature-symbol">: </span><a href="../modules/_plugins_ftp_.html#ftpcommands" class="tsd-signature-type">FTPCommands</a>, values<span class="tsd-signature-symbol">?: </span><a href="_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol"> | </span><a href="_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#executecommands">executeCommands</a></p>
+								<ul>
+									<li>Defined in plugins/ftp.ts:129</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>commands: <a href="../modules/_plugins_ftp_.html#ftpcommands" class="tsd-signature-type">FTPCommands</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> values: <a href="_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol"> | </span><a href="_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -225,7 +342,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#get">get</a></p>
 								<ul>
-									<li>Defined in plugins/ftp.ts:513</li>
+									<li>Defined in plugins/ftp.ts:652</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -249,7 +366,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#getfileinfo">getFileInfo</a></p>
 								<ul>
-									<li>Defined in plugins/ftp.ts:562</li>
+									<li>Defined in plugins/ftp.ts:701</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -273,7 +390,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#mkdir">mkdir</a></p>
 								<ul>
-									<li>Defined in plugins/ftp.ts:628</li>
+									<li>Defined in plugins/ftp.ts:767</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -297,7 +414,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_ftp_.ftpclientbase.html">FtpClientBase</a>.<a href="_plugins_ftp_.ftpclientbase.html#put">put</a></p>
 								<ul>
-									<li>Defined in plugins/ftp.ts:650</li>
+									<li>Defined in plugins/ftp.ts:789</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -342,11 +459,20 @@
 					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_ftp_.jsftpclient.html" class="tsd-kind-icon">JsFTPClient</a>
 						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_ftp_.jsftpclient.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
 								<a href="_plugins_ftp_.jsftpclient.html#_connection" class="tsd-kind-icon">_connection</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_ftp_.jsftpclient.html#_context" class="tsd-kind-icon">_context</a>
+							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-not-exported">
 								<a href="_plugins_ftp_.jsftpclient.html#connection" class="tsd-kind-icon">connection</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_ftp_.jsftpclient.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="_plugins_ftp_.jsftpclient.html#connect" class="tsd-kind-icon">connect</a>
@@ -356,6 +482,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="_plugins_ftp_.jsftpclient.html#end" class="tsd-kind-icon">end</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+								<a href="_plugins_ftp_.jsftpclient.html#execute" class="tsd-kind-icon">execute</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_ftp_.jsftpclient.html#executecommands" class="tsd-kind-icon">execute<wbr>Commands</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="_plugins_ftp_.jsftpclient.html#get" class="tsd-kind-icon">get</a>
@@ -379,11 +511,26 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_plugins_ftp_.ftpcontext.html" class="tsd-kind-icon">FTPContext</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_ftp_.html#ftpcommands" class="tsd-kind-icon">FTPCommands</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_ftp_.html#ftp_full_time_format" class="tsd-kind-icon">FTP_<wbr>FULL_<wbr>TIME_<wbr>FORMAT</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_ftp_.html#ftp_time_format" class="tsd-kind-icon">FTP_<wbr>TIME_<wbr>FORMAT</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_ftp_.html#mode_pad" class="tsd-kind-icon">MODE_<wbr>PAD</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_plugins_ftp_.html#parselistening" class="tsd-kind-icon">Parse<wbr>Listening</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_plugins_ftp_.html#jsftp" class="tsd-kind-icon">jsFTP</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_ftp_.html#appendtimevalues" class="tsd-kind-icon">append<wbr>Time<wbr>Values</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_plugins_ftp_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>

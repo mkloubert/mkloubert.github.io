@@ -437,6 +437,49 @@ vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</
 				<h3 id="quick-execution-uarr-how-to-use-">Quick execution [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>Press <code>F1</code> to open the list of commands and select <code>Script commands: Quick execution</code> to execute any JavaScript expression (execute <code>$help</code> to open a help tab which lists all available features, like functions and variables):</p>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-script-commands/master/img/demo4.gif" alt="Demo Quick execution"></p>
+				<p>You can define custom settings for the feature:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"script.commands"</span>: {
+        <span class="hljs-attr">"quick"</span>: [
+            {
+                <span class="hljs-attr">"noResultInfo"</span>: <span class="hljs-literal">false</span>,
+                <span class="hljs-attr">"showResultInTab"</span>: <span class="hljs-literal">true</span>,
+
+                <span class="hljs-attr">"state"</span>: {
+                    <span class="hljs-attr">"MK"</span>: <span class="hljs-number">23979</span>,
+                    <span class="hljs-attr">"TM"</span>: <span class="hljs-string">"1979-09-05 23:09:19.079"</span>
+                }
+            }
+        ]
+    }
+}
+</code></pre>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>cwd</code></td>
+							<td>The initial current directory for the executions.</td>
+						</tr>
+						<tr>
+							<td><code>noResultInfo</code></td>
+							<td>Do not show results of executions. Default: <code>(false)</code></td>
+						</tr>
+						<tr>
+							<td><code>showResultInTab</code></td>
+							<td>Show results in tab instead of a popup or not. Default: <code>(false)</code></td>
+						</tr>
+						<tr>
+							<td><code>state</code></td>
+							<td>The initial state value.</td>
+						</tr>
+					</tbody>
+				</table>
 				<h2 id="documentation-uarr-table-of-contents-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>The full API documentation can be found <a href="https://mkloubert.github.io/vs-script-commands/">here</a>.</p>
 			</div>

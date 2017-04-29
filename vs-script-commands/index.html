@@ -82,6 +82,7 @@
 							<li><a href="#key-bindinds-">Key bindinds</a></li>
 							<li><a href="#invoke-manually-">Invoke manually</a></li>
 							<li><a href="#status-bar-buttons-">Status bar buttons</a></li>
+							<li><a href="#quick-execution-">Quick execution</a></li>
 						</ul>
 					</li>
 					<li><a href="#documentation-">Documentation</a></li>
@@ -373,6 +374,11 @@ vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</
 							<td>Executes another command that is available in VSCode.</td>
 							<td><code>extension.scriptCommands.executeVSCode</code></td>
 						</tr>
+						<tr>
+							<td><code>Script commands: Quick execution</code></td>
+							<td>Executes a JavaScript expression quickly.</td>
+							<td><code>extension.scriptCommands.quickExecution</code></td>
+						</tr>
 					</tbody>
 				</table>
 				<h3 id="status-bar-buttons-uarr-how-to-use-">Status bar buttons [<a href="#how-to-use-">&uarr;</a>]</h3>
@@ -428,6 +434,9 @@ vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</
 						</tr>
 					</tbody>
 				</table>
+				<h3 id="quick-execution-uarr-how-to-use-">Quick execution [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Press <code>F1</code> to open the list of commands and select <code>Script commands: Quick execution</code> to execute any JavaScript expression (execute <code>$help</code> to open a help tab which lists all available features, like functions and variables):</p>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-script-commands/master/img/demo4.gif" alt="Demo Quick execution"></p>
 				<h2 id="documentation-uarr-table-of-contents-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>The full API documentation can be found <a href="https://mkloubert.github.io/vs-script-commands/">here</a>.</p>
 			</div>

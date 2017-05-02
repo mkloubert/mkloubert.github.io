@@ -119,8 +119,16 @@
 							<td>One or more <a href="#commands-">commands</a> to register.</td>
 						</tr>
 						<tr>
+							<td><code>disableNewVersionPopups</code></td>
+							<td>Disables the display of popups that reports for a new version of that extension. Default <code>(false)</code></td>
+						</tr>
+						<tr>
 							<td><code>globals</code></td>
 							<td>Global data available for ALL commands defined by that extension.</td>
+						</tr>
+						<tr>
+							<td><code>quick</code></td>
+							<td>Settings for <a href="#quick-execution-">quick execution</a> feature.</td>
 						</tr>
 						<tr>
 							<td><code>showOutput</code></td>
@@ -463,6 +471,10 @@ vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</
 						<tr>
 							<td><code>cwd</code></td>
 							<td>The initial current directory for the executions.</td>
+						</tr>
+						<tr>
+							<td><code>disableHexView</code></td>
+							<td>Do not show binary data in &#39;hex view&#39;. Default: <code>(false)</code></td>
 						</tr>
 						<tr>
 							<td><code>noResultInfo</code></td>

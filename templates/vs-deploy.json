@@ -1,5 +1,5 @@
 {
-    "$version$": "1.3.1",
+    "$version$": "1.4.0",
 
     "CHANGELOG": {
         "description": "Lists changes of that repository",
@@ -12,6 +12,12 @@
         "type": "link", "icon": "book",
 
         "source": "https://goo.gl/cggLbL"
+    },
+
+    "Environment settings": {
+        "type": "link", "icon": "book",
+
+        "source": "https://goo.gl/4lUnww"
     },
 
     "Deploy on change": {

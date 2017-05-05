@@ -1,5 +1,5 @@
 {
-    "$version$": "1.4.0",
+    "$version$": "1.5.0",
 
     "CHANGELOG": {
         "description": "Lists changes of that repository",
@@ -12,6 +12,11 @@
         "type": "link", "icon": "book",
 
         "source": "https://goo.gl/cggLbL"
+    },
+
+    "Examples": {
+        "type": "repository",
+        "source": "https://mkloubert.github.io/templates/vs-deploy/examples.json"
     },
 
     "Environment settings": {

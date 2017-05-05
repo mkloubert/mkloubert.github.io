@@ -1,5 +1,10 @@
 # Change Log (vs-deploy template repository)
 
+## 1.5.0 (May 5th, 2017; JavaScript and PHP examples)
+
+* added links to [JavaScript examples](https://github.com/mkloubert/vs-deploy/wiki/examples_javascript)
+* added links to [PHP examples](https://github.com/mkloubert/vs-deploy/wiki/examples_javascript)
+
 ## 1.4.0 (May 3rd, 2017; environment settings)
 
 * added link to [environment settings](https://github.com/mkloubert/vs-deploy/wiki/environment_settings)

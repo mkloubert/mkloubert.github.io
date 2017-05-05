@@ -1,0 +1,21 @@
+{
+    "JavaScript": {
+        "children": {
+            "Uglify files BEFORE deploy": {
+                "type": "link", "icon": "book",
+
+                "source": "https://goo.gl/3JppjD"
+            }
+        }
+    },
+
+    "PHP": {
+        "children": {
+            "Encode files with ionCube BEFORE deploy": {
+                "type": "link", "icon": "book",
+
+                "source": "https://goo.gl/LBluSy"
+            }
+        }
+    }
+}

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FileChangeType | vs-script-commands</title>
+	<title>ActionQuickPickItem | vs-script-commands</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.filechangetype.html">FileChangeType</a>
+					<a href="_contracts_.actionquickpickitem.html">ActionQuickPickItem</a>
 				</li>
 			</ul>
-			<h1>Enumeration FileChangeType</h1>
+			<h1>Interface ActionQuickPickItem</h1>
 		</div>
 	</div>
 </header>
@@ -72,149 +72,132 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>List of file change types.</p>
+						<p>A quick pick item based on an action.</p>
 					</div>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-type">QuickPickItem</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">ActionQuickPickItem</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Enumeration members</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.filechangetype.html#changed" class="tsd-kind-icon">Changed</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.filechangetype.html#closed" class="tsd-kind-icon">Closed</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.filechangetype.html#deleted" class="tsd-kind-icon">Deleted</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.filechangetype.html#editorchanged" class="tsd-kind-icon">Editor<wbr>Changed</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.filechangetype.html#new" class="tsd-kind-icon">New</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.filechangetype.html#opened" class="tsd-kind-icon">Opened</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.filechangetype.html#saved" class="tsd-kind-icon">Saved</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_contracts_.filechangetype.html#willsave" class="tsd-kind-icon">Will<wbr>Save</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.actionquickpickitem.html#action" class="tsd-kind-icon">action</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.actionquickpickitem.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.actionquickpickitem.html#detail" class="tsd-kind-icon">detail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.actionquickpickitem.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.actionquickpickitem.html#tag" class="tsd-kind-icon">tag</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Enumeration members</h2>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="changed" class="tsd-anchor"></a>
-					<h3>Changed</h3>
-					<div class="tsd-signature tsd-kind-icon">Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="action" class="tsd-anchor"></a>
+					<h3>action</h3>
+					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:181</li>
+							<li>Defined in contracts.ts:47</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Files has been changed.</p>
+							<p>The action to invoke.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from QuickPickItem.description</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vs-script-commands/node_modules/vscode/vscode.d.ts:1366</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A human readable string which is rendered less prominent.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="closed" class="tsd-anchor"></a>
-					<h3>Closed</h3>
-					<div class="tsd-signature tsd-kind-icon">Closed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="detail" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> detail</h3>
+					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from QuickPickItem.detail</p>
 						<ul>
-							<li>Defined in contracts.ts:201</li>
+							<li>Defined in M:/VS Code/proj/vs-script-commands/node_modules/vscode/vscode.d.ts:1371</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>File has been closed.</p>
+							<p>A human readable string which is rendered less prominent.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="deleted" class="tsd-anchor"></a>
-					<h3>Deleted</h3>
-					<div class="tsd-signature tsd-kind-icon">Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="label" class="tsd-anchor"></a>
+					<h3>label</h3>
+					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from QuickPickItem.label</p>
 						<ul>
-							<li>Defined in contracts.ts:189</li>
+							<li>Defined in M:/VS Code/proj/vs-script-commands/node_modules/vscode/vscode.d.ts:1361</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>File has been deleted.</p>
+							<p>A human readable string which is rendered prominent.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="editorchanged" class="tsd-anchor"></a>
-					<h3>Editor<wbr>Changed</h3>
-					<div class="tsd-signature tsd-kind-icon">Editor<wbr>Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;6</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tag</h3>
+					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:205</li>
+							<li>Defined in contracts.ts:51</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>File has been changed in text editor.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="new" class="tsd-anchor"></a>
-					<h3>New</h3>
-					<div class="tsd-signature tsd-kind-icon">New<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:185</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>File has been created.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="opened" class="tsd-anchor"></a>
-					<h3>Opened</h3>
-					<div class="tsd-signature tsd-kind-icon">Opened<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:197</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>File has been opened.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="saved" class="tsd-anchor"></a>
-					<h3>Saved</h3>
-					<div class="tsd-signature tsd-kind-icon">Saved<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:193</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>File has been saved.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="willsave" class="tsd-anchor"></a>
-					<h3>Will<wbr>Save</h3>
-					<div class="tsd-signature tsd-kind-icon">Will<wbr>Save<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;7</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:209</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>File is going to be saved.</p>
+							<p>Additional data to store in that object.</p>
 						</div>
 					</div>
 				</section>
@@ -260,74 +243,65 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_contracts_.filechangetype.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.actionmessageitem.html" class="tsd-kind-icon">Action<wbr>Message<wbr>Item</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="_contracts_.filechangetype.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.actionquickpickitem.html" class="tsd-kind-icon">Action<wbr>Quick<wbr>Pick<wbr>Item</a>
 						<ul>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_contracts_.filechangetype.html#changed" class="tsd-kind-icon">Changed</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.actionquickpickitem.html#action" class="tsd-kind-icon">action</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_contracts_.filechangetype.html#closed" class="tsd-kind-icon">Closed</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.actionquickpickitem.html#description" class="tsd-kind-icon">description</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_contracts_.filechangetype.html#deleted" class="tsd-kind-icon">Deleted</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.actionquickpickitem.html#detail" class="tsd-kind-icon">detail</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_contracts_.filechangetype.html#editorchanged" class="tsd-kind-icon">Editor<wbr>Changed</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.actionquickpickitem.html#label" class="tsd-kind-icon">label</a>
 							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_contracts_.filechangetype.html#new" class="tsd-kind-icon">New</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_contracts_.filechangetype.html#opened" class="tsd-kind-icon">Opened</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_contracts_.filechangetype.html#saved" class="tsd-kind-icon">Saved</a>
-							</li>
-							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_contracts_.filechangetype.html#willsave" class="tsd-kind-icon">Will<wbr>Save</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.actionquickpickitem.html#tag" class="tsd-kind-icon">tag</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.actionmessageitem.html" class="tsd-kind-icon">Action<wbr>Message<wbr>Item</a>
+						<a href="_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.actionquickpickitem.html" class="tsd-kind-icon">Action<wbr>Quick<wbr>Pick<wbr>Item</a>
+						<a href="_contracts_.cronjobinfo.html" class="tsd-kind-icon">Cron<wbr>Job<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
+						<a href="_contracts_.document.html" class="tsd-kind-icon">Document</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.cronjobinfo.html" class="tsd-kind-icon">Cron<wbr>Job<wbr>Info</a>
+						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.document.html" class="tsd-kind-icon">Document</a>
+						<a href="_contracts_.scriptcommand.html" class="tsd-kind-icon">Script<wbr>Command</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
+						<a href="_contracts_.scriptcommandeditorchangecontext.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Editor<wbr>Change<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.scriptcommand.html" class="tsd-kind-icon">Script<wbr>Command</a>
+						<a href="_contracts_.scriptcommandexecutorarguments.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Executor<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.scriptcommandeditorchangecontext.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Editor<wbr>Change<wbr>Context</a>
+						<a href="_contracts_.scriptcommandfilechangecontext.html" class="tsd-kind-icon">Script<wbr>Command<wbr>File<wbr>Change<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.scriptcommandexecutorarguments.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Executor<wbr>Arguments</a>
+						<a href="_contracts_.scriptcommandmodule.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Module</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.scriptcommandfilechangecontext.html" class="tsd-kind-icon">Script<wbr>Command<wbr>File<wbr>Change<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.scriptcommandmodule.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_contracts_.scriptcommandquickpickitem.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Quick<wbr>Pick<wbr>Item</a>
+						<a href="_contracts_.scriptcommandquickpickitem.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Quick<wbr>Pick<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_contracts_.html#cronjobnames" class="tsd-kind-icon">Cron<wbr>Job<wbr>Names</a>

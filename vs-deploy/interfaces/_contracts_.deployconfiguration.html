@@ -96,10 +96,6 @@
 					<div class="lead">
 						<p>Readable dictionary that backs this configuration.</p>
 					</div>
-					<dl class="tsd-comment-tags">
-						<dt>readonly</dt>
-						<dd></dd>
-					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -143,6 +139,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#startupcommands" class="tsd-kind-icon">startup<wbr>Commands</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#targets" class="tsd-kind-icon">targets</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#templates" class="tsd-kind-icon">templates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#usegitignorestylepatterns" class="tsd-kind-icon">use<wbr>Git<wbr>Ignore<wbr>Style<wbr>Patterns</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#usetargetlistfordeployonsave" class="tsd-kind-icon">use<wbr>Target<wbr>List<wbr>For<wbr>Deploy<wbr>OnSave</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deployconfiguration.html#values" class="tsd-kind-icon">values</a></li>
 							</ul>
@@ -152,6 +149,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="_contracts_.deployconfiguration.html#get" class="tsd-kind-icon">get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deployconfiguration.html#has" class="tsd-kind-icon">has</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="_contracts_.deployconfiguration.html#inspect" class="tsd-kind-icon">inspect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deployconfiguration.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
@@ -899,12 +897,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="usegitignorestylepatterns" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Git<wbr>Ignore<wbr>Style<wbr>Patterns</h3>
+					<div class="tsd-signature tsd-kind-icon">use<wbr>Git<wbr>Ignore<wbr>Style<wbr>Patterns<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:676</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Also check directory patterns, like in &#39;.gitignore&#39; files, in all packages by default or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="usetargetlistfordeployonsave" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Target<wbr>List<wbr>For<wbr>Deploy<wbr>OnSave</h3>
 					<div class="tsd-signature tsd-kind-icon">use<wbr>Target<wbr>List<wbr>For<wbr>Deploy<wbr>OnSave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:677</li>
+							<li>Defined in contracts.ts:681</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -920,7 +933,7 @@
 					<div class="tsd-signature tsd-kind-icon">values<span class="tsd-signature-symbol">:</span> <a href="_contracts_.valuewithname.html" class="tsd-signature-type">ValueWithName</a><span class="tsd-signature-symbol"> | </span><a href="_contracts_.valuewithname.html" class="tsd-signature-type">ValueWithName</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:682</li>
+							<li>Defined in contracts.ts:686</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -937,14 +950,48 @@
 					<a name="get" class="tsd-anchor"></a>
 					<h3>get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from WorkspaceConfiguration.get</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2682</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2849</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return a value from this configuration.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>section: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Configuration name, supports <em>dotted</em> names.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+							<p>The value <code>section</code> denotes or <code>undefined</code>.</p>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from WorkspaceConfiguration.get</p>
+								<ul>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2858</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -967,7 +1014,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> defaultValue: <span class="tsd-signature-type">T</span></h5>
+									<h5>defaultValue: <span class="tsd-signature-type">T</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>A value should be returned when no value could be found, is <code>undefined</code>.</p>
 									</div>
@@ -989,7 +1036,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from WorkspaceConfiguration.has</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2690</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2867</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1007,7 +1054,55 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p><code>true</code> iff the section doesn&#39;t resolve to <code>undefined</code>.</p>
+							<p><code>true</code> if the section doesn&#39;t resolve to <code>undefined</code>.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
+					<a name="inspect" class="tsd-anchor"></a>
+					<h3>inspect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">inspect&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from WorkspaceConfiguration.inspect</p>
+								<ul>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2882</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieve all information about a configuration setting. A configuration value
+										often consists of a <em>default</em> value, a global or installation-wide value, and
+										a workspace-specific value. The <em>effective</em> value (returned by <a href="#WorkspaceConfiguration.get"><code>get</code></a>)
+										is computed like this: <code>defaultValue</code> overwritten by <code>globalValue</code>,
+									<code>globalValue</code> overwritten by <code>workspaceValue</code>.</p>
+								</div>
+								<p><em>Note:</em> The configuration name must denote a leaf in the configuration tree
+								(<code>editor.fontSize</code> vs <code>editor</code>) otherwise no result is returned.</p>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>section: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Configuration name, supports <em>dotted</em> names.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+							<p>Information about a configuration setting or <code>undefined</code>.</p>
 						</li>
 					</ul>
 				</section>
@@ -1022,7 +1117,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from WorkspaceConfiguration.update</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2707</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/vscode/vscode.d.ts:2899</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1184,6 +1279,9 @@
 								<a href="_contracts_.deployconfiguration.html#templates" class="tsd-kind-icon">templates</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deployconfiguration.html#usegitignorestylepatterns" class="tsd-kind-icon">use<wbr>Git<wbr>Ignore<wbr>Style<wbr>Patterns</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.deployconfiguration.html#usetargetlistfordeployonsave" class="tsd-kind-icon">use<wbr>Target<wbr>List<wbr>For<wbr>Deploy<wbr>OnSave</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -1194,6 +1292,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.deployconfiguration.html#has" class="tsd-kind-icon">has</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
+								<a href="_contracts_.deployconfiguration.html#inspect" class="tsd-kind-icon">inspect</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.deployconfiguration.html#update" class="tsd-kind-icon">update</a>

@@ -217,6 +217,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#shownewversionpopup" class="tsd-kind-icon">show<wbr>New<wbr>Version<wbr>Popup</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#showstatusbaritemafterdeployment" class="tsd-kind-icon">show<wbr>Status<wbr>Bar<wbr>Item<wbr>After<wbr>Deployment</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_deploy_.deployer.html#startexternalextensions" class="tsd-kind-icon">start<wbr>External<wbr>Extensions</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_deploy_.deployer.html#usegitignorestylepatternsinfilter" class="tsd-kind-icon">use<wbr>Git<wbr>Ignore<wbr>Style<wbr>Patterns<wbr>InFilter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_deploy_.deployer.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
 							</ul>
 						</section>
@@ -235,7 +236,7 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Deployer<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExtensionContext</span>, outputChannel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputChannel</span>, pkgFile<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_deploy_.deployer.html" class="tsd-signature-type">Deployer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Deployer<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span>, outputChannel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.OutputChannel</span>, pkgFile<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.packagefile.html" class="tsd-signature-type">PackageFile</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_deploy_.deployer.html" class="tsd-signature-type">Deployer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -252,7 +253,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>context: <span class="tsd-signature-type">ExtensionContext</span></h5>
+									<h5>context: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The underlying extension context.</p>
@@ -260,7 +261,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>outputChannel: <span class="tsd-signature-type">OutputChannel</span></h5>
+									<h5>outputChannel: <span class="tsd-signature-type">vscode.OutputChannel</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>The global output channel to use.</p>
@@ -286,7 +287,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_after_deployment_status_item" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _AFTER_<wbr>DEPLOYMENT_<wbr>STATUS_<wbr>ITEM</h3>
-					<div class="tsd-signature tsd-kind-icon">_AFTER_<wbr>DEPLOYMENT_<wbr>STATUS_<wbr>ITEM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StatusBarItem</span></div>
+					<div class="tsd-signature tsd-kind-icon">_AFTER_<wbr>DEPLOYMENT_<wbr>STATUS_<wbr>ITEM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.StatusBarItem</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in deploy.ts:101</li>
@@ -301,7 +302,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_context" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _CONTEXT</h3>
-					<div class="tsd-signature tsd-kind-icon">_CONTEXT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ExtensionContext</span></div>
+					<div class="tsd-signature tsd-kind-icon">_CONTEXT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.ExtensionContext</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in deploy.ts:109</li>
@@ -331,7 +332,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_output_channel" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _OUTPUT_<wbr>CHANNEL</h3>
-					<div class="tsd-signature tsd-kind-icon">_OUTPUT_<wbr>CHANNEL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OutputChannel</span></div>
+					<div class="tsd-signature tsd-kind-icon">_OUTPUT_<wbr>CHANNEL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.OutputChannel</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in deploy.ts:155</li>
@@ -361,7 +362,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_quick_deploy_status_item" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _QUICK_<wbr>DEPLOY_<wbr>STATUS_<wbr>ITEM</h3>
-					<div class="tsd-signature tsd-kind-icon">_QUICK_<wbr>DEPLOY_<wbr>STATUS_<wbr>ITEM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StatusBarItem</span></div>
+					<div class="tsd-signature tsd-kind-icon">_QUICK_<wbr>DEPLOY_<wbr>STATUS_<wbr>ITEM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.StatusBarItem</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in deploy.ts:167</li>
@@ -421,7 +422,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_filesystemwatcher" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _file<wbr>System<wbr>Watcher</h3>
-					<div class="tsd-signature tsd-kind-icon">_file<wbr>System<wbr>Watcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FileSystemWatcher</span></div>
+					<div class="tsd-signature tsd-kind-icon">_file<wbr>System<wbr>Watcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.FileSystemWatcher</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in deploy.ts:117</li>
@@ -572,7 +573,7 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="_serverstatusitem" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _server<wbr>Status<wbr>Item</h3>
-					<div class="tsd-signature tsd-kind-icon">_server<wbr>Status<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">StatusBarItem</span></div>
+					<div class="tsd-signature tsd-kind-icon">_server<wbr>Status<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.StatusBarItem</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in deploy.ts:175</li>
@@ -591,7 +592,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from EventEmitter.defaultMaxListeners</p>
 						<ul>
-							<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:597</li>
+							<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:606</li>
 						</ul>
 					</aside>
 				</section>
@@ -624,7 +625,7 @@
 					<a name="context" class="tsd-anchor"></a>
 					<h3>context</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExtensionContext</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -638,7 +639,7 @@
 									<p>Gets the extension context.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ExtensionContext</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">vscode.ExtensionContext</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -652,7 +653,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2148</li>
+									<li>Defined in deploy.ts:2150</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -674,7 +675,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2274</li>
+									<li>Defined in deploy.ts:2277</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -690,13 +691,13 @@
 					<a name="outputchannel" class="tsd-anchor"></a>
 					<h3>output<wbr>Channel</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> outputChannel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">OutputChannel</span></li>
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> outputChannel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.OutputChannel</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2787</li>
+									<li>Defined in deploy.ts:2793</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -704,7 +705,7 @@
 									<p>Gets the global output channel.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">OutputChannel</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">vscode.OutputChannel</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -718,7 +719,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2794</li>
+									<li>Defined in deploy.ts:2800</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -740,7 +741,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2801</li>
+									<li>Defined in deploy.ts:2807</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -762,7 +763,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2809</li>
+									<li>Defined in deploy.ts:2815</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -789,7 +790,7 @@
 								<p>Inherited from EventEmitter.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:599</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:608</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1101,7 +1102,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1290</li>
+									<li>Defined in deploy.ts:1292</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1139,7 +1140,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1609</li>
+									<li>Defined in deploy.ts:1611</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1167,7 +1168,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1659</li>
+									<li>Defined in deploy.ts:1661</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1192,7 +1193,7 @@
 								<p>Inherited from EventEmitter.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:609</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:618</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1218,7 +1219,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1675</li>
+									<li>Defined in deploy.ts:1677</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1257,7 +1258,7 @@
 								<p>Inherited from EventEmitter.eventNames</p>
 								<p>Overrides EventEmitter.eventNames</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:610</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:619</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
@@ -1277,7 +1278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1684</li>
+									<li>Defined in deploy.ts:1686</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1299,7 +1300,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1747</li>
+									<li>Defined in deploy.ts:1749</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1337,7 +1338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1759</li>
+									<li>Defined in deploy.ts:1761</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1369,7 +1370,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1797</li>
+									<li>Defined in deploy.ts:1799</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1394,7 +1395,7 @@
 								<p>Inherited from EventEmitter.getMaxListeners</p>
 								<p>Overrides EventEmitter.getMaxListeners</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:607</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:616</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -1411,7 +1412,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1816</li>
+									<li>Defined in deploy.ts:1818</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1444,7 +1445,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1830</li>
+									<li>Defined in deploy.ts:1832</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1467,7 +1468,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1867</li>
+									<li>Defined in deploy.ts:1869</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1490,7 +1491,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1906</li>
+									<li>Defined in deploy.ts:1908</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1522,7 +1523,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1945</li>
+									<li>Defined in deploy.ts:1947</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1545,7 +1546,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:1960</li>
+									<li>Defined in deploy.ts:1962</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1595,7 +1596,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2141</li>
+									<li>Defined in deploy.ts:2143</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1617,7 +1618,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2249</li>
+									<li>Defined in deploy.ts:2251</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1649,7 +1650,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2155</li>
+									<li>Defined in deploy.ts:2157</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1673,7 +1674,7 @@
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<p>Overrides EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:611</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:620</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1698,7 +1699,7 @@
 								<p>Inherited from EventEmitter.listeners</p>
 								<p>Overrides EventEmitter.listeners</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:608</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:617</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1721,7 +1722,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2261</li>
+									<li>Defined in deploy.ts:2264</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1758,7 +1759,7 @@
 								<p>Inherited from EventEmitter.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:600</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:609</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1783,7 +1784,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2292</li>
+									<li>Defined in deploy.ts:2295</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1805,7 +1806,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2305</li>
+									<li>Defined in deploy.ts:2308</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1836,7 +1837,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2318</li>
+									<li>Defined in deploy.ts:2321</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1858,7 +1859,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2332</li>
+									<li>Defined in deploy.ts:2335</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1880,7 +1881,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2342</li>
+									<li>Defined in deploy.ts:2345</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1908,13 +1909,13 @@
 					<a name="ondidsavetextdocument" class="tsd-anchor"></a>
 					<h3>on<wbr>Did<wbr>Save<wbr>Text<wbr>Document</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Save<wbr>Text<wbr>Document<span class="tsd-signature-symbol">(</span>doc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.TextDocument</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2519</li>
+									<li>Defined in deploy.ts:2523</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1925,7 +1926,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>doc: <span class="tsd-signature-type">TextDocument</span></h5>
+									<h5>doc: <span class="tsd-signature-type">vscode.TextDocument</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The document.</p>
 									</div>
@@ -1939,13 +1940,13 @@
 					<a name="onfilechange" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>File<wbr>Change</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>File<wbr>Change<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uri</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>File<wbr>Change<span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Uri</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2538</li>
+									<li>Defined in deploy.ts:2542</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1956,7 +1957,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>e: <span class="tsd-signature-type">Uri</span></h5>
+									<h5>e: <span class="tsd-signature-type">vscode.Uri</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The URI of the item.</p>
 									</div>
@@ -1984,7 +1985,7 @@
 								<p>Inherited from EventEmitter.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:601</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:610</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2009,7 +2010,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2627</li>
+									<li>Defined in deploy.ts:2633</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2031,7 +2032,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2762</li>
+									<li>Defined in deploy.ts:2768</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2069,7 +2070,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2770</li>
+									<li>Defined in deploy.ts:2776</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2091,7 +2092,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2779</li>
+									<li>Defined in deploy.ts:2785</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2115,7 +2116,7 @@
 								<p>Inherited from EventEmitter.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:602</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:611</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2142,7 +2143,7 @@
 								<p>Inherited from EventEmitter.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:603</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:612</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2167,7 +2168,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2874</li>
+									<li>Defined in deploy.ts:2880</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2198,7 +2199,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2929</li>
+									<li>Defined in deploy.ts:2935</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2236,7 +2237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:2818</li>
+									<li>Defined in deploy.ts:2824</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2264,7 +2265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3129</li>
+									<li>Defined in deploy.ts:3135</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2295,7 +2296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3181</li>
+									<li>Defined in deploy.ts:3187</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2317,7 +2318,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3318</li>
+									<li>Defined in deploy.ts:3325</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2355,7 +2356,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3594</li>
+									<li>Defined in deploy.ts:3601</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2377,7 +2378,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3726</li>
+									<li>Defined in deploy.ts:3735</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2399,7 +2400,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3855</li>
+									<li>Defined in deploy.ts:3864</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2421,7 +2422,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:3863</li>
+									<li>Defined in deploy.ts:3872</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2443,7 +2444,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:4007</li>
+									<li>Defined in deploy.ts:4016</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2465,7 +2466,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:4080</li>
+									<li>Defined in deploy.ts:4089</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2487,7 +2488,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:4268</li>
+									<li>Defined in deploy.ts:4277</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2517,7 +2518,7 @@
 								<p>Inherited from EventEmitter.removeAllListeners</p>
 								<p>Overrides EventEmitter.removeAllListeners</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:605</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:614</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2541,7 +2542,7 @@
 								<p>Inherited from EventEmitter.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:604</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:613</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2566,7 +2567,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:4447</li>
+									<li>Defined in deploy.ts:4456</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2600,7 +2601,7 @@
 								<p>Inherited from EventEmitter.setMaxListeners</p>
 								<p>Overrides EventEmitter.setMaxListeners</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:606</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:615</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2622,7 +2623,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:4454</li>
+									<li>Defined in deploy.ts:4463</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2644,7 +2645,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:4495</li>
+									<li>Defined in deploy.ts:4504</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2666,7 +2667,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:4502</li>
+									<li>Defined in deploy.ts:4511</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2688,7 +2689,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:4570</li>
+									<li>Defined in deploy.ts:4579</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2737,7 +2738,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in deploy.ts:4661</li>
+									<li>Defined in deploy.ts:4670</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2747,6 +2748,42 @@
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>The promise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="usegitignorestylepatternsinfilter" class="tsd-anchor"></a>
+					<h3>use<wbr>Git<wbr>Ignore<wbr>Style<wbr>Patterns<wbr>InFilter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">use<wbr>Git<wbr>Ignore<wbr>Style<wbr>Patterns<wbr>InFilter<span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.filefilter.html" class="tsd-signature-type">FileFilter</a>, defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in deploy.ts:4824</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets if a file filter should also use patterns for directories
+									like in .gitignore files or not.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>filter: <a href="../interfaces/_contracts_.filefilter.html" class="tsd-signature-type">FileFilter</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The filter to check.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> defaultValue: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Also use directory patterns or not.</p>
 						</li>
 					</ul>
 				</section>
@@ -2761,7 +2798,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:596</li>
+									<li>Defined in M:/VS Code/proj/vs-deploy/node_modules/@types/node/index.d.ts:605</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3139,6 +3176,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_deploy_.deployer.html#startexternalextensions" class="tsd-kind-icon">start<wbr>External<wbr>Extensions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_deploy_.deployer.html#usegitignorestylepatternsinfilter" class="tsd-kind-icon">use<wbr>Git<wbr>Ignore<wbr>Style<wbr>Patterns<wbr>InFilter</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_deploy_.deployer.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>

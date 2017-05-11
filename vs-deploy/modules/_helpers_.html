@@ -1032,13 +1032,13 @@
 					<a name="getfilesbyfilter" class="tsd-anchor"></a>
 					<h3>get<wbr>Files<wbr>ByFilter</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<wbr>ByFilter<span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.filefilter.html" class="tsd-signature-type">FileFilter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<wbr>ByFilter<span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.filefilter.html" class="tsd-signature-type">FileFilter</a>, useGitIgnoreStylePatterns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:661</li>
+									<li>Defined in helpers.ts:662</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1054,6 +1054,12 @@
 										<p>The filter.</p>
 									</div>
 								</li>
+								<li>
+									<h5>useGitIgnoreStylePatterns: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Also check directory patterns, like in .gitignore files, or not.</p>
+									</div>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 							<p>The list of files.</p>
@@ -1064,13 +1070,13 @@
 					<a name="getfilesofpackage" class="tsd-anchor"></a>
 					<h3>get<wbr>Files<wbr>OfPackage</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<wbr>OfPackage<span class="tsd-signature-symbol">(</span>pkg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploypackage.html" class="tsd-signature-type">DeployPackage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Files<wbr>OfPackage<span class="tsd-signature-symbol">(</span>pkg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploypackage.html" class="tsd-signature-type">DeployPackage</a>, useGitIgnoreStylePatterns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:711</li>
+									<li>Defined in helpers.ts:716</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1084,6 +1090,12 @@
 									<h5>pkg: <a href="../interfaces/_contracts_.deploypackage.html" class="tsd-signature-type">DeployPackage</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The package.</p>
+									</div>
+								</li>
+								<li>
+									<h5>useGitIgnoreStylePatterns: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Also check directory patterns, like in .gitignore files, or not.</p>
 									</div>
 								</li>
 							</ul>
@@ -1102,7 +1114,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:733</li>
+									<li>Defined in helpers.ts:739</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1134,7 +1146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:801</li>
+									<li>Defined in helpers.ts:807</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1169,7 +1181,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:849</li>
+									<li>Defined in helpers.ts:855</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1213,7 +1225,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:872</li>
+									<li>Defined in helpers.ts:878</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1251,7 +1263,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:891</li>
+									<li>Defined in helpers.ts:897</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1283,7 +1295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:923</li>
+									<li>Defined in helpers.ts:929</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1310,13 +1322,13 @@
 					<a name="isfileignored" class="tsd-anchor"></a>
 					<h3>is<wbr>File<wbr>Ignored</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>File<wbr>Ignored<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, patterns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, fastCheck<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>File<wbr>Ignored<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, patterns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, useGitIgnoreStylePatterns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, fastCheck<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:936</li>
+									<li>Defined in helpers.ts:943</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1333,6 +1345,12 @@
 									<h5>patterns: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>One or more (glob) pattern to use.</p>
+									</div>
+								</li>
+								<li>
+									<h5>useGitIgnoreStylePatterns: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Also check directory patterns, like in .gitignore files, or not.</p>
 									</div>
 								</li>
 								<li>
@@ -1354,7 +1372,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:995</li>
+									<li>Defined in helpers.ts:1005</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1386,7 +1404,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1007</li>
+									<li>Defined in helpers.ts:1017</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1418,7 +1436,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1020</li>
+									<li>Defined in helpers.ts:1030</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1456,7 +1474,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1032</li>
+									<li>Defined in helpers.ts:1042</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1494,7 +1512,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1043</li>
+									<li>Defined in helpers.ts:1053</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1526,7 +1544,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1586</li>
+									<li>Defined in helpers.ts:1596</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1570,7 +1588,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1612</li>
+									<li>Defined in helpers.ts:1622</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1608,7 +1626,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1624</li>
+									<li>Defined in helpers.ts:1634</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1652,7 +1670,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1633</li>
+									<li>Defined in helpers.ts:1643</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1683,7 +1701,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1648</li>
+									<li>Defined in helpers.ts:1658</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1736,7 +1754,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1664</li>
+									<li>Defined in helpers.ts:1674</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1770,7 +1788,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1797</li>
+									<li>Defined in helpers.ts:1807</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1814,7 +1832,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1847</li>
+									<li>Defined in helpers.ts:1857</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1843,7 +1861,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1858</li>
+									<li>Defined in helpers.ts:1868</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1875,7 +1893,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1934</li>
+									<li>Defined in helpers.ts:1944</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1913,7 +1931,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1965</li>
+									<li>Defined in helpers.ts:1975</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1951,7 +1969,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1997</li>
+									<li>Defined in helpers.ts:2007</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1995,7 +2013,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2014</li>
+									<li>Defined in helpers.ts:2024</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2030,7 +2048,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2056</li>
+									<li>Defined in helpers.ts:2066</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2065,7 +2083,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2098</li>
+									<li>Defined in helpers.ts:2108</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2106,7 +2124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2123</li>
+									<li>Defined in helpers.ts:2133</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2144,7 +2162,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2138</li>
+									<li>Defined in helpers.ts:2148</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2176,7 +2194,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2160</li>
+									<li>Defined in helpers.ts:2170</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2214,7 +2232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2207</li>
+									<li>Defined in helpers.ts:2217</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2259,7 +2277,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2254</li>
+									<li>Defined in helpers.ts:2264</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2297,7 +2315,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2273</li>
+									<li>Defined in helpers.ts:2283</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2329,13 +2347,13 @@
 					<a name="trydispose" class="tsd-anchor"></a>
 					<h3>try<wbr>Dispose</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">try<wbr>Dispose<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Dispose<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Disposable</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2294</li>
+									<li>Defined in helpers.ts:2304</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2346,7 +2364,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <span class="tsd-signature-type">Disposable</span></h5>
+									<h5>obj: <span class="tsd-signature-type">vscode.Disposable</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The object to dispose.</p>
 									</div>
@@ -2361,13 +2379,13 @@
 					<a name="uriparamstoobject" class="tsd-anchor"></a>
 					<h3>uri<wbr>Params<wbr>ToObject</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">uri<wbr>Params<wbr>ToObject<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span></li>
+						<li class="tsd-signature tsd-kind-icon">uri<wbr>Params<wbr>ToObject<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Uri</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2317</li>
+									<li>Defined in helpers.ts:2327</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2378,7 +2396,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uri: <span class="tsd-signature-type">Uri</span></h5>
+									<h5>uri: <span class="tsd-signature-type">vscode.Uri</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The URI.</p>
 									</div>

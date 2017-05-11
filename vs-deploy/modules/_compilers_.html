@@ -82,6 +82,9 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.compilererror.html" class="tsd-kind-icon">Compiler<wbr>Error</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.compileroptions.html" class="tsd-kind-icon">Compiler<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.compilerresult.html" class="tsd-kind-icon">Compiler<wbr>Result</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.htmlminifiercompilererror.html" class="tsd-kind-icon">Html<wbr>Minifier<wbr>Compiler<wbr>Error</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.htmlminifiercompileroptions.html" class="tsd-kind-icon">Html<wbr>Minifier<wbr>Compiler<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.htmlminifiercompilerresult.html" class="tsd-kind-icon">Html<wbr>Minifier<wbr>Compiler<wbr>Result</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.lesscompilererror.html" class="tsd-kind-icon">Less<wbr>Compiler<wbr>Error</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.lesscompileroptions.html" class="tsd-kind-icon">Less<wbr>Compiler<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.lesscompilerresult.html" class="tsd-kind-icon">Less<wbr>Compiler<wbr>Result</a></li>
@@ -115,7 +118,6 @@
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_compilers_.html#less" class="tsd-kind-icon">LESS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_compilers_.html#pug" class="tsd-kind-icon">Pug</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_compilers_.html#typescript" class="tsd-kind-icon">Type<wbr>Script</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_compilers_.html#uglifyjs" class="tsd-kind-icon">UglifyJS</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -123,6 +125,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#collectcompilerfiles" class="tsd-kind-icon">collect<wbr>Compiler<wbr>Files</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#compile" class="tsd-kind-icon">compile</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#compilehtmlminifier" class="tsd-kind-icon">compile<wbr>Html<wbr>Minifier</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#compileless" class="tsd-kind-icon">compile<wbr>Less</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#compilescript" class="tsd-kind-icon">compile<wbr>Script</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#compiletypescript" class="tsd-kind-icon">compile<wbr>Type<wbr>Script</a></li>
@@ -141,7 +144,7 @@
 					<div class="tsd-signature tsd-kind-icon">Script<wbr>Compiler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:208</li>
+							<li>Defined in compilers.ts:209</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -200,27 +203,17 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="less" class="tsd-anchor"></a>
 					<h3>LESS</h3>
-					<div class="tsd-signature tsd-kind-icon">LESS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<div class="tsd-signature tsd-kind-icon">LESS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;less&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:31</li>
+							<li>Defined in compilers.ts:32</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="pug" class="tsd-anchor"></a>
 					<h3>Pug</h3>
-					<div class="tsd-signature tsd-kind-icon">Pug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in compilers.ts:33</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="typescript" class="tsd-anchor"></a>
-					<h3>Type<wbr>Script</h3>
-					<div class="tsd-signature tsd-kind-icon">Type<wbr>Script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<div class="tsd-signature tsd-kind-icon">Pug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;pug&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in compilers.ts:34</li>
@@ -228,9 +221,9 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="uglifyjs" class="tsd-anchor"></a>
-					<h3>UglifyJS</h3>
-					<div class="tsd-signature tsd-kind-icon">UglifyJS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="typescript" class="tsd-anchor"></a>
+					<h3>Type<wbr>Script</h3>
+					<div class="tsd-signature tsd-kind-icon">Type<wbr>Script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;typescript&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in compilers.ts:35</li>
@@ -250,7 +243,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:337</li>
+									<li>Defined in compilers.ts:338</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -285,7 +278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:426</li>
+									<li>Defined in compilers.ts:427</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -311,6 +304,35 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="compilehtmlminifier" class="tsd-anchor"></a>
+					<h3>compile<wbr>Html<wbr>Minifier</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">compile<wbr>Html<wbr>Minifier<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_compilers_.htmlminifiercompileroptions.html" class="tsd-signature-type">HtmlMinifierCompilerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_compilers_.htmlminifiercompilerresult.html" class="tsd-signature-type">HtmlMinifierCompilerResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in compilers.ts:494</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compiles JavaScript files with UglifyJS.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_compilers_.htmlminifiercompileroptions.html" class="tsd-signature-type">HtmlMinifierCompilerOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_compilers_.htmlminifiercompilerresult.html" class="tsd-signature-type">HtmlMinifierCompilerResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise<HtmlMinifierCompilerResult> The promise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="compileless" class="tsd-anchor"></a>
 					<h3>compile<wbr>Less</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -320,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:488</li>
+									<li>Defined in compilers.ts:622</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -349,7 +371,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:769</li>
+									<li>Defined in compilers.ts:893</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -381,7 +403,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:840</li>
+									<li>Defined in compilers.ts:964</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -410,7 +432,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:901</li>
+									<li>Defined in compilers.ts:1020</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -439,7 +461,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:661</li>
+									<li>Defined in compilers.ts:790</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -484,6 +506,15 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_compilers_.compilerresult.html" class="tsd-kind-icon">Compiler<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_compilers_.htmlminifiercompilererror.html" class="tsd-kind-icon">Html<wbr>Minifier<wbr>Compiler<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_compilers_.htmlminifiercompileroptions.html" class="tsd-kind-icon">Html<wbr>Minifier<wbr>Compiler<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_compilers_.htmlminifiercompilerresult.html" class="tsd-kind-icon">Html<wbr>Minifier<wbr>Compiler<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_compilers_.lesscompilererror.html" class="tsd-kind-icon">Less<wbr>Compiler<wbr>Error</a>
@@ -554,14 +585,14 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_compilers_.html#typescript" class="tsd-kind-icon">Type<wbr>Script</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_compilers_.html#uglifyjs" class="tsd-kind-icon">UglifyJS</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_compilers_.html#collectcompilerfiles" class="tsd-kind-icon">collect<wbr>Compiler<wbr>Files</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_compilers_.html#compile" class="tsd-kind-icon">compile</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_compilers_.html#compilehtmlminifier" class="tsd-kind-icon">compile<wbr>Html<wbr>Minifier</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_compilers_.html#compileless" class="tsd-kind-icon">compile<wbr>Less</a>

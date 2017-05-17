@@ -127,6 +127,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#nonodemodules" class="tsd-kind-icon">no<wbr>Node<wbr>Modules</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploypackage.html#platforms" class="tsd-kind-icon">platforms</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#showfordeploy" class="tsd-kind-icon">show<wbr>For<wbr>Deploy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#showforpull" class="tsd-kind-icon">show<wbr>For<wbr>Pull</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploypackage.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#targets" class="tsd-kind-icon">targets</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#usetargetlistfordeployonsave" class="tsd-kind-icon">use<wbr>Target<wbr>List<wbr>For<wbr>Deploy<wbr>OnSave</a></li>
@@ -322,7 +324,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.machineitem.html">MachineItem</a>.<a href="_contracts_.machineitem.html#isfor">isFor</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1943</li>
+							<li>Defined in contracts.ts:1951</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -338,7 +340,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.hideable.html">Hideable</a>.<a href="_contracts_.hideable.html#ishidden">isHidden</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1910</li>
+							<li>Defined in contracts.ts:1918</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -384,12 +386,42 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.platformitem.html">PlatformItem</a>.<a href="_contracts_.platformitem.html#platforms">platforms</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2007</li>
+							<li>Defined in contracts.ts:2015</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>One or more platform the item is for.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="showfordeploy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> show<wbr>For<wbr>Deploy</h3>
+					<div class="tsd-signature tsd-kind-icon">show<wbr>For<wbr>Deploy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:1060</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Show this package for deploying or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="showforpull" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> show<wbr>For<wbr>Pull</h3>
+					<div class="tsd-signature tsd-kind-icon">show<wbr>For<wbr>Pull<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:1064</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Show this package for pulling or not.</p>
 						</div>
 					</div>
 				</section>
@@ -400,7 +432,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.sortable.html">Sortable</a>.<a href="_contracts_.sortable.html#sortorder">sortOrder</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2260</li>
+							<li>Defined in contracts.ts:2268</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -415,7 +447,7 @@
 					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1060</li>
+							<li>Defined in contracts.ts:1068</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -430,7 +462,7 @@
 					<div class="tsd-signature tsd-kind-icon">use<wbr>Target<wbr>List<wbr>For<wbr>Deploy<wbr>OnSave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:1065</li>
+							<li>Defined in contracts.ts:1073</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -507,6 +539,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.deploypackage.html#platforms" class="tsd-kind-icon">platforms</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deploypackage.html#showfordeploy" class="tsd-kind-icon">show<wbr>For<wbr>Deploy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.deploypackage.html#showforpull" class="tsd-kind-icon">show<wbr>For<wbr>Pull</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.deploypackage.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a>

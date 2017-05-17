@@ -15,6 +15,13 @@
         "source": "https://raw.githubusercontent.com/mkloubert/vs-deploy/master/src/lang/ru.ts"
     },
 
+    "About translations and their progress...": {
+        "type": "link", "icon": "book",
+        "sortOrder": 2000000000,
+
+        "source": "https://goo.gl/bSyloU"
+    },
+
     "Submit or request a translation...": {
         "type": "link", "icon": "cloud-upload",
         "sortOrder": 2000000000,

@@ -1,5 +1,9 @@
 # Change Log (vs-deploy template repository)
 
+## 1.6.0 (May 17th, 2017; translations)
+
+* added link to [Translations](https://github.com/mkloubert/vs-deploy/wiki/translations) wiki page
+
 ## 1.5.0 (May 5th, 2017; JavaScript and PHP examples)
 
 * added links to [JavaScript examples](https://github.com/mkloubert/vs-deploy/wiki/examples_javascript)

@@ -89,6 +89,9 @@
 						<a href="_contracts_.hideable.html" class="tsd-signature-type">Hideable</a>
 					</li>
 					<li>
+						<a href="_contracts_.inheritable.html" class="tsd-signature-type">Inheritable</a>
+					</li>
+					<li>
 						<a href="_contracts_.machineitem.html" class="tsd-signature-type">MachineItem</a>
 					</li>
 					<li>
@@ -122,9 +125,10 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#fastcheckonsave" class="tsd-kind-icon">fast<wbr>Check<wbr>OnSave</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#files" class="tsd-kind-icon">files</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploypackage.html#if" class="tsd-kind-icon">if</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploypackage.html#inheritfrom" class="tsd-kind-icon">inherit<wbr>From</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploypackage.html#isfor" class="tsd-kind-icon">is<wbr>For</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploypackage.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="_contracts_.deploypackage.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#nonodemodules" class="tsd-kind-icon">no<wbr>Node<wbr>Modules</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.deploypackage.html#platforms" class="tsd-kind-icon">platforms</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.deploypackage.html#showfordeploy" class="tsd-kind-icon">show<wbr>For<wbr>Deploy</a></li>
@@ -318,13 +322,29 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="inheritfrom" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> inherit<wbr>From</h3>
+					<div class="tsd-signature tsd-kind-icon">inherit<wbr>From<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.inheritable.html">Inheritable</a>.<a href="_contracts_.inheritable.html#inheritfrom">inheritFrom</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1951</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more names of objects from where to inherit from.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="isfor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>For</h3>
 					<div class="tsd-signature tsd-kind-icon">is<wbr>For<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.machineitem.html">MachineItem</a>.<a href="_contracts_.machineitem.html#isfor">isFor</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1951</li>
+							<li>Defined in contracts.ts:1965</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -349,11 +369,12 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Overrides <a href="_contracts_.inheritable.html">Inheritable</a>.<a href="_contracts_.inheritable.html#name">name</a></p>
 						<ul>
 							<li>Defined in contracts.ts:1052</li>
 						</ul>
@@ -386,7 +407,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.platformitem.html">PlatformItem</a>.<a href="_contracts_.platformitem.html#platforms">platforms</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2015</li>
+							<li>Defined in contracts.ts:2029</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -432,7 +453,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.sortable.html">Sortable</a>.<a href="_contracts_.sortable.html#sortorder">sortOrder</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2268</li>
+							<li>Defined in contracts.ts:2282</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -526,12 +547,15 @@
 								<a href="_contracts_.deploypackage.html#if" class="tsd-kind-icon">if</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.deploypackage.html#inheritfrom" class="tsd-kind-icon">inherit<wbr>From</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.deploypackage.html#isfor" class="tsd-kind-icon">is<wbr>For</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_contracts_.deploypackage.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 								<a href="_contracts_.deploypackage.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">

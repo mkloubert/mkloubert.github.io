@@ -105,11 +105,12 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#hideif" class="tsd-kind-icon">hide<wbr>If</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#host" class="tsd-kind-icon">host</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#if" class="tsd-kind-icon">if</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#inheritfrom" class="tsd-kind-icon">inherit<wbr>From</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#isfor" class="tsd-kind-icon">is<wbr>For</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#keepalive" class="tsd-kind-icon">keepalive</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#mappings" class="tsd-kind-icon">mappings</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#password" class="tsd-kind-icon">password</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#pasvtimeout" class="tsd-kind-icon">pasv<wbr>Timeout</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.deploytargetftp.html#platforms" class="tsd-kind-icon">platforms</a></li>
@@ -357,13 +358,29 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="inheritfrom" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> inherit<wbr>From</h3>
+					<div class="tsd-signature tsd-kind-icon">inherit<wbr>From<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.inheritable.html">Inheritable</a>.<a href="_contracts_.inheritable.html#inheritfrom">inheritFrom</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1951</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more names of objects from where to inherit from.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="isfor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>For</h3>
 					<div class="tsd-signature tsd-kind-icon">is<wbr>For<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.machineitem.html">MachineItem</a>.<a href="_contracts_.machineitem.html#isfor">isFor</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1951</li>
+							<li>Defined in contracts.ts:1965</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -414,12 +431,13 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#name">name</a></p>
+						<p>Overrides <a href="_contracts_.inheritable.html">Inheritable</a>.<a href="_contracts_.inheritable.html#name">name</a></p>
 						<ul>
 							<li>Defined in contracts.ts:1418</li>
 						</ul>
@@ -457,7 +475,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.platformitem.html">PlatformItem</a>.<a href="_contracts_.platformitem.html#platforms">platforms</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2015</li>
+							<li>Defined in contracts.ts:2029</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -520,7 +538,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.sortable.html">Sortable</a>.<a href="_contracts_.sortable.html#sortorder">sortOrder</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2268</li>
+							<li>Defined in contracts.ts:2282</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -536,7 +554,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.transformable.html">Transformable</a>.<a href="_contracts_.transformable.html#transformer">transformer</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2423</li>
+							<li>Defined in contracts.ts:2437</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -553,7 +571,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.transformable.html">Transformable</a>.<a href="_contracts_.transformable.html#transformeroptions">transformerOptions</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2427</li>
+							<li>Defined in contracts.ts:2441</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -679,6 +697,9 @@
 								<a href="_plugins_ftp_.deploytargetftp.html#if" class="tsd-kind-icon">if</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_ftp_.deploytargetftp.html#inheritfrom" class="tsd-kind-icon">inherit<wbr>From</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_ftp_.deploytargetftp.html#isfor" class="tsd-kind-icon">is<wbr>For</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
@@ -690,7 +711,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_ftp_.deploytargetftp.html#mappings" class="tsd-kind-icon">mappings</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_ftp_.deploytargetftp.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">

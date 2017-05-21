@@ -77,6 +77,7 @@
 					<li><a href="https://www.typescriptlang.org/">TypeScript</a> 2.3 or later (when using defintion files)</li>
 				</ul>
 				<h2 id="installation">Installation</h2>
+				<h3 id="nodejs">NodeJS</h3>
 				<p>Run</p>
 				<pre><code class="lang-bash">npm install node-enumerable --save
 </code></pre>
@@ -84,11 +85,14 @@
 				<h3 id="browser">Browser</h3>
 				<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- node-enumerable --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/enumerable.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
 
-  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;</span><span class="javascript">
+
+        <span class="hljs-comment">// test code</span>
 
         <span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
 
@@ -97,11 +101,11 @@
         }
 
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
 </code></pre>
 				<h2 id="documentation">Documentation</h2>
-				<p>The API documentation can be found <a href="https://mkloubert.github.io/node-enumerable/interfaces/_index_.ienumerable.html">here</a>.</p>
+				<p>The API documentation can be found <a href="https://mkloubert.github.io/node-enumerable/interfaces/_index_.enumerable.ienumerable.html">here</a>.</p>
 				<h2 id="usage">Usage</h2>
 				<h3 id="create-a-sequence">Create a sequence</h3>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> Enumerable = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-enumerable'</span>);

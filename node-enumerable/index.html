@@ -510,7 +510,7 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
 
 <span class="hljs-comment">// toObject()</span>
 <span class="hljs-keyword">let</span> obj = Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
-                    .toObject(<span class="hljs-function">(<span class="hljs-params">item, index</span>) =&gt;</span> <span class="hljs-string">"item"</span> + index);  
+                    .toObject(<span class="hljs-function">(<span class="hljs-params">index, item</span>) =&gt;</span> <span class="hljs-string">"item"</span> + index);  
 
 <span class="hljs-comment">// toLookup()</span>
 <span class="hljs-comment">// </span>
@@ -535,7 +535,7 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
 				<h4 id="clone">clone</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> father = Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
 
-<span class="hljs-comment">// create 3 clone of 'father'</span>
+<span class="hljs-comment">// create 3 clones of 'father'</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> child <span class="hljs-keyword">of</span> father.clone(<span class="hljs-number">3</span>)) {
     <span class="hljs-comment">//TODO</span>
 }

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>JoinedItems | node-enumerable</title>
+	<title>Stack | node-enumerable</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,13 @@
 					<a href="../modules/_index_.html">&quot;index&quot;</a>
 				</li>
 				<li>
-					<a href="_index_.joineditems.html">JoinedItems</a>
+					<a href="../modules/_index_.enumerable.html">Enumerable</a>
+				</li>
+				<li>
+					<a href="_index_.enumerable.stack.html">Stack</a>
 				</li>
 			</ul>
-			<h1>Interface JoinedItems&lt;TOuter, TInner&gt;</h1>
+			<h1>Interface Stack&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -72,14 +75,11 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Saves joined values.</p>
+						<p>A stack.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>template</dt>
-						<dd><p>TOuter Type of the outer value.</p>
-						</dd>
-						<dt>template</dt>
-						<dd><p>TInner Type of the inner value.</p>
+						<dd><p>T The type of the items.</p>
 						</dd>
 					</dl>
 				</div>
@@ -88,10 +88,7 @@
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
-						<h4>TOuter</h4>
-					</li>
-					<li>
-						<h4>TInner</h4>
+						<h4>T</h4>
 					</li>
 				</ul>
 			</section>
@@ -99,7 +96,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">JoinedItems</span>
+						<span class="target">Stack</span>
 					</li>
 				</ul>
 			</section>
@@ -108,46 +105,47 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.joineditems.html#inner" class="tsd-kind-icon">inner</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_index_.joineditems.html#outer" class="tsd-kind-icon">outer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_index_.enumerable.stack.html#push" class="tsd-kind-icon">push</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="inner" class="tsd-anchor"></a>
-					<h3>inner</h3>
-					<div class="tsd-signature tsd-kind-icon">inner<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TInner</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in index.ts:149</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The inner value.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="outer" class="tsd-anchor"></a>
-					<h3>outer</h3>
-					<div class="tsd-signature tsd-kind-icon">outer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TOuter</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in index.ts:153</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The outer value.</p>
-						</div>
-					</div>
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="push" class="tsd-anchor"></a>
+					<h3>push</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">push<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:206</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Pushes one or more item to the stack.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The items to push.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The new length of the stack.</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -157,23 +155,17 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_index_.html">"index"</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_index_.joineditems.html" class="tsd-kind-icon">Joined<wbr>Items</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="_index_.enumerable.stack.html" class="tsd-kind-icon">Stack</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.joineditems.html#inner" class="tsd-kind-icon">inner</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_index_.joineditems.html#outer" class="tsd-kind-icon">outer</a>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="_index_.enumerable.stack.html#push" class="tsd-kind-icon">push</a>
 							</li>
 						</ul>
 					</li>

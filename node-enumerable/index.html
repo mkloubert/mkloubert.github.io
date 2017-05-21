@@ -73,7 +73,7 @@
 				<p><a href="https://raw.githubusercontent.com/mkloubert/node-enumerable/master/LICENSE">MIT license</a></p>
 				<h2 id="requirements">Requirements</h2>
 				<ul>
-					<li>a <a href="https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015">ES6</a> environment like <a href="https://nodejs.org/en/">NodeJS</a></li>
+					<li>an <a href="https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015">ES6</a> compatible environment like <a href="https://en.wikipedia.org/wiki/ECMAScript#Implementations">modern browsers</a> or <a href="https://nodejs.org/en/">NodeJS</a></li>
 					<li><a href="https://www.typescriptlang.org/">TypeScript</a> 2.3 or later (when using defintion files)</li>
 				</ul>
 				<h2 id="installation">Installation</h2>
@@ -81,6 +81,25 @@
 				<pre><code class="lang-bash">npm install node-enumerable --save
 </code></pre>
 				<p>inside project folder to install the module.</p>
+				<h3 id="browser">Browser</h3>
+				<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/enumerable.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;</span><span class="javascript">
+
+        <span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>);
+
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> seq) {
+            alert(item);
+        }
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
 				<h2 id="documentation">Documentation</h2>
 				<p>The API documentation can be found <a href="https://mkloubert.github.io/node-enumerable/interfaces/_index_.ienumerable.html">here</a>.</p>
 				<h2 id="usage">Usage</h2>

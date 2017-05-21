@@ -111,6 +111,9 @@
                    <span class="hljs-comment">// want to cancel here</span>
     }
 });
+
+<span class="hljs-comment">// create empty sequence</span>
+<span class="hljs-keyword">let</span> seq7 = Enumerable.empty();
 </code></pre>
 				<h3 id="work-with-them">Work with them</h3>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-number">5979</span>, <span class="hljs-number">23979</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">'23979'</span>, <span class="hljs-number">1781</span>, <span class="hljs-number">241279</span>);
@@ -132,7 +135,7 @@
     <span class="hljs-built_in">console</span>.log(item);
 }
 </code></pre>
-				<p>You can also run async operations:</p>
+				<h4 id="async-operations">Async operations</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> FS = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
 <span class="hljs-keyword">const</span> Path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
 
@@ -158,8 +161,8 @@ seq.async(<span class="hljs-function">(<span class="hljs-params">context</span>)
         FS.readFile(fullPath, (err, data) =&gt; {
             <span class="hljs-keyword">if</span> (err) {
                 context.reject(err);  <span class="hljs-comment">// has to be called if action</span>
-                                    <span class="hljs-comment">// FAILED with the error object</span>
-                                    <span class="hljs-comment">// or value as argument</span>
+                                      <span class="hljs-comment">// FAILED with the error object</span>
+                                      <span class="hljs-comment">// or value as argument</span>
             }
             <span class="hljs-keyword">else</span> {
                 ++context.result;  <span class="hljs-comment">// update counter value</span>

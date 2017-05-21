@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IteratorEnumerable | node-enumerable</title>
+	<title>EnumerableWrapper | node-enumerable</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_index_.html">&quot;index&quot;</a>
 				</li>
 				<li>
-					<a href="_index_.iteratorenumerable.html">IteratorEnumerable</a>
+					<a href="_index_.enumerablewrapper.html">EnumerableWrapper</a>
 				</li>
 			</ul>
-			<h1>Class IteratorEnumerable&lt;T&gt;</h1>
+			<h1>Class EnumerableWrapper&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -72,8 +72,13 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A sequence based on an Iterator<T>.</p>
+						<p>Wraps a sequence.</p>
 					</div>
+					<dl class="tsd-comment-tags">
+						<dt>template</dt>
+						<dd><p>T Type of the items.</p>
+						</dd>
+					</dl>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-type-parameters">
@@ -91,7 +96,15 @@
 						<a href="_index_.enumerablebase.html" class="tsd-signature-type">EnumerableBase</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">IteratorEnumerable</span>
+								<span class="target">EnumerableWrapper</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_index_.grouping.html" class="tsd-signature-type">Grouping</a>
+									</li>
+									<li>
+										<a href="_index_.orderedenumerable.html" class="tsd-signature-type">OrderedEnumerable</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -110,108 +123,108 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_index_.iteratorenumerable.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_index_.enumerablewrapper.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#_current" class="tsd-kind-icon">_current</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#_index" class="tsd-kind-icon">_index</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_index_.iteratorenumerable.html#_iterator" class="tsd-kind-icon">_iterator</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#_current" class="tsd-kind-icon">_current</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#_index" class="tsd-kind-icon">_index</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_index_.enumerablewrapper.html#_sequence" class="tsd-kind-icon">_sequence</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#canreset" class="tsd-kind-icon">can<wbr>Reset</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#current" class="tsd-kind-icon">current</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#index" class="tsd-kind-icon">index</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite"><a href="_index_.enumerablewrapper.html#canreset" class="tsd-kind-icon">can<wbr>Reset</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite"><a href="_index_.enumerablewrapper.html#current" class="tsd-kind-icon">current</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#index" class="tsd-kind-icon">index</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#___iterator" class="tsd-kind-icon">__@iterator</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#aggregate" class="tsd-kind-icon">aggregate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#all" class="tsd-kind-icon">all</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#any" class="tsd-kind-icon">any</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#async" class="tsd-kind-icon">async</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#average" class="tsd-kind-icon">average</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#cast" class="tsd-kind-icon">cast</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#clone" class="tsd-kind-icon">clone</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#cloneinner" class="tsd-kind-icon">clone<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#concat" class="tsd-kind-icon">concat</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#concatarray" class="tsd-kind-icon">concat<wbr>Array</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#concatarrayinner" class="tsd-kind-icon">concat<wbr>Array<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#contains" class="tsd-kind-icon">contains</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#count" class="tsd-kind-icon">count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#defaultifempty" class="tsd-kind-icon">default<wbr>IfEmpty</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#defaultifemptyinner" class="tsd-kind-icon">default<wbr>IfEmpty<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#defaultsequenceifempty" class="tsd-kind-icon">default<wbr>Sequence<wbr>IfEmpty</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#defaultsequenceifemptyinner" class="tsd-kind-icon">default<wbr>Sequence<wbr>IfEmpty<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#distinct" class="tsd-kind-icon">distinct</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#distinctinner" class="tsd-kind-icon">distinct<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#each" class="tsd-kind-icon">each</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#elementat" class="tsd-kind-icon">element<wbr>At</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#elementatordefault" class="tsd-kind-icon">element<wbr>AtOr<wbr>Default</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#except" class="tsd-kind-icon">except</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#exceptinner" class="tsd-kind-icon">except<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#first" class="tsd-kind-icon">first</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#firstordefault" class="tsd-kind-icon">first<wbr>OrDefault</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#foreach" class="tsd-kind-icon">for<wbr>Each</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#groupby" class="tsd-kind-icon">group<wbr>By</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#groupbyinner" class="tsd-kind-icon">group<wbr>ByInner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#groupjoin" class="tsd-kind-icon">group<wbr>Join</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#groupjoininner" class="tsd-kind-icon">group<wbr>Join<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#indexof" class="tsd-kind-icon">index<wbr>Of</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#intersect" class="tsd-kind-icon">intersect</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#intersectinner" class="tsd-kind-icon">intersect<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#join" class="tsd-kind-icon">join</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#joininner" class="tsd-kind-icon">join<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#jointostring" class="tsd-kind-icon">join<wbr>ToString</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#last" class="tsd-kind-icon">last</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#lastindexof" class="tsd-kind-icon">last<wbr>Index<wbr>Of</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#lastordefault" class="tsd-kind-icon">last<wbr>OrDefault</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#makeresettable" class="tsd-kind-icon">make<wbr>Resettable</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#max" class="tsd-kind-icon">max</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#min" class="tsd-kind-icon">min</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_index_.iteratorenumerable.html#next" class="tsd-kind-icon">next</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#notempty" class="tsd-kind-icon">not<wbr>Empty</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#oftype" class="tsd-kind-icon">of<wbr>Type</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#order" class="tsd-kind-icon">order</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#orderby" class="tsd-kind-icon">order<wbr>By</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#orderbydescending" class="tsd-kind-icon">order<wbr>ByDescending</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#orderdescending" class="tsd-kind-icon">order<wbr>Descending</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#product" class="tsd-kind-icon">product</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#pushto" class="tsd-kind-icon">push<wbr>To</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#reset" class="tsd-kind-icon">reset</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#reverse" class="tsd-kind-icon">reverse</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#select" class="tsd-kind-icon">select</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#selectmany" class="tsd-kind-icon">select<wbr>Many</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#selectmanyinner" class="tsd-kind-icon">select<wbr>Many<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#sequenceequal" class="tsd-kind-icon">sequence<wbr>Equal</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#single" class="tsd-kind-icon">single</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#singleordefault" class="tsd-kind-icon">single<wbr>OrDefault</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#skip" class="tsd-kind-icon">skip</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#skiplast" class="tsd-kind-icon">skip<wbr>Last</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#skiplastinner" class="tsd-kind-icon">skip<wbr>Last<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#skipwhile" class="tsd-kind-icon">skip<wbr>While</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#skipwhileinner" class="tsd-kind-icon">skip<wbr>While<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#sum" class="tsd-kind-icon">sum</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#take" class="tsd-kind-icon">take</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#takewhile" class="tsd-kind-icon">take<wbr>While</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#takewhileinner" class="tsd-kind-icon">take<wbr>While<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#toarray" class="tsd-kind-icon">to<wbr>Array</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#tobuffer" class="tsd-kind-icon">to<wbr>Buffer</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#tobufferinner" class="tsd-kind-icon">to<wbr>Buffer<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#tolookup" class="tsd-kind-icon">to<wbr>Lookup</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#toobject" class="tsd-kind-icon">to<wbr>Object</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#union" class="tsd-kind-icon">union</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.iteratorenumerable.html#where" class="tsd-kind-icon">where</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#whereinner" class="tsd-kind-icon">where<wbr>Inner</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.iteratorenumerable.html#zip" class="tsd-kind-icon">zip</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.iteratorenumerable.html#zipinner" class="tsd-kind-icon">zip<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#___iterator" class="tsd-kind-icon">__@iterator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#aggregate" class="tsd-kind-icon">aggregate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#all" class="tsd-kind-icon">all</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#any" class="tsd-kind-icon">any</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#async" class="tsd-kind-icon">async</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#average" class="tsd-kind-icon">average</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#cast" class="tsd-kind-icon">cast</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#clone" class="tsd-kind-icon">clone</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#cloneinner" class="tsd-kind-icon">clone<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#concat" class="tsd-kind-icon">concat</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#concatarray" class="tsd-kind-icon">concat<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#concatarrayinner" class="tsd-kind-icon">concat<wbr>Array<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#contains" class="tsd-kind-icon">contains</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#count" class="tsd-kind-icon">count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#defaultifempty" class="tsd-kind-icon">default<wbr>IfEmpty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#defaultifemptyinner" class="tsd-kind-icon">default<wbr>IfEmpty<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#defaultsequenceifempty" class="tsd-kind-icon">default<wbr>Sequence<wbr>IfEmpty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#defaultsequenceifemptyinner" class="tsd-kind-icon">default<wbr>Sequence<wbr>IfEmpty<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#distinct" class="tsd-kind-icon">distinct</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#distinctinner" class="tsd-kind-icon">distinct<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#each" class="tsd-kind-icon">each</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#elementat" class="tsd-kind-icon">element<wbr>At</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#elementatordefault" class="tsd-kind-icon">element<wbr>AtOr<wbr>Default</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#except" class="tsd-kind-icon">except</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#exceptinner" class="tsd-kind-icon">except<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#first" class="tsd-kind-icon">first</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#firstordefault" class="tsd-kind-icon">first<wbr>OrDefault</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#foreach" class="tsd-kind-icon">for<wbr>Each</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#groupby" class="tsd-kind-icon">group<wbr>By</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#groupbyinner" class="tsd-kind-icon">group<wbr>ByInner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#groupjoin" class="tsd-kind-icon">group<wbr>Join</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#groupjoininner" class="tsd-kind-icon">group<wbr>Join<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#indexof" class="tsd-kind-icon">index<wbr>Of</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#intersect" class="tsd-kind-icon">intersect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#intersectinner" class="tsd-kind-icon">intersect<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#join" class="tsd-kind-icon">join</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#joininner" class="tsd-kind-icon">join<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#jointostring" class="tsd-kind-icon">join<wbr>ToString</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#last" class="tsd-kind-icon">last</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#lastindexof" class="tsd-kind-icon">last<wbr>Index<wbr>Of</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#lastordefault" class="tsd-kind-icon">last<wbr>OrDefault</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#makeresettable" class="tsd-kind-icon">make<wbr>Resettable</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#max" class="tsd-kind-icon">max</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#min" class="tsd-kind-icon">min</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_index_.enumerablewrapper.html#next" class="tsd-kind-icon">next</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#notempty" class="tsd-kind-icon">not<wbr>Empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#oftype" class="tsd-kind-icon">of<wbr>Type</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#order" class="tsd-kind-icon">order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#orderby" class="tsd-kind-icon">order<wbr>By</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#orderbydescending" class="tsd-kind-icon">order<wbr>ByDescending</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#orderdescending" class="tsd-kind-icon">order<wbr>Descending</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#product" class="tsd-kind-icon">product</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#pushto" class="tsd-kind-icon">push<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_index_.enumerablewrapper.html#reset" class="tsd-kind-icon">reset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#reverse" class="tsd-kind-icon">reverse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#select" class="tsd-kind-icon">select</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#selectmany" class="tsd-kind-icon">select<wbr>Many</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#selectmanyinner" class="tsd-kind-icon">select<wbr>Many<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#sequenceequal" class="tsd-kind-icon">sequence<wbr>Equal</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#single" class="tsd-kind-icon">single</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#singleordefault" class="tsd-kind-icon">single<wbr>OrDefault</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#skip" class="tsd-kind-icon">skip</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#skiplast" class="tsd-kind-icon">skip<wbr>Last</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#skiplastinner" class="tsd-kind-icon">skip<wbr>Last<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#skipwhile" class="tsd-kind-icon">skip<wbr>While</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#skipwhileinner" class="tsd-kind-icon">skip<wbr>While<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#sum" class="tsd-kind-icon">sum</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#take" class="tsd-kind-icon">take</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#takewhile" class="tsd-kind-icon">take<wbr>While</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#takewhileinner" class="tsd-kind-icon">take<wbr>While<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#toarray" class="tsd-kind-icon">to<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#tobuffer" class="tsd-kind-icon">to<wbr>Buffer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#tobufferinner" class="tsd-kind-icon">to<wbr>Buffer<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#tolookup" class="tsd-kind-icon">to<wbr>Lookup</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#toobject" class="tsd-kind-icon">to<wbr>Object</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#union" class="tsd-kind-icon">union</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_index_.enumerablewrapper.html#where" class="tsd-kind-icon">where</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#whereinner" class="tsd-kind-icon">where<wbr>Inner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerablewrapper.html#zip" class="tsd-kind-icon">zip</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected"><a href="_index_.enumerablewrapper.html#zipinner" class="tsd-kind-icon">zip<wbr>Inner</a></li>
 							</ul>
 						</section>
 					</div>
@@ -223,27 +236,27 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Iterator<wbr>Enumerable<span class="tsd-signature-symbol">(</span>iterator<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.iteratorenumerable.html" class="tsd-signature-type">IteratorEnumerable</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Enumerable<wbr>Wrapper<span class="tsd-signature-symbol">(</span>seq<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_index_.ienumerable.html" class="tsd-signature-type">IEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.enumerablewrapper.html" class="tsd-signature-type">EnumerableWrapper</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2132</li>
+									<li>Defined in index.ts:2093</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Initializes a new instance of that class.</p>
+									<p>Intializes a new instance of that class.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> iterator: <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> seq: <a href="../interfaces/_index_.ienumerable.html" class="tsd-signature-type">IEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_index_.iteratorenumerable.html" class="tsd-signature-type">IteratorEnumerable</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_index_.enumerablewrapper.html" class="tsd-signature-type">EnumerableWrapper</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -283,35 +296,35 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-					<a name="_iterator" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _iterator</h3>
-					<div class="tsd-signature tsd-kind-icon">_iterator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="_sequence" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _sequence</h3>
+					<div class="tsd-signature tsd-kind-icon">_sequence<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_index_.ienumerable.html" class="tsd-signature-type">IEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:2132</li>
+							<li>Defined in index.ts:2093</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Stores the inner iterator.</p>
+							<p>The wrapped sequence.</p>
 						</div>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
 					<a name="canreset" class="tsd-anchor"></a>
 					<h3>can<wbr>Reset</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> canReset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_index_.enumerablebase.html">EnumerableBase</a>.<a href="_index_.enumerablebase.html#canreset">canReset</a></p>
+								<p>Overrides <a href="_index_.enumerablebase.html">EnumerableBase</a>.<a href="_index_.enumerablebase.html#canreset">canReset</a></p>
 								<ul>
-									<li>Defined in index.ts:1061</li>
+									<li>Defined in index.ts:2107</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -327,18 +340,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
 					<a name="current" class="tsd-anchor"></a>
 					<h3>current</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> current<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IteratorResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_index_.enumerablebase.html">EnumerableBase</a>.<a href="_index_.enumerablebase.html#current">current</a></p>
+								<p>Overrides <a href="_index_.enumerablebase.html">EnumerableBase</a>.<a href="_index_.enumerablebase.html#current">current</a></p>
 								<ul>
-									<li>Defined in index.ts:1142</li>
+									<li>Defined in index.ts:2111</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2271,15 +2284,14 @@
 					<a name="next" class="tsd-anchor"></a>
 					<h3>next</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">next<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IteratorResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">next<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IteratorResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_index_.ienumerable.html">IEnumerable</a>.<a href="../interfaces/_index_.ienumerable.html#next">next</a></p>
 								<p>Overrides <a href="_index_.enumerablebase.html">EnumerableBase</a>.<a href="_index_.enumerablebase.html#next">next</a></p>
 								<ul>
-									<li>Defined in index.ts:2149</li>
+									<li>Defined in index.ts:2115</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2288,12 +2300,6 @@
 									<dd></dd>
 								</dl>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IteratorResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -2564,19 +2570,19 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="reset" class="tsd-anchor"></a>
 					<h3>reset</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_index_.ienumerable.html">IEnumerable</a>.<a href="../interfaces/_index_.ienumerable.html#reset">reset</a></p>
-								<p>Inherited from <a href="_index_.enumerablebase.html">EnumerableBase</a>.<a href="_index_.enumerablebase.html#reset">reset</a></p>
+								<p>Overrides <a href="_index_.enumerablebase.html">EnumerableBase</a>.<a href="_index_.enumerablebase.html#reset">reset</a></p>
 								<ul>
-									<li>Defined in index.ts:1747</li>
+									<li>Defined in index.ts:2119</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3589,268 +3595,268 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_index_.iteratorenumerable.html" class="tsd-kind-icon">Iterator<wbr>Enumerable</a>
+						<a href="_index_.enumerablewrapper.html" class="tsd-kind-icon">Enumerable<wbr>Wrapper</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_index_.iteratorenumerable.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_index_.enumerablewrapper.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#_current" class="tsd-kind-icon">_current</a>
+								<a href="_index_.enumerablewrapper.html#_current" class="tsd-kind-icon">_current</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#_index" class="tsd-kind-icon">_index</a>
+								<a href="_index_.enumerablewrapper.html#_index" class="tsd-kind-icon">_index</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#_iterator" class="tsd-kind-icon">_iterator</a>
+								<a href="_index_.enumerablewrapper.html#_sequence" class="tsd-kind-icon">_sequence</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_index_.enumerablewrapper.html#canreset" class="tsd-kind-icon">can<wbr>Reset</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_index_.enumerablewrapper.html#current" class="tsd-kind-icon">current</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#canreset" class="tsd-kind-icon">can<wbr>Reset</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#current" class="tsd-kind-icon">current</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#index" class="tsd-kind-icon">index</a>
+								<a href="_index_.enumerablewrapper.html#index" class="tsd-kind-icon">index</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#___iterator" class="tsd-kind-icon">__@iterator</a>
+								<a href="_index_.enumerablewrapper.html#___iterator" class="tsd-kind-icon">__@iterator</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#aggregate" class="tsd-kind-icon">aggregate</a>
+								<a href="_index_.enumerablewrapper.html#aggregate" class="tsd-kind-icon">aggregate</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#all" class="tsd-kind-icon">all</a>
+								<a href="_index_.enumerablewrapper.html#all" class="tsd-kind-icon">all</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#any" class="tsd-kind-icon">any</a>
+								<a href="_index_.enumerablewrapper.html#any" class="tsd-kind-icon">any</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#async" class="tsd-kind-icon">async</a>
+								<a href="_index_.enumerablewrapper.html#async" class="tsd-kind-icon">async</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#average" class="tsd-kind-icon">average</a>
+								<a href="_index_.enumerablewrapper.html#average" class="tsd-kind-icon">average</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#cast" class="tsd-kind-icon">cast</a>
+								<a href="_index_.enumerablewrapper.html#cast" class="tsd-kind-icon">cast</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#clone" class="tsd-kind-icon">clone</a>
+								<a href="_index_.enumerablewrapper.html#clone" class="tsd-kind-icon">clone</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#cloneinner" class="tsd-kind-icon">clone<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#cloneinner" class="tsd-kind-icon">clone<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#concat" class="tsd-kind-icon">concat</a>
+								<a href="_index_.enumerablewrapper.html#concat" class="tsd-kind-icon">concat</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#concatarray" class="tsd-kind-icon">concat<wbr>Array</a>
+								<a href="_index_.enumerablewrapper.html#concatarray" class="tsd-kind-icon">concat<wbr>Array</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#concatarrayinner" class="tsd-kind-icon">concat<wbr>Array<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#concatarrayinner" class="tsd-kind-icon">concat<wbr>Array<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#contains" class="tsd-kind-icon">contains</a>
+								<a href="_index_.enumerablewrapper.html#contains" class="tsd-kind-icon">contains</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#count" class="tsd-kind-icon">count</a>
+								<a href="_index_.enumerablewrapper.html#count" class="tsd-kind-icon">count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#defaultifempty" class="tsd-kind-icon">default<wbr>IfEmpty</a>
+								<a href="_index_.enumerablewrapper.html#defaultifempty" class="tsd-kind-icon">default<wbr>IfEmpty</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#defaultifemptyinner" class="tsd-kind-icon">default<wbr>IfEmpty<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#defaultifemptyinner" class="tsd-kind-icon">default<wbr>IfEmpty<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#defaultsequenceifempty" class="tsd-kind-icon">default<wbr>Sequence<wbr>IfEmpty</a>
+								<a href="_index_.enumerablewrapper.html#defaultsequenceifempty" class="tsd-kind-icon">default<wbr>Sequence<wbr>IfEmpty</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#defaultsequenceifemptyinner" class="tsd-kind-icon">default<wbr>Sequence<wbr>IfEmpty<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#defaultsequenceifemptyinner" class="tsd-kind-icon">default<wbr>Sequence<wbr>IfEmpty<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#distinct" class="tsd-kind-icon">distinct</a>
+								<a href="_index_.enumerablewrapper.html#distinct" class="tsd-kind-icon">distinct</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#distinctinner" class="tsd-kind-icon">distinct<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#distinctinner" class="tsd-kind-icon">distinct<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#each" class="tsd-kind-icon">each</a>
+								<a href="_index_.enumerablewrapper.html#each" class="tsd-kind-icon">each</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#elementat" class="tsd-kind-icon">element<wbr>At</a>
+								<a href="_index_.enumerablewrapper.html#elementat" class="tsd-kind-icon">element<wbr>At</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#elementatordefault" class="tsd-kind-icon">element<wbr>AtOr<wbr>Default</a>
+								<a href="_index_.enumerablewrapper.html#elementatordefault" class="tsd-kind-icon">element<wbr>AtOr<wbr>Default</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#except" class="tsd-kind-icon">except</a>
+								<a href="_index_.enumerablewrapper.html#except" class="tsd-kind-icon">except</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#exceptinner" class="tsd-kind-icon">except<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#exceptinner" class="tsd-kind-icon">except<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#first" class="tsd-kind-icon">first</a>
+								<a href="_index_.enumerablewrapper.html#first" class="tsd-kind-icon">first</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#firstordefault" class="tsd-kind-icon">first<wbr>OrDefault</a>
+								<a href="_index_.enumerablewrapper.html#firstordefault" class="tsd-kind-icon">first<wbr>OrDefault</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#foreach" class="tsd-kind-icon">for<wbr>Each</a>
+								<a href="_index_.enumerablewrapper.html#foreach" class="tsd-kind-icon">for<wbr>Each</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#groupby" class="tsd-kind-icon">group<wbr>By</a>
+								<a href="_index_.enumerablewrapper.html#groupby" class="tsd-kind-icon">group<wbr>By</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#groupbyinner" class="tsd-kind-icon">group<wbr>ByInner</a>
+								<a href="_index_.enumerablewrapper.html#groupbyinner" class="tsd-kind-icon">group<wbr>ByInner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#groupjoin" class="tsd-kind-icon">group<wbr>Join</a>
+								<a href="_index_.enumerablewrapper.html#groupjoin" class="tsd-kind-icon">group<wbr>Join</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#groupjoininner" class="tsd-kind-icon">group<wbr>Join<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#groupjoininner" class="tsd-kind-icon">group<wbr>Join<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#indexof" class="tsd-kind-icon">index<wbr>Of</a>
+								<a href="_index_.enumerablewrapper.html#indexof" class="tsd-kind-icon">index<wbr>Of</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#intersect" class="tsd-kind-icon">intersect</a>
+								<a href="_index_.enumerablewrapper.html#intersect" class="tsd-kind-icon">intersect</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#intersectinner" class="tsd-kind-icon">intersect<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#intersectinner" class="tsd-kind-icon">intersect<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#join" class="tsd-kind-icon">join</a>
+								<a href="_index_.enumerablewrapper.html#join" class="tsd-kind-icon">join</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#joininner" class="tsd-kind-icon">join<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#joininner" class="tsd-kind-icon">join<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#jointostring" class="tsd-kind-icon">join<wbr>ToString</a>
+								<a href="_index_.enumerablewrapper.html#jointostring" class="tsd-kind-icon">join<wbr>ToString</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#last" class="tsd-kind-icon">last</a>
+								<a href="_index_.enumerablewrapper.html#last" class="tsd-kind-icon">last</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#lastindexof" class="tsd-kind-icon">last<wbr>Index<wbr>Of</a>
+								<a href="_index_.enumerablewrapper.html#lastindexof" class="tsd-kind-icon">last<wbr>Index<wbr>Of</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#lastordefault" class="tsd-kind-icon">last<wbr>OrDefault</a>
+								<a href="_index_.enumerablewrapper.html#lastordefault" class="tsd-kind-icon">last<wbr>OrDefault</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#makeresettable" class="tsd-kind-icon">make<wbr>Resettable</a>
+								<a href="_index_.enumerablewrapper.html#makeresettable" class="tsd-kind-icon">make<wbr>Resettable</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#max" class="tsd-kind-icon">max</a>
+								<a href="_index_.enumerablewrapper.html#max" class="tsd-kind-icon">max</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#min" class="tsd-kind-icon">min</a>
+								<a href="_index_.enumerablewrapper.html#min" class="tsd-kind-icon">min</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
-								<a href="_index_.iteratorenumerable.html#next" class="tsd-kind-icon">next</a>
+								<a href="_index_.enumerablewrapper.html#next" class="tsd-kind-icon">next</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#notempty" class="tsd-kind-icon">not<wbr>Empty</a>
+								<a href="_index_.enumerablewrapper.html#notempty" class="tsd-kind-icon">not<wbr>Empty</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#oftype" class="tsd-kind-icon">of<wbr>Type</a>
+								<a href="_index_.enumerablewrapper.html#oftype" class="tsd-kind-icon">of<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#order" class="tsd-kind-icon">order</a>
+								<a href="_index_.enumerablewrapper.html#order" class="tsd-kind-icon">order</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#orderby" class="tsd-kind-icon">order<wbr>By</a>
+								<a href="_index_.enumerablewrapper.html#orderby" class="tsd-kind-icon">order<wbr>By</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#orderbydescending" class="tsd-kind-icon">order<wbr>ByDescending</a>
+								<a href="_index_.enumerablewrapper.html#orderbydescending" class="tsd-kind-icon">order<wbr>ByDescending</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#orderdescending" class="tsd-kind-icon">order<wbr>Descending</a>
+								<a href="_index_.enumerablewrapper.html#orderdescending" class="tsd-kind-icon">order<wbr>Descending</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#product" class="tsd-kind-icon">product</a>
+								<a href="_index_.enumerablewrapper.html#product" class="tsd-kind-icon">product</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#pushto" class="tsd-kind-icon">push<wbr>To</a>
+								<a href="_index_.enumerablewrapper.html#pushto" class="tsd-kind-icon">push<wbr>To</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#reset" class="tsd-kind-icon">reset</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#reverse" class="tsd-kind-icon">reverse</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_index_.enumerablewrapper.html#reset" class="tsd-kind-icon">reset</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#select" class="tsd-kind-icon">select</a>
+								<a href="_index_.enumerablewrapper.html#reverse" class="tsd-kind-icon">reverse</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#selectmany" class="tsd-kind-icon">select<wbr>Many</a>
+								<a href="_index_.enumerablewrapper.html#select" class="tsd-kind-icon">select</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+								<a href="_index_.enumerablewrapper.html#selectmany" class="tsd-kind-icon">select<wbr>Many</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#selectmanyinner" class="tsd-kind-icon">select<wbr>Many<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#selectmanyinner" class="tsd-kind-icon">select<wbr>Many<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#sequenceequal" class="tsd-kind-icon">sequence<wbr>Equal</a>
+								<a href="_index_.enumerablewrapper.html#sequenceequal" class="tsd-kind-icon">sequence<wbr>Equal</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#single" class="tsd-kind-icon">single</a>
+								<a href="_index_.enumerablewrapper.html#single" class="tsd-kind-icon">single</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#singleordefault" class="tsd-kind-icon">single<wbr>OrDefault</a>
+								<a href="_index_.enumerablewrapper.html#singleordefault" class="tsd-kind-icon">single<wbr>OrDefault</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#skip" class="tsd-kind-icon">skip</a>
+								<a href="_index_.enumerablewrapper.html#skip" class="tsd-kind-icon">skip</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#skiplast" class="tsd-kind-icon">skip<wbr>Last</a>
+								<a href="_index_.enumerablewrapper.html#skiplast" class="tsd-kind-icon">skip<wbr>Last</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#skiplastinner" class="tsd-kind-icon">skip<wbr>Last<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#skiplastinner" class="tsd-kind-icon">skip<wbr>Last<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#skipwhile" class="tsd-kind-icon">skip<wbr>While</a>
+								<a href="_index_.enumerablewrapper.html#skipwhile" class="tsd-kind-icon">skip<wbr>While</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#skipwhileinner" class="tsd-kind-icon">skip<wbr>While<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#skipwhileinner" class="tsd-kind-icon">skip<wbr>While<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#sum" class="tsd-kind-icon">sum</a>
+								<a href="_index_.enumerablewrapper.html#sum" class="tsd-kind-icon">sum</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#take" class="tsd-kind-icon">take</a>
+								<a href="_index_.enumerablewrapper.html#take" class="tsd-kind-icon">take</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#takewhile" class="tsd-kind-icon">take<wbr>While</a>
+								<a href="_index_.enumerablewrapper.html#takewhile" class="tsd-kind-icon">take<wbr>While</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#takewhileinner" class="tsd-kind-icon">take<wbr>While<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#takewhileinner" class="tsd-kind-icon">take<wbr>While<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#toarray" class="tsd-kind-icon">to<wbr>Array</a>
+								<a href="_index_.enumerablewrapper.html#toarray" class="tsd-kind-icon">to<wbr>Array</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#tobuffer" class="tsd-kind-icon">to<wbr>Buffer</a>
+								<a href="_index_.enumerablewrapper.html#tobuffer" class="tsd-kind-icon">to<wbr>Buffer</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#tobufferinner" class="tsd-kind-icon">to<wbr>Buffer<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#tobufferinner" class="tsd-kind-icon">to<wbr>Buffer<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#tolookup" class="tsd-kind-icon">to<wbr>Lookup</a>
+								<a href="_index_.enumerablewrapper.html#tolookup" class="tsd-kind-icon">to<wbr>Lookup</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#toobject" class="tsd-kind-icon">to<wbr>Object</a>
+								<a href="_index_.enumerablewrapper.html#toobject" class="tsd-kind-icon">to<wbr>Object</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#union" class="tsd-kind-icon">union</a>
+								<a href="_index_.enumerablewrapper.html#union" class="tsd-kind-icon">union</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#where" class="tsd-kind-icon">where</a>
+								<a href="_index_.enumerablewrapper.html#where" class="tsd-kind-icon">where</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#whereinner" class="tsd-kind-icon">where<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#whereinner" class="tsd-kind-icon">where<wbr>Inner</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-								<a href="_index_.iteratorenumerable.html#zip" class="tsd-kind-icon">zip</a>
+								<a href="_index_.enumerablewrapper.html#zip" class="tsd-kind-icon">zip</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-protected">
-								<a href="_index_.iteratorenumerable.html#zipinner" class="tsd-kind-icon">zip<wbr>Inner</a>
+								<a href="_index_.enumerablewrapper.html#zipinner" class="tsd-kind-icon">zip<wbr>Inner</a>
 							</li>
 						</ul>
 					</li>

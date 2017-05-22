@@ -358,24 +358,32 @@ var Enumerable;
         }
         /** @inheritdoc */
         distinct(comparer) {
+            return this.distinctBy(x => x, comparer);
+        }
+        /** @inheritdoc */
+        distinctBy(selector, comparer) {
+            if (!selector) {
+                selector = (i) => i;
+            }
             comparer = toEqualityComparerSafe(comparer);
-            return from(this.distinctInner(comparer));
+            return from(this.distinctByInner(selector, comparer));
         }
         /**
          * @see distinct()
          */
-        *distinctInner(comparer) {
+        *distinctByInner(selector, comparer) {
             let temp = [];
             for (let item of this) {
+                let keyItem = selector(item);
                 let found = false;
                 for (let t of temp) {
-                    if (comparer(item, t)) {
+                    if (comparer(keyItem, t)) {
                         found = true;
                         break;
                     }
                 }
                 if (!found) {
-                    temp.push(item);
+                    temp.push(keyItem);
                     yield item;
                 }
             }

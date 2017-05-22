@@ -74,7 +74,7 @@
 					<div class="lead">
 						<p>node-enumerable (<a href="https://github.com/mkloubert/node-enumerable">https://github.com/mkloubert/node-enumerable</a>)</p>
 					</div>
-					<p>Copyright (c) Marcel Joachim Kloubert <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#109;&#97;&#x72;&#99;&#x65;&#x6c;&#x2e;&#107;&#x6c;&#111;&#117;&#98;&#x65;&#114;&#x74;&#64;&#x67;&#x6d;&#120;&#46;&#x6e;&#101;&#x74;">&#109;&#97;&#x72;&#99;&#x65;&#x6c;&#x2e;&#107;&#x6c;&#111;&#117;&#98;&#x65;&#114;&#x74;&#64;&#x67;&#x6d;&#120;&#46;&#x6e;&#101;&#x74;</a></p>
+					<p>Copyright (c) Marcel Joachim Kloubert <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x6d;&#x61;&#x72;&#x63;&#101;&#108;&#46;&#107;&#108;&#x6f;&#x75;&#x62;&#x65;&#x72;&#x74;&#x40;&#103;&#x6d;&#x78;&#x2e;&#110;&#101;&#116;">&#x6d;&#x61;&#x72;&#x63;&#101;&#108;&#46;&#107;&#108;&#x6f;&#x75;&#x62;&#x65;&#x72;&#x74;&#x40;&#103;&#x6d;&#x78;&#x2e;&#110;&#101;&#116;</a></p>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -109,7 +109,7 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_index_.enumerable.html#asyncaction" class="tsd-kind-icon">Async<wbr>Action</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_index_.enumerable.html#cancelablefactory" class="tsd-kind-icon">Cancelable<wbr>Factory</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_index_.enumerable.html#comparer" class="tsd-kind-icon">Comparer</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_index_.enumerable.html#eachfunc" class="tsd-kind-icon">Each<wbr>Func</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_index_.enumerable.html#eachaction" class="tsd-kind-icon">Each<wbr>Action</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_index_.enumerable.html#equalitycomparer" class="tsd-kind-icon">Equality<wbr>Comparer</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_index_.enumerable.html#predicate" class="tsd-kind-icon">Predicate</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_index_.enumerable.html#selector" class="tsd-kind-icon">Selector</a></li>
@@ -329,33 +329,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
-					<a name="eachfunc" class="tsd-anchor"></a>
-					<h3>Each<wbr>Func</h3>
-					<div class="tsd-signature tsd-kind-icon">Each<wbr>Func<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<a name="eachaction" class="tsd-anchor"></a>
+					<h3>Each<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">Each<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:131</li>
+							<li>Defined in index.ts:129</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A forEach function.</p>
+							<p>A forEach action.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>template</dt>
 							<dd><p>T Type of the items.</p>
-							</dd>
-							<dt>template</dt>
-							<dd><p>TResult Type of the result(s).</p>
 							</dd>
 							<dt>param</dt>
 							<dd><p>The current item.</p>
 							</dd>
 							<dt>param</dt>
 							<dd><p>The zero based index of the current item.</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>The current result value.</p>
 							</dd>
 						</dl>
 					</div>
@@ -364,7 +358,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TResult</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -376,11 +370,8 @@
 											<li>
 												<h5>index: <span class="tsd-signature-type">number</span></h5>
 											</li>
-											<li>
-												<h5>result: <span class="tsd-signature-type">TResult</span></h5>
-											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TResult</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -393,7 +384,7 @@
 					<div class="tsd-signature tsd-kind-icon">Equality<wbr>Comparer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:144</li>
+							<li>Defined in index.ts:142</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -449,7 +440,7 @@
 					<div class="tsd-signature tsd-kind-icon">Predicate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:172</li>
+							<li>Defined in index.ts:170</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -496,7 +487,7 @@
 					<div class="tsd-signature tsd-kind-icon">Selector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:184</li>
+							<li>Defined in index.ts:182</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -546,7 +537,7 @@
 					<div class="tsd-signature tsd-kind-icon">Sequence<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ArrayLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Iterable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Iterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IArguments</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:191</li>
+							<li>Defined in index.ts:189</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -569,7 +560,7 @@
 					<div class="tsd-signature tsd-kind-icon">IS_<wbr>EMPTY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> =&nbsp;Symbol(&#x27;IS_EMPTY&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:213</li>
+							<li>Defined in index.ts:211</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -584,7 +575,7 @@
 					<div class="tsd-signature tsd-kind-icon">NOT_<wbr>FOUND<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> =&nbsp;Symbol(&#x27;NOT_FOUND&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:217</li>
+							<li>Defined in index.ts:215</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -606,7 +597,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2652</li>
+									<li>Defined in index.ts:2721</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -635,7 +626,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2423</li>
+									<li>Defined in index.ts:2492</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -680,7 +671,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2430</li>
+									<li>Defined in index.ts:2499</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -712,7 +703,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2468</li>
+									<li>Defined in index.ts:2537</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -758,7 +749,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2475</li>
+									<li>Defined in index.ts:2544</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -790,7 +781,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2517</li>
+									<li>Defined in index.ts:2586</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -833,7 +824,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2669</li>
+									<li>Defined in index.ts:2738</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -868,7 +859,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2528</li>
+									<li>Defined in index.ts:2597</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -902,7 +893,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2679</li>
+									<li>Defined in index.ts:2748</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -919,7 +910,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2539</li>
+									<li>Defined in index.ts:2608</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -957,7 +948,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2562</li>
+									<li>Defined in index.ts:2631</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -989,7 +980,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2713</li>
+									<li>Defined in index.ts:2782</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1021,7 +1012,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2685</li>
+									<li>Defined in index.ts:2754</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1085,7 +1076,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2578</li>
+									<li>Defined in index.ts:2647</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1117,7 +1108,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2725</li>
+									<li>Defined in index.ts:2794</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1140,7 +1131,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2589</li>
+									<li>Defined in index.ts:2658</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1172,7 +1163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2601</li>
+									<li>Defined in index.ts:2670</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1207,7 +1198,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2612</li>
+									<li>Defined in index.ts:2681</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1233,7 +1224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2633</li>
+									<li>Defined in index.ts:2702</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1274,7 +1265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2639</li>
+									<li>Defined in index.ts:2708</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1306,7 +1297,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2730</li>
+									<li>Defined in index.ts:2799</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1338,7 +1329,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2752</li>
+									<li>Defined in index.ts:2821</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1370,7 +1361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2763</li>
+									<li>Defined in index.ts:2832</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1402,7 +1393,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2777</li>
+									<li>Defined in index.ts:2846</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1473,7 +1464,7 @@
 						<a href="_index_.enumerable.html#comparer" class="tsd-kind-icon">Comparer</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="_index_.enumerable.html#eachfunc" class="tsd-kind-icon">Each<wbr>Func</a>
+						<a href="_index_.enumerable.html#eachaction" class="tsd-kind-icon">Each<wbr>Action</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_index_.enumerable.html#equalitycomparer" class="tsd-kind-icon">Equality<wbr>Comparer</a>

@@ -74,7 +74,7 @@
 					<div class="lead">
 						<p>node-enumerable (<a href="https://github.com/mkloubert/node-enumerable">https://github.com/mkloubert/node-enumerable</a>)</p>
 					</div>
-					<p>Copyright (c) Marcel Joachim Kloubert <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x6d;&#x61;&#x72;&#x63;&#101;&#108;&#46;&#107;&#108;&#x6f;&#x75;&#x62;&#x65;&#x72;&#x74;&#x40;&#103;&#x6d;&#x78;&#x2e;&#110;&#101;&#116;">&#x6d;&#x61;&#x72;&#x63;&#101;&#108;&#46;&#107;&#108;&#x6f;&#x75;&#x62;&#x65;&#x72;&#x74;&#x40;&#103;&#x6d;&#x78;&#x2e;&#110;&#101;&#116;</a></p>
+					<p>Copyright (c) Marcel Joachim Kloubert <a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#109;&#x61;&#114;&#99;&#101;&#x6c;&#x2e;&#107;&#108;&#x6f;&#117;&#x62;&#101;&#114;&#x74;&#64;&#x67;&#x6d;&#x78;&#x2e;&#110;&#101;&#116;">&#109;&#x61;&#114;&#99;&#101;&#x6c;&#x2e;&#107;&#108;&#x6f;&#117;&#x62;&#101;&#114;&#x74;&#64;&#x67;&#x6d;&#x78;&#x2e;&#110;&#101;&#116;</a></p>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -146,6 +146,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_index_.enumerable.html#rangeinner" class="tsd-kind-icon">range<wbr>Inner</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#repeat" class="tsd-kind-icon">repeat</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#repeatinner" class="tsd-kind-icon">repeat<wbr>Inner</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#sort" class="tsd-kind-icon">sort</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#sortdesc" class="tsd-kind-icon">sort<wbr>Desc</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#tocomparersafe" class="tsd-kind-icon">to<wbr>Comparer<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#toequalitycomparersafe" class="tsd-kind-icon">to<wbr>Equality<wbr>Comparer<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#topredicatesafe" class="tsd-kind-icon">to<wbr>Predicate<wbr>Safe</a></li>
@@ -597,7 +599,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2721</li>
+									<li>Defined in index.ts:2761</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -824,7 +826,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2738</li>
+									<li>Defined in index.ts:2778</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -893,7 +895,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2748</li>
+									<li>Defined in index.ts:2788</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -980,7 +982,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2782</li>
+									<li>Defined in index.ts:2822</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1012,7 +1014,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2754</li>
+									<li>Defined in index.ts:2794</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1108,7 +1110,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2794</li>
+									<li>Defined in index.ts:2834</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1288,6 +1290,116 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="sort" class="tsd-anchor"></a>
+					<h3>sort</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">sort&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><a href="_index_.enumerable.html#sequence" class="tsd-signature-type">Sequence</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, selector<span class="tsd-signature-symbol">?: </span><a href="_index_.enumerable.html#selector" class="tsd-signature-type">Selector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, comparer<span class="tsd-signature-symbol">?: </span><a href="_index_.enumerable.html#comparer" class="tsd-signature-type">Comparer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_index_.enumerable.iorderedenumerable.html" class="tsd-signature-type">IOrderedEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:2732</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a sorted sequence.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>template</dt>
+									<dd><p>T Type of the items.</p>
+									</dd>
+									<dt>template</dt>
+									<dd><p>U Type of the keys.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>U</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>items: <a href="_index_.enumerable.html#sequence" class="tsd-signature-type">Sequence</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The items to sort.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> selector: <a href="_index_.enumerable.html#selector" class="tsd-signature-type">Selector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> comparer: <a href="_index_.enumerable.html#comparer" class="tsd-signature-type">Comparer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_index_.enumerable.iorderedenumerable.html" class="tsd-signature-type">IOrderedEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The sorted sequence.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="sortdesc" class="tsd-anchor"></a>
+					<h3>sort<wbr>Desc</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">sort<wbr>Desc&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><a href="_index_.enumerable.html#sequence" class="tsd-signature-type">Sequence</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, selector<span class="tsd-signature-symbol">?: </span><a href="_index_.enumerable.html#selector" class="tsd-signature-type">Selector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span>, comparer<span class="tsd-signature-symbol">?: </span><a href="_index_.enumerable.html#comparer" class="tsd-signature-type">Comparer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_index_.enumerable.iorderedenumerable.html" class="tsd-signature-type">IOrderedEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:2752</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a sorted sequence (descending).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>template</dt>
+									<dd><p>T Type of the items.</p>
+									</dd>
+									<dt>template</dt>
+									<dd><p>U Type of the keys.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>U</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>items: <a href="_index_.enumerable.html#sequence" class="tsd-signature-type">Sequence</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The items to sort.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> selector: <a href="_index_.enumerable.html#selector" class="tsd-signature-type">Selector</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> comparer: <a href="_index_.enumerable.html#comparer" class="tsd-signature-type">Comparer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_index_.enumerable.iorderedenumerable.html" class="tsd-signature-type">IOrderedEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The sorted sequence.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="tocomparersafe" class="tsd-anchor"></a>
 					<h3>to<wbr>Comparer<wbr>Safe</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
@@ -1297,7 +1409,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2799</li>
+									<li>Defined in index.ts:2839</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1329,7 +1441,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2821</li>
+									<li>Defined in index.ts:2861</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1361,7 +1473,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2832</li>
+									<li>Defined in index.ts:2872</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1393,7 +1505,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2846</li>
+									<li>Defined in index.ts:2886</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1543,6 +1655,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_index_.enumerable.html#repeatinner" class="tsd-kind-icon">repeat<wbr>Inner</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="_index_.enumerable.html#sort" class="tsd-kind-icon">sort</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="_index_.enumerable.html#sortdesc" class="tsd-kind-icon">sort<wbr>Desc</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_index_.enumerable.html#tocomparersafe" class="tsd-kind-icon">to<wbr>Comparer<wbr>Safe</a>

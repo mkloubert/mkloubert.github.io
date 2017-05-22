@@ -132,6 +132,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_objects_.multitargetdeploypluginbase.html#comparefiles" class="tsd-kind-icon">compare<wbr>Files</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_objects_.multitargetdeploypluginbase.html#compareworkspace" class="tsd-kind-icon">compare<wbr>Workspace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_objects_.multitargetdeploypluginbase.html#createcontext" class="tsd-kind-icon">create<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_objects_.multitargetdeploypluginbase.html#createdatatransformercontext" class="tsd-kind-icon">create<wbr>Data<wbr>Transformer<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_objects_.multitargetdeploypluginbase.html#deployfile" class="tsd-kind-icon">deploy<wbr>File</a></li>
@@ -268,7 +269,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#context">context</a></p>
 								<ul>
-									<li>Defined in objects.ts:179</li>
+									<li>Defined in objects.ts:201</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -319,6 +320,42 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="compareworkspace" class="tsd-anchor"></a>
+					<h3>compare<wbr>Workspace</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Workspace<span class="tsd-signature-symbol">(</span>files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_contracts_.filecompareresult.html" class="tsd-signature-type">FileCompareResult</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#compareworkspace">compareWorkspace</a></p>
+								<ul>
+									<li>Defined in objects.ts:177</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>target: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_contracts_.filecompareresult.html" class="tsd-signature-type">FileCompareResult</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="createcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Context</h3>
@@ -329,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in objects.ts:1712</li>
+									<li>Defined in objects.ts:1938</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -362,7 +399,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#createdatatransformercontext">createDataTransformerContext</a></p>
 								<ul>
-									<li>Defined in objects.ts:190</li>
+									<li>Defined in objects.ts:212</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -404,7 +441,7 @@
 								<p>Inherited from <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#deployfile">deployFile</a></p>
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#deployfile">deployFile</a></p>
 								<ul>
-									<li>Defined in objects.ts:650</li>
+									<li>Defined in objects.ts:672</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -440,7 +477,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#deployworkspace">deployWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:1715</li>
+									<li>Defined in objects.ts:1941</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -476,7 +513,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#dispose">dispose</a></p>
 								<ul>
-									<li>Defined in objects.ts:311</li>
+									<li>Defined in objects.ts:333</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -500,7 +537,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#downloadfile">downloadFile</a></p>
 								<ul>
-									<li>Defined in objects.ts:317</li>
+									<li>Defined in objects.ts:339</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -539,7 +576,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#getfileinfo">getFileInfo</a></p>
 								<ul>
-									<li>Defined in objects.ts:322</li>
+									<li>Defined in objects.ts:344</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -578,7 +615,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#gettargetswithplugins">getTargetsWithPlugins</a></p>
 								<ul>
-									<li>Defined in objects.ts:334</li>
+									<li>Defined in objects.ts:356</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -617,7 +654,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#loaddatatransformer">loadDataTransformer</a></p>
 								<ul>
-									<li>Defined in objects.ts:407</li>
+									<li>Defined in objects.ts:429</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -683,7 +720,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#oncancelling">onCancelling</a></p>
 								<ul>
-									<li>Defined in objects.ts:448</li>
+									<li>Defined in objects.ts:470</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -718,7 +755,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#onconfigreloaded">onConfigReloaded</a></p>
 								<ul>
-									<li>Defined in objects.ts:467</li>
+									<li>Defined in objects.ts:489</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -751,7 +788,7 @@
 								<p>Inherited from <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#pullfile">pullFile</a></p>
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#pullfile">pullFile</a></p>
 								<ul>
-									<li>Defined in objects.ts:687</li>
+									<li>Defined in objects.ts:709</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -787,7 +824,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#pullworkspace">pullWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:1844</li>
+									<li>Defined in objects.ts:2070</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -858,6 +895,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_objects_.multitargetdeploypluginbase.html#comparefiles" class="tsd-kind-icon">compare<wbr>Files</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_objects_.multitargetdeploypluginbase.html#compareworkspace" class="tsd-kind-icon">compare<wbr>Workspace</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 								<a href="_objects_.multitargetdeploypluginbase.html#createcontext" class="tsd-kind-icon">create<wbr>Context</a>

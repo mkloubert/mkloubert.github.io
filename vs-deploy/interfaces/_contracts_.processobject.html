@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TemplateFile | vs-deploy</title>
+	<title>ProcessObject | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.templatefile.html">TemplateFile</a>
+					<a href="_contracts_.processobject.html">ProcessObject</a>
 				</li>
 			</ul>
-			<h1>Interface TemplateFile</h1>
+			<h1>Interface ProcessObject</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,8 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A template file.</p>
+						<p>An object that creates or handles a process
+						of an operating system.</p>
 					</div>
 				</div>
 			</section>
@@ -80,10 +81,16 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_contracts_.templateitem.html" class="tsd-signature-type">TemplateItem</a>
+						<span class="target">ProcessObject</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">TemplateFile</span>
+								<a href="_contracts_.deployopenoperation.html" class="tsd-signature-type">DeployOpenOperation</a>
+							</li>
+							<li>
+								<a href="_contracts_.deploywebdeployoperation.html" class="tsd-signature-type">DeployWebDeployOperation</a>
+							</li>
+							<li>
+								<a href="_plugins_app_.deploytargetapp.html" class="tsd-signature-type">DeployTargetApp</a>
 							</li>
 						</ul>
 					</li>
@@ -96,13 +103,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.templatefile.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.templatefile.html#icon" class="tsd-kind-icon">icon</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.templatefile.html#isdocument" class="tsd-kind-icon">is<wbr>Document</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.templatefile.html#requires" class="tsd-kind-icon">requires</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.templatefile.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.templatefile.html#source" class="tsd-kind-icon">source</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="_contracts_.templatefile.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.processobject.html#envvars" class="tsd-kind-icon">env<wbr>Vars</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.processobject.html#noplaceholdersforthesevars" class="tsd-kind-icon">no<wbr>Placeholders<wbr>For<wbr>These<wbr>Vars</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.processobject.html#useenvvarsofworkspace" class="tsd-kind-icon">use<wbr>Env<wbr>Vars<wbr>OfWorkspace</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,114 +114,57 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="description" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="envvars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> env<wbr>Vars</h3>
+					<div class="tsd-signature tsd-kind-icon">env<wbr>Vars<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:2356</li>
+							<li>Defined in contracts.ts:2069</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A description for the item.</p>
+							<p>A list of optional environment variables to use.</p>
 						</div>
 					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="icon" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> icon</h3>
-					<div class="tsd-signature tsd-kind-icon">icon<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="noplaceholdersforthesevars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Placeholders<wbr>For<wbr>These<wbr>Vars</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Placeholders<wbr>For<wbr>These<wbr>Vars<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.templateitem.html">TemplateItem</a>.<a href="_contracts_.templateitem.html#icon">icon</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2376</li>
+							<li>Defined in contracts.ts:2073</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The name of the custom icon.</p>
+							<p>A list of variables that should NOT use placeholders / values.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="isdocument" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Document</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Document<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="useenvvarsofworkspace" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Env<wbr>Vars<wbr>OfWorkspace</h3>
+					<div class="tsd-signature tsd-kind-icon">use<wbr>Env<wbr>Vars<wbr>OfWorkspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:2360</li>
+							<li>Defined in contracts.ts:2078</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets if the file in an (HTML) document or not.</p>
+							<p>Also use environment variables of the process of
+							current workspace or not.</p>
 						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="requires" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> requires</h3>
-					<div class="tsd-signature tsd-kind-icon">requires<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.templateitem.html">TemplateItem</a>.<a href="_contracts_.templateitem.html#requires">requires</a></p>
-						<ul>
-							<li>Defined in contracts.ts:2381</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The minimum version of that extension
-							that is required to display the item.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="sortorder" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> sort<wbr>Order</h3>
-					<div class="tsd-signature tsd-kind-icon">sort<wbr>Order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.templateitem.html">TemplateItem</a>.<a href="_contracts_.templateitem.html#sortorder">sortOrder</a></p>
-						<ul>
-							<li>Defined in contracts.ts:2385</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A custom sort order.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="source" class="tsd-anchor"></a>
-					<h3>source</h3>
-					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:2364</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The source of the file.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"f"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"file"</span></div>
-					<aside class="tsd-sources">
-						<p>Overrides <a href="_contracts_.templateitem.html">TemplateItem</a>.<a href="_contracts_.templateitem.html#type">type</a></p>
-						<ul>
-							<li>Defined in contracts.ts:2366</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<dl class="tsd-comment-tags">
-							<dt>inheritdoc</dt>
-							<dd></dd>
-						</dl>
 					</div>
 				</section>
 			</section>
@@ -239,28 +185,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.templatefile.html" class="tsd-kind-icon">Template<wbr>File</a>
+						<a href="_contracts_.processobject.html" class="tsd-kind-icon">Process<wbr>Object</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.templatefile.html#description" class="tsd-kind-icon">description</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.templatefile.html#icon" class="tsd-kind-icon">icon</a>
+								<a href="_contracts_.processobject.html#envvars" class="tsd-kind-icon">env<wbr>Vars</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.templatefile.html#isdocument" class="tsd-kind-icon">is<wbr>Document</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.templatefile.html#requires" class="tsd-kind-icon">requires</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.templatefile.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a>
+								<a href="_contracts_.processobject.html#noplaceholdersforthesevars" class="tsd-kind-icon">no<wbr>Placeholders<wbr>For<wbr>These<wbr>Vars</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.templatefile.html#source" class="tsd-kind-icon">source</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
-								<a href="_contracts_.templatefile.html#type" class="tsd-kind-icon">type</a>
+								<a href="_contracts_.processobject.html#useenvvarsofworkspace" class="tsd-kind-icon">use<wbr>Env<wbr>Vars<wbr>OfWorkspace</a>
 							</li>
 						</ul>
 					</li>

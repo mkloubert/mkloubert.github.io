@@ -74,6 +74,9 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<a href="_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>
+					</li>
+					<li>
+						<a href="_contracts_.processobject.html" class="tsd-signature-type">ProcessObject</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">DeployTargetApp</span>
@@ -98,6 +101,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#detail" class="tsd-kind-icon">detail</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#diffbeforedeploy" class="tsd-kind-icon">diff<wbr>Before<wbr>Deploy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#envvars" class="tsd-kind-icon">env<wbr>Vars</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#hideif" class="tsd-kind-icon">hide<wbr>If</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#if" class="tsd-kind-icon">if</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#inheritfrom" class="tsd-kind-icon">inherit<wbr>From</a></li>
@@ -105,6 +109,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#mappings" class="tsd-kind-icon">mappings</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#noplaceholdersforthesevars" class="tsd-kind-icon">no<wbr>Placeholders<wbr>For<wbr>These<wbr>Vars</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#platforms" class="tsd-kind-icon">platforms</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#runinterminal" class="tsd-kind-icon">run<wbr>InTerminal</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#separator" class="tsd-kind-icon">separator</a></li>
@@ -112,6 +117,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#sortorder" class="tsd-kind-icon">sort<wbr>Order</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#submitfilelist" class="tsd-kind-icon">submit<wbr>File<wbr>List</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#useenvvarsofworkspace" class="tsd-kind-icon">use<wbr>Env<wbr>Vars<wbr>OfWorkspace</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_app_.deploytargetapp.html#wait" class="tsd-kind-icon">wait</a></li>
 							</ul>
 						</section>
@@ -126,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">app<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/app.ts:35</li>
+							<li>Defined in plugins/app.ts:36</li>
 						</ul>
 					</aside>
 				</section>
@@ -161,7 +167,7 @@
 					<div class="tsd-signature tsd-kind-icon">arguments<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/app.ts:36</li>
+							<li>Defined in plugins/app.ts:37</li>
 						</ul>
 					</aside>
 				</section>
@@ -261,6 +267,30 @@
 						<div class="lead">
 							<p>Start a diff before deploy file(s).</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="envvars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> env<wbr>Vars</h3>
+					<div class="tsd-signature tsd-kind-icon">env<wbr>Vars<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.processobject.html">ProcessObject</a>.<a href="_contracts_.processobject.html#envvars">envVars</a></p>
+						<ul>
+							<li>Defined in contracts.ts:2069</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of optional environment variables to use.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>name: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
@@ -378,6 +408,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="noplaceholdersforthesevars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Placeholders<wbr>For<wbr>These<wbr>Vars</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Placeholders<wbr>For<wbr>These<wbr>Vars<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.processobject.html">ProcessObject</a>.<a href="_contracts_.processobject.html#noplaceholdersforthesevars">noPlaceholdersForTheseVars</a></p>
+						<ul>
+							<li>Defined in contracts.ts:2073</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A list of variables that should NOT use placeholders / values.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="platforms" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> platforms</h3>
 					<div class="tsd-signature tsd-kind-icon">platforms<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
@@ -399,7 +445,7 @@
 					<div class="tsd-signature tsd-kind-icon">run<wbr>InTerminal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/app.ts:40</li>
+							<li>Defined in plugins/app.ts:41</li>
 						</ul>
 					</aside>
 				</section>
@@ -409,7 +455,7 @@
 					<div class="tsd-signature tsd-kind-icon">separator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/app.ts:37</li>
+							<li>Defined in plugins/app.ts:38</li>
 						</ul>
 					</aside>
 				</section>
@@ -437,7 +483,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.sortable.html">Sortable</a>.<a href="_contracts_.sortable.html#sortorder">sortOrder</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2292</li>
+							<li>Defined in contracts.ts:2312</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -452,7 +498,7 @@
 					<div class="tsd-signature tsd-kind-icon">submit<wbr>File<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/app.ts:38</li>
+							<li>Defined in plugins/app.ts:39</li>
 						</ul>
 					</aside>
 				</section>
@@ -472,13 +518,30 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="useenvvarsofworkspace" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> use<wbr>Env<wbr>Vars<wbr>OfWorkspace</h3>
+					<div class="tsd-signature tsd-kind-icon">use<wbr>Env<wbr>Vars<wbr>OfWorkspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.processobject.html">ProcessObject</a>.<a href="_contracts_.processobject.html#useenvvarsofworkspace">useEnvVarsOfWorkspace</a></p>
+						<ul>
+							<li>Defined in contracts.ts:2078</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Also use environment variables of the process of
+							current workspace or not.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="wait" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> wait</h3>
 					<div class="tsd-signature tsd-kind-icon">wait<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/app.ts:39</li>
+							<li>Defined in plugins/app.ts:40</li>
 						</ul>
 					</aside>
 				</section>
@@ -533,6 +596,9 @@
 								<a href="_plugins_app_.deploytargetapp.html#diffbeforedeploy" class="tsd-kind-icon">diff<wbr>Before<wbr>Deploy</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_app_.deploytargetapp.html#envvars" class="tsd-kind-icon">env<wbr>Vars</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_app_.deploytargetapp.html#hideif" class="tsd-kind-icon">hide<wbr>If</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
@@ -554,6 +620,9 @@
 								<a href="_plugins_app_.deploytargetapp.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_app_.deploytargetapp.html#noplaceholdersforthesevars" class="tsd-kind-icon">no<wbr>Placeholders<wbr>For<wbr>These<wbr>Vars</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_app_.deploytargetapp.html#platforms" class="tsd-kind-icon">platforms</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
@@ -573,6 +642,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_app_.deploytargetapp.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_app_.deploytargetapp.html#useenvvarsofworkspace" class="tsd-kind-icon">use<wbr>Env<wbr>Vars<wbr>OfWorkspace</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_plugins_app_.deploytargetapp.html#wait" class="tsd-kind-icon">wait</a>

@@ -73,13 +73,22 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_operations_.httpbodymodule.html" class="tsd-kind-icon">Http<wbr>Body<wbr>Module</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_operations_.httpbodymoduleexecutorarguments.html" class="tsd-kind-icon">Http<wbr>Body<wbr>Module<wbr>Executor<wbr>Arguments</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_operations_.operationcontext.html" class="tsd-kind-icon">Operation<wbr>Context</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_operations_.html#httpbodymoduleexecutor" class="tsd-kind-icon">Http<wbr>Body<wbr>Module<wbr>Executor</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_operations_.html#operationexecutor" class="tsd-kind-icon">Operation<wbr>Executor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_operations_.html#httpoperationstates" class="tsd-kind-icon">http<wbr>Operation<wbr>States</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -87,7 +96,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_operations_.html#compile" class="tsd-kind-icon">compile</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_operations_.html#getoperationname" class="tsd-kind-icon">get<wbr>Operation<wbr>Name</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_operations_.html#http" class="tsd-kind-icon">http</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_operations_.html#open" class="tsd-kind-icon">open</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_operations_.html#resetoperations" class="tsd-kind-icon">reset<wbr>Operations</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_operations_.html#sql" class="tsd-kind-icon">sql</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_operations_.html#vscommand" class="tsd-kind-icon">vscommand</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_operations_.html#wait" class="tsd-kind-icon">wait</a></li>
@@ -100,12 +111,56 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="httpbodymoduleexecutor" class="tsd-anchor"></a>
+					<h3>Http<wbr>Body<wbr>Module<wbr>Executor</h3>
+					<div class="tsd-signature tsd-kind-icon">Http<wbr>Body<wbr>Module<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in operations.ts:56</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The function / method that gets the request body data.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The arguments for the execution.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The data to send.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_operations_.httpbodymoduleexecutorarguments.html" class="tsd-signature-type">HttpBodyModuleExecutorArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_operations_.httpbodymoduleexecutorarguments.html" class="tsd-signature-type">HttpBodyModuleExecutorArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="operationexecutor" class="tsd-anchor"></a>
 					<h3>Operation<wbr>Executor</h3>
 					<div class="tsd-signature tsd-kind-icon">Operation<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in operations.ts:81</li>
+							<li>Defined in operations.ts:141</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -149,6 +204,27 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="httpoperationstates" class="tsd-anchor"></a>
+					<h3>http<wbr>Operation<wbr>States</h3>
+					<div class="tsd-signature tsd-kind-icon">http<wbr>Operation<wbr>States<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in operations.ts:94</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>script: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
@@ -161,7 +237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in operations.ts:91</li>
+									<li>Defined in operations.ts:151</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -193,7 +269,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in operations.ts:237</li>
+									<li>Defined in operations.ts:297</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -216,6 +292,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="http" class="tsd-anchor"></a>
+					<h3>http</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">http<span class="tsd-signature-symbol">(</span>ctx<span class="tsd-signature-symbol">: </span><a href="../interfaces/_operations_.operationcontext.html" class="tsd-signature-type">OperationContext</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_contracts_.deployhttpoperation.html" class="tsd-signature-type">DeployHttpOperation</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in operations.ts:320</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Does a HTTP request.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ctx: <a href="../interfaces/_operations_.operationcontext.html" class="tsd-signature-type">OperationContext</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_contracts_.deployhttpoperation.html" class="tsd-signature-type">DeployHttpOperation</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The execution context.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="open" class="tsd-anchor"></a>
 					<h3>open</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -225,12 +333,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in operations.ts:260</li>
+									<li>Defined in operations.ts:531</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Waits.</p>
+									<p>Opens something.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -248,6 +356,28 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="resetoperations" class="tsd-anchor"></a>
+					<h3>reset<wbr>Operations</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Operations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in operations.ts:605</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resets all operations and their state values.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="sql" class="tsd-anchor"></a>
 					<h3>sql</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -257,7 +387,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in operations.ts:338</li>
+									<li>Defined in operations.ts:616</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -289,7 +419,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in operations.ts:423</li>
+									<li>Defined in operations.ts:701</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -321,7 +451,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in operations.ts:478</li>
+									<li>Defined in operations.ts:756</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -353,7 +483,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in operations.ts:505</li>
+									<li>Defined in operations.ts:783</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -390,11 +520,23 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_operations_.httpbodymodule.html" class="tsd-kind-icon">Http<wbr>Body<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_operations_.httpbodymoduleexecutorarguments.html" class="tsd-kind-icon">Http<wbr>Body<wbr>Module<wbr>Executor<wbr>Arguments</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../interfaces/_operations_.operationcontext.html" class="tsd-kind-icon">Operation<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_operations_.html#httpbodymoduleexecutor" class="tsd-kind-icon">Http<wbr>Body<wbr>Module<wbr>Executor</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_operations_.html#operationexecutor" class="tsd-kind-icon">Operation<wbr>Executor</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_operations_.html#httpoperationstates" class="tsd-kind-icon">http<wbr>Operation<wbr>States</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_operations_.html#compile" class="tsd-kind-icon">compile</a>
@@ -403,7 +545,13 @@
 						<a href="_operations_.html#getoperationname" class="tsd-kind-icon">get<wbr>Operation<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_operations_.html#http" class="tsd-kind-icon">http</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_operations_.html#open" class="tsd-kind-icon">open</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_operations_.html#resetoperations" class="tsd-kind-icon">reset<wbr>Operations</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_operations_.html#sql" class="tsd-kind-icon">sql</a>

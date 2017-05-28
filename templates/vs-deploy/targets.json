@@ -92,6 +92,17 @@
         }
     },
 
+    "List": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/Chc9z4"
+            }
+        }
+    },
+    
     "Local or (shared) network folders": {
         "children": {
             "Wiki": {

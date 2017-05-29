@@ -74,12 +74,16 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_config_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_config_.html#buildtasktimer" class="tsd-kind-icon">build<wbr>Task<wbr>Timer</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_config_.html#gitpulltimer" class="tsd-kind-icon">git<wbr>Pull<wbr>Timer</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_config_.html#mergeconfig" class="tsd-kind-icon">merge<wbr>Config</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_config_.html#runbuildtask" class="tsd-kind-icon">run<wbr>Build<wbr>Task</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_config_.html#rungitpull" class="tsd-kind-icon">run<wbr>Git<wbr>Pull</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,6 +101,26 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="buildtasktimer" class="tsd-anchor"></a>
+					<h3>build<wbr>Task<wbr>Timer</h3>
+					<div class="tsd-signature tsd-kind-icon">build<wbr>Task<wbr>Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in config.ts:38</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="gitpulltimer" class="tsd-anchor"></a>
+					<h3>git<wbr>Pull<wbr>Timer</h3>
+					<div class="tsd-signature tsd-kind-icon">git<wbr>Pull<wbr>Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in config.ts:39</li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
@@ -110,7 +134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in config.ts:45</li>
+									<li>Defined in config.ts:48</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -128,6 +152,51 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_contracts_.deployconfiguration.html" class="tsd-signature-type">DeployConfiguration</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="runbuildtask" class="tsd-anchor"></a>
+					<h3>run<wbr>Build<wbr>Task</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Build<wbr>Task<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in config.ts:242</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Runs the build task, if defined in config.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="rungitpull" class="tsd-anchor"></a>
+					<h3>run<wbr>Git<wbr>Pull</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">run<wbr>Git<wbr>Pull<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in config.ts:299</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Runs the git sync, if defined in config.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>The promise.</p>
 						</li>
 					</ul>
@@ -150,8 +219,20 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_config_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_config_.html#buildtasktimer" class="tsd-kind-icon">build<wbr>Task<wbr>Timer</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_config_.html#gitpulltimer" class="tsd-kind-icon">git<wbr>Pull<wbr>Timer</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_config_.html#mergeconfig" class="tsd-kind-icon">merge<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_config_.html#runbuildtask" class="tsd-kind-icon">run<wbr>Build<wbr>Task</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_config_.html#rungitpull" class="tsd-kind-icon">run<wbr>Git<wbr>Pull</a>
 					</li>
 				</ul>
 			</nav>

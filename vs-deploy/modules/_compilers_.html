@@ -79,6 +79,9 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.coffeescriptcompilererror.html" class="tsd-kind-icon">Coffee<wbr>Script<wbr>Compiler<wbr>Error</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.coffeescriptcompileroptions.html" class="tsd-kind-icon">Coffee<wbr>Script<wbr>Compiler<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.coffeescriptcompilerresult.html" class="tsd-kind-icon">Coffee<wbr>Script<wbr>Compiler<wbr>Result</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.compilererror.html" class="tsd-kind-icon">Compiler<wbr>Error</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.compileroptions.html" class="tsd-kind-icon">Compiler<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_compilers_.compilerresult.html" class="tsd-kind-icon">Compiler<wbr>Result</a></li>
@@ -114,6 +117,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_compilers_.html#coffeescript" class="tsd-kind-icon">Coffee<wbr>Script</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_compilers_.html#glob" class="tsd-kind-icon">Glob</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_compilers_.html#less" class="tsd-kind-icon">LESS</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_compilers_.html#pug" class="tsd-kind-icon">Pug</a></li>
@@ -125,6 +129,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#collectcompilerfiles" class="tsd-kind-icon">collect<wbr>Compiler<wbr>Files</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#compile" class="tsd-kind-icon">compile</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#compilecoffeescript" class="tsd-kind-icon">compile<wbr>Coffee<wbr>Script</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#compilehtmlminifier" class="tsd-kind-icon">compile<wbr>Html<wbr>Minifier</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#compileless" class="tsd-kind-icon">compile<wbr>Less</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_compilers_.html#compilescript" class="tsd-kind-icon">compile<wbr>Script</a></li>
@@ -144,7 +149,7 @@
 					<div class="tsd-signature tsd-kind-icon">Script<wbr>Compiler<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:209</li>
+							<li>Defined in compilers.ts:244</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -191,12 +196,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="coffeescript" class="tsd-anchor"></a>
+					<h3>Coffee<wbr>Script</h3>
+					<div class="tsd-signature tsd-kind-icon">Coffee<wbr>Script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;coffeescript&#x27;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in compilers.ts:25</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="glob" class="tsd-anchor"></a>
 					<h3>Glob</h3>
 					<div class="tsd-signature tsd-kind-icon">Glob<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;glob&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:29</li>
+							<li>Defined in compilers.ts:30</li>
 						</ul>
 					</aside>
 				</section>
@@ -206,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">LESS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;less&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:32</li>
+							<li>Defined in compilers.ts:33</li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">Pug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;pug&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:34</li>
+							<li>Defined in compilers.ts:35</li>
 						</ul>
 					</aside>
 				</section>
@@ -226,7 +241,7 @@
 					<div class="tsd-signature tsd-kind-icon">Type<wbr>Script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;typescript&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:35</li>
+							<li>Defined in compilers.ts:36</li>
 						</ul>
 					</aside>
 				</section>
@@ -243,7 +258,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:338</li>
+									<li>Defined in compilers.ts:373</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -278,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:427</li>
+									<li>Defined in compilers.ts:462</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,6 +319,35 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="compilecoffeescript" class="tsd-anchor"></a>
+					<h3>compile<wbr>Coffee<wbr>Script</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">compile<wbr>Coffee<wbr>Script<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_compilers_.coffeescriptcompileroptions.html" class="tsd-signature-type">CoffeeScriptCompilerOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_compilers_.coffeescriptcompilerresult.html" class="tsd-signature-type">CoffeeScriptCompilerResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in compilers.ts:534</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Compiles CoffeeScript files.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/_compilers_.coffeescriptcompileroptions.html" class="tsd-signature-type">CoffeeScriptCompilerOptions</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_compilers_.coffeescriptcompilerresult.html" class="tsd-signature-type">CoffeeScriptCompilerResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise<CoffeeScriptCompilerResult> The promise.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="compilehtmlminifier" class="tsd-anchor"></a>
 					<h3>compile<wbr>Html<wbr>Minifier</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -313,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:494</li>
+									<li>Defined in compilers.ts:643</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,7 +386,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:622</li>
+									<li>Defined in compilers.ts:774</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -371,7 +415,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:893</li>
+									<li>Defined in compilers.ts:1048</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -403,7 +447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:964</li>
+									<li>Defined in compilers.ts:1119</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -432,7 +476,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:1020</li>
+									<li>Defined in compilers.ts:1175</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -461,7 +505,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in compilers.ts:790</li>
+									<li>Defined in compilers.ts:942</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -497,6 +541,15 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 						<a href="../enums/_compilers_.compiler.html" class="tsd-kind-icon">Compiler</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_compilers_.coffeescriptcompilererror.html" class="tsd-kind-icon">Coffee<wbr>Script<wbr>Compiler<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_compilers_.coffeescriptcompileroptions.html" class="tsd-kind-icon">Coffee<wbr>Script<wbr>Compiler<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_compilers_.coffeescriptcompilerresult.html" class="tsd-kind-icon">Coffee<wbr>Script<wbr>Compiler<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_compilers_.compilererror.html" class="tsd-kind-icon">Compiler<wbr>Error</a>
@@ -574,6 +627,9 @@
 						<a href="_compilers_.html#scriptcompiler" class="tsd-kind-icon">Script<wbr>Compiler</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_compilers_.html#coffeescript" class="tsd-kind-icon">Coffee<wbr>Script</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_compilers_.html#glob" class="tsd-kind-icon">Glob</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
@@ -590,6 +646,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_compilers_.html#compile" class="tsd-kind-icon">compile</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_compilers_.html#compilecoffeescript" class="tsd-kind-icon">compile<wbr>Coffee<wbr>Script</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_compilers_.html#compilehtmlminifier" class="tsd-kind-icon">compile<wbr>Html<wbr>Minifier</a>

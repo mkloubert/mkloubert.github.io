@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WorkspaceDeployedEventArguments | vs-deploy</title>
+	<title>CanLoadFrom | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.workspacedeployedeventarguments.html">WorkspaceDeployedEventArguments</a>
+					<a href="_contracts_.canloadfrom.html">CanLoadFrom</a>
 				</li>
 			</ul>
-			<h1>Interface WorkspaceDeployedEventArguments</h1>
+			<h1>Interface CanLoadFrom</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Arguments for an a completed &quot;deploy workspace&quot; event.</p>
+						<p>An object that can load (parts) of its data from a source.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,15 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">WorkspaceDeployedEventArguments</span>
+						<span class="target">CanLoadFrom</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_contracts_.deploypackage.html" class="tsd-signature-type">DeployPackage</a>
+							</li>
+							<li>
+								<a href="_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -91,9 +99,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.workspacedeployedeventarguments.html#canceled" class="tsd-kind-icon">canceled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.workspacedeployedeventarguments.html#error" class="tsd-kind-icon">error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.workspacedeployedeventarguments.html#target" class="tsd-kind-icon">target</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.canloadfrom.html#loadfrom" class="tsd-kind-icon">load<wbr>From</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,47 +108,17 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="canceled" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> canceled</h3>
-					<div class="tsd-signature tsd-kind-icon">canceled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="loadfrom" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> load<wbr>From</h3>
+					<div class="tsd-signature tsd-kind-icon">load<wbr>From<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:2653</li>
+							<li>Defined in contracts.ts:289</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets if the operation has been canceled or not.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="error" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> error</h3>
-					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:2657</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The error (if occurred).</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="target" class="tsd-anchor"></a>
-					<h3>target</h3>
-					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <a href="_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in contracts.ts:2661</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The target.</p>
+							<p>The source from where to load the data from.</p>
 						</div>
 					</div>
 				</section>
@@ -164,16 +140,10 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.workspacedeployedeventarguments.html" class="tsd-kind-icon">Workspace<wbr>Deployed<wbr>Event<wbr>Arguments</a>
+						<a href="_contracts_.canloadfrom.html" class="tsd-kind-icon">Can<wbr>Load<wbr>From</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.workspacedeployedeventarguments.html#canceled" class="tsd-kind-icon">canceled</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.workspacedeployedeventarguments.html#error" class="tsd-kind-icon">error</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.workspacedeployedeventarguments.html#target" class="tsd-kind-icon">target</a>
+								<a href="_contracts_.canloadfrom.html#loadfrom" class="tsd-kind-icon">load<wbr>From</a>
 							</li>
 						</ul>
 					</li>

@@ -1,5 +1,9 @@
 # Change Log (vs-deploy template repository)
 
+## 1.9.0 (June 5th, 2017; prompt target)
+
+* added link to [prompt target](https://github.com/mkloubert/vs-deploy/wiki/target_prompt) wiki page
+
 ## 1.8.0 (June 5th, 2017; folder mappings)
 
 * added link to [folder mappings](https://github.com/mkloubert/vs-deploy/wiki/folder_mappings) wiki page

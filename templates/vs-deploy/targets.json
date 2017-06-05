@@ -136,6 +136,17 @@
         }
     },
 
+    "Prompt": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/89CucT"
+            }
+        }
+    },
+
     "Pipeline": {
         "children": {
             "Wiki": {

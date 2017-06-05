@@ -152,6 +152,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#todatatransformersafe" class="tsd-kind-icon">to<wbr>Data<wbr>Transformer<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#torelativepath" class="tsd-kind-icon">to<wbr>Relative<wbr>Path</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#torelativetargetpath" class="tsd-kind-icon">to<wbr>Relative<wbr>Target<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#torelativetargetpathwithvalues" class="tsd-kind-icon">to<wbr>Relative<wbr>Target<wbr>Path<wbr>With<wbr>Values</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#tostringsafe" class="tsd-kind-icon">to<wbr>String<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#tovalidatorsafe" class="tsd-kind-icon">to<wbr>Validator<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#trydispose" class="tsd-kind-icon">try<wbr>Dispose</a></li>
@@ -290,7 +291,7 @@
 					<a name="applyvalues" class="tsd-anchor"></a>
 					<h3>apply<wbr>Values</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">apply<wbr>Values&lt;T&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, values<span class="tsd-signature-symbol">: </span><a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span>, cloneObj<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Values&lt;T&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, values<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.objectwithnameandvalue.html" class="tsd-signature-type">ObjectWithNameAndValue</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.objectwithnameandvalue.html" class="tsd-signature-type">ObjectWithNameAndValue</a><span class="tsd-signature-symbol">[]</span>, cloneObj<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
@@ -319,7 +320,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>values: <a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_values_.valuebase.html" class="tsd-signature-type">ValueBase</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>values: <a href="../interfaces/_contracts_.objectwithnameandvalue.html" class="tsd-signature-type">ObjectWithNameAndValue</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.objectwithnameandvalue.html" class="tsd-signature-type">ObjectWithNameAndValue</a><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The values to apply.</p>
 									</div>
@@ -2410,6 +2411,57 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="torelativetargetpathwithvalues" class="tsd-anchor"></a>
+					<h3>to<wbr>Relative<wbr>Target<wbr>Path<wbr>With<wbr>Values</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Relative<wbr>Target<wbr>Path<wbr>With<wbr>Values<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a>, values<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.objectwithnameandvalue.html" class="tsd-signature-type">ObjectWithNameAndValue</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.objectwithnameandvalue.html" class="tsd-signature-type">ObjectWithNameAndValue</a><span class="tsd-signature-symbol">[]</span>, baseDir<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:2375</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tries to convert a file path to a relative path
+									by using the mappings of a target and placeholders / values.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path to convert.</p>
+									</div>
+								</li>
+								<li>
+									<h5>target: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target.</p>
+									</div>
+								</li>
+								<li>
+									<h5>values: <a href="../interfaces/_contracts_.objectwithnameandvalue.html" class="tsd-signature-type">ObjectWithNameAndValue</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.objectwithnameandvalue.html" class="tsd-signature-type">ObjectWithNameAndValue</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The values to use.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> baseDir: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">false</span>
+							</h4>
+							<p>The relative path or (false) if not possible.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="tostringsafe" class="tsd-anchor"></a>
 					<h3>to<wbr>String<wbr>Safe</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -2419,7 +2471,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2423</li>
+									<li>Defined in helpers.ts:2459</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2457,7 +2509,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2442</li>
+									<li>Defined in helpers.ts:2478</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2495,7 +2547,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2463</li>
+									<li>Defined in helpers.ts:2499</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2527,7 +2579,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2486</li>
+									<li>Defined in helpers.ts:2522</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2755,6 +2807,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#torelativetargetpath" class="tsd-kind-icon">to<wbr>Relative<wbr>Target<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#torelativetargetpathwithvalues" class="tsd-kind-icon">to<wbr>Relative<wbr>Target<wbr>Path<wbr>With<wbr>Values</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#tostringsafe" class="tsd-kind-icon">to<wbr>String<wbr>Safe</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;plugins/api&quot; | vs-deploy</title>
+	<title>&quot;plugins/prompt&quot; | vs-deploy</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_plugins_api_.html">&quot;plugins/api&quot;</a>
+					<a href="_plugins_prompt_.html">&quot;plugins/prompt&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;plugins/api&quot;</h1>
+			<h1>External module &quot;plugins/prompt&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -73,39 +73,100 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported"><a href="../classes/_plugins_api_.apiplugin.html" class="tsd-kind-icon">Api<wbr>Plugin</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported"><a href="../classes/_plugins_prompt_.promptplugin.html" class="tsd-kind-icon">Prompt<wbr>Plugin</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_plugins_api_.deploytargeapi.html" class="tsd-kind-icon">Deploy<wbr>Targe<wbr>Api</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_plugins_prompt_.deploytargetprompt.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Prompt</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_plugins_prompt_.promptentry.html" class="tsd-kind-icon">Prompt<wbr>Entry</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_prompt_.valuevalidatormodule.html" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_prompt_.valuevalidatormoduleexecutorarguments.html" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module<wbr>Executor<wbr>Arguments</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_plugins_prompt_.html#valuevalidatormoduleexecutor" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module<wbr>Executor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_plugins_api_.html#target_cache_password" class="tsd-kind-icon">TARGET_<wbr>CACHE_<wbr>PASSWORD</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_plugins_prompt_.html#not_found_in_cache" class="tsd-kind-icon">NOT_<wbr>FOUND_<wbr>IN_<wbr>CACHE</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_plugins_api_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_plugins_prompt_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a></li>
 							</ul>
 						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="valuevalidatormoduleexecutor" class="tsd-anchor"></a>
+					<h3>Value<wbr>Validator<wbr>Module<wbr>Executor</h3>
+					<div class="tsd-signature tsd-kind-icon">Value<wbr>Validator<wbr>Module<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/prompt.ts:74</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A validator function / method.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The arguments.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>User value is valid or not.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_prompt_.valuevalidatormoduleexecutorarguments.html" class="tsd-signature-type">ValueValidatorModuleExecutorArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_plugins_prompt_.valuevalidatormoduleexecutorarguments.html" class="tsd-signature-type">ValueValidatorModuleExecutorArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">undefined</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">null</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="target_cache_password" class="tsd-anchor"></a>
-					<h3>TARGET_<wbr>CACHE_<wbr>PASSWORD</h3>
-					<div class="tsd-signature tsd-kind-icon">TARGET_<wbr>CACHE_<wbr>PASSWORD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"password"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;password&quot;</span></div>
+					<a name="not_found_in_cache" class="tsd-anchor"></a>
+					<h3>NOT_<wbr>FOUND_<wbr>IN_<wbr>CACHE</h3>
+					<div class="tsd-signature tsd-kind-icon">NOT_<wbr>FOUND_<wbr>IN_<wbr>CACHE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> =&nbsp;Symbol(&#x27;NOT_FOUND_IN_CACHE&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/api.ts:46</li>
+							<li>Defined in plugins/prompt.ts:99</li>
 						</ul>
 					</aside>
 				</section>
@@ -122,7 +183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/api.ts:502</li>
+									<li>Defined in plugins/prompt.ts:484</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -153,23 +214,35 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_plugins_api_.html">"plugins/api"</a>
+						<a href="_plugins_prompt_.html">"plugins/prompt"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../classes/_plugins_api_.apiplugin.html" class="tsd-kind-icon">Api<wbr>Plugin</a>
+						<a href="../classes/_plugins_prompt_.promptplugin.html" class="tsd-kind-icon">Prompt<wbr>Plugin</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_plugins_api_.deploytargeapi.html" class="tsd-kind-icon">Deploy<wbr>Targe<wbr>Api</a>
+						<a href="../interfaces/_plugins_prompt_.deploytargetprompt.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Prompt</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_plugins_prompt_.promptentry.html" class="tsd-kind-icon">Prompt<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_plugins_prompt_.valuevalidatormodule.html" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_plugins_prompt_.valuevalidatormoduleexecutorarguments.html" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module<wbr>Executor<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_plugins_prompt_.html#valuevalidatormoduleexecutor" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module<wbr>Executor</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_plugins_api_.html#target_cache_password" class="tsd-kind-icon">TARGET_<wbr>CACHE_<wbr>PASSWORD</a>
+						<a href="_plugins_prompt_.html#not_found_in_cache" class="tsd-kind-icon">NOT_<wbr>FOUND_<wbr>IN_<wbr>CACHE</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_plugins_api_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>
+						<a href="_plugins_prompt_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>
 					</li>
 				</ul>
 			</nav>

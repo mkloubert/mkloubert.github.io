@@ -1,5 +1,9 @@
 # Change Log (vs-deploy template repository)
 
+## 1.8.0 (June 5th, 2017; folder mappings)
+
+* added link to [folder mappings](https://github.com/mkloubert/vs-deploy/wiki/folder_mappings) wiki page
+
 ## 1.7.0 (May 28th, 2017; list target)
 
 * added link to [list target](https://github.com/mkloubert/vs-deploy/wiki/target_list) wiki page

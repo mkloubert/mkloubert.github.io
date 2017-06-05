@@ -259,6 +259,13 @@
         "source": "https://mkloubert.github.io/templates/vs-deploy/targets/actions.json"
     },
 
+    "Folder mappings": {
+        "type": "link", "icon": "book",
+        "sortOrder": 1,
+
+        "source": "https://goo.gl/g5dbfV"
+    },
+
     "Wiki": {
         "type": "link", "icon": "book",
         "sortOrder": 2000000000,

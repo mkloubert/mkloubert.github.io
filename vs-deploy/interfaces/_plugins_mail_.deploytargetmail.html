@@ -74,6 +74,9 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<a href="_contracts_.transformabledeploytarget.html" class="tsd-signature-type">TransformableDeployTarget</a>
+					</li>
+					<li>
+						<a href="_contracts_.passwordobject.html" class="tsd-signature-type">PasswordObject</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">DeployTargetMail</span>
@@ -89,6 +92,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#___id" class="tsd-kind-icon">___id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#applyvaluesto" class="tsd-kind-icon">apply<wbr>Values<wbr>To</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#checkbeforedeploy" class="tsd-kind-icon">check<wbr>Before<wbr>Deploy</a></li>
@@ -110,6 +114,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#password" class="tsd-kind-icon">password</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#platforms" class="tsd-kind-icon">platforms</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#port" class="tsd-kind-icon">port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#promptforpassword" class="tsd-kind-icon">prompt<wbr>For<wbr>Password</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#rejectunauthorized" class="tsd-kind-icon">reject<wbr>Unauthorized</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#requiretls" class="tsd-kind-icon">requireTLS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_plugins_mail_.deploytargetmail.html#secure" class="tsd-kind-icon">secure</a></li>
@@ -128,13 +133,30 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="___id" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ___id</h3>
+					<div class="tsd-signature tsd-kind-icon">___id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#___id">___id</a></p>
+						<ul>
+							<li>Defined in contracts.ts:1509</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>[INTERNAL] DO NOT DEFINE OR OVERWRITE THIS PROPERTY BY YOUR OWN!</p>
+						</div>
+						<p>Gets the ID of that target.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="applyvaluesto" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> apply<wbr>Values<wbr>To</h3>
 					<div class="tsd-signature tsd-kind-icon">apply<wbr>Values<wbr>To<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.applyable.html">Applyable</a>.<a href="_contracts_.applyable.html#applyvaluesto">applyValuesTo</a></p>
 						<ul>
-							<li>Defined in contracts.ts:192</li>
+							<li>Defined in contracts.ts:212</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -159,7 +181,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#beforedeploy">beforeDeploy</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1482</li>
+							<li>Defined in contracts.ts:1515</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -176,7 +198,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#checkbeforedeploy">checkBeforeDeploy</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1486</li>
+							<li>Defined in contracts.ts:1519</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -192,7 +214,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#deployed">deployed</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1491</li>
+							<li>Defined in contracts.ts:1524</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -209,7 +231,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#description">description</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1495</li>
+							<li>Defined in contracts.ts:1528</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -225,7 +247,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#detail">detail</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1499</li>
+							<li>Defined in contracts.ts:1532</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -241,7 +263,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#diffbeforedeploy">diffBeforeDeploy</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1503</li>
+							<li>Defined in contracts.ts:1536</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -267,7 +289,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#hideif">hideIf</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1508</li>
+							<li>Defined in contracts.ts:1541</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -294,7 +316,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.conditionalitem.html">ConditionalItem</a>.<a href="_contracts_.conditionalitem.html#if">if</a></p>
 						<ul>
-							<li>Defined in contracts.ts:321</li>
+							<li>Defined in contracts.ts:341</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -320,7 +342,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.inheritable.html">Inheritable</a>.<a href="_contracts_.inheritable.html#inheritfrom">inheritFrom</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2049</li>
+							<li>Defined in contracts.ts:2087</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -336,7 +358,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.machineitem.html">MachineItem</a>.<a href="_contracts_.machineitem.html#isfor">isFor</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2063</li>
+							<li>Defined in contracts.ts:2101</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -352,7 +374,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.hideable.html">Hideable</a>.<a href="_contracts_.hideable.html#ishidden">isHidden</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2016</li>
+							<li>Defined in contracts.ts:2054</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -368,7 +390,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.canloadfrom.html">CanLoadFrom</a>.<a href="_contracts_.canloadfrom.html#loadfrom">loadFrom</a></p>
 						<ul>
-							<li>Defined in contracts.ts:289</li>
+							<li>Defined in contracts.ts:309</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -384,7 +406,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#mappings">mappings</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1512</li>
+							<li>Defined in contracts.ts:1545</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -401,7 +423,7 @@
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#name">name</a></p>
 						<p>Overrides <a href="_contracts_.inheritable.html">Inheritable</a>.<a href="_contracts_.inheritable.html#name">name</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1516</li>
+							<li>Defined in contracts.ts:1549</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -427,7 +449,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.platformitem.html">PlatformItem</a>.<a href="_contracts_.platformitem.html#platforms">platforms</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2127</li>
+							<li>Defined in contracts.ts:2202</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -445,6 +467,22 @@
 							<li>Defined in plugins/mail.ts:40</li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="promptforpassword" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prompt<wbr>For<wbr>Password</h3>
+					<div class="tsd-signature tsd-kind-icon">prompt<wbr>For<wbr>Password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.passwordobject.html">PasswordObject</a>.<a href="_contracts_.passwordobject.html#promptforpassword">promptForPassword</a></p>
+						<ul>
+							<li>Defined in contracts.ts:2174</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prompt for a password if not defined.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="rejectunauthorized" class="tsd-anchor"></a>
@@ -483,7 +521,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#showif">showIf</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1521</li>
+							<li>Defined in contracts.ts:1554</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -500,7 +538,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.sortable.html">Sortable</a>.<a href="_contracts_.sortable.html#sortorder">sortOrder</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2400</li>
+							<li>Defined in contracts.ts:2475</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -526,7 +564,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.transformable.html">Transformable</a>.<a href="_contracts_.transformable.html#transformer">transformer</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2555</li>
+							<li>Defined in contracts.ts:2630</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -543,7 +581,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.transformable.html">Transformable</a>.<a href="_contracts_.transformable.html#transformeroptions">transformerOptions</a></p>
 						<ul>
-							<li>Defined in contracts.ts:2559</li>
+							<li>Defined in contracts.ts:2634</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -559,7 +597,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.deploytarget.html">DeployTarget</a>.<a href="_contracts_.deploytarget.html#type">type</a></p>
 						<ul>
-							<li>Defined in contracts.ts:1525</li>
+							<li>Defined in contracts.ts:1558</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -601,6 +639,9 @@
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_mail_.deploytargetmail.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Mail</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_mail_.deploytargetmail.html#___id" class="tsd-kind-icon">___id</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_mail_.deploytargetmail.html#applyvaluesto" class="tsd-kind-icon">apply<wbr>Values<wbr>To</a>
 							</li>
@@ -664,6 +705,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_plugins_mail_.deploytargetmail.html#port" class="tsd-kind-icon">port</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_mail_.deploytargetmail.html#promptforpassword" class="tsd-kind-icon">prompt<wbr>For<wbr>Password</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="_plugins_mail_.deploytargetmail.html#rejectunauthorized" class="tsd-kind-icon">reject<wbr>Unauthorized</a>
 							</li>
@@ -700,6 +744,9 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_plugins_mail_.html#mailer" class="tsd-kind-icon">Mailer</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_mail_.html#target_cache_password" class="tsd-kind-icon">TARGET_<wbr>CACHE_<wbr>PASSWORD</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_plugins_mail_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>

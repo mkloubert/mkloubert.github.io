@@ -207,7 +207,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#cangetfileinfo">canGetFileInfo</a></p>
 								<ul>
-									<li>Defined in plugins/dropbox.ts:101</li>
+									<li>Defined in plugins/dropbox.ts:104</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -225,7 +225,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#canpull">canPull</a></p>
 								<ul>
-									<li>Defined in plugins/dropbox.ts:105</li>
+									<li>Defined in plugins/dropbox.ts:108</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -270,7 +270,7 @@
 								<p>Inherited from <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#comparefiles">compareFiles</a></p>
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#comparefiles">compareFiles</a></p>
 								<ul>
-									<li>Defined in objects.ts:789</li>
+									<li>Defined in objects.ts:827</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -306,7 +306,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#comparefileswithcontext">compareFilesWithContext</a></p>
 								<ul>
-									<li>Defined in objects.ts:847</li>
+									<li>Defined in objects.ts:885</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -355,7 +355,7 @@
 								<p>Inherited from <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#compareworkspace">compareWorkspace</a></p>
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#compareworkspace">compareWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:922</li>
+									<li>Defined in objects.ts:960</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -384,14 +384,14 @@
 					<a name="createcontext" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> create<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Context<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_dropbox_.deploytargetdropbox.html" class="tsd-signature-type">DeployTargetDropbox</a>, files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_objects_.deployplugincontextwrapper.html" class="tsd-signature-type">DeployPluginContextWrapper</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_plugins_dropbox_.dropboxcontext.html" class="tsd-signature-type">DropboxContext</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Context<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_dropbox_.deploytargetdropbox.html" class="tsd-signature-type">DeployTargetDropbox</a>, files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a>, direction<span class="tsd-signature-symbol">: </span><a href="../enums/_contracts_.deploydirection.html" class="tsd-signature-type">DeployDirection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_objects_.deployplugincontextwrapper.html" class="tsd-signature-type">DeployPluginContextWrapper</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_plugins_dropbox_.dropboxcontext.html" class="tsd-signature-type">DropboxContext</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#createcontext">createContext</a></p>
 								<ul>
-									<li>Defined in plugins/dropbox.ts:109</li>
+									<li>Defined in plugins/dropbox.ts:112</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -404,6 +404,9 @@
 								</li>
 								<li>
 									<h5>opts: <a href="../interfaces/_contracts_.deployfileoptions.html" class="tsd-signature-type">DeployFileOptions</a></h5>
+								</li>
+								<li>
+									<h5>direction: <a href="../enums/_contracts_.deploydirection.html" class="tsd-signature-type">DeployDirection</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_objects_.deployplugincontextwrapper.html" class="tsd-signature-type">DeployPluginContextWrapper</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_plugins_dropbox_.dropboxcontext.html" class="tsd-signature-type">DropboxContext</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -499,7 +502,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#deployfilewithcontext">deployFileWithContext</a></p>
 								<ul>
-									<li>Defined in plugins/dropbox.ts:378</li>
+									<li>Defined in plugins/dropbox.ts:436</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -533,7 +536,7 @@
 								<p>Inherited from <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#deployworkspace">deployWorkspace</a></p>
 								<p>Overrides <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#deployworkspace">deployWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:1004</li>
+									<li>Defined in objects.ts:1042</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -569,7 +572,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#destroycontext">destroyContext</a></p>
 								<ul>
-									<li>Defined in objects.ts:1140</li>
+									<li>Defined in objects.ts:1178</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -627,7 +630,7 @@
 								<p>Inherited from <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#downloadfile">downloadFile</a></p>
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#downloadfile">downloadFile</a></p>
 								<ul>
-									<li>Defined in objects.ts:1149</li>
+									<li>Defined in objects.ts:1187</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -666,7 +669,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#downloadfilewithcontext">downloadFileWithContext</a></p>
 								<ul>
-									<li>Defined in plugins/dropbox.ts:524</li>
+									<li>Defined in plugins/dropbox.ts:582</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -700,7 +703,7 @@
 								<p>Inherited from <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#getfileinfo">getFileInfo</a></p>
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#getfileinfo">getFileInfo</a></p>
 								<ul>
-									<li>Defined in objects.ts:1240</li>
+									<li>Defined in objects.ts:1278</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -736,7 +739,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#getfileinfowithcontext">getFileInfoWithContext</a></p>
 								<ul>
-									<li>Defined in plugins/dropbox.ts:668</li>
+									<li>Defined in plugins/dropbox.ts:726</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -807,7 +810,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/dropbox.ts:783</li>
+									<li>Defined in plugins/dropbox.ts:841</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.deployplugininfo.html" class="tsd-signature-type">DeployPluginInfo</a></h4>
@@ -959,7 +962,7 @@
 								<p>Inherited from <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#pullfile">pullFile</a></p>
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#pullfile">pullFile</a></p>
 								<ul>
-									<li>Defined in objects.ts:709</li>
+									<li>Defined in objects.ts:726</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -995,7 +998,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#pullfilewithcontext">pullFileWithContext</a></p>
 								<ul>
-									<li>Defined in objects.ts:1331</li>
+									<li>Defined in objects.ts:1369</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1043,7 +1046,7 @@
 								<p>Inherited from <a href="_objects_.deploypluginwithcontextbase.html">DeployPluginWithContextBase</a>.<a href="_objects_.deploypluginwithcontextbase.html#pullworkspace">pullWorkspace</a></p>
 								<p>Overrides <a href="_objects_.multifiledeploypluginbase.html">MultiFileDeployPluginBase</a>.<a href="_objects_.multifiledeploypluginbase.html#pullworkspace">pullWorkspace</a></p>
 								<ul>
-									<li>Defined in objects.ts:1412</li>
+									<li>Defined in objects.ts:1450</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1187,6 +1190,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_plugins_dropbox_.html#path_sep" class="tsd-kind-icon">PATH_<wbr>SEP</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_dropbox_.html#target_cache_token" class="tsd-kind-icon">TARGET_<wbr>CACHE_<wbr>TOKEN</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_plugins_dropbox_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>

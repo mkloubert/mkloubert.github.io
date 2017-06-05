@@ -116,6 +116,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#askforpasswordifneeded" class="tsd-kind-icon">ask<wbr>For<wbr>Password<wbr>IfNeeded</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#comparefiles" class="tsd-kind-icon">compare<wbr>Files</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#compareworkspace" class="tsd-kind-icon">compare<wbr>Workspace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_api_.apiplugin.html#createdatatransformercontext" class="tsd-kind-icon">create<wbr>Data<wbr>Transformer<wbr>Context</a></li>
@@ -227,7 +228,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#canpull">canPull</a></p>
 								<ul>
-									<li>Defined in plugins/api.ts:45</li>
+									<li>Defined in plugins/api.ts:101</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -260,6 +261,29 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+					<a name="askforpasswordifneeded" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> ask<wbr>For<wbr>Password<wbr>IfNeeded</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">ask<wbr>For<wbr>Password<wbr>IfNeeded<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_api_.deploytargeapi.html" class="tsd-signature-type">DeployTargeApi</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in plugins/api.ts:49</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_plugins_api_.deploytargeapi.html" class="tsd-signature-type">DeployTargeApi</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="comparefiles" class="tsd-anchor"></a>
 					<h3>compare<wbr>Files</h3>
@@ -384,7 +408,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#deployfile">deployFile</a></p>
 								<ul>
-									<li>Defined in plugins/api.ts:50</li>
+									<li>Defined in plugins/api.ts:106</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -480,7 +504,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.deploypluginbase.html">DeployPluginBase</a>.<a href="_objects_.deploypluginbase.html#downloadfile">downloadFile</a></p>
 								<ul>
-									<li>Defined in plugins/api.ts:216</li>
+									<li>Defined in plugins/api.ts:285</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -593,7 +617,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/api.ts:400</li>
+									<li>Defined in plugins/api.ts:486</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_contracts_.deployplugininfo.html" class="tsd-signature-type">DeployPluginInfo</a></h4>
@@ -840,6 +864,9 @@
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_api_.apiplugin.html#context" class="tsd-kind-icon">context</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_api_.apiplugin.html#askforpasswordifneeded" class="tsd-kind-icon">ask<wbr>For<wbr>Password<wbr>IfNeeded</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_api_.apiplugin.html#comparefiles" class="tsd-kind-icon">compare<wbr>Files</a>
 							</li>
@@ -891,6 +918,9 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_plugins_api_.deploytargeapi.html" class="tsd-kind-icon">Deploy<wbr>Targe<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_plugins_api_.html#target_cache_password" class="tsd-kind-icon">TARGET_<wbr>CACHE_<wbr>PASSWORD</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_plugins_api_.html#createplugin" class="tsd-kind-icon">create<wbr>Plugin</a>

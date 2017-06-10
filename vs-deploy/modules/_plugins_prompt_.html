@@ -81,6 +81,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_plugins_prompt_.deploytargetprompt.html" class="tsd-kind-icon">Deploy<wbr>Target<wbr>Prompt</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_plugins_prompt_.promptentry.html" class="tsd-kind-icon">Prompt<wbr>Entry</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_prompt_.valueconvertermodule.html" class="tsd-kind-icon">Value<wbr>Converter<wbr>Module</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_prompt_.valueconvertermoduleexecutorarguments.html" class="tsd-kind-icon">Value<wbr>Converter<wbr>Module<wbr>Executor<wbr>Arguments</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_prompt_.valuevalidatormodule.html" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_prompt_.valuevalidatormoduleexecutorarguments.html" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module<wbr>Executor<wbr>Arguments</a></li>
 							</ul>
@@ -88,6 +90,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_plugins_prompt_.html#valueconvertermoduleexecutor" class="tsd-kind-icon">Value<wbr>Converter<wbr>Module<wbr>Executor</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_plugins_prompt_.html#valuevalidatormoduleexecutor" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module<wbr>Executor</a></li>
 							</ul>
 						</section>
@@ -109,12 +112,56 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="valueconvertermoduleexecutor" class="tsd-anchor"></a>
+					<h3>Value<wbr>Converter<wbr>Module<wbr>Executor</h3>
+					<div class="tsd-signature tsd-kind-icon">Value<wbr>Converter<wbr>Module<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/prompt.ts:77</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Converts a (string) value.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The arguments for the execution.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_prompt_.valueconvertermoduleexecutorarguments.html" class="tsd-signature-type">ValueConverterModuleExecutorArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_plugins_prompt_.valueconvertermoduleexecutorarguments.html" class="tsd-signature-type">ValueConverterModuleExecutorArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="valuevalidatormoduleexecutor" class="tsd-anchor"></a>
 					<h3>Value<wbr>Validator<wbr>Module<wbr>Executor</h3>
 					<div class="tsd-signature tsd-kind-icon">Value<wbr>Validator<wbr>Module<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/prompt.ts:75</li>
+							<li>Defined in plugins/prompt.ts:122</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -166,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">NOT_<wbr>FOUND_<wbr>IN_<wbr>CACHE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> =&nbsp;Symbol(&#x27;NOT_FOUND_IN_CACHE&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/prompt.ts:104</li>
+							<li>Defined in plugins/prompt.ts:151</li>
 						</ul>
 					</aside>
 				</section>
@@ -183,7 +230,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/prompt.ts:513</li>
+									<li>Defined in plugins/prompt.ts:587</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -230,10 +277,19 @@
 						<a href="../interfaces/_plugins_prompt_.promptentry.html" class="tsd-kind-icon">Prompt<wbr>Entry</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_plugins_prompt_.valueconvertermodule.html" class="tsd-kind-icon">Value<wbr>Converter<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_plugins_prompt_.valueconvertermoduleexecutorarguments.html" class="tsd-kind-icon">Value<wbr>Converter<wbr>Module<wbr>Executor<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_plugins_prompt_.valuevalidatormodule.html" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_plugins_prompt_.valuevalidatormoduleexecutorarguments.html" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module<wbr>Executor<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_plugins_prompt_.html#valueconvertermoduleexecutor" class="tsd-kind-icon">Value<wbr>Converter<wbr>Module<wbr>Executor</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_plugins_prompt_.html#valuevalidatormoduleexecutor" class="tsd-kind-icon">Value<wbr>Validator<wbr>Module<wbr>Executor</a>

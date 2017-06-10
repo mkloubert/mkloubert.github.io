@@ -1,5 +1,5 @@
 {
-    "$version$": "1.9.0",
+    "$version$": "1.10.0",
 
     "CHANGELOG": {
         "description": "Lists changes of that repository",
@@ -40,6 +40,12 @@
     "Packages": {
         "type": "repository",
         "source": "https://mkloubert.github.io/templates/vs-deploy/packages.json"
+    },
+
+    "Sync when open": {
+        "type": "link", "icon": "book",
+
+        "source": "https://goo.gl/b64CBi"
     },
 
     "Targets": {

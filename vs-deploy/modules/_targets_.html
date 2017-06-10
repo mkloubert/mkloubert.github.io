@@ -70,6 +70,12 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_targets_.targetwithplugins.html" class="tsd-kind-icon">Target<wbr>With<wbr>Plugins</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
@@ -79,6 +85,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#getpluginsfortarget" class="tsd-kind-icon">get<wbr>Plugins<wbr>For<wbr>Target</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#gettargets" class="tsd-kind-icon">get<wbr>Targets</a></li>
 							</ul>
 						</section>
@@ -93,13 +100,51 @@
 					<div class="tsd-signature tsd-kind-icon">Merge<wbr>Deep<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;merge-deep&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:29</li>
+							<li>Defined in targets.ts:30</li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getpluginsfortarget" class="tsd-anchor"></a>
+					<h3>get<wbr>Plugins<wbr>For<wbr>Target</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Plugins<wbr>For<wbr>Target<span class="tsd-signature-symbol">(</span>targets<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a><span class="tsd-signature-symbol">[]</span>, plugins<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.deployplugin.html" class="tsd-signature-type">DeployPlugin</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.deployplugin.html" class="tsd-signature-type">DeployPlugin</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.targetwithplugins.html" class="tsd-signature-type">TargetWithPlugins</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in targets.ts:58</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns targets with their plugins.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>targets: <a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.deploytarget.html" class="tsd-signature-type">DeployTarget</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>One or more target.</p>
+									</div>
+								</li>
+								<li>
+									<h5>plugins: <a href="../interfaces/_contracts_.deployplugin.html" class="tsd-signature-type">DeployPlugin</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.deployplugin.html" class="tsd-signature-type">DeployPlugin</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>All known plugins.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_targets_.targetwithplugins.html" class="tsd-signature-type">TargetWithPlugins</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The targets with their plugins.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="gettargets" class="tsd-anchor"></a>
 					<h3>get<wbr>Targets</h3>
@@ -110,7 +155,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:40</li>
+									<li>Defined in targets.ts:87</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -138,8 +183,14 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_targets_.targetwithplugins.html" class="tsd-kind-icon">Target<wbr>With<wbr>Plugins</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_targets_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_targets_.html#getpluginsfortarget" class="tsd-kind-icon">get<wbr>Plugins<wbr>For<wbr>Target</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#gettargets" class="tsd-kind-icon">get<wbr>Targets</a>

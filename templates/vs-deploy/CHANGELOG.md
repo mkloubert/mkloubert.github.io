@@ -1,6 +1,6 @@
 # Change Log (vs-deploy template repository)
 
-## 1.9.0 (June 10th, 2017; sync when open)
+## 1.10.0 (June 10th, 2017; sync when open)
 
 * added link to [sync when open](https://github.com/mkloubert/vs-deploy/wiki/sync_when_open) wiki page
 

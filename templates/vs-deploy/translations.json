@@ -11,6 +11,10 @@
         "source": "https://raw.githubusercontent.com/mkloubert/vs-deploy/master/src/lang/de.ts"
     },
 
+    "Portuguese (brazilian)": {
+        "source": "https://raw.githubusercontent.com/mkloubert/vs-deploy/master/src/lang/pt-br.ts"
+    },
+
     "Spanish": {
         "source": "https://raw.githubusercontent.com/mkloubert/vs-deploy/master/src/lang/es.ts"
     },

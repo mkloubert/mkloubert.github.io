@@ -1,5 +1,9 @@
 # Change Log (vs-deploy template repository)
 
+## 1.12.0 (July 21st, 2017; brazilian portuguese translation)
+
+* added link to [brazilian portuguese translation](https://raw.githubusercontent.com/mkloubert/vs-deploy/master/src/lang/pt-br.ts)
+
 ## 1.11.0 (July 3rd, 2017; spanish translation)
 
 * added link to [spanish translation](https://raw.githubusercontent.com/mkloubert/vs-deploy/master/src/lang/es.ts)

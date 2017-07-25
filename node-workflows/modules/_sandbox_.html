@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>node-workflows</title>
+	<title>&quot;sandbox&quot; | node-workflows</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">node-workflows</a>
+					<a href="../index.html" class="title">node-workflows</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -53,10 +53,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="_sandbox_.html">&quot;sandbox&quot;</a>
 				</li>
 			</ul>
-			<h1> node-workflows</h1>
+			<h1>External module &quot;sandbox&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -67,33 +70,48 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>External modules</h3>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-external-module"><a href="modules/_index_.html" class="tsd-kind-icon">"index"</a></li>
-								<li class="tsd-kind-external-module"><a href="modules/_sandbox_.html" class="tsd-kind-icon">"sandbox"</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_sandbox_.html#workflow" class="tsd-kind-icon">workflow</a></li>
 							</ul>
 						</section>
 					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="workflow" class="tsd-anchor"></a>
+					<h3>workflow</h3>
+					<div class="tsd-signature tsd-kind-icon">workflow<span class="tsd-signature-symbol">:</span> <a href="../classes/_index_.workflow.html" class="tsd-signature-type">Workflow</a><span class="tsd-signature-symbol"> =&nbsp;Workflows.create(function(ctx) {// ACTION #0// skip one action (&#x27;ACTION #1&#x27;)ctx.skip(1);  // alternate: ctx.skip()}, function(ctx) {// ACTION #1// mark &#x27;ACTION #0&#x27;// as next ...ctx.gotoFirst();// ... but directly skip// #0 to #2ctx.skipWhile &#x3D; function(ctxToCheck) {return ctxToCheck.index &lt; 3;};}, function(ctx) {// ACTION #2if (!ctx.value) {ctx.value &#x3D; true;ctx.repeat();}else {ctx.goto(1);  // goto &#x27;ACTION #1&#x27;}}, function(ctx) {// ACTION #3ctx.gotoLast();  // goto last action (&#x27;ACTION #6&#x27;)}, function(ctx) {// ACTION #4ctx.value &#x3D; &#x27;PZ&#x27;;// if we would reach here// we could finish// the execution by calling...ctx.finish();}, function(ctx) {// ACTION #5// if we would reach here// we could jump to a previous// action by calling...ctx.goBack();  // goto to &#x27;ACTION #4&#x27;ctx.goBack(2);  // goto to &#x27;ACTION #3&#x27;}, function(ctx) {// ACTION #6// ctx.value &#x3D;&#x3D; undefined (because we never reached &#x27;ACTION #4&#x27;)if (ctx) {}})</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in sandbox.ts:3</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals current ">
-						<a href="globals.html"><em>Globals</em></a>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_index_.html">"index"</a>
+						<a href="_index_.html">"index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_sandbox_.html">"sandbox"</a>
+					<li class="current tsd-kind-external-module">
+						<a href="_sandbox_.html">"sandbox"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_sandbox_.html#workflow" class="tsd-kind-icon">workflow</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -162,7 +180,7 @@
 	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

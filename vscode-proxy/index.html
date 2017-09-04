@@ -88,9 +88,15 @@
 				<h2 id="how-to-use-uarr-table-of-contents-">How to use [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<h3 id="settings-uarr-how-to-use-">Settings [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>Open (or create) your <code>settings.json</code> in your <code>.vscode</code> subfolder of your workspace.</p>
-				<p>Add a <code>proxy</code> section:</p>
+				<p>Add a <code>tcp.proxy</code> section and one or more <a href="#proxies-">proxies</a>:</p>
 				<pre><code class="lang-json">{
-    <span class="hljs-attr">"proxy"</span>: {
+    <span class="hljs-attr">"tcp.proxy"</span>: {
+        <span class="hljs-attr">"80"</span>: {
+            <span class="hljs-attr">"autoStart"</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My HTTP proxy"</span>,
+            <span class="hljs-attr">"to"</span>: <span class="hljs-number">8080</span>,
+            <span class="hljs-attr">"outputFormat"</span>: <span class="hljs-string">"http"</span>
+        }
     }
 }
 </code></pre>
@@ -127,7 +133,7 @@
 				<h4 id="proxies-uarr-settings-">Proxies [<a href="#settings-">&uarr;</a>]</h4>
 				<p>The following example registers a proxy at port <code>80</code> and sends all data to <code>8080</code>.</p>
 				<pre><code class="lang-json">{
-    <span class="hljs-attr">"proxy"</span>: {
+    <span class="hljs-attr">"tcp.proxy"</span>: {
         <span class="hljs-attr">"80"</span>: {
             <span class="hljs-attr">"autoStart"</span>: <span class="hljs-literal">true</span>,
             <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My HTTP proxy"</span>,
@@ -247,6 +253,15 @@
 				<pre><code class="lang-javascript">exports.writeTrace = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
     <span class="hljs-comment">// this function can be executed asynchronous</span>
     <span class="hljs-comment">// via a promise</span>
+
+    <span class="hljs-comment">// the final trace list is stored</span>
+    <span class="hljs-comment">// in 'args.trace' array</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; args.trace.length; i++) {
+        <span class="hljs-comment">// s. https://mkloubert.github.io/vscode-proxy/interfaces/_contracts_.traceentry.html</span>
+        <span class="hljs-keyword">let</span> currentTraceEntry = args.trace[i];
+
+        <span class="hljs-comment">//TODO</span>
+    }
 
     <span class="hljs-comment">// you can also access any NodeJS API</span>
     <span class="hljs-comment">// provided by Visual Studio Code</span>

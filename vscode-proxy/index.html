@@ -78,6 +78,7 @@
 							<li><a href="#commands-">Commands</a></li>
 						</ul>
 					</li>
+					<li><a href="#documentation-">Documentation</a></li>
 				</ol>
 				<h2 id="install-uarr-table-of-contents-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter:</p>
@@ -124,10 +125,13 @@
 					</tbody>
 				</table>
 				<h4 id="proxies-uarr-settings-">Proxies [<a href="#settings-">&uarr;</a>]</h4>
+				<p>The following example registers a proxy at port <code>80</code> and sends all data to <code>8080</code>.</p>
 				<pre><code class="lang-json">{
     <span class="hljs-attr">"proxy"</span>: {
-        <span class="hljs-attr">"8081"</span>: {
+        <span class="hljs-attr">"80"</span>: {
             <span class="hljs-attr">"autoStart"</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My HTTP proxy"</span>,
+            <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A proxy for my HTTP server"</span>,
             <span class="hljs-attr">"to"</span>: <span class="hljs-number">8080</span>,
             <span class="hljs-attr">"outputFormat"</span>: <span class="hljs-string">"http"</span>
         }
@@ -153,6 +157,10 @@
 						<tr>
 							<td><code>chunkHandlerOptions</code></td>
 							<td>Additional options for the <a href="#chunk-handlers-">chunk handler</a>.</td>
+						</tr>
+						<tr>
+							<td><code>chunkHandlerState</code></td>
+							<td>Initial state value for the <a href="#chunk-handlers-">chunk handler</a>.</td>
 						</tr>
 						<tr>
 							<td><code>description</code></td>
@@ -183,12 +191,20 @@
 							<td>Additional options for the <a href="#trace-handlers-">trace handler</a>.</td>
 						</tr>
 						<tr>
+							<td><code>traceHandlerState</code></td>
+							<td>Initial state value for the <a href="#trace-handlers-">trace handler</a>.</td>
+						</tr>
+						<tr>
 							<td><code>traceWriter</code></td>
 							<td>The path to <a href="#trace-writers-">the script</a> that writes a trace list, when tracing is stopped.</td>
 						</tr>
 						<tr>
 							<td><code>traceWriterOptions</code></td>
 							<td>Additional options for the <a href="#trace-writers-">trace writer</a>.</td>
+						</tr>
+						<tr>
+							<td><code>traceWriterState</code></td>
+							<td>Initial state value for the <a href="#trace-writers-">trace writer</a>.</td>
 						</tr>
 						<tr>
 							<td><code>to</code></td>
@@ -202,19 +218,43 @@
 				</table>
 				<h5 id="chunk-handlers-uarr-proxies-">Chunk handlers [<a href="#proxies-">&uarr;</a>]</h5>
 				<pre><code class="lang-javascript">exports.handleChunk = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+    <span class="hljs-comment">// this function is executed synchronous</span>
 
+    <span class="hljs-comment">// you can update `args.chunk` property with new</span>
+    <span class="hljs-comment">// data, which should be send to the target</span>
+    <span class="hljs-comment">// </span>
+    <span class="hljs-comment">// (undefined) or (null) will NOT send data to the target</span>
+
+    <span class="hljs-comment">// you can also access any NodeJS API</span>
+    <span class="hljs-comment">// provided by Visual Studio Code</span>
+    <span class="hljs-comment">// and the modules shipped with that extension</span>
+    <span class="hljs-comment">// (s. https://github.com/mkloubert/vscode-proxy/blob/master/package.json)</span>
 };
 </code></pre>
+				<p><code>args</code> uses the <a href="https://mkloubert.github.io/vscode-proxy/interfaces/_contracts_.chunkhandlermoduleexecutorarguments.html">ChunkHandlerModuleExecutorArguments</a> interface.</p>
 				<h5 id="trace-handlers-uarr-proxies-">Trace handlers [<a href="#proxies-">&uarr;</a>]</h5>
 				<pre><code class="lang-javascript">exports.handleTrace = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+    <span class="hljs-comment">// this function is executed synchronous</span>
 
+    <span class="hljs-comment">// you can also access any NodeJS API</span>
+    <span class="hljs-comment">// provided by Visual Studio Code</span>
+    <span class="hljs-comment">// and the modules shipped with that extension</span>
+    <span class="hljs-comment">// (s. https://github.com/mkloubert/vscode-proxy/blob/master/package.json)</span>
 };
 </code></pre>
+				<p><code>args</code> uses the <a href="https://mkloubert.github.io/vscode-proxy/interfaces/_contracts_.tracehandlermoduleexecutorarguments.html">TraceHandlerModuleExecutorArguments</a> interface.</p>
 				<h5 id="trace-writers-uarr-proxies-">Trace writers [<a href="#proxies-">&uarr;</a>]</h5>
 				<pre><code class="lang-javascript">exports.writeTrace = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
+    <span class="hljs-comment">// this function can be executed asynchronous</span>
+    <span class="hljs-comment">// via a promise</span>
 
+    <span class="hljs-comment">// you can also access any NodeJS API</span>
+    <span class="hljs-comment">// provided by Visual Studio Code</span>
+    <span class="hljs-comment">// and the modules shipped with that extension</span>
+    <span class="hljs-comment">// (s. https://github.com/mkloubert/vscode-proxy/blob/master/package.json)</span>
 };
 </code></pre>
+				<p><code>args</code> uses the <a href="https://mkloubert.github.io/vscode-proxy/interfaces/_contracts_.tracewritermoduleexecutorarguments.html">TraceWriterModuleExecutorArguments</a> interface.</p>
 				<h3 id="commands-uarr-how-to-use-">Commands [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>Press <code>F1</code> to open the list of commands and enter one of the following commands:</p>
 				<table>
@@ -238,6 +278,8 @@
 						</tr>
 					</tbody>
 				</table>
+				<h2 id="documentation-uarr-table-of-contents-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>The full API documentation can be found <a href="https://mkloubert.github.io/vscode-proxy/">here</a>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

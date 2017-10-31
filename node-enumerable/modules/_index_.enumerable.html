@@ -74,7 +74,7 @@
 					<div class="lead">
 						<p>node-enumerable (<a href="https://github.com/mkloubert/node-enumerable">https://github.com/mkloubert/node-enumerable</a>)</p>
 					</div>
-					<p>Copyright (c) Marcel Joachim Kloubert <a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#109;&#97;&#x72;&#99;&#101;&#x6c;&#x2e;&#107;&#x6c;&#x6f;&#117;&#98;&#101;&#x72;&#x74;&#64;&#x67;&#x6d;&#x78;&#x2e;&#x6e;&#x65;&#x74;">&#109;&#97;&#x72;&#99;&#101;&#x6c;&#x2e;&#107;&#x6c;&#x6f;&#117;&#98;&#101;&#x72;&#x74;&#64;&#x67;&#x6d;&#x78;&#x2e;&#x6e;&#x65;&#x74;</a></p>
+					<p>Copyright (c) Marcel Joachim Kloubert <a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#109;&#97;&#x72;&#99;&#101;&#x6c;&#46;&#107;&#x6c;&#x6f;&#x75;&#98;&#101;&#114;&#x74;&#64;&#x67;&#109;&#x78;&#x2e;&#x6e;&#x65;&#x74;">&#109;&#97;&#x72;&#99;&#101;&#x6c;&#46;&#107;&#x6c;&#x6f;&#x75;&#98;&#101;&#114;&#x74;&#64;&#x67;&#109;&#x78;&#x2e;&#x6e;&#x65;&#x74;</a></p>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -120,6 +120,7 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_index_.enumerable.html#is_empty" class="tsd-kind-icon">IS_<wbr>EMPTY</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_index_.enumerable.html#is_enumerable" class="tsd-kind-icon">IS_<wbr>ENUMERABLE</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_index_.enumerable.html#not_found" class="tsd-kind-icon">NOT_<wbr>FOUND</a></li>
 							</ul>
 						</section>
@@ -127,6 +128,8 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#asarray" class="tsd-kind-icon">as<wbr>Array</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#asenumerable" class="tsd-kind-icon">as<wbr>Enumerable</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#asfunc" class="tsd-kind-icon">as<wbr>Func</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#build" class="tsd-kind-icon">build</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#buildinner" class="tsd-kind-icon">build<wbr>Inner</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#buildmany" class="tsd-kind-icon">build<wbr>Many</a></li>
@@ -140,6 +143,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#getnextiteratorresultsafe" class="tsd-kind-icon">get<wbr>Next<wbr>Iterator<wbr>Result<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter"><a href="_index_.enumerable.html#getordefaultarguments" class="tsd-kind-icon">get<wbr>OrDefault<wbr>Arguments</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_index_.enumerable.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_index_.enumerable.html#isenumerable" class="tsd-kind-icon">is<wbr>Enumerable</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_index_.enumerable.html#isnullorundefined" class="tsd-kind-icon">is<wbr>Null<wbr>OrUndefined</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_index_.enumerable.html#notfound" class="tsd-kind-icon">not<wbr>Found</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_index_.enumerable.html#range" class="tsd-kind-icon">range</a></li>
@@ -572,12 +576,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="is_enumerable" class="tsd-anchor"></a>
+					<h3>IS_<wbr>ENUMERABLE</h3>
+					<div class="tsd-signature tsd-kind-icon">IS_<wbr>ENUMERABLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> =&nbsp;Symbol(&#x27;IS_ENUMERABLE&#x27;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:215</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates that something is an enumerable (sequence).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="not_found" class="tsd-anchor"></a>
 					<h3>NOT_<wbr>FOUND</h3>
 					<div class="tsd-signature tsd-kind-icon">NOT_<wbr>FOUND<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> =&nbsp;Symbol(&#x27;NOT_FOUND&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:215</li>
+							<li>Defined in index.ts:219</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -599,7 +618,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2760</li>
+									<li>Defined in index.ts:2859</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -619,6 +638,92 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="asenumerable" class="tsd-anchor"></a>
+					<h3>as<wbr>Enumerable</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">as<wbr>Enumerable&lt;T&gt;<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_index_.enumerable.ienumerable.html" class="tsd-signature-type">IEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:2499</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Keeps sure that a value is a sequence.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to cast (if needed).</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_index_.enumerable.ienumerable.html" class="tsd-signature-type">IEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The value as sequence. Can return (null) or (undefined), if &#39;val&#39; is one of these values.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="asfunc" class="tsd-anchor"></a>
+					<h3>as<wbr>Func</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">as<wbr>Func&lt;T&gt;<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, throwException<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:2520</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a value as function.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The function or a value that can be converted to a lambda expression string.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> throwException: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Throw an exception on parse errors or return (false).</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">false</span>
+							</h4>
+							<p>&#39;val&#39; as function or (false) on error, if &#39;throwException&#39; is (false).
+							Can be (null) or (undefined) if &#39;val&#39; has a same value or is an empty string (representation).</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 					<a name="build" class="tsd-anchor"></a>
 					<h3>build</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
@@ -628,7 +733,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2491</li>
+									<li>Defined in index.ts:2578</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -673,7 +778,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2498</li>
+									<li>Defined in index.ts:2585</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -705,7 +810,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2536</li>
+									<li>Defined in index.ts:2623</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -751,7 +856,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2543</li>
+									<li>Defined in index.ts:2630</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -783,7 +888,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2585</li>
+									<li>Defined in index.ts:2672</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -826,7 +931,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2777</li>
+									<li>Defined in index.ts:2877</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -861,7 +966,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2596</li>
+									<li>Defined in index.ts:2683</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -895,7 +1000,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2787</li>
+									<li>Defined in index.ts:2887</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -912,7 +1017,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2607</li>
+									<li>Defined in index.ts:2694</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -950,7 +1055,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2630</li>
+									<li>Defined in index.ts:2717</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -982,7 +1087,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2821</li>
+									<li>Defined in index.ts:2921</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1014,7 +1119,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2793</li>
+									<li>Defined in index.ts:2893</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1078,7 +1183,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2646</li>
+									<li>Defined in index.ts:2730</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1101,6 +1206,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="isenumerable" class="tsd-anchor"></a>
+					<h3>is<wbr>Enumerable</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Enumerable<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in index.ts:2741</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if a value represents an enumerable (sequence).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The value to check.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Is enumerable (sequence) or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="isnullorundefined" class="tsd-anchor"></a>
 					<h3>is<wbr>Null<wbr>OrUndefined</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -1110,7 +1247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2833</li>
+									<li>Defined in index.ts:2933</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1133,7 +1270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2657</li>
+									<li>Defined in index.ts:2756</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1165,7 +1302,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2669</li>
+									<li>Defined in index.ts:2768</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1200,7 +1337,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2680</li>
+									<li>Defined in index.ts:2779</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1226,7 +1363,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2701</li>
+									<li>Defined in index.ts:2800</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1267,7 +1404,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2707</li>
+									<li>Defined in index.ts:2806</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1299,7 +1436,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2731</li>
+									<li>Defined in index.ts:2830</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1354,7 +1491,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2751</li>
+									<li>Defined in index.ts:2850</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1409,7 +1546,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2838</li>
+									<li>Defined in index.ts:2938</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1441,7 +1578,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2860</li>
+									<li>Defined in index.ts:2960</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1473,7 +1610,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2871</li>
+									<li>Defined in index.ts:2971</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1505,7 +1642,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:2885</li>
+									<li>Defined in index.ts:2985</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1594,10 +1731,19 @@
 						<a href="_index_.enumerable.html#is_empty" class="tsd-kind-icon">IS_<wbr>EMPTY</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="_index_.enumerable.html#is_enumerable" class="tsd-kind-icon">IS_<wbr>ENUMERABLE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
 						<a href="_index_.enumerable.html#not_found" class="tsd-kind-icon">NOT_<wbr>FOUND</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_index_.enumerable.html#asarray" class="tsd-kind-icon">as<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="_index_.enumerable.html#asenumerable" class="tsd-kind-icon">as<wbr>Enumerable</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="_index_.enumerable.html#asfunc" class="tsd-kind-icon">as<wbr>Func</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
 						<a href="_index_.enumerable.html#build" class="tsd-kind-icon">build</a>
@@ -1637,6 +1783,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_index_.enumerable.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_index_.enumerable.html#isenumerable" class="tsd-kind-icon">is<wbr>Enumerable</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_index_.enumerable.html#isnullorundefined" class="tsd-kind-icon">is<wbr>Null<wbr>OrUndefined</a>

@@ -166,6 +166,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerable.igrouping.html#indexof" class="tsd-kind-icon">index<wbr>Of</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_index_.enumerable.igrouping.html#intersect" class="tsd-kind-icon">intersect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerable.igrouping.html#intersperse" class="tsd-kind-icon">intersperse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerable.igrouping.html#interspersearray" class="tsd-kind-icon">intersperse<wbr>Array</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="_index_.enumerable.igrouping.html#join" class="tsd-kind-icon">join</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_index_.enumerable.igrouping.html#jointostring" class="tsd-kind-icon">join<wbr>ToString</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_index_.enumerable.igrouping.html#last" class="tsd-kind-icon">last</a></li>
@@ -269,7 +270,7 @@
 					<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TKey</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:968</li>
+							<li>Defined in index.ts:976</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -1511,7 +1512,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#intersect">intersect</a></p>
 								<ul>
-									<li>Defined in index.ts:592</li>
+									<li>Defined in index.ts:600</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1573,6 +1574,45 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
+					<a name="interspersearray" class="tsd-anchor"></a>
+					<h3>intersperse<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">intersperse<wbr>Array&lt;U&gt;<span class="tsd-signature-symbol">(</span>separators<span class="tsd-signature-symbol">: </span><a href="../modules/_index_.enumerable.html#sequence" class="tsd-signature-type">Sequence</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_index_.enumerable.ienumerable.html" class="tsd-signature-type">IEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#interspersearray">intersperseArray</a></p>
+								<ul>
+									<li>Defined in index.ts:591</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns all elements of the collection separated by the given separator(s).</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>U</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>separators: <a href="../modules/_index_.enumerable.html#sequence" class="tsd-signature-type">Sequence</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The separators.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_index_.enumerable.ienumerable.html" class="tsd-signature-type">IEnumerable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The new sequence.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
 					<a name="join" class="tsd-anchor"></a>
 					<h3>join</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
@@ -1583,7 +1623,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#join">join</a></p>
 								<ul>
-									<li>Defined in index.ts:606</li>
+									<li>Defined in index.ts:614</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1664,7 +1704,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#jointostring">joinToString</a></p>
 								<ul>
-									<li>Defined in index.ts:620</li>
+									<li>Defined in index.ts:628</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1694,7 +1734,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#last">last</a></p>
 								<ul>
-									<li>Defined in index.ts:630</li>
+									<li>Defined in index.ts:638</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1729,7 +1769,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#lastindexof">lastIndexOf</a></p>
 								<ul>
-									<li>Defined in index.ts:642</li>
+									<li>Defined in index.ts:650</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1776,7 +1816,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#lastordefault">lastOrDefault</a></p>
 								<ul>
-									<li>Defined in index.ts:655</li>
+									<li>Defined in index.ts:663</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1823,7 +1863,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#makeresettable">makeResettable</a></p>
 								<ul>
-									<li>Defined in index.ts:662</li>
+									<li>Defined in index.ts:670</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1847,7 +1887,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#max">max</a></p>
 								<ul>
-									<li>Defined in index.ts:670</li>
+									<li>Defined in index.ts:678</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1889,7 +1929,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#min">min</a></p>
 								<ul>
-									<li>Defined in index.ts:679</li>
+									<li>Defined in index.ts:687</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1956,7 +1996,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#nonan">noNAN</a></p>
 								<ul>
-									<li>Defined in index.ts:688</li>
+									<li>Defined in index.ts:696</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1986,7 +2026,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#not">not</a></p>
 								<ul>
-									<li>Defined in index.ts:697</li>
+									<li>Defined in index.ts:705</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2016,7 +2056,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#notempty">notEmpty</a></p>
 								<ul>
-									<li>Defined in index.ts:703</li>
+									<li>Defined in index.ts:711</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2040,7 +2080,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#oftype">ofType</a></p>
 								<ul>
-									<li>Defined in index.ts:713</li>
+									<li>Defined in index.ts:721</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2084,7 +2124,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#order">order</a></p>
 								<ul>
-									<li>Defined in index.ts:721</li>
+									<li>Defined in index.ts:729</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2114,7 +2154,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#orderby">orderBy</a></p>
 								<ul>
-									<li>Defined in index.ts:730</li>
+									<li>Defined in index.ts:738</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2156,7 +2196,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#orderbydescending">orderByDescending</a></p>
 								<ul>
-									<li>Defined in index.ts:740</li>
+									<li>Defined in index.ts:748</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2198,7 +2238,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#orderdescending">orderDescending</a></p>
 								<ul>
-									<li>Defined in index.ts:749</li>
+									<li>Defined in index.ts:757</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2228,7 +2268,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#product">product</a></p>
 								<ul>
-									<li>Defined in index.ts:755</li>
+									<li>Defined in index.ts:763</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2261,7 +2301,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#pushto">pushTo</a></p>
 								<ul>
-									<li>Defined in index.ts:763</li>
+									<li>Defined in index.ts:771</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2293,7 +2333,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#rand">rand</a></p>
 								<ul>
-									<li>Defined in index.ts:771</li>
+									<li>Defined in index.ts:779</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2338,7 +2378,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#reset">reset</a></p>
 								<ul>
-									<li>Defined in index.ts:779</li>
+									<li>Defined in index.ts:787</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2390,7 +2430,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#reverse">reverse</a></p>
 								<ul>
-									<li>Defined in index.ts:785</li>
+									<li>Defined in index.ts:793</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2414,7 +2454,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#round">round</a></p>
 								<ul>
-									<li>Defined in index.ts:791</li>
+									<li>Defined in index.ts:799</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2438,7 +2478,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#select">select</a></p>
 								<ul>
-									<li>Defined in index.ts:801</li>
+									<li>Defined in index.ts:809</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2481,7 +2521,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#selectmany">selectMany</a></p>
 								<ul>
-									<li>Defined in index.ts:812</li>
+									<li>Defined in index.ts:820</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2526,7 +2566,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#sequenceequal">sequenceEqual</a></p>
 								<ul>
-									<li>Defined in index.ts:823</li>
+									<li>Defined in index.ts:831</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2573,7 +2613,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#single">single</a></p>
 								<ul>
-									<li>Defined in index.ts:834</li>
+									<li>Defined in index.ts:842</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2608,7 +2648,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#singleordefault">singleOrDefault</a></p>
 								<ul>
-									<li>Defined in index.ts:848</li>
+									<li>Defined in index.ts:856</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2658,7 +2698,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#skip">skip</a></p>
 								<ul>
-									<li>Defined in index.ts:857</li>
+									<li>Defined in index.ts:865</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2688,7 +2728,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#skiplast">skipLast</a></p>
 								<ul>
-									<li>Defined in index.ts:863</li>
+									<li>Defined in index.ts:871</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2712,7 +2752,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#skipwhile">skipWhile</a></p>
 								<ul>
-									<li>Defined in index.ts:871</li>
+									<li>Defined in index.ts:879</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2742,7 +2782,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#sum">sum</a></p>
 								<ul>
-									<li>Defined in index.ts:877</li>
+									<li>Defined in index.ts:885</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2775,7 +2815,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#take">take</a></p>
 								<ul>
-									<li>Defined in index.ts:885</li>
+									<li>Defined in index.ts:893</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2805,7 +2845,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#takewhile">takeWhile</a></p>
 								<ul>
-									<li>Defined in index.ts:893</li>
+									<li>Defined in index.ts:901</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2859,7 +2899,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#toarray">toArray</a></p>
 								<ul>
-									<li>Defined in index.ts:899</li>
+									<li>Defined in index.ts:907</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2883,7 +2923,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#tolookup">toLookup</a></p>
 								<ul>
-									<li>Defined in index.ts:911</li>
+									<li>Defined in index.ts:919</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2936,7 +2976,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#toobject">toObject</a></p>
 								<ul>
-									<li>Defined in index.ts:923</li>
+									<li>Defined in index.ts:931</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3004,7 +3044,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#union">union</a></p>
 								<ul>
-									<li>Defined in index.ts:932</li>
+									<li>Defined in index.ts:940</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3040,7 +3080,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#where">where</a></p>
 								<ul>
-									<li>Defined in index.ts:941</li>
+									<li>Defined in index.ts:949</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3073,7 +3113,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_index_.enumerable.ienumerable.html">IEnumerable</a>.<a href="_index_.enumerable.ienumerable.html#zip">zip</a></p>
 								<ul>
-									<li>Defined in index.ts:954</li>
+									<li>Defined in index.ts:962</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3270,6 +3310,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
 								<a href="_index_.enumerable.igrouping.html#intersperse" class="tsd-kind-icon">intersperse</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
+								<a href="_index_.enumerable.igrouping.html#interspersearray" class="tsd-kind-icon">intersperse<wbr>Array</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
 								<a href="_index_.enumerable.igrouping.html#join" class="tsd-kind-icon">join</a>

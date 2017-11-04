@@ -105,6 +105,7 @@
 									<li><a href="#clone-">clone</a></li>
 									<li><a href="#concat--concatarray-">concat / concatArray</a></li>
 									<li><a href="#defaultifempty--defaultsequenceifempty-">defaultIfEmpty / defaultSequenceIfEmpty</a></li>
+									<li><a href="#intersperse--interspersearray-">intersperse / intersperseArray</a></li>
 									<li><a href="#popfrom--shiftfrom-">popFrom / shiftFrom</a></li>
 									<li><a href="#pushto-">pushTo</a></li>
 									<li><a href="#reset-">reset</a></li>
@@ -686,15 +687,14 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
 Enumerable.create()
           .defaultSequenceIfEmpty([<span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span>, <span class="hljs-string">'mk'</span>]);
 </code></pre>
-				<h4 id="intersperse-uarr-more-">intersperse [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>);
-<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> chunk <span class="hljs-keyword">of</span> seq.intersperse(<span class="hljs-string">'-'</span>)) {
-    <span class="hljs-comment">// [0] =&gt; 0</span>
-    <span class="hljs-comment">// [1] =&gt; '-'</span>
-    <span class="hljs-comment">// [2] =&gt; 1</span>
-    <span class="hljs-comment">// [3] =&gt; '-'</span>
-    <span class="hljs-comment">// [4] =&gt; 2</span>
-}
+				<h4 id="intersperse-interspersearray-uarr-more-">intersperse / intersperseArray [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// 0, '-', 1, '-', 2</span>
+Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>)
+          .intersperse(<span class="hljs-string">'-'</span>);
+
+<span class="hljs-comment">// -- or --</span>
+Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>)
+          .intersperseArray( [<span class="hljs-string">'-'</span>] );
 </code></pre>
 				<h4 id="popfrom-shiftfrom-uarr-more-">popFrom / shiftFrom [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr1 = [ <span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span> ];

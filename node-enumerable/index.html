@@ -99,10 +99,13 @@
 							<li><a href="#checks--conditions-">Checks / conditions</a></li>
 							<li><a href="#conversions-">Conversions</a></li>
 							<li><a href="#count-">Count</a></li>
+							<li><a href="#math-">Math</a></li>
 							<li><a href="#more-">More</a><ul>
+									<li><a href="#chunk-">chunk</a></li>
 									<li><a href="#clone-">clone</a></li>
 									<li><a href="#concat--concatarray-">concat / concatArray</a></li>
 									<li><a href="#defaultifempty--defaultsequenceifempty-">defaultIfEmpty / defaultSequenceIfEmpty</a></li>
+									<li><a href="#popfrom--shiftfrom-">popFrom / shiftFrom</a></li>
 									<li><a href="#pushto-">pushTo</a></li>
 									<li><a href="#reset-">reset</a></li>
 								</ul>
@@ -331,6 +334,11 @@ Enumerable.create(<span class="hljs-string">"grape"</span>, <span class="hljs-st
 <span class="hljs-comment">// 4, 3, 2, 1</span>
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
           .reverse();
+
+<span class="hljs-comment">// rand()</span>
+<span class="hljs-comment">// e.g.: 2, 5, 7, 8, 0, 4, 6, 9, 3, 1</span>
+Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>)
+          .rand();
 </code></pre>
 				<h3 id="take-skip-elements-uarr-examples-">Take / skip elements [<a href="#examples-">&uarr;</a>]</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// skip()</span>
@@ -534,7 +542,12 @@ Enumerable.create(<span class="hljs-string">"grape"</span>, <span class="hljs-st
                 });
 </code></pre>
 				<h3 id="projection-uarr-examples-">Projection [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// select()</span>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// flatten()</span>
+<span class="hljs-comment">// 1, (false), 3, 44, '555', 66.6, (true)</span>
+Enumerable.from( [ [ <span class="hljs-number">1</span>, <span class="hljs-literal">false</span>, <span class="hljs-number">3</span> ], <span class="hljs-number">44</span>, [ <span class="hljs-string">'555'</span>, <span class="hljs-number">66.6</span>, <span class="hljs-literal">true</span> ] ] )
+          .flatten();
+
+<span class="hljs-comment">// select()</span>
 <span class="hljs-comment">// "MARCEL", "KLOUBERT"</span>
 Enumerable.create(<span class="hljs-string">"Marcel"</span>, <span class="hljs-string">"Kloubert"</span>)
           .select(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x.toUpperCase());
@@ -558,15 +571,20 @@ Enumerable.create(<span class="hljs-string">'Marcel'</span>, <span class="hljs-s
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">'3'</span>, <span class="hljs-number">4</span>)
           .all(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> <span class="hljs-keyword">typeof</span> x !== <span class="hljs-string">"string"</span>);
 
+<span class="hljs-comment">// any()</span>
+<span class="hljs-comment">// (true)</span>
+Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">'3'</span>, <span class="hljs-number">4</span>)
+          .any(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> <span class="hljs-keyword">typeof</span> x === <span class="hljs-string">"string"</span>);
+
 <span class="hljs-comment">// contains()</span>
 <span class="hljs-comment">// (true)</span>
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">'3'</span>)
           .contains(<span class="hljs-number">3</span>);
 
-<span class="hljs-comment">// any()</span>
-<span class="hljs-comment">// (true)</span>
+<span class="hljs-comment">// not()</span>
+<span class="hljs-comment">// 1, 2, 4</span>
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">'3'</span>, <span class="hljs-number">4</span>)
-          .any(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> <span class="hljs-keyword">typeof</span> x === <span class="hljs-string">"string"</span>);
+          .not(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> <span class="hljs-keyword">typeof</span> x === <span class="hljs-string">"string"</span>);
 
 <span class="hljs-comment">// sequenceEqual()</span>
 <span class="hljs-comment">// (false)         </span>
@@ -601,7 +619,37 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
           .count(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> x &gt; <span class="hljs-number">0</span>);
 </code></pre>
+				<h3 id="math-uarr-math-">Math [<a href="#math-">&uarr;</a>]</h3>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// abs()</span>
+<span class="hljs-comment">// 1, 22.57, 444, NaN, -333.85, NaN</span>
+Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number">22.57</span>, <span class="hljs-number">444</span>, <span class="hljs-literal">true</span>, <span class="hljs-number">-333.85</span>, <span class="hljs-literal">false</span>);
+          .abs();
+
+<span class="hljs-comment">// ceil()</span>
+<span class="hljs-comment">// -1, 23, 444, NaN, -333, NaN</span>
+Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number">22.47</span>, <span class="hljs-number">444</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">-333.85</span>, <span class="hljs-literal">false</span>);
+          .ceil();
+
+<span class="hljs-comment">// floor()</span>
+<span class="hljs-comment">// -1, 23, 444, NaN, -334, NaN</span>
+Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number">22.47</span>, <span class="hljs-number">444.0</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-number">-333.85</span>, <span class="hljs-literal">true</span>);
+          .floor();
+
+<span class="hljs-comment">// round()</span>
+<span class="hljs-comment">// -1, 23, 444, NaN, -334, 2, NaN</span>
+Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number">22.47</span>, <span class="hljs-number">444.0</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-number">-333.85</span>, <span class="hljs-number">1.5</span>, <span class="hljs-literal">true</span>);
+          .round();
+</code></pre>
 				<h3 id="more-uarr-examples-">More [<a href="#examples-">&uarr;</a>]</h3>
+				<h4 id="chunk-uarr-more-">Chunk [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> chunk <span class="hljs-keyword">of</span> seq.chunk(<span class="hljs-number">3</span>)) {
+    <span class="hljs-comment">// [0] =&gt; [0, 1, 2]</span>
+    <span class="hljs-comment">// [1] =&gt; [3, 4, 5]</span>
+    <span class="hljs-comment">// [2] =&gt; [6, 7, 8]</span>
+    <span class="hljs-comment">// [3] =&gt; [9]</span>
+}
+</code></pre>
 				<h4 id="clone-uarr-more-">clone [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> father = Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
 
@@ -637,6 +685,23 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
 <span class="hljs-comment">// 'pz', 'tm', 'mk'</span>
 Enumerable.create()
           .defaultSequenceIfEmpty([<span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span>, <span class="hljs-string">'mk'</span>]);
+</code></pre>
+				<h4 id="popfrom-shiftfrom-uarr-more-">popFrom / shiftFrom [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr1 = [ <span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span> ];
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> Enumerable.popFrom(arr1)) {
+    <span class="hljs-comment">// [0] 33</span>
+    <span class="hljs-comment">// [1] 22</span>
+    <span class="hljs-comment">// [2] 11</span>
+}
+<span class="hljs-comment">// arr1 is empty now</span>
+
+<span class="hljs-keyword">let</span> arr2 = [ <span class="hljs-number">111</span>, <span class="hljs-number">222</span>, <span class="hljs-number">333</span> ];
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> Enumerable.shiftFrom(arr2)) {
+    <span class="hljs-comment">// [0] 111</span>
+    <span class="hljs-comment">// [1] 222</span>
+    <span class="hljs-comment">// [2] 333</span>
+}
+<span class="hljs-comment">// arr2 is empty now</span>
 </code></pre>
 				<h4 id="pushto-uarr-more-">pushTo [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [];

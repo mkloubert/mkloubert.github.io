@@ -686,6 +686,16 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
 Enumerable.create()
           .defaultSequenceIfEmpty([<span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span>, <span class="hljs-string">'mk'</span>]);
 </code></pre>
+				<h4 id="intersperse-uarr-more-">intersperse [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> chunk <span class="hljs-keyword">of</span> seq.intersperse(<span class="hljs-string">'-'</span>)) {
+    <span class="hljs-comment">// [0] =&gt; 0</span>
+    <span class="hljs-comment">// [1] =&gt; '-'</span>
+    <span class="hljs-comment">// [2] =&gt; 1</span>
+    <span class="hljs-comment">// [3] =&gt; '-'</span>
+    <span class="hljs-comment">// [4] =&gt; 2</span>
+}
+</code></pre>
 				<h4 id="popfrom-shiftfrom-uarr-more-">popFrom / shiftFrom [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr1 = [ <span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span> ];
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> Enumerable.popFrom(arr1)) {

@@ -339,7 +339,7 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
 <span class="hljs-comment">// rand()</span>
 <span class="hljs-comment">// e.g.: 2, 5, 7, 8, 0, 4, 6, 9, 3, 1</span>
 Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>)
-          .rand();
+          .rand();  <span class="hljs-comment">// alt: shuffle()</span>
 </code></pre>
 				<h3 id="take-skip-elements-uarr-examples-">Take / skip elements [<a href="#examples-">&uarr;</a>]</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// skip()</span>
@@ -431,16 +431,6 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
 <span class="hljs-comment">// "M., Tanja"</span>
 Enumerable.create(<span class="hljs-string">'M.'</span>, <span class="hljs-string">'Tanja'</span>)
           .joinToString(<span class="hljs-string">', '</span>);
-
-<span class="hljs-comment">// product()</span>
-<span class="hljs-comment">// 24</span>
-Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
-          .product();
-
-<span class="hljs-comment">// sum()</span>
-<span class="hljs-comment">// 10</span>
-Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
-          .sum();
 </code></pre>
 				<h3 id="minimum-maximum-values-uarr-examples-">Minimum / maximum values [<a href="#examples-">&uarr;</a>]</h3>
 				<pre><code class="lang-typescript"><span class="hljs-comment">// max()</span>
@@ -631,15 +621,70 @@ Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number"
 Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number">22.47</span>, <span class="hljs-number">444</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">-333.85</span>, <span class="hljs-literal">false</span>);
           .ceil();
 
+<span class="hljs-comment">// cos()</span>
+<span class="hljs-comment">// 981.63, 927.18, 838.67</span>
+Enumerable.create(<span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span>)
+          .cos();  <span class="hljs-comment">// complement: arcCos()</span>
+
+<span class="hljs-comment">// cosH()</span>
+<span class="hljs-comment">// 29.94, 1.79, 107.32</span>
+Enumerable.create(<span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span>)
+          .cosH();  <span class="hljs-comment">// complement: arcCosH()</span>
+
 <span class="hljs-comment">// floor()</span>
 <span class="hljs-comment">// -1, 23, 444, NaN, -334, NaN</span>
 Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number">22.47</span>, <span class="hljs-number">444.0</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-number">-333.85</span>, <span class="hljs-literal">true</span>);
           .floor();
 
+<span class="hljs-comment">// log()</span>
+<span class="hljs-comment">// 0, 1, 2, 3, 4</span>
+Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">8</span>, <span class="hljs-number">16</span>);
+          .log(<span class="hljs-number">2</span>);
+
+<span class="hljs-comment">// pow()</span>
+<span class="hljs-comment">// 1, 4, 9, 16</span>
+Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>);
+          .pow(<span class="hljs-number">2</span>);
+
+<span class="hljs-comment">// product()</span>
+<span class="hljs-comment">// 24</span>
+Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
+          .product();
+
 <span class="hljs-comment">// round()</span>
 <span class="hljs-comment">// -1, 23, 444, NaN, -334, 2, NaN</span>
 Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number">22.47</span>, <span class="hljs-number">444.0</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-number">-333.85</span>, <span class="hljs-number">1.5</span>, <span class="hljs-literal">true</span>);
           .round();
+
+<span class="hljs-comment">// sin()</span>
+<span class="hljs-comment">// 17.45, 34.89, 52.33</span>
+Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+          .sin();  <span class="hljs-comment">// complement: arcSin()</span>
+
+<span class="hljs-comment">// sinH()</span>
+<span class="hljs-comment">// 1.18, 3.63, 10.02</span>
+Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+          .sinH();  <span class="hljs-comment">// complement: arcSinH()</span>
+
+<span class="hljs-comment">// sqrt()</span>
+<span class="hljs-comment">// 1, 2, 3, 4</span>
+Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>, <span class="hljs-number">9</span>, <span class="hljs-number">16</span>);
+          .sqrt();
+
+<span class="hljs-comment">// sum()</span>
+<span class="hljs-comment">// 10</span>
+Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
+          .sum();
+
+<span class="hljs-comment">// tan()</span>
+<span class="hljs-comment">// -2.61, 900.40, -509.52</span>
+Enumerable.create(<span class="hljs-number">111</span>, <span class="hljs-number">222</span>, <span class="hljs-number">333</span>)
+          .tan();  <span class="hljs-comment">// complement: arcTan()</span>
+
+<span class="hljs-comment">// tanH()</span>
+<span class="hljs-comment">// 0, 462.12, -761.59</span>
+Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">-1</span>)
+          .tanH();  <span class="hljs-comment">// complement: arcTanH()</span>
 </code></pre>
 				<h3 id="more-uarr-examples-">More [<a href="#examples-">&uarr;</a>]</h3>
 				<h4 id="chunk-uarr-more-">Chunk [<a href="#more-">&uarr;</a>]</h4>

@@ -61,18 +61,7 @@ var Enumerable;
         /** @inheritdoc */
         abs(handleAsInt) {
             return this.select((x) => {
-                if ('number' !== typeof x) {
-                    if (handleAsInt) {
-                        x = parseInt(toStringSafe(x).trim());
-                    }
-                    else {
-                        x = parseFloat(toStringSafe(x).trim());
-                    }
-                }
-                if (!isNaN(x)) {
-                    x = Math.abs(x);
-                }
-                return x;
+                return invokeForValidNumber(x, y => Math.abs(y), handleAsInt);
             });
         }
         /** @inheritdoc */
@@ -108,6 +97,30 @@ var Enumerable;
                 }
             }
             return false;
+        }
+        /** @inheritdoc */
+        arcCos(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.acos(y), handleAsInt));
+        }
+        /** @inheritdoc */
+        arcCosH(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.acosh(y), handleAsInt));
+        }
+        /** @inheritdoc */
+        arcSin(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.asin(y), handleAsInt));
+        }
+        /** @inheritdoc */
+        arcSinH(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.asinh(y), handleAsInt));
+        }
+        /** @inheritdoc */
+        arcTan(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.atan(y), handleAsInt));
+        }
+        /** @inheritdoc */
+        arcTanH(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.atanh(y), handleAsInt));
         }
         /** @inheritdoc */
         async(action, previousValue) {
@@ -280,13 +293,7 @@ var Enumerable;
         /** @inheritdoc */
         ceil() {
             return this.select((x) => {
-                if ('number' !== typeof x) {
-                    x = parseFloat(toStringSafe(x).trim());
-                }
-                if (!isNaN(x)) {
-                    x = Math.ceil(x);
-                }
-                return x;
+                return invokeForValidNumber(x, y => Math.ceil(y));
             });
         }
         /** @inheritdoc */
@@ -362,6 +369,14 @@ var Enumerable;
         /** @inheritdoc */
         contains(item, comparer) {
             return this.indexOf(item, comparer) > -1;
+        }
+        /** @inheritdoc */
+        cos(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.cos(y), handleAsInt));
+        }
+        /** @inheritdoc */
+        cosH(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.cosh(y), handleAsInt));
         }
         /** @inheritdoc */
         count(predicate) {
@@ -530,13 +545,7 @@ var Enumerable;
         /** @inheritdoc */
         floor() {
             return this.select((x) => {
-                if ('number' !== typeof x) {
-                    x = parseFloat(toStringSafe(x).trim());
-                }
-                if (!isNaN(x)) {
-                    x = Math.floor(x);
-                }
-                return x;
+                return invokeForValidNumber(x, y => Math.floor(y));
             });
         }
         /** @inheritdoc */
@@ -799,6 +808,21 @@ var Enumerable;
             return ARGS.defaultValue;
         }
         /** @inheritdoc */
+        log(base, handleAsInt) {
+            let logFunc;
+            base = parseFloat(toStringSafe(base).trim());
+            if (isNaN(base)) {
+                logFunc = a => Math.log(a);
+            }
+            else {
+                logFunc = a => Math.log(a) /
+                    Math.log(base);
+            }
+            return this.select(x => {
+                return invokeForValidNumber(x, y => logFunc(y), handleAsInt);
+            });
+        }
+        /** @inheritdoc */
         makeResettable() {
             if (this.canReset) {
                 return this;
@@ -910,6 +934,16 @@ var Enumerable;
             return this.orderByDescending(x => x, comparer);
         }
         /** @inheritdoc */
+        pow(exponent, handleAsInt) {
+            exponent = parseFloat(toStringSafe(exponent).trim());
+            if (isNaN(exponent)) {
+                exponent = 2;
+            }
+            return this.select((x) => {
+                return invokeForValidNumber(x, y => Math.pow(y, exponent), handleAsInt);
+            });
+        }
+        /** @inheritdoc */
         product() {
             return this.aggregate((acc, x) => Enumerable.IS_EMPTY !== acc ? (acc * x) : x, Enumerable.IS_EMPTY);
         }
@@ -924,14 +958,7 @@ var Enumerable;
         /** @inheritdoc */
         rand(sortValueProvider) {
             if (!sortValueProvider) {
-                sortValueProvider = () => {
-                    try {
-                        return Math.random() * Number.MAX_SAFE_INTEGER;
-                    }
-                    catch (e) {
-                        return 0;
-                    }
-                };
+                sortValueProvider = () => Math.random();
             }
             return this.orderBy(x => {
                 return sortValueProvider();
@@ -951,13 +978,7 @@ var Enumerable;
         /** @inheritdoc */
         round() {
             return this.select((x) => {
-                if ('number' !== typeof x) {
-                    x = parseFloat(toStringSafe(x).trim());
-                }
-                if (!isNaN(x)) {
-                    x = Math.round(x);
-                }
-                return x;
+                return invokeForValidNumber(x, y => Math.round(y));
             });
         }
         /** @inheritdoc */
@@ -1010,6 +1031,15 @@ var Enumerable;
             return true;
         }
         /** @inheritdoc */
+        shuffle(sortValueProvider) {
+            return this.rand
+                .apply(this, arguments);
+        }
+        /** @inheritdoc */
+        sin(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.sin(y), handleAsInt));
+        }
+        /** @inheritdoc */
         single(predicate) {
             predicate = toPredicateSafe(predicate);
             const ELEMENT_NOT_FOUND = Symbol('ELEMENT_NOT_FOUND');
@@ -1037,6 +1067,10 @@ var Enumerable;
                 return result;
             }
             return ARGS.defaultValue;
+        }
+        /** @inheritdoc */
+        sinH(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.sinh(y), handleAsInt));
         }
         /** @inheritdoc */
         skip(count) {
@@ -1094,6 +1128,10 @@ var Enumerable;
             }
         }
         /** @inheritdoc */
+        sqrt(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.sqrt(y), handleAsInt));
+        }
+        /** @inheritdoc */
         sum() {
             return this.aggregate((acc, x) => Enumerable.IS_EMPTY !== acc ? (acc + x) : x, Enumerable.IS_EMPTY);
         }
@@ -1124,6 +1162,14 @@ var Enumerable;
                     break;
                 }
             }
+        }
+        /** @inheritdoc */
+        tan(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.tan(y), handleAsInt));
+        }
+        /** @inheritdoc */
+        tanH(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.tanh(y), handleAsInt));
         }
         /** @inheritdoc */
         toArray() {
@@ -1629,6 +1675,22 @@ var Enumerable;
         return new ArrayEnumerable(toStringSafe(val).split(''));
     } // fromString()
     Enumerable.fromString = fromString;
+    function invokeForValidNumber(x, action, handleAsInt = false) {
+        if ('number' !== typeof x) {
+            if (!handleAsInt) {
+                x = parseFloat(toStringSafe(x).trim());
+            }
+            else {
+                x = parseInt(toStringSafe(x).trim());
+            }
+        }
+        if (!isNaN(x)) {
+            if (action) {
+                x = action(x);
+            }
+        }
+        return x;
+    } // invokeForNumber()
     /**
      * Checks if a value represents the IS_EMPTY symbol.
      *
@@ -1924,4 +1986,4 @@ var Enumerable;
     }
 })(Enumerable || (Enumerable = {}));
 
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=enumerable.js.map

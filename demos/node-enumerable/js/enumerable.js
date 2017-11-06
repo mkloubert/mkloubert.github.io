@@ -394,6 +394,11 @@ var Enumerable;
             return this._current;
         }
         /** @inheritdoc */
+        defaultArrayIfEmpty(defaultSequence) {
+            return this.defaultSequenceIfEmpty
+                .apply(this, arguments);
+        }
+        /** @inheritdoc */
         defaultIfEmpty(...defaultItems) {
             return from(this.defaultIfEmptyInner(defaultItems));
         }
@@ -512,6 +517,10 @@ var Enumerable;
                     yield item;
                 }
             }
+        }
+        /** @inheritdoc */
+        exp(handleAsInt) {
+            return this.select(x => invokeForValidNumber(x, y => Math.exp(y), handleAsInt));
         }
         /** @inheritdoc */
         first(predicate) {
@@ -973,6 +982,16 @@ var Enumerable;
             let i = Number.MIN_SAFE_INTEGER;
             return this.orderByDescending(() => {
                 return i++;
+            });
+        }
+        /** @inheritdoc */
+        root(power, handleAsInt) {
+            power = parseFloat(toStringSafe(power).trim());
+            if (isNaN(power)) {
+                power = 2;
+            }
+            return this.select(x => {
+                return invokeForValidNumber(x, y => Math.pow(y, 1 / power), handleAsInt);
             });
         }
         /** @inheritdoc */
@@ -1768,6 +1787,22 @@ var Enumerable;
             }
         }
     }
+    /**
+     * Returns a sequence of random numbers.
+     *
+     * @param {number} [count] The maximum number of items.
+     *                         If not defined, the sequence will become infinitely.
+     * @param {(randomValue: number, index: number) => number} [valueProvider] A custom function for providing a random number.
+     *
+     * @return {IEnumerable<number>} The sequence of random numbers.
+     */
+    function random(count, valueProvider) {
+        if (!valueProvider) {
+            valueProvider = (randVal) => randVal;
+        }
+        return build((cancel, index) => valueProvider(Math.random(), index), count);
+    }
+    Enumerable.random = random;
     /**
      * Creates a range of numbers.
      *

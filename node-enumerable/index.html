@@ -104,10 +104,11 @@
 									<li><a href="#chunk-">chunk</a></li>
 									<li><a href="#clone-">clone</a></li>
 									<li><a href="#concat--concatarray-">concat / concatArray</a></li>
-									<li><a href="#defaultifempty--defaultsequenceifempty-">defaultIfEmpty / defaultSequenceIfEmpty</a></li>
+									<li><a href="#defaultifempty--defaultarrayifempty--defaultsequenceifempty-">defaultIfEmpty / defaultArrayIfEmpty / defaultSequenceIfEmpty</a></li>
 									<li><a href="#intersperse--interspersearray-">intersperse / intersperseArray</a></li>
 									<li><a href="#popfrom--shiftfrom-">popFrom / shiftFrom</a></li>
 									<li><a href="#pushto-">pushTo</a></li>
+									<li><a href="#random-">random</a></li>
 									<li><a href="#reset-">reset</a></li>
 								</ul>
 							</li>
@@ -622,14 +623,19 @@ Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number"
           .ceil();
 
 <span class="hljs-comment">// cos()</span>
-<span class="hljs-comment">// 981.63, 927.18, 838.67</span>
+<span class="hljs-comment">// 0.004, -0.99996, -0.01</span>
 Enumerable.create(<span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span>)
           .cos();  <span class="hljs-comment">// complement: arcCos()</span>
 
 <span class="hljs-comment">// cosH()</span>
-<span class="hljs-comment">// 29.94, 1.79, 107.32</span>
+<span class="hljs-comment">// 29937.07, 1792456423.07, 107321789892958.03</span>
 Enumerable.create(<span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span>)
           .cosH();  <span class="hljs-comment">// complement: arcCosH()</span>
+
+<span class="hljs-comment">// exp()</span>
+<span class="hljs-comment">// 2.72, 7.39, 20.09</span>
+Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
+          .exp();
 
 <span class="hljs-comment">// floor()</span>
 <span class="hljs-comment">// -1, 23, 444, NaN, -334, NaN</span>
@@ -651,13 +657,18 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
           .product();
 
+<span class="hljs-comment">// root()</span>
+<span class="hljs-comment">// 1, 2, 3, 4</span>
+Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">8</span>, <span class="hljs-number">27</span>, <span class="hljs-number">64</span>)
+          .root(<span class="hljs-number">3</span>);
+
 <span class="hljs-comment">// round()</span>
 <span class="hljs-comment">// -1, 23, 444, NaN, -334, 2, NaN</span>
 Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number">22.47</span>, <span class="hljs-number">444.0</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-number">-333.85</span>, <span class="hljs-number">1.5</span>, <span class="hljs-literal">true</span>)
           .round();
 
 <span class="hljs-comment">// sin()</span>
-<span class="hljs-comment">// 17.45, 34.89, 52.33</span>
+<span class="hljs-comment">// 0.84, 0.91, 0.14</span>
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
           .sin();  <span class="hljs-comment">// complement: arcSin()</span>
 
@@ -677,17 +688,17 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
           .sum();
 
 <span class="hljs-comment">// tan()</span>
-<span class="hljs-comment">// -2.61, 900.40, -509.52</span>
+<span class="hljs-comment">// 1.72, -1.76, -0.01</span>
 Enumerable.create(<span class="hljs-number">111</span>, <span class="hljs-number">222</span>, <span class="hljs-number">333</span>)
           .tan();  <span class="hljs-comment">// complement: arcTan()</span>
 
 <span class="hljs-comment">// tanH()</span>
-<span class="hljs-comment">// 0, 462.12, -761.59</span>
+<span class="hljs-comment">// 0, 0.46, -0.76</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">-1</span>)
           .tanH();  <span class="hljs-comment">// complement: arcTanH()</span>
 </code></pre>
 				<h3 id="more-uarr-examples-">More [<a href="#examples-">&uarr;</a>]</h3>
-				<h4 id="chunk-uarr-more-">Chunk [<a href="#more-">&uarr;</a>]</h4>
+				<h4 id="chunk-uarr-more-">chunk [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> chunk <span class="hljs-keyword">of</span> seq.chunk(<span class="hljs-number">3</span>)) {
     <span class="hljs-comment">// [0] =&gt; [0, 1, 2]</span>
@@ -715,7 +726,7 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">111</span>, <span class="hljs-number">222</span>)
           .concatArray([ [ <span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span> ], [ <span class="hljs-string">'mk'</span> ] ]);
 </code></pre>
-				<h4 id="defaultifempty-defaultsequenceifempty-uarr-more-">defaultIfEmpty / defaultSequenceIfEmpty [<a href="#more-">&uarr;</a>]</h4>
+				<h4 id="defaultifempty-defaultarrayifempty-defaultsequenceifempty-uarr-more-">defaultIfEmpty / defaultArrayIfEmpty / defaultSequenceIfEmpty [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// 0, 1, 2</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
           .defaultIfEmpty(<span class="hljs-string">'PZ'</span>, <span class="hljs-string">'TM'</span>, <span class="hljs-string">'MK'</span>);
@@ -727,6 +738,7 @@ Enumerable.create()
 <span class="hljs-comment">// 0, 11, 22</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">11</span>, <span class="hljs-number">22</span>)
           .defaultSequenceIfEmpty([<span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span>, <span class="hljs-string">'mk'</span>]);
+<span class="hljs-comment">// alt: defaultArrayIfEmpty()</span>
 
 <span class="hljs-comment">// 'pz', 'tm', 'mk'</span>
 Enumerable.create()
@@ -764,6 +776,18 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
           .pushTo(arr);
 
 <span class="hljs-comment">// arr: [0, 1, 2]</span>
+</code></pre>
+				<h4 id="random-uarr-more-">random [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> value <span class="hljs-keyword">of</span> Enumerable.random(<span class="hljs-number">10</span>)) {
+    <span class="hljs-comment">// 10 random numbers</span>
+    <span class="hljs-comment">// between 0 and 1</span>
+}
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> value <span class="hljs-keyword">of</span> Enumerable.random(<span class="hljs-number">23979</span>,
+                                    v =&gt; v * <span class="hljs-number">5979</span>)) {
+    <span class="hljs-comment">// 23979 random numbers</span>
+    <span class="hljs-comment">// between 0 and 5979</span>
+}
 </code></pre>
 				<h4 id="reset-uarr-more-">reset [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>);

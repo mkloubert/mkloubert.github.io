@@ -608,11 +608,20 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
 				<h3 id="count-uarr-examples-">Count [<a href="#examples-">&uarr;</a>]</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// 3</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
-          .count();
+          .count();  <span class="hljs-comment">// a second call will return 0</span>
+                     <span class="hljs-comment">// if reset() method is not called</span>
 
 <span class="hljs-comment">// 2</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
           .count(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> x &gt; <span class="hljs-number">0</span>);
+
+<span class="hljs-comment">// 4</span>
+Enumerable.create(<span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span>, <span class="hljs-number">44</span>)
+          .length();  <span class="hljs-comment">// a second call will return</span>
+                      <span class="hljs-comment">// the same value, because we have an array</span>
+                      <span class="hljs-comment">// based sequence here</span>
+                      <span class="hljs-comment">//</span>
+                      <span class="hljs-comment">// a generator based sequence will behave as count()</span>
 </code></pre>
 				<h3 id="math-uarr-math-">Math [<a href="#math-">&uarr;</a>]</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// abs()</span>

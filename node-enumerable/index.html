@@ -101,7 +101,7 @@
 							<li><a href="#count-">Count</a></li>
 							<li><a href="#math-">Math</a></li>
 							<li><a href="#more-">More</a><ul>
-									<li><a href="#assert--assertall-">assert</a></li>
+									<li><a href="#assert-">assert</a></li>
 									<li><a href="#chunk-">chunk</a></li>
 									<li><a href="#clone-">clone</a></li>
 									<li><a href="#concat--concatarray-">concat / concatArray</a></li>
@@ -109,10 +109,13 @@
 									<li><a href="#defaultifempty--defaultarrayifempty-">defaultIfEmpty / defaultArrayIfEmpty</a></li>
 									<li><a href="#forall-">forAll</a></li>
 									<li><a href="#intersperse--interspersearray-">intersperse / intersperseArray</a></li>
+									<li><a href="#pipe-">pipe</a></li>
 									<li><a href="#popfrom--shiftfrom-">popFrom / shiftFrom</a></li>
+									<li><a href="#prepend--prependarray-">prepend / prependArray</a></li>
 									<li><a href="#pushto-">pushTo</a></li>
 									<li><a href="#random-">random</a></li>
 									<li><a href="#reset-">reset</a></li>
+									<li><a href="#trace-">trace</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -622,6 +625,21 @@ Enumerable.create(<span class="hljs-number">11</span>, <span class="hljs-number"
                       <span class="hljs-comment">// based sequence here</span>
                       <span class="hljs-comment">//</span>
                       <span class="hljs-comment">// a generator based sequence will behave as count()</span>
+
+<span class="hljs-comment">// (false)</span>
+Enumerable.create(<span class="hljs-number">111</span>, <span class="hljs-number">222</span>, <span class="hljs-number">333</span>)
+          .isEmpty();
+
+<span class="hljs-comment">// all are (false)</span>
+Enumerable.isNullOrEmpty(
+    Enumerable.create(<span class="hljs-number">1111</span>, <span class="hljs-number">2222</span>, <span class="hljs-number">3333</span>)
+);
+Enumerable.isUndefinedNullOrEmpty(
+    Enumerable.create(<span class="hljs-number">11111</span>, <span class="hljs-number">22222</span>, <span class="hljs-number">33333</span>)
+);
+Enumerable.isUndefinedNullOrEmpty(
+    Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-literal">true</span>, <span class="hljs-literal">false</span>)
+);
 </code></pre>
 				<h3 id="math-uarr-math-">Math [<a href="#math-">&uarr;</a>]</h3>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// abs()</span>
@@ -746,11 +764,11 @@ seq2.assertAll(<span class="hljs-function">(<span class="hljs-params">x</span>) 
 				<h4 id="concat-concatarray-uarr-more-">concat / concatArray [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// 0, 1, 2, 'PZ', 'TM', 'MK'</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
-          .concat([<span class="hljs-string">'PZ'</span>], [<span class="hljs-string">'TM'</span>, <span class="hljs-string">'MK'</span>]);
+          .concat([<span class="hljs-string">'PZ'</span>], [<span class="hljs-string">'TM'</span>, <span class="hljs-string">'MK'</span>]);  <span class="hljs-comment">// alt: append()</span>
 
 <span class="hljs-comment">// 0, 111, 222, 'pz', 'tm', 'mk'</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">111</span>, <span class="hljs-number">222</span>)
-          .concatArray([ [ <span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span> ], [ <span class="hljs-string">'mk'</span> ] ]);
+          .concatArray([ [ <span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span> ], [ <span class="hljs-string">'mk'</span> ] ]);  <span class="hljs-comment">// alt: appendArray()</span>
 </code></pre>
 				<h4 id="consume-uarr-more-">consume [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createIteratorAndStorage</span>(<span class="hljs-params">size</span>) </span>{
@@ -829,6 +847,20 @@ Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3
 Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>)
           .intersperseArray( [<span class="hljs-string">'-'</span>] );
 </code></pre>
+				<h4 id="pipe-uarr-more-">pipe [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr1 = [];
+<span class="hljs-keyword">let</span> arr2 = [];
+
+<span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>).pipe(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> {
+    arr1.push(x * <span class="hljs-number">10</span>);
+});
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> seq) {
+    arr2.push(item);
+}
+
+<span class="hljs-comment">// arr1 = [10, 20, 30]</span>
+<span class="hljs-comment">// arr2 = [1, 2, 3]</span>
+</code></pre>
 				<h4 id="popfrom-shiftfrom-uarr-more-">popFrom / shiftFrom [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr1 = [ <span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span> ];
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> Enumerable.popFrom(arr1)) {
@@ -845,6 +877,15 @@ Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3
     <span class="hljs-comment">// [2] 333</span>
 }
 <span class="hljs-comment">// arr2 is empty now</span>
+</code></pre>
+				<h4 id="prepend-prependarray-uarr-more-">prepend / prependArray [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// 'PZ', 'TM', 'MK', 0, 1, 2</span>
+Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+          .prepend([<span class="hljs-string">'PZ'</span>], [<span class="hljs-string">'TM'</span>, <span class="hljs-string">'MK'</span>]);
+
+<span class="hljs-comment">// 'pz', 'tm', 'mk', 0, 111, 222</span>
+Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">111</span>, <span class="hljs-number">222</span>)
+          .prependArray([ [ <span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span> ], [ <span class="hljs-string">'mk'</span> ] ]);
 </code></pre>
 				<h4 id="pushto-uarr-more-">pushTo [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [];
@@ -876,6 +917,15 @@ seq.reset()
    .each(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> {
              <span class="hljs-built_in">console</span>.log(x * <span class="hljs-number">2</span>);
          });
+</code></pre>
+				<h4 id="trace-uarr-more-">trace [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// write items via 'console.trace()'</span>
+Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
+          .trace();
+
+<span class="hljs-comment">// with formatter</span>
+Enumerable.create(<span class="hljs-number">1.2</span>, <span class="hljs-number">2.3</span>, <span class="hljs-number">3.45</span>)
+          .trace(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> <span class="hljs-string">'Item: '</span> + x);
 </code></pre>
 				<h2 id="documentation-uarr-table-of-contents-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>The API documentation can be found <a href="https://mkloubert.github.io/node-enumerable/interfaces/_index_.enumerable.ienumerable.html">here</a>.</p>

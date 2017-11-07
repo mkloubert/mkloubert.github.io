@@ -188,6 +188,16 @@ var Enumerable;
             return false;
         }
         /** @inheritdoc */
+        append(...args) {
+            return this.concat
+                .apply(this, arguments);
+        }
+        /** @inheritdoc */
+        appendArray(sequences) {
+            return this.concatArray
+                .apply(this, arguments);
+        }
+        /** @inheritdoc */
         arcCos(handleAsInt) {
             return this.select(x => invokeForValidNumber(x, y => Math.acos(y), handleAsInt));
         }
@@ -876,6 +886,10 @@ var Enumerable;
             }
         }
         /** @inheritdoc */
+        isEmpty() {
+            return this.length() < 1;
+        }
+        /** @inheritdoc */
         join(inner, outerKeySelector, innerKeySelector, resultSelector, keyEqualityComparer) {
             if (!outerKeySelector && !innerKeySelector) {
                 outerKeySelector = (i) => i;
@@ -1096,6 +1110,23 @@ var Enumerable;
             return this.orderByDescending(x => x, comparer);
         }
         /** @inheritdoc */
+        pipe(action) {
+            return from(this.pipeInner(action));
+        }
+        /**
+         * @see pipe()
+         */
+        *pipeInner(action) {
+            let i = -1;
+            for (let item of this) {
+                ++i;
+                if (action) {
+                    action(item, i);
+                }
+                yield item;
+            }
+        }
+        /** @inheritdoc */
         pow(exponent, handleAsInt) {
             exponent = parseFloat(toStringSafe(exponent).trim());
             if (isNaN(exponent)) {
@@ -1104,6 +1135,30 @@ var Enumerable;
             return this.select((x) => {
                 return invokeForValidNumber(x, y => Math.pow(y, exponent), handleAsInt);
             });
+        }
+        /** @inheritdoc */
+        prepend(...args) {
+            return this.prependArray(args);
+        }
+        /** @inheritdoc */
+        prependArray(sequences) {
+            return from(this.prependArrayInner(sequences));
+        }
+        /**
+         * @see concatArray()
+         */
+        *prependArrayInner(sequences) {
+            if (sequences) {
+                for (let i = 0; i < sequences.length; i++) {
+                    const SEQ = sequences[i];
+                    for (let item of from(SEQ)) {
+                        yield item;
+                    }
+                }
+            }
+            for (let item of this) {
+                yield item;
+            }
         }
         /** @inheritdoc */
         product() {
@@ -1371,6 +1426,20 @@ var Enumerable;
                 OBJ[keySelector(item, i)] = item;
             }
             return OBJ;
+        }
+        /** @inheritdoc */
+        trace(formatter) {
+            if (!formatter) {
+                formatter = (item) => {
+                    if (isNullOrUndefined(item)) {
+                        return item;
+                    }
+                    return '' + item;
+                };
+            }
+            return this.pipe(x => {
+                console.trace(formatter(x));
+            });
         }
         /** @inheritdoc */
         union(second, comparer) {
@@ -1893,6 +1962,18 @@ var Enumerable;
     } // isEnumerable()
     Enumerable.isEnumerable = isEnumerable;
     /**
+     * Checks if a sequence is (null) or empty.
+     *
+     * @param {IEnumerable<T>} seq The sequence to check.
+     *
+     * @return {boolean} Is (null) or empty.
+     */
+    function isNullOrEmpty(seq) {
+        return null === seq ||
+            ('undefined' !== typeof seq && seq.isEmpty());
+    } // isNullOrEmpty<T>()
+    Enumerable.isNullOrEmpty = isNullOrEmpty;
+    /**
      * Checks if a value can be used as enumerable (sequence).
      *
      * @param {any} val The value to check.
@@ -1915,6 +1996,31 @@ var Enumerable;
         return false;
     } // isSequence()
     Enumerable.isSequence = isSequence;
+    /**
+     * Checks if a sequence is (undefined) / (null) or empty.
+     *
+     * @param {IEnumerable<T>} seq The sequence to check.
+     *
+     * @return {boolean} Is (undefined), (null) or empty.
+     */
+    function isUndefinedNullOrEmpty(seq) {
+        return 'undefined' === typeof seq ||
+            null === seq ||
+            seq.isEmpty();
+    } // isUndefinedNullOrEmpty<T>()
+    Enumerable.isUndefinedNullOrEmpty = isUndefinedNullOrEmpty;
+    /**
+     * Checks if a sequence is (undefined) or empty.
+     *
+     * @param {IEnumerable<T>} seq The sequence to check.
+     *
+     * @return {boolean} Is (undefined) or empty.
+     */
+    function isUndefinedOrEmpty(seq) {
+        return 'undefined' === typeof seq ||
+            (null !== seq && seq.isEmpty());
+    } // isUndefinedOrEmpty<T>()
+    Enumerable.isUndefinedOrEmpty = isUndefinedOrEmpty;
     /**
      * Checks if a value represents the NOT_FOUND symbol.
      *

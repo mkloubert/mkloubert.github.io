@@ -41,6 +41,95 @@ var Enumerable;
      */
     Enumerable.NOT_FOUND = Symbol('NOT_FOUND');
     /**
+     * Represents a list of errors.
+     */
+    class AggregateError extends Error {
+        /**
+         * Initializes a new instance of that class.
+         *
+         * @param {any[]} [errors] The occurred errors.
+         */
+        constructor(errors) {
+            super();
+            this._errors = (errors || []).filter(e => {
+                return !isNullOrUndefined(e);
+            });
+        }
+        /**
+         * Gets the errors.
+         */
+        get errors() {
+            return this._errors;
+        }
+        /** @inheritdoc */
+        get stack() {
+            return this.errors.map((e, i) => {
+                const TITLE = "STACK #" + (i + 1);
+                const LINE = repeat('=', TITLE.length + 5).joinToString();
+                return `${TITLE}\n${LINE}\n${toStringSafe(e['stack'])}`;
+            }).join("\n\n");
+        }
+        /** @inheritdoc */
+        toString() {
+            return this.errors.map((e, i) => {
+                const TITLE = "ERROR #" + (i + 1);
+                const LINE = repeat('=', TITLE.length + 5).joinToString();
+                return `${TITLE}\n${LINE}\n${e}`;
+            }).join("\n\n");
+        }
+    }
+    Enumerable.AggregateError = AggregateError;
+    /**
+     * A error wrapper for a function.
+     */
+    class FunctionError extends Error {
+        /**
+         * Initializes a new instance of that class.
+         *
+         * @param {any} [err] The underlying, inner error.
+         * @param {Function} [func] The underlying function.
+         * @param {number} [index] The (zero based) index.
+         */
+        constructor(err, func, index) {
+            super();
+            this._error = err;
+            this._function = func;
+            this._index = index;
+        }
+        /**
+         * Gets the (zero based) index.
+         */
+        get index() {
+            return this._index;
+        }
+        /**
+         * Gets the inner error.
+         */
+        get innerError() {
+            return this._error;
+        }
+        /** @inheritdoc */
+        get stack() {
+            if (this.innerError) {
+                return this.innerError['stack'];
+            }
+        }
+        /** @inheritdoc */
+        toString() {
+            let title = 'ACTION ERROR';
+            if (!isNaN(this.index)) {
+                title += ' #' + this.index;
+            }
+            const LINE = repeat('=', title.length + 5).joinToString();
+            let content = '';
+            if (this.innerError) {
+                content += this.innerError;
+            }
+            return `${title}\n${LINE}\n${content}`;
+        }
+    }
+    Enumerable.FunctionError = FunctionError;
+    /**
      * A basic sequence.
      */
     class EnumerableBase {
@@ -121,6 +210,36 @@ var Enumerable;
         /** @inheritdoc */
         arcTanH(handleAsInt) {
             return this.select(x => invokeForValidNumber(x, y => Math.atanh(y), handleAsInt));
+        }
+        /** @inheritdoc */
+        assert(predicate, errMsg) {
+            predicate = toPredicateSafe(predicate);
+            errMsg = toItemMessageSafe(errMsg);
+            let i = -1;
+            for (let item of this) {
+                ++i;
+                if (!predicate(item)) {
+                    throw errMsg(item, i);
+                }
+            }
+            return this;
+        }
+        /** @inheritdoc */
+        assertAll(predicate, errMsg) {
+            predicate = toPredicateSafe(predicate);
+            errMsg = toItemMessageSafe(errMsg);
+            const ERRORS = [];
+            let i = -1;
+            for (let item of this) {
+                ++i;
+                if (!predicate(item)) {
+                    ERRORS.push(errMsg(item, i));
+                }
+            }
+            if (ERRORS.length > 0) {
+                throw new AggregateError(ERRORS);
+            }
+            return this;
         }
         /** @inheritdoc */
         async(action, previousValue) {
@@ -367,6 +486,11 @@ var Enumerable;
             }
         }
         /** @inheritdoc */
+        consume() {
+            for (let item of this) { }
+            return this;
+        }
+        /** @inheritdoc */
         contains(item, comparer) {
             return this.indexOf(item, comparer) > -1;
         }
@@ -474,6 +598,11 @@ var Enumerable;
                 .apply(this, arguments);
         }
         /** @inheritdoc */
+        eachAll(action) {
+            return this.forAll
+                .apply(this, arguments);
+        }
+        /** @inheritdoc */
         elementAt(index) {
             const ELEMENT_NOT_FOUND = Symbol('ELEMENT_NOT_FOUND');
             const ITEM = this.elementAtOrDefault(index, ELEMENT_NOT_FOUND);
@@ -556,6 +685,26 @@ var Enumerable;
             return this.select((x) => {
                 return invokeForValidNumber(x, y => Math.floor(y));
             });
+        }
+        /** @inheritdoc */
+        forAll(action) {
+            const ERRORS = [];
+            let i = -1;
+            for (let item of this) {
+                ++i;
+                try {
+                    if (action) {
+                        action(item, i);
+                    }
+                }
+                catch (e) {
+                    ERRORS.push(new FunctionError(e, action, i));
+                }
+            }
+            if (ERRORS.length > 0) {
+                throw new AggregateError(ERRORS);
+            }
+            return this;
         }
         /** @inheritdoc */
         forEach(action) {
@@ -815,6 +964,10 @@ var Enumerable;
                 return result;
             }
             return ARGS.defaultValue;
+        }
+        /** @inheritdoc */
+        length() {
+            return this.count();
         }
         /** @inheritdoc */
         log(base, handleAsInt) {
@@ -1241,23 +1394,23 @@ var Enumerable;
         }
         /** @inheritdoc */
         zip(second, resultSelector) {
+            if (!resultSelector) {
+                resultSelector = (x, y) => x + y;
+            }
             return from(this.zipInner(from(second), resultSelector));
         }
         /**
          * @see zip()
          */
         *zipInner(second, resultSelector) {
-            if (!resultSelector) {
-                resultSelector = (x, y) => x + y;
-            }
             let i = -1;
             do {
-                const ITEM_THIS = this.next();
-                if (!ITEM_THIS || ITEM_THIS.done) {
+                const ITEM_THIS = getNextIteratorResultSafe(this);
+                if (ITEM_THIS.done) {
                     break;
                 }
-                const ITEM_SECOND = second.next();
-                if (!ITEM_SECOND || ITEM_SECOND.done) {
+                const ITEM_SECOND = getNextIteratorResultSafe(second);
+                if (ITEM_SECOND.done) {
                     break;
                 }
                 yield resultSelector(ITEM_THIS.value, ITEM_SECOND.value, ++i);
@@ -1351,6 +1504,10 @@ var Enumerable;
         /** @inheritdoc */
         get canReset() {
             return true;
+        }
+        /** @inheritdoc */
+        length() {
+            return this._array.length;
         }
         /** @inheritdoc */
         next() {
@@ -1961,14 +2118,11 @@ var Enumerable;
         };
     }
     function getNextIteratorResultSafe(iterator, defaultValue) {
-        let result = iterator.next();
-        if (!result) {
-            result = {
-                done: true,
-                value: defaultValue,
-            };
-        }
-        return result;
+        const RESULT = iterator.next();
+        return RESULT || {
+            done: true,
+            value: defaultValue,
+        };
     }
     function isNullOrUndefined(val) {
         return null === val ||
@@ -1999,6 +2153,18 @@ var Enumerable;
             comparer = (x, y) => x === y;
         }
         return comparer;
+    }
+    function toItemMessageSafe(msgOrProvider) {
+        if (isNullOrUndefined(msgOrProvider)) {
+            msgOrProvider = (item, index) => `Condition failed at index ${index}`;
+        }
+        if ('function' !== typeof msgOrProvider) {
+            const MSG = msgOrProvider;
+            msgOrProvider = () => MSG;
+        }
+        return (item, index) => {
+            return toStringSafe(msgOrProvider(item, index));
+        };
     }
     function toPredicateSafe(predicate, defaultValue = true) {
         if (isNullOrUndefined(predicate)) {

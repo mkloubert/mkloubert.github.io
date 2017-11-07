@@ -101,10 +101,13 @@
 							<li><a href="#count-">Count</a></li>
 							<li><a href="#math-">Math</a></li>
 							<li><a href="#more-">More</a><ul>
+									<li><a href="#assert--assertall-">assert</a></li>
 									<li><a href="#chunk-">chunk</a></li>
 									<li><a href="#clone-">clone</a></li>
 									<li><a href="#concat--concatarray-">concat / concatArray</a></li>
-									<li><a href="#defaultifempty--defaultarrayifempty--defaultsequenceifempty-">defaultIfEmpty / defaultArrayIfEmpty / defaultSequenceIfEmpty</a></li>
+									<li><a href="#consume-">consume</a></li>
+									<li><a href="#defaultifempty--defaultarrayifempty-">defaultIfEmpty / defaultArrayIfEmpty</a></li>
+									<li><a href="#forall-">forAll</a></li>
 									<li><a href="#intersperse--interspersearray-">intersperse / intersperseArray</a></li>
 									<li><a href="#popfrom--shiftfrom-">popFrom / shiftFrom</a></li>
 									<li><a href="#pushto-">pushTo</a></li>
@@ -698,6 +701,20 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
           .tanH();  <span class="hljs-comment">// complement: arcTanH()</span>
 </code></pre>
 				<h3 id="more-uarr-examples-">More [<a href="#examples-">&uarr;</a>]</h3>
+				<h4 id="assert-uarr-more-">assert [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq1 = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+seq1.assert(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> x % <span class="hljs-number">2</span> !== <span class="hljs-number">1</span>;
+});  <span class="hljs-comment">// will throw an exception</span>
+     <span class="hljs-comment">// at second element (1)</span>
+
+<span class="hljs-keyword">let</span> seq2 = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+seq2.assertAll(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> x % <span class="hljs-number">2</span> !== <span class="hljs-number">1</span>;
+});  <span class="hljs-comment">// will throw an aggregated exception</span>
+     <span class="hljs-comment">// at the end</span>
+     <span class="hljs-comment">// for all odd values</span>
+</code></pre>
 				<h4 id="chunk-uarr-more-">chunk [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> chunk <span class="hljs-keyword">of</span> seq.chunk(<span class="hljs-number">3</span>)) {
@@ -726,23 +743,73 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">111</span>, <span class="hljs-number">222</span>)
           .concatArray([ [ <span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span> ], [ <span class="hljs-string">'mk'</span> ] ]);
 </code></pre>
-				<h4 id="defaultifempty-defaultarrayifempty-defaultsequenceifempty-uarr-more-">defaultIfEmpty / defaultArrayIfEmpty / defaultSequenceIfEmpty [<a href="#more-">&uarr;</a>]</h4>
+				<h4 id="consume-uarr-more-">consume [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createIteratorAndStorage</span>(<span class="hljs-params">size</span>) </span>{
+    <span class="hljs-keyword">let</span> storage = [];
+
+    <span class="hljs-keyword">return</span> {
+        <span class="hljs-attr">iterator</span>: makeIterator(size, storage),
+        <span class="hljs-attr">storage</span>: storage,
+    };
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">makeIterator</span>(<span class="hljs-params">size, storage</span>) </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; size; i++) {
+        <span class="hljs-keyword">yield</span> i;
+
+        storage.push(i);
+    }
+}
+
+<span class="hljs-keyword">const</span> OBJ = createIteratorAndStorage(<span class="hljs-number">100</span>);
+d
+<span class="hljs-keyword">const</span> SEQ = Enumerable.from(OBJ.iterator);
+SEQ.consume();  <span class="hljs-comment">// enumerates the 'iterator' in OBJ</span>
+                <span class="hljs-comment">// and fills the 'storage' in OBJ</span>
+</code></pre>
+				<h4 id="defaultifempty-defaultarrayifempty-uarr-more-">defaultIfEmpty / defaultArrayIfEmpty [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// 0, 1, 2</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
           .defaultIfEmpty(<span class="hljs-string">'PZ'</span>, <span class="hljs-string">'TM'</span>, <span class="hljs-string">'MK'</span>);
 
 <span class="hljs-comment">// 'PZ', 'TM', 'MK'</span>
-Enumerable.create()
+Enumerable.empty()
           .defaultIfEmpty(<span class="hljs-string">'PZ'</span>, <span class="hljs-string">'TM'</span>, <span class="hljs-string">'MK'</span>);
 
 <span class="hljs-comment">// 0, 11, 22</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">11</span>, <span class="hljs-number">22</span>)
-          .defaultSequenceIfEmpty([<span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span>, <span class="hljs-string">'mk'</span>]);
-<span class="hljs-comment">// alt: defaultArrayIfEmpty()</span>
+          .defaultArrayIfEmpty([<span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span>, <span class="hljs-string">'mk'</span>]);
+<span class="hljs-comment">// alt: defaultSequenceIfEmpty()</span>
 
 <span class="hljs-comment">// 'pz', 'tm', 'mk'</span>
-Enumerable.create()
-          .defaultSequenceIfEmpty([<span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span>, <span class="hljs-string">'mk'</span>]);
+Enumerable.empty()
+          .defaultArrayIfEmpty([<span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span>, <span class="hljs-string">'mk'</span>]);
+</code></pre>
+				<h4 id="forall-uarr-more-">forAll [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [];
+
+<span class="hljs-keyword">try</span> {
+    <span class="hljs-comment">// alt: eachAll()</span>
+    Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">5</span>).forAll(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> {
+        <span class="hljs-keyword">if</span> (x % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-string">'Error in value '</span> + x;
+        }
+
+        arr.push(x);
+    });
+}
+<span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-comment">// access the list of errors by</span>
+    <span class="hljs-comment">// 'e.errors'</span>
+
+    <span class="hljs-comment">// e.errors[0] = 'Error in value 0';</span>
+    <span class="hljs-comment">// e.errors[1] = 'Error in value 2';</span>
+    <span class="hljs-comment">// e.errors[2] = 'Error in value 3';</span>
+}
+
+<span class="hljs-comment">// arr[0] === 1</span>
+<span class="hljs-comment">// arr[1] === 3</span>
+<span class="hljs-comment">// arr[2] === 5</span>
 </code></pre>
 				<h4 id="intersperse-interspersearray-uarr-more-">intersperse / intersperseArray [<a href="#more-">&uarr;</a>]</h4>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// 0, '-', 1, '-', 2</span>

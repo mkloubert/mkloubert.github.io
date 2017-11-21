@@ -115,6 +115,10 @@
 					</thead>
 					<tbody>
 						<tr>
+							<td><code>autoSelectWorkspace</code></td>
+							<td>Select the workspace by active text editor automatically or not. Default <code>(false)</code></td>
+						</tr>
+						<tr>
 							<td><code>commands</code></td>
 							<td>One or more <a href="#commands-">commands</a> to register.</td>
 						</tr>
@@ -296,6 +300,10 @@ vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</
 							<td>The ID of the command.</td>
 						</tr>
 						<tr>
+							<td><code>onActiveEditorChanged</code></td>
+							<td>Is invoked when the active text editor has been changed. Default <code>(false)</code></td>
+						</tr>
+						<tr>
 							<td><code>onClose</code></td>
 							<td>Executes the command on VSCode closes or not. Default <code>(false)</code></td>
 						</tr>
@@ -386,6 +394,11 @@ vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</
 							<td><code>Script commands: Quick execution</code></td>
 							<td>Executes a JavaScript expression quickly.</td>
 							<td><code>extension.scriptCommands.quickExecution</code></td>
+						</tr>
+						<tr>
+							<td><code>Script commands: Select workspace</code></td>
+							<td>Changes the current workspace, s. <a href="https://code.visualstudio.com/docs/editor/multi-root-workspaces">Multi-root Workspaces</a>.</td>
+							<td><code>extension.scriptCommands.selectWorkspace</code></td>
 						</tr>
 					</tbody>
 				</table>
@@ -512,6 +525,9 @@ vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
+					<li class="label tsd-is-external">
+						<span>Internals</span>
+					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_content_.html">"content"</a>
 					</li>
@@ -535,6 +551,12 @@ vscode.commands.executeCommand(<span class="hljs-string">'mkloubert.mycommand'</
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_urls_.html">"urls"</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_workspace_.html">"workspace"</a>
 					</li>
 				</ul>
 			</nav>

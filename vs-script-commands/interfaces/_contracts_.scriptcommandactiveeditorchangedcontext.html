@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ScriptCommandQuickPickItem | vs-script-commands</title>
+	<title>ScriptCommandActiveEditorChangedContext | vs-script-commands</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.scriptcommandquickpickitem.html">ScriptCommandQuickPickItem</a>
+					<a href="_contracts_.scriptcommandactiveeditorchangedcontext.html">ScriptCommandActiveEditorChangedContext</a>
 				</li>
 			</ul>
-			<h1>Interface ScriptCommandQuickPickItem</h1>
+			<h1>Interface ScriptCommandActiveEditorChangedContext</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A quick pick item.</p>
+						<p>A context that stores the data when a command is executed when active text editor has been changed.</p>
 					</div>
 				</div>
 			</section>
@@ -80,17 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">QuickPickItem</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">ScriptCommandQuickPickItem</span>
-								<ul class="tsd-hierarchy">
-									<li>
-										<a href="_controller_.commandentryquickpickitem.html" class="tsd-signature-type">CommandEntryQuickPickItem</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
+						<span class="target">ScriptCommandActiveEditorChangedContext</span>
 					</li>
 				</ul>
 			</section>
@@ -98,64 +88,45 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.scriptcommandquickpickitem.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.scriptcommandquickpickitem.html#detail" class="tsd-kind-icon">detail</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.scriptcommandquickpickitem.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.scriptcommandactiveeditorchangedcontext.html#current" class="tsd-kind-icon">current</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.scriptcommandactiveeditorchangedcontext.html#previous" class="tsd-kind-icon">previous</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="description" class="tsd-anchor"></a>
-					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="current" class="tsd-anchor"></a>
+					<h3>current</h3>
+					<div class="tsd-signature tsd-kind-icon">current<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.TextEditor</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from QuickPickItem.description</p>
 						<ul>
-							<li>Defined in M:/VS Code/proj/vs-script-commands/node_modules/vscode/vscode.d.ts:1469</li>
+							<li>Defined in <a href="https://github.com/mkloubert/vs-script-commands/blob/fd64877/src/contracts.ts#L385">contracts.ts:385</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A human readable string which is rendered less prominent.</p>
+							<p>The new editor.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="detail" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> detail</h3>
-					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="previous" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> previous</h3>
+					<div class="tsd-signature tsd-kind-icon">previous<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.TextEditor</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from QuickPickItem.detail</p>
 						<ul>
-							<li>Defined in M:/VS Code/proj/vs-script-commands/node_modules/vscode/vscode.d.ts:1474</li>
+							<li>Defined in <a href="https://github.com/mkloubert/vs-script-commands/blob/fd64877/src/contracts.ts#L389">contracts.ts:389</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A human readable string which is rendered less prominent.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="label" class="tsd-anchor"></a>
-					<h3>label</h3>
-					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from QuickPickItem.label</p>
-						<ul>
-							<li>Defined in M:/VS Code/proj/vs-script-commands/node_modules/vscode/vscode.d.ts:1464</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A human readable string which is rendered prominent.</p>
+							<p>The previous editor.</p>
 						</div>
 					</div>
 				</section>
@@ -228,9 +199,21 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.scriptcommand.html" class="tsd-kind-icon">Script<wbr>Command</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.scriptcommandactiveeditorchangedcontext.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Active<wbr>Editor<wbr>Changed<wbr>Context</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.scriptcommandactiveeditorchangedcontext.html#current" class="tsd-kind-icon">current</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.scriptcommandactiveeditorchangedcontext.html#previous" class="tsd-kind-icon">previous</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.scriptcommandeditorchangecontext.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Editor<wbr>Change<wbr>Context</a>
 					</li>
@@ -243,24 +226,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.scriptcommandmodule.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Module</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.scriptcommandquickpickitem.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Quick<wbr>Pick<wbr>Item</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.scriptcommandquickpickitem.html#description" class="tsd-kind-icon">description</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.scriptcommandquickpickitem.html#detail" class="tsd-kind-icon">detail</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.scriptcommandquickpickitem.html#label" class="tsd-kind-icon">label</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_contracts_.html#cronjobnames" class="tsd-kind-icon">Cron<wbr>Job<wbr>Names</a>
 					</li>

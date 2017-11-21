@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;controller&quot; | vs-script-commands</title>
+	<title>&quot;workspace&quot; | vs-script-commands</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_controller_.html">&quot;controller&quot;</a>
+					<a href="_workspace_.html">&quot;workspace&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;controller&quot;</h1>
+			<h1>External module &quot;workspace&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -70,51 +70,141 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Classes</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_controller_.scriptcommandcontroller.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Controller</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_controller_.commandentry.html" class="tsd-kind-icon">Command<wbr>Entry</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_controller_.commandentryquickpickitem.html" class="tsd-kind-icon">Command<wbr>Entry<wbr>Quick<wbr>Pick<wbr>Item</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_controller_.scriptcommandentry.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Entry</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section tsd-is-external tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_controller_.html#hexy" class="tsd-kind-icon">Hexy</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_controller_.html#key_last_known_version" class="tsd-kind-icon">KEY_<wbr>LAST_<wbr>KNOWN_<wbr>VERSION</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported"><a href="_workspace_.html#currentfolder" class="tsd-kind-icon">current<wbr>Folder</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="_workspace_.html#getrootpath" class="tsd-kind-icon">get<wbr>Root<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="_workspace_.html#resetselectedworkspacefolder" class="tsd-kind-icon">reset<wbr>Selected<wbr>Workspace<wbr>Folder</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="_workspace_.html#selectworkspace" class="tsd-kind-icon">select<wbr>Workspace</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-external"><a href="_workspace_.html#setworkspace" class="tsd-kind-icon">set<wbr>Workspace</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group tsd-is-external tsd-is-not-exported">
 				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="hexy" class="tsd-anchor"></a>
-					<h3>Hexy</h3>
-					<div class="tsd-signature tsd-kind-icon">Hexy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;hexy&#x27;)</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+					<a name="currentfolder" class="tsd-anchor"></a>
+					<h3>current<wbr>Folder</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Folder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.WorkspaceFolder</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vs-script-commands/blob/fd64877/src/controller.ts#L30">controller.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vs-script-commands/blob/fd64877/src/workspace.ts#L30">workspace.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="key_last_known_version" class="tsd-anchor"></a>
-					<h3>KEY_<wbr>LAST_<wbr>KNOWN_<wbr>VERSION</h3>
-					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>LAST_<wbr>KNOWN_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vsscLastKnownVersion"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vsscLastKnownVersion&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vs-script-commands/blob/fd64877/src/controller.ts#L106">controller.ts:106</a></li>
-						</ul>
-					</aside>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="getrootpath" class="tsd-anchor"></a>
+					<h3>get<wbr>Root<wbr>Path</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Root<wbr>Path<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vs-script-commands/blob/fd64877/src/workspace.ts#L37">workspace.ts:37</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the root path of the selected workspace folder.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The root path.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="resetselectedworkspacefolder" class="tsd-anchor"></a>
+					<h3>reset<wbr>Selected<wbr>Workspace<wbr>Folder</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Selected<wbr>Workspace<wbr>Folder<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vs-script-commands/blob/fd64877/src/workspace.ts#L77">workspace.ts:77</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resets the selected workspace folder.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="selectworkspace" class="tsd-anchor"></a>
+					<h3>select<wbr>Workspace</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">select<wbr>Workspace<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WorkspaceFolder</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vs-script-commands/blob/fd64877/src/workspace.ts#L86">workspace.ts:86</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Selects the workspace.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WorkspaceFolder</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the folder (if selected).</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+					<a name="setworkspace" class="tsd-anchor"></a>
+					<h3>set<wbr>Workspace</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Workspace<span class="tsd-signature-symbol">(</span>wsf<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.WorkspaceFolder</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WorkspaceFolder</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vs-script-commands/blob/fd64877/src/workspace.ts#L102">workspace.ts:102</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the current workspace (folder).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>wsf: <span class="tsd-signature-type">vscode.WorkspaceFolder</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new folder.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">false</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">WorkspaceFolder</span>
+							</h4>
+							<p>The new folder.</p>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -133,7 +223,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_contracts_.html">"contracts"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_controller_.html">"controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -154,30 +244,27 @@
 					<li class="label tsd-is-external">
 						<span>Externals</span>
 					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
+					<li class="current tsd-kind-external-module tsd-is-external">
 						<a href="_workspace_.html">"workspace"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_controller_.scriptcommandcontroller.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Controller</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-external tsd-is-not-exported">
+						<a href="_workspace_.html#currentfolder" class="tsd-kind-icon">current<wbr>Folder</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_controller_.commandentry.html" class="tsd-kind-icon">Command<wbr>Entry</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="_workspace_.html#getrootpath" class="tsd-kind-icon">get<wbr>Root<wbr>Path</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_controller_.commandentryquickpickitem.html" class="tsd-kind-icon">Command<wbr>Entry<wbr>Quick<wbr>Pick<wbr>Item</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="_workspace_.html#resetselectedworkspacefolder" class="tsd-kind-icon">reset<wbr>Selected<wbr>Workspace<wbr>Folder</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_controller_.scriptcommandentry.html" class="tsd-kind-icon">Script<wbr>Command<wbr>Entry</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="_workspace_.html#selectworkspace" class="tsd-kind-icon">select<wbr>Workspace</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_controller_.html#hexy" class="tsd-kind-icon">Hexy</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_controller_.html#key_last_known_version" class="tsd-kind-icon">KEY_<wbr>LAST_<wbr>KNOWN_<wbr>VERSION</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-external">
+						<a href="_workspace_.html#setworkspace" class="tsd-kind-icon">set<wbr>Workspace</a>
 					</li>
 				</ul>
 			</nav>

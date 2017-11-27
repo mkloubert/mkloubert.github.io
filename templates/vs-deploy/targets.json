@@ -211,6 +211,17 @@
             }
         }
     },
+    
+    "Slack": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/LDMTzo"
+            }
+        }
+    },
 
     "SQL": {
         "children": {
@@ -219,6 +230,17 @@
                 "sortOrder": 2000000000,
 
                 "source": "https://goo.gl/sXjAXu"
+            }
+        }
+    },
+    
+    "Switch": {
+        "children": {
+            "Wiki": {
+                "type": "link", "icon": "book",
+                "sortOrder": 2000000000,
+
+                "source": "https://goo.gl/153QzH"
             }
         }
     },

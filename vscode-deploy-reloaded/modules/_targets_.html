@@ -79,6 +79,7 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_targets_.executetargetoperationoptions.html" class="tsd-kind-icon">Execute<wbr>Target<wbr>Operation<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_targets_.target.html" class="tsd-kind-icon">Target</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_targets_.targetoperation.html" class="tsd-kind-icon">Target<wbr>Operation</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_targets_.targetoperationexecutioncontext.html" class="tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Context</a></li>
@@ -95,12 +96,20 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_targets_.html#default_operation_type" class="tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_targets_.html#regex_zip_filename" class="tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#executetargetoperations" class="tsd-kind-icon">execute<wbr>Target<wbr>Operations</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#getmappedtargetfilepath" class="tsd-kind-icon">get<wbr>Mapped<wbr>Target<wbr>File<wbr>Path</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#gettargetname" class="tsd-kind-icon">get<wbr>Target<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#gettargetsbyname" class="tsd-kind-icon">get<wbr>Targets<wbr>ByName</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#getzipfilename" class="tsd-kind-icon">get<wbr>Zip<wbr>File<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#isvisibleforpackage" class="tsd-kind-icon">is<wbr>Visible<wbr>For<wbr>Package</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#normalizetargettype" class="tsd-kind-icon">normalize<wbr>Target<wbr>Type</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_targets_.html#showtargetquickpick" class="tsd-kind-icon">show<wbr>Target<wbr>Quick<wbr>Pick</a></li>
@@ -117,7 +126,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:142</li>
+							<li>Defined in targets.ts:178</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -132,7 +141,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:136</li>
+							<li>Defined in targets.ts:172</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -179,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:157</li>
+							<li>Defined in targets.ts:193</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -190,18 +199,51 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="default_operation_type" class="tsd-anchor"></a>
+					<h3>DEFAULT_<wbr>OPERATION_<wbr>TYPE</h3>
+					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"open"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;open&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:208</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The default type or a target operation.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="regex_zip_filename" class="tsd-anchor"></a>
+					<h3>REGEX_<wbr>ZIP_<wbr>FILENAME</h3>
+					<div class="tsd-signature tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/^(vscode\-ws)(.*)(_)([0-9]{8})(\-)([0-9]{6})(\.zip)$/i</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:213</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The regular expression for testing a ZIP filename for a target.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="executetargetoperations" class="tsd-anchor"></a>
 					<h3>execute<wbr>Target<wbr>Operations</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">execute<wbr>Target<wbr>Operations<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, operationEvent<span class="tsd-signature-symbol">: </span><a href="../enums/_targets_.targetoperationevent.html" class="tsd-signature-type">TargetOperationEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>Target<wbr>Operations<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.executetargetoperationoptions.html" class="tsd-signature-type">ExecuteTargetOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:222</li>
+									<li>Defined in targets.ts:267</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,15 +254,9 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<h5>opts: <a href="../interfaces/_targets_.executetargetoperationoptions.html" class="tsd-signature-type">ExecuteTargetOperationOptions</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>the underlying target.</p>
-									</div>
-								</li>
-								<li>
-									<h5>operationEvent: <a href="../enums/_targets_.targetoperationevent.html" class="tsd-signature-type">TargetOperationEvent</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The event type.</p>
+										<p>The options.</p>
 									</div>
 								</li>
 							</ul>
@@ -239,7 +275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:180</li>
+									<li>Defined in targets.ts:226</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -286,7 +322,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:321</li>
+									<li>Defined in targets.ts:390</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -318,7 +354,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:344</li>
+									<li>Defined in targets.ts:413</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -350,6 +386,41 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getzipfilename" class="tsd-anchor"></a>
+					<h3>get<wbr>Zip<wbr>File<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Zip<wbr>File<wbr>Name<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Moment.Moment</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in targets.ts:463</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the ZIP filename for a target.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> time: <span class="tsd-signature-type">Moment.Moment</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The filename.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="isvisibleforpackage" class="tsd-anchor"></a>
 					<h3>is<wbr>Visible<wbr>For<wbr>Package</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -359,7 +430,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:394</li>
+									<li>Defined in targets.ts:504</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -397,7 +468,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:436</li>
+									<li>Defined in targets.ts:546</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -429,7 +500,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:457</li>
+									<li>Defined in targets.ts:567</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -515,6 +586,9 @@
 						<a href="../enums/_targets_.targetoperationevent.html" class="tsd-kind-icon">Target<wbr>Operation<wbr>Event</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_targets_.executetargetoperationoptions.html" class="tsd-kind-icon">Execute<wbr>Target<wbr>Operation<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_targets_.target.html" class="tsd-kind-icon">Target</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -538,6 +612,12 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_targets_.html#targetoperationvalue" class="tsd-kind-icon">Target<wbr>Operation<wbr>Value</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_targets_.html#default_operation_type" class="tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_targets_.html#regex_zip_filename" class="tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#executetargetoperations" class="tsd-kind-icon">execute<wbr>Target<wbr>Operations</a>
 					</li>
@@ -549,6 +629,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#gettargetsbyname" class="tsd-kind-icon">get<wbr>Targets<wbr>ByName</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_targets_.html#getzipfilename" class="tsd-kind-icon">get<wbr>Zip<wbr>File<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#isvisibleforpackage" class="tsd-kind-icon">is<wbr>Visible<wbr>For<wbr>Package</a>

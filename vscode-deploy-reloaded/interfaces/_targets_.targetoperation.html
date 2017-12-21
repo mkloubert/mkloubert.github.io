@@ -81,6 +81,9 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<a href="_contracts_.conditionalitem.html" class="tsd-signature-type">ConditionalItem</a>
+					</li>
+					<li>
+						<a href="_contracts_.withoptionalname.html" class="tsd-signature-type">WithOptionalName</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">TargetOperation</span>
@@ -102,6 +105,8 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_.targetoperation.html#if" class="tsd-kind-icon">if</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.targetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_.targetoperation.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.targetoperation.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
@@ -127,12 +132,43 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ignoreiffail" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ignore<wbr>IfFail</h3>
+					<div class="tsd-signature tsd-kind-icon">ignore<wbr>IfFail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:114</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Continue when target operation fails or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.withoptionalname.html">WithOptionalName</a>.<a href="_contracts_.withoptionalname.html#name">name</a></p>
+						<ul>
+							<li>Defined in contracts.ts:401</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="type" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:82</li>
+							<li>Defined in targets.ts:118</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -160,6 +196,9 @@
 						<a href="../enums/_targets_.targetoperationevent.html" class="tsd-kind-icon">Target<wbr>Operation<wbr>Event</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_targets_.executetargetoperationoptions.html" class="tsd-kind-icon">Execute<wbr>Target<wbr>Operation<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_targets_.target.html" class="tsd-kind-icon">Target</a>
 					</li>
 				</ul>
@@ -169,6 +208,12 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_targets_.targetoperation.html#if" class="tsd-kind-icon">if</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_.targetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_targets_.targetoperation.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_targets_.targetoperation.html#type" class="tsd-kind-icon">type</a>
@@ -195,6 +240,12 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_targets_.html#targetoperationvalue" class="tsd-kind-icon">Target<wbr>Operation<wbr>Value</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_targets_.html#default_operation_type" class="tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_targets_.html#regex_zip_filename" class="tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_targets_.html#executetargetoperations" class="tsd-kind-icon">execute<wbr>Target<wbr>Operations</a>
 					</li>
@@ -206,6 +257,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_targets_.html#gettargetsbyname" class="tsd-kind-icon">get<wbr>Targets<wbr>ByName</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_targets_.html#getzipfilename" class="tsd-kind-icon">get<wbr>Zip<wbr>File<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_targets_.html#isvisibleforpackage" class="tsd-kind-icon">is<wbr>Visible<wbr>For<wbr>Package</a>

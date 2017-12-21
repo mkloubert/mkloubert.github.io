@@ -83,9 +83,22 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_s3bucket_.html#s3bucketfileacldetector" class="tsd-kind-icon">S3<wbr>Bucket<wbr>File<wbr>Acl<wbr>Detector</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_clients_s3bucket_.html#default_acl" class="tsd-kind-icon">DEFAULT_<wbr>ACL</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_clients_s3bucket_.html#createclient" class="tsd-kind-icon">create<wbr>Client</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_clients_s3bucket_.html#getaclsafe" class="tsd-kind-icon">get<wbr>Acl<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_clients_s3bucket_.html#normalizepath" class="tsd-kind-icon">normalize<wbr>Path</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_clients_s3bucket_.html#tos3path" class="tsd-kind-icon">to<wbr>S3Path</a></li>
 							</ul>
@@ -96,6 +109,77 @@
 								<li class="tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported"><a href="_clients_s3bucket_.html#known_credential_classes" class="tsd-kind-icon">KNOWN_<wbr>CREDENTIAL_<wbr>CLASSES</a></li>
 							</ul>
 						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="s3bucketfileacldetector" class="tsd-anchor"></a>
+					<h3>S3<wbr>Bucket<wbr>File<wbr>Acl<wbr>Detector</h3>
+					<div class="tsd-signature tsd-kind-icon">S3<wbr>Bucket<wbr>File<wbr>Acl<wbr>Detector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in clients/s3bucket.ts:36</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A function that detects the ACL for a file when uploading it.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The path of the file inside the bucket.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The default ACL of the bucket.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The ACL.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultAcl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>file: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5>defaultAcl: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="default_acl" class="tsd-anchor"></a>
+					<h3>DEFAULT_<wbr>ACL</h3>
+					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>ACL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"public-read"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;public-read&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in clients/s3bucket.ts:74</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The default ACL for a file.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -111,7 +195,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in clients/s3bucket.ts:367</li>
+									<li>Defined in clients/s3bucket.ts:400</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -134,6 +218,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getaclsafe" class="tsd-anchor"></a>
+					<h3>get<wbr>Acl<wbr>Safe</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Acl<wbr>Safe<span class="tsd-signature-symbol">(</span>acl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in clients/s3bucket.ts:415</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the name of an ACL safe.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>acl: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The input value.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The normalized, safe value.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="normalizepath" class="tsd-anchor"></a>
 					<h3>normalize<wbr>Path</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -143,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in clients/s3bucket.ts:382</li>
+									<li>Defined in clients/s3bucket.ts:431</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -175,7 +291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in clients/s3bucket.ts:407</li>
+									<li>Defined in clients/s3bucket.ts:456</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -206,7 +322,7 @@
 					<div class="tsd-signature tsd-kind-icon">KNOWN_<wbr>CREDENTIAL_<wbr>CLASSES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in clients/s3bucket.ts:55</li>
+							<li>Defined in clients/s3bucket.ts:76</li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -215,7 +331,7 @@
 						<div class="tsd-signature tsd-kind-icon">cognito<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CognitoIdentityCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.CognitoIdentityCredentials</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/s3bucket.ts:56</li>
+								<li>Defined in clients/s3bucket.ts:77</li>
 							</ul>
 						</aside>
 					</section>
@@ -225,7 +341,7 @@
 						<div class="tsd-signature tsd-kind-icon">ec2<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ECSCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.ECSCredentials</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/s3bucket.ts:57</li>
+								<li>Defined in clients/s3bucket.ts:78</li>
 							</ul>
 						</aside>
 					</section>
@@ -235,7 +351,7 @@
 						<div class="tsd-signature tsd-kind-icon">ec2meta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EC2MetadataCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.EC2MetadataCredentials</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/s3bucket.ts:58</li>
+								<li>Defined in clients/s3bucket.ts:79</li>
 							</ul>
 						</aside>
 					</section>
@@ -245,7 +361,7 @@
 						<div class="tsd-signature tsd-kind-icon">environment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EnvironmentCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.EnvironmentCredentials</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/s3bucket.ts:59</li>
+								<li>Defined in clients/s3bucket.ts:80</li>
 							</ul>
 						</aside>
 					</section>
@@ -255,7 +371,7 @@
 						<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FileSystemCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.FileSystemCredentials</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/s3bucket.ts:60</li>
+								<li>Defined in clients/s3bucket.ts:81</li>
 							</ul>
 						</aside>
 					</section>
@@ -265,7 +381,7 @@
 						<div class="tsd-signature tsd-kind-icon">saml<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SAMLCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.SAMLCredentials</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/s3bucket.ts:61</li>
+								<li>Defined in clients/s3bucket.ts:82</li>
 							</ul>
 						</aside>
 					</section>
@@ -275,7 +391,7 @@
 						<div class="tsd-signature tsd-kind-icon">shared<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SharedIniFileCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.SharedIniFileCredentials</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/s3bucket.ts:62</li>
+								<li>Defined in clients/s3bucket.ts:83</li>
 							</ul>
 						</aside>
 					</section>
@@ -285,7 +401,7 @@
 						<div class="tsd-signature tsd-kind-icon">temp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TemporaryCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.TemporaryCredentials</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/s3bucket.ts:63</li>
+								<li>Defined in clients/s3bucket.ts:84</li>
 							</ul>
 						</aside>
 					</section>
@@ -295,7 +411,7 @@
 						<div class="tsd-signature tsd-kind-icon">web<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WebIdentityCredentials</span><span class="tsd-signature-symbol"> =&nbsp;AWS.WebIdentityCredentials</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in clients/s3bucket.ts:64</li>
+								<li>Defined in clients/s3bucket.ts:85</li>
 							</ul>
 						</aside>
 					</section>
@@ -321,8 +437,17 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_clients_s3bucket_.s3bucketoptions.html" class="tsd-kind-icon">S3<wbr>Bucket<wbr>Options</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_clients_s3bucket_.html#s3bucketfileacldetector" class="tsd-kind-icon">S3<wbr>Bucket<wbr>File<wbr>Acl<wbr>Detector</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_clients_s3bucket_.html#default_acl" class="tsd-kind-icon">DEFAULT_<wbr>ACL</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_clients_s3bucket_.html#createclient" class="tsd-kind-icon">create<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_clients_s3bucket_.html#getaclsafe" class="tsd-kind-icon">get<wbr>Acl<wbr>Safe</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_clients_s3bucket_.html#normalizepath" class="tsd-kind-icon">normalize<wbr>Path</a>

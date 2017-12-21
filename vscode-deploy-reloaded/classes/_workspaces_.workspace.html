@@ -113,6 +113,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_.workspace.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_old_env_vars" class="tsd-kind-icon">_OLD_<wbr>ENV_<wbr>VARS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_package_buttons" class="tsd-kind-icon">_PACKAGE_<wbr>BUTTONS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_switch_buttons" class="tsd-kind-icon">_SWITCH_<wbr>BUTTONS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_.workspace.html#_timers" class="tsd-kind-icon">_TIMERS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_workspaces_.workspace.html#_config" class="tsd-kind-icon">_config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_workspaces_.workspace.html#_configsource" class="tsd-kind-icon">_config<wbr>Source</a></li>
@@ -122,6 +123,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_workspaces_.workspace.html#_isremoveonchangefreezed" class="tsd-kind-icon">_is<wbr>Remove<wbr>OnChange<wbr>Freezed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_workspaces_.workspace.html#_lastconfigupdate" class="tsd-kind-icon">_last<wbr>Config<wbr>Update</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_packages" class="tsd-kind-icon">_packages</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_selectedswitches" class="tsd-kind-icon">_selected<wbr>Switches</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_sessionstate" class="tsd-kind-icon">_session<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_workspaces_.workspace.html#_starttime" class="tsd-kind-icon">_start<wbr>Time</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_workspaces_.workspace.html#_syncwhenopenstates" class="tsd-kind-icon">_sync<wbr>When<wbr>Open<wbr>States</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_targets" class="tsd-kind-icon">_targets</a></li>
@@ -129,6 +132,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_workspaces_.workspace.html#context" class="tsd-kind-icon">context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_workspaces_.workspace.html#folder" class="tsd-kind-icon">folder</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_workspaces_.workspace.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_workspaces_.workspace.html#state" class="tsd-kind-icon">state</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_workspaces_.workspace.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
 						</section>
@@ -149,6 +153,8 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_workspaces_.workspace.html#lastconfigupdate" class="tsd-kind-icon">last<wbr>Config<wbr>Update</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_workspaces_.workspace.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_workspaces_.workspace.html#rootpath" class="tsd-kind-icon">root<wbr>Path</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_workspaces_.workspace.html#selectedswitches" class="tsd-kind-icon">selected<wbr>Switches</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_workspaces_.workspace.html#sessionstate" class="tsd-kind-icon">session<wbr>State</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_workspaces_.workspace.html#settingfolder" class="tsd-kind-icon">setting<wbr>Folder</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_workspaces_.workspace.html#starttime" class="tsd-kind-icon">start<wbr>Time</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_workspaces_.workspace.html#syncwhenopenstates" class="tsd-kind-icon">sync<wbr>When<wbr>Open<wbr>States</a></li>
@@ -159,8 +165,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspaces_.workspace.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#canbehandledbyme" class="tsd-kind-icon">can<wbr>BeHandled<wbr>ByMe</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#changeswitchbuttonoption" class="tsd-kind-icon">change<wbr>Switch<wbr>Button<wbr>Option</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#cleanuppackagebuttons" class="tsd-kind-icon">cleanup<wbr>Package<wbr>Buttons</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#cleanupswitchbuttons" class="tsd-kind-icon">cleanup<wbr>Switch<wbr>Buttons</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_.workspace.html#cleanuptimers" class="tsd-kind-icon">cleanup<wbr>Timers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#createsessionstate" class="tsd-kind-icon">create<wbr>Session<wbr>State</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#deletefilein" class="tsd-kind-icon">delete<wbr>File<wbr>In</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#deletepackage" class="tsd-kind-icon">delete<wbr>Package</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#deployfileto" class="tsd-kind-icon">deploy<wbr>File<wbr>To</a></li>
@@ -169,10 +178,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_workspaces_.workspace.html#deployonsave" class="tsd-kind-icon">deploy<wbr>OnSave</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#deploypackage" class="tsd-kind-icon">deploy<wbr>Package</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_workspaces_.workspace.html#dispose" class="tsd-kind-icon">dispose</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#downloadfromsettingsuri" class="tsd-kind-icon">download<wbr>From<wbr>Settings<wbr>Uri</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspaces_.workspace.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspaces_.workspace.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#findfilesbyfilter" class="tsd-kind-icon">find<wbr>Files<wbr>ByFilter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#getallswitchoptions" class="tsd-kind-icon">get<wbr>All<wbr>Switch<wbr>Options</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getdeleteplugins" class="tsd-kind-icon">get<wbr>Delete<wbr>Plugins</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getdownloadplugins" class="tsd-kind-icon">get<wbr>Download<wbr>Plugins</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getexistingsettingpath" class="tsd-kind-icon">get<wbr>Existing<wbr>Setting<wbr>Path</a></li>
@@ -181,6 +190,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getnameandpathforfiledeployment" class="tsd-kind-icon">get<wbr>Name<wbr>And<wbr>Path<wbr>For<wbr>File<wbr>Deployment</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getpackageid" class="tsd-kind-icon">get<wbr>Package<wbr>Id</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getpackages" class="tsd-kind-icon">get<wbr>Packages</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getselectedswitchoption" class="tsd-kind-icon">get<wbr>Selected<wbr>Switch<wbr>Option</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#getswitchoptionname" class="tsd-kind-icon">get<wbr>Switch<wbr>Option<wbr>Name</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#getswitchrepository" class="tsd-kind-icon">get<wbr>Switch<wbr>Repository</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getswitchtargets" class="tsd-kind-icon">get<wbr>Switch<wbr>Targets</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getsyncwhenopenkey" class="tsd-kind-icon">get<wbr>Sync<wbr>When<wbr>Open<wbr>Key</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#gettargetid" class="tsd-kind-icon">get<wbr>Target<wbr>Id</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#gettargets" class="tsd-kind-icon">get<wbr>Targets</a></li>
@@ -211,6 +224,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#reloadenvvars" class="tsd-kind-icon">reload<wbr>Env<wbr>Vars</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#reloadpackagebuttons" class="tsd-kind-icon">reload<wbr>Package<wbr>Buttons</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#reloadpackages" class="tsd-kind-icon">reload<wbr>Packages</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#reloadswitches" class="tsd-kind-icon">reload<wbr>Switches</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#reloadtargets" class="tsd-kind-icon">reload<wbr>Targets</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspaces_.workspace.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_workspaces_.workspace.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
@@ -224,6 +238,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#tofullpath" class="tsd-kind-icon">to<wbr>Full<wbr>Path</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#tonameandpath" class="tsd-kind-icon">to<wbr>Name<wbr>And<wbr>Path</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#torelativepath" class="tsd-kind-icon">to<wbr>Relative<wbr>Path</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#updateswitchbuttons" class="tsd-kind-icon">update<wbr>Switch<wbr>Buttons</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_workspaces_.workspace.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
 							</ul>
 						</section>
@@ -242,7 +257,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:199</li>
+									<li>Defined in workspaces.ts:262</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -306,7 +321,7 @@
 					<div class="tsd-signature tsd-kind-icon">_OLD_<wbr>ENV_<wbr>VARS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:184</li>
+							<li>Defined in workspaces.ts:244</li>
 						</ul>
 					</aside>
 				</section>
@@ -316,7 +331,17 @@
 					<div class="tsd-signature tsd-kind-icon">_PACKAGE_<wbr>BUTTONS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.packagewithbutton.html" class="tsd-signature-type">PackageWithButton</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:185</li>
+							<li>Defined in workspaces.ts:245</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_switch_buttons" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _SWITCH_<wbr>BUTTONS</h3>
+					<div class="tsd-signature tsd-kind-icon">_SWITCH_<wbr>BUTTONS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.targetwithbutton.html" class="tsd-signature-type">TargetWithButton</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-signature-type">SwitchTarget</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in workspaces.ts:253</li>
 						</ul>
 					</aside>
 				</section>
@@ -342,7 +367,7 @@
 					<div class="tsd-signature tsd-kind-icon">_config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.workspacesettings.html" class="tsd-signature-type">WorkspaceSettings</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:159</li>
+							<li>Defined in workspaces.ts:219</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -357,7 +382,7 @@
 					<div class="tsd-signature tsd-kind-icon">_config<wbr>Source<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_contracts_.configsource.html" class="tsd-signature-type">ConfigSource</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:163</li>
+							<li>Defined in workspaces.ts:223</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -372,7 +397,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Deploy<wbr>OnChange<wbr>Freezed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:167</li>
+							<li>Defined in workspaces.ts:227</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -387,7 +412,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Initialized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:171</li>
+							<li>Defined in workspaces.ts:231</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -402,7 +427,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Reloading<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:175</li>
+							<li>Defined in workspaces.ts:235</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -417,7 +442,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Remove<wbr>OnChange<wbr>Freezed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:179</li>
+							<li>Defined in workspaces.ts:239</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -432,7 +457,7 @@
 					<div class="tsd-signature tsd-kind-icon">_last<wbr>Config<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:183</li>
+							<li>Defined in workspaces.ts:243</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -447,7 +472,27 @@
 					<div class="tsd-signature tsd-kind-icon">_packages<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:186</li>
+							<li>Defined in workspaces.ts:246</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_selectedswitches" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _selected<wbr>Switches</h3>
+					<div class="tsd-signature tsd-kind-icon">_selected<wbr>Switches<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in workspaces.ts:248</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_sessionstate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _session<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">_session<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in workspaces.ts:247</li>
 						</ul>
 					</aside>
 				</section>
@@ -457,7 +502,7 @@
 					<div class="tsd-signature tsd-kind-icon">_start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:190</li>
+							<li>Defined in workspaces.ts:252</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -472,7 +517,7 @@
 					<div class="tsd-signature tsd-kind-icon">_sync<wbr>When<wbr>Open<wbr>States<span class="tsd-signature-symbol">:</span> <a href="../modules/_workspaces_.html#syncwhenopenstates" class="tsd-signature-type">SyncWhenOpenStates</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:194</li>
+							<li>Defined in workspaces.ts:257</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -487,7 +532,7 @@
 					<div class="tsd-signature tsd-kind-icon">_targets<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:195</li>
+							<li>Defined in workspaces.ts:258</li>
 						</ul>
 					</aside>
 				</section>
@@ -497,7 +542,7 @@
 					<div class="tsd-signature tsd-kind-icon">_translator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">i18next.TranslationFunction</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:199</li>
+							<li>Defined in workspaces.ts:262</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -512,7 +557,7 @@
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.workspacecontext.html" class="tsd-signature-type">WorkspaceContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:210</li>
+							<li>Defined in workspaces.ts:273</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -527,7 +572,7 @@
 					<div class="tsd-signature tsd-kind-icon">folder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.WorkspaceFolder</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:209</li>
+							<li>Defined in workspaces.ts:272</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -542,12 +587,27 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:208</li>
+							<li>Defined in workspaces.ts:271</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The ID.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="state" class="tsd-anchor"></a>
+					<h3>state</h3>
+					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="_workspaces_.workspacememento.html" class="tsd-signature-type">WorkspaceMemento</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in workspaces.ts:2132</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Stores the memento of that workspace.</p>
 						</div>
 					</div>
 				</section>
@@ -575,7 +635,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:236</li>
+									<li>Defined in workspaces.ts:300</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -597,7 +657,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:253</li>
+									<li>Defined in workspaces.ts:396</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -619,7 +679,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:260</li>
+									<li>Defined in workspaces.ts:403</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -641,7 +701,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:751</li>
+									<li>Defined in workspaces.ts:988</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -663,7 +723,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:860</li>
+									<li>Defined in workspaces.ts:1097</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -754,7 +814,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:907</li>
+									<li>Defined in workspaces.ts:1144</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -776,7 +836,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:946</li>
+									<li>Defined in workspaces.ts:1183</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -798,7 +858,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:953</li>
+									<li>Defined in workspaces.ts:1190</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -820,7 +880,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:960</li>
+									<li>Defined in workspaces.ts:1197</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -842,7 +902,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1138</li>
+									<li>Defined in workspaces.ts:1375</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -864,7 +924,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1702</li>
+									<li>Defined in workspaces.ts:2028</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -873,6 +933,50 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="selectedswitches" class="tsd-anchor"></a>
+					<h3>selected<wbr>Switches</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> selectedSwitches<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:2037</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the repository of selected switches.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="sessionstate" class="tsd-anchor"></a>
+					<h3>session<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> sessionState<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:2044</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the current session data storage.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -886,7 +990,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1711</li>
+									<li>Defined in workspaces.ts:2051</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -908,7 +1012,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1785</li>
+									<li>Defined in workspaces.ts:2125</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -930,7 +1034,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1792</li>
+									<li>Defined in workspaces.ts:2137</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -983,7 +1087,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:221</li>
+									<li>Defined in workspaces.ts:286</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1005,6 +1109,37 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="changeswitchbuttonoption" class="tsd-anchor"></a>
+					<h3>change<wbr>Switch<wbr>Button<wbr>Option</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">change<wbr>Switch<wbr>Button<wbr>Option<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-signature-type">SwitchTarget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:310</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Lets the user change the option of a switch.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-signature-type">SwitchTarget</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="cleanuppackagebuttons" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> cleanup<wbr>Package<wbr>Buttons</h3>
@@ -1015,7 +1150,24 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:241</li>
+									<li>Defined in workspaces.ts:375</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="cleanupswitchbuttons" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> cleanup<wbr>Switch<wbr>Buttons</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">cleanup<wbr>Switch<wbr>Buttons<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:384</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1045,6 +1197,34 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="createsessionstate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Session<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Session<wbr>State<span class="tsd-signature-symbol">(</span>newCfg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_.workspacesettings.html" class="tsd-signature-type">WorkspaceSettings</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:407</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newCfg: <a href="../interfaces/_workspaces_.workspacesettings.html" class="tsd-signature-type">WorkspaceSettings</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-index-signature">
+									<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">TValue</span></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="deletefilein" class="tsd-anchor"></a>
 					<h3>delete<wbr>File<wbr>In</h3>
@@ -1055,7 +1235,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:271</li>
+									<li>Defined in workspaces.ts:430</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1095,7 +1275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:283</li>
+									<li>Defined in workspaces.ts:442</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1129,7 +1309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:295</li>
+									<li>Defined in workspaces.ts:454</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1166,7 +1346,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:307</li>
+									<li>Defined in workspaces.ts:466</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1206,7 +1386,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:318</li>
+									<li>Defined in workspaces.ts:477</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1237,7 +1417,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:340</li>
+									<li>Defined in workspaces.ts:499</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1268,7 +1448,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:358</li>
+									<li>Defined in workspaces.ts:517</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1310,40 +1490,6 @@
 								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="downloadfromsettingsuri" class="tsd-anchor"></a>
-					<h3>download<wbr>From<wbr>Settings<wbr>Uri</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">download<wbr>From<wbr>Settings<wbr>Uri<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Uri</span>, outVal<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_workspaces_.downloadfromsettingsurioutvalue.html" class="tsd-signature-type">DownloadFromSettingsUriOutValue</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in workspaces.ts:369</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Downloads setting data from an URI.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>uri: <span class="tsd-signature-type">vscode.Uri</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The URI.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> outVal: <a href="../interfaces/_workspaces_.downloadfromsettingsurioutvalue.html" class="tsd-signature-type">DownloadFromSettingsUriOutValue</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1404,7 +1550,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:393</li>
+									<li>Defined in workspaces.ts:530</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1429,6 +1575,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getallswitchoptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>All<wbr>Switch<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Switch<wbr>Options<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-signature-type">SwitchTarget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_.switchtargetoption.html" class="tsd-signature-type">SwitchTargetOption</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:556</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-signature-type">SwitchTarget</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_workspaces_.switchtargetoption.html" class="tsd-signature-type">SwitchTargetOption</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getdeleteplugins" class="tsd-anchor"></a>
 					<h3>get<wbr>Delete<wbr>Plugins</h3>
@@ -1439,7 +1608,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:426</li>
+									<li>Defined in workspaces.ts:589</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1471,7 +1640,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:448</li>
+									<li>Defined in workspaces.ts:611</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1503,7 +1672,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:470</li>
+									<li>Defined in workspaces.ts:633</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1535,7 +1704,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:506</li>
+									<li>Defined in workspaces.ts:669</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1586,7 +1755,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:527</li>
+									<li>Defined in workspaces.ts:690</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1626,7 +1795,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:568</li>
+									<li>Defined in workspaces.ts:731</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1658,7 +1827,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:586</li>
+									<li>Defined in workspaces.ts:749</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1667,6 +1836,104 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getselectedswitchoption" class="tsd-anchor"></a>
+					<h3>get<wbr>Selected<wbr>Switch<wbr>Option</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Selected<wbr>Switch<wbr>Option<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-signature-type">SwitchTarget</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_.switchtargetoption.html" class="tsd-signature-type">SwitchTargetOption</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:764</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the selected option of a switch (target),</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-signature-type">SwitchTarget</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_workspaces_.switchtargetoption.html" class="tsd-signature-type">SwitchTargetOption</a>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">false</span>
+							</h4>
+							<p>The option or (false) if not found.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getswitchoptionname" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Switch<wbr>Option<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Switch<wbr>Option<wbr>Name<span class="tsd-signature-symbol">(</span>option<span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_.switchtargetoption.html" class="tsd-signature-type">SwitchTargetOption</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:794</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>option: <a href="../interfaces/_workspaces_.switchtargetoption.html" class="tsd-signature-type">SwitchTargetOption</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getswitchrepository" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Switch<wbr>Repository</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Switch<wbr>Repository<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_.switchstaterepowithcollection.html" class="tsd-signature-type">SwitchStateRepoWithCollection</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:808</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_workspaces_.switchstaterepowithcollection.html" class="tsd-signature-type">SwitchStateRepoWithCollection</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getswitchtargets" class="tsd-anchor"></a>
+					<h3>get<wbr>Switch<wbr>Targets</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Switch<wbr>Targets<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-signature-type">SwitchTarget</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:825</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a list of all available &#39;switch&#39; targets of that workspace.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-signature-type">SwitchTarget</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The targets.</p>
 						</li>
 					</ul>
 				</section>
@@ -1680,7 +1947,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:601</li>
+									<li>Defined in workspaces.ts:838</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1715,7 +1982,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:623</li>
+									<li>Defined in workspaces.ts:860</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1750,7 +2017,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:641</li>
+									<li>Defined in workspaces.ts:878</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1772,7 +2039,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:657</li>
+									<li>Defined in workspaces.ts:894</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1808,7 +2075,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:686</li>
+									<li>Defined in workspaces.ts:923</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1840,7 +2107,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:704</li>
+									<li>Defined in workspaces.ts:941</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1862,7 +2129,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:760</li>
+									<li>Defined in workspaces.ts:997</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1885,7 +2152,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:871</li>
+									<li>Defined in workspaces.ts:1108</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1917,7 +2184,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:918</li>
+									<li>Defined in workspaces.ts:1155</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1949,7 +2216,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:939</li>
+									<li>Defined in workspaces.ts:1176</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1981,7 +2248,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:971</li>
+									<li>Defined in workspaces.ts:1208</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2069,7 +2336,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:983</li>
+									<li>Defined in workspaces.ts:1220</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2129,7 +2396,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1022</li>
+									<li>Defined in workspaces.ts:1259</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2160,7 +2427,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1057</li>
+									<li>Defined in workspaces.ts:1294</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2191,7 +2458,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1067</li>
+									<li>Defined in workspaces.ts:1304</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2231,7 +2498,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1117</li>
+									<li>Defined in workspaces.ts:1354</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2263,7 +2530,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#ondispose">onDispose</a></p>
 								<ul>
-									<li>Defined in workspaces.ts:1131</li>
+									<li>Defined in workspaces.ts:1368</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2370,7 +2637,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1148</li>
+									<li>Defined in workspaces.ts:1385</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2407,7 +2674,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1160</li>
+									<li>Defined in workspaces.ts:1397</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2447,7 +2714,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1171</li>
+									<li>Defined in workspaces.ts:1408</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2478,7 +2745,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1181</li>
+									<li>Defined in workspaces.ts:1418</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2506,7 +2773,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1414</li>
+									<li>Defined in workspaces.ts:1654</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2528,7 +2795,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1446</li>
+									<li>Defined in workspaces.ts:1686</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2545,7 +2812,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1571</li>
+									<li>Defined in workspaces.ts:1811</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2554,6 +2821,23 @@
 									<h5>cfg: <a href="../interfaces/_contracts_.configuration.html" class="tsd-signature-type">Configuration</a></h5>
 								</li>
 							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="reloadswitches" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> reload<wbr>Switches</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">reload<wbr>Switches<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:1854</li>
+								</ul>
+							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -2568,7 +2852,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1614</li>
+									<li>Defined in workspaces.ts:1940</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2644,7 +2928,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1651</li>
+									<li>Defined in workspaces.ts:1977</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2675,7 +2959,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1678</li>
+									<li>Defined in workspaces.ts:2004</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2738,7 +3022,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1727</li>
+									<li>Defined in workspaces.ts:2067</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2779,7 +3063,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1748</li>
+									<li>Defined in workspaces.ts:2088</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2820,7 +3104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1769</li>
+									<li>Defined in workspaces.ts:2109</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2861,7 +3145,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1797</li>
+									<li>Defined in workspaces.ts:2142</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2893,7 +3177,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1861</li>
+									<li>Defined in workspaces.ts:2210</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2928,7 +3212,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1816</li>
+									<li>Defined in workspaces.ts:2165</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2963,7 +3247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1882</li>
+									<li>Defined in workspaces.ts:2231</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2985,6 +3269,23 @@
 								<span class="tsd-signature-type">false</span>
 							</h4>
 							<p>The relative path or (false) if &#39;path&#39; could not be converted.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updateswitchbuttons" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Switch<wbr>Buttons</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Switch<wbr>Buttons<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:2261</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -3047,6 +3348,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_workspaces_.workspace.html#_package_buttons" class="tsd-kind-icon">_PACKAGE_<wbr>BUTTONS</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#_switch_buttons" class="tsd-kind-icon">_SWITCH_<wbr>BUTTONS</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_workspaces_.workspace.html#_timers" class="tsd-kind-icon">_TIMERS</a>
 							</li>
@@ -3074,6 +3378,12 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_workspaces_.workspace.html#_packages" class="tsd-kind-icon">_packages</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#_selectedswitches" class="tsd-kind-icon">_selected<wbr>Switches</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#_sessionstate" class="tsd-kind-icon">_session<wbr>State</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_workspaces_.workspace.html#_starttime" class="tsd-kind-icon">_start<wbr>Time</a>
 							</li>
@@ -3094,6 +3404,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_workspaces_.workspace.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_workspaces_.workspace.html#state" class="tsd-kind-icon">state</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_workspaces_.workspace.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
@@ -3141,6 +3454,12 @@
 								<a href="_workspaces_.workspace.html#rootpath" class="tsd-kind-icon">root<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_workspaces_.workspace.html#selectedswitches" class="tsd-kind-icon">selected<wbr>Switches</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_workspaces_.workspace.html#sessionstate" class="tsd-kind-icon">session<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_workspaces_.workspace.html#settingfolder" class="tsd-kind-icon">setting<wbr>Folder</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
@@ -3155,11 +3474,20 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_workspaces_.workspace.html#canbehandledbyme" class="tsd-kind-icon">can<wbr>BeHandled<wbr>ByMe</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_workspaces_.workspace.html#changeswitchbuttonoption" class="tsd-kind-icon">change<wbr>Switch<wbr>Button<wbr>Option</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_workspaces_.workspace.html#cleanuppackagebuttons" class="tsd-kind-icon">cleanup<wbr>Package<wbr>Buttons</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#cleanupswitchbuttons" class="tsd-kind-icon">cleanup<wbr>Switch<wbr>Buttons</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_workspaces_.workspace.html#cleanuptimers" class="tsd-kind-icon">cleanup<wbr>Timers</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#createsessionstate" class="tsd-kind-icon">create<wbr>Session<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_workspaces_.workspace.html#deletefilein" class="tsd-kind-icon">delete<wbr>File<wbr>In</a>
@@ -3185,9 +3513,6 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_workspaces_.workspace.html#dispose" class="tsd-kind-icon">dispose</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_workspaces_.workspace.html#downloadfromsettingsuri" class="tsd-kind-icon">download<wbr>From<wbr>Settings<wbr>Uri</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_workspaces_.workspace.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
@@ -3196,6 +3521,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_workspaces_.workspace.html#findfilesbyfilter" class="tsd-kind-icon">find<wbr>Files<wbr>ByFilter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#getallswitchoptions" class="tsd-kind-icon">get<wbr>All<wbr>Switch<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_workspaces_.workspace.html#getdeleteplugins" class="tsd-kind-icon">get<wbr>Delete<wbr>Plugins</a>
@@ -3220,6 +3548,18 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_workspaces_.workspace.html#getpackages" class="tsd-kind-icon">get<wbr>Packages</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_workspaces_.workspace.html#getselectedswitchoption" class="tsd-kind-icon">get<wbr>Selected<wbr>Switch<wbr>Option</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#getswitchoptionname" class="tsd-kind-icon">get<wbr>Switch<wbr>Option<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#getswitchrepository" class="tsd-kind-icon">get<wbr>Switch<wbr>Repository</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_workspaces_.workspace.html#getswitchtargets" class="tsd-kind-icon">get<wbr>Switch<wbr>Targets</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_workspaces_.workspace.html#getsyncwhenopenkey" class="tsd-kind-icon">get<wbr>Sync<wbr>When<wbr>Open<wbr>Key</a>
@@ -3312,6 +3652,9 @@
 								<a href="_workspaces_.workspace.html#reloadpackages" class="tsd-kind-icon">reload<wbr>Packages</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#reloadswitches" class="tsd-kind-icon">reload<wbr>Switches</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_workspaces_.workspace.html#reloadtargets" class="tsd-kind-icon">reload<wbr>Targets</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
@@ -3350,6 +3693,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_workspaces_.workspace.html#torelativepath" class="tsd-kind-icon">to<wbr>Relative<wbr>Path</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#updateswitchbuttons" class="tsd-kind-icon">update<wbr>Switch<wbr>Buttons</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_workspaces_.workspace.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
@@ -3357,11 +3703,23 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_workspaces_.downloadfromsettingsurioutvalue.html" class="tsd-kind-icon">Download<wbr>From<wbr>Settings<wbr>Uri<wbr>Out<wbr>Value</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_workspaces_.workspacememento.html" class="tsd-kind-icon">Workspace<wbr>Memento</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_workspaces_.packagewithbutton.html" class="tsd-kind-icon">Package<wbr>With<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_workspaces_.switchstaterepowithcollection.html" class="tsd-kind-icon">Switch<wbr>State<wbr>Repo<wbr>With<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-kind-icon">Switch<wbr>Target</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_workspaces_.switchtargetoption.html" class="tsd-kind-icon">Switch<wbr>Target<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/_workspaces_.targetwithbutton.html" class="tsd-kind-icon">Target<wbr>With<wbr>Button</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_workspaces_.workspacecontext.html" class="tsd-kind-icon">Workspace<wbr>Context</a>
@@ -3378,6 +3736,15 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_workspaces_.workspacesettings.html" class="tsd-kind-icon">Workspace<wbr>Settings</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#switchstaterepository" class="tsd-kind-icon">Switch<wbr>State<wbr>Repository</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#switchstaterepositorycollection" class="tsd-kind-icon">Switch<wbr>State<wbr>Repository<wbr>Collection</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#switchtargetoptionvalue" class="tsd-kind-icon">Switch<wbr>Target<wbr>Option<wbr>Value</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_workspaces_.html#syncwhenopenstates" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>States</a>
 					</li>
@@ -3388,7 +3755,13 @@
 						<a href="../modules/_workspaces_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#switch_state_repo_collection_key" class="tsd-kind-icon">SWITCH_<wbr>STATE_<wbr>REPO_<wbr>COLLECTION_<wbr>KEY</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_workspaces_.html#nextpackagebuttonid" class="tsd-kind-icon">next<wbr>Package<wbr>Button<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#nextswitchbuttonid" class="tsd-kind-icon">next<wbr>Switch<wbr>Button<wbr>Id</a>
 					</li>
 				</ul>
 			</nav>

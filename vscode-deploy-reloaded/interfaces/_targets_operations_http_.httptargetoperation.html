@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>OpenTargetOperation | vscode-deploy-reloaded</title>
+	<title>HttpTargetOperation | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_targets_operations_open_.html">&quot;targets/operations/open&quot;</a>
+					<a href="../modules/_targets_operations_http_.html">&quot;targets/operations/http&quot;</a>
 				</li>
 				<li>
-					<a href="_targets_operations_open_.opentargetoperation.html">OpenTargetOperation</a>
+					<a href="_targets_operations_http_.httptargetoperation.html">HttpTargetOperation</a>
 				</li>
 			</ul>
-			<h1>Interface OpenTargetOperation</h1>
+			<h1>Interface HttpTargetOperation</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An operation for open something.</p>
+						<p>An operation for doing a HTTP request.</p>
 					</div>
 				</div>
 			</section>
@@ -83,7 +83,7 @@
 						<a href="_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">OpenTargetOperation</span>
+								<span class="target">HttpTargetOperation</span>
 							</li>
 						</ul>
 					</li>
@@ -96,12 +96,20 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_open_.opentargetoperation.html#if" class="tsd-kind-icon">if</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_open_.opentargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_open_.opentargetoperation.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_open_.opentargetoperation.html#target" class="tsd-kind-icon">target</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_open_.opentargetoperation.html#type" class="tsd-kind-icon">type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_open_.opentargetoperation.html#wait" class="tsd-kind-icon">wait</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httptargetoperation.html#body" class="tsd-kind-icon">body</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httptargetoperation.html#headers" class="tsd-kind-icon">headers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_http_.httptargetoperation.html#if" class="tsd-kind-icon">if</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_http_.httptargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httptargetoperation.html#isbodybase64" class="tsd-kind-icon">is<wbr>Body<wbr>Base64</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httptargetoperation.html#isbodyscript" class="tsd-kind-icon">is<wbr>Body<wbr>Script</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httptargetoperation.html#method" class="tsd-kind-icon">method</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_http_.httptargetoperation.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httptargetoperation.html#noplaceholdersfortheseheaders" class="tsd-kind-icon">no<wbr>Placeholders<wbr>For<wbr>These<wbr>Headers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httptargetoperation.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httptargetoperation.html#password" class="tsd-kind-icon">password</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_http_.httptargetoperation.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httptargetoperation.html#url" class="tsd-kind-icon">url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httptargetoperation.html#username" class="tsd-kind-icon">username</a></li>
 							</ul>
 						</section>
 					</div>
@@ -109,6 +117,36 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="body" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> body</h3>
+					<div class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/http.ts:70</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The body or the path to a script that returns the body to send.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="headers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> headers</h3>
+					<div class="tsd-signature tsd-kind-icon">headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/http.ts:74</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The request headers.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="if" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> if</h3>
@@ -141,6 +179,51 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isbodybase64" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Body<wbr>Base64</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Body<wbr>Base64<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/http.ts:78</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates if &#39;body&#39; is Base64 encoded or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isbodyscript" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Body<wbr>Script</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Body<wbr>Script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/http.ts:82</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Indicates if &#39;body&#39; contains the path to a script instead the content to send.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="method" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> method</h3>
+					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/http.ts:86</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The HTTP request method.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
@@ -158,17 +241,47 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="target" class="tsd-anchor"></a>
-					<h3>target</h3>
-					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="noplaceholdersfortheseheaders" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Placeholders<wbr>For<wbr>These<wbr>Headers</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Placeholders<wbr>For<wbr>These<wbr>Headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets/operations/open.ts:30</li>
+							<li>Defined in targets/operations/http.ts:90</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The target to open.</p>
+							<p>A list of headers that should NOT use placeholders / values.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/http.ts:94</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The options for the script that returns the body to send.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="password" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> password</h3>
+					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/http.ts:98</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The password for basic auth.</p>
 						</div>
 					</div>
 				</section>
@@ -189,17 +302,32 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="wait" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> wait</h3>
-					<div class="tsd-signature tsd-kind-icon">wait<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="url" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> url</h3>
+					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets/operations/open.ts:34</li>
+							<li>Defined in targets/operations/http.ts:102</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Wait until operation has been finished or not.</p>
+							<p>The URL.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="username" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> username</h3>
+					<div class="tsd-signature tsd-kind-icon">username<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/http.ts:106</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The username for basic auth.</p>
 						</div>
 					</div>
 				</section>
@@ -212,41 +340,74 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_targets_operations_open_.html">"targets/operations/open"</a>
+						<a href="../modules/_targets_operations_http_.html">"targets/operations/http"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_targets_operations_http_.httpbodymodule.html" class="tsd-kind-icon">Http<wbr>Body<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html" class="tsd-kind-icon">Http<wbr>Body<wbr>Module<wbr>Execution<wbr>Arguments</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_targets_operations_open_.opentargetoperation.html" class="tsd-kind-icon">Open<wbr>Target<wbr>Operation</a>
+						<a href="_targets_operations_http_.httptargetoperation.html" class="tsd-kind-icon">Http<wbr>Target<wbr>Operation</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_open_.opentargetoperation.html#if" class="tsd-kind-icon">if</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_open_.opentargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_open_.opentargetoperation.html#name" class="tsd-kind-icon">name</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_http_.httptargetoperation.html#body" class="tsd-kind-icon">body</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_targets_operations_open_.opentargetoperation.html#target" class="tsd-kind-icon">target</a>
+								<a href="_targets_operations_http_.httptargetoperation.html#headers" class="tsd-kind-icon">headers</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_open_.opentargetoperation.html#type" class="tsd-kind-icon">type</a>
+								<a href="_targets_operations_http_.httptargetoperation.html#if" class="tsd-kind-icon">if</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_targets_operations_http_.httptargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_targets_operations_open_.opentargetoperation.html#wait" class="tsd-kind-icon">wait</a>
+								<a href="_targets_operations_http_.httptargetoperation.html#isbodybase64" class="tsd-kind-icon">is<wbr>Body<wbr>Base64</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_http_.httptargetoperation.html#isbodyscript" class="tsd-kind-icon">is<wbr>Body<wbr>Script</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_http_.httptargetoperation.html#method" class="tsd-kind-icon">method</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_targets_operations_http_.httptargetoperation.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_http_.httptargetoperation.html#noplaceholdersfortheseheaders" class="tsd-kind-icon">no<wbr>Placeholders<wbr>For<wbr>These<wbr>Headers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_http_.httptargetoperation.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_http_.httptargetoperation.html#password" class="tsd-kind-icon">password</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_targets_operations_http_.httptargetoperation.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_http_.httptargetoperation.html#url" class="tsd-kind-icon">url</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_http_.httptargetoperation.html#username" class="tsd-kind-icon">username</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_targets_operations_http_.html#httpbodymoduleexecutor" class="tsd-kind-icon">Http<wbr>Body<wbr>Module<wbr>Executor</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_targets_operations_open_.html#execute" class="tsd-kind-icon">execute</a>
+						<a href="../modules/_targets_operations_http_.html#execute" class="tsd-kind-icon">execute</a>
 					</li>
 				</ul>
 			</nav>

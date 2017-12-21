@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TargetOperationModule | vscode-deploy-reloaded</title>
+	<title>ScriptTargetOperation | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_targets_.html">&quot;targets&quot;</a>
+					<a href="../modules/_targets_operations_script_.html">&quot;targets/operations/script&quot;</a>
 				</li>
 				<li>
-					<a href="_targets_.targetoperationmodule.html">TargetOperationModule</a>
+					<a href="_targets_operations_script_.scripttargetoperation.html">ScriptTargetOperation</a>
 				</li>
 			</ul>
-			<h1>Interface TargetOperationModule&lt;TOperation&gt;</h1>
+			<h1>Interface ScriptTargetOperation</h1>
 		</div>
 	</div>
 </header>
@@ -72,23 +72,20 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A target operation module.</p>
+						<p>An operation that executes a script.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>TOperation<span class="tsd-signature-symbol">: </span><a href="_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a></h4>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TargetOperationModule</span>
+						<a href="_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">ScriptTargetOperation</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -99,7 +96,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.targetoperationmodule.html#execute" class="tsd-kind-icon">execute</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_script_.scripttargetoperation.html#if" class="tsd-kind-icon">if</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_script_.scripttargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_script_.scripttargetoperation.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_script_.scripttargetoperation.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_script_.scripttargetoperation.html#script" class="tsd-kind-icon">script</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_script_.scripttargetoperation.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,18 +109,97 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="execute" class="tsd-anchor"></a>
-					<h3>execute</h3>
-					<div class="tsd-signature tsd-kind-icon">execute<span class="tsd-signature-symbol">:</span> <a href="../modules/_targets_.html#targetoperationexecutor" class="tsd-signature-type">TargetOperationExecutor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TOperation</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="if" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> if</h3>
+					<div class="tsd-signature tsd-kind-icon">if<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.conditionalitem.html">ConditionalItem</a>.<a href="_contracts_.conditionalitem.html#if">if</a></p>
 						<ul>
-							<li>Defined in targets.ts:191</li>
+							<li>Defined in contracts.ts:101</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The execution method.</p>
+							<p>One or more (JavaScript) conditions that check if that item is available or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="ignoreiffail" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ignore<wbr>IfFail</h3>
+					<div class="tsd-signature tsd-kind-icon">ignore<wbr>IfFail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_targets_.targetoperation.html">TargetOperation</a>.<a href="_targets_.targetoperation.html#ignoreiffail">ignoreIfFail</a></p>
+						<ul>
+							<li>Defined in targets.ts:118</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Continue when target operation fails or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.withoptionalname.html">WithOptionalName</a>.<a href="_contracts_.withoptionalname.html#name">name</a></p>
+						<ul>
+							<li>Defined in contracts.ts:401</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/script.ts:32</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Additional data / options for the script.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="script" class="tsd-anchor"></a>
+					<h3>script</h3>
+					<div class="tsd-signature tsd-kind-icon">script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/script.ts:36</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The path to the script to execute.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_targets_.targetoperation.html">TargetOperation</a>.<a href="_targets_.targetoperation.html#type">type</a></p>
+						<ul>
+							<li>Defined in targets.ts:122</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type.</p>
 						</div>
 					</div>
 				</section>
@@ -131,80 +212,50 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_targets_.html">"targets"</a>
+						<a href="../modules/_targets_operations_script_.html">"targets/operations/script"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_targets_.targetoperationevent.html" class="tsd-kind-icon">Target<wbr>Operation<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_targets_.executetargetoperationoptions.html" class="tsd-kind-icon">Execute<wbr>Target<wbr>Operation<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_targets_.target.html" class="tsd-kind-icon">Target</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_targets_.targetoperation.html" class="tsd-kind-icon">Target<wbr>Operation</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_targets_.targetoperationexecutioncontext.html" class="tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Context</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_targets_.targetoperationmodule.html" class="tsd-kind-icon">Target<wbr>Operation<wbr>Module</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_targets_operations_script_.scripttargetoperation.html" class="tsd-kind-icon">Script<wbr>Target<wbr>Operation</a>
 						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_targets_operations_script_.scripttargetoperation.html#if" class="tsd-kind-icon">if</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_targets_operations_script_.scripttargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_targets_operations_script_.scripttargetoperation.html#name" class="tsd-kind-icon">name</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_targets_.targetoperationmodule.html#execute" class="tsd-kind-icon">execute</a>
+								<a href="_targets_operations_script_.scripttargetoperation.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_script_.scripttargetoperation.html#script" class="tsd-kind-icon">script</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_targets_operations_script_.scripttargetoperation.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_targets_.targetprovider.html" class="tsd-kind-icon">Target<wbr>Provider</a>
+						<a href="_targets_operations_script_.scripttargetoperationexecutionarguments.html" class="tsd-kind-icon">Script<wbr>Target<wbr>Operation<wbr>Execution<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_targets_operations_script_.scripttargetoperationmodule.html" class="tsd-kind-icon">Script<wbr>Target<wbr>Operation<wbr>Module</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#targetoperationexecutionresult" class="tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#targetoperationexecutor" class="tsd-kind-icon">Target<wbr>Operation<wbr>Executor</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#targetoperationvalue" class="tsd-kind-icon">Target<wbr>Operation<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#default_operation_type" class="tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#regex_zip_filename" class="tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME</a>
+						<a href="../modules/_targets_operations_script_.html#scripttargetoperationexecutor" class="tsd-kind-icon">Script<wbr>Target<wbr>Operation<wbr>Executor</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#executetargetoperations" class="tsd-kind-icon">execute<wbr>Target<wbr>Operations</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#getmappedtargetfilepath" class="tsd-kind-icon">get<wbr>Mapped<wbr>Target<wbr>File<wbr>Path</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#gettargetname" class="tsd-kind-icon">get<wbr>Target<wbr>Name</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#gettargetsbyname" class="tsd-kind-icon">get<wbr>Targets<wbr>ByName</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#getzipfilename" class="tsd-kind-icon">get<wbr>Zip<wbr>File<wbr>Name</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#isvisibleforpackage" class="tsd-kind-icon">is<wbr>Visible<wbr>For<wbr>Package</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_targets_.html#normalizetargettype" class="tsd-kind-icon">normalize<wbr>Target<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_targets_.html#showtargetquickpick" class="tsd-kind-icon">show<wbr>Target<wbr>Quick<wbr>Pick</a>
+						<a href="../modules/_targets_operations_script_.html#execute" class="tsd-kind-icon">execute</a>
 					</li>
 				</ul>
 			</nav>

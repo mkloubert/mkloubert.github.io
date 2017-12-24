@@ -110,6 +110,9 @@
 										<a href="_plugins_batch_.batchtarget.html" class="tsd-signature-type">BatchTarget</a>
 									</li>
 									<li>
+										<a href="_plugins_compiler_.compilertarget.html" class="tsd-signature-type">CompilerTarget</a>
+									</li>
+									<li>
 										<a href="_plugins_dropbox_.dropboxtarget.html" class="tsd-signature-type">DropboxTarget</a>
 									</li>
 									<li>
@@ -168,7 +171,10 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_.target.html#___index" class="tsd-kind-icon">___index</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_.target.html#___searchvalue" class="tsd-kind-icon">___search<wbr>Value</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_.target.html#___workspace" class="tsd-kind-icon">___workspace</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.target.html#beforedelete" class="tsd-kind-icon">before<wbr>Delete</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.target.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.target.html#beforepull" class="tsd-kind-icon">before<wbr>Pull</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.target.html#deleted" class="tsd-kind-icon">deleted</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.target.html#deployed" class="tsd-kind-icon">deployed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.target.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_.target.html#encryptby" class="tsd-kind-icon">encrypt<wbr>By</a></li>
@@ -178,6 +184,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.target.html#mappings" class="tsd-kind-icon">mappings</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_.target.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_.target.html#platforms" class="tsd-kind-icon">platforms</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.target.html#pulled" class="tsd-kind-icon">pulled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.target.html#showif" class="tsd-kind-icon">show<wbr>If</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_.target.html#transformer" class="tsd-kind-icon">transformer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_.target.html#transformeroptions" class="tsd-kind-icon">transformer<wbr>Options</a></li>
@@ -258,12 +265,28 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="beforedelete" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before<wbr>Delete</h3>
+					<div class="tsd-signature tsd-kind-icon">before<wbr>Delete<span class="tsd-signature-symbol">:</span> <a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:86</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more target operations that should be invoked
+							BEFORE a deletion in that target starts.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="beforedeploy" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before<wbr>Deploy</h3>
 					<div class="tsd-signature tsd-kind-icon">before<wbr>Deploy<span class="tsd-signature-symbol">:</span> <a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:82</li>
+							<li>Defined in targets.ts:91</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -274,12 +297,44 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="beforepull" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> before<wbr>Pull</h3>
+					<div class="tsd-signature tsd-kind-icon">before<wbr>Pull<span class="tsd-signature-symbol">:</span> <a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:96</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more target operations that should be invoked
+							BEFORE a pullment from that target starts.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="deleted" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> deleted</h3>
+					<div class="tsd-signature tsd-kind-icon">deleted<span class="tsd-signature-symbol">:</span> <a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:101</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more target operations that should be invoked
+							AFTER a deletion in that target has been done.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="deployed" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> deployed</h3>
 					<div class="tsd-signature tsd-kind-icon">deployed<span class="tsd-signature-symbol">:</span> <a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:87</li>
+							<li>Defined in targets.ts:106</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -295,7 +350,7 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:91</li>
+							<li>Defined in targets.ts:110</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -311,7 +366,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.encryptable.html">Encryptable</a>.<a href="_contracts_.encryptable.html#encryptby">encryptBy</a></p>
 						<ul>
-							<li>Defined in contracts.ts:237</li>
+							<li>Defined in contracts.ts:267</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -327,7 +382,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.encryptable.html">Encryptable</a>.<a href="_contracts_.encryptable.html#encryptwith">encryptWith</a></p>
 						<ul>
-							<li>Defined in contracts.ts:241</li>
+							<li>Defined in contracts.ts:271</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -342,7 +397,7 @@
 					<div class="tsd-signature tsd-kind-icon">hide<wbr>If<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:96</li>
+							<li>Defined in targets.ts:115</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -374,7 +429,7 @@
 					<div class="tsd-signature tsd-kind-icon">mappings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_mappings.FolderMappings</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:100</li>
+							<li>Defined in targets.ts:119</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -390,7 +445,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.withoptionalname.html">WithOptionalName</a>.<a href="_contracts_.withoptionalname.html#name">name</a></p>
 						<ul>
-							<li>Defined in contracts.ts:401</li>
+							<li>Defined in contracts.ts:450</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -406,7 +461,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.platformitem.html">PlatformItem</a>.<a href="_contracts_.platformitem.html#platforms">platforms</a></p>
 						<ul>
-							<li>Defined in contracts.ts:331</li>
+							<li>Defined in contracts.ts:361</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -416,12 +471,28 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="pulled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> pulled</h3>
+					<div class="tsd-signature tsd-kind-icon">pulled<span class="tsd-signature-symbol">:</span> <a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_targets_.html#targetoperationvalue" class="tsd-signature-type">TargetOperationValue</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:124</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more target operations that should be invoked
+							AFTER a pullment from that target has been done.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="showif" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> show<wbr>If</h3>
 					<div class="tsd-signature tsd-kind-icon">show<wbr>If<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:105</li>
+							<li>Defined in targets.ts:129</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -469,7 +540,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:109</li>
+							<li>Defined in targets.ts:133</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -517,7 +588,16 @@
 								<a href="_targets_.target.html#___workspace" class="tsd-kind-icon">___workspace</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_.target.html#beforedelete" class="tsd-kind-icon">before<wbr>Delete</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_targets_.target.html#beforedeploy" class="tsd-kind-icon">before<wbr>Deploy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_.target.html#beforepull" class="tsd-kind-icon">before<wbr>Pull</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_.target.html#deleted" class="tsd-kind-icon">deleted</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_targets_.target.html#deployed" class="tsd-kind-icon">deployed</a>
@@ -545,6 +625,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_targets_.target.html#platforms" class="tsd-kind-icon">platforms</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_.target.html#pulled" class="tsd-kind-icon">pulled</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_targets_.target.html#showif" class="tsd-kind-icon">show<wbr>If</a>
@@ -612,6 +695,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/_targets_.html#showtargetquickpick" class="tsd-kind-icon">show<wbr>Target<wbr>Quick<wbr>Pick</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_targets_.html#throwonrecurrence" class="tsd-kind-icon">throw<wbr>OnRecurrence</a>
 					</li>
 				</ul>
 			</nav>

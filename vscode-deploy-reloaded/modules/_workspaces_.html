@@ -99,6 +99,7 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workspaces_.html#switchstaterepositorycollection" class="tsd-kind-icon">Switch<wbr>State<wbr>Repository<wbr>Collection</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_workspaces_.html#switchtargetoptionvalue" class="tsd-kind-icon">Switch<wbr>Target<wbr>Option<wbr>Value</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_workspaces_.html#syncwhenopenstates" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>States</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_workspaces_.html#workspaceprovider" class="tsd-kind-icon">Workspace<wbr>Provider</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -107,8 +108,17 @@
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workspaces_.html#files_changes" class="tsd-kind-icon">FILES_<wbr>CHANGES</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workspaces_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workspaces_.html#switch_state_repo_collection_key" class="tsd-kind-icon">SWITCH_<wbr>STATE_<wbr>REPO_<wbr>COLLECTION_<wbr>KEY</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workspaces_.html#activeworkspaceprovider" class="tsd-kind-icon">active<wbr>Workspace<wbr>Provider</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workspaces_.html#nextpackagebuttonid" class="tsd-kind-icon">next<wbr>Package<wbr>Button<wbr>Id</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workspaces_.html#nextswitchbuttonid" class="tsd-kind-icon">next<wbr>Switch<wbr>Button<wbr>Id</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_workspaces_.html#getactiveworkspaces" class="tsd-kind-icon">get<wbr>Active<wbr>Workspaces</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_workspaces_.html#isswitchtarget" class="tsd-kind-icon">is<wbr>Switch<wbr>Target</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_workspaces_.html#setactiveworkspaceprovider" class="tsd-kind-icon">set<wbr>Active<wbr>Workspace<wbr>Provider</a></li>
 							</ul>
 						</section>
 					</div>
@@ -174,6 +184,44 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="workspaceprovider" class="tsd-anchor"></a>
+					<h3>Workspace<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">Workspace<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in workspaces.ts:205</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A function that provides workspaces.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>returns</dt>
+							<dd><p>The workspace(s).</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol"> | </span><a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a>
+											<span class="tsd-signature-symbol"> | </span>
+											<a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">[]</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
@@ -183,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">FILES_<wbr>CHANGES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:207</li>
+							<li>Defined in workspaces.ts:215</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -211,7 +259,17 @@
 					<div class="tsd-signature tsd-kind-icon">SWITCH_<wbr>STATE_<wbr>REPO_<wbr>COLLECTION_<wbr>KEY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"SwitchStates"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;SwitchStates&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:210</li>
+							<li>Defined in workspaces.ts:218</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="activeworkspaceprovider" class="tsd-anchor"></a>
+					<h3>active<wbr>Workspace<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Workspace<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="_workspaces_.html#workspaceprovider" class="tsd-signature-type">WorkspaceProvider</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in workspaces.ts:214</li>
 						</ul>
 					</aside>
 				</section>
@@ -221,7 +279,7 @@
 					<div class="tsd-signature tsd-kind-icon">next<wbr>Package<wbr>Button<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Number.MIN_SAFE_INTEGER</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:208</li>
+							<li>Defined in workspaces.ts:216</li>
 						</ul>
 					</aside>
 				</section>
@@ -231,9 +289,98 @@
 					<div class="tsd-signature tsd-kind-icon">next<wbr>Switch<wbr>Button<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Number.MIN_SAFE_INTEGER</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:209</li>
+							<li>Defined in workspaces.ts:217</li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getactiveworkspaces" class="tsd-anchor"></a>
+					<h3>get<wbr>Active<wbr>Workspaces</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Active<wbr>Workspaces<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:2551</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a list of active workspaces.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The list of active workspaces.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="isswitchtarget" class="tsd-anchor"></a>
+					<h3>is<wbr>Switch<wbr>Target</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Switch<wbr>Target<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:2574</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if a target is a switch or not.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target to check.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Is switch or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="setactiveworkspaceprovider" class="tsd-anchor"></a>
+					<h3>set<wbr>Active<wbr>Workspace<wbr>Provider</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Active<wbr>Workspace<wbr>Provider<span class="tsd-signature-symbol">(</span>newProvider<span class="tsd-signature-symbol">: </span><a href="_workspaces_.html#workspaceprovider" class="tsd-signature-type">WorkspaceProvider</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in workspaces.ts:2563</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the global function for providing the list of active workspaces.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>newProvider: <a href="_workspaces_.html#workspaceprovider" class="tsd-signature-type">WorkspaceProvider</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The new function.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -298,6 +445,9 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_workspaces_.html#syncwhenopenstates" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>States</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_workspaces_.html#workspaceprovider" class="tsd-kind-icon">Workspace<wbr>Provider</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_workspaces_.html#files_changes" class="tsd-kind-icon">FILES_<wbr>CHANGES</a>
 					</li>
@@ -308,10 +458,22 @@
 						<a href="_workspaces_.html#switch_state_repo_collection_key" class="tsd-kind-icon">SWITCH_<wbr>STATE_<wbr>REPO_<wbr>COLLECTION_<wbr>KEY</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_workspaces_.html#activeworkspaceprovider" class="tsd-kind-icon">active<wbr>Workspace<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_workspaces_.html#nextpackagebuttonid" class="tsd-kind-icon">next<wbr>Package<wbr>Button<wbr>Id</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_workspaces_.html#nextswitchbuttonid" class="tsd-kind-icon">next<wbr>Switch<wbr>Button<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_workspaces_.html#getactiveworkspaces" class="tsd-kind-icon">get<wbr>Active<wbr>Workspaces</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_workspaces_.html#isswitchtarget" class="tsd-kind-icon">is<wbr>Switch<wbr>Target</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_workspaces_.html#setactiveworkspaceprovider" class="tsd-kind-icon">set<wbr>Active<wbr>Workspace<wbr>Provider</a>
 					</li>
 				</ul>
 			</nav>

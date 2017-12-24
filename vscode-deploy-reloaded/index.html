@@ -65,7 +65,314 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="vscode-deploy-reloaded">vscode-deploy-reloaded</h1>
-				<p>Recoded version of <a href="https://code.visualstudio.com">Visual Studio Code</a> extension <a href="https://github.com/mkloubert/vs-deploy">vs-deploy</a>.</p>
+				<p><a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-deploy-reloaded"><img src="https://vsmarketplacebadge.apphb.com/version-short/mkloubert.vscode-deploy-reloaded.svg" alt="Latest Release"></a>
+					<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-deploy-reloaded"><img src="https://vsmarketplacebadge.apphb.com/installs/mkloubert.vscode-deploy-reloaded.svg" alt="Installs"></a>
+				<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-deploy-reloaded#review-details"><img src="https://vsmarketplacebadge.apphb.com/rating-short/mkloubert.vscode-deploy-reloaded.svg" alt="Rating"></a></p>
+				<p>Recoded version of <a href="https://code.visualstudio.com">Visual Studio Code</a> extension <a href="https://github.com/mkloubert/vs-deploy">vs-deploy</a>, which provides commands to deploy files to one or more destinations.</p>
+				<p>The extension supports the following destinations:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_s3bucket">Amazon AWS S3 buckets</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_azureblob">Azure blob storages</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_compiler">Compiler</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_dropbox">DropBox</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_script">External Node.js based scripts</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_ftp">FTP</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_local">Local or shared network folders inside a LAN</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_mail">Mail (SMTP)</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_sftp">SFTP</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_slack">Slack</a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_zip">ZIP files</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=marcel.kloubert%40gmx.net&amp;item_name=Marcel%20Joachim%20Kloubert&amp;item_number=vscode-deploy-reloaded&amp;currency_code=EUR"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a></p>
+				<h2 id="table-of-contents">Table of contents</h2>
+				<ol>
+					<li><a href="#install-">Install</a></li>
+					<li><a href="#how-to-use-">How to use</a><ul>
+							<li><a href="#settings-">Settings</a><ul>
+									<li><a href="#packages-">Packages</a></li>
+									<li><a href="#targets-">Targets</a></li>
+								</ul>
+							</li>
+							<li><a href="#how-to-execute-">How to execute</a></li>
+						</ul>
+					</li>
+				</ol>
+				<h2 id="install-uarr-table-of-contents-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>Launch VS Code Quick Open (<code>Ctrl + P</code>), paste the following command, and press enter:</p>
+				<pre><code class="lang-bash">ext install vscode-deploy-reloaded
+</code></pre>
+				<p>Or search for things like <code>vscode-deploy-reloaded</code> in your editor.</p>
+				<h2 id="how-to-use-uarr-table-of-contents-">How to use [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>Detailed information can be found at the <a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki">wiki</a>.</p>
+				<p>Otherwise...</p>
+				<h3 id="settings-uarr-how-to-use-">Settings [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Open (or create) your <code>settings.json</code> in your <code>.vscode</code> subfolder of your workspace.</p>
+				<p>Add a <code>deploy.reloaded</code> section:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"deploy.reloaded"</span>: {
+    }
+}
+</code></pre>
+				<h4 id="packages-uarr-settings-">Packages [<a href="#settings-">&uarr;</a>]</h4>
+				<p>A package is a description of files of your workspace that should be deployed.</p>
+				<p>Add the subsection <code>packages</code> and add one or more entry:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"deploy.reloaded"</span>: {
+        <span class="hljs-attr">"packages"</span>: [
+            {
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Version 2.3.4"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Package version 2.3.4"</span>,
+                <span class="hljs-attr">"files"</span>: [
+                    <span class="hljs-string">"**/*.php"</span>,
+                    <span class="hljs-string">"/*.json"</span>
+                ],
+                <span class="hljs-attr">"exclude"</span>: [
+                    <span class="hljs-string">"tests/**"</span>
+                ],
+                <span class="hljs-attr">"deployOnSave"</span>: <span class="hljs-literal">true</span>
+            }
+        ]
+    }
+}
+</code></pre>
+				<p>Have a look at the <a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki#packages-">wiki</a>, to get more information about packages.</p>
+				<h4 id="targets-uarr-settings-">Targets [<a href="#settings-">&uarr;</a>]</h4>
+				<p>A target describes where a file or package should be transfered to.</p>
+				<p>Add the subsection <code>targets</code> and add one or more entry:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"deploy.reloaded"</span>: {
+        <span class="hljs-attr">"targets"</span>: [
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"sftp"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My SFTP folder"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A SFTP folder"</span>,
+                <span class="hljs-attr">"dir"</span>: <span class="hljs-string">"/my_package_files"</span>,
+                <span class="hljs-attr">"host"</span>: <span class="hljs-string">"localhost"</span>, <span class="hljs-attr">"port"</span>: <span class="hljs-number">22</span>,
+                <span class="hljs-attr">"user"</span>: <span class="hljs-string">"tester"</span>, <span class="hljs-attr">"password"</span>: <span class="hljs-string">"password"</span>,
+
+                <span class="hljs-attr">"checkBeforeDeploy"</span>: <span class="hljs-literal">true</span>,
+
+                <span class="hljs-attr">"mappings"</span>: [
+                    {
+                        <span class="hljs-attr">"source"</span>: <span class="hljs-string">"dir/of/files/that/should/be/mapped"</span>,
+                        <span class="hljs-attr">"target"</span>: <span class="hljs-string">"dir/on/target"</span>
+                    }
+                ]
+            },
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"ftp"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My FTP folder"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A FTP folder"</span>,
+                <span class="hljs-attr">"dir"</span>: <span class="hljs-string">"/my_package_files"</span>,
+                <span class="hljs-attr">"host"</span>: <span class="hljs-string">"localhost"</span>, <span class="hljs-attr">"port"</span>: <span class="hljs-number">21</span>,
+                <span class="hljs-attr">"user"</span>: <span class="hljs-string">"anonymous"</span>, <span class="hljs-attr">"password"</span>: <span class="hljs-string">""</span>,
+
+                <span class="hljs-attr">"deployed"</span>: [
+                    {
+                        <span class="hljs-attr">"type"</span>: <span class="hljs-string">"sql"</span>,
+                        <span class="hljs-attr">"engine"</span>: <span class="hljs-string">"mysql"</span>,
+
+                        <span class="hljs-attr">"queries"</span>: [
+                            <span class="hljs-string">"TRUNCATE TABLE `debug`"</span>,
+                            <span class="hljs-string">"TRUNCATE TABLE `logs`"</span>
+                        ]
+                    },
+                    {
+                        <span class="hljs-attr">"target"</span>: <span class="hljs-string">"https://github.com/mkloubert"</span>
+                    }
+                ]
+            },
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"local"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My local folder"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A local folder"</span>,
+                <span class="hljs-attr">"dir"</span>: <span class="hljs-string">"E:/test/my_package_files"</span>
+            },
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"local"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My network folder"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A SMB shared network folder"</span>,
+                <span class="hljs-attr">"dir"</span>: <span class="hljs-string">"\\\\MyServer\\my_package_files"</span>
+            },
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"zip"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My ZIP file"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Create a ZIP file in a target directory"</span>,
+                <span class="hljs-attr">"target"</span>: <span class="hljs-string">"E:/test"</span>
+            },
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"mail"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My mail server"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"An email deployer"</span>,
+                <span class="hljs-attr">"host"</span>: <span class="hljs-string">"smtp.example.com"</span>, <span class="hljs-attr">"port"</span>: <span class="hljs-number">465</span>,
+                <span class="hljs-attr">"secure"</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">"requireTLS"</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-attr">"user"</span>: <span class="hljs-string">"mkloubert@example.com"</span>, <span class="hljs-attr">"password"</span>: <span class="hljs-string">"P@assword123!"</span>,
+                <span class="hljs-attr">"from"</span>: <span class="hljs-string">"mkloubert@example.com"</span>,
+                <span class="hljs-attr">"to"</span>: <span class="hljs-string">"tm@example.com, ys@example.com"</span>
+            },
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"script"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My script"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A deploy script"</span>,
+                <span class="hljs-attr">"script"</span>: <span class="hljs-string">"E:/test/deploy.js"</span>,
+                <span class="hljs-attr">"options"</span>: {
+                    <span class="hljs-attr">"TM"</span>: <span class="hljs-number">5979</span>,
+                    <span class="hljs-attr">"MK"</span>: <span class="hljs-string">"23979"</span>
+                }
+            },
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"batch"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My Batch"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A batch operation"</span>,
+                <span class="hljs-attr">"targets"</span>: [<span class="hljs-string">"My mail server"</span>, <span class="hljs-string">"My ZIP file"</span>]
+            },
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"azureblob"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My Azure blob storage"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"An container in an Azure blob storage"</span>,
+                <span class="hljs-attr">"container"</span>: <span class="hljs-string">"my-container"</span>,
+                <span class="hljs-attr">"account"</span>: <span class="hljs-string">"my-storage-account"</span>,
+                <span class="hljs-attr">"accessKey"</span>: <span class="hljs-string">"&lt;ACCESS-KEY-FROM-AZURE-PORTAL&gt;"</span>
+            },
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"s3bucket"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My Amazon Bucket"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"An Amazon AWS S3 bucket"</span>,
+                <span class="hljs-attr">"bucket"</span>: <span class="hljs-string">"my-bucket"</span>
+            },
+            {
+                <span class="hljs-attr">"type"</span>: <span class="hljs-string">"dropbox"</span>,
+                <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My DropBox folder"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Deploy to my DropBox folder"</span>,
+
+                <span class="hljs-attr">"token"</span>: <span class="hljs-string">"&lt;ACCESS-TOKEN&gt;"</span>
+            }
+        ]
+    }
+}
+</code></pre>
+				<p>Have a look at the <a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki#targets-">wiki</a>, to get more information about targets.</p>
+				<h3 id="how-to-execute-uarr-how-to-use-">How to execute [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Press <code>F1</code> and enter one of the following commands:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>Deploy Reloaded: Compare ...</code></td>
+							<td>Opens a set of commands, to compare local and remote files.</td>
+						</tr>
+						<tr>
+							<td><code>Deploy Reloaded: Delete ...</code></td>
+							<td>Commands for deleting files.</td>
+						</tr>
+						<tr>
+							<td><code>Deploy Reloaded: Deploy ...</code></td>
+							<td>List of commands for deploying files.</td>
+						</tr>
+						<tr>
+							<td><code>Deploy Reloaded: List directory ...</code></td>
+							<td>Lists a (remote) directory.</td>
+						</tr>
+						<tr>
+							<td><code>Deploy Reloaded: Pull ...</code></td>
+							<td>Pull or download files from remote.</td>
+						</tr>
+						<tr>
+							<td><code>Deploy Reloaded: Switches ...</code></td>
+							<td>Handle <a href="https://github.com/mkloubert/vscode-deploy-reloaded/wiki/target_switch">switch targets</a>.</td>
+						</tr>
+						<tr>
+							<td><code>Deploy Reloaded: Tools ...</code></td>
+							<td>A set of helpful tools.</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>You can also use the following, predefined, shortcuts:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Command</th>
+							<th>Shortcut (<code>CTRL</code> is <code>CMD</code> on Mac)</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>extension.deploy.reloaded.deleteFile</code></td>
+							<td><code>CTRL + ALT + D, F</code></td>
+							<td>Deletes the current file on remote.</td>
+						</tr>
+						<tr>
+							<td><code>extension.deploy.reloaded.deletePackage</code></td>
+							<td><code>CTRL + ALT + D, W</code></td>
+							<td>Deletes files of a package on remote.</td>
+						</tr>
+						<tr>
+							<td><code>extension.deploy.reloaded.deployFile</code></td>
+							<td><code>CTRL + ALT + F</code></td>
+							<td>Deploys the current file.</td>
+						</tr>
+						<tr>
+							<td><code>extension.deploy.reloaded.deployWorkspace</code></td>
+							<td><code>CTRL + ALT + W</code></td>
+							<td>Deploys files of a package.</td>
+						</tr>
+						<tr>
+							<td><code>extension.deploy.reloaded.listDirectory</code></td>
+							<td><code>CTRL + ALT + L, D</code></td>
+							<td>Lists a directory on remote.</td>
+						</tr>
+						<tr>
+							<td><code>extension.deploy.reloaded.pullFile</code></td>
+							<td><code>CTRL + ALT + P, F</code></td>
+							<td>Pulls / downloads the current file.</td>
+						</tr>
+						<tr>
+							<td><code>extension.deploy.reloaded.pullWorkspace</code></td>
+							<td><code>CTRL + ALT + P, W</code></td>
+							<td>Pulls / downloads files of a package from remote.</td>
+						</tr>
+						<tr>
+							<td><code>extension.deploy.reloaded.quickExecution</code></td>
+							<td><code>CTRL + SHIFT + Q</code></td>
+							<td>Quick JavaScript code execution.</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -105,6 +412,18 @@
 						<a href="modules/_compare_.html">"compare"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_compilers_.html">"compilers"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_compilers_coffeescript_.html">"compilers/coffeescript"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_compilers_less_.html">"compilers/less"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_compilers_uglifyjs_.html">"compilers/uglifyjs"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_contracts_.html">"contracts"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -124,6 +443,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_helpers_.html">"helpers"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_html_.html">"html"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_http_.html">"http"</a>
@@ -169,6 +491,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_plugins_batch_.html">"plugins/batch"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_plugins_compiler_.html">"plugins/compiler"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_plugins_dropbox_.html">"plugins/dropbox"</a>
@@ -219,6 +544,18 @@
 						<a href="modules/_pull_.html">"pull"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_resources_.html">"resources"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_resources_css_.html">"resources/css"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_resources_html_.html">"resources/html"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_resources_javascript_.html">"resources/javascript"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_sql_.html">"sql"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -265,6 +602,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_tools_.html">"tools"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tools_quickexecution_.html">"tools/quickexecution"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_transformers_.html">"transformers"</a>

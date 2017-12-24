@@ -87,6 +87,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.conditionalitem.html" class="tsd-kind-icon">Conditional<wbr>Item</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.configsource.html" class="tsd-kind-icon">Config<wbr>Source</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.document.html" class="tsd-kind-icon">Document</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.encryptable.html" class="tsd-kind-icon">Encryptable</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.filefilter.html" class="tsd-kind-icon">File<wbr>Filter</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.import.html" class="tsd-kind-icon">Import</a></li>
@@ -94,6 +95,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.platformitem.html" class="tsd-kind-icon">Platform<wbr>Item</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.scriptarguments.html" class="tsd-kind-icon">Script<wbr>Arguments</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.startupcommand.html" class="tsd-kind-icon">Startup<wbr>Command</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.translator.html" class="tsd-kind-icon">Translator</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.withnameandpath.html" class="tsd-kind-icon">With<wbr>Name<wbr>And<wbr>Path</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_contracts_.withoptionalname.html" class="tsd-kind-icon">With<wbr>Optional<wbr>Name</a></li>
@@ -104,6 +106,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#importtype" class="tsd-kind-icon">Import<wbr>Type</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#keyvaluepairs" class="tsd-kind-icon">Key<wbr>Value<wbr>Pairs</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_contracts_.html#startupcommandvalue" class="tsd-kind-icon">Startup<wbr>Command<wbr>Value</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -126,7 +129,7 @@
 					<div class="tsd-signature tsd-kind-icon">Import<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.import.html" class="tsd-signature-type">Import</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:289</li>
+							<li>Defined in contracts.ts:319</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -141,7 +144,7 @@
 					<div class="tsd-signature tsd-kind-icon">Key<wbr>Value<wbr>Pairs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:294</li>
+							<li>Defined in contracts.ts:324</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -158,6 +161,21 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="startupcommandvalue" class="tsd-anchor"></a>
+					<h3>Startup<wbr>Command<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">Startup<wbr>Command<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_contracts_.startupcommand.html" class="tsd-signature-type">StartupCommand</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:412</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A possible value for a startup command entry.</p>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
@@ -167,7 +185,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>HOST<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"127.0.0.1"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;127.0.0.1&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:408</li>
+							<li>Defined in contracts.ts:457</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -182,7 +200,7 @@
 					<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>CONFIG_<wbr>RELOADED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"workspace.config.reloaded"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;workspace.config.reloaded&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:413</li>
+							<li>Defined in contracts.ts:462</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -197,7 +215,7 @@
 					<div class="tsd-signature tsd-kind-icon">HOMEDIR_<wbr>SUBFOLDER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">".vscode-deploy-reloaded"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;.vscode-deploy-reloaded&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:418</li>
+							<li>Defined in contracts.ts:467</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -212,7 +230,7 @@
 					<div class="tsd-signature tsd-kind-icon">ZIP_<wbr>COMMENT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&#x60;Generated by &#x27;Deploy Reloaded&#x27; (vscode-deploy-reloaded) Visual Studio Code extension:https://github.com/mkloubert/vscode-deploy-reloaded&#x60;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:423</li>
+							<li>Defined in contracts.ts:472</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -264,6 +282,9 @@
 						<a href="../interfaces/_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.document.html" class="tsd-kind-icon">Document</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_contracts_.encryptable.html" class="tsd-kind-icon">Encryptable</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -285,6 +306,9 @@
 						<a href="../interfaces/_contracts_.scriptarguments.html" class="tsd-kind-icon">Script<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_contracts_.startupcommand.html" class="tsd-kind-icon">Startup<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_contracts_.translator.html" class="tsd-kind-icon">Translator</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -298,6 +322,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_contracts_.html#keyvaluepairs" class="tsd-kind-icon">Key<wbr>Value<wbr>Pairs</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_contracts_.html#startupcommandvalue" class="tsd-kind-icon">Startup<wbr>Command<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_contracts_.html#default_host" class="tsd-kind-icon">DEFAULT_<wbr>HOST</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CompileResultMessage | vscode-deploy-reloaded</title>
+	<title>CompileOptions | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_compilers_.html">&quot;compilers&quot;</a>
+					<a href="../modules/_compilers_pug_.html">&quot;compilers/pug&quot;</a>
 				</li>
 				<li>
-					<a href="_compilers_.compileresultmessage.html">CompileResultMessage</a>
+					<a href="_compilers_pug_.compileoptions.html">CompileOptions</a>
 				</li>
 			</ul>
-			<h1>Interface CompileResultMessage</h1>
+			<h1>Interface CompileOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A result message (entry).</p>
+						<p>Pug compile options.</p>
 					</div>
 				</div>
 			</section>
@@ -80,19 +80,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CompileResultMessage</span>
+						<a href="_compilers_.compileoptions.html" class="tsd-signature-type">CompileOptions</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Pug.Options</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="_compilers_less_.compileresultmessage.html" class="tsd-signature-type">CompileResultMessage</a>
-							</li>
-							<li>
-								<a href="_compilers_pug_.compileresultmessage.html" class="tsd-signature-type">CompileResultMessage</a>
-							</li>
-							<li>
-								<a href="_compilers_uglifyjs_.compileresultmessage.html" class="tsd-signature-type">CompileResultMessage</a>
-							</li>
-							<li>
-								<a href="_compilers_coffeescript_.compileresultmessage.html" class="tsd-signature-type">CompileResultMessage</a>
+								<span class="target">CompileOptions</span>
 							</li>
 						</ul>
 					</li>
@@ -105,10 +96,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.compileresultmessage.html#category" class="tsd-kind-icon">category</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.compileresultmessage.html#compiler" class="tsd-kind-icon">compiler</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.compileresultmessage.html#file" class="tsd-kind-icon">file</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_.compileresultmessage.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_pug_.compileoptions.html#encoding" class="tsd-kind-icon">encoding</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_pug_.compileoptions.html#exclude" class="tsd-kind-icon">exclude</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_compilers_pug_.compileoptions.html#extension" class="tsd-kind-icon">extension</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_pug_.compileoptions.html#files" class="tsd-kind-icon">files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_pug_.compileoptions.html#options" class="tsd-kind-icon">options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_pug_.compileoptions.html#outdirectory" class="tsd-kind-icon">out<wbr>Directory</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_compilers_pug_.compileoptions.html#workspace" class="tsd-kind-icon">workspace</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,62 +111,112 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="category" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> category</h3>
-					<div class="tsd-signature tsd-kind-icon">category<span class="tsd-signature-symbol">:</span> <a href="../enums/_compilers_.compileresultmessagecategory.html" class="tsd-signature-type">CompileResultMessageCategory</a></div>
+					<a name="encoding" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> encoding</h3>
+					<div class="tsd-signature tsd-kind-icon">encoding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:98</li>
+							<li>Defined in compilers/pug.ts:32</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The category.</p>
+							<p>The encoding of / for the files.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="exclude" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> exclude</h3>
+					<div class="tsd-signature tsd-kind-icon">exclude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.filefilter.html">FileFilter</a>.<a href="_contracts_.filefilter.html#exclude">exclude</a></p>
+						<ul>
+							<li>Defined in contracts.ts:299</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more (glob) patterns that describes the files to EXCLUDE.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="compiler" class="tsd-anchor"></a>
-					<h3>compiler</h3>
-					<div class="tsd-signature tsd-kind-icon">compiler<span class="tsd-signature-symbol">:</span> <a href="../enums/_compilers_.compiler.html" class="tsd-signature-type">Compiler</a></div>
+					<a name="extension" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> extension</h3>
+					<div class="tsd-signature tsd-kind-icon">extension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in compilers.ts:102</li>
+							<li>Defined in compilers/pug.ts:36</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The compiler.</p>
+							<p>The custom file extension for the output files to use.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="file" class="tsd-anchor"></a>
-					<h3>file</h3>
-					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="files" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> files</h3>
+					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.filefilter.html">FileFilter</a>.<a href="_contracts_.filefilter.html#files">files</a></p>
 						<ul>
-							<li>Defined in compilers.ts:106</li>
+							<li>Defined in contracts.ts:303</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The underlying file.</p>
+							<p>One or more (glob) patterns that describes the files to INCLUDE.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="options" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
+					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pug.Options</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_compilers_.compileoptions.html">CompileOptions</a>.<a href="_compilers_.compileoptions.html#options">options</a></p>
 						<ul>
-							<li>Defined in compilers.ts:110</li>
+							<li>Defined in compilers.ts:70</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The message.</p>
+							<p>Special options directly for the underlying compiler.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="outdirectory" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> out<wbr>Directory</h3>
+					<div class="tsd-signature tsd-kind-icon">out<wbr>Directory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_compilers_.compileoptions.html">CompileOptions</a>.<a href="_compilers_.compileoptions.html#outdirectory">outDirectory</a></p>
+						<ul>
+							<li>Defined in compilers.ts:74</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The custom directory where to write the output files to.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="workspace" class="tsd-anchor"></a>
+					<h3>workspace</h3>
+					<div class="tsd-signature tsd-kind-icon">workspace<span class="tsd-signature-symbol">:</span> <a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_compilers_.compileoptions.html">CompileOptions</a>.<a href="_compilers_.compileoptions.html#workspace">workspace</a></p>
+						<ul>
+							<li>Defined in compilers.ts:78</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The underlying workspace.</p>
 						</div>
 					</div>
 				</section>
@@ -185,56 +229,50 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_compilers_.html">"compilers"</a>
+						<a href="../modules/_compilers_pug_.html">"compilers/pug"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_compilers_.compileresultmessagecategory.html" class="tsd-kind-icon">Compile<wbr>Result<wbr>Message<wbr>Category</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_compilers_.compiler.html" class="tsd-kind-icon">Compiler</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_compilers_.compileoptions.html" class="tsd-kind-icon">Compile<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_compilers_.compileresult.html" class="tsd-kind-icon">Compile<wbr>Result</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_compilers_.compileresultmessage.html" class="tsd-kind-icon">Compile<wbr>Result<wbr>Message</a>
+						<a href="_compilers_pug_.compileoptions.html" class="tsd-kind-icon">Compile<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_compilers_.compileresultmessage.html#category" class="tsd-kind-icon">category</a>
+								<a href="_compilers_pug_.compileoptions.html#encoding" class="tsd-kind-icon">encoding</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_compilers_pug_.compileoptions.html#exclude" class="tsd-kind-icon">exclude</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_compilers_.compileresultmessage.html#compiler" class="tsd-kind-icon">compiler</a>
+								<a href="_compilers_pug_.compileoptions.html#extension" class="tsd-kind-icon">extension</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_compilers_.compileresultmessage.html#file" class="tsd-kind-icon">file</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_compilers_pug_.compileoptions.html#files" class="tsd-kind-icon">files</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_compilers_.compileresultmessage.html#message" class="tsd-kind-icon">message</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_compilers_pug_.compileoptions.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_compilers_pug_.compileoptions.html#outdirectory" class="tsd-kind-icon">out<wbr>Directory</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_compilers_pug_.compileoptions.html#workspace" class="tsd-kind-icon">workspace</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_compilers_.html#cleanuppatternlist" class="tsd-kind-icon">cleanup<wbr>Pattern<wbr>List</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_compilers_pug_.compileresult.html" class="tsd-kind-icon">Compile<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_compilers_pug_.compileresultmessage.html" class="tsd-kind-icon">Compile<wbr>Result<wbr>Message</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_compilers_.html#collectfiles" class="tsd-kind-icon">collect<wbr>Files</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_compilers_.html#compile" class="tsd-kind-icon">compile</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_compilers_.html#getoutputdirectory" class="tsd-kind-icon">get<wbr>Output<wbr>Directory</a>
+						<a href="../modules/_compilers_pug_.html#compile" class="tsd-kind-icon">compile</a>
 					</li>
 				</ul>
 			</nav>

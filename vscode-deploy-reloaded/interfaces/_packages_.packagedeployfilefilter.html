@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WaitTargetOperation | vscode-deploy-reloaded</title>
+	<title>PackageDeployFileFilter | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_targets_operations_wait_.html">&quot;targets/operations/wait&quot;</a>
+					<a href="../modules/_packages_.html">&quot;packages&quot;</a>
 				</li>
 				<li>
-					<a href="_targets_operations_wait_.waittargetoperation.html">WaitTargetOperation</a>
+					<a href="_packages_.packagedeployfilefilter.html">PackageDeployFileFilter</a>
 				</li>
 			</ul>
-			<h1>Interface WaitTargetOperation</h1>
+			<h1>Interface PackageDeployFileFilter</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An operation that waits a number of milliseconds.</p>
+						<p>A file filter for package deploy settings.</p>
 					</div>
 				</div>
 			</section>
@@ -80,10 +80,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a>
+						<a href="_contracts_.filefilter.html" class="tsd-signature-type">FileFilter</a>
+					</li>
+					<li>
+						<a href="_targets_.targetprovider.html" class="tsd-signature-type">TargetProvider</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">WaitTargetOperation</span>
+								<span class="target">PackageDeployFileFilter</span>
 							</li>
 						</ul>
 					</li>
@@ -93,97 +96,64 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_wait_.waittargetoperation.html#if" class="tsd-kind-icon">if</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_wait_.waittargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_wait_.waittargetoperation.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_wait_.waittargetoperation.html#time" class="tsd-kind-icon">time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_wait_.waittargetoperation.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_packages_.packagedeployfilefilter.html#exclude" class="tsd-kind-icon">exclude</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_packages_.packagedeployfilefilter.html#files" class="tsd-kind-icon">files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_packages_.packagedeployfilefilter.html#targets" class="tsd-kind-icon">targets</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="if" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> if</h3>
-					<div class="tsd-signature tsd-kind-icon">if<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="exclude" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> exclude</h3>
+					<div class="tsd-signature tsd-kind-icon">exclude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.conditionalitem.html">ConditionalItem</a>.<a href="_contracts_.conditionalitem.html#if">if</a></p>
+						<p>Inherited from <a href="_contracts_.filefilter.html">FileFilter</a>.<a href="_contracts_.filefilter.html#exclude">exclude</a></p>
 						<ul>
-							<li>Defined in contracts.ts:101</li>
+							<li>Defined in contracts.ts:299</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>One or more (JavaScript) conditions that check if that item is available or not.</p>
+							<p>One or more (glob) patterns that describes the files to EXCLUDE.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="ignoreiffail" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ignore<wbr>IfFail</h3>
-					<div class="tsd-signature tsd-kind-icon">ignore<wbr>IfFail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="files" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> files</h3>
+					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_targets_.targetoperation.html">TargetOperation</a>.<a href="_targets_.targetoperation.html#ignoreiffail">ignoreIfFail</a></p>
+						<p>Inherited from <a href="_contracts_.filefilter.html">FileFilter</a>.<a href="_contracts_.filefilter.html#files">files</a></p>
 						<ul>
-							<li>Defined in targets.ts:144</li>
+							<li>Defined in contracts.ts:303</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Continue when target operation fails or not.</p>
+							<p>One or more (glob) patterns that describes the files to INCLUDE.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="name" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="targets" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> targets</h3>
+					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.withoptionalname.html">WithOptionalName</a>.<a href="_contracts_.withoptionalname.html#name">name</a></p>
+						<p>Inherited from <a href="_targets_.targetprovider.html">TargetProvider</a>.<a href="_targets_.targetprovider.html#targets">targets</a></p>
 						<ul>
-							<li>Defined in contracts.ts:458</li>
+							<li>Defined in targets.ts:256</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The name.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="time" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> time</h3>
-					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in targets/operations/wait.ts:29</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The time in milliseconds to wait.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_targets_.targetoperation.html">TargetOperation</a>.<a href="_targets_.targetoperation.html#type">type</a></p>
-						<ul>
-							<li>Defined in targets.ts:148</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The type.</p>
+							<p>One or more target.</p>
 						</div>
 					</div>
 				</section>
@@ -196,38 +166,62 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_targets_operations_wait_.html">"targets/operations/wait"</a>
+						<a href="../modules/_packages_.html">"packages"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_packages_.package.html" class="tsd-kind-icon">Package</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_packages_.packagebutton.html" class="tsd-kind-icon">Package<wbr>Button</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_targets_operations_wait_.waittargetoperation.html" class="tsd-kind-icon">Wait<wbr>Target<wbr>Operation</a>
+						<a href="_packages_.packagedeployfilefilter.html" class="tsd-kind-icon">Package<wbr>Deploy<wbr>File<wbr>Filter</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_wait_.waittargetoperation.html#if" class="tsd-kind-icon">if</a>
+								<a href="_packages_.packagedeployfilefilter.html#exclude" class="tsd-kind-icon">exclude</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_wait_.waittargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a>
+								<a href="_packages_.packagedeployfilefilter.html#files" class="tsd-kind-icon">files</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_wait_.waittargetoperation.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_targets_operations_wait_.waittargetoperation.html#time" class="tsd-kind-icon">time</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_wait_.waittargetoperation.html#type" class="tsd-kind-icon">type</a>
+								<a href="_packages_.packagedeployfilefilter.html#targets" class="tsd-kind-icon">targets</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_packages_.syncwhenopensetting.html" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#packagedeploysettings" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#packagedeploysettingsresolver" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<wbr>Resolver</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#packagefilelistresolver" class="tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#packagefilelistresolverresult" class="tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver<wbr>Result</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_targets_operations_wait_.html#execute" class="tsd-kind-icon">execute</a>
+						<a href="../modules/_packages_.html#autodeployfile" class="tsd-kind-icon">auto<wbr>Deploy<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#findtargetsforfileofpackage" class="tsd-kind-icon">find<wbr>Targets<wbr>For<wbr>File<wbr>OfPackage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#getpackagename" class="tsd-kind-icon">get<wbr>Package<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#gettargetsofpackage" class="tsd-kind-icon">get<wbr>Targets<wbr>OfPackage</a>
 					</li>
 				</ul>
 			</nav>

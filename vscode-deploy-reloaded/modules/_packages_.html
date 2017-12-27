@@ -95,6 +95,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#findtargetsforfileofpackage" class="tsd-kind-icon">find<wbr>Targets<wbr>For<wbr>File<wbr>OfPackage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#getpackagename" class="tsd-kind-icon">get<wbr>Package<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#gettargetsofpackage" class="tsd-kind-icon">get<wbr>Targets<wbr>OfPackage</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#showpackagequickpick" class="tsd-kind-icon">show<wbr>Package<wbr>Quick<wbr>Pick</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,7 +109,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_packages_.packagedeployfilefilter.html" class="tsd-signature-type">PackageDeployFileFilter</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages.ts:88</li>
+							<li>Defined in packages.ts:89</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -123,7 +124,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages.ts:97</li>
+							<li>Defined in packages.ts:98</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages.ts:107</li>
+							<li>Defined in packages.ts:108</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -220,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages.ts:113</li>
+							<li>Defined in packages.ts:114</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -242,7 +243,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages.ts:129</li>
+									<li>Defined in packages.ts:130</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -285,7 +286,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages.ts:172</li>
+									<li>Defined in packages.ts:173</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -326,7 +327,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages.ts:286</li>
+									<li>Defined in packages.ts:287</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -358,7 +359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages.ts:312</li>
+									<li>Defined in packages.ts:313</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -380,6 +381,42 @@
 								<span class="tsd-signature-type">false</span>
 							</h4>
 							<p>The targets or (false) if at least one target could not be found.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="showpackagequickpick" class="tsd-anchor"></a>
+					<h3>show<wbr>Package<wbr>Quick<wbr>Pick</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Package<wbr>Quick<wbr>Pick<span class="tsd-signature-symbol">(</span>packages<span class="tsd-signature-symbol">: </span><a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">vscode.QuickPickOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages.ts:359</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Shows a quick pick for a list of packages.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>packages: <a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>One or more packages.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">vscode.QuickPickOptions</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise that contains the selected package (if selected)
+							or (false) if no package is available.</p>
 						</li>
 					</ul>
 				</section>
@@ -433,6 +470,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_packages_.html#gettargetsofpackage" class="tsd-kind-icon">get<wbr>Targets<wbr>OfPackage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_packages_.html#showpackagequickpick" class="tsd-kind-icon">show<wbr>Package<wbr>Quick<wbr>Pick</a>
 					</li>
 				</ul>
 			</nav>

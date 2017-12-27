@@ -114,7 +114,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_old_env_vars" class="tsd-kind-icon">_OLD_<wbr>ENV_<wbr>VARS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_package_buttons" class="tsd-kind-icon">_PACKAGE_<wbr>BUTTONS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_switch_buttons" class="tsd-kind-icon">_SWITCH_<wbr>BUTTONS</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_.workspace.html#_timers" class="tsd-kind-icon">_TIMERS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_.workspace.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_workspaces_.workspace.html#_config" class="tsd-kind-icon">_config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_workspaces_.workspace.html#_configsource" class="tsd-kind-icon">_config<wbr>Source</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_workspaces_.workspace.html#_isdeployonchangefreezed" class="tsd-kind-icon">_is<wbr>Deploy<wbr>OnChange<wbr>Freezed</a></li>
@@ -168,7 +168,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#changeswitchbuttonoption" class="tsd-kind-icon">change<wbr>Switch<wbr>Button<wbr>Option</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#cleanuppackagebuttons" class="tsd-kind-icon">cleanup<wbr>Package<wbr>Buttons</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#cleanupswitchbuttons" class="tsd-kind-icon">cleanup<wbr>Switch<wbr>Buttons</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_.workspace.html#cleanuptimers" class="tsd-kind-icon">cleanup<wbr>Timers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_workspaces_.workspace.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#createsessionstate" class="tsd-kind-icon">create<wbr>Session<wbr>State</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#deletefilein" class="tsd-kind-icon">delete<wbr>File<wbr>In</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#deletepackage" class="tsd-kind-icon">delete<wbr>Package</a></li>
@@ -350,18 +350,18 @@
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-					<a name="_timers" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _TIMERS</h3>
-					<div class="tsd-signature tsd-kind-icon">_TIMERS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<a name="_timeouts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _TIMEOUTS</h3>
+					<div class="tsd-signature tsd-kind-icon">_TIMEOUTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#_timers">_TIMERS</a></p>
+						<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#_timeouts">_TIMEOUTS</a></p>
 						<ul>
 							<li>Defined in objects.ts:36</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Stores timers.</p>
+							<p>Stores timeouts.</p>
 						</div>
 					</div>
 				</section>
@@ -606,7 +606,7 @@
 					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="_workspaces_.workspacememento.html" class="tsd-signature-type">WorkspaceMemento</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in workspaces.ts:2345</li>
+							<li>Defined in workspaces.ts:2373</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -750,7 +750,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isdisposed">isDisposed</a></p>
 								<ul>
-									<li>Defined in objects.ts:79</li>
+									<li>Defined in objects.ts:80</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -773,7 +773,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isdisposing">isDisposing</a></p>
 								<ul>
-									<li>Defined in objects.ts:86</li>
+									<li>Defined in objects.ts:87</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -796,7 +796,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isinfinalizestate">isInFinalizeState</a></p>
 								<ul>
-									<li>Defined in objects.ts:93</li>
+									<li>Defined in objects.ts:94</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -928,7 +928,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2241</li>
+									<li>Defined in workspaces.ts:2269</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -950,7 +950,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2250</li>
+									<li>Defined in workspaces.ts:2278</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -972,7 +972,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2257</li>
+									<li>Defined in workspaces.ts:2285</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -994,7 +994,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2264</li>
+									<li>Defined in workspaces.ts:2292</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1016,7 +1016,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2338</li>
+									<li>Defined in workspaces.ts:2366</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1038,7 +1038,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2350</li>
+									<li>Defined in workspaces.ts:2378</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1179,22 +1179,22 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-					<a name="cleanuptimers" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cleanup<wbr>Timers</h3>
+					<a name="cleanuptimeouts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cleanup<wbr>Timeouts</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">cleanup<wbr>Timers<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">cleanup<wbr>Timeouts<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#cleanuptimers">cleanupTimers</a></p>
+								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#cleanuptimeouts">cleanupTimeouts</a></p>
 								<ul>
 									<li>Defined in objects.ts:41</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Cleansup all timers.</p>
+									<p>Cleansup all timeouts.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2890,7 +2890,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1867</li>
+									<li>Defined in workspaces.ts:1895</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2912,7 +2912,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:1899</li>
+									<li>Defined in workspaces.ts:1927</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2929,7 +2929,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2024</li>
+									<li>Defined in workspaces.ts:2052</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2952,7 +2952,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2067</li>
+									<li>Defined in workspaces.ts:2095</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2969,7 +2969,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2153</li>
+									<li>Defined in workspaces.ts:2181</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3045,7 +3045,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2190</li>
+									<li>Defined in workspaces.ts:2218</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3076,7 +3076,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2217</li>
+									<li>Defined in workspaces.ts:2245</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3139,7 +3139,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2280</li>
+									<li>Defined in workspaces.ts:2308</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3180,7 +3180,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2301</li>
+									<li>Defined in workspaces.ts:2329</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3221,7 +3221,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2322</li>
+									<li>Defined in workspaces.ts:2350</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3262,7 +3262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2355</li>
+									<li>Defined in workspaces.ts:2383</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3294,7 +3294,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2423</li>
+									<li>Defined in workspaces.ts:2451</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3329,7 +3329,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2378</li>
+									<li>Defined in workspaces.ts:2406</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3364,7 +3364,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2444</li>
+									<li>Defined in workspaces.ts:2472</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3399,7 +3399,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in workspaces.ts:2474</li>
+									<li>Defined in workspaces.ts:2502</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -3469,7 +3469,7 @@
 								<a href="_workspaces_.workspace.html#_switch_buttons" class="tsd-kind-icon">_SWITCH_<wbr>BUTTONS</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_workspaces_.workspace.html#_timers" class="tsd-kind-icon">_TIMERS</a>
+								<a href="_workspaces_.workspace.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_workspaces_.workspace.html#_config" class="tsd-kind-icon">_config</a>
@@ -3601,7 +3601,7 @@
 								<a href="_workspaces_.workspace.html#cleanupswitchbuttons" class="tsd-kind-icon">cleanup<wbr>Switch<wbr>Buttons</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_workspaces_.workspace.html#cleanuptimers" class="tsd-kind-icon">cleanup<wbr>Timers</a>
+								<a href="_workspaces_.workspace.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_workspaces_.workspace.html#createsessionstate" class="tsd-kind-icon">create<wbr>Session<wbr>State</a>

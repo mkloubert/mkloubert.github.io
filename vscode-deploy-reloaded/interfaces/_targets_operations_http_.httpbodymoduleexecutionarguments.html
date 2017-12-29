@@ -97,6 +97,8 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html#events" class="tsd-kind-icon">events</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html#globalevents" class="tsd-kind-icon">global<wbr>Events</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html#globalstate" class="tsd-kind-icon">global<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html#globals" class="tsd-kind-icon">globals</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html#logger" class="tsd-kind-icon">logger</a></li>
@@ -118,12 +120,44 @@
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="_targets_.targetoperationexecutioncontext.html" class="tsd-signature-type">TargetOperationExecutionContext</a><span class="tsd-signature-symbol">&lt;</span><a href="_targets_operations_http_.httptargetoperation.html" class="tsd-signature-type">HttpTargetOperation</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets/operations/http.ts:56</li>
+							<li>Defined in targets/operations/http.ts:57</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The underlying operation context.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="events" class="tsd-anchor"></a>
+					<h3>events</h3>
+					<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#events">events</a></p>
+						<ul>
+							<li>Defined in contracts.ts:375</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Event emitter for scripts of that kind.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="globalevents" class="tsd-anchor"></a>
+					<h3>global<wbr>Events</h3>
+					<div class="tsd-signature tsd-kind-icon">global<wbr>Events<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalevents">globalEvents</a></p>
+						<ul>
+							<li>Defined in contracts.ts:379</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the emitter for global extension events.</p>
 						</div>
 					</div>
 				</section>
@@ -134,7 +168,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalstate">globalState</a></p>
 						<ul>
-							<li>Defined in contracts.ts:376</li>
+							<li>Defined in contracts.ts:388</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -151,7 +185,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globals">globals</a></p>
 						<ul>
-							<li>Defined in contracts.ts:371</li>
+							<li>Defined in contracts.ts:383</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,7 +201,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#logger">logger</a></p>
 						<ul>
-							<li>Defined in contracts.ts:384</li>
+							<li>Defined in contracts.ts:396</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -183,7 +217,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#options">options</a></p>
 						<ul>
-							<li>Defined in contracts.ts:380</li>
+							<li>Defined in contracts.ts:392</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -199,7 +233,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#replacewithvalues">replaceWithValues</a></p>
 						<ul>
-							<li>Defined in contracts.ts:392</li>
+							<li>Defined in contracts.ts:404</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -244,7 +278,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#require">require</a></p>
 						<ul>
-							<li>Defined in contracts.ts:396</li>
+							<li>Defined in contracts.ts:408</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -281,7 +315,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#state">state</a></p>
 						<ul>
-							<li>Defined in contracts.ts:400</li>
+							<li>Defined in contracts.ts:412</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -296,7 +330,7 @@
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Url</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets/operations/http.ts:60</li>
+							<li>Defined in targets/operations/http.ts:61</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -330,6 +364,12 @@
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html#context" class="tsd-kind-icon">context</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html#events" class="tsd-kind-icon">events</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html#globalevents" class="tsd-kind-icon">global<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_targets_operations_http_.httpbodymoduleexecutionarguments.html#globalstate" class="tsd-kind-icon">global<wbr>State</a>

@@ -99,6 +99,7 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_targets_.html#default_operation_type" class="tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_targets_.html#key_target_usage" class="tsd-kind-icon">KEY_<wbr>TARGET_<wbr>USAGE</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_targets_.html#regex_zip_filename" class="tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME</a></li>
 							</ul>
 						</section>
@@ -112,6 +113,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#getzipfilename" class="tsd-kind-icon">get<wbr>Zip<wbr>File<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#isvisibleforpackage" class="tsd-kind-icon">is<wbr>Visible<wbr>For<wbr>Package</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#normalizetargettype" class="tsd-kind-icon">normalize<wbr>Target<wbr>Type</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#resettargetusage" class="tsd-kind-icon">reset<wbr>Target<wbr>Usage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#showtargetquickpick" class="tsd-kind-icon">show<wbr>Target<wbr>Quick<wbr>Pick</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#throwonrecurrence" class="tsd-kind-icon">throw<wbr>OnRecurrence</a></li>
 							</ul>
@@ -127,7 +129,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:232</li>
+							<li>Defined in targets.ts:237</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -142,7 +144,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:226</li>
+							<li>Defined in targets.ts:231</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -189,7 +191,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:247</li>
+							<li>Defined in targets.ts:252</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -207,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"open"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;open&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:262</li>
+							<li>Defined in targets.ts:270</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -216,13 +218,23 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="key_target_usage" class="tsd-anchor"></a>
+					<h3>KEY_<wbr>TARGET_<wbr>USAGE</h3>
+					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>TARGET_<wbr>USAGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vscdrLastExecutedTargetActions"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vscdrLastExecutedTargetActions&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:265</li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="regex_zip_filename" class="tsd-anchor"></a>
 					<h3>REGEX_<wbr>ZIP_<wbr>FILENAME</h3>
 					<div class="tsd-signature tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/^(vscode\-ws)(.*)(_)([0-9]{8})(\-)([0-9]{6})(\.zip)$/i</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:267</li>
+							<li>Defined in targets.ts:275</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -244,7 +256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:321</li>
+									<li>Defined in targets.ts:329</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -276,7 +288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:280</li>
+									<li>Defined in targets.ts:288</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -323,7 +335,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:489</li>
+									<li>Defined in targets.ts:502</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -355,7 +367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:512</li>
+									<li>Defined in targets.ts:525</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -396,7 +408,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:561</li>
+									<li>Defined in targets.ts:574</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -431,7 +443,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:602</li>
+									<li>Defined in targets.ts:615</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -469,7 +481,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:644</li>
+									<li>Defined in targets.ts:657</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -492,16 +504,47 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="showtargetquickpick" class="tsd-anchor"></a>
-					<h3>show<wbr>Target<wbr>Quick<wbr>Pick</h3>
+					<a name="resettargetusage" class="tsd-anchor"></a>
+					<h3>reset<wbr>Target<wbr>Usage</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">show<wbr>Target<wbr>Quick<wbr>Pick<span class="tsd-signature-symbol">(</span>targets<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">vscode.QuickPickOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">reset<wbr>Target<wbr>Usage<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:664</li>
+									<li>Defined in targets.ts:673</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resets the target usage statistics.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The extension context.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="showtargetquickpick" class="tsd-anchor"></a>
+					<h3>show<wbr>Target<wbr>Quick<wbr>Pick</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Target<wbr>Quick<wbr>Pick<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span>, targets<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">vscode.QuickPickOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in targets.ts:691</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -511,6 +554,12 @@
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The extension context.</p>
+									</div>
+								</li>
 								<li>
 									<h5>targets: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">[]</span></h5>
 									<div class="tsd-comment tsd-typography">
@@ -537,7 +586,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:708</li>
+									<li>Defined in targets.ts:750</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -617,6 +666,9 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_targets_.html#default_operation_type" class="tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_targets_.html#key_target_usage" class="tsd-kind-icon">KEY_<wbr>TARGET_<wbr>USAGE</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_targets_.html#regex_zip_filename" class="tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME</a>
 					</li>
@@ -640,6 +692,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#normalizetargettype" class="tsd-kind-icon">normalize<wbr>Target<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_targets_.html#resettargetusage" class="tsd-kind-icon">reset<wbr>Target<wbr>Usage</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#showtargetquickpick" class="tsd-kind-icon">show<wbr>Target<wbr>Quick<wbr>Pick</a>

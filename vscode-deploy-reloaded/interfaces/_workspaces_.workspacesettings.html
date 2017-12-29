@@ -116,6 +116,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#globals" class="tsd-kind-icon">globals</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#ignore" class="tsd-kind-icon">ignore</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#imports" class="tsd-kind-icon">imports</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#initnodemodules" class="tsd-kind-icon">init<wbr>Node<wbr>Modules</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#language" class="tsd-kind-icon">language</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#openoutputonstartup" class="tsd-kind-icon">open<wbr>Output<wbr>OnStartup</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#packages" class="tsd-kind-icon">packages</a></li>
@@ -303,13 +304,29 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="initnodemodules" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> init<wbr>Node<wbr>Modules</h3>
+					<div class="tsd-signature tsd-kind-icon">init<wbr>Node<wbr>Modules<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#initnodemodules">initNodeModules</a></p>
+						<ul>
+							<li>Defined in contracts.ts:167</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Runs &#39;npm install&#39; inside the workspace folder on startup, if a &#39;package.json&#39; file exists and NO &#39;node_modules&#39; has been found.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="language" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> language</h3>
 					<div class="tsd-signature tsd-kind-icon">language<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#language">language</a></p>
 						<ul>
-							<li>Defined in contracts.ts:167</li>
+							<li>Defined in contracts.ts:171</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -325,7 +342,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#openoutputonstartup">openOutputOnStartup</a></p>
 						<ul>
-							<li>Defined in contracts.ts:171</li>
+							<li>Defined in contracts.ts:175</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -341,7 +358,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#packages">packages</a></p>
 						<ul>
-							<li>Defined in contracts.ts:175</li>
+							<li>Defined in contracts.ts:179</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -357,7 +374,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#removeonchange">removeOnChange</a></p>
 						<ul>
-							<li>Defined in contracts.ts:179</li>
+							<li>Defined in contracts.ts:183</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -373,7 +390,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#runbuildtaskonstartup">runBuildTaskOnStartup</a></p>
 						<ul>
-							<li>Defined in contracts.ts:184</li>
+							<li>Defined in contracts.ts:188</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -390,7 +407,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#rungitpullonstartup">runGitPullOnStartup</a></p>
 						<ul>
-							<li>Defined in contracts.ts:189</li>
+							<li>Defined in contracts.ts:193</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -407,7 +424,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#startupcommands">startupCommands</a></p>
 						<ul>
-							<li>Defined in contracts.ts:193</li>
+							<li>Defined in contracts.ts:197</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -423,7 +440,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#syncwhenopen">syncWhenOpen</a></p>
 						<ul>
-							<li>Defined in contracts.ts:197</li>
+							<li>Defined in contracts.ts:201</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -439,7 +456,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#targets">targets</a></p>
 						<ul>
-							<li>Defined in contracts.ts:201</li>
+							<li>Defined in contracts.ts:205</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -455,7 +472,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#timetowaitbeforeactivatedeployonchange">timeToWaitBeforeActivateDeployOnChange</a></p>
 						<ul>
-							<li>Defined in contracts.ts:205</li>
+							<li>Defined in contracts.ts:209</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -471,7 +488,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#timetowaitbeforeactivateremoveonchange">timeToWaitBeforeActivateRemoveOnChange</a></p>
 						<ul>
-							<li>Defined in contracts.ts:209</li>
+							<li>Defined in contracts.ts:213</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -487,7 +504,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_values_.withvalueitems.html">WithValueItems</a>.<a href="_values_.withvalueitems.html#values">values</a></p>
 						<ul>
-							<li>Defined in values.ts:92</li>
+							<li>Defined in values.ts:104</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -811,6 +828,9 @@
 								<a href="_workspaces_.workspacesettings.html#imports" class="tsd-kind-icon">imports</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_workspaces_.workspacesettings.html#initnodemodules" class="tsd-kind-icon">init<wbr>Node<wbr>Modules</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_workspaces_.workspacesettings.html#language" class="tsd-kind-icon">language</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -881,6 +901,9 @@
 						<a href="../modules/_workspaces_.html#files_changes" class="tsd-kind-icon">FILES_<wbr>CHANGES</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#key_workspace_usage" class="tsd-kind-icon">KEY_<wbr>WORKSPACE_<wbr>USAGE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_workspaces_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
@@ -902,7 +925,16 @@
 						<a href="../modules/_workspaces_.html#isswitchtarget" class="tsd-kind-icon">is<wbr>Switch<wbr>Target</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#resetworkspaceusage" class="tsd-kind-icon">reset<wbr>Workspace<wbr>Usage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#scanfordirectoriesrecursive" class="tsd-kind-icon">scan<wbr>For<wbr>Directories<wbr>Recursive</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_workspaces_.html#setactiveworkspaceprovider" class="tsd-kind-icon">set<wbr>Active<wbr>Workspace<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#showworkspacequickpick" class="tsd-kind-icon">show<wbr>Workspace<wbr>Quick<wbr>Pick</a>
 					</li>
 				</ul>
 			</nav>

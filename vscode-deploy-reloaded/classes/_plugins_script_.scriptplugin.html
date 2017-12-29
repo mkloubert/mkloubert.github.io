@@ -103,6 +103,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#_events" class="tsd-kind-icon">_EVENTS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#_global_state" class="tsd-kind-icon">_GLOBAL_<wbr>STATE</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#_script_states" class="tsd-kind-icon">_SCRIPT_<wbr>STATES</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
@@ -144,7 +145,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#listeners" class="tsd-kind-icon">listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_script_.scriptplugin.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
@@ -173,7 +174,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in plugins.ts:627</li>
+									<li>Defined in plugins.ts:630</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -216,12 +217,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+					<a name="_events" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _EVENTS</h3>
+					<div class="tsd-signature tsd-kind-icon">_EVENTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol"> =&nbsp;new Events.EventEmitter()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/script.ts:99</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
 					<a name="_global_state" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _GLOBAL_<wbr>STATE</h3>
 					<div class="tsd-signature tsd-kind-icon">_GLOBAL_<wbr>STATE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/script.ts:97</li>
+							<li>Defined in plugins/script.ts:100</li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +242,7 @@
 					<div class="tsd-signature tsd-kind-icon">_SCRIPT_<wbr>STATES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/script.ts:98</li>
+							<li>Defined in plugins/script.ts:101</li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +270,7 @@
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#___file">___file</a></p>
 						<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#___file">___file</a></p>
 						<ul>
-							<li>Defined in plugins.ts:638</li>
+							<li>Defined in plugins.ts:641</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -277,7 +288,7 @@
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#___filepath">___filePath</a></p>
 						<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#___filepath">___filePath</a></p>
 						<ul>
-							<li>Defined in plugins.ts:640</li>
+							<li>Defined in plugins.ts:643</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -295,7 +306,7 @@
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#___index">___index</a></p>
 						<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#___index">___index</a></p>
 						<ul>
-							<li>Defined in plugins.ts:642</li>
+							<li>Defined in plugins.ts:645</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,7 +324,7 @@
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#___type">___type</a></p>
 						<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#___type">___type</a></p>
 						<ul>
-							<li>Defined in plugins.ts:644</li>
+							<li>Defined in plugins.ts:647</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -330,7 +341,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#context">context</a></p>
 						<ul>
-							<li>Defined in plugins.ts:633</li>
+							<li>Defined in plugins.ts:636</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -364,7 +375,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#candelete">canDelete</a></p>
 								<ul>
-									<li>Defined in plugins/script.ts:100</li>
+									<li>Defined in plugins/script.ts:103</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -382,7 +393,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#candownload">canDownload</a></p>
 								<ul>
-									<li>Defined in plugins/script.ts:104</li>
+									<li>Defined in plugins/script.ts:107</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -400,7 +411,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#canlist">canList</a></p>
 								<ul>
-									<li>Defined in plugins/script.ts:108</li>
+									<li>Defined in plugins/script.ts:111</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -418,7 +429,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#canupload">canUpload</a></p>
 								<ul>
-									<li>Defined in plugins.ts:659</li>
+									<li>Defined in plugins.ts:662</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -568,7 +579,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/script.ts:112</li>
+									<li>Defined in plugins/script.ts:115</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -595,7 +606,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#deletefiles">deleteFiles</a></p>
 								<ul>
-									<li>Defined in plugins/script.ts:222</li>
+									<li>Defined in plugins/script.ts:227</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -643,7 +654,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#downloadfiles">downloadFiles</a></p>
 								<ul>
-									<li>Defined in plugins/script.ts:229</li>
+									<li>Defined in plugins/script.ts:234</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -715,7 +726,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins/script.ts:183</li>
+									<li>Defined in plugins/script.ts:188</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -759,7 +770,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in plugins.ts:675</li>
+									<li>Defined in plugins.ts:678</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -783,7 +794,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#listdirectory">listDirectory</a></p>
 								<ul>
-									<li>Defined in plugins/script.ts:236</li>
+									<li>Defined in plugins/script.ts:241</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -877,25 +888,20 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
 					<a name="ondispose" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Dispose</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">on<wbr>Dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#ondispose">onDispose</a></p>
+								<p>Overrides <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#ondispose">onDispose</a></p>
 								<ul>
-									<li>Defined in objects.ts:101</li>
+									<li>Defined in plugins/script.ts:275</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Additional logic for the &#39;dispose()&#39; method.</p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -1053,7 +1059,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#replacewithvalues">replaceWithValues</a></p>
 								<ul>
-									<li>Defined in plugins.ts:692</li>
+									<li>Defined in plugins.ts:695</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1121,7 +1127,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#t">t</a></p>
 								<ul>
-									<li>Defined in plugins.ts:718</li>
+									<li>Defined in plugins.ts:721</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1163,7 +1169,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#uploadfiles">uploadFiles</a></p>
 								<ul>
-									<li>Defined in plugins/script.ts:270</li>
+									<li>Defined in plugins/script.ts:279</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1228,6 +1234,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="_plugins_script_.scriptplugin.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+								<a href="_plugins_script_.scriptplugin.html#_events" class="tsd-kind-icon">_EVENTS</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
 								<a href="_plugins_script_.scriptplugin.html#_global_state" class="tsd-kind-icon">_GLOBAL_<wbr>STATE</a>
@@ -1322,7 +1331,7 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_script_.scriptplugin.html#on" class="tsd-kind-icon">on</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported">
 								<a href="_plugins_script_.scriptplugin.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">

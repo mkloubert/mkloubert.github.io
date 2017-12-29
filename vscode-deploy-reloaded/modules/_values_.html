@@ -82,6 +82,7 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_values_.applyable.html" class="tsd-kind-icon">Applyable</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_values_.codevalueitem.html" class="tsd-kind-icon">Code<wbr>Value<wbr>Item</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_values_.staticvalueitem.html" class="tsd-kind-icon">Static<wbr>Value<wbr>Item</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_values_.value.html" class="tsd-kind-icon">Value</a></li>
@@ -100,6 +101,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_values_.html#applyvaluesto" class="tsd-kind-icon">apply<wbr>Values<wbr>To</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_values_.html#getenvvars" class="tsd-kind-icon">get<wbr>Env<wbr>Vars</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_values_.html#getpredefinedvalues" class="tsd-kind-icon">get<wbr>Predefined<wbr>Values</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_values_.html#loadfromitems" class="tsd-kind-icon">load<wbr>From<wbr>Items</a></li>
@@ -120,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">Value<wbr>Item<wbr>Storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in values.ts:73</li>
+							<li>Defined in values.ts:85</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -143,7 +145,7 @@
 					<div class="tsd-signature tsd-kind-icon">Value<wbr>Storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in values.ts:83</li>
+							<li>Defined in values.ts:95</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -166,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">Values<wbr>Provider<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in values.ts:78</li>
+							<li>Defined in values.ts:90</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -196,6 +198,65 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="applyvaluesto" class="tsd-anchor"></a>
+					<h3>apply<wbr>Values<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Values<wbr>To&lt;TObj&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TObj</span>, valueProvider<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TObj</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in values.ts:218</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Applies values to an object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TObj<span class="tsd-signature-symbol">: </span><a href="../interfaces/_values_.applyable.html" class="tsd-signature-type">Applyable</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">TObj</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The object to apply the values to.</p>
+									</div>
+								</li>
+								<li>
+									<h5>valueProvider: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The function that provides the values to apply to string based propertis.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_values_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_values_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">[]</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <a href="../interfaces/_values_.value.html" class="tsd-signature-type">Value</a>
+														<span class="tsd-signature-symbol"> | </span>
+														<a href="../interfaces/_values_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">[]</span>
+													</h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TObj</span></h4>
+							<p>The new object.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="getenvvars" class="tsd-anchor"></a>
 					<h3>get<wbr>Env<wbr>Vars</h3>
@@ -206,7 +267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:244</li>
+									<li>Defined in values.ts:329</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -229,7 +290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:203</li>
+									<li>Defined in values.ts:288</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -252,7 +313,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:269</li>
+									<li>Defined in values.ts:354</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -284,7 +345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:332</li>
+									<li>Defined in values.ts:417</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -307,7 +368,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:345</li>
+									<li>Defined in values.ts:430</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -330,7 +391,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:363</li>
+									<li>Defined in values.ts:448</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -371,7 +432,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:413</li>
+									<li>Defined in values.ts:498</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -421,6 +482,9 @@
 						<a href="../classes/_values_.valuebase.html" class="tsd-kind-icon">Value<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_values_.applyable.html" class="tsd-kind-icon">Applyable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_values_.codevalueitem.html" class="tsd-kind-icon">Code<wbr>Value<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -443,6 +507,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_values_.html#valuesprovider" class="tsd-kind-icon">Values<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_values_.html#applyvaluesto" class="tsd-kind-icon">apply<wbr>Values<wbr>To</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_values_.html#getenvvars" class="tsd-kind-icon">get<wbr>Env<wbr>Vars</a>

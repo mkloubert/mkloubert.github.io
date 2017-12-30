@@ -81,9 +81,6 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<a href="_contracts_.configuration.html" class="tsd-signature-type">Configuration</a>
-					</li>
-					<li>
-						<span class="tsd-signature-type">WorkspaceConfiguration</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">WorkspaceSettings</span>
@@ -91,15 +88,6 @@
 						</ul>
 					</li>
 				</ul>
-			</section>
-			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-external-module">
-				<h3 class="tsd-before-signature">Indexable</h3>
-				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Readable dictionary that backs this configuration.</p>
-					</div>
-				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
@@ -116,6 +104,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#globals" class="tsd-kind-icon">globals</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#ignore" class="tsd-kind-icon">ignore</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#imports" class="tsd-kind-icon">imports</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#initcomposer" class="tsd-kind-icon">init<wbr>Composer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#initnodemodules" class="tsd-kind-icon">init<wbr>Node<wbr>Modules</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#language" class="tsd-kind-icon">language</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#openoutputonstartup" class="tsd-kind-icon">open<wbr>Output<wbr>OnStartup</a></li>
@@ -129,15 +118,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#timetowaitbeforeactivatedeployonchange" class="tsd-kind-icon">time<wbr>ToWait<wbr>Before<wbr>Activate<wbr>Deploy<wbr>OnChange</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#timetowaitbeforeactivateremoveonchange" class="tsd-kind-icon">time<wbr>ToWait<wbr>Before<wbr>Activate<wbr>Remove<wbr>OnChange</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#values" class="tsd-kind-icon">values</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-inherited">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#has" class="tsd-kind-icon">has</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#inspect" class="tsd-kind-icon">inspect</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.workspacesettings.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
 					</div>
@@ -304,18 +284,34 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="initnodemodules" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> init<wbr>Node<wbr>Modules</h3>
-					<div class="tsd-signature tsd-kind-icon">init<wbr>Node<wbr>Modules<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="initcomposer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> init<wbr>Composer</h3>
+					<div class="tsd-signature tsd-kind-icon">init<wbr>Composer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#initnodemodules">initNodeModules</a></p>
+						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#initcomposer">initComposer</a></p>
 						<ul>
 							<li>Defined in contracts.ts:167</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Runs &#39;npm install&#39; inside the workspace folder on startup, if a &#39;package.json&#39; file exists and NO &#39;node_modules&#39; has been found.</p>
+							<p>Runs &#39;composer install&#39; inside the workspace folder on startup, if a &#39;composer.json&#39; file exists and NO &#39;vendor&#39; folder has been found.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="initnodemodules" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> init<wbr>Node<wbr>Modules</h3>
+					<div class="tsd-signature tsd-kind-icon">init<wbr>Node<wbr>Modules<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#initnodemodules">initNodeModules</a></p>
+						<ul>
+							<li>Defined in contracts.ts:171</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Runs &#39;npm install&#39; inside the workspace folder on startup, if a &#39;package.json&#39; file exists and NO &#39;node_modules&#39; folder has been found.</p>
 						</div>
 					</div>
 				</section>
@@ -326,7 +322,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#language">language</a></p>
 						<ul>
-							<li>Defined in contracts.ts:171</li>
+							<li>Defined in contracts.ts:175</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -342,7 +338,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#openoutputonstartup">openOutputOnStartup</a></p>
 						<ul>
-							<li>Defined in contracts.ts:175</li>
+							<li>Defined in contracts.ts:179</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -358,7 +354,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#packages">packages</a></p>
 						<ul>
-							<li>Defined in contracts.ts:179</li>
+							<li>Defined in contracts.ts:183</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -374,7 +370,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#removeonchange">removeOnChange</a></p>
 						<ul>
-							<li>Defined in contracts.ts:183</li>
+							<li>Defined in contracts.ts:187</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -390,7 +386,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#runbuildtaskonstartup">runBuildTaskOnStartup</a></p>
 						<ul>
-							<li>Defined in contracts.ts:188</li>
+							<li>Defined in contracts.ts:192</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -407,7 +403,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#rungitpullonstartup">runGitPullOnStartup</a></p>
 						<ul>
-							<li>Defined in contracts.ts:193</li>
+							<li>Defined in contracts.ts:197</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -424,7 +420,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#startupcommands">startupCommands</a></p>
 						<ul>
-							<li>Defined in contracts.ts:197</li>
+							<li>Defined in contracts.ts:201</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -440,7 +436,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#syncwhenopen">syncWhenOpen</a></p>
 						<ul>
-							<li>Defined in contracts.ts:201</li>
+							<li>Defined in contracts.ts:205</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -456,7 +452,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#targets">targets</a></p>
 						<ul>
-							<li>Defined in contracts.ts:205</li>
+							<li>Defined in contracts.ts:209</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -472,7 +468,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#timetowaitbeforeactivatedeployonchange">timeToWaitBeforeActivateDeployOnChange</a></p>
 						<ul>
-							<li>Defined in contracts.ts:209</li>
+							<li>Defined in contracts.ts:213</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -488,7 +484,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.configuration.html">Configuration</a>.<a href="_contracts_.configuration.html#timetowaitbeforeactivateremoveonchange">timeToWaitBeforeActivateRemoveOnChange</a></p>
 						<ul>
-							<li>Defined in contracts.ts:213</li>
+							<li>Defined in contracts.ts:217</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -512,243 +508,6 @@
 							<p>The items.</p>
 						</div>
 					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>get</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-						<li class="tsd-signature tsd-kind-icon">get&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, defaultValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from WorkspaceConfiguration.get</p>
-								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode/vscode.d.ts:3363</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Return a value from this configuration.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>section: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Configuration name, supports <em>dotted</em> names.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
-							<p>The value <code>section</code> denotes or <code>undefined</code>.</p>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from WorkspaceConfiguration.get</p>
-								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode/vscode.d.ts:3372</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Return a value from this configuration.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>section: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Configuration name, supports <em>dotted</em> names.</p>
-									</div>
-								</li>
-								<li>
-									<h5>defaultValue: <span class="tsd-signature-type">T</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A value should be returned when no value could be found, is <code>undefined</code>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-							<p>The value <code>section</code> denotes or the default.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="has" class="tsd-anchor"></a>
-					<h3>has</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">has<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from WorkspaceConfiguration.has</p>
-								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode/vscode.d.ts:3380</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Check if this configuration has a certain value.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>section: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Configuration name, supports <em>dotted</em> names.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p><code>true</code> if the section doesn&#39;t resolve to <code>undefined</code>.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-					<a name="inspect" class="tsd-anchor"></a>
-					<h3>inspect</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">inspect&lt;T&gt;<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from WorkspaceConfiguration.inspect</p>
-								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode/vscode.d.ts:3399</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Retrieve all information about a configuration setting. A configuration value
-										often consists of a <em>default</em> value, a global or installation-wide value,
-									a workspace-specific value and a folder-specific value.</p>
-								</div>
-								<p>The <em>effective</em> value (returned by <a href="#WorkspaceConfiguration.get"><code>get</code></a>)
-									is computed like this: <code>defaultValue</code> overwritten by <code>globalValue</code>,
-									<code>globalValue</code> overwritten by <code>workspaceValue</code>. <code>workspaceValue</code> overwritten by <code>workspaceFolderValue</code>.
-									Refer to <a href="https://code.visualstudio.com/docs/getstarted/settings">Settings Inheritence</a>
-								for more information.</p>
-								<p><em>Note:</em> The configuration name must denote a leaf in the configuration tree
-								(<code>editor.fontSize</code> vs <code>editor</code>) otherwise no result is returned.</p>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>section: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Configuration name, supports <em>dotted</em> names.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">undefined</span>
-							</h4>
-							<p>Information about a configuration setting or <code>undefined</code>.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-					<a name="update" class="tsd-anchor"></a>
-					<h3>update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, configurationTarget<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ConfigurationTarget</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Thenable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from WorkspaceConfiguration.update</p>
-								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode/vscode.d.ts:3435</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Update a configuration value. The updated configuration values are persisted.</p>
-								</div>
-								<p>A value can be changed in</p>
-								<ul>
-									<li><a href="#ConfigurationTarget.Global">Global configuration</a>: Changes the value for all instances of the editor.</li>
-									<li><a href="#ConfigurationTarget.Workspace">Workspace configuration</a>: Changes the value for current workspace, if available.</li>
-									<li><a href="#ConfigurationTarget.WorkspaceFolder">Workspace folder configuration</a>: Changes the value for the
-									<a href="#workspace.workspaceFolders">Workspace folder</a> to which the current <a href="#WorkspaceConfiguration">configuration</a> is scoped to.</li>
-								</ul>
-								<p><em>Note 1:</em> Setting a global value in the presence of a more specific workspace value
-									has no observable effect in that workspace, but in others. Setting a workspace value
-									in the presence of a more specific folder value has no observable effect for the resources
-									under respective <a href="#workspace.workspaceFolders">folder</a>, but in others. Refer to
-								<a href="https://code.visualstudio.com/docs/getstarted/settings">Settings Inheritence</a> for more information.</p>
-								<p><em>Note 2:</em> To remove a configuration value use <code>undefined</code>, like so: <code>config.update(&#39;somekey&#39;, undefined)</code></p>
-								<p>Will throw error when</p>
-								<ul>
-									<li>Writing a configuration which is not registered.</li>
-									<li>Writing a configuration to workspace or folder target when no workspace is opened</li>
-									<li>Writing a configuration to folder target when there is no folder settings</li>
-									<li>Writing to folder target without passing a resource when getting the configuration (<code>workspace.getConfiguration(section, resource)</code>)</li>
-									<li>Writing a window configuration to folder target</li>
-								</ul>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>section: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Configuration name, supports <em>dotted</em> names.</p>
-									</div>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The new value.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> configurationTarget: <span class="tsd-signature-type">ConfigurationTarget</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The <a href="#ConfigurationTarget">configuration target</a> or a boolean value.</p>
-										<pre><code>- If `<span class="javascript"><span class="hljs-literal">true</span></span>` configuration target <span class="hljs-keyword">is</span> `<span class="javascript">ConfigurationTarget.Global</span>`.
-- If `<span class="javascript"><span class="hljs-literal">false</span></span>` configuration target <span class="hljs-keyword">is</span> `<span class="javascript">ConfigurationTarget.Workspace</span>`.
-- If `<span class="javascript"><span class="hljs-literal">undefined</span></span>` <span class="hljs-keyword">or</span> `<span class="javascript"><span class="hljs-literal">null</span></span>` configuration target <span class="hljs-keyword">is</span>
-`<span class="javascript">ConfigurationTarget.WorkspaceFolder</span>` <span class="hljs-keyword">when</span> configuration <span class="hljs-keyword">is</span> resource specific
-`<span class="javascript">ConfigurationTarget.Workspace</span>` otherwise.
-</code></pre>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Thenable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -828,6 +587,9 @@
 								<a href="_workspaces_.workspacesettings.html#imports" class="tsd-kind-icon">imports</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_workspaces_.workspacesettings.html#initcomposer" class="tsd-kind-icon">init<wbr>Composer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_workspaces_.workspacesettings.html#initnodemodules" class="tsd-kind-icon">init<wbr>Node<wbr>Modules</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -865,18 +627,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_workspaces_.workspacesettings.html#values" class="tsd-kind-icon">values</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-								<a href="_workspaces_.workspacesettings.html#get" class="tsd-kind-icon">get</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_workspaces_.workspacesettings.html#has" class="tsd-kind-icon">has</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-inherited">
-								<a href="_workspaces_.workspacesettings.html#inspect" class="tsd-kind-icon">inspect</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_workspaces_.workspacesettings.html#update" class="tsd-kind-icon">update</a>
 							</li>
 						</ul>
 					</li>

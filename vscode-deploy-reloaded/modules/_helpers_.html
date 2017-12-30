@@ -116,6 +116,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#createcompletedaction" class="tsd-kind-icon">create<wbr>Completed<wbr>Action</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#doesmatch" class="tsd-kind-icon">does<wbr>Match</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#exec" class="tsd-kind-icon">exec</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#execfile" class="tsd-kind-icon">exec<wbr>File</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#exists" class="tsd-kind-icon">exists</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#filterconditionalitems" class="tsd-kind-icon">filter<wbr>Conditional<wbr>Items</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#filterplatformitems" class="tsd-kind-icon">filter<wbr>Platform<wbr>Items</a></li>
@@ -155,6 +156,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#showwarningmessage" class="tsd-kind-icon">show<wbr>Warning<wbr>Message</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#sleep" class="tsd-kind-icon">sleep</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#sortbylabel" class="tsd-kind-icon">sort<wbr>ByLabel</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#stat" class="tsd-kind-icon">stat</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_helpers_.html#toarray" class="tsd-kind-icon">to<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#tobooleansafe" class="tsd-kind-icon">to<wbr>Boolean<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_helpers_.html#todisplayablepath" class="tsd-kind-icon">to<wbr>Displayable<wbr>Path</a></li>
@@ -1062,6 +1064,44 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="execfile" class="tsd-anchor"></a>
+					<h3>exec<wbr>File</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">exec<wbr>File<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, args<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ExecFileOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_helpers_.execresult.html" class="tsd-signature-type">ExecResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:700</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Executes a file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>command: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The thing / command to execute.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">ExecFileOptions</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_helpers_.execresult.html" class="tsd-signature-type">ExecResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the result.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="exists" class="tsd-anchor"></a>
 					<h3>exists</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -1071,7 +1111,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:690</li>
+									<li>Defined in helpers.ts:755</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1103,7 +1143,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:712</li>
+									<li>Defined in helpers.ts:779</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1133,6 +1173,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TItem</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The filtered items.</p>
 						</li>
 					</ul>
 				</section>
@@ -1146,7 +1187,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:761</li>
+									<li>Defined in helpers.ts:828</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1199,7 +1240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:794</li>
+									<li>Defined in helpers.ts:861</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1276,7 +1317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:826</li>
+									<li>Defined in helpers.ts:893</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1311,7 +1352,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:838</li>
+									<li>Defined in helpers.ts:905</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1346,7 +1387,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:915</li>
+									<li>Defined in helpers.ts:982</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1390,7 +1431,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:963</li>
+									<li>Defined in helpers.ts:1030</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1441,7 +1482,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:985</li>
+									<li>Defined in helpers.ts:1052</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1476,7 +1517,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1044</li>
+									<li>Defined in helpers.ts:1111</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1538,7 +1579,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1087</li>
+									<li>Defined in helpers.ts:1154</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1597,7 +1638,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1168</li>
+									<li>Defined in helpers.ts:1235</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1629,7 +1670,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1200</li>
+									<li>Defined in helpers.ts:1267</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1661,7 +1702,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1212</li>
+									<li>Defined in helpers.ts:1279</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1694,7 +1735,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1223</li>
+									<li>Defined in helpers.ts:1290</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1732,7 +1773,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1234</li>
+									<li>Defined in helpers.ts:1301</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1764,7 +1805,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1246</li>
+									<li>Defined in helpers.ts:1313</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1802,7 +1843,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1259</li>
+									<li>Defined in helpers.ts:1326</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1834,7 +1875,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1270</li>
+									<li>Defined in helpers.ts:1337</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1866,7 +1907,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1282</li>
+									<li>Defined in helpers.ts:1349</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1907,7 +1948,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1308</li>
+									<li>Defined in helpers.ts:1375</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1939,7 +1980,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1336</li>
+									<li>Defined in helpers.ts:1403</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1980,7 +2021,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1365</li>
+									<li>Defined in helpers.ts:1432</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2063,7 +2104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1408</li>
+									<li>Defined in helpers.ts:1475</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2094,7 +2135,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1432</li>
+									<li>Defined in helpers.ts:1499</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2126,7 +2167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1458</li>
+									<li>Defined in helpers.ts:1525</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2179,7 +2220,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1474</li>
+									<li>Defined in helpers.ts:1541</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2213,7 +2254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1594</li>
+									<li>Defined in helpers.ts:1661</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2245,7 +2286,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1620</li>
+									<li>Defined in helpers.ts:1687</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2277,7 +2318,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1699</li>
+									<li>Defined in helpers.ts:1766</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2309,7 +2350,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1726</li>
+									<li>Defined in helpers.ts:1793</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2341,7 +2382,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1753</li>
+									<li>Defined in helpers.ts:1820</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2373,7 +2414,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1809</li>
+									<li>Defined in helpers.ts:1876</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2417,7 +2458,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1825</li>
+									<li>Defined in helpers.ts:1892</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2455,7 +2496,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1839</li>
+									<li>Defined in helpers.ts:1906</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2496,7 +2537,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1858</li>
+									<li>Defined in helpers.ts:1925</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2537,7 +2578,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1877</li>
+									<li>Defined in helpers.ts:1944</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2578,7 +2619,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1893</li>
+									<li>Defined in helpers.ts:1960</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2606,7 +2647,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1905</li>
+									<li>Defined in helpers.ts:1972</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2655,6 +2696,38 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="stat" class="tsd-anchor"></a>
+					<h3>stat</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">stat<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Stats</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in helpers.ts:1994</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Promise version of &#39;FS.stat()&#39; function.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Buffer</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Stats</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the stats.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="toarray" class="tsd-anchor"></a>
 					<h3>to<wbr>Array</h3>
@@ -2665,7 +2738,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1927</li>
+									<li>Defined in helpers.ts:2022</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2706,7 +2779,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1952</li>
+									<li>Defined in helpers.ts:2047</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2744,7 +2817,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1971</li>
+									<li>Defined in helpers.ts:2066</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2776,7 +2849,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:1989</li>
+									<li>Defined in helpers.ts:2084</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2814,7 +2887,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2031</li>
+									<li>Defined in helpers.ts:2126</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2852,7 +2925,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2076</li>
+									<li>Defined in helpers.ts:2171</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2884,7 +2957,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2099</li>
+									<li>Defined in helpers.ts:2194</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2933,7 +3006,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2122</li>
+									<li>Defined in helpers.ts:2217</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2965,7 +3038,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2201</li>
+									<li>Defined in helpers.ts:2296</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2996,7 +3069,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2223</li>
+									<li>Defined in helpers.ts:2318</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3028,7 +3101,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2246</li>
+									<li>Defined in helpers.ts:2341</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3074,7 +3147,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2269</li>
+									<li>Defined in helpers.ts:2364</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3115,7 +3188,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in helpers.ts:2176</li>
+									<li>Defined in helpers.ts:2271</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3242,6 +3315,9 @@
 						<a href="_helpers_.html#exec" class="tsd-kind-icon">exec</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#execfile" class="tsd-kind-icon">exec<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_helpers_.html#exists" class="tsd-kind-icon">exists</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
@@ -3357,6 +3433,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_helpers_.html#sortbylabel" class="tsd-kind-icon">sort<wbr>ByLabel</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_helpers_.html#stat" class="tsd-kind-icon">stat</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_helpers_.html#toarray" class="tsd-kind-icon">to<wbr>Array</a>

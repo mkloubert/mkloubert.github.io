@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ActionQuickPick | vscode-deploy-reloaded</title>
+	<title>LoadFromItemsOptions | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
+					<a href="../modules/_values_.html">&quot;values&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.actionquickpick.html">ActionQuickPick</a>
+					<a href="_values_.loadfromitemsoptions.html">LoadFromItemsOptions</a>
 				</li>
 			</ul>
-			<h1>Interface ActionQuickPick&lt;TState&gt;</h1>
+			<h1>Interface LoadFromItemsOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,28 +72,15 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A quick pick item based on an action.</p>
+						<p>Options for &#39;loadFromItems()&#39; function.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>TState</h4>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">QuickPickItem</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">ActionQuickPick</span>
-							</li>
-						</ul>
+						<span class="target">LoadFromItemsOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -104,11 +91,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.actionquickpick.html#action" class="tsd-kind-icon">action</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.actionquickpick.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.actionquickpick.html#detail" class="tsd-kind-icon">detail</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.actionquickpick.html#label" class="tsd-kind-icon">label</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.actionquickpick.html#state" class="tsd-kind-icon">state</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_values_.loadfromitemsoptions.html#conditialfilter" class="tsd-kind-icon">conditial<wbr>Filter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_values_.loadfromitemsoptions.html#directoryscopeprovider" class="tsd-kind-icon">directory<wbr>Scope<wbr>Provider</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_values_.loadfromitemsoptions.html#prefixvaluesprovider" class="tsd-kind-icon">prefix<wbr>Values<wbr>Provider</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,17 +102,17 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="action" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> action</h3>
-					<div class="tsd-signature tsd-kind-icon">action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<a name="conditialfilter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> conditial<wbr>Filter</h3>
+					<div class="tsd-signature tsd-kind-icon">conditial<wbr>Filter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:33</li>
+							<li>Defined in values.ts:92</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The action to invoke.</p>
+							<p>A custom filter for the items.</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
@@ -135,83 +120,54 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TState</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><a href="_values_.valueitem.html" class="tsd-signature-type">ValueItem</a>, others<span class="tsd-signature-symbol">: </span><a href="_values_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> state: <span class="tsd-signature-type">TState</span></h5>
+												<h5>item: <a href="_values_.valueitem.html" class="tsd-signature-type">ValueItem</a></h5>
+											</li>
+											<li>
+												<h5>others: <a href="_values_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">[]</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="description" class="tsd-anchor"></a>
-					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="directoryscopeprovider" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> directory<wbr>Scope<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">directory<wbr>Scope<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="../modules/_values_.html#directoryscopeprovider" class="tsd-signature-type">DirectoryScopeProvider</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from QuickPickItem.description</p>
 						<ul>
-							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode/vscode.d.ts:1469</li>
+							<li>Defined in values.ts:96</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A human readable string which is rendered less prominent.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="detail" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> detail</h3>
-					<div class="tsd-signature tsd-kind-icon">detail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from QuickPickItem.detail</p>
-						<ul>
-							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode/vscode.d.ts:1474</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A human readable string which is rendered less prominent.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="label" class="tsd-anchor"></a>
-					<h3>label</h3>
-					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from QuickPickItem.label</p>
-						<ul>
-							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode/vscode.d.ts:1464</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A human readable string which is rendered prominent.</p>
+							<p>The optional scope directory provider.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="state" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> state</h3>
-					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TState</span></div>
+					<a name="prefixvaluesprovider" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prefix<wbr>Values<wbr>Provider</h3>
+					<div class="tsd-signature tsd-kind-icon">prefix<wbr>Values<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="../modules/_values_.html#valuesprovider" class="tsd-signature-type">ValuesProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:37</li>
+							<li>Defined in values.ts:101</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The state value for the action.</p>
+							<p>An optional function with provides &quot;more&quot; values
+							which are added at the beginning.</p>
 						</div>
 					</div>
 				</section>
@@ -224,122 +180,116 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_contracts_.html">"contracts"</a>
+						<a href="../modules/_values_.html">"values"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_contracts_.deployoperation.html" class="tsd-kind-icon">Deploy<wbr>Operation</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_values_.codevalue.html" class="tsd-kind-icon">Code<wbr>Value</a>
 					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_contracts_.filechangetype.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_values_.envvarvalue.html" class="tsd-kind-icon">Env<wbr>Var<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_values_.filevalue.html" class="tsd-kind-icon">File<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_values_.functionvalue.html" class="tsd-kind-icon">Function<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_values_.staticvalue.html" class="tsd-kind-icon">Static<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../classes/_values_.valuebase.html" class="tsd-kind-icon">Value<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_values_.wrappedbasevalue.html" class="tsd-kind-icon">Wrapped<wbr>Base<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_values_.applyable.html" class="tsd-kind-icon">Applyable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_values_.codevalueitem.html" class="tsd-kind-icon">Code<wbr>Value<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_values_.envvarvalueitem.html" class="tsd-kind-icon">Env<wbr>Var<wbr>Value<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_values_.filevalueitem.html" class="tsd-kind-icon">File<wbr>Value<wbr>Item</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_contracts_.actionquickpick.html" class="tsd-kind-icon">Action<wbr>Quick<wbr>Pick</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_values_.loadfromitemsoptions.html" class="tsd-kind-icon">Load<wbr>From<wbr>Items<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.actionquickpick.html#action" class="tsd-kind-icon">action</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.actionquickpick.html#description" class="tsd-kind-icon">description</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.actionquickpick.html#detail" class="tsd-kind-icon">detail</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_contracts_.actionquickpick.html#label" class="tsd-kind-icon">label</a>
+								<a href="_values_.loadfromitemsoptions.html#conditialfilter" class="tsd-kind-icon">conditial<wbr>Filter</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.actionquickpick.html#state" class="tsd-kind-icon">state</a>
+								<a href="_values_.loadfromitemsoptions.html#directoryscopeprovider" class="tsd-kind-icon">directory<wbr>Scope<wbr>Provider</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_values_.loadfromitemsoptions.html#prefixvaluesprovider" class="tsd-kind-icon">prefix<wbr>Values<wbr>Provider</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.button.html" class="tsd-kind-icon">Button</a>
+						<a href="_values_.staticvalueitem.html" class="tsd-kind-icon">Static<wbr>Value<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.buttonwithcustomcommand.html" class="tsd-kind-icon">Button<wbr>With<wbr>Custom<wbr>Command</a>
+						<a href="_values_.value.html" class="tsd-kind-icon">Value</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.cancelable.html" class="tsd-kind-icon">Cancelable</a>
+						<a href="_values_.valueitem.html" class="tsd-kind-icon">Value<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.conditionalitem.html" class="tsd-kind-icon">Conditional<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.configsource.html" class="tsd-kind-icon">Config<wbr>Source</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.document.html" class="tsd-kind-icon">Document</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.encryptable.html" class="tsd-kind-icon">Encryptable</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.filefilter.html" class="tsd-kind-icon">File<wbr>Filter</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.import.html" class="tsd-kind-icon">Import</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_contracts_.messageitemwithvalue.html" class="tsd-kind-icon">Message<wbr>Item<wbr>With<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.platformitem.html" class="tsd-kind-icon">Platform<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.scriptarguments.html" class="tsd-kind-icon">Script<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.shellcommandsettings.html" class="tsd-kind-icon">Shell<wbr>Command<wbr>Settings</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.startupcommand.html" class="tsd-kind-icon">Startup<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.translator.html" class="tsd-kind-icon">Translator</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.withnameandpath.html" class="tsd-kind-icon">With<wbr>Name<wbr>And<wbr>Path</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.withoptionalname.html" class="tsd-kind-icon">With<wbr>Optional<wbr>Name</a>
+						<a href="_values_.withvalueitems.html" class="tsd-kind-icon">With<wbr>Value<wbr>Items</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#importtype" class="tsd-kind-icon">Import<wbr>Type</a>
+						<a href="../modules/_values_.html#directoryscopeprovider" class="tsd-kind-icon">Directory<wbr>Scope<wbr>Provider</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#keyvaluepairs" class="tsd-kind-icon">Key<wbr>Value<wbr>Pairs</a>
+						<a href="../modules/_values_.html#valueitemstorage" class="tsd-kind-icon">Value<wbr>Item<wbr>Storage</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#shellcommand" class="tsd-kind-icon">Shell<wbr>Command</a>
+						<a href="../modules/_values_.html#valuestorage" class="tsd-kind-icon">Value<wbr>Storage</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#startupcommandvalue" class="tsd-kind-icon">Startup<wbr>Command<wbr>Value</a>
+						<a href="../modules/_values_.html#valuesprovider" class="tsd-kind-icon">Values<wbr>Provider</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#default_host" class="tsd-kind-icon">DEFAULT_<wbr>HOST</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_values_.html#not_cached_yet" class="tsd-kind-icon">NOT_<wbr>CACHED_<wbr>YET</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#event_config_reloaded" class="tsd-kind-icon">EVENT_<wbr>CONFIG_<wbr>RELOADED</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_values_.html#applyvaluesto" class="tsd-kind-icon">apply<wbr>Values<wbr>To</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#homedir_subfolder" class="tsd-kind-icon">HOMEDIR_<wbr>SUBFOLDER</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_values_.html#frombuffer" class="tsd-kind-icon">from<wbr>Buffer</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#zip_comment" class="tsd-kind-icon">ZIP_<wbr>COMMENT</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_values_.html#getenvvars" class="tsd-kind-icon">get<wbr>Env<wbr>Vars</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_values_.html#getpredefinedvalues" class="tsd-kind-icon">get<wbr>Predefined<wbr>Values</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_values_.html#loadfromitems" class="tsd-kind-icon">load<wbr>From<wbr>Items</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_values_.html#normalizevaluelist" class="tsd-kind-icon">normalize<wbr>Value<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_values_.html#normalizevaluename" class="tsd-kind-icon">normalize<wbr>Value<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_values_.html#replacewithvalues" class="tsd-kind-icon">replace<wbr>With<wbr>Values</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_values_.html#tovaluestorage" class="tsd-kind-icon">to<wbr>Value<wbr>Storage</a>
 					</li>
 				</ul>
 			</nav>

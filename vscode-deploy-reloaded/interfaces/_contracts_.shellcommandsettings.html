@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ConditionalItem | vscode-deploy-reloaded</title>
+	<title>ShellCommandSettings | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.conditionalitem.html">ConditionalItem</a>
+					<a href="_contracts_.shellcommandsettings.html">ShellCommandSettings</a>
 				</li>
 			</ul>
-			<h1>Interface ConditionalItem</h1>
+			<h1>Interface ShellCommandSettings</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An item that uses JavaScript code if it is available or not.</p>
+						<p>Settings of a shell command.</p>
 					</div>
 				</div>
 			</section>
@@ -80,25 +80,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ConditionalItem</span>
+						<a href="_contracts_.conditionalitem.html" class="tsd-signature-type">ConditionalItem</a>
+					</li>
+					<li>
+						<a href="_contracts_.withoptionalname.html" class="tsd-signature-type">WithOptionalName</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="_targets_.target.html" class="tsd-signature-type">Target</a>
-							</li>
-							<li>
-								<a href="_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a>
-							</li>
-							<li>
-								<a href="_packages_.package.html" class="tsd-signature-type">Package</a>
-							</li>
-							<li>
-								<a href="_contracts_.import.html" class="tsd-signature-type">Import</a>
-							</li>
-							<li>
-								<a href="_contracts_.shellcommandsettings.html" class="tsd-signature-type">ShellCommandSettings</a>
-							</li>
-							<li>
-								<a href="_values_.valueitem.html" class="tsd-signature-type">ValueItem</a>
+								<span class="target">ShellCommandSettings</span>
 							</li>
 						</ul>
 					</li>
@@ -111,7 +99,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.conditionalitem.html#if" class="tsd-kind-icon">if</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.shellcommandsettings.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.shellcommandsettings.html#cwd" class="tsd-kind-icon">cwd</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.shellcommandsettings.html#if" class="tsd-kind-icon">if</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.shellcommandsettings.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_contracts_.shellcommandsettings.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.shellcommandsettings.html#noplaceholders" class="tsd-kind-icon">no<wbr>Place<wbr>Holders</a></li>
 							</ul>
 						</section>
 					</div>
@@ -120,10 +113,41 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="command" class="tsd-anchor"></a>
+					<h3>command</h3>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:448</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The command to execute.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="cwd" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> cwd</h3>
+					<div class="tsd-signature tsd-kind-icon">cwd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:452</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The custom working directory to use.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="if" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> if</h3>
 					<div class="tsd-signature tsd-kind-icon">if<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.conditionalitem.html">ConditionalItem</a>.<a href="_contracts_.conditionalitem.html#if">if</a></p>
 						<ul>
 							<li>Defined in contracts.ts:101</li>
 						</ul>
@@ -131,6 +155,52 @@
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>One or more (JavaScript) conditions that check if that item is available or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ignoreiffail" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ignore<wbr>IfFail</h3>
+					<div class="tsd-signature tsd-kind-icon">ignore<wbr>IfFail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:456</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Ignore if execution fails or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.withoptionalname.html">WithOptionalName</a>.<a href="_contracts_.withoptionalname.html#name">name</a></p>
+						<ul>
+							<li>Defined in contracts.ts:518</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="noplaceholders" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Place<wbr>Holders</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Place<wbr>Holders<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:460</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Do not use placeholders in &#39;command&#39; property.</p>
 						</div>
 					</div>
 				</section>
@@ -167,18 +237,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.cancelable.html" class="tsd-kind-icon">Cancelable</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.conditionalitem.html" class="tsd-kind-icon">Conditional<wbr>Item</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.conditionalitem.html#if" class="tsd-kind-icon">if</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.configsource.html" class="tsd-kind-icon">Config<wbr>Source</a>
 					</li>
@@ -209,9 +270,33 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.scriptarguments.html" class="tsd-kind-icon">Script<wbr>Arguments</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.shellcommandsettings.html" class="tsd-kind-icon">Shell<wbr>Command<wbr>Settings</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.shellcommandsettings.html#command" class="tsd-kind-icon">command</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.shellcommandsettings.html#cwd" class="tsd-kind-icon">cwd</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.shellcommandsettings.html#if" class="tsd-kind-icon">if</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.shellcommandsettings.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_contracts_.shellcommandsettings.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.shellcommandsettings.html#noplaceholders" class="tsd-kind-icon">no<wbr>Place<wbr>Holders</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.startupcommand.html" class="tsd-kind-icon">Startup<wbr>Command</a>
 					</li>

@@ -94,6 +94,12 @@
 								<a href="_values_.codevalue.html" class="tsd-signature-type">CodeValue</a>
 							</li>
 							<li>
+								<a href="_values_.envvarvalue.html" class="tsd-signature-type">EnvVarValue</a>
+							</li>
+							<li>
+								<a href="_values_.filevalue.html" class="tsd-signature-type">FileValue</a>
+							</li>
+							<li>
 								<a href="_values_.staticvalue.html" class="tsd-signature-type">StaticValue</a>
 							</li>
 						</ul>
@@ -128,6 +134,7 @@
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_values_.valuebase.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_values_.valuebase.html#others" class="tsd-kind-icon">others</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_values_.valuebase.html#value" class="tsd-kind-icon">value</a></li>
 							</ul>
 						</section>
@@ -146,7 +153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:112</li>
+									<li>Defined in values.ts:175</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -181,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">_NAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in values.ts:112</li>
+							<li>Defined in values.ts:175</li>
 						</ul>
 					</aside>
 				</section>
@@ -191,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TItem</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in values.ts:120</li>
+							<li>Defined in values.ts:183</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -206,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">others<wbr>Provider<span class="tsd-signature-symbol">:</span> <a href="../modules/_values_.html#valuesprovider" class="tsd-signature-type">ValuesProvider</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in values.ts:133</li>
+							<li>Defined in values.ts:210</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -228,7 +235,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:126</li>
+									<li>Defined in values.ts:189</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -245,6 +252,28 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="others" class="tsd-anchor"></a>
+					<h3>others</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> others<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_values_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in values.ts:196</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the list of &quot;other&quot; values.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_values_.value.html" class="tsd-signature-type">Value</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="value" class="tsd-anchor"></a>
 					<h3>value</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
@@ -254,7 +283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in values.ts:136</li>
+									<li>Defined in values.ts:213</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -289,6 +318,12 @@
 						<a href="_values_.codevalue.html" class="tsd-kind-icon">Code<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_values_.envvarvalue.html" class="tsd-kind-icon">Env<wbr>Var<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_values_.filevalue.html" class="tsd-kind-icon">File<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="_values_.functionvalue.html" class="tsd-kind-icon">Function<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
@@ -315,17 +350,32 @@
 								<a href="_values_.valuebase.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_values_.valuebase.html#others" class="tsd-kind-icon">others</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_values_.valuebase.html#value" class="tsd-kind-icon">value</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_values_.wrappedbasevalue.html" class="tsd-kind-icon">Wrapped<wbr>Base<wbr>Value</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_values_.applyable.html" class="tsd-kind-icon">Applyable</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_values_.codevalueitem.html" class="tsd-kind-icon">Code<wbr>Value<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_values_.envvarvalueitem.html" class="tsd-kind-icon">Env<wbr>Var<wbr>Value<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_values_.filevalueitem.html" class="tsd-kind-icon">File<wbr>Value<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_values_.loadfromitemsoptions.html" class="tsd-kind-icon">Load<wbr>From<wbr>Items<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_values_.staticvalueitem.html" class="tsd-kind-icon">Static<wbr>Value<wbr>Item</a>
@@ -340,6 +390,9 @@
 						<a href="../interfaces/_values_.withvalueitems.html" class="tsd-kind-icon">With<wbr>Value<wbr>Items</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_values_.html#directoryscopeprovider" class="tsd-kind-icon">Directory<wbr>Scope<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_values_.html#valueitemstorage" class="tsd-kind-icon">Value<wbr>Item<wbr>Storage</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -348,8 +401,14 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_values_.html#valuesprovider" class="tsd-kind-icon">Values<wbr>Provider</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_values_.html#not_cached_yet" class="tsd-kind-icon">NOT_<wbr>CACHED_<wbr>YET</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/_values_.html#applyvaluesto" class="tsd-kind-icon">apply<wbr>Values<wbr>To</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_values_.html#frombuffer" class="tsd-kind-icon">from<wbr>Buffer</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_values_.html#getenvvars" class="tsd-kind-icon">get<wbr>Env<wbr>Vars</a>

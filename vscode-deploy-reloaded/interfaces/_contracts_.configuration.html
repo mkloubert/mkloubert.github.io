@@ -106,6 +106,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.configuration.html#deployonchange" class="tsd-kind-icon">deploy<wbr>OnChange</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.configuration.html#deployonsave" class="tsd-kind-icon">deploy<wbr>OnSave</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.configuration.html#env" class="tsd-kind-icon">env</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.configuration.html#executeonstartup" class="tsd-kind-icon">execute<wbr>OnStartup</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.configuration.html#globals" class="tsd-kind-icon">globals</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.configuration.html#ignore" class="tsd-kind-icon">ignore</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.configuration.html#imports" class="tsd-kind-icon">imports</a></li>
@@ -235,12 +236,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="executeonstartup" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> execute<wbr>OnStartup</h3>
+					<div class="tsd-signature tsd-kind-icon">execute<wbr>OnStartup<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#shellcommand" class="tsd-signature-type">ShellCommand</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_contracts_.html#shellcommand" class="tsd-signature-type">ShellCommand</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in contracts.ts:154</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more shell commands that should be run on startup.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="globals" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> globals</h3>
 					<div class="tsd-signature tsd-kind-icon">globals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:154</li>
+							<li>Defined in contracts.ts:158</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -255,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">ignore<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:159</li>
+							<li>Defined in contracts.ts:163</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -271,7 +287,7 @@
 					<div class="tsd-signature tsd-kind-icon">imports<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#importtype" class="tsd-signature-type">ImportType</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_contracts_.html#importtype" class="tsd-signature-type">ImportType</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:163</li>
+							<li>Defined in contracts.ts:167</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -286,7 +302,7 @@
 					<div class="tsd-signature tsd-kind-icon">init<wbr>Composer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:167</li>
+							<li>Defined in contracts.ts:171</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -301,7 +317,7 @@
 					<div class="tsd-signature tsd-kind-icon">init<wbr>Node<wbr>Modules<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:171</li>
+							<li>Defined in contracts.ts:175</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -316,7 +332,7 @@
 					<div class="tsd-signature tsd-kind-icon">language<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:175</li>
+							<li>Defined in contracts.ts:179</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -331,7 +347,7 @@
 					<div class="tsd-signature tsd-kind-icon">open<wbr>Output<wbr>OnStartup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:179</li>
+							<li>Defined in contracts.ts:183</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -346,7 +362,7 @@
 					<div class="tsd-signature tsd-kind-icon">packages<span class="tsd-signature-symbol">:</span> <a href="_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol"> | </span><a href="_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:183</li>
+							<li>Defined in contracts.ts:187</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -361,7 +377,7 @@
 					<div class="tsd-signature tsd-kind-icon">remove<wbr>OnChange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:187</li>
+							<li>Defined in contracts.ts:191</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -376,7 +392,7 @@
 					<div class="tsd-signature tsd-kind-icon">run<wbr>Build<wbr>Task<wbr>OnStartup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:192</li>
+							<li>Defined in contracts.ts:196</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -392,7 +408,7 @@
 					<div class="tsd-signature tsd-kind-icon">run<wbr>Git<wbr>Pull<wbr>OnStartup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:197</li>
+							<li>Defined in contracts.ts:201</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -408,7 +424,7 @@
 					<div class="tsd-signature tsd-kind-icon">startup<wbr>Commands<span class="tsd-signature-symbol">:</span> <a href="../modules/_contracts_.html#startupcommandvalue" class="tsd-signature-type">StartupCommandValue</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_contracts_.html#startupcommandvalue" class="tsd-signature-type">StartupCommandValue</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:201</li>
+							<li>Defined in contracts.ts:205</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -423,7 +439,7 @@
 					<div class="tsd-signature tsd-kind-icon">sync<wbr>When<wbr>Open<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:205</li>
+							<li>Defined in contracts.ts:209</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -438,7 +454,7 @@
 					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <a href="_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol"> | </span><a href="_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:209</li>
+							<li>Defined in contracts.ts:213</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -453,7 +469,7 @@
 					<div class="tsd-signature tsd-kind-icon">time<wbr>ToWait<wbr>Before<wbr>Activate<wbr>Deploy<wbr>OnChange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:213</li>
+							<li>Defined in contracts.ts:217</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -468,7 +484,7 @@
 					<div class="tsd-signature tsd-kind-icon">time<wbr>ToWait<wbr>Before<wbr>Activate<wbr>Remove<wbr>OnChange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in contracts.ts:217</li>
+							<li>Defined in contracts.ts:221</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -484,7 +500,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_values_.withvalueitems.html">WithValueItems</a>.<a href="_values_.withvalueitems.html#values">values</a></p>
 						<ul>
-							<li>Defined in values.ts:104</li>
+							<li>Defined in values.ts:165</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -551,6 +567,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.configuration.html#env" class="tsd-kind-icon">env</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_contracts_.configuration.html#executeonstartup" class="tsd-kind-icon">execute<wbr>OnStartup</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_contracts_.configuration.html#globals" class="tsd-kind-icon">globals</a>
@@ -632,6 +651,9 @@
 						<a href="_contracts_.scriptarguments.html" class="tsd-kind-icon">Script<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.shellcommandsettings.html" class="tsd-kind-icon">Shell<wbr>Command<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_contracts_.startupcommand.html" class="tsd-kind-icon">Startup<wbr>Command</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -648,6 +670,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_contracts_.html#keyvaluepairs" class="tsd-kind-icon">Key<wbr>Value<wbr>Pairs</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_contracts_.html#shellcommand" class="tsd-kind-icon">Shell<wbr>Command</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_contracts_.html#startupcommandvalue" class="tsd-kind-icon">Startup<wbr>Command<wbr>Value</a>

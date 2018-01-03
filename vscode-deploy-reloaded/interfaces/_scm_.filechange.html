@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ScriptTargetOperation | vscode-deploy-reloaded</title>
+	<title>FileChange | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_targets_operations_script_.html">&quot;targets/operations/script&quot;</a>
+					<a href="../modules/_scm_.html">&quot;scm&quot;</a>
 				</li>
 				<li>
-					<a href="_targets_operations_script_.scripttargetoperation.html">ScriptTargetOperation</a>
+					<a href="_scm_.filechange.html">FileChange</a>
 				</li>
 			</ul>
-			<h1>Interface ScriptTargetOperation</h1>
+			<h1>Interface FileChange</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An operation that executes a script.</p>
+						<p>A file change of a commit.</p>
 					</div>
 				</div>
 			</section>
@@ -80,12 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">ScriptTargetOperation</span>
-							</li>
-						</ul>
+						<span class="target">FileChange</span>
 					</li>
 				</ul>
 			</section>
@@ -96,12 +91,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_script_.scripttargetoperation.html#if" class="tsd-kind-icon">if</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_script_.scripttargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_script_.scripttargetoperation.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_script_.scripttargetoperation.html#options" class="tsd-kind-icon">options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_script_.scripttargetoperation.html#script" class="tsd-kind-icon">script</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_script_.scripttargetoperation.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scm_.filechange.html#commit" class="tsd-kind-icon">commit</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scm_.filechange.html#file" class="tsd-kind-icon">file</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scm_.filechange.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -109,97 +101,48 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="if" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> if</h3>
-					<div class="tsd-signature tsd-kind-icon">if<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="commit" class="tsd-anchor"></a>
+					<h3>commit</h3>
+					<div class="tsd-signature tsd-kind-icon">commit<span class="tsd-signature-symbol">:</span> <a href="_scm_.commit.html" class="tsd-signature-type">Commit</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.conditionalitem.html">ConditionalItem</a>.<a href="_contracts_.conditionalitem.html#if">if</a></p>
 						<ul>
-							<li>Defined in contracts.ts:121</li>
+							<li>Defined in scm.ts:102</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>One or more (JavaScript) conditions that check if that item is available or not.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="ignoreiffail" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ignore<wbr>IfFail</h3>
-					<div class="tsd-signature tsd-kind-icon">ignore<wbr>IfFail<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_targets_.targetoperation.html">TargetOperation</a>.<a href="_targets_.targetoperation.html#ignoreiffail">ignoreIfFail</a></p>
-						<ul>
-							<li>Defined in targets.ts:149</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Continue when target operation fails or not.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="name" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_contracts_.withoptionalname.html">WithOptionalName</a>.<a href="_contracts_.withoptionalname.html#name">name</a></p>
-						<ul>
-							<li>Defined in contracts.ts:557</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The name.</p>
+							<p>The underlying commit.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="file" class="tsd-anchor"></a>
+					<h3>file</h3>
+					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets/operations/script.ts:34</li>
+							<li>Defined in scm.ts:106</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Additional data / options for the script.</p>
+							<p>The file.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="script" class="tsd-anchor"></a>
-					<h3>script</h3>
-					<div class="tsd-signature tsd-kind-icon">script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in targets/operations/script.ts:38</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The path to the script to execute.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="type" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/_scm_.filechangetype.html" class="tsd-signature-type">FileChangeType</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_targets_.targetoperation.html">TargetOperation</a>.<a href="_targets_.targetoperation.html#type">type</a></p>
 						<ul>
-							<li>Defined in targets.ts:153</li>
+							<li>Defined in scm.ts:110</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The type.</p>
+							<p>The type of change.</p>
 						</div>
 					</div>
 				</section>
@@ -212,50 +155,44 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_targets_operations_script_.html">"targets/operations/script"</a>
+						<a href="../modules/_scm_.html">"scm"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_scm_.filechangetype.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scm_.branch.html" class="tsd-kind-icon">Branch</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scm_.commit.html" class="tsd-kind-icon">Commit</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_targets_operations_script_.scripttargetoperation.html" class="tsd-kind-icon">Script<wbr>Target<wbr>Operation</a>
+						<a href="_scm_.filechange.html" class="tsd-kind-icon">File<wbr>Change</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_script_.scripttargetoperation.html#if" class="tsd-kind-icon">if</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_script_.scripttargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_script_.scripttargetoperation.html#name" class="tsd-kind-icon">name</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_scm_.filechange.html#commit" class="tsd-kind-icon">commit</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_targets_operations_script_.scripttargetoperation.html#options" class="tsd-kind-icon">options</a>
+								<a href="_scm_.filechange.html#file" class="tsd-kind-icon">file</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_targets_operations_script_.scripttargetoperation.html#script" class="tsd-kind-icon">script</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_targets_operations_script_.scripttargetoperation.html#type" class="tsd-kind-icon">type</a>
+								<a href="_scm_.filechange.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_targets_operations_script_.scripttargetoperationexecutionarguments.html" class="tsd-kind-icon">Script<wbr>Target<wbr>Operation<wbr>Execution<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_targets_operations_script_.scripttargetoperationmodule.html" class="tsd-kind-icon">Script<wbr>Target<wbr>Operation<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_targets_operations_script_.html#scripttargetoperationexecutor" class="tsd-kind-icon">Script<wbr>Target<wbr>Operation<wbr>Executor</a>
+						<a href="_scm_.sourcecontrolclient.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_targets_operations_script_.html#execute" class="tsd-kind-icon">execute</a>
+						<a href="../modules/_scm_.html#showscmcommitquickpick" class="tsd-kind-icon">showSCMCommit<wbr>Quick<wbr>Pick</a>
 					</li>
 				</ul>
 			</nav>

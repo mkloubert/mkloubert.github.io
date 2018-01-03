@@ -119,6 +119,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_sftp_.sftptarget.html#host" class="tsd-kind-icon">host</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftptarget.html#if" class="tsd-kind-icon">if</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftptarget.html#mappings" class="tsd-kind-icon">mappings</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_sftp_.sftptarget.html#modes" class="tsd-kind-icon">modes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftptarget.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_sftp_.sftptarget.html#password" class="tsd-kind-icon">password</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftptarget.html#platforms" class="tsd-kind-icon">platforms</a></li>
@@ -402,7 +403,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.encryptable.html">Encryptable</a>.<a href="_contracts_.encryptable.html#encryptby">encryptBy</a></p>
 						<ul>
-							<li>Defined in contracts.ts:279</li>
+							<li>Defined in contracts.ts:307</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -418,7 +419,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.encryptable.html">Encryptable</a>.<a href="_contracts_.encryptable.html#encryptwith">encryptWith</a></p>
 						<ul>
-							<li>Defined in contracts.ts:283</li>
+							<li>Defined in contracts.ts:311</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -496,7 +497,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.conditionalitem.html">ConditionalItem</a>.<a href="_contracts_.conditionalitem.html#if">if</a></p>
 						<ul>
-							<li>Defined in contracts.ts:101</li>
+							<li>Defined in contracts.ts:121</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -521,6 +522,21 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="modes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> modes</h3>
+					<div class="tsd-signature tsd-kind-icon">modes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_clients_sftp.SFTPFileModeSettings</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in plugins/sftp.ts:71</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Defines the modes for files, after they have been uploaded.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> name</h3>
@@ -528,7 +544,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.withoptionalname.html">WithOptionalName</a>.<a href="_contracts_.withoptionalname.html#name">name</a></p>
 						<ul>
-							<li>Defined in contracts.ts:518</li>
+							<li>Defined in contracts.ts:557</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -543,7 +559,7 @@
 					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:71</li>
+							<li>Defined in plugins/sftp.ts:75</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -559,7 +575,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.platformitem.html">PlatformItem</a>.<a href="_contracts_.platformitem.html#platforms">platforms</a></p>
 						<ul>
-							<li>Defined in contracts.ts:373</li>
+							<li>Defined in contracts.ts:401</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -574,7 +590,7 @@
 					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:75</li>
+							<li>Defined in plugins/sftp.ts:79</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -589,7 +605,7 @@
 					<div class="tsd-signature tsd-kind-icon">private<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:79</li>
+							<li>Defined in plugins/sftp.ts:83</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -604,7 +620,7 @@
 					<div class="tsd-signature tsd-kind-icon">private<wbr>Key<wbr>Passphrase<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:83</li>
+							<li>Defined in plugins/sftp.ts:87</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -636,7 +652,7 @@
 					<div class="tsd-signature tsd-kind-icon">ready<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:87</li>
+							<li>Defined in plugins/sftp.ts:91</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -700,7 +716,7 @@
 					<div class="tsd-signature tsd-kind-icon">try<wbr>Keyboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:91</li>
+							<li>Defined in plugins/sftp.ts:95</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -731,7 +747,7 @@
 					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in plugins/sftp.ts:95</li>
+							<li>Defined in plugins/sftp.ts:99</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -834,6 +850,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_plugins_sftp_.sftptarget.html#mappings" class="tsd-kind-icon">mappings</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_plugins_sftp_.sftptarget.html#modes" class="tsd-kind-icon">modes</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_plugins_sftp_.sftptarget.html#name" class="tsd-kind-icon">name</a>

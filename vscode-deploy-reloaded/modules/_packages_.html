@@ -77,6 +77,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_packages_.packagebutton.html" class="tsd-kind-icon">Package<wbr>Button</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_packages_.packagedeployfilefilter.html" class="tsd-kind-icon">Package<wbr>Deploy<wbr>File<wbr>Filter</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_packages_.syncwhenopensetting.html" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>Setting</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_packages_.withfastfilechecksettings.html" class="tsd-kind-icon">With<wbr>Fast<wbr>File<wbr>Check<wbr>Settings</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -84,7 +85,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_packages_.html#packagedeploysettings" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_packages_.html#packagedeploysettingsresolver" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<wbr>Resolver</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_packages_.html#packagefilelistresolver" class="tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_packages_.html#packagefastfilecheckflagresolver" class="tsd-kind-icon">Package<wbr>Fast<wbr>File<wbr>Check<wbr>Flag<wbr>Resolver</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_packages_.html#packagefilelistresolver" class="tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_packages_.html#packagefilelistresolverresult" class="tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver<wbr>Result</a></li>
 							</ul>
 						</section>
@@ -99,6 +101,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#autodeployfile" class="tsd-kind-icon">auto<wbr>Deploy<wbr>File</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#findtargetsforfileofpackage" class="tsd-kind-icon">find<wbr>Targets<wbr>For<wbr>File<wbr>OfPackage</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_packages_.html#getfastfilecheckflag" class="tsd-kind-icon">get<wbr>Fast<wbr>File<wbr>Check<wbr>Flag</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#getpackagename" class="tsd-kind-icon">get<wbr>Package<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#gettargetsofpackage" class="tsd-kind-icon">get<wbr>Targets<wbr>OfPackage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#resetpackageusage" class="tsd-kind-icon">reset<wbr>Package<wbr>Usage</a></li>
@@ -116,7 +119,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_packages_.packagedeployfilefilter.html" class="tsd-signature-type">PackageDeployFileFilter</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages.ts:93</li>
+							<li>Defined in packages.ts:94</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -131,7 +134,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages.ts:102</li>
+							<li>Defined in packages.ts:113</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -170,30 +173,62 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="packagefastfilecheckflagresolver" class="tsd-anchor"></a>
+					<h3>Package<wbr>Fast<wbr>File<wbr>Check<wbr>Flag<wbr>Resolver</h3>
+					<div class="tsd-signature tsd-kind-icon">Package<wbr>Fast<wbr>File<wbr>Check<wbr>Flag<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in packages.ts:104</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A function that resolves the package flag, which indicates, if a &quot;fast file check&quot;
+							should be made or not.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The underlying package.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result with the flag.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>pkg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>pkg: <a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="packagefilelistresolver" class="tsd-anchor"></a>
 					<h3>Package<wbr>File<wbr>List<wbr>Resolver</h3>
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages.ts:112</li>
+							<li>Defined in packages.ts:115</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A package file list resolver.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>param</dt>
-							<dd><p>filter.</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>scope file.</p>
-							</dd>
-							<dt>returns</dt>
-							<dd><p>The result.</p>
-							</dd>
-						</dl>
-					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -228,7 +263,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages.ts:118</li>
+							<li>Defined in packages.ts:121</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -246,7 +281,7 @@
 					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>PACKAGE_<wbr>USAGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vscdrLastExecutedPackageActions"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vscdrLastExecutedPackageActions&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in packages.ts:127</li>
+							<li>Defined in packages.ts:152</li>
 						</ul>
 					</aside>
 				</section>
@@ -257,13 +292,13 @@
 					<a name="autodeployfile" class="tsd-anchor"></a>
 					<h3>auto<wbr>Deploy<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">auto<wbr>Deploy<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, settingsResolver<span class="tsd-signature-symbol">: </span><a href="_packages_.html#packagedeploysettingsresolver" class="tsd-signature-type">PackageDeploySettingsResolver</a>, errorMsgTemplate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">auto<wbr>Deploy<wbr>File<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, settingsResolver<span class="tsd-signature-symbol">: </span><a href="_packages_.html#packagedeploysettingsresolver" class="tsd-signature-type">PackageDeploySettingsResolver</a>, fastFileCheckFlagResolver<span class="tsd-signature-symbol">: </span><a href="_packages_.html#packagefastfilecheckflagresolver" class="tsd-signature-type">PackageFastFileCheckFlagResolver</a>, errorMsgTemplate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages.ts:136</li>
+									<li>Defined in packages.ts:162</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -286,6 +321,12 @@
 									</div>
 								</li>
 								<li>
+									<h5>fastFileCheckFlagResolver: <a href="_packages_.html#packagefastfilecheckflagresolver" class="tsd-signature-type">PackageFastFileCheckFlagResolver</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A custom &quot;fast file check&quot; resolver.</p>
+									</div>
+								</li>
+								<li>
 									<h5>errorMsgTemplate: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The template for an error message.</p>
@@ -300,13 +341,13 @@
 					<a name="findtargetsforfileofpackage" class="tsd-anchor"></a>
 					<h3>find<wbr>Targets<wbr>For<wbr>File<wbr>OfPackage</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Targets<wbr>For<wbr>File<wbr>OfPackage<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, settingsResolver<span class="tsd-signature-symbol">: </span><a href="_packages_.html#packagedeploysettingsresolver" class="tsd-signature-type">PackageDeploySettingsResolver</a>, fileListResolver<span class="tsd-signature-symbol">?: </span><a href="_packages_.html#packagefilelistresolver" class="tsd-signature-type">PackageFileListResolver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Targets<wbr>For<wbr>File<wbr>OfPackage<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, settingsResolver<span class="tsd-signature-symbol">: </span><a href="_packages_.html#packagedeploysettingsresolver" class="tsd-signature-type">PackageDeploySettingsResolver</a>, fastFileCheckFlagResolver<span class="tsd-signature-symbol">: </span><a href="_packages_.html#packagefastfilecheckflagresolver" class="tsd-signature-type">PackageFastFileCheckFlagResolver</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages.ts:179</li>
+									<li>Defined in packages.ts:207</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -329,11 +370,109 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fileListResolver: <a href="_packages_.html#packagefilelistresolver" class="tsd-signature-type">PackageFileListResolver</a></h5>
+									<h5>fastFileCheckFlagResolver: <a href="_packages_.html#packagefastfilecheckflagresolver" class="tsd-signature-type">PackageFastFileCheckFlagResolver</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>A custom &quot;fast file check&quot; resolver.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>The List of targets or (false) if at least one target name could not be resolved.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="getfastfilecheckflag" class="tsd-anchor"></a>
+					<h3>get<wbr>Fast<wbr>File<wbr>Check<wbr>Flag</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Fast<wbr>File<wbr>Check<wbr>Flag&lt;TObj, TParentObj&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TObj</span>, flagResolver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, parentObj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TParentObj</span>, parentFlagResolver<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in packages.ts:344</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Detects a &quot;fast file check&quot; flag value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TObj<span class="tsd-signature-symbol">: </span><a href="../interfaces/_packages_.withfastfilechecksettings.html" class="tsd-signature-type">WithFastFileCheckSettings</a></h4>
+								</li>
+								<li>
+									<h4>TParentObj<span class="tsd-signature-symbol">: </span><a href="../interfaces/_packages_.withfastfilechecksettings.html" class="tsd-signature-type">WithFastFileCheckSettings</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">TObj</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The child object.</p>
+									</div>
+								</li>
+								<li>
+									<h5>flagResolver: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The function that detects the flag value from the child object.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TObj</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>o: <span class="tsd-signature-type">TObj</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>parentObj: <span class="tsd-signature-type">TParentObj</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The parent object.</p>
+									</div>
+								</li>
+								<li>
+									<h5>parentFlagResolver: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The function that detects the flag value from the parent object.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>po<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TParentObj</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>po: <span class="tsd-signature-type">TParentObj</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>The detected flag.</p>
 						</li>
 					</ul>
 				</section>
@@ -347,7 +486,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages.ts:293</li>
+									<li>Defined in packages.ts:388</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -379,7 +518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages.ts:319</li>
+									<li>Defined in packages.ts:414</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -414,7 +553,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages.ts:362</li>
+									<li>Defined in packages.ts:457</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -445,7 +584,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in packages.ts:380</li>
+									<li>Defined in packages.ts:475</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -504,6 +643,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_packages_.syncwhenopensetting.html" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>Setting</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_packages_.withfastfilechecksettings.html" class="tsd-kind-icon">With<wbr>Fast<wbr>File<wbr>Check<wbr>Settings</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_packages_.html#packagedeploysettings" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings</a>
 					</li>
@@ -511,6 +653,9 @@
 						<a href="_packages_.html#packagedeploysettingsresolver" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<wbr>Resolver</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_packages_.html#packagefastfilecheckflagresolver" class="tsd-kind-icon">Package<wbr>Fast<wbr>File<wbr>Check<wbr>Flag<wbr>Resolver</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_packages_.html#packagefilelistresolver" class="tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -524,6 +669,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_packages_.html#findtargetsforfileofpackage" class="tsd-kind-icon">find<wbr>Targets<wbr>For<wbr>File<wbr>OfPackage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_packages_.html#getfastfilecheckflag" class="tsd-kind-icon">get<wbr>Fast<wbr>File<wbr>Check<wbr>Flag</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_packages_.html#getpackagename" class="tsd-kind-icon">get<wbr>Package<wbr>Name</a>

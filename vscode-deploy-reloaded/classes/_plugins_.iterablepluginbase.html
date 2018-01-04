@@ -169,6 +169,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_plugins_.iterablepluginbase.html#downloadfiles" class="tsd-kind-icon">download<wbr>Files</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.iterablepluginbase.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.iterablepluginbase.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_plugins_.iterablepluginbase.html#getexistingsettingpath" class="tsd-kind-icon">get<wbr>Existing<wbr>Setting<wbr>Path</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_plugins_.iterablepluginbase.html#getfirsttarget" class="tsd-kind-icon">get<wbr>First<wbr>Target</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.iterablepluginbase.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_plugins_.iterablepluginbase.html#gettargets" class="tsd-kind-icon">get<wbr>Targets</a></li>
@@ -382,7 +383,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#candelete">canDelete</a></p>
 								<ul>
-									<li>Defined in plugins.ts:1049</li>
+									<li>Defined in plugins.ts:1069</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -409,7 +410,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#candownload">canDownload</a></p>
 								<ul>
-									<li>Defined in plugins.ts:1054</li>
+									<li>Defined in plugins.ts:1074</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -436,7 +437,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#canlist">canList</a></p>
 								<ul>
-									<li>Defined in plugins.ts:1059</li>
+									<li>Defined in plugins.ts:1079</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -614,7 +615,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#deletefiles">deleteFiles</a></p>
 								<ul>
-									<li>Defined in plugins.ts:1064</li>
+									<li>Defined in plugins.ts:1084</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -668,7 +669,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#downloadfiles">downloadFiles</a></p>
 								<ul>
-									<li>Defined in plugins.ts:1112</li>
+									<li>Defined in plugins.ts:1138</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -736,6 +737,45 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getexistingsettingpath" class="tsd-anchor"></a>
+					<h3>get<wbr>Existing<wbr>Setting<wbr>Path</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Existing<wbr>Setting<wbr>Path<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#getexistingsettingpath">getExistingSettingPath</a></p>
+								<ul>
+									<li>Defined in plugins.ts:689</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns an existing path for a target, based on the settings folder.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The underlying target.</p>
+									</div>
+								</li>
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The existing, full normalized path or (false) if path does not exist.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="getfirsttarget" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>First<wbr>Target</h3>
@@ -746,7 +786,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins.ts:1159</li>
+									<li>Defined in plugins.ts:1191</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -792,7 +832,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins.ts:1179</li>
+									<li>Defined in plugins.ts:1211</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -833,7 +873,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in plugins.ts:682</li>
+									<li>Defined in plugins.ts:702</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -856,7 +896,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins.ts:1255</li>
+									<li>Defined in plugins.ts:1287</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -925,7 +965,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#listdirectory">listDirectory</a></p>
 								<ul>
-									<li>Defined in plugins.ts:1323</li>
+									<li>Defined in plugins.ts:1355</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1006,7 +1046,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins.ts:1390</li>
+									<li>Defined in plugins.ts:1422</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1137,7 +1177,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins.ts:1221</li>
+									<li>Defined in plugins.ts:1253</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1172,7 +1212,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins.ts:1236</li>
+									<li>Defined in plugins.ts:1268</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1219,7 +1259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in plugins.ts:1250</li>
+									<li>Defined in plugins.ts:1282</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1380,7 +1420,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#replacewithvalues">replaceWithValues</a></p>
 								<ul>
-									<li>Defined in plugins.ts:699</li>
+									<li>Defined in plugins.ts:719</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1448,7 +1488,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#t">t</a></p>
 								<ul>
-									<li>Defined in plugins.ts:725</li>
+									<li>Defined in plugins.ts:745</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1490,7 +1530,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#uploadfiles">uploadFiles</a></p>
 								<ul>
-									<li>Defined in plugins.ts:1400</li>
+									<li>Defined in plugins.ts:1432</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1639,6 +1679,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_plugins_.iterablepluginbase.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_plugins_.iterablepluginbase.html#getexistingsettingpath" class="tsd-kind-icon">get<wbr>Existing<wbr>Setting<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_plugins_.iterablepluginbase.html#getfirsttarget" class="tsd-kind-icon">get<wbr>First<wbr>Target</a>

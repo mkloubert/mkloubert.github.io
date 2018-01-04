@@ -124,6 +124,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_sftp_.sftptarget.html#password" class="tsd-kind-icon">password</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftptarget.html#platforms" class="tsd-kind-icon">platforms</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_sftp_.sftptarget.html#port" class="tsd-kind-icon">port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftptarget.html#prepare" class="tsd-kind-icon">prepare</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_sftp_.sftptarget.html#privatekey" class="tsd-kind-icon">private<wbr>Key</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_sftp_.sftptarget.html#privatekeypassphrase" class="tsd-kind-icon">private<wbr>Key<wbr>Passphrase</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftptarget.html#pulled" class="tsd-kind-icon">pulled</a></li>
@@ -272,7 +273,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#beforedelete">beforeDelete</a></p>
 						<ul>
-							<li>Defined in targets.ts:91</li>
+							<li>Defined in targets.ts:132</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -289,7 +290,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#beforedeploy">beforeDeploy</a></p>
 						<ul>
-							<li>Defined in targets.ts:96</li>
+							<li>Defined in targets.ts:137</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -306,7 +307,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#beforepull">beforePull</a></p>
 						<ul>
-							<li>Defined in targets.ts:101</li>
+							<li>Defined in targets.ts:142</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -338,7 +339,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#deleted">deleted</a></p>
 						<ul>
-							<li>Defined in targets.ts:106</li>
+							<li>Defined in targets.ts:147</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -355,7 +356,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#deployed">deployed</a></p>
 						<ul>
-							<li>Defined in targets.ts:111</li>
+							<li>Defined in targets.ts:152</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -372,7 +373,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#description">description</a></p>
 						<ul>
-							<li>Defined in targets.ts:115</li>
+							<li>Defined in targets.ts:156</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -465,7 +466,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#hideif">hideIf</a></p>
 						<ul>
-							<li>Defined in targets.ts:120</li>
+							<li>Defined in targets.ts:161</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -513,7 +514,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#mappings">mappings</a></p>
 						<ul>
-							<li>Defined in targets.ts:124</li>
+							<li>Defined in targets.ts:165</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -599,6 +600,23 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="prepare" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prepare</h3>
+					<div class="tsd-signature tsd-kind-icon">prepare<span class="tsd-signature-symbol">:</span> <a href="../modules/_targets_.html#preparetargetoperationvalue" class="tsd-signature-type">PrepareTargetOperationValue</a><span class="tsd-signature-symbol"> | </span><a href="../modules/_targets_.html#preparetargetoperationvalue" class="tsd-signature-type">PrepareTargetOperationValue</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#prepare">prepare</a></p>
+						<ul>
+							<li>Defined in targets.ts:170</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Operations which are executed even before the operations of
+							&#39;beforeDeploy&#39; and even if no file is going to be handled.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="privatekey" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> private<wbr>Key</h3>
@@ -636,7 +654,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#pulled">pulled</a></p>
 						<ul>
-							<li>Defined in targets.ts:129</li>
+							<li>Defined in targets.ts:175</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -668,7 +686,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#showif">showIf</a></p>
 						<ul>
-							<li>Defined in targets.ts:134</li>
+							<li>Defined in targets.ts:180</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -732,7 +750,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.target.html">Target</a>.<a href="_targets_.target.html#type">type</a></p>
 						<ul>
-							<li>Defined in targets.ts:138</li>
+							<li>Defined in targets.ts:184</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -865,6 +883,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_plugins_sftp_.sftptarget.html#port" class="tsd-kind-icon">port</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_plugins_sftp_.sftptarget.html#prepare" class="tsd-kind-icon">prepare</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_plugins_sftp_.sftptarget.html#privatekey" class="tsd-kind-icon">private<wbr>Key</a>

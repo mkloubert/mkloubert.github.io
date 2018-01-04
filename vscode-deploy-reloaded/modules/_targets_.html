@@ -79,7 +79,9 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_targets_.executepreparetargetoperationoptions.html" class="tsd-kind-icon">Execute<wbr>Prepare<wbr>Target<wbr>Operation<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_targets_.executetargetoperationoptions.html" class="tsd-kind-icon">Execute<wbr>Target<wbr>Operation<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_targets_.preparetargetoperation.html" class="tsd-kind-icon">Prepare<wbr>Target<wbr>Operation</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_targets_.target.html" class="tsd-kind-icon">Target</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_targets_.targetoperation.html" class="tsd-kind-icon">Target<wbr>Operation</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_targets_.targetoperationexecutioncontext.html" class="tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Context</a></li>
@@ -90,6 +92,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_targets_.html#preparetargetoperationvalue" class="tsd-kind-icon">Prepare<wbr>Target<wbr>Operation<wbr>Value</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_targets_.html#targetoperationexecutionresult" class="tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_targets_.html#targetoperationexecutor" class="tsd-kind-icon">Target<wbr>Operation<wbr>Executor</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_targets_.html#targetoperationvalue" class="tsd-kind-icon">Target<wbr>Operation<wbr>Value</a></li>
@@ -106,9 +109,11 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#executepreparetargetoperations" class="tsd-kind-icon">execute<wbr>Prepare<wbr>Target<wbr>Operations</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#executetargetoperations" class="tsd-kind-icon">execute<wbr>Target<wbr>Operations</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#getmappedtargetfilepath" class="tsd-kind-icon">get<wbr>Mapped<wbr>Target<wbr>File<wbr>Path</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#gettargetname" class="tsd-kind-icon">get<wbr>Target<wbr>Name</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="_targets_.html#gettargetoperationsafe" class="tsd-kind-icon">get<wbr>Target<wbr>Operation<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#gettargetsbyname" class="tsd-kind-icon">get<wbr>Targets<wbr>ByName</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#getzipfilename" class="tsd-kind-icon">get<wbr>Zip<wbr>File<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#isvisibleforpackage" class="tsd-kind-icon">is<wbr>Visible<wbr>For<wbr>Package</a></li>
@@ -126,12 +131,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="preparetargetoperationvalue" class="tsd-anchor"></a>
+					<h3>Prepare<wbr>Target<wbr>Operation<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">Prepare<wbr>Target<wbr>Operation<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_targets_.preparetargetoperation.html" class="tsd-signature-type">PrepareTargetOperation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:115</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A possible (prepare) target operation (setting) value.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="targetoperationexecutionresult" class="tsd-anchor"></a>
 					<h3>Target<wbr>Operation<wbr>Execution<wbr>Result</h3>
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:237</li>
+							<li>Defined in targets.ts:287</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -146,7 +166,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:231</li>
+							<li>Defined in targets.ts:281</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,7 +213,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:252</li>
+							<li>Defined in targets.ts:302</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -211,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"open"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;open&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:270</li>
+							<li>Defined in targets.ts:320</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -226,7 +246,7 @@
 					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>TARGET_<wbr>USAGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vscdrLastExecutedTargetActions"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vscdrLastExecutedTargetActions&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:265</li>
+							<li>Defined in targets.ts:315</li>
 						</ul>
 					</aside>
 				</section>
@@ -236,7 +256,7 @@
 					<div class="tsd-signature tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/^(vscode\-ws)(.*)(_)([0-9]{8})(\-)([0-9]{6})(\.zip)$/i</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:275</li>
+							<li>Defined in targets.ts:325</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -249,6 +269,38 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="executepreparetargetoperations" class="tsd-anchor"></a>
+					<h3>execute<wbr>Prepare<wbr>Target<wbr>Operations</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">execute<wbr>Prepare<wbr>Target<wbr>Operations<span class="tsd-signature-symbol">(</span>opts<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.executepreparetargetoperationoptions.html" class="tsd-signature-type">ExecutePrepareTargetOperationOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in targets.ts:335</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Executes &#39;prepare&#39; operations for a target.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>opts: <a href="../interfaces/_targets_.executepreparetargetoperationoptions.html" class="tsd-signature-type">ExecutePrepareTargetOperationOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The options.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the value, that indicates if whole operation has been cancelled (false) or not (true).</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="executetargetoperations" class="tsd-anchor"></a>
 					<h3>execute<wbr>Target<wbr>Operations</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -258,7 +310,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:329</li>
+									<li>Defined in targets.ts:412</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -276,7 +328,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Operation has been cancelled (false) or not (true).</p>
+							<p>The promise with the value, that indicates if whole operation has been cancelled (false) or not (true).</p>
 						</li>
 					</ul>
 				</section>
@@ -290,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:288</li>
+									<li>Defined in targets.ts:577</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -337,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:501</li>
+									<li>Defined in targets.ts:618</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -359,6 +411,35 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+					<a name="gettargetoperationsafe" class="tsd-anchor"></a>
+					<h3>get<wbr>Target<wbr>Operation<wbr>Safe</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Target<wbr>Operation<wbr>Safe&lt;TOperation&gt;<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TOperation</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in targets.ts:633</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TOperation<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <a href="../interfaces/_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TOperation</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="gettargetsbyname" class="tsd-anchor"></a>
 					<h3>get<wbr>Targets<wbr>ByName</h3>
@@ -369,7 +450,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:524</li>
+									<li>Defined in targets.ts:659</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -410,7 +491,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:573</li>
+									<li>Defined in targets.ts:708</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -445,7 +526,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:614</li>
+									<li>Defined in targets.ts:749</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -483,7 +564,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:657</li>
+									<li>Defined in targets.ts:792</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -527,7 +608,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:709</li>
+									<li>Defined in targets.ts:844</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -559,7 +640,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:725</li>
+									<li>Defined in targets.ts:860</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -590,7 +671,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:743</li>
+									<li>Defined in targets.ts:878</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -632,7 +713,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:802</li>
+									<li>Defined in targets.ts:937</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -674,7 +755,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:832</li>
+									<li>Defined in targets.ts:967</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -733,7 +814,13 @@
 						<a href="../enums/_targets_.targetoperationevent.html" class="tsd-kind-icon">Target<wbr>Operation<wbr>Event</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_targets_.executepreparetargetoperationoptions.html" class="tsd-kind-icon">Execute<wbr>Prepare<wbr>Target<wbr>Operation<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_targets_.executetargetoperationoptions.html" class="tsd-kind-icon">Execute<wbr>Target<wbr>Operation<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_targets_.preparetargetoperation.html" class="tsd-kind-icon">Prepare<wbr>Target<wbr>Operation</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_targets_.target.html" class="tsd-kind-icon">Target</a>
@@ -749,6 +836,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_targets_.targetprovider.html" class="tsd-kind-icon">Target<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_targets_.html#preparetargetoperationvalue" class="tsd-kind-icon">Prepare<wbr>Target<wbr>Operation<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_targets_.html#targetoperationexecutionresult" class="tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Result</a>
@@ -769,6 +859,9 @@
 						<a href="_targets_.html#regex_zip_filename" class="tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_targets_.html#executepreparetargetoperations" class="tsd-kind-icon">execute<wbr>Prepare<wbr>Target<wbr>Operations</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#executetargetoperations" class="tsd-kind-icon">execute<wbr>Target<wbr>Operations</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -776,6 +869,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#gettargetname" class="tsd-kind-icon">get<wbr>Target<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="_targets_.html#gettargetoperationsafe" class="tsd-kind-icon">get<wbr>Target<wbr>Operation<wbr>Safe</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#gettargetsbyname" class="tsd-kind-icon">get<wbr>Targets<wbr>ByName</a>

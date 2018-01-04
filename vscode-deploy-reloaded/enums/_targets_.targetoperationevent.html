@@ -89,6 +89,7 @@
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_targets_.targetoperationevent.html#beforedelete" class="tsd-kind-icon">Before<wbr>Delete</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_targets_.targetoperationevent.html#beforedeploy" class="tsd-kind-icon">Before<wbr>Deploy</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_targets_.targetoperationevent.html#beforepull" class="tsd-kind-icon">Before<wbr>Pull</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_targets_.targetoperationevent.html#prepare" class="tsd-kind-icon">Prepare</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,7 +103,7 @@
 					<div class="tsd-signature tsd-kind-icon">After<wbr>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:183</li>
+							<li>Defined in targets.ts:229</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -117,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">After<wbr>Deployed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:167</li>
+							<li>Defined in targets.ts:213</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -132,7 +133,7 @@
 					<div class="tsd-signature tsd-kind-icon">After<wbr>Pulled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:175</li>
+							<li>Defined in targets.ts:221</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -147,7 +148,7 @@
 					<div class="tsd-signature tsd-kind-icon">Before<wbr>Delete<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:179</li>
+							<li>Defined in targets.ts:225</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -162,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">Before<wbr>Deploy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:163</li>
+							<li>Defined in targets.ts:209</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -177,12 +178,27 @@
 					<div class="tsd-signature tsd-kind-icon">Before<wbr>Pull<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:171</li>
+							<li>Defined in targets.ts:217</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Before pull</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="prepare" class="tsd-anchor"></a>
+					<h3>Prepare</h3>
+					<div class="tsd-signature tsd-kind-icon">Prepare<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;6</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:233</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Prepare</p>
 						</div>
 					</div>
 				</section>
@@ -224,12 +240,21 @@
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="_targets_.targetoperationevent.html#beforepull" class="tsd-kind-icon">Before<wbr>Pull</a>
 							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_targets_.targetoperationevent.html#prepare" class="tsd-kind-icon">Prepare</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_targets_.executepreparetargetoperationoptions.html" class="tsd-kind-icon">Execute<wbr>Prepare<wbr>Target<wbr>Operation<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_targets_.executetargetoperationoptions.html" class="tsd-kind-icon">Execute<wbr>Target<wbr>Operation<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_targets_.preparetargetoperation.html" class="tsd-kind-icon">Prepare<wbr>Target<wbr>Operation</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_targets_.target.html" class="tsd-kind-icon">Target</a>
@@ -245,6 +270,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_targets_.targetprovider.html" class="tsd-kind-icon">Target<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_targets_.html#preparetargetoperationvalue" class="tsd-kind-icon">Prepare<wbr>Target<wbr>Operation<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_targets_.html#targetoperationexecutionresult" class="tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Result</a>
@@ -265,6 +293,9 @@
 						<a href="../modules/_targets_.html#regex_zip_filename" class="tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_targets_.html#executepreparetargetoperations" class="tsd-kind-icon">execute<wbr>Prepare<wbr>Target<wbr>Operations</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_targets_.html#executetargetoperations" class="tsd-kind-icon">execute<wbr>Target<wbr>Operations</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -272,6 +303,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_targets_.html#gettargetname" class="tsd-kind-icon">get<wbr>Target<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../modules/_targets_.html#gettargetoperationsafe" class="tsd-kind-icon">get<wbr>Target<wbr>Operation<wbr>Safe</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_targets_.html#gettargetsbyname" class="tsd-kind-icon">get<wbr>Targets<wbr>ByName</a>

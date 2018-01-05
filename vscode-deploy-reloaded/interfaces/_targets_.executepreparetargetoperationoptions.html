@@ -93,6 +93,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.executepreparetargetoperationoptions.html#deployoperation" class="tsd-kind-icon">deploy<wbr>Operation</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.executepreparetargetoperationoptions.html#files" class="tsd-kind-icon">files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.executepreparetargetoperationoptions.html#onreloadfilelist" class="tsd-kind-icon">on<wbr>Reload<wbr>File<wbr>List</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_.executepreparetargetoperationoptions.html#target" class="tsd-kind-icon">target</a></li>
 							</ul>
 						</section>
@@ -132,12 +133,51 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onreloadfilelist" class="tsd-anchor"></a>
+					<h3>on<wbr>Reload<wbr>File<wbr>List</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Reload<wbr>File<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets.ts:59</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Callback that indicates the client to reload the file list.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>operation<span class="tsd-signature-symbol">: </span><a href="_targets_.preparetargetoperation.html" class="tsd-signature-type">PrepareTargetOperation</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>operation: <a href="_targets_.preparetargetoperation.html" class="tsd-signature-type">PrepareTargetOperation</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="target" class="tsd-anchor"></a>
 					<h3>target</h3>
 					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <a href="_targets_.target.html" class="tsd-signature-type">Target</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:59</li>
+							<li>Defined in targets.ts:63</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,6 +214,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_targets_.executepreparetargetoperationoptions.html#files" class="tsd-kind-icon">files</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_.executepreparetargetoperationoptions.html#onreloadfilelist" class="tsd-kind-icon">on<wbr>Reload<wbr>File<wbr>List</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_targets_.executepreparetargetoperationoptions.html#target" class="tsd-kind-icon">target</a>

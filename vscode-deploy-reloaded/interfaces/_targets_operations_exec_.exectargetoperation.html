@@ -100,8 +100,11 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_exec_.exectargetoperation.html#cwd" class="tsd-kind-icon">cwd</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_exec_.exectargetoperation.html#if" class="tsd-kind-icon">if</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_exec_.exectargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_exec_.exectargetoperation.html#maxbuffer" class="tsd-kind-icon">max<wbr>Buffer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_exec_.exectargetoperation.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_exec_.exectargetoperation.html#noplaceholders" class="tsd-kind-icon">no<wbr>Place<wbr>Holders</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_exec_.exectargetoperation.html#printoutput" class="tsd-kind-icon">print<wbr>Output</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_targets_operations_exec_.exectargetoperation.html#timeout" class="tsd-kind-icon">timeout</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_targets_operations_exec_.exectargetoperation.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
@@ -116,7 +119,7 @@
 					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets/operations/exec.ts:31</li>
+							<li>Defined in targets/operations/exec.ts:32</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -131,7 +134,7 @@
 					<div class="tsd-signature tsd-kind-icon">cwd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets/operations/exec.ts:35</li>
+							<li>Defined in targets/operations/exec.ts:36</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -163,12 +166,27 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.targetoperation.html">TargetOperation</a>.<a href="_targets_.targetoperation.html#ignoreiffail">ignoreIfFail</a></p>
 						<ul>
-							<li>Defined in targets.ts:195</li>
+							<li>Defined in targets.ts:203</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Continue when target operation fails or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="maxbuffer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Buffer</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Buffer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/exec.ts:40</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Largest amount of data in bytes allowed on stdout or stderr.</p>
 						</div>
 					</div>
 				</section>
@@ -179,7 +197,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.withoptionalname.html">WithOptionalName</a>.<a href="_contracts_.withoptionalname.html#name">name</a></p>
 						<ul>
-							<li>Defined in contracts.ts:559</li>
+							<li>Defined in contracts.ts:566</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -194,12 +212,42 @@
 					<div class="tsd-signature tsd-kind-icon">no<wbr>Place<wbr>Holders<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets/operations/exec.ts:39</li>
+							<li>Defined in targets/operations/exec.ts:44</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Do not use placeholders in &#39;command&#39; property.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="printoutput" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> print<wbr>Output</h3>
+					<div class="tsd-signature tsd-kind-icon">print<wbr>Output<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/exec.ts:48</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Print the result from stdout to output channel or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="timeout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> timeout</h3>
+					<div class="tsd-signature tsd-kind-icon">timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in targets/operations/exec.ts:52</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Execution timeout.</p>
 						</div>
 					</div>
 				</section>
@@ -210,7 +258,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_targets_.targetoperation.html">TargetOperation</a>.<a href="_targets_.targetoperation.html#type">type</a></p>
 						<ul>
-							<li>Defined in targets.ts:199</li>
+							<li>Defined in targets.ts:207</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -251,11 +299,20 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_targets_operations_exec_.exectargetoperation.html#ignoreiffail" class="tsd-kind-icon">ignore<wbr>IfFail</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_exec_.exectargetoperation.html#maxbuffer" class="tsd-kind-icon">max<wbr>Buffer</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_targets_operations_exec_.exectargetoperation.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_targets_operations_exec_.exectargetoperation.html#noplaceholders" class="tsd-kind-icon">no<wbr>Place<wbr>Holders</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_exec_.exectargetoperation.html#printoutput" class="tsd-kind-icon">print<wbr>Output</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_targets_operations_exec_.exectargetoperation.html#timeout" class="tsd-kind-icon">timeout</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_targets_operations_exec_.exectargetoperation.html#type" class="tsd-kind-icon">type</a>

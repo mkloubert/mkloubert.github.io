@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WithFastFileCheckSettings | vscode-deploy-reloaded</title>
+	<title>WaitWhileOptions | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_packages_.html">&quot;packages&quot;</a>
+					<a href="../modules/_helpers_.html">&quot;helpers&quot;</a>
 				</li>
 				<li>
-					<a href="_packages_.withfastfilechecksettings.html">WithFastFileCheckSettings</a>
+					<a href="_helpers_.waitwhileoptions.html">WaitWhileOptions</a>
 				</li>
 			</ul>
-			<h1>Interface WithFastFileCheckSettings</h1>
+			<h1>Interface WaitWhileOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Object that contains settings for &quot;fast file checks&quot;.</p>
+						<p>Additional options for &#39;waitWhile()&#39; function.</p>
 					</div>
 				</div>
 			</section>
@@ -80,15 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">WithFastFileCheckSettings</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_packages_.package.html" class="tsd-signature-type">Package</a>
-							</li>
-							<li>
-								<a href="_contracts_.configuration.html" class="tsd-signature-type">Configuration</a>
-							</li>
-						</ul>
+						<span class="target">WaitWhileOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -99,10 +91,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_packages_.withfastfilechecksettings.html#fastcheckonchange" class="tsd-kind-icon">fast<wbr>Check<wbr>OnChange</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_packages_.withfastfilechecksettings.html#fastcheckonsave" class="tsd-kind-icon">fast<wbr>Check<wbr>OnSave</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_packages_.withfastfilechecksettings.html#fastcheckonsync" class="tsd-kind-icon">fast<wbr>Check<wbr>OnSync</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_packages_.withfastfilechecksettings.html#fastfilecheck" class="tsd-kind-icon">fast<wbr>File<wbr>Check</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_.waitwhileoptions.html#timeuntilnextcheck" class="tsd-kind-icon">time<wbr>Until<wbr>Next<wbr>Check</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_helpers_.waitwhileoptions.html#timeout" class="tsd-kind-icon">timeout</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,62 +101,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="fastcheckonchange" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> fast<wbr>Check<wbr>OnChange</h3>
-					<div class="tsd-signature tsd-kind-icon">fast<wbr>Check<wbr>OnChange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="timeuntilnextcheck" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> time<wbr>Until<wbr>Next<wbr>Check</h3>
+					<div class="tsd-signature tsd-kind-icon">time<wbr>Until<wbr>Next<wbr>Check<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/packages.ts#L136">packages.ts:136</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/helpers.ts#L180">helpers.ts:180</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Indicates if &#39;fast file check&#39; should be used for &#39;deploy on change&#39; in that package.</p>
+							<p>The optional time, in , to wait until next check.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="fastcheckonsave" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> fast<wbr>Check<wbr>OnSave</h3>
-					<div class="tsd-signature tsd-kind-icon">fast<wbr>Check<wbr>OnSave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="timeout" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> timeout</h3>
+					<div class="tsd-signature tsd-kind-icon">timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/packages.ts#L140">packages.ts:140</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/helpers.ts#L176">helpers.ts:176</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Indicates if &#39;fast file check&#39; should be used for &#39;deploy on save&#39; in that package.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="fastcheckonsync" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> fast<wbr>Check<wbr>OnSync</h3>
-					<div class="tsd-signature tsd-kind-icon">fast<wbr>Check<wbr>OnSync<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/packages.ts#L144">packages.ts:144</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Indicates if &#39;fast file check&#39; should be used for &#39;sync when open&#39; in that package.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="fastfilecheck" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> fast<wbr>File<wbr>Check</h3>
-					<div class="tsd-signature tsd-kind-icon">fast<wbr>File<wbr>Check<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/packages.ts#L148">packages.ts:148</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Default value for other, not-set &quot;fast file check&quot; settings.</p>
+							<p>A timeout, in milliseconds.</p>
 						</div>
 					</div>
 				</section>
@@ -179,84 +139,27 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_packages_.html">"packages"</a>
+						<a href="../modules/_helpers_.html">"helpers"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_packages_.package.html" class="tsd-kind-icon">Package</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_packages_.packagebutton.html" class="tsd-kind-icon">Package<wbr>Button</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_packages_.packagedeployfilefilter.html" class="tsd-kind-icon">Package<wbr>Deploy<wbr>File<wbr>Filter</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_packages_.syncwhenopensetting.html" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>Setting</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_packages_.withfastfilechecksettings.html" class="tsd-kind-icon">With<wbr>Fast<wbr>File<wbr>Check<wbr>Settings</a>
+						<a href="_helpers_.waitwhileoptions.html" class="tsd-kind-icon">Wait<wbr>While<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_packages_.withfastfilechecksettings.html#fastcheckonchange" class="tsd-kind-icon">fast<wbr>Check<wbr>OnChange</a>
+								<a href="_helpers_.waitwhileoptions.html#timeuntilnextcheck" class="tsd-kind-icon">time<wbr>Until<wbr>Next<wbr>Check</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_packages_.withfastfilechecksettings.html#fastcheckonsave" class="tsd-kind-icon">fast<wbr>Check<wbr>OnSave</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_packages_.withfastfilechecksettings.html#fastcheckonsync" class="tsd-kind-icon">fast<wbr>Check<wbr>OnSync</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_packages_.withfastfilechecksettings.html#fastfilecheck" class="tsd-kind-icon">fast<wbr>File<wbr>Check</a>
+								<a href="_helpers_.waitwhileoptions.html#timeout" class="tsd-kind-icon">timeout</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_packages_.html#packagedeploysettings" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_packages_.html#packagedeploysettingsresolver" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<wbr>Resolver</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_packages_.html#packagefastfilecheckflagresolver" class="tsd-kind-icon">Package<wbr>Fast<wbr>File<wbr>Check<wbr>Flag<wbr>Resolver</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_packages_.html#packagefilelistresolver" class="tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_packages_.html#packagefilelistresolverresult" class="tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_packages_.html#key_package_usage" class="tsd-kind-icon">KEY_<wbr>PACKAGE_<wbr>USAGE</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_packages_.html#autodeployfile" class="tsd-kind-icon">auto<wbr>Deploy<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_packages_.html#findtargetsforfileofpackage" class="tsd-kind-icon">find<wbr>Targets<wbr>For<wbr>File<wbr>OfPackage</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_packages_.html#getfastfilecheckflag" class="tsd-kind-icon">get<wbr>Fast<wbr>File<wbr>Check<wbr>Flag</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_packages_.html#getpackagename" class="tsd-kind-icon">get<wbr>Package<wbr>Name</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_packages_.html#gettargetsofpackage" class="tsd-kind-icon">get<wbr>Targets<wbr>OfPackage</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_packages_.html#resetpackageusage" class="tsd-kind-icon">reset<wbr>Package<wbr>Usage</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_packages_.html#showpackagequickpick" class="tsd-kind-icon">show<wbr>Package<wbr>Quick<wbr>Pick</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

@@ -102,6 +102,8 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_targets_.html#default_operation_type" class="tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_targets_.html#key_targets_in_progress" class="tsd-kind-icon">KEY_<wbr>TARGETS_<wbr>IN_<wbr>PROGRESS</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_targets_.html#key_targets_state_storage" class="tsd-kind-icon">KEY_<wbr>TARGETS_<wbr>STATE_<wbr>STORAGE</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_targets_.html#key_target_usage" class="tsd-kind-icon">KEY_<wbr>TARGET_<wbr>USAGE</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_targets_.html#regex_zip_filename" class="tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME</a></li>
 							</ul>
@@ -109,19 +111,25 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#createtargetsessionvalue" class="tsd-kind-icon">create<wbr>Target<wbr>Session<wbr>Value</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#executepreparetargetoperations" class="tsd-kind-icon">execute<wbr>Prepare<wbr>Target<wbr>Operations</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#executetargetoperations" class="tsd-kind-icon">execute<wbr>Target<wbr>Operations</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#getmappedtargetfilepath" class="tsd-kind-icon">get<wbr>Mapped<wbr>Target<wbr>File<wbr>Path</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#gettargetidhash" class="tsd-kind-icon">get<wbr>Target<wbr>IdHash</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#gettargetname" class="tsd-kind-icon">get<wbr>Target<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="_targets_.html#gettargetoperationsafe" class="tsd-kind-icon">get<wbr>Target<wbr>Operation<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#gettargetsbyname" class="tsd-kind-icon">get<wbr>Targets<wbr>ByName</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#getzipfilename" class="tsd-kind-icon">get<wbr>Zip<wbr>File<wbr>Name</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#istargetinprogress" class="tsd-kind-icon">is<wbr>Target<wbr>InProgress</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#isvisibleforpackage" class="tsd-kind-icon">is<wbr>Visible<wbr>For<wbr>Package</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_targets_.html#mapfilesfortarget" class="tsd-kind-icon">map<wbr>Files<wbr>For<wbr>Target</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#marktargetasinprogress" class="tsd-kind-icon">mark<wbr>Target<wbr>AsIn<wbr>Progress</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#normalizetargettype" class="tsd-kind-icon">normalize<wbr>Target<wbr>Type</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#resettargetusage" class="tsd-kind-icon">reset<wbr>Target<wbr>Usage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#showtargetquickpick" class="tsd-kind-icon">show<wbr>Target<wbr>Quick<wbr>Pick</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#throwonrecurrence" class="tsd-kind-icon">throw<wbr>OnRecurrence</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#unmarktargetasinprogress" class="tsd-kind-icon">unmark<wbr>Target<wbr>AsIn<wbr>Progress</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_.html#waitforothertargets" class="tsd-kind-icon">wait<wbr>For<wbr>Other<wbr>Targets</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_targets_.html#wraponbeforefilecallbackfortarget" class="tsd-kind-icon">wrap<wbr>OnBefore<wbr>File<wbr>Callback<wbr>For<wbr>Target</a></li>
 							</ul>
 						</section>
@@ -136,7 +144,7 @@
 					<div class="tsd-signature tsd-kind-icon">Prepare<wbr>Target<wbr>Operation<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_targets_.preparetargetoperation.html" class="tsd-signature-type">PrepareTargetOperation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:123</li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L124">targets.ts:124</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -151,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Execution<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:295</li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L296">targets.ts:296</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -166,7 +174,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:289</li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L290">targets.ts:290</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -213,7 +221,7 @@
 					<div class="tsd-signature tsd-kind-icon">Target<wbr>Operation<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_targets_.targetoperation.html" class="tsd-signature-type">TargetOperation</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:310</li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L311">targets.ts:311</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -231,12 +239,42 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"open"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;open&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:328</li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L327">targets.ts:327</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The default type or a target operation.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="key_targets_in_progress" class="tsd-anchor"></a>
+					<h3>KEY_<wbr>TARGETS_<wbr>IN_<wbr>PROGRESS</h3>
+					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>TARGETS_<wbr>IN_<wbr>PROGRESS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"targets_in_progress"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;targets_in_progress&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L339">targets.ts:339</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A storage key where to store data of targets in progress.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="key_targets_state_storage" class="tsd-anchor"></a>
+					<h3>KEY_<wbr>TARGETS_<wbr>STATE_<wbr>STORAGE</h3>
+					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>TARGETS_<wbr>STATE_<wbr>STORAGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"targets"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;targets&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L334">targets.ts:334</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Storage key for targets&#39; state object.</p>
 						</div>
 					</div>
 				</section>
@@ -246,7 +284,7 @@
 					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>TARGET_<wbr>USAGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vscdrLastExecutedTargetActions"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vscdrLastExecutedTargetActions&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:323</li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L329">targets.ts:329</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -256,7 +294,7 @@
 					<div class="tsd-signature tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/^(vscode\-ws)(.*)(_)([0-9]{8})(\-)([0-9]{6})(\.zip)$/i</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in targets.ts:333</li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L344">targets.ts:344</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -269,6 +307,38 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="createtargetsessionvalue" class="tsd-anchor"></a>
+					<h3>create<wbr>Target<wbr>Session<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Target<wbr>Session<wbr>Value<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">symbol</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L354">targets.ts:354</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a unique session value for a target.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">symbol</span></h4>
+							<p>The session value.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="executepreparetargetoperations" class="tsd-anchor"></a>
 					<h3>execute<wbr>Prepare<wbr>Target<wbr>Operations</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -278,7 +348,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:343</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L373">targets.ts:373</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -310,7 +380,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:426</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L456">targets.ts:456</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,7 +412,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:591</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L621">targets.ts:621</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -380,6 +450,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="gettargetidhash" class="tsd-anchor"></a>
+					<h3>get<wbr>Target<wbr>IdHash</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Target<wbr>IdHash<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L662">targets.ts:662</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the hash of a target&#39;s ID.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The hash of its ID.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="gettargetname" class="tsd-anchor"></a>
 					<h3>get<wbr>Target<wbr>Name</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -389,7 +491,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:632</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L679">targets.ts:679</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -421,7 +523,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:647</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L694">targets.ts:694</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -450,7 +552,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:673</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L720">targets.ts:720</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -491,7 +593,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:722</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L769">targets.ts:769</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -517,6 +619,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="istargetinprogress" class="tsd-anchor"></a>
+					<h3>is<wbr>Target<wbr>InProgress</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Target<wbr>InProgress<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L809">targets.ts:809</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if a target is marked as &#39;in progress&#39;.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target to check.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Is in progress or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="isvisibleforpackage" class="tsd-anchor"></a>
 					<h3>is<wbr>Visible<wbr>For<wbr>Package</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -526,7 +660,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:763</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L844">targets.ts:844</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -564,7 +698,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:806</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L887">targets.ts:887</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -599,6 +733,41 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="marktargetasinprogress" class="tsd-anchor"></a>
+					<h3>mark<wbr>Target<wbr>AsIn<wbr>Progress</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">mark<wbr>Target<wbr>AsIn<wbr>Progress<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, valueToSave<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L940">targets.ts:940</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Mark a target as &#39;in progress&#39;.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target to mark.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> valueToSave: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Has been marked or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="normalizetargettype" class="tsd-anchor"></a>
 					<h3>normalize<wbr>Target<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -608,7 +777,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:858</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L977">targets.ts:977</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -640,7 +809,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:874</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L993">targets.ts:993</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -671,7 +840,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:892</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L1011">targets.ts:1011</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -713,7 +882,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:951</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L1068">targets.ts:1068</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -745,6 +914,76 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="unmarktargetasinprogress" class="tsd-anchor"></a>
+					<h3>unmark<wbr>Target<wbr>AsIn<wbr>Progress</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">unmark<wbr>Target<wbr>AsIn<wbr>Progress<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, valueToCheck<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L1096">targets.ts:1096</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Un-Mark a target as &#39;in progress&#39;.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target to un-mark.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> valueToCheck: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Has been un-marked or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="waitforothertargets" class="tsd-anchor"></a>
+					<h3>wait<wbr>For<wbr>Other<wbr>Targets</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">wait<wbr>For<wbr>Other<wbr>Targets<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, btn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">vscode.StatusBarItem</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L1138">targets.ts:1138</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Waits until other tasks of a target have been finished.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The target.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> btn: <span class="tsd-signature-type">vscode.StatusBarItem</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the target session value.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="wraponbeforefilecallbackfortarget" class="tsd-anchor"></a>
 					<h3>wrap<wbr>OnBefore<wbr>File<wbr>Callback<wbr>For<wbr>Target</h3>
@@ -755,7 +994,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in targets.ts:981</li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/396c7c9/src/targets.ts#L1173">targets.ts:1173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -852,11 +1091,20 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_targets_.html#default_operation_type" class="tsd-kind-icon">DEFAULT_<wbr>OPERATION_<wbr>TYPE</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_targets_.html#key_targets_in_progress" class="tsd-kind-icon">KEY_<wbr>TARGETS_<wbr>IN_<wbr>PROGRESS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_targets_.html#key_targets_state_storage" class="tsd-kind-icon">KEY_<wbr>TARGETS_<wbr>STATE_<wbr>STORAGE</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_targets_.html#key_target_usage" class="tsd-kind-icon">KEY_<wbr>TARGET_<wbr>USAGE</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_targets_.html#regex_zip_filename" class="tsd-kind-icon">REGEX_<wbr>ZIP_<wbr>FILENAME</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_targets_.html#createtargetsessionvalue" class="tsd-kind-icon">create<wbr>Target<wbr>Session<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#executepreparetargetoperations" class="tsd-kind-icon">execute<wbr>Prepare<wbr>Target<wbr>Operations</a>
@@ -866,6 +1114,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#getmappedtargetfilepath" class="tsd-kind-icon">get<wbr>Mapped<wbr>Target<wbr>File<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_targets_.html#gettargetidhash" class="tsd-kind-icon">get<wbr>Target<wbr>IdHash</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#gettargetname" class="tsd-kind-icon">get<wbr>Target<wbr>Name</a>
@@ -880,10 +1131,16 @@
 						<a href="_targets_.html#getzipfilename" class="tsd-kind-icon">get<wbr>Zip<wbr>File<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_targets_.html#istargetinprogress" class="tsd-kind-icon">is<wbr>Target<wbr>InProgress</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#isvisibleforpackage" class="tsd-kind-icon">is<wbr>Visible<wbr>For<wbr>Package</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_targets_.html#mapfilesfortarget" class="tsd-kind-icon">map<wbr>Files<wbr>For<wbr>Target</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_targets_.html#marktargetasinprogress" class="tsd-kind-icon">mark<wbr>Target<wbr>AsIn<wbr>Progress</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#normalizetargettype" class="tsd-kind-icon">normalize<wbr>Target<wbr>Type</a>
@@ -896,6 +1153,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_targets_.html#throwonrecurrence" class="tsd-kind-icon">throw<wbr>OnRecurrence</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_targets_.html#unmarktargetasinprogress" class="tsd-kind-icon">unmark<wbr>Target<wbr>AsIn<wbr>Progress</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_targets_.html#waitforothertargets" class="tsd-kind-icon">wait<wbr>For<wbr>Other<wbr>Targets</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_targets_.html#wraponbeforefilecallbackfortarget" class="tsd-kind-icon">wrap<wbr>OnBefore<wbr>File<wbr>Callback<wbr>For<wbr>Target</a>

@@ -211,8 +211,7 @@
                 ],
                 <span class="hljs-attr">"exclude"</span>: [
                     <span class="hljs-string">"tests/**"</span>
-                ],
-                <span class="hljs-attr">"deployOnSave"</span>: <span class="hljs-literal">true</span>
+                ]
             }
         ]
     }
@@ -229,23 +228,20 @@
                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"sftp"</span>,
                 <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My SFTP folder"</span>,
                 <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A SFTP folder"</span>,
+
                 <span class="hljs-attr">"dir"</span>: <span class="hljs-string">"/my_package_files"</span>,
                 <span class="hljs-attr">"host"</span>: <span class="hljs-string">"localhost"</span>, <span class="hljs-attr">"port"</span>: <span class="hljs-number">22</span>,
                 <span class="hljs-attr">"user"</span>: <span class="hljs-string">"tester"</span>, <span class="hljs-attr">"password"</span>: <span class="hljs-string">"password"</span>,
 
-                <span class="hljs-attr">"checkBeforeDeploy"</span>: <span class="hljs-literal">true</span>,
-
-                <span class="hljs-attr">"mappings"</span>: [
-                    {
-                        <span class="hljs-attr">"source"</span>: <span class="hljs-string">"dir/of/files/that/should/be/mapped"</span>,
-                        <span class="hljs-attr">"target"</span>: <span class="hljs-string">"dir/on/target"</span>
-                    }
-                ]
+                <span class="hljs-attr">"mappings"</span>: {
+                    <span class="hljs-attr">"/dir/of/files/that/should/be/mapped/**/*"</span>: <span class="hljs-string">"dir/on/target"</span>
+                }
             },
             {
                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"ftp"</span>,
                 <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My FTP folder"</span>,
                 <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A FTP folder"</span>,
+
                 <span class="hljs-attr">"dir"</span>: <span class="hljs-string">"/my_package_files"</span>,
                 <span class="hljs-attr">"host"</span>: <span class="hljs-string">"localhost"</span>, <span class="hljs-attr">"port"</span>: <span class="hljs-number">21</span>,
                 <span class="hljs-attr">"user"</span>: <span class="hljs-string">"anonymous"</span>, <span class="hljs-attr">"password"</span>: <span class="hljs-string">""</span>,
@@ -269,24 +265,28 @@
                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"local"</span>,
                 <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My local folder"</span>,
                 <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A local folder"</span>,
+
                 <span class="hljs-attr">"dir"</span>: <span class="hljs-string">"E:/test/my_package_files"</span>
             },
             {
                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"local"</span>,
                 <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My network folder"</span>,
                 <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A SMB shared network folder"</span>,
+
                 <span class="hljs-attr">"dir"</span>: <span class="hljs-string">"\\\\MyServer\\my_package_files"</span>
             },
             {
                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"zip"</span>,
                 <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My ZIP file"</span>,
                 <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Create a ZIP file in a target directory"</span>,
+
                 <span class="hljs-attr">"target"</span>: <span class="hljs-string">"E:/test"</span>
             },
             {
                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"mail"</span>,
                 <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My mail server"</span>,
                 <span class="hljs-attr">"description"</span>: <span class="hljs-string">"An email deployer"</span>,
+
                 <span class="hljs-attr">"host"</span>: <span class="hljs-string">"smtp.example.com"</span>, <span class="hljs-attr">"port"</span>: <span class="hljs-number">465</span>,
                 <span class="hljs-attr">"secure"</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">"requireTLS"</span>: <span class="hljs-literal">true</span>,
                 <span class="hljs-attr">"user"</span>: <span class="hljs-string">"mkloubert@example.com"</span>, <span class="hljs-attr">"password"</span>: <span class="hljs-string">"P@assword123!"</span>,
@@ -297,6 +297,7 @@
                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"script"</span>,
                 <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My script"</span>,
                 <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A deploy script"</span>,
+
                 <span class="hljs-attr">"script"</span>: <span class="hljs-string">"E:/test/deploy.js"</span>,
                 <span class="hljs-attr">"options"</span>: {
                     <span class="hljs-attr">"TM"</span>: <span class="hljs-number">5979</span>,
@@ -307,12 +308,14 @@
                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"batch"</span>,
                 <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My Batch"</span>,
                 <span class="hljs-attr">"description"</span>: <span class="hljs-string">"A batch operation"</span>,
+
                 <span class="hljs-attr">"targets"</span>: [<span class="hljs-string">"My mail server"</span>, <span class="hljs-string">"My ZIP file"</span>]
             },
             {
                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"azureblob"</span>,
                 <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My Azure blob storage"</span>,
                 <span class="hljs-attr">"description"</span>: <span class="hljs-string">"An container in an Azure blob storage"</span>,
+
                 <span class="hljs-attr">"container"</span>: <span class="hljs-string">"my-container"</span>,
                 <span class="hljs-attr">"account"</span>: <span class="hljs-string">"my-storage-account"</span>,
                 <span class="hljs-attr">"accessKey"</span>: <span class="hljs-string">"&lt;ACCESS-KEY-FROM-AZURE-PORTAL&gt;"</span>
@@ -321,6 +324,7 @@
                 <span class="hljs-attr">"type"</span>: <span class="hljs-string">"s3bucket"</span>,
                 <span class="hljs-attr">"name"</span>: <span class="hljs-string">"My Amazon Bucket"</span>,
                 <span class="hljs-attr">"description"</span>: <span class="hljs-string">"An Amazon AWS S3 bucket"</span>,
+
                 <span class="hljs-attr">"bucket"</span>: <span class="hljs-string">"my-bucket"</span>
             },
             {

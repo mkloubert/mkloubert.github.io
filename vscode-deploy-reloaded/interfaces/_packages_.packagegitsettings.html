@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MySQLOptions | vscode-deploy-reloaded</title>
+	<title>PackageGitSettings | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_sql_mysql_.html">&quot;sql/mysql&quot;</a>
+					<a href="../modules/_packages_.html">&quot;packages&quot;</a>
 				</li>
 				<li>
-					<a href="_sql_mysql_.mysqloptions.html">MySQLOptions</a>
+					<a href="_packages_.packagegitsettings.html">PackageGitSettings</a>
 				</li>
 			</ul>
-			<h1>Interface MySQLOptions</h1>
+			<h1>Interface PackageGitSettings</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Options for a MySQL connection.</p>
+						<p>git settings for a package.</p>
 					</div>
 				</div>
 			</section>
@@ -80,10 +80,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_sql_.sqlconnectionoptions.html" class="tsd-signature-type">SqlConnectionOptions</a>
+						<a href="_contracts_.filefilter.html" class="tsd-signature-type">FileFilter</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">MySQLOptions</span>
+								<span class="target">PackageGitSettings</span>
 							</li>
 						</ul>
 					</li>
@@ -96,13 +96,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mysql_.mysqloptions.html#charset" class="tsd-kind-icon">charset</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mysql_.mysqloptions.html#database" class="tsd-kind-icon">database</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mysql_.mysqloptions.html#host" class="tsd-kind-icon">host</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mysql_.mysqloptions.html#password" class="tsd-kind-icon">password</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mysql_.mysqloptions.html#port" class="tsd-kind-icon">port</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mysql_.mysqloptions.html#rejectunauthorized" class="tsd-kind-icon">reject<wbr>Unauthorized</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mysql_.mysqloptions.html#user" class="tsd-kind-icon">user</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_packages_.packagegitsettings.html#branch" class="tsd-kind-icon">branch</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_packages_.packagegitsettings.html#exclude" class="tsd-kind-icon">exclude</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_packages_.packagegitsettings.html#files" class="tsd-kind-icon">files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_packages_.packagegitsettings.html#from" class="tsd-kind-icon">from</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_packages_.packagegitsettings.html#gitfilesonly" class="tsd-kind-icon">git<wbr>Files<wbr>Only</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_packages_.packagegitsettings.html#to" class="tsd-kind-icon">to</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,107 +110,94 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="charset" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> charset</h3>
-					<div class="tsd-signature tsd-kind-icon">charset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="branch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> branch</h3>
+					<div class="tsd-signature tsd-kind-icon">branch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/sql/mysql.ts#L32">sql/mysql.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L136">packages.ts:136</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The charset to use.</p>
+							<p>The custom branch.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="exclude" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> exclude</h3>
+					<div class="tsd-signature tsd-kind-icon">exclude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.filefilter.html">FileFilter</a>.<a href="_contracts_.filefilter.html#exclude">exclude</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/contracts.ts#L341">contracts.ts:341</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more (glob) patterns that describes the files to EXCLUDE.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="files" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> files</h3>
+					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_contracts_.filefilter.html">FileFilter</a>.<a href="_contracts_.filefilter.html#files">files</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/contracts.ts#L345">contracts.ts:345</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more (glob) patterns that describes the files to INCLUDE.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="database" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> database</h3>
-					<div class="tsd-signature tsd-kind-icon">database<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="from" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> from</h3>
+					<div class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/sql/mysql.ts#L36">sql/mysql.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L140">packages.ts:140</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The database to connect to.</p>
+							<p>The first (youngest) commit.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="host" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
-					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="gitfilesonly" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> git<wbr>Files<wbr>Only</h3>
+					<div class="tsd-signature tsd-kind-icon">git<wbr>Files<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/sql/mysql.ts#L40">sql/mysql.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L144">packages.ts:144</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The host.</p>
+							<p>Only use files from git or not.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="password" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> password</h3>
-					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="to" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> to</h3>
+					<div class="tsd-signature tsd-kind-icon">to<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/sql/mysql.ts#L48">sql/mysql.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L148">packages.ts:148</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The password.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="port" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/sql/mysql.ts#L44">sql/mysql.ts:44</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The TCP port.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rejectunauthorized" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> reject<wbr>Unauthorized</h3>
-					<div class="tsd-signature tsd-kind-icon">reject<wbr>Unauthorized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/sql/mysql.ts#L52">sql/mysql.ts:52</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Reject untrusted SSL connections or not.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="user" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> user</h3>
-					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/sql/mysql.ts#L56">sql/mysql.ts:56</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The username.</p>
+							<p>The first (oldest) commit.</p>
 						</div>
 					</div>
 				</section>
@@ -224,50 +210,98 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_sql_mysql_.html">"sql/mysql"</a>
+						<a href="../modules/_packages_.html">"packages"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_sql_mysql_.mysqlconnection.html" class="tsd-kind-icon">MySQLConnection</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_packages_.package.html" class="tsd-kind-icon">Package</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_packages_.packagebutton.html" class="tsd-kind-icon">Package<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_packages_.packagedeployfilefilter.html" class="tsd-kind-icon">Package<wbr>Deploy<wbr>File<wbr>Filter</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_sql_mysql_.mysqloptions.html" class="tsd-kind-icon">MySQLOptions</a>
+						<a href="_packages_.packagegitsettings.html" class="tsd-kind-icon">Package<wbr>Git<wbr>Settings</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mysql_.mysqloptions.html#charset" class="tsd-kind-icon">charset</a>
+								<a href="_packages_.packagegitsettings.html#branch" class="tsd-kind-icon">branch</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_packages_.packagegitsettings.html#exclude" class="tsd-kind-icon">exclude</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_packages_.packagegitsettings.html#files" class="tsd-kind-icon">files</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mysql_.mysqloptions.html#database" class="tsd-kind-icon">database</a>
+								<a href="_packages_.packagegitsettings.html#from" class="tsd-kind-icon">from</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mysql_.mysqloptions.html#host" class="tsd-kind-icon">host</a>
+								<a href="_packages_.packagegitsettings.html#gitfilesonly" class="tsd-kind-icon">git<wbr>Files<wbr>Only</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mysql_.mysqloptions.html#password" class="tsd-kind-icon">password</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mysql_.mysqloptions.html#port" class="tsd-kind-icon">port</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mysql_.mysqloptions.html#rejectunauthorized" class="tsd-kind-icon">reject<wbr>Unauthorized</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mysql_.mysqloptions.html#user" class="tsd-kind-icon">user</a>
+								<a href="_packages_.packagegitsettings.html#to" class="tsd-kind-icon">to</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_sql_mysql_.mysqlresult.html" class="tsd-kind-icon">MySQLResult</a>
+						<a href="_packages_.syncwhenopensetting.html" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>Setting</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_packages_.withfastfilechecksettings.html" class="tsd-kind-icon">With<wbr>Fast<wbr>File<wbr>Check<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#packagedeploysettingvalue" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Setting<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#packagedeploysettings" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#packagedeploysettingsresolver" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<wbr>Resolver</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#packagefastfilecheckflagresolver" class="tsd-kind-icon">Package<wbr>Fast<wbr>File<wbr>Check<wbr>Flag<wbr>Resolver</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_packages_.html#packagefilelistresolver" class="tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#packagefilelistresolverresult" class="tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_packages_.html#key_package_usage" class="tsd-kind-icon">KEY_<wbr>PACKAGE_<wbr>USAGE</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_sql_mysql_.html#openmysqlconnection" class="tsd-kind-icon">open<wbr>MySQLConnection</a>
+						<a href="../modules/_packages_.html#autodeployfile" class="tsd-kind-icon">auto<wbr>Deploy<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#findtargetsforfileofpackage" class="tsd-kind-icon">find<wbr>Targets<wbr>For<wbr>File<wbr>OfPackage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_packages_.html#getfastfilecheckflag" class="tsd-kind-icon">get<wbr>Fast<wbr>File<wbr>Check<wbr>Flag</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#getpackagename" class="tsd-kind-icon">get<wbr>Package<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#gettargetsofpackage" class="tsd-kind-icon">get<wbr>Targets<wbr>OfPackage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#importpackagefilesfromgit" class="tsd-kind-icon">import<wbr>Package<wbr>Files<wbr>From<wbr>Git</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#resetpackageusage" class="tsd-kind-icon">reset<wbr>Package<wbr>Usage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_packages_.html#showpackagequickpick" class="tsd-kind-icon">show<wbr>Package<wbr>Quick<wbr>Pick</a>
 					</li>
 				</ul>
 			</nav>

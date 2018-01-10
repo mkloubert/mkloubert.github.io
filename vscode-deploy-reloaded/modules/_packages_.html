@@ -76,6 +76,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_packages_.package.html" class="tsd-kind-icon">Package</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_packages_.packagebutton.html" class="tsd-kind-icon">Package<wbr>Button</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_packages_.packagedeployfilefilter.html" class="tsd-kind-icon">Package<wbr>Deploy<wbr>File<wbr>Filter</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_packages_.packagegitsettings.html" class="tsd-kind-icon">Package<wbr>Git<wbr>Settings</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_packages_.syncwhenopensetting.html" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>Setting</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_packages_.withfastfilechecksettings.html" class="tsd-kind-icon">With<wbr>Fast<wbr>File<wbr>Check<wbr>Settings</a></li>
 							</ul>
@@ -83,6 +84,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_packages_.html#packagedeploysettingvalue" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Setting<wbr>Value</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_packages_.html#packagedeploysettings" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_packages_.html#packagedeploysettingsresolver" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<wbr>Resolver</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_packages_.html#packagefastfilecheckflagresolver" class="tsd-kind-icon">Package<wbr>Fast<wbr>File<wbr>Check<wbr>Flag<wbr>Resolver</a></li>
@@ -104,6 +106,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_packages_.html#getfastfilecheckflag" class="tsd-kind-icon">get<wbr>Fast<wbr>File<wbr>Check<wbr>Flag</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#getpackagename" class="tsd-kind-icon">get<wbr>Package<wbr>Name</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#gettargetsofpackage" class="tsd-kind-icon">get<wbr>Targets<wbr>OfPackage</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#importpackagefilesfromgit" class="tsd-kind-icon">import<wbr>Package<wbr>Files<wbr>From<wbr>Git</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#resetpackageusage" class="tsd-kind-icon">reset<wbr>Package<wbr>Usage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_packages_.html#showpackagequickpick" class="tsd-kind-icon">show<wbr>Package<wbr>Quick<wbr>Pick</a></li>
 							</ul>
@@ -114,12 +117,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="packagedeploysettingvalue" class="tsd-anchor"></a>
+					<h3>Package<wbr>Deploy<wbr>Setting<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">Package<wbr>Deploy<wbr>Setting<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_packages_.packagegitsettings.html" class="tsd-signature-type">PackageGitSettings</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L154">packages.ts:154</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Possible git setting values for a package.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="packagedeploysettings" class="tsd-anchor"></a>
 					<h3>Package<wbr>Deploy<wbr>Settings</h3>
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_packages_.packagedeployfilefilter.html" class="tsd-signature-type">PackageDeployFileFilter</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L94">packages.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L100">packages.ts:100</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -134,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>Deploy<wbr>Settings<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L113">packages.ts:113</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L119">packages.ts:119</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -178,7 +196,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>Fast<wbr>File<wbr>Check<wbr>Flag<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L104">packages.ts:104</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L110">packages.ts:110</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -226,7 +244,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L115">packages.ts:115</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L121">packages.ts:121</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -263,7 +281,7 @@
 					<div class="tsd-signature tsd-kind-icon">Package<wbr>File<wbr>List<wbr>Resolver<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L121">packages.ts:121</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L127">packages.ts:127</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -281,7 +299,7 @@
 					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>PACKAGE_<wbr>USAGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vscdrLastExecutedPackageActions"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vscdrLastExecutedPackageActions&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L152">packages.ts:152</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L185">packages.ts:185</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -298,7 +316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L162">packages.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L195">packages.ts:195</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -347,7 +365,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L207">packages.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L240">packages.ts:240</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -391,7 +409,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L344">packages.ts:344</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L377">packages.ts:377</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -486,7 +504,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L388">packages.ts:388</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L421">packages.ts:421</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -518,7 +536,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L414">packages.ts:414</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L447">packages.ts:447</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -544,6 +562,50 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="importpackagefilesfromgit" class="tsd-anchor"></a>
+					<h3>import<wbr>Package<wbr>Files<wbr>From<wbr>Git</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">import<wbr>Package<wbr>Files<wbr>From<wbr>Git<span class="tsd-signature-symbol">(</span>pkg<span class="tsd-signature-symbol">: </span><a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a>, operation<span class="tsd-signature-symbol">: </span><a href="../enums/_contracts_.deployoperation.html" class="tsd-signature-type">DeployOperation</a>, files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L493">packages.ts:493</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Import files from git to a package.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pkg: <a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The package.</p>
+									</div>
+								</li>
+								<li>
+									<h5>operation: <a href="../enums/_contracts_.deployoperation.html" class="tsd-signature-type">DeployOperation</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The operation.</p>
+									</div>
+								</li>
+								<li>
+									<h5>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The file storage.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the new list.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="resetpackageusage" class="tsd-anchor"></a>
 					<h3>reset<wbr>Package<wbr>Usage</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -553,7 +615,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L457">packages.ts:457</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L885">packages.ts:885</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -584,7 +646,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/01217cd/src/packages.ts#L475">packages.ts:475</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/packages.ts#L903">packages.ts:903</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -641,10 +703,16 @@
 						<a href="../interfaces/_packages_.packagedeployfilefilter.html" class="tsd-kind-icon">Package<wbr>Deploy<wbr>File<wbr>Filter</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_packages_.packagegitsettings.html" class="tsd-kind-icon">Package<wbr>Git<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_packages_.syncwhenopensetting.html" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>Setting</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_packages_.withfastfilechecksettings.html" class="tsd-kind-icon">With<wbr>Fast<wbr>File<wbr>Check<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_packages_.html#packagedeploysettingvalue" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Setting<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_packages_.html#packagedeploysettings" class="tsd-kind-icon">Package<wbr>Deploy<wbr>Settings</a>
@@ -678,6 +746,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_packages_.html#gettargetsofpackage" class="tsd-kind-icon">get<wbr>Targets<wbr>OfPackage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_packages_.html#importpackagefilesfromgit" class="tsd-kind-icon">import<wbr>Package<wbr>Files<wbr>From<wbr>Git</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_packages_.html#resetpackageusage" class="tsd-kind-icon">reset<wbr>Package<wbr>Usage</a>

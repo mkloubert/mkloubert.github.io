@@ -1,0 +1,452 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>entity-baker</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">entity-baker</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> entity-baker</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><a href="https://www.npmjs.com/package/node-entity-baker"><img src="https://img.shields.io/npm/v/node-entity-baker.svg" alt="npm"></a>
+				<a href="https://www.npmjs.com/package/node-entity-baker"><img src="https://img.shields.io/npm/dt/node-entity-baker.svg?label=npm%20downloads" alt="npm"></a></p>
+				<h1 id="node-entity-baker">node-entity-baker</h1>
+				<p><a href="https://nodejs.org">Node.js</a> application / library, which generates simple and powerful entity classes for <a href="https://en.wikipedia.org/wiki/Object-relational_mapping">ORM</a> systems, like <a href="http://www.doctrine-project.org">Doctrine</a> and/or <a href="https://docs.microsoft.com/en-us/ef/">Entity Framework</a>, wriiten in <a href="https://www.typescriptlang.org">TypeScript</a>.</p>
+				<h2 id="installation">Installation</h2>
+				<p>As command line tool:</p>
+				<pre><code class="lang-bash">npm install -g entity-baker
+</code></pre>
+				<p>As module:</p>
+				<pre><code class="lang-bash">npm install --save entity-baker
+</code></pre>
+				<h2 id="usage">Usage</h2>
+				<p>First create a <code>entities.json</code> file inside your working directory (can also be in XML or YAML format, s. <a href="https://github.com/mkloubert/node-entity-baker/tree/master/examples">examples folder</a>):</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"namespace"</span>: <span class="hljs-string">"MarcelJoachimKloubert.Database"</span>,
+
+    <span class="hljs-attr">"entities"</span>: {
+        <span class="hljs-attr">"Log"</span>: {
+            <span class="hljs-attr">"table"</span>: <span class="hljs-string">"logs"</span>,
+
+            <span class="hljs-attr">"columns"</span>: {
+                <span class="hljs-attr">"id"</span>: {
+                    <span class="hljs-attr">"id"</span>: <span class="hljs-literal">true</span>,
+                    <span class="hljs-attr">"auto"</span>: <span class="hljs-literal">true</span>,
+                    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"int32"</span>
+                },
+
+                <span class="hljs-attr">"level"</span>: {
+                    <span class="hljs-attr">"null"</span>: <span class="hljs-literal">true</span>,
+                    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"int16"</span>
+                },
+
+                <span class="hljs-attr">"message"</span>: <span class="hljs-string">"string"</span>,
+                <span class="hljs-attr">"tag"</span>: {
+                    <span class="hljs-attr">"null"</span>: <span class="hljs-literal">true</span>,
+                    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>
+                },
+
+                <span class="hljs-attr">"context"</span>: {
+                    <span class="hljs-attr">"null"</span>: <span class="hljs-literal">true</span>,
+                    <span class="hljs-attr">"type"</span>: <span class="hljs-string">"json"</span>
+                }
+            }
+        }
+    }
+}
+</code></pre>
+				<h3 id="from-command-line">From command line</h3>
+				<pre><code class="lang-bash"><span class="hljs-comment"># run it from your working directory</span>
+entity-baker --doctrine --entity-framework --entity-framework-core
+</code></pre>
+				<h3 id="as-module">As module</h3>
+				<p>JavaScript</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> EntityBaker = <span class="hljs-built_in">require</span>(<span class="hljs-string">'entity-baker'</span>);
+</code></pre>
+				<p>TypeScript</p>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> EntityBaker <span class="hljs-keyword">from</span> <span class="hljs-string">'entity-baker'</span>;
+</code></pre>
+				<h4 id="compile">compile</h4>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+<span class="hljs-keyword">var</span> entityFile = <span class="hljs-built_in">JSON</span>.parse(
+    fs.readFileSync(<span class="hljs-string">'./entities.json'</span>, <span class="hljs-string">'utf8'</span>)
+);
+
+EntityBaker.compile({
+    <span class="hljs-attr">cwd</span>: <span class="hljs-string">'/path/to/working/directory'</span>,
+    <span class="hljs-attr">file</span>: entityFile,
+    <span class="hljs-attr">outDir</span>: <span class="hljs-string">'/path/to/output/directory'</span>,
+       <span class="hljs-attr">target</span>: <span class="hljs-number">1</span>,  <span class="hljs-comment">// Doctrine</span>
+    <span class="hljs-comment">// target: 2  // Entity Framework</span>
+    <span class="hljs-comment">// target: 3  // Entity Framework Core</span>
+
+    callbacks: {
+        <span class="hljs-attr">onBeforeGenerateClass</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">className, target</span>) </span>{
+        },
+
+        <span class="hljs-attr">onClassGenerated</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, className, target</span>) </span>{
+        }
+    }
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// files generated</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-comment">// error while generating files</span>
+});
+</code></pre>
+				<h2 id="data-types">Data types</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Type</th>
+							<th><a href="">Doctrine</a></th>
+							<th><a href="">Entity Framework</a></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>bigint</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#bigint">bigint</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110">System.Int64</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>bin</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#binary">binary</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110">System.Byte[]</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>binary</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#binary">binary</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110">System.Byte[]</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>blob</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#blob">blob</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.byte(v=vs.110">System.Byte[]</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>bool</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#boolean">boolean</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110">System.Boolean</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>boolean</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#boolean">boolean</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110">System.Boolean</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>date</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#date">date</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110">System.Int64</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>datetime</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#datetime">datetime</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.datetime(v=vs.110">System.Int64</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>datetimetz</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#datetimetz">datetimetz</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.datetimeoffset(v=vs.110">System.DateTimeOffset</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>decimal</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#decimal">decimal</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.decimal(v=vs.110">System.Decimal</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>float</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#float">float</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.single(v=vs.110">System.Single</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>guid</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#guid">guid</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110">System.Guid</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>int</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#integer">integer</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110">System.Int32</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>int16</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#smallint">smallint</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.int16(v=vs.110">System.Int16</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>int32</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#integer">integer</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110">System.Int32</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>int64</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#bigint">bigint</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110">System.Int64</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>integer</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#integer">integer</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.int32(v=vs.110">System.Int32</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>json</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#json">json</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110">dynamic</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>smallint</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#smallint">smallint</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.int16(v=vs.110">System.Int16</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>str</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#string">string</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110">System.String</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>string</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#string">string</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110">System.String</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>text</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#text">text</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110">System.String</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>time</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#time">time</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.timespan(v=vs.110">System.TimeSpan</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>uint16</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#smallint">smallint</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.uint16(v=vs.110">System.UInt16</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>uint32</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#integer">integer</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.uint32(v=vs.110">System.UInt32</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>uint64</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#bigint">bigint</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.uint64(v=vs.110">System.UInt64</a>.aspx)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><code>uuid</code></td>
+							<td><a href="http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/types.html#guid">guid</a></td>
+							<td><a href="https://msdn.microsoft.com/en-us/library/system.guid(v=vs.110">System.Guid</a>.aspx)</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<p>If you do not define a data type, it set to</p>
+				<ul>
+					<li><code>int32</code>, if the column is a primary key, or...</li>
+					<li><code>string</code>, if nothing else matches</li>
+				</ul>
+				<h2 id="support-and-contribute-uarr-table-of-contents-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>If you like the module, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
+				<p>To contribute, you can <a href="https://github.com/mkloubert/node-entity-baker/issues">open an issue</a> and/or fork this repository.</p>
+				<p>To work with the code:</p>
+				<ul>
+					<li>clone <a href="https://github.com/mkloubert/node-entity-baker">this repository</a></li>
+					<li>create and change to a new branch, like <code>git checkout -b my_new_feature</code></li>
+					<li>run <code>npm install</code> from your project folder</li>
+					<li>edit and debug in your favorite editor, like <a href="https://code.visualstudio.com">Visual Studio Code</a></li>
+					<li>commit your changes to your new branch and sync it with your forked GitHub repo</li>
+					<li>make a <a href="https://github.com/mkloubert/node-entity-baker/pulls">pull request</a></li>
+				</ul>
+				<p>The API documentation can be found <a href="https://mkloubert.github.io/node-entity-baker/">here</a>.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_.html">"cli"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_lib_compiler_.html">"lib/compiler"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_lib_doctrine_.html">"lib/doctrine"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_lib_ef_.html">"lib/ef"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_lib_efcore_.html">"lib/efcore"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_lib_helpers_.html">"lib/helpers"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_test_.html">"test"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

@@ -91,6 +91,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_commands_.html#cleanupcommands" class="tsd-kind-icon">cleanup<wbr>Commands</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_commands_.html#handlecurrentfileorfolder" class="tsd-kind-icon">handle<wbr>Current<wbr>File<wbr>OrFolder</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_commands_.html#reloadcommands" class="tsd-kind-icon">reload<wbr>Commands</a></li>
 							</ul>
 						</section>
@@ -105,7 +106,7 @@
 					<div class="tsd-signature tsd-kind-icon">Script<wbr>Command<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/commands.ts#L87">commands.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/commands.ts#L94">commands.ts:94</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -155,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">Workspace<wbr>Command<wbr>Repository<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/commands.ts#L128">commands.ts:128</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/commands.ts#L135">commands.ts:135</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -185,7 +186,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/commands.ts#L134">commands.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/commands.ts#L141">commands.ts:141</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -194,6 +195,43 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="handlecurrentfileorfolder" class="tsd-anchor"></a>
+					<h3>handle<wbr>Current<wbr>File<wbr>OrFolder</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Current<wbr>File<wbr>OrFolder<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span>, u<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Uri</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/commands.ts#L385">commands.ts:385</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Handles a current file or folder.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The extension context.</p>
+									</div>
+								</li>
+								<li>
+									<h5>u: <span class="tsd-signature-type">vscode.Uri</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The URI of the current file / folder.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -207,7 +245,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/commands.ts#L160">commands.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/commands.ts#L167">commands.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -266,6 +304,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_commands_.html#cleanupcommands" class="tsd-kind-icon">cleanup<wbr>Commands</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_commands_.html#handlecurrentfileorfolder" class="tsd-kind-icon">handle<wbr>Current<wbr>File<wbr>OrFolder</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_commands_.html#reloadcommands" class="tsd-kind-icon">reload<wbr>Commands</a>

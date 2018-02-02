@@ -99,13 +99,15 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#compare" class="tsd-kind-icon">compare</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#compilers" class="tsd-kind-icon">compilers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#continue" class="tsd-kind-icon">continue</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#currentfileorfolder-1" class="tsd-kind-icon">current<wbr>File<wbr>OrFolder</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#deploy" class="tsd-kind-icon">deploy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#disposenotallowed" class="tsd-kind-icon">dispose<wbr>Not<wbr>Allowed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#documents" class="tsd-kind-icon">documents</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#done" class="tsd-kind-icon">done</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#editors" class="tsd-kind-icon">editors</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#error" class="tsd-kind-icon">error</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#extension" class="tsd-kind-icon">extension</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#file" class="tsd-kind-icon">file</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#file-2" class="tsd-kind-icon">file</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#filenotfound" class="tsd-kind-icon">file<wbr>Not<wbr>Found</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#files" class="tsd-kind-icon">files</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#ftp" class="tsd-kind-icon">ftp</a></li>
@@ -122,7 +124,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#packages" class="tsd-kind-icon">packages</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#pagination" class="tsd-kind-icon">pagination</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#plugins" class="tsd-kind-icon">plugins</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#pull" class="tsd-kind-icon">pull</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#pull-1" class="tsd-kind-icon">pull</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#requirements" class="tsd-kind-icon">requirements</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#s3bucket" class="tsd-kind-icon">s3bucket</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_i18_.translation.html#scm" class="tsd-kind-icon">scm</a></li>
@@ -154,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">DELETE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L57">i18.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L60">i18.ts:60</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -203,6 +205,33 @@
 								</ul>
 							</li>
 							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> current<wbr>File<wbr>OrFolder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> file<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> deleting<wbr>File<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
@@ -216,6 +245,17 @@
 									</li>
 									<li class="tsd-parameter">
 										<h5><span class="tsd-flag ts-flagOptional">Optional</span> operation<wbr>Failed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> file<wbr>List<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
 									</li>
 								</ul>
 							</li>
@@ -268,7 +308,7 @@
 					<div class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L32">i18.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L32">i18.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -278,7 +318,7 @@
 					<div class="tsd-signature tsd-kind-icon">canceled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L33">i18.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L33">i18.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -288,7 +328,7 @@
 					<div class="tsd-signature tsd-kind-icon">changelog<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L34">i18.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L34">i18.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -298,7 +338,7 @@
 					<div class="tsd-signature tsd-kind-icon">commands<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L35">i18.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L35">i18.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -319,7 +359,7 @@
 					<div class="tsd-signature tsd-kind-icon">compare<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L39">i18.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L39">i18.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -359,7 +399,7 @@
 					<div class="tsd-signature tsd-kind-icon">compilers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L50">i18.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L50">i18.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -385,9 +425,27 @@
 					<div class="tsd-signature tsd-kind-icon">continue<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L56">i18.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L56">i18.ts:56</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="currentfileorfolder-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> current<wbr>File<wbr>OrFolder</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>File<wbr>OrFolder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L57">i18.ts:57</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> none<wbr>Selected<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="deploy" class="tsd-anchor"></a>
@@ -395,7 +453,7 @@
 					<div class="tsd-signature tsd-kind-icon">deploy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L94">i18.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L111">i18.ts:111</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -449,6 +507,33 @@
 								</ul>
 							</li>
 							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> current<wbr>File<wbr>OrFolder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> file<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> deploying<wbr>File<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
@@ -465,6 +550,17 @@
 									</li>
 									<li class="tsd-parameter">
 										<h5><span class="tsd-flag ts-flagOptional">Optional</span> operation<wbr>ToTarget<wbr>Failed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> file<wbr>List<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
 									</li>
 								</ul>
 							</li>
@@ -539,7 +635,7 @@
 					<div class="tsd-signature tsd-kind-icon">dispose<wbr>Not<wbr>Allowed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L142">i18.ts:142</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L173">i18.ts:173</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -549,7 +645,7 @@
 					<div class="tsd-signature tsd-kind-icon">documents<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L143">i18.ts:143</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L174">i18.ts:174</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -567,12 +663,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="done" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> done</h3>
+					<div class="tsd-signature tsd-kind-icon">done<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L179">i18.ts:179</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="editors" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> editors</h3>
 					<div class="tsd-signature tsd-kind-icon">editors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L148">i18.ts:148</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L180">i18.ts:180</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -598,7 +704,7 @@
 					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L154">i18.ts:154</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L186">i18.ts:186</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -608,7 +714,7 @@
 					<div class="tsd-signature tsd-kind-icon">extension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L155">i18.ts:155</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L187">i18.ts:187</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -624,12 +730,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="file" class="tsd-anchor"></a>
+					<a name="file-2" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> file</h3>
 					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L159">i18.ts:159</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L191">i18.ts:191</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -639,7 +745,7 @@
 					<div class="tsd-signature tsd-kind-icon">file<wbr>Not<wbr>Found<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L160">i18.ts:160</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L192">i18.ts:192</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -649,7 +755,7 @@
 					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L161">i18.ts:161</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L193">i18.ts:193</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -659,7 +765,7 @@
 					<div class="tsd-signature tsd-kind-icon">ftp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L162">i18.ts:162</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L194">i18.ts:194</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -680,7 +786,7 @@
 					<div class="tsd-signature tsd-kind-icon">http<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L166">i18.ts:166</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L198">i18.ts:198</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -718,7 +824,7 @@
 					<div class="tsd-signature tsd-kind-icon">initialization<wbr>Canceled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L176">i18.ts:176</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L208">i18.ts:208</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -728,7 +834,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>No<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L177">i18.ts:177</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L209">i18.ts:209</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -749,7 +855,7 @@
 					<div class="tsd-signature tsd-kind-icon">list<wbr>Directory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L181">i18.ts:181</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L213">i18.ts:213</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -784,6 +890,9 @@
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> errors<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> failed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
 										<h5><span class="tsd-flag ts-flagOptional">Optional</span> operation<wbr>Failed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
 									</li>
 								</ul>
@@ -801,6 +910,50 @@
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> parent<wbr>Directory<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> pull<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> enter<wbr>Local<wbr>Folder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> errors<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Path<wbr>Depth<wbr>Reached<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder<wbr>With<wbr>Subfolders<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+									<li class="tsd-parameter">
+										<h5>pulling<wbr>File<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>pulling<wbr>From<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> select<wbr>Source<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
@@ -815,7 +968,7 @@
 					<div class="tsd-signature tsd-kind-icon">max<wbr>Depth<wbr>Reached<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L201">i18.ts:201</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L250">i18.ts:250</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -825,7 +978,7 @@
 					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L202">i18.ts:202</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L251">i18.ts:251</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -851,7 +1004,7 @@
 					<div class="tsd-signature tsd-kind-icon">no<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L208">i18.ts:208</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L257">i18.ts:257</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -861,7 +1014,7 @@
 					<div class="tsd-signature tsd-kind-icon">no<wbr>Files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L209">i18.ts:209</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L258">i18.ts:258</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -871,7 +1024,7 @@
 					<div class="tsd-signature tsd-kind-icon">not<wbr>Found<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L210">i18.ts:210</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L259">i18.ts:259</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -889,7 +1042,7 @@
 					<div class="tsd-signature tsd-kind-icon">ok<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L213">i18.ts:213</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L262">i18.ts:262</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -899,7 +1052,7 @@
 					<div class="tsd-signature tsd-kind-icon">packages<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L214">i18.ts:214</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L263">i18.ts:263</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -940,7 +1093,7 @@
 					<div class="tsd-signature tsd-kind-icon">pagination<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L225">i18.ts:225</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L274">i18.ts:274</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -961,7 +1114,7 @@
 					<div class="tsd-signature tsd-kind-icon">plugins<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L229">i18.ts:229</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L278">i18.ts:278</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1157,12 +1310,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pull" class="tsd-anchor"></a>
+					<a name="pull-1" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> pull</h3>
 					<div class="tsd-signature tsd-kind-icon">pull<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L299">i18.ts:299</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L348">i18.ts:348</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1216,6 +1369,33 @@
 								</ul>
 							</li>
 							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> current<wbr>File<wbr>OrFolder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> file<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> folder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> errors<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter">
@@ -1229,6 +1409,17 @@
 									</li>
 									<li class="tsd-parameter">
 										<h5><span class="tsd-flag ts-flagOptional">Optional</span> operation<wbr>For<wbr>Source<wbr>Failed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> file<wbr>List<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
 									</li>
 								</ul>
 							</li>
@@ -1267,7 +1458,7 @@
 					<div class="tsd-signature tsd-kind-icon">requirements<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L333">i18.ts:333</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L396">i18.ts:396</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1310,7 +1501,7 @@
 					<div class="tsd-signature tsd-kind-icon">s3bucket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L345">i18.ts:345</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L408">i18.ts:408</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1328,7 +1519,7 @@
 					<div class="tsd-signature tsd-kind-icon">scm<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L348">i18.ts:348</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L411">i18.ts:411</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1373,7 +1564,7 @@
 					<div class="tsd-signature tsd-kind-icon">sftp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L361">i18.ts:361</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L424">i18.ts:424</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1391,7 +1582,7 @@
 					<div class="tsd-signature tsd-kind-icon">shell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L364">i18.ts:364</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L427">i18.ts:427</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1409,7 +1600,7 @@
 					<div class="tsd-signature tsd-kind-icon">sql<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L367">i18.ts:367</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L430">i18.ts:430</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1427,7 +1618,7 @@
 					<div class="tsd-signature tsd-kind-icon">switches<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L370">i18.ts:370</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L433">i18.ts:433</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1450,7 +1641,7 @@
 					<div class="tsd-signature tsd-kind-icon">sync<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L375">i18.ts:375</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L438">i18.ts:438</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1481,7 +1672,7 @@
 					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L383">i18.ts:383</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L446">i18.ts:446</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1588,7 +1779,7 @@
 					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L417">i18.ts:417</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L480">i18.ts:480</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1606,12 +1797,68 @@
 					<div class="tsd-signature tsd-kind-icon">tools<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L420">i18.ts:420</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L483">i18.ts:483</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> bower<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> executing<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> package<wbr>Example<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> run<wbr>Install<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> enter<wbr>Package<wbr>Name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> run<wbr>Uninstall<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> bower<wbr>File<wbr>Contains<wbr>NoPackages<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> bower<wbr>File<wbr>Not<wbr>Found<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> errors<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+												<ul class="tsd-parameters">
+													<li class="tsd-parameter">
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> loading<wbr>Bower<wbr>File<wbr>Failed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+													</li>
+												</ul>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> composer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
 								<ul class="tsd-parameters">
@@ -1657,6 +1904,9 @@
 										<ul class="tsd-parameters">
 											<li class="tsd-parameter">
 												<h5><span class="tsd-flag ts-flagOptional">Optional</span> description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> enter<wbr>Package<wbr>Name<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
 											</li>
 											<li class="tsd-parameter">
 												<h5><span class="tsd-flag ts-flagOptional">Optional</span> label<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
@@ -1963,7 +2213,7 @@
 					<div class="tsd-signature tsd-kind-icon">values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L545">i18.ts:545</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L629">i18.ts:629</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -1989,7 +2239,7 @@
 					<div class="tsd-signature tsd-kind-icon">vs-<wbr>deploy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L551">i18.ts:551</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L635">i18.ts:635</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -2010,7 +2260,7 @@
 					<div class="tsd-signature tsd-kind-icon">waiting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L556">i18.ts:556</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L640">i18.ts:640</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -2020,7 +2270,7 @@
 					<div class="tsd-signature tsd-kind-icon">warning<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L555">i18.ts:555</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L639">i18.ts:639</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -2030,7 +2280,7 @@
 					<div class="tsd-signature tsd-kind-icon">workspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L557">i18.ts:557</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L641">i18.ts:641</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -2040,7 +2290,7 @@
 					<div class="tsd-signature tsd-kind-icon">workspaces<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L558">i18.ts:558</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L642">i18.ts:642</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -2062,6 +2312,27 @@
 									</li>
 									<li class="tsd-parameter">
 										<h5><span class="tsd-flag ts-flagOptional">Optional</span> select<wbr>Workspace<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> bower<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> install<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+										<ul class="tsd-parameters">
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> errors<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">object</span></h5>
+												<ul class="tsd-parameters">
+													<li class="tsd-parameter">
+														<h5><span class="tsd-flag ts-flagOptional">Optional</span> failed<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+													</li>
+												</ul>
+											</li>
+											<li class="tsd-parameter">
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> running<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
 									</li>
 								</ul>
 							</li>
@@ -2169,7 +2440,7 @@
 					<div class="tsd-signature tsd-kind-icon">yes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b5f46e8/src/i18.ts#L601">i18.ts:601</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/i18.ts#L693">i18.ts:693</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -2218,6 +2489,9 @@
 								<a href="_i18_.translation.html#continue" class="tsd-kind-icon">continue</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_i18_.translation.html#currentfileorfolder-1" class="tsd-kind-icon">current<wbr>File<wbr>OrFolder</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_i18_.translation.html#deploy" class="tsd-kind-icon">deploy</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2225,6 +2499,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_i18_.translation.html#documents" class="tsd-kind-icon">documents</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_i18_.translation.html#done" class="tsd-kind-icon">done</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_i18_.translation.html#editors" class="tsd-kind-icon">editors</a>
@@ -2236,7 +2513,7 @@
 								<a href="_i18_.translation.html#extension" class="tsd-kind-icon">extension</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_i18_.translation.html#file" class="tsd-kind-icon">file</a>
+								<a href="_i18_.translation.html#file-2" class="tsd-kind-icon">file</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_i18_.translation.html#filenotfound" class="tsd-kind-icon">file<wbr>Not<wbr>Found</a>
@@ -2287,7 +2564,7 @@
 								<a href="_i18_.translation.html#plugins" class="tsd-kind-icon">plugins</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_i18_.translation.html#pull" class="tsd-kind-icon">pull</a>
+								<a href="_i18_.translation.html#pull-1" class="tsd-kind-icon">pull</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_i18_.translation.html#requirements" class="tsd-kind-icon">requirements</a>

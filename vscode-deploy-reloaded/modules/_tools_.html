@@ -81,6 +81,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tools_.html#createdeployoperationscript" class="tsd-kind-icon">create<wbr>Deploy<wbr>Operation<wbr>Script</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tools_.html#createdeployscript" class="tsd-kind-icon">create<wbr>Deploy<wbr>Script</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tools_.html#detectgitchanges" class="tsd-kind-icon">detect<wbr>Git<wbr>Changes</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tools_.html#resettoolusage" class="tsd-kind-icon">reset<wbr>Tool<wbr>Usage</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_tools_.html#showpackagefiles" class="tsd-kind-icon">show<wbr>Package<wbr>Files</a></li>
 							</ul>
@@ -96,7 +97,7 @@
 					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>TOOL_<wbr>USAGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vscdrLastExecutedToolActions"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vscdrLastExecutedToolActions&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/tools.ts#L35">tools.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/tools.ts#L37">tools.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -118,7 +119,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/tools.ts#L458">tools.ts:458</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/tools.ts#L460">tools.ts:460</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -155,7 +156,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/tools.ts#L42">tools.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/tools.ts#L44">tools.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -177,6 +178,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="detectgitchanges" class="tsd-anchor"></a>
+					<h3>detect<wbr>Git<wbr>Changes</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">detect<wbr>Git<wbr>Changes<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/tools.ts#L767">tools.ts:767</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Detects changes between two git commits.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The underlying extension context.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="resettoolusage" class="tsd-anchor"></a>
 					<h3>reset<wbr>Tool<wbr>Usage</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -186,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/tools.ts#L765">tools.ts:765</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/tools.ts#L917">tools.ts:917</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -217,7 +249,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/tools.ts#L779">tools.ts:779</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/tools.ts#L931">tools.ts:931</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -267,6 +299,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tools_.html#createdeployscript" class="tsd-kind-icon">create<wbr>Deploy<wbr>Script</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_tools_.html#detectgitchanges" class="tsd-kind-icon">detect<wbr>Git<wbr>Changes</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_tools_.html#resettoolusage" class="tsd-kind-icon">reset<wbr>Tool<wbr>Usage</a>

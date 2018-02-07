@@ -81,6 +81,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_scm_.branch.html" class="tsd-kind-icon">Branch</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_scm_.commit.html" class="tsd-kind-icon">Commit</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_scm_.commitrange.html" class="tsd-kind-icon">Commit<wbr>Range</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_scm_.filechange.html" class="tsd-kind-icon">File<wbr>Change</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_scm_.sourcecontrolclient.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Client</a></li>
 							</ul>
@@ -89,6 +90,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scm_.html#showscmcommitquickpick" class="tsd-kind-icon">showSCMCommit<wbr>Quick<wbr>Pick</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_scm_.html#showscmcommitrangequickpick" class="tsd-kind-icon">showSCMCommit<wbr>Range<wbr>Quick<wbr>Pick</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,7 +108,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3c0cf99/src/scm.ts#L152">scm.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/scm.ts#L173">scm.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -126,6 +128,38 @@
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_scm_.commit.html" class="tsd-signature-type">Commit</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>The promise with the selected commit (if selected)
 							or (false) if failed.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="showscmcommitrangequickpick" class="tsd-anchor"></a>
+					<h3>showSCMCommit<wbr>Range<wbr>Quick<wbr>Pick</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">showSCMCommit<wbr>Range<wbr>Quick<wbr>Pick<span class="tsd-signature-symbol">(</span>client<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scm_.sourcecontrolclient.html" class="tsd-signature-type">SourceControlClient</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_scm_.commitrange.html" class="tsd-signature-type">CommitRange</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/scm.ts#L333">scm.ts:333</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Selects a range of commits.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>client: <a href="../interfaces/_scm_.sourcecontrolclient.html" class="tsd-signature-type">SourceControlClient</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The client.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_scm_.commitrange.html" class="tsd-signature-type">CommitRange</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the range or (false) if failed.</p>
 						</li>
 					</ul>
 				</section>
@@ -154,6 +188,9 @@
 						<a href="../interfaces/_scm_.commit.html" class="tsd-kind-icon">Commit</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_scm_.commitrange.html" class="tsd-kind-icon">Commit<wbr>Range</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_scm_.filechange.html" class="tsd-kind-icon">File<wbr>Change</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -161,6 +198,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_scm_.html#showscmcommitquickpick" class="tsd-kind-icon">showSCMCommit<wbr>Quick<wbr>Pick</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_scm_.html#showscmcommitrangequickpick" class="tsd-kind-icon">showSCMCommit<wbr>Range<wbr>Quick<wbr>Pick</a>
 					</li>
 				</ul>
 			</nav>

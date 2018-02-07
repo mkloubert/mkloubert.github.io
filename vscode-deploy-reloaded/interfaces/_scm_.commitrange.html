@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;mappings&quot; | vscode-deploy-reloaded</title>
+	<title>CommitRange | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_mappings_.html">&quot;mappings&quot;</a>
+					<a href="../modules/_scm_.html">&quot;scm&quot;</a>
+				</li>
+				<li>
+					<a href="_scm_.commitrange.html">CommitRange</a>
 				</li>
 			</ul>
-			<h1>External module &quot;mappings&quot;</h1>
+			<h1>Interface CommitRange</h1>
 		</div>
 	</div>
 </header>
@@ -69,78 +72,62 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>This file is part of the vscode-deploy-reloaded distribution.
-						Copyright (c) Marcel Joachim Kloubert.</p>
+						<p>A range of commits.</p>
 					</div>
-					<p>vscode-deploy-reloaded is free software: you can redistribute it and/or modify
-						it under the terms of the GNU Lesser General Public License as
-					published by the Free Software Foundation, version 3.</p>
-					<p>vscode-deploy-reloaded is distributed in the hope that it will be useful, but
-						WITHOUT ANY WARRANTY; without even the implied warranty of
-						MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-					Lesser General Public License for more details.</p>
-					<p>You should have received a copy of the GNU Lesser General Public License
-					along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">CommitRange</span>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_mappings_.foldermappingsettings.html" class="tsd-kind-icon">Folder<wbr>Mapping<wbr>Settings</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_mappings_.html#foldermappingentry" class="tsd-kind-icon">Folder<wbr>Mapping<wbr>Entry</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_mappings_.html#foldermappings" class="tsd-kind-icon">Folder<wbr>Mappings</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scm_.commitrange.html#from" class="tsd-kind-icon">from</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scm_.commitrange.html#to" class="tsd-kind-icon">to</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-					<a name="foldermappingentry" class="tsd-anchor"></a>
-					<h3>Folder<wbr>Mapping<wbr>Entry</h3>
-					<div class="tsd-signature tsd-kind-icon">Folder<wbr>Mapping<wbr>Entry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_mappings_.foldermappingsettings.html" class="tsd-signature-type">FolderMappingSettings</a></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="from" class="tsd-anchor"></a>
+					<h3>from</h3>
+					<div class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">:</span> <a href="_scm_.commit.html" class="tsd-signature-type">Commit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/mappings.ts#L22">mappings.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/scm.ts#L109">scm.ts:109</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An folder mapping entry.</p>
+							<p>The first commit.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-					<a name="foldermappings" class="tsd-anchor"></a>
-					<h3>Folder<wbr>Mappings</h3>
-					<div class="tsd-signature tsd-kind-icon">Folder<wbr>Mappings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="to" class="tsd-anchor"></a>
+					<h3>to</h3>
+					<div class="tsd-signature tsd-kind-icon">to<span class="tsd-signature-symbol">:</span> <a href="_scm_.commit.html" class="tsd-signature-type">Commit</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/mappings.ts#L27">mappings.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/scm.ts#L113">scm.ts:113</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An object with folder mappings.</p>
+							<p>The last commit.</p>
 						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>pattern: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="_mappings_.html#foldermappingentry" class="tsd-signature-type">FolderMappingEntry</a></h5>
-							</li>
-						</ul>
 					</div>
 				</section>
 			</section>
@@ -152,20 +139,47 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_mappings_.html">"mappings"</a>
+						<a href="../modules/_scm_.html">"scm"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_scm_.filechangetype.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_mappings_.foldermappingsettings.html" class="tsd-kind-icon">Folder<wbr>Mapping<wbr>Settings</a>
+						<a href="_scm_.branch.html" class="tsd-kind-icon">Branch</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="_mappings_.html#foldermappingentry" class="tsd-kind-icon">Folder<wbr>Mapping<wbr>Entry</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scm_.commit.html" class="tsd-kind-icon">Commit</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="_mappings_.html#foldermappings" class="tsd-kind-icon">Folder<wbr>Mappings</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scm_.commitrange.html" class="tsd-kind-icon">Commit<wbr>Range</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_scm_.commitrange.html#from" class="tsd-kind-icon">from</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_scm_.commitrange.html#to" class="tsd-kind-icon">to</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scm_.filechange.html" class="tsd-kind-icon">File<wbr>Change</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scm_.sourcecontrolclient.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_scm_.html#showscmcommitquickpick" class="tsd-kind-icon">showSCMCommit<wbr>Quick<wbr>Pick</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_scm_.html#showscmcommitrangequickpick" class="tsd-kind-icon">showSCMCommit<wbr>Range<wbr>Quick<wbr>Pick</a>
 					</li>
 				</ul>
 			</nav>

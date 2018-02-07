@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;mappings&quot; | vscode-deploy-reloaded</title>
+	<title>ScmFileFilter | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,92 +56,62 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_mappings_.html">&quot;mappings&quot;</a>
+					<a href="../modules/_deploy_.html">&quot;deploy&quot;</a>
+				</li>
+				<li>
+					<a href="_deploy_.scmfilefilter.html">ScmFileFilter</a>
 				</li>
 			</ul>
-			<h1>External module &quot;mappings&quot;</h1>
+			<h1>Interface ScmFileFilter</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>This file is part of the vscode-deploy-reloaded distribution.
-						Copyright (c) Marcel Joachim Kloubert.</p>
-					</div>
-					<p>vscode-deploy-reloaded is free software: you can redistribute it and/or modify
-						it under the terms of the GNU Lesser General Public License as
-					published by the Free Software Foundation, version 3.</p>
-					<p>vscode-deploy-reloaded is distributed in the hope that it will be useful, but
-						WITHOUT ANY WARRANTY; without even the implied warranty of
-						MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-					Lesser General Public License for more details.</p>
-					<p>You should have received a copy of the GNU Lesser General Public License
-					along with this program. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
-				</div>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ScmFileFilter</span>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_mappings_.foldermappingsettings.html" class="tsd-kind-icon">Folder<wbr>Mapping<wbr>Settings</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_mappings_.html#foldermappingentry" class="tsd-kind-icon">Folder<wbr>Mapping<wbr>Entry</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_mappings_.html#foldermappings" class="tsd-kind-icon">Folder<wbr>Mappings</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_deploy_.scmfilefilter.html#exclude" class="tsd-kind-icon">exclude</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_deploy_.scmfilefilter.html#files" class="tsd-kind-icon">files</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-					<a name="foldermappingentry" class="tsd-anchor"></a>
-					<h3>Folder<wbr>Mapping<wbr>Entry</h3>
-					<div class="tsd-signature tsd-kind-icon">Folder<wbr>Mapping<wbr>Entry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_mappings_.foldermappingsettings.html" class="tsd-signature-type">FolderMappingSettings</a></div>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="exclude" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> exclude</h3>
+					<div class="tsd-signature tsd-kind-icon">exclude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/mappings.ts#L22">mappings.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/deploy.ts#L38">deploy.ts:38</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>An folder mapping entry.</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-					<a name="foldermappings" class="tsd-anchor"></a>
-					<h3>Folder<wbr>Mappings</h3>
-					<div class="tsd-signature tsd-kind-icon">Folder<wbr>Mappings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="files" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> files</h3>
+					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/mappings.ts#L27">mappings.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/deploy.ts#L39">deploy.ts:39</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>An object with folder mappings.</p>
-						</div>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>pattern: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><a href="_mappings_.html#foldermappingentry" class="tsd-signature-type">FolderMappingEntry</a></h5>
-							</li>
-						</ul>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -152,20 +122,59 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_mappings_.html">"mappings"</a>
+						<a href="../modules/_deploy_.html">"deploy"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_mappings_.foldermappingsettings.html" class="tsd-kind-icon">Folder<wbr>Mapping<wbr>Settings</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_deploy_.scmfilefilter.html" class="tsd-kind-icon">Scm<wbr>File<wbr>Filter</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_deploy_.scmfilefilter.html#exclude" class="tsd-kind-icon">exclude</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_deploy_.scmfilefilter.html#files" class="tsd-kind-icon">files</a>
+							</li>
+						</ul>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="_mappings_.html#foldermappingentry" class="tsd-kind-icon">Folder<wbr>Mapping<wbr>Entry</a>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_deploy_.html#scmfilefilterstorage" class="tsd-kind-icon">Scm<wbr>File<wbr>Filter<wbr>Storage</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="_mappings_.html#foldermappings" class="tsd-kind-icon">Folder<wbr>Mappings</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_deploy_.html#key_scm_commit_file_filters" class="tsd-kind-icon">KEY_<wbr>SCM_<wbr>COMMIT_<wbr>FILE_<wbr>FILTERS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_deploy_.html#nextcancelbtncommandid" class="tsd-kind-icon">next<wbr>Cancel<wbr>Btn<wbr>Command<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_deploy_.html#deployallopenfiles" class="tsd-kind-icon">deploy<wbr>All<wbr>Open<wbr>Files</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_deploy_.html#deployfilelist" class="tsd-kind-icon">deploy<wbr>File<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_deploy_.html#deployfileto" class="tsd-kind-icon">deploy<wbr>File<wbr>To</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_deploy_.html#deployfilesto" class="tsd-kind-icon">deploy<wbr>Files<wbr>To</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_deploy_.html#deployonchange" class="tsd-kind-icon">deploy<wbr>OnChange</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_deploy_.html#deployonsave" class="tsd-kind-icon">deploy<wbr>OnSave</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_deploy_.html#deploypackage" class="tsd-kind-icon">deploy<wbr>Package</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_deploy_.html#deployscmcommit" class="tsd-kind-icon">deploy<wbr>Scm<wbr>Commit</a>
 					</li>
 				</ul>
 			</nav>

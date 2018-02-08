@@ -105,6 +105,12 @@
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_log_.html#new_console_logger" class="tsd-kind-icon">NEW_<wbr>CONSOLE_<wbr>LOGGER</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_log_.html#cleanuplogfilesinhomedirectory" class="tsd-kind-icon">cleanup<wbr>Log<wbr>Files<wbr>InHome<wbr>Directory</a></li>
+							</ul>
+						</section>
 					</div>
 				</section>
 			</section>
@@ -116,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">Log<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/log.ts#L29">log.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b6c34a6/src/log.ts#L34">log.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -157,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">Log<wbr>Filter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/log.ts#L56">log.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b6c34a6/src/log.ts#L61">log.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,7 +199,7 @@
 					<div class="tsd-signature tsd-kind-icon">Typed<wbr>Log<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/log.ts#L115">log.ts:115</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b6c34a6/src/log.ts#L120">log.ts:120</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -239,11 +245,11 @@
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="console" class="tsd-anchor"></a>
-					<h3>CONSOLE</h3>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> CONSOLE</h3>
 					<div class="tsd-signature tsd-kind-icon">CONSOLE<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_log_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol"> =&nbsp;NEW_CONSOLE_LOGGER</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/log.ts#L430">log.ts:430</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b6c34a6/src/log.ts#L500">log.ts:500</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -254,13 +260,44 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="new_console_logger" class="tsd-anchor"></a>
-					<h3>NEW_<wbr>CONSOLE_<wbr>LOGGER</h3>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> NEW_<wbr>CONSOLE_<wbr>LOGGER</h3>
 					<div class="tsd-signature tsd-kind-icon">NEW_<wbr>CONSOLE_<wbr>LOGGER<span class="tsd-signature-symbol">:</span> <a href="../classes/_log_.actionlogger.html" class="tsd-signature-type">ActionLogger</a><span class="tsd-signature-symbol"> =&nbsp;new ActionLogger()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/197a75f/src/log.ts#L388">log.ts:388</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b6c34a6/src/log.ts#L393">log.ts:393</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="cleanuplogfilesinhomedirectory" class="tsd-anchor"></a>
+					<h3>cleanup<wbr>Log<wbr>Files<wbr>InHome<wbr>Directory</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">cleanup<wbr>Log<wbr>Files<wbr>InHome<wbr>Directory<span class="tsd-signature-symbol">(</span>maxLifeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b6c34a6/src/log.ts#L507">log.ts:507</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes all old log files in the home directory.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> maxLifeTime: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -306,6 +343,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_log_.html#new_console_logger" class="tsd-kind-icon">NEW_<wbr>CONSOLE_<wbr>LOGGER</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_log_.html#cleanuplogfilesinhomedirectory" class="tsd-kind-icon">cleanup<wbr>Log<wbr>Files<wbr>InHome<wbr>Directory</a>
 					</li>
 				</ul>
 			</nav>

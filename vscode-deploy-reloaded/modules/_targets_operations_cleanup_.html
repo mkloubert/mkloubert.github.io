@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;plugins/dropbox&quot; | vscode-deploy-reloaded</title>
+	<title>&quot;targets/operations/cleanup&quot; | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_plugins_dropbox_.html">&quot;plugins/dropbox&quot;</a>
+					<a href="_targets_operations_cleanup_.html">&quot;targets/operations/cleanup&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;plugins/dropbox&quot;</h1>
+			<h1>External module &quot;targets/operations/cleanup&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -70,23 +70,16 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Classes</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported"><a href="../classes/_plugins_dropbox_.dropboxplugin.html" class="tsd-kind-icon">Dropbox<wbr>Plugin</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_plugins_dropbox_.dropboxcontext.html" class="tsd-kind-icon">Dropbox<wbr>Context</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_dropbox_.dropboxtarget.html" class="tsd-kind-icon">Dropbox<wbr>Target</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_targets_operations_cleanup_.cleanuptargetoperation.html" class="tsd-kind-icon">Cleanup<wbr>Target<wbr>Operation</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_plugins_dropbox_.html#createplugins" class="tsd-kind-icon">create<wbr>Plugins</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_targets_operations_cleanup_.html#execute" class="tsd-kind-icon">execute</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,34 +88,31 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="createplugins" class="tsd-anchor"></a>
-					<h3>create<wbr>Plugins</h3>
+					<a name="execute" class="tsd-anchor"></a>
+					<h3>execute</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Plugins<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_.plugincontext.html" class="tsd-signature-type">PluginContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_plugins_dropbox_.dropboxplugin.html" class="tsd-signature-type">DropboxPlugin</a></li>
+						<li class="tsd-signature tsd-kind-icon">execute<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.targetoperationexecutioncontext.html" class="tsd-signature-type">TargetOperationExecutionContext</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_targets_operations_cleanup_.cleanuptargetoperation.html" class="tsd-signature-type">CleanupTargetOperation</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/5fa1856/src/plugins/dropbox.ts#L74">plugins/dropbox.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/5fa1856/src/targets/operations/cleanup.ts#L48">targets/operations/cleanup.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a new instance of that plugin.</p>
-								</div>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>context: <a href="../interfaces/_plugins_.plugincontext.html" class="tsd-signature-type">PluginContext</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The context for the plugin.</p>
-									</div>
+									<h5>context: <a href="../interfaces/_targets_.targetoperationexecutioncontext.html" class="tsd-signature-type">TargetOperationExecutionContext</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_targets_operations_cleanup_.cleanuptargetoperation.html" class="tsd-signature-type">CleanupTargetOperation</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_plugins_dropbox_.dropboxplugin.html" class="tsd-signature-type">DropboxPlugin</a></h4>
-							<p>The new plugin.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -135,23 +125,17 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_plugins_dropbox_.html">"plugins/dropbox"</a>
+						<a href="_targets_operations_cleanup_.html">"targets/operations/cleanup"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../classes/_plugins_dropbox_.dropboxplugin.html" class="tsd-kind-icon">Dropbox<wbr>Plugin</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_plugins_dropbox_.dropboxcontext.html" class="tsd-kind-icon">Dropbox<wbr>Context</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_dropbox_.dropboxtarget.html" class="tsd-kind-icon">Dropbox<wbr>Target</a>
+						<a href="../interfaces/_targets_operations_cleanup_.cleanuptargetoperation.html" class="tsd-kind-icon">Cleanup<wbr>Target<wbr>Operation</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_plugins_dropbox_.html#createplugins" class="tsd-kind-icon">create<wbr>Plugins</a>
+						<a href="_targets_operations_cleanup_.html#execute" class="tsd-kind-icon">execute</a>
 					</li>
 				</ul>
 			</nav>

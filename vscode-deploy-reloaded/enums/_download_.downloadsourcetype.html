@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MSSQLOptions | vscode-deploy-reloaded</title>
+	<title>DownloadSourceType | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_sql_mssql_.html">&quot;sql/mssql&quot;</a>
+					<a href="../modules/_download_.html">&quot;download&quot;</a>
 				</li>
 				<li>
-					<a href="_sql_mssql_.mssqloptions.html">MSSQLOptions</a>
+					<a href="_download_.downloadsourcetype.html">DownloadSourceType</a>
 				</li>
 			</ul>
-			<h1>Interface MSSQLOptions</h1>
+			<h1>Enumeration DownloadSourceType</h1>
 		</div>
 	</div>
 </header>
@@ -72,146 +72,117 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Options for a MSSQL connection.</p>
+						<p>List of download source types.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<a href="_sql_.sqlconnectionoptions.html" class="tsd-signature-type">SqlConnectionOptions</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">MSSQLOptions</span>
-							</li>
-						</ul>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mssql_.mssqloptions.html#database" class="tsd-kind-icon">database</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mssql_.mssqloptions.html#driver" class="tsd-kind-icon">driver</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mssql_.mssqloptions.html#encrypt" class="tsd-kind-icon">encrypt</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mssql_.mssqloptions.html#host" class="tsd-kind-icon">host</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mssql_.mssqloptions.html#password" class="tsd-kind-icon">password</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mssql_.mssqloptions.html#port" class="tsd-kind-icon">port</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_sql_mssql_.mssqloptions.html#user" class="tsd-kind-icon">user</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_download_.downloadsourcetype.html#dropbox" class="tsd-kind-icon">Drop<wbr>Box</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_download_.downloadsourcetype.html#ftp" class="tsd-kind-icon">FTP</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_download_.downloadsourcetype.html#http" class="tsd-kind-icon">HTTP</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_download_.downloadsourcetype.html#local" class="tsd-kind-icon">Local</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_download_.downloadsourcetype.html#sftp" class="tsd-kind-icon">SFTP</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_download_.downloadsourcetype.html#slack" class="tsd-kind-icon">Slack</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="database" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> database</h3>
-					<div class="tsd-signature tsd-kind-icon">database<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="dropbox" class="tsd-anchor"></a>
+					<h3>Drop<wbr>Box</h3>
+					<div class="tsd-signature tsd-kind-icon">Drop<wbr>Box<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/sql/mssql.ts#L33">sql/mssql.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/download.ts#L67">download.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The database to connect to.</p>
+							<p>DropBox</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="driver" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> driver</h3>
-					<div class="tsd-signature tsd-kind-icon">driver<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="ftp" class="tsd-anchor"></a>
+					<h3>FTP</h3>
+					<div class="tsd-signature tsd-kind-icon">FTP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/sql/mssql.ts#L37">sql/mssql.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/download.ts#L71">download.ts:71</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The driver to use.</p>
+							<p>FTP</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="encrypt" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> encrypt</h3>
-					<div class="tsd-signature tsd-kind-icon">encrypt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="http" class="tsd-anchor"></a>
+					<h3>HTTP</h3>
+					<div class="tsd-signature tsd-kind-icon">HTTP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/sql/mssql.ts#L41">sql/mssql.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/download.ts#L75">download.ts:75</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Encrypt the connection or not.</p>
+							<p>HTTP</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="host" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
-					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="local" class="tsd-anchor"></a>
+					<h3>Local</h3>
+					<div class="tsd-signature tsd-kind-icon">Local<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/sql/mssql.ts#L45">sql/mssql.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/download.ts#L63">download.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The host.</p>
+							<p>Local file.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="password" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> password</h3>
-					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="sftp" class="tsd-anchor"></a>
+					<h3>SFTP</h3>
+					<div class="tsd-signature tsd-kind-icon">SFTP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/sql/mssql.ts#L53">sql/mssql.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/download.ts#L79">download.ts:79</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The password.</p>
+							<p>SFTP</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="port" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
-					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="slack" class="tsd-anchor"></a>
+					<h3>Slack</h3>
+					<div class="tsd-signature tsd-kind-icon">Slack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/sql/mssql.ts#L49">sql/mssql.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/download.ts#L83">download.ts:83</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The TCP port.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="user" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> user</h3>
-					<div class="tsd-signature tsd-kind-icon">user<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/sql/mssql.ts#L57">sql/mssql.ts:57</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The username.</p>
+							<p>Slack channel</p>
 						</div>
 					</div>
 				</section>
@@ -224,50 +195,77 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_sql_mssql_.html">"sql/mssql"</a>
+						<a href="../modules/_download_.html">"download"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_sql_mssql_.mssqlconnection.html" class="tsd-kind-icon">MSSQLConnection</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_sql_mssql_.mssqloptions.html" class="tsd-kind-icon">MSSQLOptions</a>
+					<li class="current tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_download_.downloadsourcetype.html" class="tsd-kind-icon">Download<wbr>Source<wbr>Type</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mssql_.mssqloptions.html#database" class="tsd-kind-icon">database</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_download_.downloadsourcetype.html#dropbox" class="tsd-kind-icon">Drop<wbr>Box</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mssql_.mssqloptions.html#driver" class="tsd-kind-icon">driver</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_download_.downloadsourcetype.html#ftp" class="tsd-kind-icon">FTP</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mssql_.mssqloptions.html#encrypt" class="tsd-kind-icon">encrypt</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_download_.downloadsourcetype.html#http" class="tsd-kind-icon">HTTP</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mssql_.mssqloptions.html#host" class="tsd-kind-icon">host</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_download_.downloadsourcetype.html#local" class="tsd-kind-icon">Local</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mssql_.mssqloptions.html#password" class="tsd-kind-icon">password</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_download_.downloadsourcetype.html#sftp" class="tsd-kind-icon">SFTP</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mssql_.mssqloptions.html#port" class="tsd-kind-icon">port</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_sql_mssql_.mssqloptions.html#user" class="tsd-kind-icon">user</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_download_.downloadsourcetype.html#slack" class="tsd-kind-icon">Slack</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_sql_mssql_.mssqlresult.html" class="tsd-kind-icon">MSSQLResult</a>
+						<a href="../interfaces/_download_.downloadoutvalue.html" class="tsd-kind-icon">Download<wbr>Out<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#downloadclientconfigmappings" class="tsd-kind-icon">Download<wbr>Client<wbr>Config<wbr>Mappings</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#downloadclientconfigtargettype" class="tsd-kind-icon">Download<wbr>Client<wbr>Config<wbr>Target<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#downloader" class="tsd-kind-icon">Downloader</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#createdownloadconfig" class="tsd-kind-icon">create<wbr>Download<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_sql_mssql_.html#openmssqlconnection" class="tsd-kind-icon">openMSSQLConnection</a>
+						<a href="../modules/_download_.html#download" class="tsd-kind-icon">download</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#download_dropbox" class="tsd-kind-icon">download_<wbr>dropbox</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#download_ftp" class="tsd-kind-icon">download_<wbr>ftp</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#download_http" class="tsd-kind-icon">download_<wbr>http</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#download_sftp" class="tsd-kind-icon">download_<wbr>sftp</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#download_slack" class="tsd-kind-icon">download_<wbr>slack</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#gethostandport" class="tsd-kind-icon">get<wbr>Host<wbr>And<wbr>Port</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#getusernameandpassword" class="tsd-kind-icon">get<wbr>User<wbr>Name<wbr>And<wbr>Password</a>
 					</li>
 				</ul>
 			</nav>

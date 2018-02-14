@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SharedIniFileCredentialsOptions | vscode-deploy-reloaded</title>
+	<title>DownloadOutValue | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,24 +56,31 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_clients_s3bucket_.html">&quot;clients/s3bucket&quot;</a>
+					<a href="../modules/_download_.html">&quot;download&quot;</a>
 				</li>
 				<li>
-					<a href="_clients_s3bucket_.sharedinifilecredentialsoptions.html">SharedIniFileCredentialsOptions</a>
+					<a href="_download_.downloadoutvalue.html">DownloadOutValue</a>
 				</li>
 			</ul>
-			<h1>Interface SharedIniFileCredentialsOptions</h1>
+			<h1>Interface DownloadOutValue</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Additional result data for &#39;download()&#39; function.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SharedIniFileCredentialsOptions</span>
+						<span class="target">DownloadOutValue</span>
 					</li>
 				</ul>
 			</section>
@@ -81,48 +88,63 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_clients_s3bucket_.sharedinifilecredentialsoptions.html#disableassumerole" class="tsd-kind-icon">disable<wbr>Assume<wbr>Role</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_clients_s3bucket_.sharedinifilecredentialsoptions.html#filename" class="tsd-kind-icon">filename</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_clients_s3bucket_.sharedinifilecredentialsoptions.html#profile" class="tsd-kind-icon">profile</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_download_.downloadoutvalue.html#fullpath" class="tsd-kind-icon">full<wbr>Path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_download_.downloadoutvalue.html#source" class="tsd-kind-icon">source</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_download_.downloadoutvalue.html#url" class="tsd-kind-icon">url</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="disableassumerole" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> disable<wbr>Assume<wbr>Role</h3>
-					<div class="tsd-signature tsd-kind-icon">disable<wbr>Assume<wbr>Role<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fullpath" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> full<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">full<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/clients/s3bucket.ts#L94">clients/s3bucket.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/download.ts#L45">download.ts:45</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The full path of the download source.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="filename" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> filename</h3>
-					<div class="tsd-signature tsd-kind-icon">filename<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="source" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> source</h3>
+					<div class="tsd-signature tsd-kind-icon">source<span class="tsd-signature-symbol">:</span> <a href="../enums/_download_.downloadsourcetype.html" class="tsd-signature-type">DownloadSourceType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/clients/s3bucket.ts#L93">clients/s3bucket.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/download.ts#L49">download.ts:49</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The source.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="profile" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> profile</h3>
-					<div class="tsd-signature tsd-kind-icon">profile<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="url" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> url</h3>
+					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Url</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/clients/s3bucket.ts#L92">clients/s3bucket.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/download.ts#L53">download.ts:53</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The URL.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -133,62 +155,68 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_clients_s3bucket_.html">"clients/s3bucket"</a>
+						<a href="../modules/_download_.html">"download"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_clients_s3bucket_.s3bucketclient.html" class="tsd-kind-icon">S3<wbr>Bucket<wbr>Client</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_clients_s3bucket_.s3bucketoptions.html" class="tsd-kind-icon">S3<wbr>Bucket<wbr>Options</a>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_download_.downloadsourcetype.html" class="tsd-kind-icon">Download<wbr>Source<wbr>Type</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_clients_s3bucket_.sharedinifilecredentialsoptions.html" class="tsd-kind-icon">Shared<wbr>Ini<wbr>File<wbr>Credentials<wbr>Options</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_download_.downloadoutvalue.html" class="tsd-kind-icon">Download<wbr>Out<wbr>Value</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_clients_s3bucket_.sharedinifilecredentialsoptions.html#disableassumerole" class="tsd-kind-icon">disable<wbr>Assume<wbr>Role</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_download_.downloadoutvalue.html#fullpath" class="tsd-kind-icon">full<wbr>Path</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_clients_s3bucket_.sharedinifilecredentialsoptions.html#filename" class="tsd-kind-icon">filename</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_download_.downloadoutvalue.html#source" class="tsd-kind-icon">source</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_clients_s3bucket_.sharedinifilecredentialsoptions.html#profile" class="tsd-kind-icon">profile</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_download_.downloadoutvalue.html#url" class="tsd-kind-icon">url</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_clients_s3bucket_.html#s3bucketfileacldetector" class="tsd-kind-icon">S3<wbr>Bucket<wbr>File<wbr>Acl<wbr>Detector</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#downloadclientconfigmappings" class="tsd-kind-icon">Download<wbr>Client<wbr>Config<wbr>Mappings</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_clients_s3bucket_.html#s3directoryscopeprovider" class="tsd-kind-icon">S3<wbr>Directory<wbr>Scope<wbr>Provider</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#downloadclientconfigtargettype" class="tsd-kind-icon">Download<wbr>Client<wbr>Config<wbr>Target<wbr>Type</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_clients_s3bucket_.html#s3valueprovider" class="tsd-kind-icon">S3<wbr>Value<wbr>Provider</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#downloader" class="tsd-kind-icon">Downloader</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_clients_s3bucket_.html#default_acl" class="tsd-kind-icon">DEFAULT_<wbr>ACL</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_clients_s3bucket_.html#createclient" class="tsd-kind-icon">create<wbr>Client</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#createdownloadconfig" class="tsd-kind-icon">create<wbr>Download<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_clients_s3bucket_.html#getaclsafe" class="tsd-kind-icon">get<wbr>Acl<wbr>Safe</a>
+						<a href="../modules/_download_.html#download" class="tsd-kind-icon">download</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_clients_s3bucket_.html#normalizepath" class="tsd-kind-icon">normalize<wbr>Path</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#download_dropbox" class="tsd-kind-icon">download_<wbr>dropbox</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_clients_s3bucket_.html#tos3path" class="tsd-kind-icon">to<wbr>S3Path</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#download_ftp" class="tsd-kind-icon">download_<wbr>ftp</a>
 					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_clients_s3bucket_.html#known_credential_classes" class="tsd-kind-icon">KNOWN_<wbr>CREDENTIAL_<wbr>CLASSES</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#download_http" class="tsd-kind-icon">download_<wbr>http</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#download_sftp" class="tsd-kind-icon">download_<wbr>sftp</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#download_slack" class="tsd-kind-icon">download_<wbr>slack</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#gethostandport" class="tsd-kind-icon">get<wbr>Host<wbr>And<wbr>Port</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_download_.html#getusernameandpassword" class="tsd-kind-icon">get<wbr>User<wbr>Name<wbr>And<wbr>Password</a>
 					</li>
 				</ul>
 			</nav>

@@ -81,6 +81,9 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<a href="_contracts_.buttonwithcustomcommand.html" class="tsd-signature-type">ButtonWithCustomCommand</a>
+					</li>
+					<li>
+						<a href="_targets_.targetprovider.html" class="tsd-signature-type">TargetProvider</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">PackageButton</span>
@@ -102,6 +105,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_packages_.packagebutton.html#isright" class="tsd-kind-icon">is<wbr>Right</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_packages_.packagebutton.html#priority" class="tsd-kind-icon">priority</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_packages_.packagebutton.html#showprompt" class="tsd-kind-icon">show<wbr>Prompt</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_packages_.packagebutton.html#targets" class="tsd-kind-icon">targets</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_packages_.packagebutton.html#text" class="tsd-kind-icon">text</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_packages_.packagebutton.html#tooltip" class="tsd-kind-icon">tooltip</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_packages_.packagebutton.html#type" class="tsd-kind-icon">type</a></li>
@@ -119,7 +123,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.button.html">Button</a>.<a href="_contracts_.button.html#color">color</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/contracts.ts#L47">contracts.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7d173cc/src/contracts.ts#L47">contracts.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -135,7 +139,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.buttonwithcustomcommand.html">ButtonWithCustomCommand</a>.<a href="_contracts_.buttonwithcustomcommand.html#command">command</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/contracts.ts#L77">contracts.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7d173cc/src/contracts.ts#L77">contracts.ts:77</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -151,7 +155,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.button.html">Button</a>.<a href="_contracts_.button.html#enabled">enabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/contracts.ts#L51">contracts.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7d173cc/src/contracts.ts#L51">contracts.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,7 +171,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.button.html">Button</a>.<a href="_contracts_.button.html#isright">isRight</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/contracts.ts#L55">contracts.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7d173cc/src/contracts.ts#L55">contracts.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -183,7 +187,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.button.html">Button</a>.<a href="_contracts_.button.html#priority">priority</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/contracts.ts#L59">contracts.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7d173cc/src/contracts.ts#L59">contracts.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -198,12 +202,28 @@
 					<div class="tsd-signature tsd-kind-icon">show<wbr>Prompt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/packages.ts#L92">packages.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7d173cc/src/packages.ts#L92">packages.ts:92</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Ask before start deploy operation or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="targets" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> targets</h3>
+					<div class="tsd-signature tsd-kind-icon">targets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_targets_.targetprovider.html">TargetProvider</a>.<a href="_targets_.targetprovider.html#targets">targets</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7d173cc/src/targets.ts#L329">targets.ts:329</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>One or more target.</p>
 						</div>
 					</div>
 				</section>
@@ -214,7 +234,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.button.html">Button</a>.<a href="_contracts_.button.html#text">text</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/contracts.ts#L63">contracts.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7d173cc/src/contracts.ts#L63">contracts.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -230,7 +250,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.button.html">Button</a>.<a href="_contracts_.button.html#tooltip">tooltip</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/contracts.ts#L67">contracts.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7d173cc/src/contracts.ts#L67">contracts.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -245,7 +265,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/adeb989/src/packages.ts#L96">packages.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7d173cc/src/packages.ts#L96">packages.ts:96</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -294,6 +314,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_packages_.packagebutton.html#showprompt" class="tsd-kind-icon">show<wbr>Prompt</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_packages_.packagebutton.html#targets" class="tsd-kind-icon">targets</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_packages_.packagebutton.html#text" class="tsd-kind-icon">text</a>

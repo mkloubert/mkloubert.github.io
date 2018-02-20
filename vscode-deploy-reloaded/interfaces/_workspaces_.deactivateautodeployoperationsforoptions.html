@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PackageFile | vscode-deploy-reloaded</title>
+	<title>DeactivateAutoDeployOperationsForOptions | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
+					<a href="../modules/_workspaces_.html">&quot;workspaces&quot;</a>
 				</li>
 				<li>
-					<a href="_contracts_.packagefile.html">PackageFile</a>
+					<a href="_workspaces_.deactivateautodeployoperationsforoptions.html">DeactivateAutoDeployOperationsForOptions</a>
 				</li>
 			</ul>
-			<h1>Interface PackageFile</h1>
+			<h1>Interface DeactivateAutoDeployOperationsForOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Describes the structure of the package file of that extenstion.</p>
+						<p>Options for &#39;Workspace.deactivateAutoDeployOperationsFor()&#39; method.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PackageFile</span>
+						<span class="target">DeactivateAutoDeployOperationsForOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -91,9 +91,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.packagefile.html#displayname" class="tsd-kind-icon">display<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.packagefile.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.packagefile.html#version" class="tsd-kind-icon">version</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.deactivateautodeployoperationsforoptions.html#nodeployonchange" class="tsd-kind-icon">no<wbr>Deploy<wbr>OnChange</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.deactivateautodeployoperationsforoptions.html#nodeployonsave" class="tsd-kind-icon">no<wbr>Deploy<wbr>OnSave</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.deactivateautodeployoperationsforoptions.html#noremoveonchange" class="tsd-kind-icon">no<wbr>Remove<wbr>OnChange</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,47 +102,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="displayname" class="tsd-anchor"></a>
-					<h3>display<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="nodeployonchange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Deploy<wbr>OnChange</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Deploy<wbr>OnChange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/12b3d3f/src/contracts.ts#L413">contracts.ts:413</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/12b3d3f/src/workspaces.ts#L63">workspaces.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The display name.</p>
+							<p>Deactivate &#39;deploy on change&#39; or not.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="nodeployonsave" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Deploy<wbr>OnSave</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Deploy<wbr>OnSave<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/12b3d3f/src/contracts.ts#L417">contracts.ts:417</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/12b3d3f/src/workspaces.ts#L67">workspaces.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The (internal) name.</p>
+							<p>Deactivate &#39;deploy on save&#39; or not.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="version" class="tsd-anchor"></a>
-					<h3>version</h3>
-					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="noremoveonchange" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> no<wbr>Remove<wbr>OnChange</h3>
+					<div class="tsd-signature tsd-kind-icon">no<wbr>Remove<wbr>OnChange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/12b3d3f/src/contracts.ts#L421">contracts.ts:421</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/12b3d3f/src/workspaces.ts#L71">workspaces.ts:71</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The version string.</p>
+							<p>Deactivate &#39;remove on change&#39; or not.</p>
 						</div>
 					</div>
 				</section>
@@ -155,128 +155,131 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_contracts_.html">"contracts"</a>
+						<a href="../modules/_workspaces_.html">"workspaces"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_contracts_.deployoperation.html" class="tsd-kind-icon">Deploy<wbr>Operation</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_workspaces_.workspace.html" class="tsd-kind-icon">Workspace</a>
 					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_contracts_.filechangetype.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_contracts_.actionquickpick.html" class="tsd-kind-icon">Action<wbr>Quick<wbr>Pick</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.button.html" class="tsd-kind-icon">Button</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.buttonwithcustomcommand.html" class="tsd-kind-icon">Button<wbr>With<wbr>Custom<wbr>Command</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.cancelable.html" class="tsd-kind-icon">Cancelable</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.checkforrequirementssettings.html" class="tsd-kind-icon">Check<wbr>For<wbr>Requirements<wbr>Settings</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.conditionalitem.html" class="tsd-kind-icon">Conditional<wbr>Item</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.configsource.html" class="tsd-kind-icon">Config<wbr>Source</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.document.html" class="tsd-kind-icon">Document</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.encryptable.html" class="tsd-kind-icon">Encryptable</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.filefilter.html" class="tsd-kind-icon">File<wbr>Filter</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.import.html" class="tsd-kind-icon">Import</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_contracts_.messageitemwithvalue.html" class="tsd-kind-icon">Message<wbr>Item<wbr>With<wbr>Value</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_workspaces_.workspacememento.html" class="tsd-kind-icon">Workspace<wbr>Memento</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
+						<a href="_workspaces_.deactivateautodeployoperationsforoptions.html" class="tsd-kind-icon">Deactivate<wbr>Auto<wbr>Deploy<wbr>Operations<wbr>For<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.packagefile.html#displayname" class="tsd-kind-icon">display<wbr>Name</a>
+								<a href="_workspaces_.deactivateautodeployoperationsforoptions.html#nodeployonchange" class="tsd-kind-icon">no<wbr>Deploy<wbr>OnChange</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.packagefile.html#name" class="tsd-kind-icon">name</a>
+								<a href="_workspaces_.deactivateautodeployoperationsforoptions.html#nodeployonsave" class="tsd-kind-icon">no<wbr>Deploy<wbr>OnSave</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_contracts_.packagefile.html#version" class="tsd-kind-icon">version</a>
+								<a href="_workspaces_.deactivateautodeployoperationsforoptions.html#noremoveonchange" class="tsd-kind-icon">no<wbr>Remove<wbr>OnChange</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.platformitem.html" class="tsd-kind-icon">Platform<wbr>Item</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_workspaces_.packagewithbutton.html" class="tsd-kind-icon">Package<wbr>With<wbr>Button</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_workspaces_.switchstaterepowithcollection.html" class="tsd-kind-icon">Switch<wbr>State<wbr>Repo<wbr>With<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.requiredextensionsettings.html" class="tsd-kind-icon">Required<wbr>Extension<wbr>Settings</a>
+						<a href="_workspaces_.switchtarget.html" class="tsd-kind-icon">Switch<wbr>Target</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.scriptarguments.html" class="tsd-kind-icon">Script<wbr>Arguments</a>
+						<a href="_workspaces_.switchtargetoption.html" class="tsd-kind-icon">Switch<wbr>Target<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="_workspaces_.targetwithbutton.html" class="tsd-kind-icon">Target<wbr>With<wbr>Button</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.shellcommandsettings.html" class="tsd-kind-icon">Shell<wbr>Command<wbr>Settings</a>
+						<a href="_workspaces_.workspacecontext.html" class="tsd-kind-icon">Workspace<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.startupcommand.html" class="tsd-kind-icon">Startup<wbr>Command</a>
+						<a href="_workspaces_.workspacefile.html" class="tsd-kind-icon">Workspace<wbr>File</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.translator.html" class="tsd-kind-icon">Translator</a>
+						<a href="_workspaces_.workspaceitem.html" class="tsd-kind-icon">Workspace<wbr>Item</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.withnameandpath.html" class="tsd-kind-icon">With<wbr>Name<wbr>And<wbr>Path</a>
+						<a href="_workspaces_.workspaceitemfromsettings.html" class="tsd-kind-icon">Workspace<wbr>Item<wbr>From<wbr>Settings</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_contracts_.withoptionalname.html" class="tsd-kind-icon">With<wbr>Optional<wbr>Name</a>
+						<a href="_workspaces_.workspacelistdirectoryresult.html" class="tsd-kind-icon">Workspace<wbr>List<wbr>Directory<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_workspaces_.workspacesettings.html" class="tsd-kind-icon">Workspace<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#switchstaterepository" class="tsd-kind-icon">Switch<wbr>State<wbr>Repository</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#switchstaterepositorycollection" class="tsd-kind-icon">Switch<wbr>State<wbr>Repository<wbr>Collection</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#checkforrequirementsentry" class="tsd-kind-icon">Check<wbr>For<wbr>Requirements<wbr>Entry</a>
+						<a href="../modules/_workspaces_.html#switchtargetoptionvalue" class="tsd-kind-icon">Switch<wbr>Target<wbr>Option<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#importtype" class="tsd-kind-icon">Import<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_contracts_.html#keyvaluepairs" class="tsd-kind-icon">Key<wbr>Value<wbr>Pairs</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_contracts_.html#reloader" class="tsd-kind-icon">Reloader</a>
+						<a href="../modules/_workspaces_.html#syncwhenopenstates" class="tsd-kind-icon">Sync<wbr>When<wbr>Open<wbr>States</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#shellcommand" class="tsd-kind-icon">Shell<wbr>Command</a>
+						<a href="../modules/_workspaces_.html#workspaceprovider" class="tsd-kind-icon">Workspace<wbr>Provider</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#startupcommandvalue" class="tsd-kind-icon">Startup<wbr>Command<wbr>Value</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#files_changes" class="tsd-kind-icon">FILES_<wbr>CHANGES</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#default_host" class="tsd-kind-icon">DEFAULT_<wbr>HOST</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#key_workspace_usage" class="tsd-kind-icon">KEY_<wbr>WORKSPACE_<wbr>USAGE</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#event_config_reloaded" class="tsd-kind-icon">EVENT_<wbr>CONFIG_<wbr>RELOADED</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#homedir_subfolder" class="tsd-kind-icon">HOMEDIR_<wbr>SUBFOLDER</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#switch_state_repo_collection_key" class="tsd-kind-icon">SWITCH_<wbr>STATE_<wbr>REPO_<wbr>COLLECTION_<wbr>KEY</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_contracts_.html#zip_comment" class="tsd-kind-icon">ZIP_<wbr>COMMENT</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#activeworkspaceprovider" class="tsd-kind-icon">active<wbr>Workspace<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#allworkspacesprovider" class="tsd-kind-icon">all<wbr>Workspaces<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#nextpackagebuttonid" class="tsd-kind-icon">next<wbr>Package<wbr>Button<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#nextswitchbuttonid" class="tsd-kind-icon">next<wbr>Switch<wbr>Button<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#getactiveworkspaces" class="tsd-kind-icon">get<wbr>Active<wbr>Workspaces</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#getallworkspaces" class="tsd-kind-icon">get<wbr>All<wbr>Workspaces</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#isswitchtarget" class="tsd-kind-icon">is<wbr>Switch<wbr>Target</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#resetworkspaceusage" class="tsd-kind-icon">reset<wbr>Workspace<wbr>Usage</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#scanfordirectoriesrecursive" class="tsd-kind-icon">scan<wbr>For<wbr>Directories<wbr>Recursive</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#setactiveworkspaceprovider" class="tsd-kind-icon">set<wbr>Active<wbr>Workspace<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#setallworkspacesprovider" class="tsd-kind-icon">set<wbr>All<wbr>Workspaces<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#showworkspacequickpick" class="tsd-kind-icon">show<wbr>Workspace<wbr>Quick<wbr>Pick</a>
 					</li>
 				</ul>
 			</nav>

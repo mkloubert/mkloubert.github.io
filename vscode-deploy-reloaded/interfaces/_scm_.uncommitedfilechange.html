@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WithDirectoriesAndFiles | vscode-deploy-reloaded</title>
+	<title>UncommitedFileChange | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_files_.html">&quot;files&quot;</a>
+					<a href="../modules/_scm_.html">&quot;scm&quot;</a>
 				</li>
 				<li>
-					<a href="_files_.withdirectoriesandfiles.html">WithDirectoriesAndFiles</a>
+					<a href="_scm_.uncommitedfilechange.html">UncommitedFileChange</a>
 				</li>
 			</ul>
-			<h1>Interface WithDirectoriesAndFiles</h1>
+			<h1>Interface UncommitedFileChange</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An object with directory and file info objects.</p>
+						<p>An uncommitted file change.</p>
 					</div>
 				</div>
 			</section>
@@ -80,15 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">WithDirectoriesAndFiles</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_plugins_.listdirectoryresult.html" class="tsd-signature-type">ListDirectoryResult</a>
-							</li>
-							<li>
-								<a href="_workspaces_.workspacelistdirectoryresult.html" class="tsd-signature-type">WorkspaceListDirectoryResult</a>
-							</li>
-						</ul>
+						<span class="target">UncommitedFileChange</span>
 					</li>
 				</ul>
 			</section>
@@ -99,8 +91,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_files_.withdirectoriesandfiles.html#dirs" class="tsd-kind-icon">dirs</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_files_.withdirectoriesandfiles.html#files" class="tsd-kind-icon">files</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scm_.uncommitedfilechange.html#file" class="tsd-kind-icon">file</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scm_.uncommitedfilechange.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -109,32 +101,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="dirs" class="tsd-anchor"></a>
-					<h3>dirs</h3>
-					<div class="tsd-signature tsd-kind-icon">dirs<span class="tsd-signature-symbol">:</span> <a href="_files_.directoryinfo.html" class="tsd-signature-type">DirectoryInfo</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="file" class="tsd-anchor"></a>
+					<h3>file</h3>
+					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3bba729/src/files.ts#L123">files.ts:123</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3bba729/src/scm.ts#L181">scm.ts:181</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The directories.</p>
+							<p>The file.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="files" class="tsd-anchor"></a>
-					<h3>files</h3>
-					<div class="tsd-signature tsd-kind-icon">files<span class="tsd-signature-symbol">:</span> <a href="_files_.fileinfo.html" class="tsd-signature-type">FileInfo</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/_scm_.filechangetype.html" class="tsd-signature-type">FileChangeType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3bba729/src/files.ts#L127">files.ts:127</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3bba729/src/scm.ts#L185">scm.ts:185</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The files.</p>
+							<p>The type of change.</p>
 						</div>
 					</div>
 				</section>
@@ -147,44 +139,50 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_files_.html">"files"</a>
+						<a href="../modules/_scm_.html">"scm"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_files_.filesystemtype.html" class="tsd-kind-icon">File<wbr>System<wbr>Type</a>
+						<a href="../enums/_scm_.filechangetype.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_files_.createdefaultdirectoryinfooptions.html" class="tsd-kind-icon">Create<wbr>Default<wbr>Directory<wbr>Info<wbr>Options</a>
+						<a href="_scm_.branch.html" class="tsd-kind-icon">Branch</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_files_.directoryinfo.html" class="tsd-kind-icon">Directory<wbr>Info</a>
+						<a href="_scm_.commit.html" class="tsd-kind-icon">Commit</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_files_.fileinfo.html" class="tsd-kind-icon">File<wbr>Info</a>
+						<a href="_scm_.commitrange.html" class="tsd-kind-icon">Commit<wbr>Range</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_files_.filesysteminfo.html" class="tsd-kind-icon">File<wbr>System<wbr>Info</a>
+						<a href="_scm_.filechange.html" class="tsd-kind-icon">File<wbr>Change</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scm_.sourcecontrolclient.html" class="tsd-kind-icon">Source<wbr>Control<wbr>Client</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_files_.withdirectoriesandfiles.html" class="tsd-kind-icon">With<wbr>Directories<wbr>And<wbr>Files</a>
+						<a href="_scm_.uncommitedfilechange.html" class="tsd-kind-icon">Uncommited<wbr>File<wbr>Change</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_files_.withdirectoriesandfiles.html#dirs" class="tsd-kind-icon">dirs</a>
+								<a href="_scm_.uncommitedfilechange.html#file" class="tsd-kind-icon">file</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_files_.withdirectoriesandfiles.html#files" class="tsd-kind-icon">files</a>
+								<a href="_scm_.uncommitedfilechange.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_files_.html#createdefaultdirectoryinfo" class="tsd-kind-icon">create<wbr>Default<wbr>Directory<wbr>Info</a>
+						<a href="../modules/_scm_.html#showscmcommitquickpick" class="tsd-kind-icon">showSCMCommit<wbr>Quick<wbr>Pick</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_scm_.html#showscmcommitrangequickpick" class="tsd-kind-icon">showSCMCommit<wbr>Range<wbr>Quick<wbr>Pick</a>
 					</li>
 				</ul>
 			</nav>

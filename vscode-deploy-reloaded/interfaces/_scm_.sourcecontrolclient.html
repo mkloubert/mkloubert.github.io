@@ -98,6 +98,8 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scm_.sourcecontrolclient.html#branches" class="tsd-kind-icon">branches</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scm_.sourcecontrolclient.html#changes" class="tsd-kind-icon">changes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_scm_.sourcecontrolclient.html#cwd" class="tsd-kind-icon">cwd</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,7 +113,7 @@
 					<div class="tsd-signature tsd-kind-icon">branches<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/7ae26d3/src/scm.ts#L161">scm.ts:161</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3bba729/src/scm.ts#L161">scm.ts:161</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -141,6 +143,59 @@
 								</ul>
 							</li>
 						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="changes" class="tsd-anchor"></a>
+					<h3>changes</h3>
+					<div class="tsd-signature tsd-kind-icon">changes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3bba729/src/scm.ts#L167">scm.ts:167</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Returns a list of all uncomitted file changes.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>returns</dt>
+							<dd><p>The result with the list of (uncommited) file changes.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scm_.uncommitedfilechange.html" class="tsd-signature-type">UncommitedFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_scm_.uncommitedfilechange.html" class="tsd-signature-type">UncommitedFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="_scm_.uncommitedfilechange.html" class="tsd-signature-type">UncommitedFileChange</a><span class="tsd-signature-symbol">[]</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_scm_.uncommitedfilechange.html" class="tsd-signature-type">UncommitedFileChange</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="cwd" class="tsd-anchor"></a>
+					<h3>cwd</h3>
+					<div class="tsd-signature tsd-kind-icon">cwd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3bba729/src/scm.ts#L171">scm.ts:171</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the current working directory.</p>
+						</div>
 					</div>
 				</section>
 			</section>
@@ -181,10 +236,19 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_scm_.sourcecontrolclient.html#branches" class="tsd-kind-icon">branches</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_scm_.sourcecontrolclient.html#changes" class="tsd-kind-icon">changes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_scm_.sourcecontrolclient.html#cwd" class="tsd-kind-icon">cwd</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_scm_.uncommitedfilechange.html" class="tsd-kind-icon">Uncommited<wbr>File<wbr>Change</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_scm_.html#showscmcommitquickpick" class="tsd-kind-icon">showSCMCommit<wbr>Quick<wbr>Pick</a>
 					</li>

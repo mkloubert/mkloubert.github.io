@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>vs-rest-api</title>
+	<title>@types/node</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">vs-rest-api</a>
+					<a href="index.html" class="title">@types/node</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -56,7 +56,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> vs-rest-api</h1>
+			<h1> @types/node</h1>
 		</div>
 	</div>
 </header>
@@ -64,322 +64,22 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="vs-rest-api">vs-rest-api</h1>
-				<p><a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-rest-api"><img src="https://vsmarketplacebadge.apphb.com/version-short/mkloubert.vs-rest-api.svg" alt="Latest Release"></a>
-					<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-rest-api"><img src="https://vsmarketplacebadge.apphb.com/installs/mkloubert.vs-rest-api.svg" alt="Installs"></a>
-				<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vs-rest-api#review-details"><img src="https://vsmarketplacebadge.apphb.com/rating-short/mkloubert.vs-rest-api.svg" alt="Rating"></a></p>
-				<p>A <a href="https://code.visualstudio.com/">Visual Studio Code</a> (VS Code) extension that provides a REST API to control your editor.</p>
-				<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=9J3ZR95RJE2BA"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a> <a href="https://flattr.com/submit/auto?fid=o62pkd&amp;url=https%3A%2F%2Fgithub.com%2Fmkloubert%2Fvs-rest-api"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt=""></a></p>
-				<h2 id="table-of-contents">Table of contents</h2>
-				<ol>
-					<li><a href="#install-">Install</a></li>
-					<li><a href="#how-to-use-">How to use</a><ul>
-							<li><a href="#settings-">Settings</a><ul>
-									<li><a href="#users-">Users</a></li>
-									<li><a href="#https-">HTTPs</a></li>
-								</ul>
-							</li>
-							<li><a href="#build-in-endpoints-">Build-in endpoints</a></li>
-							<li><a href="#custom-endpoints-">Custom endpoints</a></li>
-							<li><a href="#commands--1">Commands</a></li>
-						</ul>
-					</li>
-					<li><a href="#documentation-">Documentation</a></li>
-				</ol>
-				<h2 id="install-uarr-table-of-contents-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
-				<p>Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter:</p>
-				<pre><code class="lang-bash">ext install vs-rest-api
-</code></pre>
-				<p>Or search for things like <code>vs-rest-api</code> in your editor:</p>
-				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-rest-api/master/demos/screenshot1.png" alt="Demo Search and install extension"></p>
-				<h2 id="how-to-use-uarr-table-of-contents-">How to use [<a href="#table-of-contents">&uarr;</a>]</h2>
-				<h3 id="settings-uarr-how-to-use-">Settings [<a href="#how-to-use-">&uarr;</a>]</h3>
-				<p>Open (or create) your <code>settings.json</code> in your <code>.vscode</code> subfolder of your workspace.</p>
-				<p>Add a <code>deploy</code> section:</p>
-				<pre><code class="lang-json">{
-    <span class="hljs-attr">"rest.api"</span>: {
-        <span class="hljs-attr">"autoStart"</span>: <span class="hljs-literal">true</span>,
-        <span class="hljs-attr">"openInBrowser"</span>: <span class="hljs-literal">true</span>,
-        <span class="hljs-attr">"port"</span>: <span class="hljs-number">1781</span>
-    }
-}
-</code></pre>
-				<p>This example will run the host on port <code>1781</code> on startup and opens the URL <code>https://localhost:1781/</code> in your default application, like your browser.</p>
-				<h4 id="users-uarr-settings-">Users [<a href="#settings-">&uarr;</a>]</h4>
-				<p>By default anyone can access the API with read-only access.</p>
-				<p>You can define one or more users, that can access the API via <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic Authentification</a>: </p>
-				<pre><code class="lang-json">{
-    &quot;rest.api&quot;: {
-        // ...
-
-        &quot;guest&quot;: false,
-        &quot;users&quot;: [
-            {
-                &quot;name&quot;: &quot;mkloubert&quot;,
-                &quot;password&quot;: &quot;P@sswort123!&quot;
-            },
-            {
-                &quot;name&quot;: &quot;jlpicard&quot;,
-                &quot;password&quot;: &quot;NCC-1701-D&quot;
-            },
-            {
-                &quot;name&quot;: &quot;neo&quot;,
-                &quot;password&quot;: &quot;Follow_the_white_rabbit&quot;
-            }
-        ]
-    }
-}
-</code></pre>
-				<p>By default any user (and guest) have read-only access.</p>
-				<h4 id="https-uarr-settings-">HTTPs [<a href="#settings-">&uarr;</a>]</h4>
-				<p>For secure access, you can define a SSL certificate:</p>
-				<pre><code class="lang-json">{
-    &quot;rest.api&quot;: {
-        // ...
-
-        &quot;ssl&quot;: {
-            &quot;cert&quot;: &quot;./api-host.crt&quot;,
-            &quot;key&quot;: &quot;./api-host.key&quot;
-        }
-    }
-}
-</code></pre>
-				<h3 id="build-in-endpoints-uarr-how-to-use-">Build-in endpoints [<a href="#how-to-use-">&uarr;</a>]</h3>
-				<p>Visit the <a href="https://github.com/mkloubert/vs-rest-api/wiki#build-in-endpoints-">wiki</a> to get more information about build-in endpoints.</p>
-				<table>
-					<thead>
-						<tr>
-							<th>Name</th>
-							<th>Description</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apiappglobals-">/api/appglobals</a></td>
-							<td>Accesses permanent data for all users outside the current workspace.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apiappstate-">/api/appstate</a></td>
-							<td>Accesses permanent data for the current user / guest outside the current workspace.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apicommands-">/api/commands</a></td>
-							<td>Accesses commands.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apicron-">/api/cron</a></td>
-							<td>Accesses cron jobs.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apideploy-">/api/deploy</a></td>
-							<td>Accesses features to deploy files.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apieditor-">/api/editor</a></td>
-							<td>Accesses resources of the active editor (tab).</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apieditors-">/api/editors</a></td>
-							<td>Accesses resources of all opened editors.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apiextensions-">/api/extensions</a></td>
-							<td>Accesses resources of all known extensions.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apifiles-">/api/files</a></td>
-							<td>Accesses resources for handling file operations.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apiglobals-">/api/globals</a></td>
-							<td>Accesses permanent data for all users.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apihtml-">/api/html</a></td>
-							<td>Accesses resources for handling HTML documents.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apilanguages-">/api/languages</a></td>
-							<td>Accesses resources of all known languages.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apioutputs-">/api/outputs</a></td>
-							<td>Accesses resources of output channels handled by the extension.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apipopups-">/api/popups</a></td>
-							<td>Accesses resources for handling popup messages.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apistate-">/api/state</a></td>
-							<td>Accesses permanent data for the current user / guest.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apiwhiteboard-">/api/whiteboard</a></td>
-							<td>Accesses resources for handling a virtual whiteboard.</td>
-						</tr>
-						<tr>
-							<td><a href="https://github.com/mkloubert/vs-rest-api/wiki#apiworkspace-">/api/workspace</a></td>
-							<td>Accesses or manipulates resources, like files or folders, inside the current workspace.</td>
-						</tr>
-					</tbody>
-				</table>
-				<h3 id="custom-endpoints-uarr-how-to-use-">Custom endpoints [<a href="#how-to-use-">&uarr;</a>]</h3>
-				<p>Detailed information can be found at the <a href="https://github.com/mkloubert/vs-rest-api/wiki#custom-endpoints-">wiki</a>. Otherwise...</p>
-				<p>You can define custom endpoints that are executed via script.</p>
-				<p>Define one ore more <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expressions</a> in your <a href="#settings-">settings</a> and the scripts that should be executed, if a pattern matches:</p>
-				<pre><code class="lang-json">{
-    &quot;rest.api&quot;: {
-        // ...
-
-        &quot;endpoints&quot;: {
-            &quot;myendpoint&quot;: {
-                &quot;script&quot;: &quot;./my-endpoint.js&quot;,
-                &quot;options&quot;: &quot;Hello!&quot;
-            }
-        }
-    }
-}
-</code></pre>
-				<p>The <code>./my-endpoint.js</code> must contain a public function with the name of the current HTTP request method (upper case).</p>
-				<p>For example if you want to make a simple <code>GET</code> request</p>
-				<pre><code class="lang-http">GET /api/myendpoint
-</code></pre>
-				<p>your script should look like this:</p>
-				<pre><code class="lang-javascript">exports.GET = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
-    <span class="hljs-comment">// access VS Code API (s. https://code.visualstudio.com/Docs/extensionAPI/vscode-api)</span>
-    <span class="hljs-keyword">var</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
-
-    <span class="hljs-comment">// access Node.js API provided by VS Code</span>
-    <span class="hljs-comment">// s.  (s. https://nodejs.org/api/)</span>
-    <span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
-
-    <span class="hljs-comment">// access an own module</span>
-    <span class="hljs-keyword">var</span> myModule = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./my-module.js'</span>);
-
-    <span class="hljs-comment">// access a module used by the extension:</span>
-    <span class="hljs-comment">// s. https://mkloubert.github.io/vs-rest-api/modules/_helpers_.html</span>
-    <span class="hljs-keyword">var</span> helpers = args.require(<span class="hljs-string">'./helpers'</span>);
-    <span class="hljs-comment">// s. https://mkloubert.github.io/vs-rest-api/modules/_host_helpers_.html</span>
-    <span class="hljs-keyword">var</span> hostHelpers = args.require(<span class="hljs-string">'./host/helpers'</span>);
-
-    <span class="hljs-comment">// access a module that is part of the extentsion</span>
-    <span class="hljs-comment">// s. https://github.com/mkloubert/vs-rest-api/blob/master/package.json</span>
-    <span class="hljs-keyword">var</span> glob = args.require(<span class="hljs-string">'glob'</span>);
-
-    <span class="hljs-comment">// access the data from the settings</span>
-    <span class="hljs-comment">// from the example above this is: "Hello!"</span>
-    <span class="hljs-keyword">var</span> opts = args.options;
-
-    <span class="hljs-comment">// share / store data (while current session)...</span>
-    <span class="hljs-comment">// ... for this script</span>
-    <span class="hljs-keyword">var</span> myState = args.state;
-    args.state = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
-    <span class="hljs-comment">// ... with other scripts of this type</span>
-    args.globalState[<span class="hljs-string">'myEndpoint'</span>] = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
-    <span class="hljs-comment">// ... with the whole workspace</span>
-    args.workspaceState[<span class="hljs-string">'myEndpoint'</span>] = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
-
-    <span class="hljs-comment">// if you want to return an AJAX response object:</span>
-    <span class="hljs-comment">// s. https://mkloubert.github.io/vs-rest-api/interfaces/_contracts_.apiresponse.html</span>
-    {
-        args.response.code = <span class="hljs-number">666</span>;  <span class="hljs-comment">// the response code (not the HTTP response code!)</span>
-        args.response.msg = <span class="hljs-string">'Result of the evil!'</span>;  <span class="hljs-comment">// a custom message for more information</span>
-        args.response.data = {
-            <span class="hljs-string">'mk'</span>: <span class="hljs-number">23979</span>,
-            <span class="hljs-string">'TM'</span>: <span class="hljs-string">'5979'</span>
-        };
-    }
-
-    <span class="hljs-comment">// if you want to return custom content</span>
-    <span class="hljs-comment">// instead of the object in 'args.response'</span>
-    <span class="hljs-comment">// s. https://mkloubert.github.io/vs-rest-api/interfaces/_contracts_.apimethodarguments.html#setcontent</span>
-    {
-        <span class="hljs-keyword">var</span> html = fs.readFileSync(<span class="hljs-string">'/path/to/my/file.html'</span>);
-
-        <span class="hljs-comment">// open HTML document in new tab (for reports e.g.)</span>
-        args.openHtml(html.toString(<span class="hljs-string">'utf8'</span>), <span class="hljs-string">'My HTML document from "file.html"'</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-            <span class="hljs-comment">// HTML opened</span>
-        }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
-            <span class="hljs-comment">// opening HTML document failed</span>
-        });
-
-        args.setContent(html, <span class="hljs-string">'text/html'</span>);
-    }
-
-    <span class="hljs-comment">// deploys 'index.html' to 'My SFTP server'</span>
-    <span class="hljs-comment">// s. https://github.com/mkloubert/vs-deploy</span>
-    args.deploy([<span class="hljs-string">'./index.html'</span>], [<span class="hljs-string">'My SFTP server'</span>]).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-        <span class="hljs-comment">// file deployed</span>
-    }, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{
-        <span class="hljs-comment">// deployment failed</span>
-    });
-
-    <span class="hljs-comment">// custom HTTP status code</span>
-    args.statusCode = <span class="hljs-number">202</span>;
-
-    <span class="hljs-comment">// ...</span>
-}
-</code></pre>
-				<p>The <code>args</code> parameter of the function uses the <a href="https://mkloubert.github.io/vs-rest-api/interfaces/_contracts_.apimethodarguments.html">ApiMethodArguments</a> interface.</p>
-				<p>You can return a <a href="https://github.com/Microsoft/vscode-extension-vscode/blob/master/thenable.d.ts">Promise</a> for async executions or nothing for sync executions (as in this example).</p>
-				<p>You are also able to define functions for other request methods, like <code>POST</code> or <code>DELETE</code>, which are supported by <a href="https://nodejs.org/api/http.html">http</a> / <a href="https://nodejs.org/api/https.html">https</a> modules of <a href="https://nodejs.org/api/">Node.js</a>:</p>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// [DELETE]  /api/myendpoint</span>
-exports.DELETE = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
-        <span class="hljs-comment">// for async executions</span>
-
-        <span class="hljs-keyword">try</span> {
-            <span class="hljs-comment">// ...</span>
-
-            resolve();  <span class="hljs-comment">// MUST be called at the end</span>
-                        <span class="hljs-comment">// on SUCCESS</span>
-        }
-        <span class="hljs-keyword">catch</span> (e) {
-            reject(e);  <span class="hljs-comment">// MUST be called at the end</span>
-                        <span class="hljs-comment">// on ERROR</span>
-        }
-    });
-}
-
-<span class="hljs-comment">// [POST]  /api/myendpoint</span>
-exports.POST = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">args</span>) </span>{
-    <span class="hljs-comment">// no (promise) result means: sync execution</span>
-}
-</code></pre>
-				<p>HINT: Custom endpoints will always overwrite build-in ones!</p>
-				<h3 id="commands-uarr-how-to-use-">Commands [<a href="#how-to-use-">&uarr;</a>]</h3>
-				<p>Press <code>F1</code> to open the list of commands and select one of the following commands:</p>
-				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-rest-api/master/demos/demo2.gif" alt="Demo How to execute"></p>
-				<table>
-					<thead>
-						<tr>
-							<th>Name</th>
-							<th>Description</th>
-							<th>ID</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><code>REST API: Starts or stops the api server</code></td>
-							<td>Toggles the state of the API&#39;s HTTP server.</td>
-							<td><code>extension.restApi.toggleHostState</code></td>
-						</tr>
-						<tr>
-							<td><code>REST API: (Re)start the api server</code></td>
-							<td>(Re-)Starts the API&#39;s HTTP server.</td>
-							<td><code>extension.restApi.startHost</code></td>
-						</tr>
-						<tr>
-							<td><code>REST API: Stop the api server</code></td>
-							<td>Stops the API.</td>
-							<td><code>extension.restApi.stopHost</code></td>
-						</tr>
-					</tbody>
-				</table>
-				<h2 id="documentation-uarr-table-of-contents-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
-				<p>The full documentation of the extension&#39;s API can be found <a href="https://mkloubert.github.io/vs-rest-api/">here</a>.</p>
-				<p>Detailed information on how to use the extension, can be found at the <a href="https://github.com/mkloubert/vs-rest-api/wiki">wiki</a>.</p>
+				<h1 id="installation">Installation</h1>
+				<blockquote>
+					<p><code>npm install --save @types/node</code></p>
+				</blockquote>
+				<h1 id="summary">Summary</h1>
+				<p>This package contains type definitions for Node.js (<a href="http://nodejs.org/">http://nodejs.org/</a>).</p>
+				<h1 id="details">Details</h1>
+				<p>Files were exported from <a href="https://www.github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node/v6">https://www.github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node/v6</a></p>
+				<p>Additional Details</p>
+				<ul>
+					<li>Last updated: Thu, 08 Mar 2018 23:25:55 GMT</li>
+					<li>Dependencies: none</li>
+					<li>Global values: Buffer, NodeJS, SlowBuffer, <strong>dirname, </strong>filename, clearImmediate, clearInterval, clearTimeout, console, exports, global, module, process, require, setImmediate, setInterval, setTimeout</li>
+				</ul>
+				<h1 id="credits">Credits</h1>
+				<p>These definitions were written by Microsoft TypeScript <a href="http://typescriptlang.org">http://typescriptlang.org</a>, DefinitelyTyped <a href="https://github.com/DefinitelyTyped/DefinitelyTyped">https://github.com/DefinitelyTyped/DefinitelyTyped</a>, Wilco Bakker <a href="https://github.com/WilcoBakker">https://github.com/WilcoBakker</a>, Thomas Bouldin <a href="https://github.com/inlined">https://github.com/inlined</a>, Sebastian Silbermann <a href="https://github.com/eps1lon">https://github.com/eps1lon</a>, Alorel <a href="https://github.com/Alorel">https://github.com/Alorel</a>.</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -388,86 +88,107 @@ exports.POST = <span class="hljs-function"><span class="hljs-keyword">function</
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_appglobals_.html">"api/appglobals"</a>
+					<li class="label tsd-is-external">
+						<span>Internals</span>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_appstate_.html">"api/appstate"</a>
+						<a href="modules/_src_api_appglobals_.html">"src/api/appglobals"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_commands_.html">"api/commands"</a>
+						<a href="modules/_src_api_appstate_.html">"src/api/appstate"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_cron_.html">"api/cron"</a>
+						<a href="modules/_src_api_commands_.html">"src/api/commands"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_deploy_.html">"api/deploy"</a>
+						<a href="modules/_src_api_cron_.html">"src/api/cron"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_editor_.html">"api/editor"</a>
+						<a href="modules/_src_api_deploy_.html">"src/api/deploy"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_editors_.html">"api/editors"</a>
+						<a href="modules/_src_api_editor_.html">"src/api/editor"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_extensions_.html">"api/extensions"</a>
+						<a href="modules/_src_api_editors_.html">"src/api/editors"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_files_.html">"api/files"</a>
+						<a href="modules/_src_api_extensions_.html">"src/api/extensions"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_globals_.html">"api/globals"</a>
+						<a href="modules/_src_api_files_.html">"src/api/files"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_html_.html">"api/html"</a>
+						<a href="modules/_src_api_globals_.html">"src/api/globals"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_languages_.html">"api/languages"</a>
+						<a href="modules/_src_api_html_.html">"src/api/html"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_outputs_.html">"api/outputs"</a>
+						<a href="modules/_src_api_languages_.html">"src/api/languages"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_popups_.html">"api/popups"</a>
+						<a href="modules/_src_api_outputs_.html">"src/api/outputs"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_state_.html">"api/state"</a>
+						<a href="modules/_src_api_popups_.html">"src/api/popups"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_test_.html">"api/test"</a>
+						<a href="modules/_src_api_state_.html">"src/api/state"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_whiteboard_.html">"api/whiteboard"</a>
+						<a href="modules/_src_api_test_.html">"src/api/test"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_api_workspace_.html">"api/workspace"</a>
+						<a href="modules/_src_api_whiteboard_.html">"src/api/whiteboard"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_contracts_.html">"contracts"</a>
+						<a href="modules/_src_api_workspace_.html">"src/api/workspace"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_controller_.html">"controller"</a>
+						<a href="modules/_src_contracts_.html">"src/contracts"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_helpers_.html">"helpers"</a>
+						<a href="modules/_src_controller_.html">"src/controller"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_hooks_.html">"hooks"</a>
+						<a href="modules/_src_helpers_.html">"src/helpers"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_host_.html">"host"</a>
+						<a href="modules/_src_hooks_.html">"src/hooks"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_host_helpers_.html">"host/helpers"</a>
+						<a href="modules/_src_host_.html">"src/host"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_host_users_.html">"host/users"</a>
+						<a href="modules/_src_host_helpers_.html">"src/host/helpers"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_i18_.html">"i18"</a>
+						<a href="modules/_src_host_users_.html">"src/host/users"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_whiteboard_.html">"whiteboard"</a>
+						<a href="modules/_src_i18_.html">"src/i18"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_src_whiteboard_.html">"src/whiteboard"</a>
+					</li>
+					<li class="label tsd-is-external">
+						<span>Externals</span>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_node_modules__types_mocha_index_d_.html">"node_<wbr>modules/@types/mocha/index.d"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_node_modules__types_node_index_d_.html">"node_<wbr>modules/@types/node/index.d"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_node_modules_moment_moment_d_.html">"node_<wbr>modules/moment/moment.d"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_node_modules_vscode_vscode_d_.html">"node_<wbr>modules/vscode/vscode.d"</a>
+					</li>
+					<li class=" tsd-kind-external-module tsd-is-external">
+						<a href="modules/_src_workspace_.html">"src/workspace"</a>
 					</li>
 				</ul>
 			</nav>

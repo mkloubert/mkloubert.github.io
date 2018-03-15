@@ -80,6 +80,8 @@
 									<li><a href="#comparevalues-">compareValues</a></li>
 									<li><a href="#comparevaluesny-">compareValuesBy</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
+									<li><a href="#createlogger-">createLogger</a></li>
+									<li><a href="#normalizestring-">normalizeString</a></li>
 									<li><a href="#tobooleansafe-">toBooleanSafe</a></li>
 									<li><a href="#toeol-">toEOL</a></li>
 									<li><a href="#tostringsafe-">toStringSafe</a></li>
@@ -158,6 +160,20 @@ APPLIED_FUNC(<span class="hljs-number">5979</span>, <span class="hljs-number">23
     }</span>);
 }</span>
 </code></pre>
+				<h4 id="createlogger-uarr-functions-">createLogger [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
+
+<span class="hljs-keyword">const</span> LOGGER = vscode_helpers.createLogger(<span class="hljs-function">(<span class="hljs-params">log</span>) =&gt;</span> {
+    fs.appendFileSync(<span class="hljs-string">'./logFile.txt'</span>, log.message + <span class="hljs-string">"\r\n"</span>, <span class="hljs-string">'utf8'</span>);
+});
+
+LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
+</code></pre>
+				<h4 id="normalizestring-uarr-functions-">normalizeString [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>);  <span class="hljs-comment">// 'abc'</span>
+<span class="hljs-keyword">const</span> str_2 = vscode_helpers.normalizeString(<span class="hljs-literal">null</span>);  <span class="hljs-comment">// ''</span>
+<span class="hljs-keyword">const</span> str_3 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>, <span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> s.troUpperCase());  <span class="hljs-comment">// 'ABC'</span>
+</code></pre>
 				<h4 id="tobooleansafe-uarr-functions-">toBooleanSafe [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> bool_1 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">true</span> );  <span class="hljs-comment">// (true)</span>
 <span class="hljs-keyword">const</span> bool_2 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// (false)</span>
@@ -199,6 +215,9 @@ APPLIED_FUNC(<span class="hljs-number">5979</span>, <span class="hljs-number">23
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_index_.html">"index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_logging_.html">"logging"</a>
 					</li>
 				</ul>
 			</nav>

@@ -85,11 +85,17 @@
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
 									<li><a href="#createlogger-">createLogger</a></li>
 									<li><a href="#from-">from</a></li>
+									<li><a href="#invokeafter-">invokeAfter</a></li>
 									<li><a href="#normalizestring-">normalizeString</a></li>
 									<li><a href="#randombytes-">randomBytes</a></li>
+									<li><a href="#sleep-">sleep</a></li>
 									<li><a href="#tobooleansafe-">toBooleanSafe</a></li>
 									<li><a href="#toeol-">toEOL</a></li>
 									<li><a href="#tostringsafe-">toStringSafe</a></li>
+									<li><a href="#tryclearinterval-">tryClearInterval</a></li>
+									<li><a href="#trycleartimeout-">tryClearTimeout</a></li>
+									<li><a href="#trydispose-">tryDispose</a></li>
+									<li><a href="#waitwhile-">waitWhile</a></li>
 									<li><a href="#withprogress-">withProgress</a></li>
 								</ul>
 							</li>
@@ -209,7 +215,7 @@ WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">res
 
 LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 </code></pre>
-				<h4 id="from-uarr-from-">from [<a href="#from-">&uarr;</a>]</h4>
+				<h4 id="from-uarr-functions-">from [<a href="#functions-">&uarr;</a>]</h4>
 				<p>s. <a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a></p>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> seq = vscode_helpers.from([ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ])  <span class="hljs-comment">// can also be a generator</span>
                                             <span class="hljs-comment">// or string</span>
@@ -220,6 +226,15 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
     <span class="hljs-comment">// [0] '1'</span>
     <span class="hljs-comment">// [1] '3'</span>
 }
+</code></pre>
+				<h4 id="invokeafter-uarr-functions-">invokeAfter [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.invokeAfter(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-number">23979</span>;
+}, <span class="hljs-number">5979</span>).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-comment">// res === 23979</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// is invoked on error</span>
+});
 </code></pre>
 				<h4 id="normalizestring-uarr-functions-">normalizeString [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>);  <span class="hljs-comment">// 'abc'</span>
@@ -234,6 +249,13 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
+				<h4 id="sleep-uarr-functions-">sleep [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.sleep(<span class="hljs-number">23979</span>).then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-comment">// 23979 milliseconds gone</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// is invoked on error</span>
+});
+</code></pre>
 				<h4 id="tobooleansafe-uarr-functions-">toBooleanSafe [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> bool_1 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">true</span> );  <span class="hljs-comment">// (true)</span>
 <span class="hljs-keyword">const</span> bool_2 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// (false)</span>
@@ -245,10 +267,48 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 <span class="hljs-keyword">const</span> eol_1 = vscode_helpers.toEOL();  <span class="hljs-comment">// system's EOL</span>
 <span class="hljs-keyword">const</span> eol_2 = vscode_helpers.toEOL( EndOfLine.CRLF );  <span class="hljs-comment">// \r\n</span>
 </code></pre>
+				<h4 id="tryclearinterval-uarr-functions-">tryClearInterval [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> timer = setInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-comment">// do something</span>
+}, <span class="hljs-number">5979</span>);
+
+vscode_helpers.tryClearInterval( timer );
+</code></pre>
+				<h4 id="trycleartimeout-uarr-functions-">tryClearTimeout [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-comment">// do something</span>
+}, <span class="hljs-number">23979</span>);
+
+vscode_helpers.tryClearTimeout( timer );
+</code></pre>
+				<h4 id="trydispose-uarr-functions-">tryDispose [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ = {
+    dispose: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>( <span class="hljs-string">'Could not dispose!'</span> );
+    }
+};
+
+<span class="hljs-comment">// (false)</span>
+vscode_helpers.tryDispose( OBJ );
+</code></pre>
 				<h4 id="tostringsafe-uarr-functions-">toStringSafe [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.toStringSafe( <span class="hljs-number">123</span> );  <span class="hljs-comment">// '123'</span>
 <span class="hljs-keyword">const</span> str_2 = vscode_helpers.toStringSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// ''</span>
 <span class="hljs-keyword">const</span> str_3 = vscode_helpers.toStringSafe( <span class="hljs-literal">undefined</span>, <span class="hljs-string">'abc'</span> );  <span class="hljs-comment">// 'abc'</span>
+</code></pre>
+				<h4 id="waitwhile-uarr-functions-">waitWhile [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> counter = <span class="hljs-number">5979</span>;
+
+vscode_helpers.waitWhile(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">return</span> --counter &lt; <span class="hljs-number">1</span>;
+}, {
+    timeUntilNextCheck: <span class="hljs-number">100</span>,
+    timeout: <span class="hljs-number">60000</span>,
+}).then(<span class="hljs-function">(<span class="hljs-params">isTimeout: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
+    <span class="hljs-comment">// counter === 0</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error occurred</span>
+});
 </code></pre>
 				<h4 id="withprogress-uarr-functions-">withProgress [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { ProgressLocation } <span class="hljs-keyword">as</span> vscode <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;

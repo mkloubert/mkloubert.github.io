@@ -76,13 +76,17 @@
 							<li><a href="#functions-">Functions</a><ul>
 									<li><a href="#applyfuncfor-">applyFuncFor</a></li>
 									<li><a href="#asarray-">asArray</a></li>
+									<li><a href="#aslocaltime-">asLocalTime</a></li>
+									<li><a href="#asutc-">asUTC</a></li>
 									<li><a href="#buildworkflow-">buildWorkflow</a></li>
 									<li><a href="#cloneobject-">cloneObject</a></li>
 									<li><a href="#comparevalues-">compareValues</a></li>
 									<li><a href="#comparevaluesny-">compareValuesBy</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
 									<li><a href="#createlogger-">createLogger</a></li>
+									<li><a href="#from-">from</a></li>
 									<li><a href="#normalizestring-">normalizeString</a></li>
+									<li><a href="#randombytes-">randomBytes</a></li>
 									<li><a href="#tobooleansafe-">toBooleanSafe</a></li>
 									<li><a href="#toeol-">toEOL</a></li>
 									<li><a href="#tostringsafe-">toStringSafe</a></li>
@@ -125,6 +129,20 @@ APPLIED_FUNC(<span class="hljs-number">5979</span>, <span class="hljs-number">23
 <span class="hljs-keyword">const</span> ARR_2 = vscode_helpers.asArray([ <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-literal">undefined</span> ], <span class="hljs-literal">false</span>);  <span class="hljs-comment">// [ 0, 1, null, 3, 4, undefined ]</span>
 <span class="hljs-keyword">const</span> ARR_3 = vscode_helpers.asArray( <span class="hljs-number">5979</span> );  <span class="hljs-comment">// [ 5979 ]</span>
 <span class="hljs-keyword">const</span> ARR_4 = vscode_helpers.asArray( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// [ ]</span>
+</code></pre>
+				<h4 id="aslocaltime-uarr-functions-">asLocalTime [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
+
+<span class="hljs-keyword">let</span> utcNow = Moment.utc();
+<span class="hljs-keyword">let</span> localNow = vscode_helpers.asLocalTime( utcNow );  <span class="hljs-comment">// can also be a string</span>
+                                                      <span class="hljs-comment">// or Date object</span>
+</code></pre>
+				<h4 id="asutc-uarr-functions-">asUTC [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
+
+<span class="hljs-keyword">let</span> localNow = Moment();
+<span class="hljs-keyword">let</span> utcNow = vscode_helpers.asUTC( localNow );  <span class="hljs-comment">// can also be a string</span>
+                                                <span class="hljs-comment">// or Date object</span>
 </code></pre>
 				<h4 id="buildworkflow-uarr-functions-">buildWorkflow [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> WORKFLOW = vscode_helpers.buildWorkflow()
@@ -191,10 +209,30 @@ WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">res
 
 LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 </code></pre>
+				<h4 id="from-uarr-from-">from [<a href="#from-">&uarr;</a>]</h4>
+				<p>s. <a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a></p>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> seq = vscode_helpers.from([ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ])  <span class="hljs-comment">// can also be a generator</span>
+                                            <span class="hljs-comment">// or string</span>
+                        .select(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> <span class="hljs-string">''</span> + x)
+                        .where(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x !== <span class="hljs-string">'2'</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> ITEM of seq) {
+    <span class="hljs-comment">// [0] '1'</span>
+    <span class="hljs-comment">// [1] '3'</span>
+}
+</code></pre>
 				<h4 id="normalizestring-uarr-functions-">normalizeString [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>);  <span class="hljs-comment">// 'abc'</span>
 <span class="hljs-keyword">const</span> str_2 = vscode_helpers.normalizeString(<span class="hljs-literal">null</span>);  <span class="hljs-comment">// ''</span>
 <span class="hljs-keyword">const</span> str_3 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>, <span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> s.troUpperCase());  <span class="hljs-comment">// 'ABC'</span>
+</code></pre>
+				<h4 id="randombytes-uarr-functions-">randomBytes [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.randomBytes(<span class="hljs-number">5979</span>).then(<span class="hljs-function">(<span class="hljs-params">bytes</span>) =&gt;</span> {
+    <span class="hljs-comment">// 5979 random bytes are stored</span>
+    <span class="hljs-comment">// in 'bytes' now</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
 </code></pre>
 				<h4 id="tobooleansafe-uarr-functions-">toBooleanSafe [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> bool_1 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">true</span> );  <span class="hljs-comment">// (true)</span>

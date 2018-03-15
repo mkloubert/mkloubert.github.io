@@ -167,7 +167,7 @@ APPLIED_FUNC(<span class="hljs-number">5979</span>, <span class="hljs-number">23
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { EndOfLine } <span class="hljs-keyword">as</span> vscode <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
 
 <span class="hljs-keyword">const</span> eol_1 = vscode_helpers.toEOL();  <span class="hljs-comment">// system's EOL</span>
-<span class="hljs-keyword">const</span> eol_2 = vscode_helpers.toBooleanSafe( EndOfLine.CRLF );  <span class="hljs-comment">// \r\n</span>
+<span class="hljs-keyword">const</span> eol_2 = vscode_helpers.toEOL( EndOfLine.CRLF );  <span class="hljs-comment">// \r\n</span>
 </code></pre>
 				<h4 id="tostringsafe-uarr-functions-">toStringSafe [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.toStringSafe( <span class="hljs-number">123</span> );  <span class="hljs-comment">// '123'</span>

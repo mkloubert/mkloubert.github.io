@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LogContext | vscode-helpers</title>
+	<title>&quot;logging/index&quot; | vscode-helpers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,110 +56,180 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_logging_.html">&quot;logging&quot;</a>
-				</li>
-				<li>
-					<a href="_logging_.logcontext.html">LogContext</a>
+					<a href="_logging_index_.html">&quot;logging/index&quot;</a>
 				</li>
 			</ul>
-			<h1>Interface LogContext</h1>
+			<h1>External module &quot;logging/index&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A log context.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">LogContext</span>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_.logcontext.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_.logcontext.html#tag" class="tsd-kind-icon">tag</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_.logcontext.html#time" class="tsd-kind-icon">time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_.logcontext.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_logging_index_.logtype.html" class="tsd-kind-icon">Log<wbr>Type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_logging_index_.actionlogger.html" class="tsd-kind-icon">Action<wbr>Logger</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-external-module"><a href="../classes/_logging_index_.loggerbase.html" class="tsd-kind-icon">Logger<wbr>Base</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_logging_index_.logcontext.html" class="tsd-kind-icon">Log<wbr>Context</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_logging_index_.logger.html" class="tsd-kind-icon">Logger</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_logging_index_.html#logaction" class="tsd-kind-icon">Log<wbr>Action</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_logging_index_.html#logfilter" class="tsd-kind-icon">Log<wbr>Filter</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_logging_index_.html#typedlogaction" class="tsd-kind-icon">Typed<wbr>Log<wbr>Action</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="message" class="tsd-anchor"></a>
-					<h3>message</h3>
-					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="logaction" class="tsd-anchor"></a>
+					<h3>Log<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">Log<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L37">logging.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L28">logging/index.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The message.</p>
+							<p>A log action.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The log context.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_logging_index_.logcontext.html" class="tsd-signature-type">LogContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>context: <a href="../interfaces/_logging_index_.logcontext.html" class="tsd-signature-type">LogContext</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tag" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tag</h3>
-					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="logfilter" class="tsd-anchor"></a>
+					<h3>Log<wbr>Filter</h3>
+					<div class="tsd-signature tsd-kind-icon">Log<wbr>Filter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L41">logging.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L55">logging/index.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The tag.</p>
+							<p>A log filter.</p>
 						</div>
 					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="time" class="tsd-anchor"></a>
-					<h3>time</h3>
-					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L45">logging.ts:45</a></li>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_logging_index_.logcontext.html" class="tsd-signature-type">LogContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>context: <a href="../interfaces/_logging_index_.logcontext.html" class="tsd-signature-type">LogContext</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
 						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The time.</p>
-						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/_logging_.logtype.html" class="tsd-signature-type">LogType</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="typedlogaction" class="tsd-anchor"></a>
+					<h3>Typed<wbr>Log<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">Typed<wbr>Log<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L49">logging.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L118">logging/index.ts:118</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The type.</p>
+							<p>A typed log action.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The message to log.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>An additional, optional tag.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The logger instance.</p>
+							</dd>
+							<dt>chainable</dt>
+							<dd></dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_logging_index_.logger.html" class="tsd-signature-type">Logger</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>msg: <span class="tsd-signature-type">any</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> tag: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="../interfaces/_logging_index_.logger.html" class="tsd-signature-type">Logger</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -171,56 +241,38 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_index_.html">"index"</a>
+						<a href="_index_.html">"index"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_logging_.html">"logging"</a>
+						<a href="_logging_index_.html">"logging/index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_logging_.logtype.html" class="tsd-kind-icon">Log<wbr>Type</a>
+						<a href="../enums/_logging_index_.logtype.html" class="tsd-kind-icon">Log<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_logging_.actionlogger.html" class="tsd-kind-icon">Action<wbr>Logger</a>
+						<a href="../classes/_logging_index_.actionlogger.html" class="tsd-kind-icon">Action<wbr>Logger</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_logging_.loggerbase.html" class="tsd-kind-icon">Logger<wbr>Base</a>
+						<a href="../classes/_logging_index_.loggerbase.html" class="tsd-kind-icon">Logger<wbr>Base</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_logging_.logcontext.html" class="tsd-kind-icon">Log<wbr>Context</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_.logcontext.html#message" class="tsd-kind-icon">message</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_.logcontext.html#tag" class="tsd-kind-icon">tag</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_.logcontext.html#time" class="tsd-kind-icon">time</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_.logcontext.html#type" class="tsd-kind-icon">type</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_logging_.logger.html" class="tsd-kind-icon">Logger</a>
+						<a href="../interfaces/_logging_index_.logcontext.html" class="tsd-kind-icon">Log<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_logging_index_.logger.html" class="tsd-kind-icon">Logger</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_logging_.html#logaction" class="tsd-kind-icon">Log<wbr>Action</a>
+						<a href="_logging_index_.html#logaction" class="tsd-kind-icon">Log<wbr>Action</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_logging_.html#logfilter" class="tsd-kind-icon">Log<wbr>Filter</a>
+						<a href="_logging_index_.html#logfilter" class="tsd-kind-icon">Log<wbr>Filter</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_logging_.html#typedlogaction" class="tsd-kind-icon">Typed<wbr>Log<wbr>Action</a>
+						<a href="_logging_index_.html#typedlogaction" class="tsd-kind-icon">Typed<wbr>Log<wbr>Action</a>
 					</li>
 				</ul>
 			</nav>

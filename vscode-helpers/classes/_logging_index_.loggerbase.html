@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ActionLogger | vscode-helpers</title>
+	<title>LoggerBase | vscode-helpers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_logging_.html">&quot;logging&quot;</a>
+					<a href="../modules/_logging_index_.html">&quot;logging/index&quot;</a>
 				</li>
 				<li>
-					<a href="_logging_.actionlogger.html">ActionLogger</a>
+					<a href="_logging_index_.loggerbase.html">LoggerBase</a>
 				</li>
 			</ul>
-			<h1>Class ActionLogger</h1>
+			<h1>Class LoggerBase</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A logger based on actions.</p>
+						<p>A basic logger.</p>
 					</div>
 				</div>
 			</section>
@@ -80,10 +80,15 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_logging_.loggerbase.html" class="tsd-signature-type">LoggerBase</a>
+						<span class="tsd-signature-type">EventEmitter</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ActionLogger</span>
+								<span class="target">LoggerBase</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_logging_index_.actionlogger.html" class="tsd-signature-type">ActionLogger</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -92,83 +97,56 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_logging_.logger.html" class="tsd-signature-type">Logger</a></li>
+					<li><a href="../interfaces/_logging_index_.logger.html" class="tsd-signature-type">Logger</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_logging_.actionlogger.html#_actions" class="tsd-kind-icon">_actions</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_logging_.actionlogger.html#_filters" class="tsd-kind-icon">_filters</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_logging_.actionlogger.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_logging_index_.loggerbase.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_.actionlogger.html#addaction" class="tsd-kind-icon">add<wbr>Action</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_.actionlogger.html#addfilter" class="tsd-kind-icon">add<wbr>Filter</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_logging_.actionlogger.html#alert" class="tsd-kind-icon">alert</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_.actionlogger.html#clear" class="tsd-kind-icon">clear</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_.actionlogger.html#clearactions" class="tsd-kind-icon">clear<wbr>Actions</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_.actionlogger.html#clearfilters" class="tsd-kind-icon">clear<wbr>Filters</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_logging_.actionlogger.html#crit" class="tsd-kind-icon">crit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_logging_.actionlogger.html#debug" class="tsd-kind-icon">debug</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_logging_.actionlogger.html#emerg" class="tsd-kind-icon">emerg</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#emit" class="tsd-kind-icon">emit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_logging_.actionlogger.html#err" class="tsd-kind-icon">err</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_logging_.actionlogger.html#info" class="tsd-kind-icon">info</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#listeners" class="tsd-kind-icon">listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_logging_.actionlogger.html#log" class="tsd-kind-icon">log</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_logging_.actionlogger.html#logsync" class="tsd-kind-icon">log<wbr>Sync</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_logging_.actionlogger.html#normalizetag" class="tsd-kind-icon">normalize<wbr>Tag</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_logging_.actionlogger.html#notice" class="tsd-kind-icon">notice</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_logging_.actionlogger.html#onlog" class="tsd-kind-icon">on<wbr>Log</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#once" class="tsd-kind-icon">once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_.actionlogger.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_logging_.actionlogger.html#trace" class="tsd-kind-icon">trace</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_logging_.actionlogger.html#warn" class="tsd-kind-icon">warn</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_logging_.actionlogger.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_index_.loggerbase.html#alert" class="tsd-kind-icon">alert</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_index_.loggerbase.html#crit" class="tsd-kind-icon">crit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_index_.loggerbase.html#debug" class="tsd-kind-icon">debug</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_index_.loggerbase.html#emerg" class="tsd-kind-icon">emerg</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_index_.loggerbase.html#err" class="tsd-kind-icon">err</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_index_.loggerbase.html#info" class="tsd-kind-icon">info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_index_.loggerbase.html#log" class="tsd-kind-icon">log</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_logging_index_.loggerbase.html#logsync" class="tsd-kind-icon">log<wbr>Sync</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_logging_index_.loggerbase.html#normalizetag" class="tsd-kind-icon">normalize<wbr>Tag</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_index_.loggerbase.html#notice" class="tsd-kind-icon">notice</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_logging_index_.loggerbase.html#onlog" class="tsd-kind-icon">on<wbr>Log</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_logging_index_.loggerbase.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_index_.loggerbase.html#trace" class="tsd-kind-icon">trace</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_logging_index_.loggerbase.html#warn" class="tsd-kind-icon">warn</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_logging_index_.loggerbase.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_actions" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _actions</h3>
-					<div class="tsd-signature tsd-kind-icon">_actions<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_.html#logaction" class="tsd-signature-type">LogAction</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L283">logging.ts:283</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_filters" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _filters</h3>
-					<div class="tsd-signature tsd-kind-icon">_filters<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_.html#logfilter" class="tsd-signature-type">LogFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L284">logging.ts:284</a></li>
-						</ul>
-					</aside>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="defaultmaxlisteners" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Max<wbr>Listeners</h3>
@@ -183,78 +161,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addaction" class="tsd-anchor"></a>
-					<h3>add<wbr>Action</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Action<span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../modules/_logging_.html#logaction" class="tsd-signature-type">LogAction</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L295">logging.ts:295</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Adds a new action.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>chainable</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>action: <a href="../modules/_logging_.html#logaction" class="tsd-signature-type">LogAction</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The action to add.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-							<p>this</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addfilter" class="tsd-anchor"></a>
-					<h3>add<wbr>Filter</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Filter<span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><a href="../modules/_logging_.html#logfilter" class="tsd-signature-type">LogFilter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L311">logging.ts:311</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Adds a new filter.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>chainable</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>filter: <a href="../modules/_logging_.html#logfilter" class="tsd-signature-type">LogFilter</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The filter to add.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-							<p>this</p>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="addlistener" class="tsd-anchor"></a>
 					<h3>add<wbr>Listener</h3>
@@ -264,7 +170,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#addlistener">addListener</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#addlistener">addListener</a></p>
 								<p>Inherited from EventEmitter.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
@@ -284,18 +190,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="alert" class="tsd-anchor"></a>
 					<h3>alert</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">alert<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#alert">alert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L167">logging.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L167">logging/index.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -318,98 +223,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="clear" class="tsd-anchor"></a>
-					<h3>clear</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L325">logging.ts:325</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Clears anything of that logger.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>chainable</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-							<p>this</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="clearactions" class="tsd-anchor"></a>
-					<h3>clear<wbr>Actions</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">clear<wbr>Actions<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L337">logging.ts:337</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Clears the action list.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>chainable</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-							<p>this</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="clearfilters" class="tsd-anchor"></a>
-					<h3>clear<wbr>Filters</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">clear<wbr>Filters<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L350">logging.ts:350</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Clears the filter list.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>chainable</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-							<p>this</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="crit" class="tsd-anchor"></a>
 					<h3>crit</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">crit<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#crit">crit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L173">logging.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L173">logging/index.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -431,18 +254,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="debug" class="tsd-anchor"></a>
 					<h3>debug</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#debug">debug</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L179">logging.ts:179</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L179">logging/index.ts:179</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -464,18 +286,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="emerg" class="tsd-anchor"></a>
 					<h3>emerg</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">emerg<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#emerg">emerg</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L185">logging.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L185">logging/index.ts:185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -506,7 +327,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#emit">emit</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#emit">emit</a></p>
 								<p>Inherited from EventEmitter.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
@@ -526,18 +347,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="err" class="tsd-anchor"></a>
 					<h3>err</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">err<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#err">err</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L191">logging.ts:191</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L191">logging/index.ts:191</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -568,7 +388,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#eventnames">eventNames</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#eventnames">eventNames</a></p>
 								<p>Inherited from EventEmitter.eventNames</p>
 								<p>Overrides EventEmitter.eventNames</p>
 								<ul>
@@ -588,7 +408,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#getmaxlisteners">getMaxListeners</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#getmaxlisteners">getMaxListeners</a></p>
 								<p>Inherited from EventEmitter.getMaxListeners</p>
 								<p>Overrides EventEmitter.getMaxListeners</p>
 								<ul>
@@ -599,18 +419,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="info" class="tsd-anchor"></a>
 					<h3>info</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">info<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#info">info</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L197">logging.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L197">logging/index.ts:197</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -641,7 +460,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#listenercount">listenerCount</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#listenercount">listenerCount</a></p>
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<p>Overrides EventEmitter.listenerCount</p>
 								<ul>
@@ -667,7 +486,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#listeners">listeners</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#listeners">listeners</a></p>
 								<p>Inherited from EventEmitter.listeners</p>
 								<p>Overrides EventEmitter.listeners</p>
 								<ul>
@@ -684,18 +503,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="log" class="tsd-anchor"></a>
 					<h3>log</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_logging_.logtype.html" class="tsd-signature-type">LogType</a>, msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_logging_index_.logtype.html" class="tsd-signature-type">LogType</a>, msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#log">log</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L203">logging.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L203">logging/index.ts:203</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -707,7 +525,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="../enums/_logging_.logtype.html" class="tsd-signature-type">LogType</a></h5>
+									<h5>type: <a href="../enums/_logging_index_.logtype.html" class="tsd-signature-type">LogType</a></h5>
 								</li>
 								<li>
 									<h5>msg: <span class="tsd-signature-type">any</span></h5>
@@ -720,18 +538,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="logsync" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> log<wbr>Sync</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">log<wbr>Sync<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_logging_.logtype.html" class="tsd-signature-type">LogType</a>, msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">log<wbr>Sync<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_logging_index_.logtype.html" class="tsd-signature-type">LogType</a>, msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#logsync">logSync</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L229">logging.ts:229</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L229">logging/index.ts:229</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -742,7 +559,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="../enums/_logging_.logtype.html" class="tsd-signature-type">LogType</a></h5>
+									<h5>type: <a href="../enums/_logging_index_.logtype.html" class="tsd-signature-type">LogType</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The type.</p>
 									</div>
@@ -761,18 +578,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="normalizetag" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> normalize<wbr>Tag</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 						<li class="tsd-signature tsd-kind-icon">normalize<wbr>Tag<span class="tsd-signature-symbol">(</span>tag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#normalizetag">normalizeTag</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L242">logging.ts:242</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L242">logging/index.ts:242</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -794,18 +610,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="notice" class="tsd-anchor"></a>
 					<h3>notice</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">notice<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#notice">notice</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L252">logging.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L252">logging/index.ts:252</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -836,7 +651,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#on">on</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#on">on</a></p>
 								<p>Inherited from EventEmitter.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
@@ -856,33 +671,35 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
 					<a name="onlog" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> on<wbr>Log</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Log<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_logging_.logcontext.html" class="tsd-signature-type">LogContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagAbstract">Abstract</span> on<wbr>Log</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Log<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_logging_index_.logcontext.html" class="tsd-signature-type">LogContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#onlog">onLog</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L357">logging.ts:357</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L264">logging/index.ts:264</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
+								<div class="lead">
+									<p>The logic for logging a message.</p>
+								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>context: <a href="../interfaces/_logging_.logcontext.html" class="tsd-signature-type">LogContext</a></h5>
+									<h5>context: <a href="../interfaces/_logging_index_.logcontext.html" class="tsd-signature-type">LogContext</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The context.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Invoke log event or not.</p>
 						</li>
 					</ul>
 				</section>
@@ -895,7 +712,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#once">once</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#once">once</a></p>
 								<p>Inherited from EventEmitter.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
@@ -924,7 +741,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#prependlistener">prependListener</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#prependlistener">prependListener</a></p>
 								<p>Inherited from EventEmitter.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
@@ -953,7 +770,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#prependoncelistener">prependOnceListener</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#prependoncelistener">prependOnceListener</a></p>
 								<p>Inherited from EventEmitter.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
@@ -982,7 +799,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#removealllisteners">removeAllListeners</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#removealllisteners">removeAllListeners</a></p>
 								<p>Inherited from EventEmitter.removeAllListeners</p>
 								<p>Overrides EventEmitter.removeAllListeners</p>
 								<ul>
@@ -1008,7 +825,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#removelistener">removeListener</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#removelistener">removeListener</a></p>
 								<p>Inherited from EventEmitter.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
@@ -1037,7 +854,7 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_logging_.logger.html">Logger</a>.<a href="../interfaces/_logging_.logger.html#setmaxlisteners">setMaxListeners</a></p>
+								<p>Implementation of <a href="../interfaces/_logging_index_.logger.html">Logger</a>.<a href="../interfaces/_logging_index_.logger.html#setmaxlisteners">setMaxListeners</a></p>
 								<p>Inherited from EventEmitter.setMaxListeners</p>
 								<p>Overrides EventEmitter.setMaxListeners</p>
 								<ul>
@@ -1054,18 +871,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="trace" class="tsd-anchor"></a>
 					<h3>trace</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">trace<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#trace">trace</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L267">logging.ts:267</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L267">logging/index.ts:267</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1087,18 +903,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="warn" class="tsd-anchor"></a>
 					<h3>warn</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">warn<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_logging_.loggerbase.html">LoggerBase</a>.<a href="_logging_.loggerbase.html#warn">warn</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/4c80bce/src/logging.ts#L273">logging.ts:273</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/e0c9347/src/logging/index.ts#L273">logging/index.ts:273</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1159,146 +974,125 @@
 						<a href="../modules/_index_.html">"index"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_logging_.html">"logging"</a>
+						<a href="../modules/_logging_index_.html">"logging/index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_logging_.logtype.html" class="tsd-kind-icon">Log<wbr>Type</a>
+						<a href="../enums/_logging_index_.logtype.html" class="tsd-kind-icon">Log<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_logging_index_.actionlogger.html" class="tsd-kind-icon">Action<wbr>Logger</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_logging_.actionlogger.html" class="tsd-kind-icon">Action<wbr>Logger</a>
+						<a href="_logging_index_.loggerbase.html" class="tsd-kind-icon">Logger<wbr>Base</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_logging_.actionlogger.html#_actions" class="tsd-kind-icon">_actions</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_logging_.actionlogger.html#_filters" class="tsd-kind-icon">_filters</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_logging_.actionlogger.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
+								<a href="_logging_index_.loggerbase.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_logging_index_.loggerbase.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_logging_.actionlogger.html#addaction" class="tsd-kind-icon">add<wbr>Action</a>
+								<a href="_logging_index_.loggerbase.html#alert" class="tsd-kind-icon">alert</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_logging_.actionlogger.html#addfilter" class="tsd-kind-icon">add<wbr>Filter</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#alert" class="tsd-kind-icon">alert</a>
+								<a href="_logging_index_.loggerbase.html#crit" class="tsd-kind-icon">crit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_logging_.actionlogger.html#clear" class="tsd-kind-icon">clear</a>
+								<a href="_logging_index_.loggerbase.html#debug" class="tsd-kind-icon">debug</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_logging_.actionlogger.html#clearactions" class="tsd-kind-icon">clear<wbr>Actions</a>
+								<a href="_logging_index_.loggerbase.html#emerg" class="tsd-kind-icon">emerg</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="_logging_index_.loggerbase.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_logging_.actionlogger.html#clearfilters" class="tsd-kind-icon">clear<wbr>Filters</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#crit" class="tsd-kind-icon">crit</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#debug" class="tsd-kind-icon">debug</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#emerg" class="tsd-kind-icon">emerg</a>
+								<a href="_logging_index_.loggerbase.html#err" class="tsd-kind-icon">err</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#emit" class="tsd-kind-icon">emit</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#err" class="tsd-kind-icon">err</a>
+								<a href="_logging_index_.loggerbase.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+								<a href="_logging_index_.loggerbase.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_logging_index_.loggerbase.html#info" class="tsd-kind-icon">info</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#info" class="tsd-kind-icon">info</a>
+								<a href="_logging_index_.loggerbase.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
+								<a href="_logging_index_.loggerbase.html#listeners" class="tsd-kind-icon">listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_logging_index_.loggerbase.html#log" class="tsd-kind-icon">log</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_logging_index_.loggerbase.html#logsync" class="tsd-kind-icon">log<wbr>Sync</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_logging_index_.loggerbase.html#normalizetag" class="tsd-kind-icon">normalize<wbr>Tag</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_logging_index_.loggerbase.html#notice" class="tsd-kind-icon">notice</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#listeners" class="tsd-kind-icon">listeners</a>
+								<a href="_logging_index_.loggerbase.html#on" class="tsd-kind-icon">on</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#log" class="tsd-kind-icon">log</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_logging_.actionlogger.html#logsync" class="tsd-kind-icon">log<wbr>Sync</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="_logging_.actionlogger.html#normalizetag" class="tsd-kind-icon">normalize<wbr>Tag</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#notice" class="tsd-kind-icon">notice</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_logging_index_.loggerbase.html#onlog" class="tsd-kind-icon">on<wbr>Log</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#on" class="tsd-kind-icon">on</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected">
-								<a href="_logging_.actionlogger.html#onlog" class="tsd-kind-icon">on<wbr>Log</a>
+								<a href="_logging_index_.loggerbase.html#once" class="tsd-kind-icon">once</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#once" class="tsd-kind-icon">once</a>
+								<a href="_logging_index_.loggerbase.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+								<a href="_logging_index_.loggerbase.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+								<a href="_logging_index_.loggerbase.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+								<a href="_logging_index_.loggerbase.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+								<a href="_logging_index_.loggerbase.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_logging_index_.loggerbase.html#trace" class="tsd-kind-icon">trace</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#trace" class="tsd-kind-icon">trace</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="_logging_.actionlogger.html#warn" class="tsd-kind-icon">warn</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_logging_index_.loggerbase.html#warn" class="tsd-kind-icon">warn</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_logging_.actionlogger.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
+								<a href="_logging_index_.loggerbase.html#listenercount-1" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_logging_.loggerbase.html" class="tsd-kind-icon">Logger<wbr>Base</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_logging_index_.logcontext.html" class="tsd-kind-icon">Log<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_logging_.logcontext.html" class="tsd-kind-icon">Log<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_logging_.logger.html" class="tsd-kind-icon">Logger</a>
+						<a href="../interfaces/_logging_index_.logger.html" class="tsd-kind-icon">Logger</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_logging_.html#logaction" class="tsd-kind-icon">Log<wbr>Action</a>
+						<a href="../modules/_logging_index_.html#logaction" class="tsd-kind-icon">Log<wbr>Action</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_logging_.html#logfilter" class="tsd-kind-icon">Log<wbr>Filter</a>
+						<a href="../modules/_logging_index_.html#logfilter" class="tsd-kind-icon">Log<wbr>Filter</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_logging_.html#typedlogaction" class="tsd-kind-icon">Typed<wbr>Log<wbr>Action</a>
+						<a href="../modules/_logging_index_.html#typedlogaction" class="tsd-kind-icon">Typed<wbr>Log<wbr>Action</a>
 					</li>
 				</ul>
 			</nav>

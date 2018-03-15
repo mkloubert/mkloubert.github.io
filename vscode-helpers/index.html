@@ -76,6 +76,7 @@
 							<li><a href="#functions-">Functions</a><ul>
 									<li><a href="#applyfuncfor-">applyFuncFor</a></li>
 									<li><a href="#asarray-">asArray</a></li>
+									<li><a href="#buildworkflow-">buildWorkflow</a></li>
 									<li><a href="#cloneobject-">cloneObject</a></li>
 									<li><a href="#comparevalues-">compareValues</a></li>
 									<li><a href="#comparevaluesny-">compareValuesBy</a></li>
@@ -85,6 +86,7 @@
 									<li><a href="#tobooleansafe-">toBooleanSafe</a></li>
 									<li><a href="#toeol-">toEOL</a></li>
 									<li><a href="#tostringsafe-">toStringSafe</a></li>
+									<li><a href="#withprogress-">withProgress</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -123,6 +125,26 @@ APPLIED_FUNC(<span class="hljs-number">5979</span>, <span class="hljs-number">23
 <span class="hljs-keyword">const</span> ARR_2 = vscode_helpers.asArray([ <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-literal">undefined</span> ], <span class="hljs-literal">false</span>);  <span class="hljs-comment">// [ 0, 1, null, 3, 4, undefined ]</span>
 <span class="hljs-keyword">const</span> ARR_3 = vscode_helpers.asArray( <span class="hljs-number">5979</span> );  <span class="hljs-comment">// [ 5979 ]</span>
 <span class="hljs-keyword">const</span> ARR_4 = vscode_helpers.asArray( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// [ ]</span>
+</code></pre>
+				<h4 id="buildworkflow-uarr-functions-">buildWorkflow [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> WORKFLOW = vscode_helpers.buildWorkflow()
+    .next(<span class="hljs-function">(<span class="hljs-params">prevValue</span>) =&gt;</span> {
+              <span class="hljs-keyword">return</span> <span class="hljs-number">5979</span>;
+          })
+    .next(<span class="hljs-function">(<span class="hljs-params">prevValue, context</span>) =&gt;</span> {
+              context.value = <span class="hljs-number">1000</span>;
+
+              <span class="hljs-keyword">return</span> prevValue + <span class="hljs-number">23979</span>;
+          })
+    .next(<span class="hljs-function">(<span class="hljs-params">prevValue, context</span>) =&gt;</span> {
+              <span class="hljs-keyword">return</span> prevValue * context.value;
+          });
+
+WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">result</span>) =&gt;</span> {
+    <span class="hljs-comment">// result === 29958</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// this only happens on errors</span>
+});
 </code></pre>
 				<h4 id="cloneobject-uarr-functions-">cloneObject [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CLONED_OBJ = vscode_helpers.cloneObject({
@@ -190,6 +212,30 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 <span class="hljs-keyword">const</span> str_2 = vscode_helpers.toStringSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// ''</span>
 <span class="hljs-keyword">const</span> str_3 = vscode_helpers.toStringSafe( <span class="hljs-literal">undefined</span>, <span class="hljs-string">'abc'</span> );  <span class="hljs-comment">// 'abc'</span>
 </code></pre>
+				<h4 id="withprogress-uarr-functions-">withProgress [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { ProgressLocation } <span class="hljs-keyword">as</span> vscode <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
+
+vscode_helpers.withProgress(<span class="hljs-function">(<span class="hljs-params">context</span>) =&gt;</span> {
+    <span class="hljs-keyword">let</span> res = <span class="hljs-number">0</span>;
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+        context.message = <span class="hljs-string">`Task <span class="hljs-subst">${i + 1}</span> of 10 ...`</span>;
+
+        <span class="hljs-comment">// do something</span>
+
+        ++res;
+    }
+
+    <span class="hljs-keyword">return</span> res;
+}, {
+    location: ProgressLocation.Window,
+    title: <span class="hljs-string">'My operation'</span>,
+}).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-comment">// res === 10</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
+</code></pre>
 				<h2 id="support-and-contribute-uarr-table-of-contents-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the module, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
 				<p>To contribute, you can <a href="https://github.com/mkloubert/vscode-helpers/issues">open an issue</a> and/or fork this repository.</p>
@@ -218,6 +264,12 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_logging_index_.html">"logging/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_progress_index_.html">"progress/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_workflows_index_.html">"workflows/index"</a>
 					</li>
 				</ul>
 			</nav>

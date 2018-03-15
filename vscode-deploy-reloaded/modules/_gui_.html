@@ -70,15 +70,29 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_gui_.lastexecutedactions.html" class="tsd-kind-icon">Last<wbr>Executed<wbr>Actions</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_gui_.showpopupwhenfinishedstats.html" class="tsd-kind-icon">Show<wbr>Popup<wbr>When<wbr>Finished<wbr>Stats</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_gui_.html#showpopupwhenfinishedvalue" class="tsd-kind-icon">Show<wbr>Popup<wbr>When<wbr>Finished<wbr>Value</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_gui_.html#default_required_files_before_show_popup_when_finished" class="tsd-kind-icon">DEFAULT_<wbr>REQUIRED_<wbr>FILES_<wbr>BEFORE_<wbr>SHOW_<wbr>POPUP_<wbr>WHEN_<wbr>FINISHED</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_gui_.html#showpopupwhenfinished" class="tsd-kind-icon">show<wbr>Popup<wbr>When<wbr>Finished</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_gui_.html#sortquickpicksbyusage" class="tsd-kind-icon">sort<wbr>Quick<wbr>Picks<wbr>ByUsage</a></li>
 							</ul>
 						</section>
@@ -86,7 +100,75 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="showpopupwhenfinishedvalue" class="tsd-anchor"></a>
+					<h3>Show<wbr>Popup<wbr>When<wbr>Finished<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">Show<wbr>Popup<wbr>When<wbr>Finished<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/gui.ts#L53">gui.ts:53</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A possible value for &#39;showPopupWhenFinished&#39; setting.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="default_required_files_before_show_popup_when_finished" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> DEFAULT_<wbr>REQUIRED_<wbr>FILES_<wbr>BEFORE_<wbr>SHOW_<wbr>POPUP_<wbr>WHEN_<wbr>FINISHED</h3>
+					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>REQUIRED_<wbr>FILES_<wbr>BEFORE_<wbr>SHOW_<wbr>POPUP_<wbr>WHEN_<wbr>FINISHED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> =&nbsp;2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/gui.ts#L59">gui.ts:59</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The default value for the minimum number of files, which are required,
+							before &#39;showPopupWhenFinished()&#39; shows a popup.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="showpopupwhenfinished" class="tsd-anchor"></a>
+					<h3>show<wbr>Popup<wbr>When<wbr>Finished</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">show<wbr>Popup<wbr>When<wbr>Finished<span class="tsd-signature-symbol">(</span>stats<span class="tsd-signature-symbol">: </span><a href="../interfaces/_gui_.showpopupwhenfinishedstats.html" class="tsd-signature-type">ShowPopupWhenFinishedStats</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/gui.ts#L66">gui.ts:66</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Shows a popup when a deploy operation has been finished.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stats: <a href="../interfaces/_gui_.showpopupwhenfinishedstats.html" class="tsd-signature-type">ShowPopupWhenFinishedStats</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The statistics.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="sortquickpicksbyusage" class="tsd-anchor"></a>
 					<h3>sort<wbr>Quick<wbr>Picks<wbr>ByUsage</h3>
@@ -97,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0f09691/src/gui.ts#L42">gui.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/gui.ts#L194">gui.ts:194</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -175,6 +257,18 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_gui_.lastexecutedactions.html" class="tsd-kind-icon">Last<wbr>Executed<wbr>Actions</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_gui_.showpopupwhenfinishedstats.html" class="tsd-kind-icon">Show<wbr>Popup<wbr>When<wbr>Finished<wbr>Stats</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_gui_.html#showpopupwhenfinishedvalue" class="tsd-kind-icon">Show<wbr>Popup<wbr>When<wbr>Finished<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_gui_.html#default_required_files_before_show_popup_when_finished" class="tsd-kind-icon">DEFAULT_<wbr>REQUIRED_<wbr>FILES_<wbr>BEFORE_<wbr>SHOW_<wbr>POPUP_<wbr>WHEN_<wbr>FINISHED</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_gui_.html#showpopupwhenfinished" class="tsd-kind-icon">show<wbr>Popup<wbr>When<wbr>Finished</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_gui_.html#sortquickpicksbyusage" class="tsd-kind-icon">sort<wbr>Quick<wbr>Picks<wbr>ByUsage</a>

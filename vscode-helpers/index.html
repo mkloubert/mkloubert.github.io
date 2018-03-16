@@ -84,7 +84,10 @@
 									<li><a href="#comparevaluesny-">compareValuesBy</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
 									<li><a href="#createlogger-">createLogger</a></li>
+									<li><a href="#format-">format</a></li>
+									<li><a href="#formatarray-">formatArray</a></li>
 									<li><a href="#from-">from</a></li>
+									<li><a href="#glob-">glob</a></li>
 									<li><a href="#invokeafter-">invokeAfter</a></li>
 									<li><a href="#normalizestring-">normalizeString</a></li>
 									<li><a href="#randombytes-">randomBytes</a></li>
@@ -97,6 +100,10 @@
 									<li><a href="#trydispose-">tryDispose</a></li>
 									<li><a href="#waitwhile-">waitWhile</a></li>
 									<li><a href="#withprogress-">withProgress</a></li>
+								</ul>
+							</li>
+							<li><a href="#classes-">Classes</a><ul>
+									<li><a href="#disposablebase-">DisposableBase</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -116,7 +123,7 @@
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> vscode_helpers <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode-helpers'</span>;
 </code></pre>
 				<h2 id="examples-uarr-table-of-contents-">Examples [<a href="#table-of-contents">&uarr;</a>]</h2>
-				<h3 id="functions-uarr-functions-">Functions [<a href="#functions-">&uarr;</a>]</h3>
+				<h3 id="functions-uarr-examples-">Functions [<a href="#examples-">&uarr;</a>]</h3>
 				<h4 id="applyfuncfor-uarr-functions-">applyFuncFor [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ = { factor: <span class="hljs-number">1000</span> };
 
@@ -215,6 +222,21 @@ WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">res
 
 LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 </code></pre>
+				<h4 id="format-uarr-functions-">format [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-comment">// "MK:23979 + TM: '5979'"</span>
+<span class="hljs-keyword">let</span> str_1 = vscode_helpers.format(
+    <span class="hljs-string">'MK:{1} + TM:{1:trim,surround,leading_space}'</span>,
+    <span class="hljs-number">5979</span>,
+    <span class="hljs-number">23979</span>
+);
+</code></pre>
+				<h4 id="formatarray-uarr-functions-">formatArray [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-comment">// "MK:23979 + TM: '5979'"</span>
+<span class="hljs-keyword">let</span> str_1 = vscode_helpers.formatArray(
+    <span class="hljs-string">'MK:{1} + TM:{1:trim,surround,leading_space}'</span>,
+    [ <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span> ]
+);
+</code></pre>
 				<h4 id="from-uarr-functions-">from [<a href="#functions-">&uarr;</a>]</h4>
 				<p>s. <a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a></p>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> seq = vscode_helpers.from([ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ])  <span class="hljs-comment">// can also be a generator</span>
@@ -226,6 +248,17 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
     <span class="hljs-comment">// [0] '1'</span>
     <span class="hljs-comment">// [1] '3'</span>
 }
+</code></pre>
+				<h4 id="glob-uarr-functions-">glob [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.glob([ <span class="hljs-string">'**/*.txt'</span> ], {
+    cwd: <span class="hljs-string">'/path/to/directory'</span>,
+    ignore: [ <span class="hljs-string">'/log/**/*'</span> ],
+    root: <span class="hljs-string">'/path/to/directory'</span>,
+}).then(<span class="hljs-function">(<span class="hljs-params">matches: <span class="hljs-built_in">string</span></span>) =&gt;</span> {
+    <span class="hljs-comment">// 'matches' contains the found files</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
 </code></pre>
 				<h4 id="invokeafter-uarr-functions-">invokeAfter [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.invokeAfter(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
@@ -334,6 +367,16 @@ vscode_helpers.withProgress(<span class="hljs-function">(<span class="hljs-param
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
+				<h3 id="classes-uarr-examples-">Classes [<a href="#examples-">&uarr;</a>]</h3>
+				<h4 id="disposablebase-uarr-classes-">DisposableBase [<a href="#classes-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">class</span> MyDisposable <span class="hljs-keyword">extends</span> vscode_helpers.MyDisposable {
+    <span class="hljs-keyword">protected</span> onDispose() {
+        <span class="hljs-comment">// your custom logic</span>
+    }
+}
+
+vscode_helpers.tryDispose( <span class="hljs-keyword">new</span> MyDisposable() );
+</code></pre>
 				<h2 id="support-and-contribute-uarr-table-of-contents-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the module, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
 				<p>To contribute, you can <a href="https://github.com/mkloubert/vscode-helpers/issues">open an issue</a> and/or fork this repository.</p>
@@ -356,6 +399,9 @@ vscode_helpers.withProgress(<span class="hljs-function">(<span class="hljs-param
 				<ul>
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_disposable_index_.html">"disposable/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_index_.html">"index"</a>

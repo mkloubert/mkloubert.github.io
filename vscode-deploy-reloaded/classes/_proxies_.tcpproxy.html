@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_objects_.disposablebase.html" class="tsd-signature-type">DisposableBase</a>
+						<span class="tsd-signature-type">DisposableBase</span>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">TcpProxy</span>
@@ -109,12 +109,16 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_proxies_.tcpproxy.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_proxies_.tcpproxy.html#_intervals" class="tsd-kind-icon">_INTERVALS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_proxies_.tcpproxy.html#_name_and_desc_resolvers" class="tsd-kind-icon">_NAME_<wbr>AND_<wbr>DESC_<wbr>RESOLVERS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_proxies_.tcpproxy.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_proxies_.tcpproxy.html#_destinations" class="tsd-kind-icon">_destinations</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_proxies_.tcpproxy.html#_filters" class="tsd-kind-icon">_filters</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_proxies_.tcpproxy.html#_server" class="tsd-kind-icon">_server</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_proxies_.tcpproxy.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_proxies_.tcpproxy.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_proxies_.tcpproxy.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_proxies_.tcpproxy.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_proxies_.tcpproxy.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_proxies_.tcpproxy.html#opts" class="tsd-kind-icon">opts</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_proxies_.tcpproxy.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
@@ -123,9 +127,6 @@
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_proxies_.tcpproxy.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_proxies_.tcpproxy.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_proxies_.tcpproxy.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_proxies_.tcpproxy.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_proxies_.tcpproxy.html#port" class="tsd-kind-icon">port</a></li>
 							</ul>
@@ -136,6 +137,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxies_.tcpproxy.html#adddestination" class="tsd-kind-icon">add<wbr>Destination</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_proxies_.tcpproxy.html#addfilter" class="tsd-kind-icon">add<wbr>Filter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_proxies_.tcpproxy.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_proxies_.tcpproxy.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_proxies_.tcpproxy.html#cleanupserver" class="tsd-kind-icon">cleanup<wbr>Server</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_proxies_.tcpproxy.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_proxies_.tcpproxy.html#dispose" class="tsd-kind-icon">dispose</a></li>
@@ -177,7 +179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L258">proxies.ts:258</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L257">proxies.ts:257</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -201,16 +203,32 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_disposables" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _DISPOSABLES</h3>
-					<div class="tsd-signature tsd-kind-icon">_DISPOSABLES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Disposable</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_DISPOSABLES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Disposable</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#_disposables">_DISPOSABLES</a></p>
+						<p>Inherited from DisposableBase._DISPOSABLES</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L30">objects.ts:30</a></li>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:35</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Stores disposable sub objects.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_intervals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _INTERVALS</h3>
+					<div class="tsd-signature tsd-kind-icon">_INTERVALS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase._INTERVALS</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:39</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Stores intervals.</p>
 						</div>
 					</div>
 				</section>
@@ -220,18 +238,18 @@
 					<div class="tsd-signature tsd-kind-icon">_NAME_<wbr>AND_<wbr>DESC_<wbr>RESOLVERS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_proxies_.html#tcpproxynameanddescriptionresolver" class="tsd-signature-type">TcpProxyNameAndDescriptionResolver</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L257">proxies.ts:257</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L256">proxies.ts:256</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_timeouts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _TIMEOUTS</h3>
-					<div class="tsd-signature tsd-kind-icon">_TIMEOUTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_TIMEOUTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#_timeouts">_TIMEOUTS</a></p>
+						<p>Inherited from DisposableBase._TIMEOUTS</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L36">objects.ts:36</a></li>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:45</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -246,7 +264,7 @@
 					<div class="tsd-signature tsd-kind-icon">_destinations<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_proxies_.tcpproxydestination.html" class="tsd-signature-type">TcpProxyDestination</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L255">proxies.ts:255</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L254">proxies.ts:254</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -256,7 +274,7 @@
 					<div class="tsd-signature tsd-kind-icon">_filters<span class="tsd-signature-symbol">:</span> <a href="../modules/_proxies_.html#tcpproxyremotefilter" class="tsd-signature-type">TcpProxyRemoteFilter</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L256">proxies.ts:256</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L255">proxies.ts:255</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -266,7 +284,7 @@
 					<div class="tsd-signature tsd-kind-icon">_server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Server</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L258">proxies.ts:258</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L257">proxies.ts:257</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -276,12 +294,60 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L386">proxies.ts:386</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L385">proxies.ts:385</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Gets the ID of the proxy.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isDisposed</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:59</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if object has been disposed or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposing" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposing</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isDisposing</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:63</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if the &#39;dispose()&#39; method is currently executed or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isinfinalizestate" class="tsd-anchor"></a>
+					<h3>is<wbr>InFinalize<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>InFinalize<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isInFinalizeState</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:67</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if the object is disposed or currently disposing.</p>
 						</div>
 					</div>
 				</section>
@@ -291,7 +357,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_proxies_.tcpproxyoptions.html" class="tsd-signature-type">TcpProxyOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L420">proxies.ts:420</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L419">proxies.ts:419</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -306,7 +372,7 @@
 					<div class="tsd-signature tsd-kind-icon">opts<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_proxies_.tcpproxyoptions.html" class="tsd-signature-type">TcpProxyOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L265">proxies.ts:265</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L264">proxies.ts:264</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -324,75 +390,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-					<a name="isdisposed" class="tsd-anchor"></a>
-					<h3>is<wbr>Disposed</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isdisposed">isDisposed</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L80">objects.ts:80</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if object has been disposed or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-					<a name="isdisposing" class="tsd-anchor"></a>
-					<h3>is<wbr>Disposing</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposing<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isdisposing">isDisposing</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L87">objects.ts:87</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if the &#39;dispose()&#39; method is currently executed or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-					<a name="isinfinalizestate" class="tsd-anchor"></a>
-					<h3>is<wbr>InFinalize<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isInFinalizeState<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isinfinalizestate">isInFinalizeState</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L94">objects.ts:94</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if the object is disposed or currently disposing.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="isrunning" class="tsd-anchor"></a>
 					<h3>is<wbr>Running</h3>
@@ -403,7 +400,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L401">proxies.ts:401</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L400">proxies.ts:400</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -425,7 +422,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L425">proxies.ts:425</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L424">proxies.ts:424</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -450,7 +447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L284">proxies.ts:284</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L283">proxies.ts:283</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -488,7 +485,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L317">proxies.ts:317</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L316">proxies.ts:316</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -538,6 +535,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="cleanupintervals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cleanup<wbr>Intervals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">cleanup<wbr>Intervals<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from DisposableBase.cleanupIntervals</p>
+								<ul>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:49</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cleansup all timeouts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="cleanupserver" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> cleanup<wbr>Server</h3>
@@ -548,7 +568,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L358">proxies.ts:358</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L357">proxies.ts:357</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -564,9 +584,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#cleanuptimeouts">cleanupTimeouts</a></p>
+								<p>Inherited from DisposableBase.cleanupTimeouts</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L41">objects.ts:41</a></li>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:53</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -587,9 +607,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#dispose">dispose</a></p>
+								<p>Inherited from DisposableBase.dispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L50">objects.ts:50</a></li>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:55</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -678,7 +698,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L340">proxies.ts:340</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L339">proxies.ts:339</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -710,7 +730,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L388">proxies.ts:388</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L387">proxies.ts:387</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -813,9 +833,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Overrides <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#ondispose">onDispose</a></p>
+								<p>Overrides DisposableBase.onDispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L406">proxies.ts:406</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L405">proxies.ts:405</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1000,7 +1020,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L444">proxies.ts:444</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L443">proxies.ts:443</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1038,7 +1058,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L465">proxies.ts:465</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L464">proxies.ts:464</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1061,7 +1081,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L515">proxies.ts:515</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L514">proxies.ts:514</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1087,7 +1107,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L690">proxies.ts:690</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L689">proxies.ts:689</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1110,7 +1130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/proxies.ts#L715">proxies.ts:715</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/proxies.ts#L714">proxies.ts:714</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1176,6 +1196,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_proxies_.tcpproxy.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_proxies_.tcpproxy.html#_intervals" class="tsd-kind-icon">_INTERVALS</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_proxies_.tcpproxy.html#_name_and_desc_resolvers" class="tsd-kind-icon">_NAME_<wbr>AND_<wbr>DESC_<wbr>RESOLVERS</a>
 							</li>
@@ -1194,6 +1217,15 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_proxies_.tcpproxy.html#id" class="tsd-kind-icon">id</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_proxies_.tcpproxy.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_proxies_.tcpproxy.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_proxies_.tcpproxy.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_proxies_.tcpproxy.html#options" class="tsd-kind-icon">options</a>
 							</li>
@@ -1202,15 +1234,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_proxies_.tcpproxy.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_proxies_.tcpproxy.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_proxies_.tcpproxy.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_proxies_.tcpproxy.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_proxies_.tcpproxy.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a>
@@ -1226,6 +1249,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_proxies_.tcpproxy.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_proxies_.tcpproxy.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_proxies_.tcpproxy.html#cleanupserver" class="tsd-kind-icon">cleanup<wbr>Server</a>

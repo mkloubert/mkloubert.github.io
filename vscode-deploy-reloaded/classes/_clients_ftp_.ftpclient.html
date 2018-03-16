@@ -103,8 +103,12 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#_intervals" class="tsd-kind-icon">_INTERVALS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#_connection" class="tsd-kind-icon">_connection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
@@ -114,9 +118,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#connection" class="tsd-kind-icon">connection</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
@@ -124,6 +125,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#connect" class="tsd-kind-icon">connect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_clients_ftp_.ftpclient.html#createdirectoryifneeded" class="tsd-kind-icon">create<wbr>Directory<wbr>IfNeeded</a></li>
@@ -171,7 +173,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L71">clients/ftp.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L71">clients/ftp.ts:71</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -200,11 +202,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 					<a name="_disposables" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _DISPOSABLES</h3>
-					<div class="tsd-signature tsd-kind-icon">_DISPOSABLES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Disposable</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_DISPOSABLES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Disposable</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#_disposables">_DISPOSABLES</a></p>
+						<p>Inherited from DisposableBase._DISPOSABLES</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L30">objects.ts:30</a></li>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:35</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -214,13 +216,29 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="_intervals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _INTERVALS</h3>
+					<div class="tsd-signature tsd-kind-icon">_INTERVALS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase._INTERVALS</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:39</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Stores intervals.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 					<a name="_timeouts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _TIMEOUTS</h3>
-					<div class="tsd-signature tsd-kind-icon">_TIMEOUTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_TIMEOUTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#_timeouts">_TIMEOUTS</a></p>
+						<p>Inherited from DisposableBase._TIMEOUTS</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L36">objects.ts:36</a></li>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:45</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -236,12 +254,60 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#_connection">_connection</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L70">clients/ftp.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L70">clients/ftp.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Stores the internal connection object / value.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isDisposed</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:59</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if object has been disposed or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="isdisposing" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposing</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isDisposing</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:63</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if the &#39;dispose()&#39; method is currently executed or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="isinfinalizestate" class="tsd-anchor"></a>
+					<h3>is<wbr>InFinalize<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>InFinalize<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isInFinalizeState</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:67</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if the object is disposed or currently disposing.</p>
 						</div>
 					</div>
 				</section>
@@ -252,7 +318,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#options">options</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L204">clients/ftp.ts:204</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L204">clients/ftp.ts:204</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -286,7 +352,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#connection">connection</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L304">clients/ftp.ts:304</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L304">clients/ftp.ts:304</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/_download_.downloadsourcetype.html#ftp" class="tsd-signature-type">FTP</a></h4>
@@ -304,81 +370,12 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#isconnected">isConnected</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L171">clients/ftp.ts:171</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L171">clients/ftp.ts:171</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Gets if the client is currently connected or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isdisposed" class="tsd-anchor"></a>
-					<h3>is<wbr>Disposed</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isdisposed">isDisposed</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L80">objects.ts:80</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if object has been disposed or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isdisposing" class="tsd-anchor"></a>
-					<h3>is<wbr>Disposing</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposing<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isdisposing">isDisposing</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L87">objects.ts:87</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if the &#39;dispose()&#39; method is currently executed or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isinfinalizestate" class="tsd-anchor"></a>
-					<h3>is<wbr>InFinalize<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isInFinalizeState<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isinfinalizestate">isInFinalizeState</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L94">objects.ts:94</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if the object is disposed or currently disposing.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -397,7 +394,7 @@
 								<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#type">type</a></p>
 								<p>Overrides <a href="_clients_.asyncfilelistbase.html">AsyncFileListBase</a>.<a href="_clients_.asyncfilelistbase.html#type">type</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L215">clients/ftp.ts:215</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L215">clients/ftp.ts:215</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -446,6 +443,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="cleanupintervals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cleanup<wbr>Intervals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">cleanup<wbr>Intervals<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from DisposableBase.cleanupIntervals</p>
+								<ul>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:49</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cleansup all timeouts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 					<a name="cleanuptimeouts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cleanup<wbr>Timeouts</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
@@ -454,9 +474,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#cleanuptimeouts">cleanupTimeouts</a></p>
+								<p>Inherited from DisposableBase.cleanupTimeouts</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L41">objects.ts:41</a></li>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:53</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -479,7 +499,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#connect">connect</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L233">clients/ftp.ts:233</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L233">clients/ftp.ts:233</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -497,7 +517,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#createdirectoryifneeded">createDirectoryIfNeeded</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L105">clients/ftp.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L105">clients/ftp.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -530,7 +550,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#cwd">cwd</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L308">clients/ftp.ts:308</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L308">clients/ftp.ts:308</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -555,7 +575,7 @@
 								<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#deletefile">deleteFile</a></p>
 								<p>Overrides <a href="_clients_.asyncfilelistbase.html">AsyncFileListBase</a>.<a href="_clients_.asyncfilelistbase.html#deletefile">deleteFile</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L136">clients/ftp.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L136">clients/ftp.ts:136</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -584,9 +604,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_clients_.iasyncfileclient.html">IAsyncFileClient</a>.<a href="../interfaces/_clients_.iasyncfileclient.html#dispose">dispose</a></p>
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#dispose">dispose</a></p>
+								<p>Inherited from DisposableBase.dispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L50">objects.ts:50</a></li>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:55</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -610,7 +630,7 @@
 								<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#downloadfile">downloadFile</a></p>
 								<p>Overrides <a href="_clients_.asyncfilelistbase.html">AsyncFileListBase</a>.<a href="_clients_.asyncfilelistbase.html#downloadfile">downloadFile</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L148">clients/ftp.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L148">clients/ftp.ts:148</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -669,7 +689,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#end">end</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L332">clients/ftp.ts:332</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L332">clients/ftp.ts:332</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -707,7 +727,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L357">clients/ftp.ts:357</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L357">clients/ftp.ts:357</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -751,7 +771,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#list">list</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L385">clients/ftp.ts:385</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L385">clients/ftp.ts:385</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -776,7 +796,7 @@
 								<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#listdirectory">listDirectory</a></p>
 								<p>Overrides <a href="_clients_.asyncfilelistbase.html">AsyncFileListBase</a>.<a href="_clients_.asyncfilelistbase.html#listdirectory">listDirectory</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L183">clients/ftp.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L183">clients/ftp.ts:183</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -858,7 +878,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#mkdir">mkdir</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L507">clients/ftp.ts:507</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L507">clients/ftp.ts:507</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -910,9 +930,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#ondispose">onDispose</a></p>
-								<p>Overrides <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#ondispose">onDispose</a></p>
+								<p>Overrides DisposableBase.onDispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L195">clients/ftp.ts:195</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L195">clients/ftp.ts:195</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1023,7 +1043,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#put">put</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L531">clients/ftp.ts:531</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L531">clients/ftp.ts:531</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1131,7 +1151,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#unlink">unlink</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L563">clients/ftp.ts:563</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L563">clients/ftp.ts:563</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1156,7 +1176,7 @@
 								<p>Inherited from <a href="_clients_ftp_.ftpclientbase.html">FTPClientBase</a>.<a href="_clients_ftp_.ftpclientbase.html#uploadfile">uploadFile</a></p>
 								<p>Overrides <a href="_clients_.asyncfilelistbase.html">AsyncFileListBase</a>.<a href="_clients_.asyncfilelistbase.html#uploadfile">uploadFile</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/ftp.ts#L227">clients/ftp.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/ftp.ts#L227">clients/ftp.ts:227</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1235,10 +1255,22 @@
 								<a href="_clients_ftp_.ftpclient.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="_clients_ftp_.ftpclient.html#_intervals" class="tsd-kind-icon">_INTERVALS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="_clients_ftp_.ftpclient.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="_clients_ftp_.ftpclient.html#_connection" class="tsd-kind-icon">_connection</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_clients_ftp_.ftpclient.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_clients_ftp_.ftpclient.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_clients_ftp_.ftpclient.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_clients_ftp_.ftpclient.html#options" class="tsd-kind-icon">options</a>
@@ -1252,20 +1284,14 @@
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_clients_ftp_.ftpclient.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-								<a href="_clients_ftp_.ftpclient.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-								<a href="_clients_ftp_.ftpclient.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-								<a href="_clients_ftp_.ftpclient.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a>
-							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="_clients_ftp_.ftpclient.html#type" class="tsd-kind-icon">type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="_clients_ftp_.ftpclient.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="_clients_ftp_.ftpclient.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="_clients_ftp_.ftpclient.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a>

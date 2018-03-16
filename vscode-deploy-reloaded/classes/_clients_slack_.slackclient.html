@@ -110,7 +110,11 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_clients_slack_.slackclient.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_clients_slack_.slackclient.html#_intervals" class="tsd-kind-icon">_INTERVALS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_clients_slack_.slackclient.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_clients_slack_.slackclient.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_clients_slack_.slackclient.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_clients_slack_.slackclient.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_clients_slack_.slackclient.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_clients_slack_.slackclient.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
@@ -118,9 +122,6 @@
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_clients_slack_.slackclient.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_clients_slack_.slackclient.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="_clients_slack_.slackclient.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite"><a href="_clients_slack_.slackclient.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
@@ -128,6 +129,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_clients_slack_.slackclient.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_clients_slack_.slackclient.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_clients_slack_.slackclient.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_clients_slack_.slackclient.html#createfileinfo" class="tsd-kind-icon">create<wbr>File<wbr>Info</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_clients_slack_.slackclient.html#createinstance" class="tsd-kind-icon">create<wbr>Instance</a></li>
@@ -170,7 +172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L55">clients/slack.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L55">clients/slack.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -199,11 +201,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_disposables" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _DISPOSABLES</h3>
-					<div class="tsd-signature tsd-kind-icon">_DISPOSABLES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Disposable</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_DISPOSABLES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Disposable</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#_disposables">_DISPOSABLES</a></p>
+						<p>Inherited from DisposableBase._DISPOSABLES</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L30">objects.ts:30</a></li>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:35</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -213,18 +215,82 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="_intervals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _INTERVALS</h3>
+					<div class="tsd-signature tsd-kind-icon">_INTERVALS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase._INTERVALS</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:39</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Stores intervals.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="_timeouts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _TIMEOUTS</h3>
-					<div class="tsd-signature tsd-kind-icon">_TIMEOUTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_TIMEOUTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#_timeouts">_TIMEOUTS</a></p>
+						<p>Inherited from DisposableBase._TIMEOUTS</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L36">objects.ts:36</a></li>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:45</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Stores timeouts.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isDisposed</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:59</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if object has been disposed or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isdisposing" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposing</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isDisposing</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:63</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if the &#39;dispose()&#39; method is currently executed or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="isinfinalizestate" class="tsd-anchor"></a>
+					<h3>is<wbr>InFinalize<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>InFinalize<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isInFinalizeState</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:67</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if the object is disposed or currently disposing.</p>
 						</div>
 					</div>
 				</section>
@@ -234,7 +300,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_clients_slack_.slackoptions.html" class="tsd-signature-type">SlackOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L61">clients/slack.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L61">clients/slack.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -257,75 +323,6 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-					<a name="isdisposed" class="tsd-anchor"></a>
-					<h3>is<wbr>Disposed</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isdisposed">isDisposed</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L80">objects.ts:80</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if object has been disposed or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-					<a name="isdisposing" class="tsd-anchor"></a>
-					<h3>is<wbr>Disposing</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposing<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isdisposing">isDisposing</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L87">objects.ts:87</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if the &#39;dispose()&#39; method is currently executed or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-					<a name="isinfinalizestate" class="tsd-anchor"></a>
-					<h3>is<wbr>InFinalize<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isInFinalizeState<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isinfinalizestate">isInFinalizeState</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L94">objects.ts:94</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if the object is disposed or currently disposing.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
@@ -337,7 +334,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_.asyncfilelistbase.html">AsyncFileListBase</a>.<a href="_clients_.asyncfilelistbase.html#type">type</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L396">clients/slack.ts:396</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L396">clients/slack.ts:396</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -386,6 +383,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="cleanupintervals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cleanup<wbr>Intervals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">cleanup<wbr>Intervals<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from DisposableBase.cleanupIntervals</p>
+								<ul>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:49</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cleansup all timeouts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="cleanuptimeouts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cleanup<wbr>Timeouts</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
@@ -394,9 +414,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#cleanuptimeouts">cleanupTimeouts</a></p>
+								<p>Inherited from DisposableBase.cleanupTimeouts</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L41">objects.ts:41</a></li>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:53</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,7 +438,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L65">clients/slack.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L65">clients/slack.ts:65</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -444,7 +464,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L101">clients/slack.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L101">clients/slack.ts:101</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -462,7 +482,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_.asyncfilelistbase.html">AsyncFileListBase</a>.<a href="_clients_.asyncfilelistbase.html#deletefile">deleteFile</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L108">clients/slack.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L108">clients/slack.ts:108</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -491,9 +511,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_clients_.iasyncfileclient.html">IAsyncFileClient</a>.<a href="../interfaces/_clients_.iasyncfileclient.html#dispose">dispose</a></p>
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#dispose">dispose</a></p>
+								<p>Inherited from DisposableBase.dispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L50">objects.ts:50</a></li>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:55</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -516,7 +536,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_.asyncfilelistbase.html">AsyncFileListBase</a>.<a href="_clients_.asyncfilelistbase.html#downloadfile">downloadFile</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L148">clients/slack.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L148">clients/slack.ts:148</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -594,7 +614,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L169">clients/slack.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L169">clients/slack.ts:169</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -617,7 +637,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L213">clients/slack.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L213">clients/slack.ts:213</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_files_.filesysteminfo.html" class="tsd-signature-type">FileSystemInfo</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -655,7 +675,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_.asyncfilelistbase.html">AsyncFileListBase</a>.<a href="_clients_.asyncfilelistbase.html#listdirectory">listDirectory</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L270">clients/slack.ts:270</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L270">clients/slack.ts:270</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -684,7 +704,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L297">clients/slack.ts:297</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L297">clients/slack.ts:297</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -787,9 +807,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#ondispose">onDispose</a></p>
+								<p>Inherited from DisposableBase.onDispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L101">objects.ts:101</a></li>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:71</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -980,7 +1000,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_clients_.asyncfilelistbase.html">AsyncFileListBase</a>.<a href="_clients_.asyncfilelistbase.html#uploadfile">uploadFile</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/clients/slack.ts#L401">clients/slack.ts:401</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/clients/slack.ts#L401">clients/slack.ts:401</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1056,7 +1076,19 @@
 								<a href="_clients_slack_.slackclient.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_clients_slack_.slackclient.html#_intervals" class="tsd-kind-icon">_INTERVALS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_clients_slack_.slackclient.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_clients_slack_.slackclient.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_clients_slack_.slackclient.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_clients_slack_.slackclient.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_clients_slack_.slackclient.html#options" class="tsd-kind-icon">options</a>
@@ -1064,20 +1096,14 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_clients_slack_.slackclient.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_clients_slack_.slackclient.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_clients_slack_.slackclient.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
-								<a href="_clients_slack_.slackclient.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a>
-							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_clients_slack_.slackclient.html#type" class="tsd-kind-icon">type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_clients_slack_.slackclient.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_clients_slack_.slackclient.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_clients_slack_.slackclient.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a>

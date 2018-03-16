@@ -103,12 +103,16 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#_intervals" class="tsd-kind-icon">_INTERVALS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#__file" class="tsd-kind-icon">__file</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#__filepath" class="tsd-kind-icon">__file<wbr>Path</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#__index" class="tsd-kind-icon">__index</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#__type" class="tsd-kind-icon">__type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 							</ul>
 						</section>
@@ -119,15 +123,13 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#candownload" class="tsd-kind-icon">can<wbr>Download</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#canlist" class="tsd-kind-icon">can<wbr>List</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#canupload" class="tsd-kind-icon">can<wbr>Upload</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#createcontext" class="tsd-kind-icon">create<wbr>Context</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported"><a href="_plugins_ftp_.ftpplugin.html#deletefiles" class="tsd-kind-icon">delete<wbr>Files</a></li>
@@ -172,7 +174,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L641">plugins.ts:641</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L640">plugins.ts:640</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -201,11 +203,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 					<a name="_disposables" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _DISPOSABLES</h3>
-					<div class="tsd-signature tsd-kind-icon">_DISPOSABLES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Disposable</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_DISPOSABLES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Disposable</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#_disposables">_DISPOSABLES</a></p>
+						<p>Inherited from DisposableBase._DISPOSABLES</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L30">objects.ts:30</a></li>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:35</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -215,13 +217,29 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="_intervals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _INTERVALS</h3>
+					<div class="tsd-signature tsd-kind-icon">_INTERVALS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase._INTERVALS</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:39</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Stores intervals.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 					<a name="_timeouts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _TIMEOUTS</h3>
-					<div class="tsd-signature tsd-kind-icon">_TIMEOUTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">_TIMEOUTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#_timeouts">_TIMEOUTS</a></p>
+						<p>Inherited from DisposableBase._TIMEOUTS</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L36">objects.ts:36</a></li>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:45</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -238,7 +256,7 @@
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#__file">__file</a></p>
 						<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#__file">__file</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L652">plugins.ts:652</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L651">plugins.ts:651</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -256,7 +274,7 @@
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#__filepath">__filePath</a></p>
 						<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#__filepath">__filePath</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L654">plugins.ts:654</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L653">plugins.ts:653</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -274,7 +292,7 @@
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#__index">__index</a></p>
 						<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#__index">__index</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L656">plugins.ts:656</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L655">plugins.ts:655</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -292,7 +310,7 @@
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#__type">__type</a></p>
 						<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#__type">__type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L658">plugins.ts:658</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L657">plugins.ts:657</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -309,12 +327,60 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#context">context</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L647">plugins.ts:647</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L646">plugins.ts:646</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The underlying context.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="isdisposed" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposed</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isDisposed</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:59</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if object has been disposed or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="isdisposing" class="tsd-anchor"></a>
+					<h3>is<wbr>Disposing</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Disposing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isDisposing</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:63</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if the &#39;dispose()&#39; method is currently executed or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+					<a name="isinfinalizestate" class="tsd-anchor"></a>
+					<h3>is<wbr>InFinalize<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>InFinalize<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from DisposableBase.isInFinalizeState</p>
+						<ul>
+							<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:67</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets if the object is disposed or currently disposing.</p>
 						</div>
 					</div>
 				</section>
@@ -344,7 +410,7 @@
 								<p>Inherited from <a href="_plugins_.asyncfileclientpluginbase.html">AsyncFileClientPluginBase</a>.<a href="_plugins_.asyncfileclientpluginbase.html#candelete">canDelete</a></p>
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#candelete">canDelete</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L824">plugins.ts:824</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L823">plugins.ts:823</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -372,7 +438,7 @@
 								<p>Inherited from <a href="_plugins_.asyncfileclientpluginbase.html">AsyncFileClientPluginBase</a>.<a href="_plugins_.asyncfileclientpluginbase.html#candownload">canDownload</a></p>
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#candownload">canDownload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L829">plugins.ts:829</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L828">plugins.ts:828</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -400,7 +466,7 @@
 								<p>Inherited from <a href="_plugins_.asyncfileclientpluginbase.html">AsyncFileClientPluginBase</a>.<a href="_plugins_.asyncfileclientpluginbase.html#canlist">canList</a></p>
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#canlist">canList</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L834">plugins.ts:834</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L833">plugins.ts:833</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -427,7 +493,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#canupload">canUpload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L673">plugins.ts:673</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L672">plugins.ts:672</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -438,75 +504,6 @@
 									<dt>inheritdoc</dt>
 									<dd></dd>
 								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isdisposed" class="tsd-anchor"></a>
-					<h3>is<wbr>Disposed</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposed<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isdisposed">isDisposed</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L80">objects.ts:80</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if object has been disposed or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isdisposing" class="tsd-anchor"></a>
-					<h3>is<wbr>Disposing</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isDisposing<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isdisposing">isDisposing</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L87">objects.ts:87</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if the &#39;dispose()&#39; method is currently executed or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-					<a name="isinfinalizestate" class="tsd-anchor"></a>
-					<h3>is<wbr>InFinalize<wbr>State</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isInFinalizeState<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#isinfinalizestate">isInFinalizeState</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L94">objects.ts:94</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if the object is disposed or currently disposing.</p>
-								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
@@ -545,6 +542,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+					<a name="cleanupintervals" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cleanup<wbr>Intervals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">cleanup<wbr>Intervals<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from DisposableBase.cleanupIntervals</p>
+								<ul>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:49</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Cleansup all timeouts.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 					<a name="cleanuptimeouts" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> cleanup<wbr>Timeouts</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
@@ -553,9 +573,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#cleanuptimeouts">cleanupTimeouts</a></p>
+								<p>Inherited from DisposableBase.cleanupTimeouts</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L41">objects.ts:41</a></li>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:53</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -578,7 +598,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_plugins_.asyncfileclientpluginbase.html">AsyncFileClientPluginBase</a>.<a href="_plugins_.asyncfileclientpluginbase.html#createcontext">createContext</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins/ftp.ts#L62">plugins/ftp.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins/ftp.ts#L62">plugins/ftp.ts:62</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -603,7 +623,7 @@
 								<p>Inherited from <a href="_plugins_.asyncfileclientpluginbase.html">AsyncFileClientPluginBase</a>.<a href="_plugins_.asyncfileclientpluginbase.html#deletefiles">deleteFiles</a></p>
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#deletefiles">deleteFiles</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L848">plugins.ts:848</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L847">plugins.ts:847</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -632,9 +652,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#dispose">dispose</a></p>
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#dispose">dispose</a></p>
+								<p>Inherited from DisposableBase.dispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L50">objects.ts:50</a></li>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:55</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -658,7 +678,7 @@
 								<p>Inherited from <a href="_plugins_.asyncfileclientpluginbase.html">AsyncFileClientPluginBase</a>.<a href="_plugins_.asyncfileclientpluginbase.html#downloadfiles">downloadFiles</a></p>
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#downloadfiles">downloadFiles</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L872">plugins.ts:872</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L871">plugins.ts:871</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -737,7 +757,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#getexistingsettingpath">getExistingSettingPath</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L696">plugins.ts:696</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L695">plugins.ts:695</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -796,7 +816,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#getworkspaceoftarget">getWorkspaceOfTarget</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L715">plugins.ts:715</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L714">plugins.ts:714</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -844,7 +864,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L726">plugins.ts:726</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L725">plugins.ts:725</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -869,7 +889,7 @@
 								<p>Inherited from <a href="_plugins_.asyncfileclientpluginbase.html">AsyncFileClientPluginBase</a>.<a href="_plugins_.asyncfileclientpluginbase.html#listdirectory">listDirectory</a></p>
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#listdirectory">listDirectory</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L916">plugins.ts:916</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L915">plugins.ts:915</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -978,9 +998,9 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="_objects_.disposablebase.html">DisposableBase</a>.<a href="_objects_.disposablebase.html#ondispose">onDispose</a></p>
+								<p>Inherited from DisposableBase.onDispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/objects.ts#L101">objects.ts:101</a></li>
+									<li>Defined in M:/VS Code/proj/vscode-deploy-reloaded/node_modules/vscode-helpers/lib/disposable/index.d.ts:71</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1145,7 +1165,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#replacewithvalues">replaceWithValues</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L743">plugins.ts:743</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L742">plugins.ts:742</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1213,7 +1233,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#t">t</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L765">plugins.ts:765</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L764">plugins.ts:764</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1256,7 +1276,7 @@
 								<p>Inherited from <a href="_plugins_.asyncfileclientpluginbase.html">AsyncFileClientPluginBase</a>.<a href="_plugins_.asyncfileclientpluginbase.html#uploadfiles">uploadFiles</a></p>
 								<p>Overrides <a href="_plugins_.pluginbase.html">PluginBase</a>.<a href="_plugins_.pluginbase.html#uploadfiles">uploadFiles</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b2a67d9/src/plugins.ts#L972">plugins.ts:972</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b4d46e7/src/plugins.ts#L971">plugins.ts:971</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1329,6 +1349,9 @@
 								<a href="_plugins_ftp_.ftpplugin.html#_disposables" class="tsd-kind-icon">_DISPOSABLES</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_ftp_.ftpplugin.html#_intervals" class="tsd-kind-icon">_INTERVALS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="_plugins_ftp_.ftpplugin.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
@@ -1346,6 +1369,15 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_ftp_.ftpplugin.html#context" class="tsd-kind-icon">context</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_ftp_.ftpplugin.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_ftp_.ftpplugin.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
+								<a href="_plugins_ftp_.ftpplugin.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static tsd-is-not-exported">
 								<a href="_plugins_ftp_.ftpplugin.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
 							</li>
@@ -1361,17 +1393,11 @@
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_ftp_.ftpplugin.html#canupload" class="tsd-kind-icon">can<wbr>Upload</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-								<a href="_plugins_ftp_.ftpplugin.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-								<a href="_plugins_ftp_.ftpplugin.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a>
-							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
-								<a href="_plugins_ftp_.ftpplugin.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-not-exported">
 								<a href="_plugins_ftp_.ftpplugin.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
+								<a href="_plugins_ftp_.ftpplugin.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-not-exported">
 								<a href="_plugins_ftp_.ftpplugin.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a>

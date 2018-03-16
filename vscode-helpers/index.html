@@ -84,6 +84,7 @@
 									<li><a href="#comparevaluesny-">compareValuesBy</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
 									<li><a href="#createlogger-">createLogger</a></li>
+									<li><a href="#foreachasync-">forEachAsync</a></li>
 									<li><a href="#format-">format</a></li>
 									<li><a href="#formatarray-">formatArray</a></li>
 									<li><a href="#from-">from</a></li>
@@ -93,6 +94,7 @@
 									<li><a href="#randombytes-">randomBytes</a></li>
 									<li><a href="#registerworkspacewatcher-">registerWorkspaceWatcher</a></li>
 									<li><a href="#sleep-">sleep</a></li>
+									<li><a href="#toarray-">toArray</a></li>
 									<li><a href="#tobooleansafe-">toBooleanSafe</a></li>
 									<li><a href="#toeol-">toEOL</a></li>
 									<li><a href="#tostringsafe-">toStringSafe</a></li>
@@ -224,6 +226,18 @@ WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">res
 
 LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 </code></pre>
+				<h4 id="foreachasync-uarr-functions-">forEachAsync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.forEachAsync([ <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span> ], <span class="hljs-keyword">async</span> (item, index) =&gt; {
+    <span class="hljs-comment">// [index === 0] =&gt; item === 5979</span>
+    <span class="hljs-comment">// [index === 1] =&gt; item === 23979</span>
+
+    <span class="hljs-keyword">return</span> item * <span class="hljs-number">1000</span>;
+}).then(<span class="hljs-function">(<span class="hljs-params">lastResult</span>) =&gt;</span> {
+    <span class="hljs-comment">// lastResult === 23979000</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
+</code></pre>
 				<h4 id="format-uarr-functions-">format [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-comment">// "MK:23979 + TM: '5979'"</span>
 <span class="hljs-keyword">let</span> str_1 = vscode_helpers.format(
@@ -264,6 +278,7 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 </code></pre>
 				<h4 id="invokeafter-uarr-functions-">invokeAfter [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.invokeAfter(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-comment">// this is invoked after 5979 milliseconds</span>
     <span class="hljs-keyword">return</span> <span class="hljs-number">23979</span>;
 }, <span class="hljs-number">5979</span>).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
     <span class="hljs-comment">// res === 23979</span>
@@ -327,6 +342,15 @@ vscode_helpers.registerWorkspaceWatcher(<span class="hljs-function">(<span class
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> bool_1 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">true</span> );  <span class="hljs-comment">// (true)</span>
 <span class="hljs-keyword">const</span> bool_2 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// (false)</span>
 <span class="hljs-keyword">const</span> bool_3 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">undefined</span>, <span class="hljs-literal">true</span> );  <span class="hljs-comment">// (true)</span>
+</code></pre>
+				<h4 id="toarray-uarr-functions-">toArray [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> myGenerator = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">yield</span> <span class="hljs-number">5979</span>;
+    <span class="hljs-keyword">yield</span> <span class="hljs-number">23979</span>;
+};
+
+<span class="hljs-keyword">let</span> arr_1 = vscode_helpers.toArray( myGenerator() );
+<span class="hljs-keyword">let</span> arr_2 = vscode_helpers.toArray( [ <span class="hljs-number">19861222</span>, <span class="hljs-string">'PZSUX'</span> ] );  <span class="hljs-comment">// new array</span>
 </code></pre>
 				<h4 id="toeol-uarr-functions-">toEOL [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { EndOfLine } <span class="hljs-keyword">as</span> vscode <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;

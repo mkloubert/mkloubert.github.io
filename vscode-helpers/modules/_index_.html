@@ -79,6 +79,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#foreachasyncaction" class="tsd-kind-icon">For<wbr>Each<wbr>Async<wbr>Action</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#invokeafteraction" class="tsd-kind-icon">Invoke<wbr>After<wbr>Action</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#simplecompletedaction" class="tsd-kind-icon">Simple<wbr>Completed<wbr>Action</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#stringnormalizer" class="tsd-kind-icon">String<wbr>Normalizer</a></li>
@@ -101,6 +102,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#comparevalues" class="tsd-kind-icon">compare<wbr>Values</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#comparevaluesby" class="tsd-kind-icon">compare<wbr>Values<wbr>By</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#createcompletedaction" class="tsd-kind-icon">create<wbr>Completed<wbr>Action</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#foreachasync" class="tsd-kind-icon">for<wbr>Each<wbr>Async</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#format" class="tsd-kind-icon">format</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#formatarray" class="tsd-kind-icon">format<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#glob" class="tsd-kind-icon">glob</a></li>
@@ -108,6 +110,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#normalizestring" class="tsd-kind-icon">normalize<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#randombytes" class="tsd-kind-icon">random<wbr>Bytes</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#sleep" class="tsd-kind-icon">sleep</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_index_.html#toarray" class="tsd-kind-icon">to<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#tobooleansafe" class="tsd-kind-icon">to<wbr>Boolean<wbr>Safe</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#toeol" class="tsd-kind-icon">toEOL</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_index_.html#tostringsafe" class="tsd-kind-icon">to<wbr>String<wbr>Safe</a></li>
@@ -122,12 +125,71 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="foreachasyncaction" class="tsd-anchor"></a>
+					<h3>For<wbr>Each<wbr>Async<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">For<wbr>Each<wbr>Async<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L45">index.ts:45</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Action for &#39;forEachAsync()&#39; function.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The current item.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The zero based index.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The array of all elements.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>item: <span class="tsd-signature-type">T</span></h5>
+											</li>
+											<li>
+												<h5>index: <span class="tsd-signature-type">number</span></h5>
+											</li>
+											<li>
+												<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TResult</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="invokeafteraction" class="tsd-anchor"></a>
 					<h3>Invoke<wbr>After<wbr>Action</h3>
 					<div class="tsd-signature tsd-kind-icon">Invoke<wbr>After<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L43">index.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L54">index.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -174,7 +236,7 @@
 					<div class="tsd-signature tsd-kind-icon">Simple<wbr>Completed<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L51">index.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L62">index.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -221,7 +283,7 @@
 					<div class="tsd-signature tsd-kind-icon">String<wbr>Normalizer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L60">index.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L71">index.ts:71</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -268,7 +330,7 @@
 					<div class="tsd-signature tsd-kind-icon">Merge<wbr>Deep<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;merge-deep&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L22">index.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L22">index.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -285,7 +347,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L84">index.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L95">index.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -326,7 +388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L100">index.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L111">index.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -367,7 +429,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L119">index.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L130">index.ts:130</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -399,7 +461,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L148">index.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L159">index.ts:159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -431,7 +493,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L177">index.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L188">index.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -469,7 +531,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L195">index.ts:195</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L206">index.ts:206</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -513,7 +575,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L216">index.ts:216</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L227">index.ts:227</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -584,7 +646,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L230">index.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L241">index.ts:241</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -654,6 +716,56 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="foreachasync" class="tsd-anchor"></a>
+					<h3>for<wbr>Each<wbr>Async</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">for<wbr>Each<wbr>Async&lt;T, TResult&gt;<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Enumerable.Sequence</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, action<span class="tsd-signature-symbol">: </span><a href="_index_.html#foreachasyncaction" class="tsd-signature-type">ForEachAsyncAction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span>, thisArg<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L272">index.ts:272</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Async &#39;forEach&#39;.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>TResult</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>items: <span class="tsd-signature-type">Enumerable.Sequence</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The items to iterate.</p>
+									</div>
+								</li>
+								<li>
+									<h5>action: <a href="_index_.html#foreachasyncaction" class="tsd-signature-type">ForEachAsyncAction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The item action.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> thisArg: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The result of the last action call.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="format" class="tsd-anchor"></a>
 					<h3>format</h3>
@@ -664,7 +776,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L260">index.ts:260</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L300">index.ts:300</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -699,7 +811,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L272">index.ts:272</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L312">index.ts:312</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -734,7 +846,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L346">index.ts:346</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L386">index.ts:386</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -769,7 +881,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L403">index.ts:403</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L443">index.ts:443</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -813,7 +925,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L446">index.ts:446</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L486">index.ts:486</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -848,7 +960,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L461">index.ts:461</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L501">index.ts:501</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -880,7 +992,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L480">index.ts:480</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L520">index.ts:520</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -898,6 +1010,47 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="toarray" class="tsd-anchor"></a>
+					<h3>to<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Array&lt;T&gt;<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Enumerable.Sequence</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, normalize<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L532">index.ts:532</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a sequence object as new array.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>arr: <span class="tsd-signature-type">Enumerable.Sequence</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The input object.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> normalize: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The input object as array.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="tobooleansafe" class="tsd-anchor"></a>
 					<h3>to<wbr>Boolean<wbr>Safe</h3>
@@ -908,7 +1061,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L492">index.ts:492</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L558">index.ts:558</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -943,7 +1096,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L511">index.ts:511</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L577">index.ts:577</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -972,7 +1125,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L531">index.ts:531</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L597">index.ts:597</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1007,7 +1160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L564">index.ts:564</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L630">index.ts:630</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1039,7 +1192,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L583">index.ts:583</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L649">index.ts:649</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1071,7 +1224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/index.ts#L603">index.ts:603</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/b343869/src/index.ts#L669">index.ts:669</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1145,6 +1298,9 @@
 						<a href="../interfaces/_index_.waitwhileoptions.html" class="tsd-kind-icon">Wait<wbr>While<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_index_.html#foreachasyncaction" class="tsd-kind-icon">For<wbr>Each<wbr>Async<wbr>Action</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_index_.html#invokeafteraction" class="tsd-kind-icon">Invoke<wbr>After<wbr>Action</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
@@ -1180,6 +1336,9 @@
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_index_.html#createcompletedaction" class="tsd-kind-icon">create<wbr>Completed<wbr>Action</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_index_.html#foreachasync" class="tsd-kind-icon">for<wbr>Each<wbr>Async</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_index_.html#format" class="tsd-kind-icon">format</a>
 					</li>
@@ -1200,6 +1359,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_index_.html#sleep" class="tsd-kind-icon">sleep</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_index_.html#toarray" class="tsd-kind-icon">to<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_index_.html#tobooleansafe" class="tsd-kind-icon">to<wbr>Boolean<wbr>Safe</a>

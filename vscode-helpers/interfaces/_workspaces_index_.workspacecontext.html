@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;progress/index&quot; | vscode-helpers</title>
+	<title>WorkspaceContext | vscode-helpers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,147 +56,79 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_progress_index_.html">&quot;progress/index&quot;</a>
+					<a href="../modules/_workspaces_index_.html">&quot;workspaces/index&quot;</a>
+				</li>
+				<li>
+					<a href="_workspaces_index_.workspacecontext.html">WorkspaceContext</a>
 				</li>
 			</ul>
-			<h1>External module &quot;progress/index&quot;</h1>
+			<h1>Interface WorkspaceContext</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A workspace context.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">WorkspaceContext</span>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_progress_index_.progresscontext.html" class="tsd-kind-icon">Progress<wbr>Context</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_progress_index_.progressoptions.html" class="tsd-kind-icon">Progress<wbr>Options</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_progress_index_.html#progressresult" class="tsd-kind-icon">Progress<wbr>Result</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_progress_index_.html#progresstask" class="tsd-kind-icon">Progress<wbr>Task</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Functions</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_progress_index_.html#withprogress" class="tsd-kind-icon">with<wbr>Progress</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_index_.workspacecontext.html#extension" class="tsd-kind-icon">extension</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_index_.workspacecontext.html#workspaces" class="tsd-kind-icon">workspaces</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-					<a name="progressresult" class="tsd-anchor"></a>
-					<h3>Progress<wbr>Result</h3>
-					<div class="tsd-signature tsd-kind-icon">Progress<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="extension" class="tsd-anchor"></a>
+					<h3>extension</h3>
+					<div class="tsd-signature tsd-kind-icon">extension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.ExtensionContext</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/progress/index.ts#L49">progress/index.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/workspaces/index.ts#L62">workspaces/index.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A progress result.</p>
+							<p>The underlying extension context.</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-					<a name="progresstask" class="tsd-anchor"></a>
-					<h3>Progress<wbr>Task</h3>
-					<div class="tsd-signature tsd-kind-icon">Progress<wbr>Task<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="workspaces" class="tsd-anchor"></a>
+					<h3>workspaces</h3>
+					<div class="tsd-signature tsd-kind-icon">workspaces<span class="tsd-signature-symbol">:</span> <a href="../classes/_workspaces_index_.workspacebase.html" class="tsd-signature-type">WorkspaceBase</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/progress/index.ts#L58">progress/index.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/workspaces/index.ts#L66">workspaces/index.ts:66</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A progress task.</p>
+							<p>The list of all available workspaces.</p>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>param</dt>
-							<dd><p>The underlying context.</p>
-							</dd>
-							<dt>returns</dt>
-							<dd><p>The result.</p>
-							</dd>
-						</dl>
 					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_progress_index_.progresscontext.html" class="tsd-signature-type">ProgressContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_progress_index_.html#progressresult" class="tsd-signature-type">ProgressResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>context: <a href="../interfaces/_progress_index_.progresscontext.html" class="tsd-signature-type">ProgressContext</a></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <a href="_progress_index_.html#progressresult" class="tsd-signature-type">ProgressResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-					<a name="withprogress" class="tsd-anchor"></a>
-					<h3>with<wbr>Progress</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">with<wbr>Progress&lt;TResult&gt;<span class="tsd-signature-symbol">(</span>task<span class="tsd-signature-symbol">: </span><a href="_progress_index_.html#progresstask" class="tsd-signature-type">ProgressTask</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_progress_index_.progressoptions.html" class="tsd-signature-type">ProgressOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1bcc05b/src/progress/index.ts#L68">progress/index.ts:68</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Runs a task with progress information.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>TResult</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>task: <a href="_progress_index_.html#progresstask" class="tsd-signature-type">ProgressTask</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The task to execute.</p>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/_progress_index_.progressoptions.html" class="tsd-signature-type">ProgressOptions</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>The promise with the result.</p>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -207,41 +139,65 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_disposable_index_.html">"disposable/index"</a>
+						<a href="../modules/_disposable_index_.html">"disposable/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_index_.html">"index"</a>
+						<a href="../modules/_index_.html">"index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_logging_index_.html">"logging/index"</a>
+						<a href="../modules/_logging_index_.html">"logging/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_progress_index_.html">"progress/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_workflows_index_.html">"workflows/index"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_progress_index_.html">"progress/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_workflows_index_.html">"workflows/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_workspaces_index_.html">"workspaces/index"</a>
+						<a href="../modules/_workspaces_index_.html">"workspaces/index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_progress_index_.progresscontext.html" class="tsd-kind-icon">Progress<wbr>Context</a>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_workspaces_index_.workspacewatcherevent.html" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_workspaces_index_.workspacebase.html" class="tsd-kind-icon">Workspace<wbr>Base</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_progress_index_.progressoptions.html" class="tsd-kind-icon">Progress<wbr>Options</a>
+						<a href="_workspaces_index_.workspace.html" class="tsd-kind-icon">Workspace</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_workspaces_index_.workspaceconfigsource.html" class="tsd-kind-icon">Workspace<wbr>Config<wbr>Source</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_workspaces_index_.workspacecontext.html" class="tsd-kind-icon">Workspace<wbr>Context</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_workspaces_index_.workspacecontext.html#extension" class="tsd-kind-icon">extension</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_workspaces_index_.workspacecontext.html#workspaces" class="tsd-kind-icon">workspaces</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_workspaces_index_.workspacewatchercontext.html" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_progress_index_.html#progressresult" class="tsd-kind-icon">Progress<wbr>Result</a>
+						<a href="../modules/_workspaces_index_.html#workspacewatcher" class="tsd-kind-icon">Workspace<wbr>Watcher</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_progress_index_.html#progresstask" class="tsd-kind-icon">Progress<wbr>Task</a>
+						<a href="../modules/_workspaces_index_.html#workspacewatcherresult" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_progress_index_.html#withprogress" class="tsd-kind-icon">with<wbr>Progress</a>
+						<a href="../modules/_workspaces_index_.html#registerworkspacewatcher" class="tsd-kind-icon">register<wbr>Workspace<wbr>Watcher</a>
 					</li>
 				</ul>
 			</nav>

@@ -111,7 +111,9 @@
 								</ul>
 							</li>
 							<li><a href="#classes-">Classes</a><ul>
+									<li><a href="#cacheproviderbase-">CacheProviderBase</a></li>
 									<li><a href="#disposablebase-">DisposableBase</a></li>
+									<li><a href="#memorycache-">MemoryCache</a></li>
 									<li><a href="#workspacebase-">WorkspaceBase</a></li>
 								</ul>
 							</li>
@@ -471,6 +473,11 @@ vscode_helpers.withProgress(<span class="hljs-function">(<span class="hljs-param
 });
 </code></pre>
 				<h3 id="classes-uarr-examples-">Classes [<a href="#examples-">&uarr;</a>]</h3>
+				<h4 id="cacheproviderbase-uarr-classes-">CacheProviderBase [<a href="#classes-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">class</span> MyCache <span class="hljs-keyword">extends</span> vscode_helpers.CacheProviderBase {
+    <span class="hljs-comment">// implement abstract members here</span>
+}
+</code></pre>
 				<h4 id="disposablebase-uarr-classes-">DisposableBase [<a href="#classes-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">class</span> MyDisposable <span class="hljs-keyword">extends</span> vscode_helpers.MyDisposable {
     <span class="hljs-keyword">protected</span> onDispose() {
@@ -479,6 +486,15 @@ vscode_helpers.withProgress(<span class="hljs-function">(<span class="hljs-param
 }
 
 vscode_helpers.tryDispose( <span class="hljs-keyword">new</span> MyDisposable() );
+</code></pre>
+				<h4 id="memorycache-uarr-classes-">MemoryCache [<a href="#classes-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CACHE = <span class="hljs-keyword">new</span> vscode_helpers.MemoryCache();
+
+CACHE.get(<span class="hljs-string">'a'</span>, <span class="hljs-number">23979</span>);  <span class="hljs-comment">// 23979</span>
+CACHE.set(<span class="hljs-string">'a'</span>, <span class="hljs-number">5979</span>);  <span class="hljs-comment">// 5979</span>
+CACHE.has(<span class="hljs-string">'a'</span>);  <span class="hljs-comment">// (true)</span>
+CACHE.unset(<span class="hljs-string">'a'</span>);
+CACHE.has(<span class="hljs-string">'a'</span>);  <span class="hljs-comment">// (false)</span>
 </code></pre>
 				<h4 id="workspacebase-uarr-classes-">WorkspaceBase [<a href="#classes-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { Uri } <span class="hljs-keyword">as</span> vscode <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
@@ -527,6 +543,9 @@ vscode_helpers.tryDispose( <span class="hljs-keyword">new</span> MyDisposable() 
 				<ul>
 					<li class="globals  ">
 						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cache_index_.html">"cache/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_disposable_index_.html">"disposable/index"</a>

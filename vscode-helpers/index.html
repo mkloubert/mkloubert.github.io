@@ -80,6 +80,7 @@
 									<li><a href="#asutc-">asUTC</a></li>
 									<li><a href="#buildworkflow-">buildWorkflow</a></li>
 									<li><a href="#cloneobject-">cloneObject</a></li>
+									<li><a href="#cloneobjectflat-">cloneObjectFlat</a></li>
 									<li><a href="#comparevalues-">compareValues</a></li>
 									<li><a href="#comparevaluesny-">compareValuesBy</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
@@ -189,6 +190,14 @@ WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">res
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CLONED_OBJ = vscode_helpers.cloneObject({
     mk: <span class="hljs-number">23979</span>,
     tm: <span class="hljs-number">5979</span>,
+});
+</code></pre>
+				<h4 id="cloneobjectflat-uarr-functions-">cloneObjectFlat [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CLONED_OBJ = vscode_helpers.cloneObjectFlat({
+    mk: <span class="hljs-number">23979</span>,
+    tm: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a</span>) </span>{
+        <span class="hljs-keyword">return</span> a * (<span class="hljs-number">5979</span> * <span class="hljs-keyword">this</span>.mk);
+    },
 });
 </code></pre>
 				<h4 id="comparevalues-uarr-functions-">compareValues [<a href="#functions-">&uarr;</a>]</h4>

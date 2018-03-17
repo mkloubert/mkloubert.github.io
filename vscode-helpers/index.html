@@ -88,8 +88,12 @@
 									<li><a href="#format-">format</a></li>
 									<li><a href="#formatarray-">formatArray</a></li>
 									<li><a href="#from-">from</a></li>
+									<li><a href="#frommarkdown-">fromMarkdown</a></li>
 									<li><a href="#glob-">glob</a></li>
 									<li><a href="#invokeafter-">invokeAfter</a></li>
+									<li><a href="#isbinarycontent-">isBinaryContent</a></li>
+									<li><a href="#isbinarycontentsync-">isBinaryContentSync</a></li>
+									<li><a href="#isemptystring-">isEmptyString</a></li>
 									<li><a href="#normalizestring-">normalizeString</a></li>
 									<li><a href="#randombytes-">randomBytes</a></li>
 									<li><a href="#registerworkspacewatcher-">registerWorkspaceWatcher</a></li>
@@ -265,6 +269,11 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
     <span class="hljs-comment">// [1] '3'</span>
 }
 </code></pre>
+				<h4 id="frommarkdown-uarr-functions-">fromMarkdown [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> html = vscode_helpers.fromMarkdown(
+    <span class="hljs-string">'Vessel     | Captain\n-----------|-------------\nNCC-1701   | James T Kirk\nNCC-1701 A | James T Kirk\nNCC-1701 D | Picard'</span>
+);
+</code></pre>
 				<h4 id="glob-uarr-functions-">glob [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.glob([ <span class="hljs-string">'**/*.txt'</span> ], {
     cwd: <span class="hljs-string">'/path/to/directory'</span>,
@@ -285,6 +294,33 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// is invoked on error</span>
 });
+</code></pre>
+				<h4 id="isbinarycontent-uarr-functions-">isBinaryContent [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
+
+vscode_helpers.isBinaryContent( fs.readFileSync(<span class="hljs-string">'./myPic.jpg'</span>) ).then(<span class="hljs-function">(<span class="hljs-params">isBinary</span>) =&gt;</span> {
+    <span class="hljs-comment">// should be (true)</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
+vscode_helpers.isBinaryContent( fs.readFileSync(<span class="hljs-string">'./myText.txt'</span>) ).then(<span class="hljs-function">(<span class="hljs-params">isBinary</span>) =&gt;</span> {
+    <span class="hljs-comment">// should be (false)</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
+</code></pre>
+				<h4 id="isbinarycontentsync-uarr-functions-">isBinaryContentSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
+
+<span class="hljs-comment">// should be (true)</span>
+vscode_helpers.isBinaryContentSync( fs.readFileSync(<span class="hljs-string">'./myPic.jpeg'</span>) );
+<span class="hljs-comment">// should be (false)</span>
+vscode_helpers.isBinaryContentSync( fs.readFileSync(<span class="hljs-string">'./myText.txt'</span>) );
+</code></pre>
+				<h4 id="isemptystring-uarr-functions-">isEmptyString [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.isEmptyString( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// (true)</span>
+vscode_helpers.isEmptyString( <span class="hljs-literal">undefined</span> );  <span class="hljs-comment">// (true)</span>
+vscode_helpers.isEmptyString( <span class="hljs-string">'123'</span> );  <span class="hljs-comment">// (false)</span>
 </code></pre>
 				<h4 id="normalizestring-uarr-functions-">normalizeString [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>);  <span class="hljs-comment">// 'abc'</span>
@@ -485,6 +521,9 @@ vscode_helpers.tryDispose( <span class="hljs-keyword">new</span> MyDisposable() 
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_disposable_index_.html">"disposable/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_html_index_.html">"html/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_index_.html">"index"</a>

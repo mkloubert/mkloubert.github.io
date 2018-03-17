@@ -95,9 +95,11 @@
 									<li><a href="#isbinarycontent-">isBinaryContent</a></li>
 									<li><a href="#isbinarycontentsync-">isBinaryContentSync</a></li>
 									<li><a href="#isemptystring-">isEmptyString</a></li>
+									<li><a href="#makenondisposable-">makeNonDisposable</a></li>
 									<li><a href="#normalizestring-">normalizeString</a></li>
 									<li><a href="#randombytes-">randomBytes</a></li>
 									<li><a href="#registerworkspacewatcher-">registerWorkspaceWatcher</a></li>
+									<li><a href="#readall-">readAll</a></li>
 									<li><a href="#sleep-">sleep</a></li>
 									<li><a href="#toarray-">toArray</a></li>
 									<li><a href="#tobooleansafe-">toBooleanSafe</a></li>
@@ -106,6 +108,7 @@
 									<li><a href="#tryclearinterval-">tryClearInterval</a></li>
 									<li><a href="#trycleartimeout-">tryClearTimeout</a></li>
 									<li><a href="#trydispose-">tryDispose</a></li>
+									<li><a href="#tryremovelistener-">tryRemoveListener</a></li>
 									<li><a href="#waitwhile-">waitWhile</a></li>
 									<li><a href="#withprogress-">withProgress</a></li>
 								</ul>
@@ -333,10 +336,34 @@ vscode_helpers.isBinaryContentSync( fs.readFileSync(<span class="hljs-string">'.
 vscode_helpers.isEmptyString( <span class="hljs-literal">undefined</span> );  <span class="hljs-comment">// (true)</span>
 vscode_helpers.isEmptyString( <span class="hljs-string">'123'</span> );  <span class="hljs-comment">// (false)</span>
 </code></pre>
+				<h3 id="makenondisposable-uarr-functions-">makeNonDisposable [<a href="#functions-">&uarr;</a>]</h3>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ = {
+    dispose: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Disposed!'</span>);
+    }
+};
+
+<span class="hljs-keyword">const</span> OBJ_1 = vscode_helpers.makeNonDisposable( OBJ, <span class="hljs-literal">false</span> );
+OBJ_1.dispose();  <span class="hljs-comment">// does nothing</span>
+
+<span class="hljs-keyword">const</span> OBJ_2 = vscode_helpers.makeNonDisposable( OBJ );
+OBJ_2.dispose();  <span class="hljs-comment">// throws an exception</span>
+</code></pre>
 				<h4 id="normalizestring-uarr-functions-">normalizeString [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>);  <span class="hljs-comment">// 'abc'</span>
 <span class="hljs-keyword">const</span> str_2 = vscode_helpers.normalizeString(<span class="hljs-literal">null</span>);  <span class="hljs-comment">// ''</span>
 <span class="hljs-keyword">const</span> str_3 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>, <span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> s.troUpperCase());  <span class="hljs-comment">// 'ABC'</span>
+</code></pre>
+				<h4 id="readall-uarr-functions-">readAll [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
+
+<span class="hljs-keyword">const</span> STREAM = fs.createReadStream(<span class="hljs-string">'./my-file.txt'</span>);
+
+readAll( STREAM ).then(<span class="hljs-function">(<span class="hljs-params">data: Buffer</span>) =&gt;</span> {
+    <span class="hljs-comment">// all data read</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
 </code></pre>
 				<h4 id="randombytes-uarr-functions-">randomBytes [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.randomBytes(<span class="hljs-number">5979</span>).then(<span class="hljs-function">(<span class="hljs-params">bytes</span>) =&gt;</span> {
@@ -405,6 +432,11 @@ vscode_helpers.registerWorkspaceWatcher(<span class="hljs-function">(<span class
 <span class="hljs-keyword">const</span> eol_1 = vscode_helpers.toEOL();  <span class="hljs-comment">// system's EOL</span>
 <span class="hljs-keyword">const</span> eol_2 = vscode_helpers.toEOL( EndOfLine.CRLF );  <span class="hljs-comment">// \r\n</span>
 </code></pre>
+				<h4 id="tostringsafe-uarr-functions-">toStringSafe [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.toStringSafe( <span class="hljs-number">123</span> );  <span class="hljs-comment">// '123'</span>
+<span class="hljs-keyword">const</span> str_2 = vscode_helpers.toStringSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// ''</span>
+<span class="hljs-keyword">const</span> str_3 = vscode_helpers.toStringSafe( <span class="hljs-literal">undefined</span>, <span class="hljs-string">'abc'</span> );  <span class="hljs-comment">// 'abc'</span>
+</code></pre>
 				<h4 id="tryclearinterval-uarr-functions-">tryClearInterval [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> timer = setInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">// do something</span>
@@ -429,10 +461,21 @@ vscode_helpers.tryClearTimeout( timer );
 <span class="hljs-comment">// (false)</span>
 vscode_helpers.tryDispose( OBJ );
 </code></pre>
-				<h4 id="tostringsafe-uarr-functions-">toStringSafe [<a href="#functions-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.toStringSafe( <span class="hljs-number">123</span> );  <span class="hljs-comment">// '123'</span>
-<span class="hljs-keyword">const</span> str_2 = vscode_helpers.toStringSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// ''</span>
-<span class="hljs-keyword">const</span> str_3 = vscode_helpers.toStringSafe( <span class="hljs-literal">undefined</span>, <span class="hljs-string">'abc'</span> );  <span class="hljs-comment">// 'abc'</span>
+				<h4 id="tryremovelistener-uarr-functions-">tryRemoveListener [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
+
+<span class="hljs-keyword">const</span> STREAM = fs.createReadStream(<span class="hljs-string">'./my-file.txt'</span>);
+
+<span class="hljs-keyword">let</span> dataListener = <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
+    <span class="hljs-comment">//TODO</span>
+};
+
+STREAM.on(<span class="hljs-string">'data'</span>, datalistener);
+
+STREAM.once(<span class="hljs-string">'end'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    vscode_helpers.tryRemoveListener(<span class="hljs-string">'data'</span>,
+                                     dataListener);
+});
 </code></pre>
 				<h4 id="waitwhile-uarr-functions-">waitWhile [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> counter = <span class="hljs-number">5979</span>;

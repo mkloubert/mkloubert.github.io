@@ -85,6 +85,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_api_.apiuserwithcredentials.html" class="tsd-kind-icon">Api<wbr>User<wbr>With<wbr>Credentials</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_api_.apiuserwithpassword.html" class="tsd-kind-icon">Api<wbr>User<wbr>With<wbr>Password</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_api_.hostinfo.html" class="tsd-kind-icon">Host<wbr>Info</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_api_.markdowndocument.html" class="tsd-kind-icon">Markdown<wbr>Document</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_api_.meinfo.html" class="tsd-kind-icon">Me<wbr>Info</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_api_.popupmessage.html" class="tsd-kind-icon">Popup<wbr>Message</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_api_.vscodeinfo.html" class="tsd-kind-icon">VSCode<wbr>Info</a></li>
@@ -102,6 +103,7 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_api_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_api_.html#x_header_editor_lang" class="tsd-kind-icon">X_<wbr>HEADER_<wbr>EDITOR_<wbr>LANG</a></li>
 							</ul>
 						</section>
@@ -128,7 +130,7 @@
 					<div class="tsd-signature tsd-kind-icon">Api<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L51">api.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L53">api.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -151,7 +153,7 @@
 					<div class="tsd-signature tsd-kind-icon">Api<wbr>Setting<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_api_.apisettings.html" class="tsd-signature-type">ApiSettings</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L107">api.ts:107</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L109">api.ts:109</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -166,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">Api<wbr>User<wbr>List<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span><span class="tsd-signature-symbol">&lt;</span><a href="_api_.html#apiuserlistvalue" class="tsd-signature-type">ApiUserListValue</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L118">api.ts:118</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L120">api.ts:120</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -181,7 +183,7 @@
 					<div class="tsd-signature tsd-kind-icon">Api<wbr>User<wbr>List<wbr>Value<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_api_.apiuserwithpassword.html" class="tsd-signature-type">ApiUserWithPassword</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L123">api.ts:123</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L125">api.ts:125</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -193,13 +195,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="mergedeep" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Merge<wbr>Deep</h3>
+					<div class="tsd-signature tsd-kind-icon">Merge<wbr>Deep<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;merge-deep&#x27;)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L30">api.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="x_header_editor_lang" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> X_<wbr>HEADER_<wbr>EDITOR_<wbr>LANG</h3>
 					<div class="tsd-signature tsd-kind-icon">X_<wbr>HEADER_<wbr>EDITOR_<wbr>LANG<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"X-Vscode-Deploy-Reloaded-Lang"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;X-Vscode-Deploy-Reloaded-Lang&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L177">api.ts:177</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L185">api.ts:185</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -221,7 +233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L1051">api.ts:1051</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L1160">api.ts:1160</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -247,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L1064">api.ts:1064</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L1173">api.ts:1173</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IOrderedEnumerable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Extension</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -264,7 +276,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L1070">api.ts:1070</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L1179">api.ts:1179</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IEnumerable</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TextEditor</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -281,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L1122">api.ts:1122</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L1231">api.ts:1231</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -303,7 +315,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L1082">api.ts:1082</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L1191">api.ts:1191</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -326,7 +338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L1176">api.ts:1176</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L1285">api.ts:1285</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -352,7 +364,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0b70157/src/api.ts#L1220">api.ts:1220</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/api.ts#L1329">api.ts:1329</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -413,6 +425,9 @@
 						<a href="../interfaces/_api_.hostinfo.html" class="tsd-kind-icon">Host<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_api_.markdowndocument.html" class="tsd-kind-icon">Markdown<wbr>Document</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_api_.meinfo.html" class="tsd-kind-icon">Me<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
@@ -432,6 +447,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_api_.html#apiuserlistvalue" class="tsd-kind-icon">Api<wbr>User<wbr>List<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_api_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_api_.html#x_header_editor_lang" class="tsd-kind-icon">X_<wbr>HEADER_<wbr>EDITOR_<wbr>LANG</a>

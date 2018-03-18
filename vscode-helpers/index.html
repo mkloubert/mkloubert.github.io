@@ -76,13 +76,14 @@
 							<li><a href="#functions-">Functions</a><ul>
 									<li><a href="#applyfuncfor-">applyFuncFor</a></li>
 									<li><a href="#asarray-">asArray</a></li>
+									<li><a href="#asbuffer-">asBuffer</a></li>
 									<li><a href="#aslocaltime-">asLocalTime</a></li>
 									<li><a href="#asutc-">asUTC</a></li>
 									<li><a href="#buildworkflow-">buildWorkflow</a></li>
 									<li><a href="#cloneobject-">cloneObject</a></li>
 									<li><a href="#cloneobjectflat-">cloneObjectFlat</a></li>
 									<li><a href="#comparevalues-">compareValues</a></li>
-									<li><a href="#comparevaluesny-">compareValuesBy</a></li>
+									<li><a href="#comparevaluesby-">compareValuesBy</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
 									<li><a href="#createlogger-">createLogger</a></li>
 									<li><a href="#doesmatch-">doesMatch</a></li>
@@ -157,6 +158,17 @@ APPLIED_FUNC(<span class="hljs-number">5979</span>, <span class="hljs-number">23
 <span class="hljs-keyword">const</span> ARR_2 = vscode_helpers.asArray([ <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-literal">undefined</span> ], <span class="hljs-literal">false</span>);  <span class="hljs-comment">// [ 0, 1, null, 3, 4, undefined ]</span>
 <span class="hljs-keyword">const</span> ARR_3 = vscode_helpers.asArray( <span class="hljs-number">5979</span> );  <span class="hljs-comment">// [ 5979 ]</span>
 <span class="hljs-keyword">const</span> ARR_4 = vscode_helpers.asArray( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// [ ]</span>
+</code></pre>
+				<h4 id="asbuffer-uarr-functions-">asBuffer [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
+
+<span class="hljs-keyword">const</span> STREAM = fs.createReadStream(<span class="hljs-string">'./my-file.txt'</span>);
+
+asBuffer( STREAM ).then(<span class="hljs-function">(<span class="hljs-params">data: Buffer</span>) =&gt;</span> {
+    <span class="hljs-comment">// all data read</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
 </code></pre>
 				<h4 id="aslocaltime-uarr-functions-">asLocalTime [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
@@ -265,7 +277,7 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
 				<h4 id="format-uarr-functions-">format [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-comment">// "MK:23979 + TM: '5979'"</span>
 <span class="hljs-keyword">let</span> str_1 = vscode_helpers.format(
-    <span class="hljs-string">'MK:{1} + TM:{1:trim,surround,leading_space}'</span>,
+    <span class="hljs-string">'MK:{1} + TM:{0:trim,surround,leading_space}'</span>,
     <span class="hljs-number">5979</span>,
     <span class="hljs-number">23979</span>
 );
@@ -273,7 +285,7 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
 				<h4 id="formatarray-uarr-functions-">formatArray [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-comment">// "MK:23979 + TM: '5979'"</span>
 <span class="hljs-keyword">let</span> str_1 = vscode_helpers.formatArray(
-    <span class="hljs-string">'MK:{1} + TM:{1:trim,surround,leading_space}'</span>,
+    <span class="hljs-string">'MK:{1} + TM:{0:trim,surround,leading_space}'</span>,
     [ <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span> ]
 );
 </code></pre>

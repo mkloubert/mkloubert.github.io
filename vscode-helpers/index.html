@@ -85,6 +85,7 @@
 									<li><a href="#comparevaluesny-">compareValuesBy</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
 									<li><a href="#createlogger-">createLogger</a></li>
+									<li><a href="#doesmatch-">doesMatch</a></li>
 									<li><a href="#foreachasync-">forEachAsync</a></li>
 									<li><a href="#format-">format</a></li>
 									<li><a href="#formatarray-">formatArray</a></li>
@@ -243,6 +244,11 @@ WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">res
 });
 
 LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
+</code></pre>
+				<h4 id="doesmatch-uarr-functions-">doesMatch [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.doesMatch(<span class="hljs-string">'my-file.txt'</span>, <span class="hljs-string">'*.txt'</span>);  <span class="hljs-comment">// (true)</span>
+vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <span class="hljs-string">'*.txt'</span> ]);  <span class="hljs-comment">// (false)</span>
+vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <span class="hljs-string">'*.txt'</span>, <span class="hljs-string">'*.jpg'</span> ]);  <span class="hljs-comment">// (true)</span>
 </code></pre>
 				<h4 id="foreachasync-uarr-functions-">forEachAsync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.forEachAsync([ <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span> ], <span class="hljs-keyword">async</span> (item, index) =&gt; {

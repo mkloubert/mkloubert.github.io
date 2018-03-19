@@ -85,8 +85,10 @@
 									<li><a href="#comparevalues-">compareValues</a></li>
 									<li><a href="#comparevaluesby-">compareValuesBy</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
+									<li><a href="#createdirectoryifneeded-">createDirectoryIfNeeded</a></li>
 									<li><a href="#createlogger-">createLogger</a></li>
 									<li><a href="#doesmatch-">doesMatch</a></li>
+									<li><a href="#exists-">exists</a></li>
 									<li><a href="#foreachasync-">forEachAsync</a></li>
 									<li><a href="#format-">format</a></li>
 									<li><a href="#formatarray-">formatArray</a></li>
@@ -235,6 +237,13 @@ WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">res
                                           <span class="hljs-function"><span class="hljs-params">i</span> =&gt;</span> i.sortValue);
 });
 </code></pre>
+				<h4 id="createdirectoryifneeded-uarr-functions-">createDirectoryIfNeeded [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.createDirectoryIfNeeded(<span class="hljs-string">'/dir/to/create'</span>).then(<span class="hljs-function">(<span class="hljs-params">hasBeenCreated: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
+
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
+</code></pre>
 				<h4 id="createcompletedaction-uarr-functions-">createCompletedAction [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
@@ -261,6 +270,13 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 				<pre><code class="lang-typescript">vscode_helpers.doesMatch(<span class="hljs-string">'my-file.txt'</span>, <span class="hljs-string">'*.txt'</span>);  <span class="hljs-comment">// (true)</span>
 vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <span class="hljs-string">'*.txt'</span> ]);  <span class="hljs-comment">// (false)</span>
 vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <span class="hljs-string">'*.txt'</span>, <span class="hljs-string">'*.jpg'</span> ]);  <span class="hljs-comment">// (true)</span>
+</code></pre>
+				<h4 id="exists-uarr-functions-">exists [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.exists(<span class="hljs-string">'/path/of/thing/to/check'</span>, <span class="hljs-function">(<span class="hljs-params">doesExist: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
+    <span class="hljs-comment">//TODO    </span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
 </code></pre>
 				<h4 id="foreachasync-uarr-functions-">forEachAsync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.forEachAsync([ <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span> ], <span class="hljs-keyword">async</span> (item, index) =&gt; {
@@ -311,7 +327,7 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
     cwd: <span class="hljs-string">'/path/to/directory'</span>,
     ignore: [ <span class="hljs-string">'/log/**/*'</span> ],
     root: <span class="hljs-string">'/path/to/directory'</span>,
-}).then(<span class="hljs-function">(<span class="hljs-params">matches: <span class="hljs-built_in">string</span></span>) =&gt;</span> {
+}).then(<span class="hljs-function">(<span class="hljs-params">matches: <span class="hljs-built_in">string</span>[]</span>) =&gt;</span> {
     <span class="hljs-comment">// 'matches' contains the found files</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>

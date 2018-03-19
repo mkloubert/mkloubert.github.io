@@ -124,6 +124,10 @@
 									<li><a href="#workspacebase-">WorkspaceBase</a></li>
 								</ul>
 							</li>
+							<li><a href="#constants-and-variables-">Constants and variables</a><ul>
+									<li><a href="#events-">EVENTS</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li><a href="#support-and-contribute-">Support and contribute</a></li>
@@ -597,6 +601,15 @@ CACHE.has(<span class="hljs-string">'a'</span>);  <span class="hljs-comment">// 
         <span class="hljs-comment">// put code here to cleanup the workspace</span>
     }
 }
+</code></pre>
+				<h3 id="constants-and-variables-uarr-examples-">Constants and variables [<a href="#examples-">&uarr;</a>]</h3>
+				<h4 id="events-uarr-constants-and-variables-">EVENTS [<a href="#constants-and-variables-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.EVENTS.on(<span class="hljs-string">'myEvent'</span>, <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'myEvent'</span> + (a + b));
+});
+
+vscode_helpers.EVENTS
+              .emit(<span class="hljs-string">'myEvent'</span>, <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span>);
 </code></pre>
 				<h2 id="support-and-contribute-uarr-table-of-contents-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the module, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>

@@ -79,8 +79,20 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_sftp_.sftpbeforeuploadmodule.html" class="tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Module</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html" class="tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Module<wbr>Executor<wbr>Arguments</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_plugins_sftp_.sftpcontext.html" class="tsd-kind-icon">SFTPContext</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_sftp_.sftptarget.html" class="tsd-kind-icon">SFTPTarget</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_sftp_.sftpuploadscriptarguments.html" class="tsd-kind-icon">SFTPUpload<wbr>Script<wbr>Arguments</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_sftp_.sftpuploadedmodule.html" class="tsd-kind-icon">SFTPUploaded<wbr>Module</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_plugins_sftp_.sftpuploadedmoduleexecutorarguments.html" class="tsd-kind-icon">SFTPUploaded<wbr>Module<wbr>Executor<wbr>Arguments</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_plugins_sftp_.html#sftpbeforeuploadmoduleexecutor" class="tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Module<wbr>Executor</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_plugins_sftp_.html#sftpuploadedmoduleexecutor" class="tsd-kind-icon">SFTPUploaded<wbr>Module<wbr>Executor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -99,6 +111,97 @@
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="sftpbeforeuploadmoduleexecutor" class="tsd-anchor"></a>
+					<h3>SFTPBefore<wbr>Upload<wbr>Module<wbr>Executor</h3>
+					<div class="tsd-signature tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Module<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/plugins/sftp.ts#L48">plugins/sftp.ts:48</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Describes an execution method of a module for an event that is raised BEFORE a file is going to be uploaded.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Arguments for the execution.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html" class="tsd-signature-type">SFTPBeforeUploadModuleExecutorArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html" class="tsd-signature-type">SFTPBeforeUploadModuleExecutorArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="sftpuploadedmoduleexecutor" class="tsd-anchor"></a>
+					<h3>SFTPUploaded<wbr>Module<wbr>Executor</h3>
+					<div class="tsd-signature tsd-kind-icon">SFTPUploaded<wbr>Module<wbr>Executor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/plugins/sftp.ts#L186">plugins/sftp.ts:186</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Describes an execution method of a module for an event that is raised AFTER a file has been uploaded or has trying to be uploaded.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>Arguments for the execution.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_sftp_.sftpuploadedmoduleexecutorarguments.html" class="tsd-signature-type">SFTPUploadedModuleExecutorArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_plugins_sftp_.sftpuploadedmoduleexecutorarguments.html" class="tsd-signature-type">SFTPUploadedModuleExecutorArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
@@ -107,7 +210,7 @@
 					<div class="tsd-signature tsd-kind-icon">CACHE_<wbr>PASSWORD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"password"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;password&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/plugins/sftp.ts#L32">plugins/sftp.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/plugins/sftp.ts#L199">plugins/sftp.ts:199</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -117,7 +220,7 @@
 					<div class="tsd-signature tsd-kind-icon">CACHE_<wbr>USER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"user"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;user&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/plugins/sftp.ts#L33">plugins/sftp.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/plugins/sftp.ts#L200">plugins/sftp.ts:200</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -134,7 +237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/plugins/sftp.ts#L263">plugins/sftp.ts:263</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/plugins/sftp.ts#L567">plugins/sftp.ts:567</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -174,11 +277,32 @@
 					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../classes/_plugins_sftp_.sftpplugin.html" class="tsd-kind-icon">SFTPPlugin</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_plugins_sftp_.sftpbeforeuploadmodule.html" class="tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html" class="tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Module<wbr>Executor<wbr>Arguments</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_plugins_sftp_.sftpcontext.html" class="tsd-kind-icon">SFTPContext</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_plugins_sftp_.sftptarget.html" class="tsd-kind-icon">SFTPTarget</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_plugins_sftp_.sftpuploadscriptarguments.html" class="tsd-kind-icon">SFTPUpload<wbr>Script<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_plugins_sftp_.sftpuploadedmodule.html" class="tsd-kind-icon">SFTPUploaded<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_plugins_sftp_.sftpuploadedmoduleexecutorarguments.html" class="tsd-kind-icon">SFTPUploaded<wbr>Module<wbr>Executor<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_plugins_sftp_.html#sftpbeforeuploadmoduleexecutor" class="tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Module<wbr>Executor</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_plugins_sftp_.html#sftpuploadedmoduleexecutor" class="tsd-kind-icon">SFTPUploaded<wbr>Module<wbr>Executor</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_sftp_.html#cache_password" class="tsd-kind-icon">CACHE_<wbr>PASSWORD</a>

@@ -81,7 +81,18 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_clients_ftp_.ftpbeforeuploadarguments.html" class="tsd-kind-icon">FTPBefore<wbr>Upload<wbr>Arguments</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_clients_ftp_.ftpconnectionoptions.html" class="tsd-kind-icon">FTPConnection<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_clients_ftp_.ftpuploadcompletedarguments.html" class="tsd-kind-icon">FTPUpload<wbr>Completed<wbr>Arguments</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_ftp_.html#ftpbeforeupload" class="tsd-kind-icon">FTPBefore<wbr>Upload</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_ftp_.html#ftpbeforeuploadresult" class="tsd-kind-icon">FTPBefore<wbr>Upload<wbr>Result</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_ftp_.html#ftpuploadcompleted" class="tsd-kind-icon">FTPUpload<wbr>Completed</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_ftp_.html#ftpuploadcompletedresult" class="tsd-kind-icon">FTPUpload<wbr>Completed<wbr>Result</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -104,6 +115,133 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="ftpbeforeupload" class="tsd-anchor"></a>
+					<h3>FTPBefore<wbr>Upload</h3>
+					<div class="tsd-signature tsd-kind-icon">FTPBefore<wbr>Upload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/ftp.ts#L37">clients/ftp.ts:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An action that is invoked BEFORE an upload process starts.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The arguments.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_clients_ftp_.ftpbeforeuploadarguments.html" class="tsd-signature-type">FTPBeforeUploadArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_clients_ftp_.html#ftpbeforeuploadresult" class="tsd-signature-type">FTPBeforeUploadResult</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_clients_ftp_.html#ftpbeforeuploadresult" class="tsd-signature-type">FTPBeforeUploadResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_clients_ftp_.ftpbeforeuploadarguments.html" class="tsd-signature-type">FTPBeforeUploadArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_clients_ftp_.html#ftpbeforeuploadresult" class="tsd-signature-type">FTPBeforeUploadResult</a>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_clients_ftp_.html#ftpbeforeuploadresult" class="tsd-signature-type">FTPBeforeUploadResult</a><span class="tsd-signature-symbol">&gt;</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="ftpbeforeuploadresult" class="tsd-anchor"></a>
+					<h3>FTPBefore<wbr>Upload<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">FTPBefore<wbr>Upload<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/ftp.ts#L60">clients/ftp.ts:60</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A possible file for an action that is invoked BEFORE an upload process starts.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="ftpuploadcompleted" class="tsd-anchor"></a>
+					<h3>FTPUpload<wbr>Completed</h3>
+					<div class="tsd-signature tsd-kind-icon">FTPUpload<wbr>Completed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/ftp.ts#L103">clients/ftp.ts:103</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An action that is invoked AFTER an upload process.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The arguments.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The result.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><a href="../interfaces/_clients_ftp_.ftpuploadcompletedarguments.html" class="tsd-signature-type">FTPUploadCompletedArguments</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_clients_ftp_.html#ftpuploadcompletedresult" class="tsd-signature-type">FTPUploadCompletedResult</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_clients_ftp_.html#ftpuploadcompletedresult" class="tsd-signature-type">FTPUploadCompletedResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>args: <a href="../interfaces/_clients_ftp_.ftpuploadcompletedarguments.html" class="tsd-signature-type">FTPUploadCompletedArguments</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="_clients_ftp_.html#ftpuploadcompletedresult" class="tsd-signature-type">FTPUploadCompletedResult</a>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><a href="_clients_ftp_.html#ftpuploadcompletedresult" class="tsd-signature-type">FTPUploadCompletedResult</a><span class="tsd-signature-symbol">&gt;</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="ftpuploadcompletedresult" class="tsd-anchor"></a>
+					<h3>FTPUpload<wbr>Completed<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">FTPUpload<wbr>Completed<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/ftp.ts#L134">clients/ftp.ts:134</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A possible file for an action that is invoked AFTER an upload process.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="default_host" class="tsd-anchor"></a>
@@ -111,7 +249,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>HOST<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"127.0.0.1"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;127.0.0.1&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/clients/ftp.ts#L60">clients/ftp.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/ftp.ts#L140">clients/ftp.ts:140</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -126,7 +264,7 @@
 					<div class="tsd-signature tsd-kind-icon">Parse<wbr>Listening<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&quot;parse-listing&quot;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/clients/ftp.ts#L26">clients/ftp.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/ftp.ts#L26">clients/ftp.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -136,7 +274,7 @@
 					<div class="tsd-signature tsd-kind-icon">jsFTP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;jsftp&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/clients/ftp.ts#L24">clients/ftp.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/ftp.ts#L24">clients/ftp.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,7 +291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/clients/ftp.ts#L968">clients/ftp.ts:968</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/ftp.ts#L1139">clients/ftp.ts:1139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -185,7 +323,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/clients/ftp.ts#L988">clients/ftp.ts:988</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/ftp.ts#L1159">clients/ftp.ts:1159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -217,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/b50d67f/src/clients/ftp.ts#L1005">clients/ftp.ts:1005</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/ftp.ts#L1176">clients/ftp.ts:1176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -264,7 +402,25 @@
 						<a href="../classes/_clients_ftp_.jsftpclient.html" class="tsd-kind-icon">JsFTPClient</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_clients_ftp_.ftpbeforeuploadarguments.html" class="tsd-kind-icon">FTPBefore<wbr>Upload<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_clients_ftp_.ftpconnectionoptions.html" class="tsd-kind-icon">FTPConnection<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_clients_ftp_.ftpuploadcompletedarguments.html" class="tsd-kind-icon">FTPUpload<wbr>Completed<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_clients_ftp_.html#ftpbeforeupload" class="tsd-kind-icon">FTPBefore<wbr>Upload</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_clients_ftp_.html#ftpbeforeuploadresult" class="tsd-kind-icon">FTPBefore<wbr>Upload<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_clients_ftp_.html#ftpuploadcompleted" class="tsd-kind-icon">FTPUpload<wbr>Completed</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_clients_ftp_.html#ftpuploadcompletedresult" class="tsd-kind-icon">FTPUpload<wbr>Completed<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_clients_ftp_.html#default_host" class="tsd-kind-icon">DEFAULT_<wbr>HOST</a>

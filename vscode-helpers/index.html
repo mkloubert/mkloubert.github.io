@@ -99,7 +99,21 @@
 									<li><a href="#invokeafter-">invokeAfter</a></li>
 									<li><a href="#isbinarycontent-">isBinaryContent</a></li>
 									<li><a href="#isbinarycontentsync-">isBinaryContentSync</a></li>
+									<li><a href="#isblockdevice-">isBlockDevice</a></li>
+									<li><a href="#isblockdevicesync-">isBlockDeviceSync</a></li>
+									<li><a href="#ischaracterdevice-">isCharacterDevice</a></li>
+									<li><a href="#ischaracterdevicesync-">isCharacterDeviceSync</a></li>
+									<li><a href="#isdirectory-">isDirectory</a></li>
+									<li><a href="#isdirectorysync-">isDirectorySync</a></li>
 									<li><a href="#isemptystring-">isEmptyString</a></li>
+									<li><a href="#isfifo-">isFIFO</a></li>
+									<li><a href="#isfifosync-">isFIFOSync</a></li>
+									<li><a href="#isfile-">isFile</a></li>
+									<li><a href="#isfilesync-">isFileSync</a></li>
+									<li><a href="#issocket-">isSocket</a></li>
+									<li><a href="#issocketsync-">isSocketSync</a></li>
+									<li><a href="#issymboliclink-">isSymbolicLink</a></li>
+									<li><a href="#issymboliclinksync-">isSymbolicLinkSync</a></li>
 									<li><a href="#loadmodule-">loadModule</a></li>
 									<li><a href="#makenondisposable-">makeNonDisposable</a></li>
 									<li><a href="#normalizestring-">normalizeString</a></li>
@@ -378,10 +392,80 @@ vscode_helpers.isBinaryContentSync( fs.readFileSync(<span class="hljs-string">'.
 <span class="hljs-comment">// should be (false)</span>
 vscode_helpers.isBinaryContentSync( fs.readFileSync(<span class="hljs-string">'./myText.txt'</span>) );
 </code></pre>
+				<h4 id="isblockdevice-uarr-functions-">isBlockDevice [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.isBlockDevice(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isABlockDevice</span>) =&gt;</span> {
+    <span class="hljs-comment">// TODO</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+})
+</code></pre>
+				<h4 id="isblockdevicesync-uarr-functions-">isBlockDeviceSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_BLOCK_DEVICE: <span class="hljs-built_in">boolean</span> = vscode_helpers.isBlockDeviceSync(<span class="hljs-string">'/path/to/check'</span>);
+</code></pre>
+				<h4 id="ischaracterdevice-uarr-functions-">isCharacterDevice [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.isCharacterDevice(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isACharacterDevice</span>) =&gt;</span> {
+    <span class="hljs-comment">// TODO</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+})
+</code></pre>
+				<h4 id="ischaracterdevicesync-uarr-functions-">isCharacterDeviceSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_CHARACTER_DEVICE: <span class="hljs-built_in">boolean</span> = vscode_helpers.isCharacterDeviceSync(<span class="hljs-string">'/path/to/check'</span>);
+</code></pre>
+				<h4 id="isdirectory-uarr-functions-">isDirectory [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.isDirectory(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isADirectory</span>) =&gt;</span> {
+    <span class="hljs-comment">// TODO</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+})
+</code></pre>
+				<h4 id="isdirectorysync-uarr-functions-">isDirectorySync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_DIRECTORY: <span class="hljs-built_in">boolean</span> = vscode_helpers.isDirectorySync(<span class="hljs-string">'/path/to/check'</span>);
+</code></pre>
 				<h4 id="isemptystring-uarr-functions-">isEmptyString [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.isEmptyString( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// (true)</span>
 vscode_helpers.isEmptyString( <span class="hljs-literal">undefined</span> );  <span class="hljs-comment">// (true)</span>
 vscode_helpers.isEmptyString( <span class="hljs-string">'123'</span> );  <span class="hljs-comment">// (false)</span>
+</code></pre>
+				<h4 id="isfifo-uarr-functions-">isFIFO [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.isFIFO(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isAFIFO</span>) =&gt;</span> {
+    <span class="hljs-comment">// TODO</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+})
+</code></pre>
+				<h4 id="isfifosync-uarr-functions-">isFIFOSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_FIFO: <span class="hljs-built_in">boolean</span> = vscode_helpers.isFIFOSync(<span class="hljs-string">'/path/to/check'</span>);
+</code></pre>
+				<h4 id="isfile-uarr-functions-">isFile [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.isFile(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isAFile</span>) =&gt;</span> {
+    <span class="hljs-comment">// TODO</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+})
+</code></pre>
+				<h4 id="isfilesync-uarr-functions-">isFileSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_FILE: <span class="hljs-built_in">boolean</span> = vscode_helpers.isFileSync(<span class="hljs-string">'/path/to/check'</span>);
+</code></pre>
+				<h4 id="issocket-uarr-functions-">isSocket [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.isSocket(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isASocket</span>) =&gt;</span> {
+    <span class="hljs-comment">// TODO</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+})
+</code></pre>
+				<h4 id="issocketsync-uarr-functions-">isSocketSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_SOCKET: <span class="hljs-built_in">boolean</span> = vscode_helpers.isSocketSync(<span class="hljs-string">'/path/to/check'</span>);
+</code></pre>
+				<h4 id="issymboliclink-uarr-functions-">isSymbolicLink [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.isSymbolicLink(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isASymbolicLink</span>) =&gt;</span> {
+    <span class="hljs-comment">// TODO</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+})
+</code></pre>
+				<h4 id="issymboliclinksync-uarr-functions-">isSymbolicLinkSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_SYMBOLIC_LINK: <span class="hljs-built_in">boolean</span> = vscode_helpers.isSymbolicLinkSync(<span class="hljs-string">'/path/to/check'</span>);
 </code></pre>
 				<h4 id="loadmodule-uarr-functions-">loadModule [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> MyModule {

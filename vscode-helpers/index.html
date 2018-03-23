@@ -95,10 +95,12 @@
 									<li><a href="#from-">from</a></li>
 									<li><a href="#frommarkdown-">fromMarkdown</a></li>
 									<li><a href="#glob-">glob</a></li>
+									<li><a href="#globsync-">globSync</a></li>
 									<li><a href="#invokeafter-">invokeAfter</a></li>
 									<li><a href="#isbinarycontent-">isBinaryContent</a></li>
 									<li><a href="#isbinarycontentsync-">isBinaryContentSync</a></li>
 									<li><a href="#isemptystring-">isEmptyString</a></li>
+									<li><a href="#loadmodule-">loadModule</a></li>
 									<li><a href="#makenondisposable-">makeNonDisposable</a></li>
 									<li><a href="#normalizestring-">normalizeString</a></li>
 									<li><a href="#randombytes-">randomBytes</a></li>
@@ -337,6 +339,13 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
+				<h4 id="globsync-uarr-functions-">globSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> matches: <span class="hljs-built_in">string</span>[] = vscode_helpers.globSync([ <span class="hljs-string">'**/*.txt'</span> ], {
+    cwd: <span class="hljs-string">'/path/to/directory'</span>,
+    ignore: [ <span class="hljs-string">'/log/**/*'</span> ],
+    root: <span class="hljs-string">'/path/to/directory'</span>,
+});
+</code></pre>
 				<h4 id="invokeafter-uarr-functions-">invokeAfter [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.invokeAfter(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">// this is invoked after 5979 milliseconds</span>
@@ -373,6 +382,15 @@ vscode_helpers.isBinaryContentSync( fs.readFileSync(<span class="hljs-string">'.
 				<pre><code class="lang-typescript">vscode_helpers.isEmptyString( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// (true)</span>
 vscode_helpers.isEmptyString( <span class="hljs-literal">undefined</span> );  <span class="hljs-comment">// (true)</span>
 vscode_helpers.isEmptyString( <span class="hljs-string">'123'</span> );  <span class="hljs-comment">// (false)</span>
+</code></pre>
+				<h4 id="loadmodule-uarr-functions-">loadModule [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> MyModule {
+    execute(): <span class="hljs-built_in">any</span>;
+}
+
+<span class="hljs-keyword">let</span> mod = vscode_helpers.loadModule&lt;MyModule&gt;(<span class="hljs-string">'/path/to/module.js'</span>);
+
+<span class="hljs-keyword">let</span> modResult = mod.execute();
 </code></pre>
 				<h3 id="makenondisposable-uarr-functions-">makeNonDisposable [<a href="#functions-">&uarr;</a>]</h3>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ = {
@@ -639,6 +657,9 @@ vscode_helpers.EVENTS
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_disposable_index_.html">"disposable/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_fs_index_.html">"fs/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_html_index_.html">"html/index"</a>

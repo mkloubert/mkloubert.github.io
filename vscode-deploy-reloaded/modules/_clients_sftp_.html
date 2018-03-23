@@ -80,6 +80,8 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_clients_sftp_.sftpbeforeuploadarguments.html" class="tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Arguments</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_clients_sftp_.sftpcommandentry.html" class="tsd-kind-icon">SFTPCommand<wbr>Entry</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_clients_sftp_.sftpcommandsettings.html" class="tsd-kind-icon">SFTPCommand<wbr>Settings</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_clients_sftp_.sftpconnectionoptions.html" class="tsd-kind-icon">SFTPConnection<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_clients_sftp_.sftpuploadcompletedarguments.html" class="tsd-kind-icon">SFTPUpload<wbr>Completed<wbr>Arguments</a></li>
 							</ul>
@@ -89,6 +91,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_sftp_.html#sftpbeforeupload" class="tsd-kind-icon">SFTPBefore<wbr>Upload</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_sftp_.html#sftpbeforeuploadresult" class="tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Result</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_sftp_.html#sftpcommand" class="tsd-kind-icon">SFTPCommand</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_sftp_.html#sftpfilemode" class="tsd-kind-icon">SFTPFile<wbr>Mode</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_sftp_.html#sftpfilemodepatterns" class="tsd-kind-icon">SFTPFile<wbr>Mode<wbr>Patterns</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_clients_sftp_.html#sftpfilemodesettings" class="tsd-kind-icon">SFTPFile<wbr>Mode<wbr>Settings</a></li>
@@ -122,7 +125,7 @@
 					<div class="tsd-signature tsd-kind-icon">SFTPBefore<wbr>Upload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L36">clients/sftp.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L40">clients/sftp.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -169,7 +172,7 @@
 					<div class="tsd-signature tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L63">clients/sftp.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L67">clients/sftp.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -179,12 +182,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="sftpcommand" class="tsd-anchor"></a>
+					<h3>SFTPCommand</h3>
+					<div class="tsd-signature tsd-kind-icon">SFTPCommand<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_clients_sftp_.sftpcommandentry.html" class="tsd-signature-type">SFTPCommandEntry</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L72">clients/sftp.ts:72</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A possible value for a SFTP command.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="sftpfilemode" class="tsd-anchor"></a>
 					<h3>SFTPFile<wbr>Mode</h3>
 					<div class="tsd-signature tsd-kind-icon">SFTPFile<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L139">clients/sftp.ts:139</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L212">clients/sftp.ts:212</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -199,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">SFTPFile<wbr>Mode<wbr>Patterns<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L144">clients/sftp.ts:144</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L217">clients/sftp.ts:217</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -222,7 +240,7 @@
 					<div class="tsd-signature tsd-kind-icon">SFTPFile<wbr>Mode<wbr>Settings<span class="tsd-signature-symbol">:</span> <a href="_clients_sftp_.html#sftpfilemode" class="tsd-signature-type">SFTPFileMode</a><span class="tsd-signature-symbol"> | </span><a href="_clients_sftp_.html#sftpfilemodepatterns" class="tsd-signature-type">SFTPFileModePatterns</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L149">clients/sftp.ts:149</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L222">clients/sftp.ts:222</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -237,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">SFTPMode<wbr>For<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L154">clients/sftp.ts:154</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L227">clients/sftp.ts:227</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -252,7 +270,7 @@
 					<div class="tsd-signature tsd-kind-icon">SFTPUpload<wbr>Completed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L163">clients/sftp.ts:163</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L236">clients/sftp.ts:236</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -299,7 +317,7 @@
 					<div class="tsd-signature tsd-kind-icon">SFTPUpload<wbr>Completed<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L198">clients/sftp.ts:198</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L271">clients/sftp.ts:271</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -317,7 +335,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>HOST<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"127.0.0.1"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;127.0.0.1&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L203">clients/sftp.ts:203</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L276">clients/sftp.ts:276</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -339,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L556">clients/sftp.ts:556</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L917">clients/sftp.ts:917</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -371,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L571">clients/sftp.ts:571</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L932">clients/sftp.ts:932</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -403,7 +421,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/a54baa9/src/clients/sftp.ts#L674">clients/sftp.ts:674</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/clients/sftp.ts#L1039">clients/sftp.ts:1039</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -447,6 +465,12 @@
 						<a href="../interfaces/_clients_sftp_.sftpbeforeuploadarguments.html" class="tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_clients_sftp_.sftpcommandentry.html" class="tsd-kind-icon">SFTPCommand<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_clients_sftp_.sftpcommandsettings.html" class="tsd-kind-icon">SFTPCommand<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_clients_sftp_.sftpconnectionoptions.html" class="tsd-kind-icon">SFTPConnection<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -457,6 +481,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_clients_sftp_.html#sftpbeforeuploadresult" class="tsd-kind-icon">SFTPBefore<wbr>Upload<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_clients_sftp_.html#sftpcommand" class="tsd-kind-icon">SFTPCommand</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_clients_sftp_.html#sftpfilemode" class="tsd-kind-icon">SFTPFile<wbr>Mode</a>

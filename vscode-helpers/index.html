@@ -142,6 +142,7 @@
 							</li>
 							<li><a href="#constants-and-variables-">Constants and variables</a><ul>
 									<li><a href="#events-">EVENTS</a></li>
+									<li><a href="#session-">SESSION</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -514,34 +515,39 @@ readAll( STREAM ).then(<span class="hljs-function">(<span class="hljs-params">da
 });
 </code></pre>
 				<h4 id="registerworkspacewatcher-uarr-functions-">registerWorkspaceWatcher [<a href="#functions-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { Uri } <span class="hljs-keyword">as</span> vscode <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Path <span class="hljs-keyword">from</span> <span class="hljs-string">'path'</span>;
+<span class="hljs-keyword">import</span> { ConfigurationChangeEvent, Uri } <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
 
 <span class="hljs-keyword">class</span> MyWorkspace <span class="hljs-keyword">extends</span> vscode_helpers.WorkspaceBase {
-    <span class="hljs-comment">// this is important for 'onDidChangeConfiguration'</span>
+    <span class="hljs-keyword">private</span> _configSrc: vscode_helpers.WorkspaceConfigSource;
+
+    <span class="hljs-comment">// this is important for 'onDidChangeConfiguration' (s. below)</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">get</span> configSource() {
-        <span class="hljs-keyword">return</span> {
-            section: <span class="hljs-string">'my.extension'</span>,
-            resource: Uri.file(<span class="hljs-string">'/path/to/.vscode/settings.json'</span>),
-        };
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._configSrc;
     }    
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> initialize() {
         <span class="hljs-comment">// initialize your workspace here</span>
+
+        <span class="hljs-keyword">this</span>._configSrc = {
+            section: <span class="hljs-string">'my.extension'</span>,
+            resource: Uri.file( Path.join(<span class="hljs-keyword">this</span>.rootPath,
+                                          <span class="hljs-string">'.vscode/settings.json'</span>) ),
+        };
     }
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> onDidChangeConfiguration(e) {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> onDidChangeConfiguration(e: ConfigurationChangeEvent) {
         <span class="hljs-comment">// is invoked when workspace config changed</span>
     }
 }
 
-vscode_helpers.registerWorkspaceWatcher(<span class="hljs-function">(<span class="hljs-params">event, folder, workspace?</span>) =&gt;</span> {
-    <span class="hljs-keyword">switch</span> (event) {
-        <span class="hljs-keyword">case</span> vscode_helpers.WorkspaceWatcherEvent.Added:            
-            <span class="hljs-keyword">const</span> NEW_WORKSPACE = <span class="hljs-keyword">new</span> MyWorkspace( folder );
-            {
-                <span class="hljs-keyword">await</span> NEW_WORKSPACE.initialize();
-            }
-            <span class="hljs-keyword">return</span> NEW_WORKSPACE;
+vscode_helpers.registerWorkspaceWatcher(<span class="hljs-keyword">async</span> (event, folder, workspace?) =&gt; {
+    <span class="hljs-keyword">if</span> (event == vscode_helpers.WorkspaceWatcherEvent.Added) {
+        <span class="hljs-keyword">const</span> NEW_WORKSPACE = <span class="hljs-keyword">new</span> MyWorkspace( folder );
+
+        <span class="hljs-keyword">await</span> NEW_WORKSPACE.initialize();
+
+        <span class="hljs-keyword">return</span> NEW_WORKSPACE;
     }
 });
 </code></pre>
@@ -610,7 +616,7 @@ vscode_helpers.tryDispose( OBJ );
     <span class="hljs-comment">//TODO</span>
 };
 
-STREAM.on(<span class="hljs-string">'data'</span>, datalistener);
+STREAM.on(<span class="hljs-string">'data'</span>, dataListener);
 
 STREAM.once(<span class="hljs-string">'end'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     vscode_helpers.tryRemoveListener(<span class="hljs-string">'data'</span>,
@@ -680,27 +686,28 @@ CACHE.unset(<span class="hljs-string">'a'</span>);
 CACHE.has(<span class="hljs-string">'a'</span>);  <span class="hljs-comment">// (false)</span>
 </code></pre>
 				<h4 id="workspacebase-uarr-classes-">WorkspaceBase [<a href="#classes-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { Uri } <span class="hljs-keyword">as</span> vscode <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { ConfigurationChangeEvent, Uri } <span class="hljs-keyword">as</span> vscode <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
 
 <span class="hljs-keyword">class</span> MyWorkspace <span class="hljs-keyword">extends</span> vscode_helpers.WorkspaceBase {
-    <span class="hljs-comment">// this is important for 'onDidChangeConfiguration'</span>
+    <span class="hljs-keyword">private</span> _configSrc: vscode_helpers.WorkspaceConfigSource;
+
+    <span class="hljs-comment">// this is important for 'onDidChangeConfiguration' (s. below)</span>
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">get</span> configSource() {
-        <span class="hljs-keyword">return</span> {
-            section: <span class="hljs-string">'my.extension'</span>,
-            resource: Uri.file(<span class="hljs-string">'/path/to/.vscode/settings.json'</span>),
-        };
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._configSrc;
     }    
 
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> initialize() {
         <span class="hljs-comment">// initialize your workspace here</span>
+
+        <span class="hljs-keyword">this</span>._configSrc = {
+            section: <span class="hljs-string">'my.extension'</span>,
+            resource: Uri.file( Path.join(<span class="hljs-keyword">this</span>.rootPath,
+                                          <span class="hljs-string">'.vscode/settings.json'</span>) ),
+        };
     }
 
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> onDidChangeConfiguration(e) {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> onDidChangeConfiguration(e: ConfigurationChangeEvent) {
         <span class="hljs-comment">// is invoked when workspace config changed</span>
-    }
-
-    <span class="hljs-keyword">protected</span> onDispose(): <span class="hljs-built_in">void</span> {
-        <span class="hljs-comment">// put code here to cleanup the workspace</span>
     }
 }
 </code></pre>
@@ -712,6 +719,13 @@ CACHE.has(<span class="hljs-string">'a'</span>);  <span class="hljs-comment">// 
 
 vscode_helpers.EVENTS
               .emit(<span class="hljs-string">'myEvent'</span>, <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span>);
+</code></pre>
+				<h4 id="session-uarr-constants-and-variables-">SESSION [<a href="#constants-and-variables-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> var_1 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// undefined</span>
+vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs-number">5979</span>;
+<span class="hljs-keyword">let</span> var_2 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// 5979</span>
+<span class="hljs-keyword">delete</span> vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];
+<span class="hljs-keyword">let</span> var_3 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// undefined</span>
 </code></pre>
 				<h2 id="support-and-contribute-uarr-table-of-contents-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the module, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>

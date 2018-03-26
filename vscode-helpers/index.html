@@ -209,22 +209,24 @@ asBuffer( STREAM ).then(<span class="hljs-function">(<span class="hljs-params">d
 </code></pre>
 				<h4 id="buildworkflow-uarr-functions-">buildWorkflow [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> WORKFLOW = vscode_helpers.buildWorkflow()
-    .next(<span class="hljs-function">(<span class="hljs-params">prevValue</span>) =&gt;</span> {
-              <span class="hljs-keyword">return</span> <span class="hljs-number">5979</span>;
-          })
-    .next(<span class="hljs-function">(<span class="hljs-params">prevValue, context</span>) =&gt;</span> {
+    .next(<span class="hljs-function">(<span class="hljs-params">prevValue: <span class="hljs-literal">undefined</span>, context: vscode_helpers.WorkflowActionContext</span>) =&gt;</span> {
               context.value = <span class="hljs-number">1000</span>;
 
-              <span class="hljs-keyword">return</span> prevValue + <span class="hljs-number">23979</span>;
+              <span class="hljs-keyword">return</span> <span class="hljs-number">5979</span>;
           })
-    .next(<span class="hljs-function">(<span class="hljs-params">prevValue, context</span>) =&gt;</span> {
-              <span class="hljs-keyword">return</span> prevValue * context.value;
+    .next(<span class="hljs-function">(<span class="hljs-params">prevValue: <span class="hljs-built_in">number</span>, context: vscode_helpers.WorkflowActionContext</span>) =&gt;</span> {
+              <span class="hljs-keyword">return</span> prevValue + <span class="hljs-number">23979</span>;  <span class="hljs-comment">// prevValue === 5979</span>
+          })
+    .next(<span class="hljs-function">(<span class="hljs-params">prevValue: <span class="hljs-built_in">number</span>, context: vscode_helpers.WorkflowActionContext</span>) =&gt;</span> {
+              <span class="hljs-comment">// prevValue === 29958</span>
+              <span class="hljs-comment">// context.value === 1000</span>
+              <span class="hljs-keyword">return</span> <span class="hljs-string">''</span> + (prevValue * context.value);
           });
 
-WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">result</span>) =&gt;</span> {
-    <span class="hljs-comment">// result === 29958</span>
+WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">result: <span class="hljs-built_in">string</span></span>) =&gt;</span> {
+    <span class="hljs-comment">// result === '29958000'</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
-    <span class="hljs-comment">// this only happens on errors</span>
+    <span class="hljs-comment">// this only happens on error</span>
 });
 </code></pre>
 				<h4 id="cloneobject-uarr-functions-">cloneObject [<a href="#functions-">&uarr;</a>]</h4>
@@ -240,27 +242,34 @@ WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">res
         <span class="hljs-keyword">return</span> a * (<span class="hljs-number">5979</span> * <span class="hljs-keyword">this</span>.mk);
     },
 });
+
+CLONED_OBJ.mk = <span class="hljs-number">1000</span>;
+CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment">// 11.958.000.000 === 2000 * (5979 * 1000)</span>
 </code></pre>
 				<h4 id="comparevalues-uarr-functions-">compareValues [<a href="#functions-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> VAL_1 = <span class="hljs-number">2</span>;
-<span class="hljs-keyword">const</span> VAL_2 = <span class="hljs-number">1</span>;
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> VAL_1 = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">const</span> VAL_2 = <span class="hljs-number">2</span>;
 
-<span class="hljs-keyword">const</span> SORTED_OBJS = [ VAL_1, VAL_2 ].sort(<span class="hljs-function">(<span class="hljs-params">x, y</span>) =&gt;</span> {
-    <span class="hljs-keyword">return</span> vscode_helpers.compareValues(x, y);
+<span class="hljs-comment">// SORTED_VALUES[0] === VAL_2</span>
+<span class="hljs-comment">// SORTED_VALUES[1] === VAL_1</span>
+<span class="hljs-keyword">const</span> SORTED_VALUES = [ VAL_1, VAL_2 ].sort(<span class="hljs-function">(<span class="hljs-params">x, y</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> vscode_helpers.compareValues(y, x);
 });
 </code></pre>
 				<h4 id="comparevaluesby-uarr-functions-">compareValuesBy [<a href="#functions-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ_1 = { sortValue: <span class="hljs-number">2</span> };
-<span class="hljs-keyword">const</span> OBJ_2 = { sortValue: <span class="hljs-number">1</span> };
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ_1 = { sortValue: <span class="hljs-number">1</span> };
+<span class="hljs-keyword">const</span> OBJ_2 = { sortValue: <span class="hljs-number">2</span> };
 
+<span class="hljs-comment">// SORTED_OBJS[0] === OBJ_2</span>
+<span class="hljs-comment">// SORTED_OBJS[1] === OBJ_1</span>
 <span class="hljs-keyword">const</span> SORTED_OBJS = [ OBJ_1, OBJ_2 ].sort(<span class="hljs-function">(<span class="hljs-params">x, y</span>) =&gt;</span> {
-    <span class="hljs-keyword">return</span> vscode_helpers.compareValuesBy(x, y,
+    <span class="hljs-keyword">return</span> vscode_helpers.compareValuesBy(y, x,
                                           <span class="hljs-function"><span class="hljs-params">i</span> =&gt;</span> i.sortValue);
 });
 </code></pre>
 				<h4 id="createdirectoryifneeded-uarr-functions-">createDirectoryIfNeeded [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.createDirectoryIfNeeded(<span class="hljs-string">'/dir/to/create'</span>).then(<span class="hljs-function">(<span class="hljs-params">hasBeenCreated: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
-
+    <span class="hljs-comment">// hasBeenCreated === (false), if directory already exists</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 });
@@ -331,15 +340,16 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> seq = vscode_helpers.from([ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ])  <span class="hljs-comment">// can also be a generator</span>
                                             <span class="hljs-comment">// or string</span>
                         .select(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> <span class="hljs-string">''</span> + x)
-                        .where(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x !== <span class="hljs-string">'2'</span>);
+                        .where(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x !== <span class="hljs-string">'2'</span>)
+                        .reverse();
 
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> ITEM of seq) {
-    <span class="hljs-comment">// [0] '1'</span>
-    <span class="hljs-comment">// [1] '3'</span>
+    <span class="hljs-comment">// [0] '3'</span>
+    <span class="hljs-comment">// [1] '1'</span>
 }
 </code></pre>
 				<h4 id="frommarkdown-uarr-functions-">fromMarkdown [<a href="#functions-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> html = vscode_helpers.fromMarkdown(
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> htmlFromMarkdown = vscode_helpers.fromMarkdown(
     <span class="hljs-string">'Vessel     | Captain\n-----------|-------------\nNCC-1701   | James T Kirk\nNCC-1701 A | James T Kirk\nNCC-1701 D | Picard'</span>
 );
 </code></pre>
@@ -721,9 +731,11 @@ vscode_helpers.EVENTS
               .emit(<span class="hljs-string">'myEvent'</span>, <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span>);
 </code></pre>
 				<h4 id="session-uarr-constants-and-variables-">SESSION [<a href="#constants-and-variables-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> var_1 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// undefined</span>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> var_1 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// undefined (at the beginning)</span>
+
 vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs-number">5979</span>;
 <span class="hljs-keyword">let</span> var_2 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// 5979</span>
+
 <span class="hljs-keyword">delete</span> vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];
 <span class="hljs-keyword">let</span> var_3 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// undefined</span>
 </code></pre>

@@ -98,6 +98,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#_" class="tsd-kind-icon">_</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#deployevent" class="tsd-kind-icon">deploy<wbr>Event</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#deployoperation" class="tsd-kind-icon">deploy<wbr>Operation</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#events" class="tsd-kind-icon">events</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#extension" class="tsd-kind-icon">extension</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#folder" class="tsd-kind-icon">folder</a></li>
@@ -113,8 +115,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#sessionstate" class="tsd-kind-icon">session<wbr>State</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#settingfolder" class="tsd-kind-icon">setting<wbr>Folder</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#state" class="tsd-kind-icon">state</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#target" class="tsd-kind-icon">target</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#workspace" class="tsd-kind-icon">workspace</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#target" class="tsd-kind-icon">target</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#workspace" class="tsd-kind-icon">workspace</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#workspaceroot" class="tsd-kind-icon">workspace<wbr>Root</a></li>
 							</ul>
 						</section>
@@ -130,7 +132,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#_">_</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L474">contracts.ts:474</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L488">contracts.ts:488</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -150,12 +152,44 @@
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="_clients_sftp_.sftpbeforeuploadarguments.html" class="tsd-signature-type">SFTPBeforeUploadArguments</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/plugins/sftp.ts#L57">plugins/sftp.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins/sftp.ts#L56">plugins/sftp.ts:56</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The underlying context.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="deployevent" class="tsd-anchor"></a>
+					<h3>deploy<wbr>Event</h3>
+					<div class="tsd-signature tsd-kind-icon">deploy<wbr>Event<span class="tsd-signature-symbol">:</span> <a href="../enums/_contracts_.deployevent.html" class="tsd-signature-type">DeployEvent</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_plugins_sftp_.sftpdeployeventscriptarguments.html">SFTPDeployEventScriptArguments</a>.<a href="_plugins_sftp_.sftpdeployeventscriptarguments.html#deployevent">deployEvent</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins/sftp.ts#L70">plugins/sftp.ts:70</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The kind of deploy event.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="deployoperation" class="tsd-anchor"></a>
+					<h3>deploy<wbr>Operation</h3>
+					<div class="tsd-signature tsd-kind-icon">deploy<wbr>Operation<span class="tsd-signature-symbol">:</span> <a href="../enums/_contracts_.deployoperation.html" class="tsd-signature-type">DeployOperation</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_plugins_sftp_.sftpdeployeventscriptarguments.html">SFTPDeployEventScriptArguments</a>.<a href="_plugins_sftp_.sftpdeployeventscriptarguments.html#deployoperation">deployOperation</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins/sftp.ts#L74">plugins/sftp.ts:74</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The kind of operation.</p>
 						</div>
 					</div>
 				</section>
@@ -166,7 +200,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#events">events</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L478">contracts.ts:478</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L492">contracts.ts:492</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -182,7 +216,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#extension">extension</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L482">contracts.ts:482</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L496">contracts.ts:496</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -198,7 +232,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#folder">folder</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L486">contracts.ts:486</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L500">contracts.ts:500</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -214,7 +248,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalevents">globalEvents</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L490">contracts.ts:490</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L504">contracts.ts:504</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -230,7 +264,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globalstate">globalState</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L499">contracts.ts:499</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L513">contracts.ts:513</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -247,7 +281,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#globals">globals</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L494">contracts.ts:494</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L508">contracts.ts:508</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -263,7 +297,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#homedir">homeDir</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L503">contracts.ts:503</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L517">contracts.ts:517</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -279,7 +313,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#logger">logger</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L515">contracts.ts:515</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L529">contracts.ts:529</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -295,7 +329,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#options">options</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L507">contracts.ts:507</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L521">contracts.ts:521</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -311,7 +345,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#output">output</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L511">contracts.ts:511</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L525">contracts.ts:525</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -327,7 +361,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#replacewithvalues">replaceWithValues</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L523">contracts.ts:523</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L537">contracts.ts:537</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -372,7 +406,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#require">require</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L527">contracts.ts:527</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L541">contracts.ts:541</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -409,7 +443,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#sessionstate">sessionState</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L532">contracts.ts:532</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L546">contracts.ts:546</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -426,7 +460,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#settingfolder">settingFolder</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L536">contracts.ts:536</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L550">contracts.ts:550</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -442,7 +476,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#state">state</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L540">contracts.ts:540</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L554">contracts.ts:554</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -451,14 +485,15 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 					<a name="target" class="tsd-anchor"></a>
 					<h3>target</h3>
 					<div class="tsd-signature tsd-kind-icon">target<span class="tsd-signature-symbol">:</span> <a href="_plugins_sftp_.sftptarget.html" class="tsd-signature-type">SFTPTarget</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_plugins_sftp_.sftpuploadscriptarguments.html">SFTPUploadScriptArguments</a>.<a href="_plugins_sftp_.sftpuploadscriptarguments.html#target">target</a></p>
+						<p>Overrides <a href="_plugins_sftp_.sftpdeployeventscriptarguments.html">SFTPDeployEventScriptArguments</a>.<a href="_plugins_sftp_.sftpdeployeventscriptarguments.html#target">target</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/plugins/sftp.ts#L166">plugins/sftp.ts:166</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins/sftp.ts#L187">plugins/sftp.ts:187</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -467,14 +502,15 @@
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 					<a name="workspace" class="tsd-anchor"></a>
 					<h3>workspace</h3>
 					<div class="tsd-signature tsd-kind-icon">workspace<span class="tsd-signature-symbol">:</span> <a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_plugins_sftp_.sftpuploadscriptarguments.html">SFTPUploadScriptArguments</a>.<a href="_plugins_sftp_.sftpuploadscriptarguments.html#workspace">workspace</a></p>
+						<p>Overrides <a href="_plugins_sftp_.sftpdeployeventscriptarguments.html">SFTPDeployEventScriptArguments</a>.<a href="_plugins_sftp_.sftpdeployeventscriptarguments.html#workspace">workspace</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/plugins/sftp.ts#L170">plugins/sftp.ts:170</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins/sftp.ts#L191">plugins/sftp.ts:191</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -490,7 +526,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_contracts_.scriptarguments.html">ScriptArguments</a>.<a href="_contracts_.scriptarguments.html#workspaceroot">workspaceRoot</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/3e712f8/src/contracts.ts#L544">contracts.ts:544</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/contracts.ts#L558">contracts.ts:558</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -530,6 +566,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#context" class="tsd-kind-icon">context</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#deployevent" class="tsd-kind-icon">deploy<wbr>Event</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#deployoperation" class="tsd-kind-icon">deploy<wbr>Operation</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#events" class="tsd-kind-icon">events</a>
@@ -576,10 +618,10 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#state" class="tsd-kind-icon">state</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 								<a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#target" class="tsd-kind-icon">target</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite tsd-is-inherited">
 								<a href="_plugins_sftp_.sftpbeforeuploadmoduleexecutorarguments.html#workspace" class="tsd-kind-icon">workspace</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -591,6 +633,9 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_plugins_sftp_.sftpcontext.html" class="tsd-kind-icon">SFTPContext</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_plugins_sftp_.sftpdeployeventscriptarguments.html" class="tsd-kind-icon">SFTPDeploy<wbr>Event<wbr>Script<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_plugins_sftp_.sftptarget.html" class="tsd-kind-icon">SFTPTarget</a>

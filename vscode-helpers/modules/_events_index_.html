@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;workflows/index&quot; | vscode-helpers</title>
+	<title>&quot;events/index&quot; | vscode-helpers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_workflows_index_.html">&quot;workflows/index&quot;</a>
+					<a href="_events_index_.html">&quot;events/index&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;workflows/index&quot;</h1>
+			<h1>External module &quot;events/index&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -70,108 +70,42 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Classes</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported"><a href="../classes/_workflows_index_.workflowbuilderimpl.html" class="tsd-kind-icon">Workflow<wbr>Builder<wbr>Impl</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_workflows_index_.workflowactioncontext.html" class="tsd-kind-icon">Workflow<wbr>Action<wbr>Context</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter"><a href="../interfaces/_workflows_index_.workflowbuilder.html" class="tsd-kind-icon">Workflow<wbr>Builder</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_workflows_index_.html#workflowaction" class="tsd-kind-icon">Workflow<wbr>Action</a></li>
-							</ul>
-						</section>
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_workflows_index_.html#no_custom_result" class="tsd-kind-icon">NO_<wbr>CUSTOM_<wbr>RESULT</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_events_index_.html#events" class="tsd-kind-icon">EVENTS</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_workflows_index_.html#buildworkflow" class="tsd-kind-icon">build<wbr>Workflow</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_events_index_.html#tryremovealllisteners" class="tsd-kind-icon">try<wbr>Remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_events_index_.html#tryremovelistener" class="tsd-kind-icon">try<wbr>Remove<wbr>Listener</a></li>
 							</ul>
 						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-					<a name="workflowaction" class="tsd-anchor"></a>
-					<h3>Workflow<wbr>Action</h3>
-					<div class="tsd-signature tsd-kind-icon">Workflow<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/workflows/index.ts#L67">workflows/index.ts:67</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>A workflow action.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>param</dt>
-							<dd><p>The previous value.</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>The current context.</p>
-							</dd>
-						</dl>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>prevValue<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TPrev</span>, context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_workflows_index_.workflowactioncontext.html" class="tsd-signature-type">WorkflowActionContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TNext</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNext</span><span class="tsd-signature-symbol">&gt;</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>prevValue: <span class="tsd-signature-type">TPrev</span></h5>
-											</li>
-											<li>
-												<h5>context: <a href="../interfaces/_workflows_index_.workflowactioncontext.html" class="tsd-signature-type">WorkflowActionContext</a></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TNext</span>
-											<span class="tsd-signature-symbol"> | </span>
-											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TNext</span><span class="tsd-signature-symbol">&gt;</span>
-										</h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-external-module"><a href="_events_index_.html#event_disposer" class="tsd-kind-icon">EVENT_<wbr>DISPOSER</a></li>
+							</ul>
+						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
-					<a name="no_custom_result" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> NO_<wbr>CUSTOM_<wbr>RESULT</h3>
-					<div class="tsd-signature tsd-kind-icon">NO_<wbr>CUSTOM_<wbr>RESULT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> =&nbsp;Symbol(&#x27;NO_CUSTOM_RESULT&#x27;)</span></div>
+					<a name="events" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> EVENTS</h3>
+					<div class="tsd-signature tsd-kind-icon">EVENTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span><span class="tsd-signature-symbol"> =&nbsp;new Events.EventEmitter()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/workflows/index.ts#L73">workflows/index.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/events/index.ts#L24">events/index.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A symbol that indicates that &#39;IWorkflowActionContext.result&#39; will NOT be used
-							as result value of &#39;IWorkflowBuilder.start()&#39;.</p>
+							<p>Stores the global event emitter.</p>
 						</div>
 					</div>
 				</section>
@@ -179,33 +113,118 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="buildworkflow" class="tsd-anchor"></a>
-					<h3>build<wbr>Workflow</h3>
+					<a name="tryremovealllisteners" class="tsd-anchor"></a>
+					<h3>try<wbr>Remove<wbr>All<wbr>Listeners</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">build<wbr>Workflow<span class="tsd-signature-symbol">(</span>initialValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_workflows_index_.workflowbuilder.html" class="tsd-signature-type">WorkflowBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Remove<wbr>All<wbr>Listeners<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventEmitter</span>, ev<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/workflows/index.ts#L129">workflows/index.ts:129</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/events/index.ts#L44">events/index.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Starts building a workflows.</p>
+									<p>Tries to remove all listeners from an event emitter.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> initialValue: <span class="tsd-signature-type">any</span></h5>
+									<h5>obj: <span class="tsd-signature-type">EventEmitter</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The emitter.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> ev: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_workflows_index_.workflowbuilder.html" class="tsd-signature-type">WorkflowBuilder</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>The new workflow builder.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Operation was successfull or not.</p>
 						</li>
 					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="tryremovelistener" class="tsd-anchor"></a>
+					<h3>try<wbr>Remove<wbr>Listener</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Remove<wbr>Listener<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">EventEmitter</span>, ev<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/events/index.ts#L65">events/index.ts:65</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tries to remove a listener from an event emitter.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">EventEmitter</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The emitter.</p>
+									</div>
+								</li>
+								<li>
+									<h5>ev: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The event.</p>
+									</div>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The listener.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Operation was successfull or not.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module">
+					<a name="event_disposer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> EVENT_<wbr>DISPOSER</h3>
+					<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>DISPOSER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/events/index.ts#L29">events/index.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Disposes the event emitter, stored in &#39;EVENTS&#39;.</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="event_disposer.dispose" class="tsd-anchor"></a>
+						<h3>dispose</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/events/index.ts#L31">events/index.ts:31</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							</li>
+						</ul>
+					</section>
 				</section>
 			</section>
 		</div>
@@ -221,7 +240,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_disposable_index_.html">"disposable/index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_events_index_.html">"events/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -239,7 +258,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="_progress_index_.html">"progress/index"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_workflows_index_.html">"workflows/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -249,23 +268,17 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../classes/_workflows_index_.workflowbuilderimpl.html" class="tsd-kind-icon">Workflow<wbr>Builder<wbr>Impl</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_workflows_index_.workflowactioncontext.html" class="tsd-kind-icon">Workflow<wbr>Action<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_workflows_index_.workflowbuilder.html" class="tsd-kind-icon">Workflow<wbr>Builder</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_workflows_index_.html#workflowaction" class="tsd-kind-icon">Workflow<wbr>Action</a>
-					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="_workflows_index_.html#no_custom_result" class="tsd-kind-icon">NO_<wbr>CUSTOM_<wbr>RESULT</a>
+						<a href="_events_index_.html#events" class="tsd-kind-icon">EVENTS</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_workflows_index_.html#buildworkflow" class="tsd-kind-icon">build<wbr>Workflow</a>
+						<a href="_events_index_.html#tryremovealllisteners" class="tsd-kind-icon">try<wbr>Remove<wbr>All<wbr>Listeners</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_events_index_.html#tryremovelistener" class="tsd-kind-icon">try<wbr>Remove<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="_events_index_.html#event_disposer" class="tsd-kind-icon">EVENT_<wbr>DISPOSER</a>
 					</li>
 				</ul>
 			</nav>

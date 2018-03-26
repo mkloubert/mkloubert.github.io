@@ -117,6 +117,7 @@
 									<li><a href="#loadmodule-">loadModule</a></li>
 									<li><a href="#makenondisposable-">makeNonDisposable</a></li>
 									<li><a href="#normalizestring-">normalizeString</a></li>
+									<li><a href="#now-">now</a></li>
 									<li><a href="#randombytes-">randomBytes</a></li>
 									<li><a href="#registerworkspacewatcher-">registerWorkspaceWatcher</a></li>
 									<li><a href="#readall-">readAll</a></li>
@@ -128,7 +129,9 @@
 									<li><a href="#tryclearinterval-">tryClearInterval</a></li>
 									<li><a href="#trycleartimeout-">tryClearTimeout</a></li>
 									<li><a href="#trydispose-">tryDispose</a></li>
+									<li><a href="#tryremovealllisteners-">tryRemoveAllListeners</a></li>
 									<li><a href="#tryremovelistener-">tryRemoveListener</a></li>
+									<li><a href="#utcnow-">utcNow</a></li>
 									<li><a href="#waitwhile-">waitWhile</a></li>
 									<li><a href="#withprogress-">withProgress</a></li>
 								</ul>
@@ -505,6 +508,11 @@ OBJ_2.dispose();  <span class="hljs-comment">// throws an exception</span>
 <span class="hljs-keyword">const</span> str_2 = vscode_helpers.normalizeString(<span class="hljs-literal">null</span>);  <span class="hljs-comment">// ''</span>
 <span class="hljs-keyword">const</span> str_3 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>, <span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> s.troUpperCase());  <span class="hljs-comment">// 'ABC'</span>
 </code></pre>
+				<h4 id="now-uarr-functions-">now [<a href="#functions-">&uarr;</a>]</h4>
+				<p>s. <a href="https://momentjs.com/timezone/">Moment Timezone</a> for more information about using (optional) timezones.</p>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> NOW = vscode_helpers.now(<span class="hljs-string">'America/New_York'</span>)  <span class="hljs-comment">// optional</span>
+                          .format(<span class="hljs-string">'DD.MM.YYYY HH:mm:ss'</span>);
+</code></pre>
 				<h4 id="readall-uarr-functions-">readAll [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
@@ -617,21 +625,44 @@ vscode_helpers.tryClearTimeout( timer );
 <span class="hljs-comment">// (false)</span>
 vscode_helpers.tryDispose( OBJ );
 </code></pre>
+				<h4 id="tryremovealllisteners-uarr-functions-">tryRemoveAllListeners [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
+
+<span class="hljs-keyword">const</span> STREAM = fs.createReadStream(<span class="hljs-string">'./my-file.txt'</span>);
+
+STREAM.once(<span class="hljs-string">'error'</span>, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">//TODO</span>
+
+    vscode_helpers.tryRemoveAllListeners(STREAM);
+});
+
+STREAM.once(<span class="hljs-string">'end'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    vscode_helpers.tryRemoveAllListeners(STREAM);
+});
+
+STREAM.on(<span class="hljs-string">'data'</span>, <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
+    <span class="hljs-comment">//TODO</span>
+});
+</code></pre>
 				<h4 id="tryremovelistener-uarr-functions-">tryRemoveListener [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
 <span class="hljs-keyword">const</span> STREAM = fs.createReadStream(<span class="hljs-string">'./my-file.txt'</span>);
 
-<span class="hljs-keyword">let</span> dataListener = <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
+<span class="hljs-keyword">const</span> DATA_LISTENER = <span class="hljs-function">(<span class="hljs-params">chunk</span>) =&gt;</span> {
     <span class="hljs-comment">//TODO</span>
 };
 
-STREAM.on(<span class="hljs-string">'data'</span>, dataListener);
+STREAM.on(<span class="hljs-string">'data'</span>, DATA_LISTENER);
 
 STREAM.once(<span class="hljs-string">'end'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
-    vscode_helpers.tryRemoveListener(<span class="hljs-string">'data'</span>,
-                                     dataListener);
+    vscode_helpers.tryRemoveListener(STREAM,
+                                     <span class="hljs-string">'data'</span>, DATA_LISTENER);
 });
+</code></pre>
+				<h4 id="utcnow-uarr-functions-">utcNow [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> UTC_NOW = vscode_helpers.utcNow()
+                              .format(<span class="hljs-string">'DD.MM.YYYY HH:mm:ss'</span>);
 </code></pre>
 				<h4 id="waitwhile-uarr-functions-">waitWhile [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> counter = <span class="hljs-number">5979</span>;
@@ -767,6 +798,9 @@ vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_disposable_index_.html">"disposable/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_events_index_.html">"events/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_fs_index_.html">"fs/index"</a>

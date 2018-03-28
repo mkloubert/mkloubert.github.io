@@ -165,6 +165,64 @@
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> vscode_helpers <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode-helpers'</span>;
 </code></pre>
 				<h2 id="examples-uarr-table-of-contents-">Examples [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>An example of a <a href="https://code.visualstudio.com/docs/editor/multi-root-workspaces">multi-root workspace</a> ready extension (<code>extension.ts</code>):</p>
+				<pre><code class="lang-typescript"><span class="hljs-meta">'use strict'</span>;
+
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Path <span class="hljs-keyword">from</span> <span class="hljs-string">'path'</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> vscode <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> vscode_helpers <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode-helpers'</span>;
+
+<span class="hljs-keyword">class</span> MyWorkspace <span class="hljs-keyword">extends</span> vscode_helpers.WorkspaceBase {
+    <span class="hljs-keyword">private</span> _configSrc: vscode_helpers.WorkspaceConfigSource;
+
+    <span class="hljs-comment">// this is important for 'onDidChangeConfiguration' (s. below)</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">get</span> configSource() {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._configSrc;
+    }    
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> initialize() {
+        <span class="hljs-comment">// initialize your workspace here</span>
+
+        <span class="hljs-keyword">this</span>._configSrc = {
+            section: <span class="hljs-string">'my.extension'</span>,
+            resource: Uri.file( Path.join(<span class="hljs-keyword">this</span>.rootPath,
+                                          <span class="hljs-string">'.vscode/settings.json'</span>) ),
+        };
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> onDidChangeConfiguration(e) {
+        <span class="hljs-keyword">const</span> NEW_CONFIG = vscode.workspace.getConfiguration(
+            <span class="hljs-keyword">this</span>.configSource.section,
+            <span class="hljs-keyword">this</span>.configSource.resource
+        );
+
+        <span class="hljs-comment">// handle new config here</span>
+    }
+}
+
+<span class="hljs-keyword">let</span> workspaceWatcher: vscode_helpers.WorkspaceWatcherContext&lt;MyWorkspace&gt;;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">activate</span>(<span class="hljs-params">context: vscode.ExtensionContext</span>) </span>{
+    context.subscriptions.push(
+        workspaceWatcher = 
+            vscode_helpers.registerWorkspaceWatcher&lt;MyWorkspace&gt;<span class="hljs-function">(<span class="hljs-params">context, <span class="hljs-keyword">async</span> (<span class="hljs-params">ev, folder</span>) =&gt; {
+                <span class="hljs-keyword">if</span> (<span class="hljs-params">ev === vscode_helpers.WorkspaceWatcherEvent.Added</span>) {
+                    <span class="hljs-keyword">const</span> NEW_WORKSPACE = <span class="hljs-keyword">new</span> MyWorkspace(<span class="hljs-params">folder</span>);
+
+                    <span class="hljs-keyword">await</span> NEW_WORKSPACE.initialize(<span class="hljs-params"></span>);
+
+                    <span class="hljs-keyword">return</span> NEW_WORKSPACE;
+                }            
+            }</span>),
+    );
+
+    <span class="hljs-params">await</span> <span class="hljs-params">workspaceWatcher</span>.<span class="hljs-params">reload</span><span class="hljs-params">()</span>;
+}
+
+<span class="hljs-params">export</span> <span class="hljs-params">async</span> <span class="hljs-params">function</span> <span class="hljs-params">deactivate</span><span class="hljs-params">()</span> {
+    //<span class="hljs-params">TODO</span>
+}</span>
+</code></pre>
 				<h3 id="functions-uarr-examples-">Functions [<a href="#examples-">&uarr;</a>]</h3>
 				<h4 id="applyfuncfor-uarr-functions-">applyFuncFor [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ = { factor: <span class="hljs-number">1000</span> };

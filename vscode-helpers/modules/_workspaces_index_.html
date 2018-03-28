@@ -95,6 +95,7 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_workspaces_index_.html#workspacewatcher" class="tsd-kind-icon">Workspace<wbr>Watcher</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_workspaces_index_.html#workspacewatchercompleteaction" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Complete<wbr>Action</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_workspaces_index_.html#workspacewatcherresult" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Result</a></li>
 							</ul>
 						</section>
@@ -115,7 +116,7 @@
 					<div class="tsd-signature tsd-kind-icon">Workspace<wbr>Watcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/workspaces/index.ts#L81">workspaces/index.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/3fe36a7/src/workspaces/index.ts#L81">workspaces/index.ts:81</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -166,12 +167,74 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="workspacewatchercompleteaction" class="tsd-anchor"></a>
+					<h3>Workspace<wbr>Watcher<wbr>Complete<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">Workspace<wbr>Watcher<wbr>Complete<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/3fe36a7/src/workspaces/index.ts#L95">workspaces/index.ts:95</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A workspace watcher &#39;complete action&#39;.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The error (if occurred).</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The event.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The underlying folder.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The workspace to remove.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, event<span class="tsd-signature-symbol">: </span><a href="../enums/_workspaces_index_.workspacewatcherevent.html" class="tsd-signature-type">WorkspaceWatcherEvent</a>, folder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.WorkspaceFolder</span>, workspace<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TWorkspace</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>err: <span class="tsd-signature-type">any</span></h5>
+											</li>
+											<li>
+												<h5>event: <a href="../enums/_workspaces_index_.workspacewatcherevent.html" class="tsd-signature-type">WorkspaceWatcherEvent</a></h5>
+											</li>
+											<li>
+												<h5>folder: <span class="tsd-signature-type">vscode.WorkspaceFolder</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> workspace: <span class="tsd-signature-type">TWorkspace</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span>
+											<span class="tsd-signature-symbol"> | </span>
+											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span>
+										</h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="workspacewatcherresult" class="tsd-anchor"></a>
 					<h3>Workspace<wbr>Watcher<wbr>Result</h3>
 					<div class="tsd-signature tsd-kind-icon">Workspace<wbr>Watcher<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TWorkspace</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/workspaces/index.ts#L108">workspaces/index.ts:108</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/3fe36a7/src/workspaces/index.ts#L123">workspaces/index.ts:123</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -187,13 +250,13 @@
 					<a name="registerworkspacewatcher" class="tsd-anchor"></a>
 					<h3>register<wbr>Workspace<wbr>Watcher</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Workspace<wbr>Watcher&lt;TWorkspace&gt;<span class="tsd-signature-symbol">(</span>extension<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span>, watcher<span class="tsd-signature-symbol">: </span><a href="_workspaces_index_.html#workspacewatcher" class="tsd-signature-type">WorkspaceWatcher</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TWorkspace</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_index_.workspacewatchercontext.html" class="tsd-signature-type">WorkspaceWatcherContext</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TWorkspace</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Workspace<wbr>Watcher&lt;TWorkspace&gt;<span class="tsd-signature-symbol">(</span>extension<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span>, watcher<span class="tsd-signature-symbol">: </span><a href="_workspaces_index_.html#workspacewatcher" class="tsd-signature-type">WorkspaceWatcher</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TWorkspace</span><span class="tsd-signature-symbol">&gt;</span>, complete<span class="tsd-signature-symbol">?: </span><a href="_workspaces_index_.html#workspacewatchercompleteaction" class="tsd-signature-type">WorkspaceWatcherCompleteAction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TWorkspace</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_workspaces_index_.workspacewatchercontext.html" class="tsd-signature-type">WorkspaceWatcherContext</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TWorkspace</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/21c4ba1/src/workspaces/index.ts#L160">workspaces/index.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/3fe36a7/src/workspaces/index.ts#L176">workspaces/index.ts:176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -220,6 +283,9 @@
 									<div class="tsd-comment tsd-typography">
 										<p>The watcher.</p>
 									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> complete: <a href="_workspaces_index_.html#workspacewatchercompleteaction" class="tsd-signature-type">WorkspaceWatcherCompleteAction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TWorkspace</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_workspaces_index_.workspacewatchercontext.html" class="tsd-signature-type">WorkspaceWatcherContext</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TWorkspace</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -289,6 +355,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_workspaces_index_.html#workspacewatcher" class="tsd-kind-icon">Workspace<wbr>Watcher</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_workspaces_index_.html#workspacewatchercompleteaction" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Complete<wbr>Action</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_workspaces_index_.html#workspacewatcherresult" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Result</a>

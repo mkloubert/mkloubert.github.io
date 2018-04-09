@@ -169,6 +169,7 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_plugins_.pluginbase.html#candelete" class="tsd-kind-icon">can<wbr>Delete</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_plugins_.pluginbase.html#candownload" class="tsd-kind-icon">can<wbr>Download</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_plugins_.pluginbase.html#canlist" class="tsd-kind-icon">can<wbr>List</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_plugins_.pluginbase.html#canremovefolders" class="tsd-kind-icon">can<wbr>Remove<wbr>Folders</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_plugins_.pluginbase.html#canupload" class="tsd-kind-icon">can<wbr>Upload</a></li>
 							</ul>
 						</section>
@@ -188,6 +189,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.pluginbase.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected"><a href="_plugins_.pluginbase.html#getworkspaceoftarget" class="tsd-kind-icon">get<wbr>Workspace<wbr>OfTarget</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_plugins_.pluginbase.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_plugins_.pluginbase.html#ispathof" class="tsd-kind-icon">is<wbr>Path<wbr>Of</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_plugins_.pluginbase.html#listdirectory" class="tsd-kind-icon">list<wbr>Directory</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.pluginbase.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.pluginbase.html#listeners" class="tsd-kind-icon">listeners</a></li>
@@ -197,6 +199,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.pluginbase.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.pluginbase.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.pluginbase.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_plugins_.pluginbase.html#removefolders" class="tsd-kind-icon">remove<wbr>Folders</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.pluginbase.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_plugins_.pluginbase.html#replacewithvalues" class="tsd-kind-icon">replace<wbr>With<wbr>Values</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_plugins_.pluginbase.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
@@ -220,7 +223,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L638">plugins.ts:638</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L680">plugins.ts:680</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -301,7 +304,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#__file">__file</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L649">plugins.ts:649</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L691">plugins.ts:691</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -318,7 +321,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#__filepath">__filePath</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L651">plugins.ts:651</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L693">plugins.ts:693</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -335,7 +338,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#__index">__index</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L653">plugins.ts:653</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L695">plugins.ts:695</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -352,7 +355,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_plugins_.plugin.html">Plugin</a>.<a href="../interfaces/_plugins_.plugin.html#__type">__type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L655">plugins.ts:655</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L697">plugins.ts:697</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -368,7 +371,7 @@
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_plugins_.plugincontext.html" class="tsd-signature-type">PluginContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L644">plugins.ts:644</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L686">plugins.ts:686</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -449,7 +452,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L658">plugins.ts:658</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L700">plugins.ts:700</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -475,7 +478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L662">plugins.ts:662</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L704">plugins.ts:704</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -501,12 +504,38 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L666">plugins.ts:666</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L708">plugins.ts:708</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Gets if the plugin can list directories or not.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="canremovefolders" class="tsd-anchor"></a>
+					<h3>can<wbr>Remove<wbr>Folders</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> canRemoveFolders<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L712">plugins.ts:712</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets if the plugin can remove whole folders or not.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>inheritdoc</dt>
@@ -527,7 +556,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L670">plugins.ts:670</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L716">plugins.ts:716</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -631,7 +660,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L676">plugins.ts:676</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L722">plugins.ts:722</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -684,7 +713,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L681">plugins.ts:681</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L727">plugins.ts:727</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -762,7 +791,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L692">plugins.ts:692</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L738">plugins.ts:738</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -794,7 +823,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L713">plugins.ts:713</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L759">plugins.ts:759</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -852,7 +881,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L732">plugins.ts:732</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L778">plugins.ts:778</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -899,7 +928,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L743">plugins.ts:743</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L789">plugins.ts:789</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -909,6 +938,44 @@
 								</dl>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="ispathof" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> is<wbr>Path<wbr>Of</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Path<wbr>Of<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L800">plugins.ts:800</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if a path is part of the workspace of a target.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The underlying target.</p>
+									</div>
+								</li>
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path to check.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Is part of workspace or not.</p>
 						</li>
 					</ul>
 				</section>
@@ -922,7 +989,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L747">plugins.ts:747</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L810">plugins.ts:810</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1158,6 +1225,35 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removefolders" class="tsd-anchor"></a>
+					<h3>remove<wbr>Folders</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Folders<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_.removefolderscontext.html" class="tsd-signature-type">RemoveFoldersContext</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TTarget</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L815">plugins.ts:815</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <a href="../interfaces/_plugins_.removefolderscontext.html" class="tsd-signature-type">RemoveFoldersContext</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TTarget</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="removelistener" class="tsd-anchor"></a>
 					<h3>remove<wbr>Listener</h3>
@@ -1197,7 +1293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L760">plugins.ts:760</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L828">plugins.ts:828</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1264,7 +1360,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L782">plugins.ts:782</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L850">plugins.ts:850</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1305,7 +1401,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/plugins.ts#L796">plugins.ts:796</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/plugins.ts#L864">plugins.ts:864</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1366,27 +1462,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_plugins_.asyncfileclientpluginbase.html" class="tsd-kind-icon">Async<wbr>File<wbr>Client<wbr>Plugin<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_plugins_.filetodeletewrapper.html" class="tsd-kind-icon">File<wbr>ToDelete<wbr>Wrapper</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_plugins_.filetodownloadwrapper.html" class="tsd-kind-icon">File<wbr>ToDownload<wbr>Wrapper</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_plugins_.filetouploadbase.html" class="tsd-kind-icon">File<wbr>ToUpload<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_plugins_.filetouploadwrapper.html" class="tsd-kind-icon">File<wbr>ToUpload<wbr>Wrapper</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_plugins_.iterablepluginbase.html" class="tsd-kind-icon">Iterable<wbr>Plugin<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_plugins_.localfiletoupload.html" class="tsd-kind-icon">Local<wbr>File<wbr>ToUpload</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
@@ -1441,6 +1516,9 @@
 								<a href="_plugins_.pluginbase.html#canlist" class="tsd-kind-icon">can<wbr>List</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_plugins_.pluginbase.html#canremovefolders" class="tsd-kind-icon">can<wbr>Remove<wbr>Folders</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_plugins_.pluginbase.html#canupload" class="tsd-kind-icon">can<wbr>Upload</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
@@ -1482,6 +1560,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_plugins_.pluginbase.html#initialize" class="tsd-kind-icon">initialize</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="_plugins_.pluginbase.html#ispathof" class="tsd-kind-icon">is<wbr>Path<wbr>Of</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_plugins_.pluginbase.html#listdirectory" class="tsd-kind-icon">list<wbr>Directory</a>
 							</li>
@@ -1509,6 +1590,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_plugins_.pluginbase.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_plugins_.pluginbase.html#removefolders" class="tsd-kind-icon">remove<wbr>Folders</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_plugins_.pluginbase.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
 							</li>
@@ -1531,102 +1615,6 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_plugins_.simplefiletodelete.html" class="tsd-kind-icon">Simple<wbr>File<wbr>ToDelete</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_plugins_.simplefiletodownload.html" class="tsd-kind-icon">Simple<wbr>File<wbr>ToDownload</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_plugins_.asyncfileclientplugincontext.html" class="tsd-kind-icon">Async<wbr>File<wbr>Client<wbr>Plugin<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_plugins_.deletecontext.html" class="tsd-kind-icon">Delete<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_plugins_.downloadcontext.html" class="tsd-kind-icon">Download<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_.downloadedfile.html" class="tsd-kind-icon">Downloaded<wbr>File</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_.filetodelete.html" class="tsd-kind-icon">File<wbr>ToDelete</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_.filetodownload.html" class="tsd-kind-icon">File<wbr>ToDownload</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_.filetoupload.html" class="tsd-kind-icon">File<wbr>ToUpload</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_plugins_.filescontext.html" class="tsd-kind-icon">Files<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_plugins_.listdirectorycontext.html" class="tsd-kind-icon">List<wbr>Directory<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_plugins_.listdirectoryresult.html" class="tsd-kind-icon">List<wbr>Directory<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_plugins_.plugin.html" class="tsd-kind-icon">Plugin</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_.plugincontext.html" class="tsd-kind-icon">Plugin<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_plugins_.pluginmodule.html" class="tsd-kind-icon">Plugin<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_plugins_.targetcontext.html" class="tsd-kind-icon">Target<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../interfaces/_plugins_.uploadcontext.html" class="tsd-kind-icon">Upload<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#beforedeletefilecallback" class="tsd-kind-icon">Before<wbr>Delete<wbr>File<wbr>Callback</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#beforedownloadfilecallback" class="tsd-kind-icon">Before<wbr>Download<wbr>File<wbr>Callback</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#beforeuploadfilecallback" class="tsd-kind-icon">Before<wbr>Upload<wbr>File<wbr>Callback</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#deletefilecompletedcallback" class="tsd-kind-icon">Delete<wbr>File<wbr>Completed<wbr>Callback</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#downloadfilecompletedcallback" class="tsd-kind-icon">Download<wbr>File<wbr>Completed<wbr>Callback</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#initializepluginresult" class="tsd-kind-icon">Initialize<wbr>Plugin<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#newplugins" class="tsd-kind-icon">New<wbr>Plugins</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_plugins_.html#preparebasetargetresult" class="tsd-kind-icon">Prepare<wbr>Base<wbr>Target<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#preparetargetsresult" class="tsd-kind-icon">Prepare<wbr>Targets<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#uploadfilecompletedcallback" class="tsd-kind-icon">Upload<wbr>File<wbr>Completed<wbr>Callback</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#candelete" class="tsd-kind-icon">can<wbr>Delete</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#candownload" class="tsd-kind-icon">can<wbr>Download</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#canlist" class="tsd-kind-icon">can<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#canupload" class="tsd-kind-icon">can<wbr>Upload</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_plugins_.html#createdownloadedfilefrombuffer" class="tsd-kind-icon">create<wbr>Downloaded<wbr>File<wbr>From<wbr>Buffer</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

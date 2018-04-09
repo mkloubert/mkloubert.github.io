@@ -86,7 +86,6 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_deploy_.html#key_scm_commit_file_filters" class="tsd-kind-icon">KEY_<wbr>SCM_<wbr>COMMIT_<wbr>FILE_<wbr>FILTERS</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_deploy_.html#nextcancelbtncommandid" class="tsd-kind-icon">next<wbr>Cancel<wbr>Btn<wbr>Command<wbr>Id</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -97,11 +96,13 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_deploy_.html#deployfilelist" class="tsd-kind-icon">deploy<wbr>File<wbr>List</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_deploy_.html#deployfileto" class="tsd-kind-icon">deploy<wbr>File<wbr>To</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_deploy_.html#deployfilesto" class="tsd-kind-icon">deploy<wbr>Files<wbr>To</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_deploy_.html#deployfilestowithprogress" class="tsd-kind-icon">deploy<wbr>Files<wbr>ToWith<wbr>Progress</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_deploy_.html#deployonchange" class="tsd-kind-icon">deploy<wbr>OnChange</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_deploy_.html#deployonsave" class="tsd-kind-icon">deploy<wbr>OnSave</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_deploy_.html#deploypackage" class="tsd-kind-icon">deploy<wbr>Package</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_deploy_.html#deployscmcommit" class="tsd-kind-icon">deploy<wbr>Scm<wbr>Commit</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_deploy_.html#deployuncommitedscmchanges" class="tsd-kind-icon">deploy<wbr>Uncommited<wbr>Scm<wbr>Changes</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_deploy_.html#registerdeploycommands" class="tsd-kind-icon">register<wbr>Deploy<wbr>Commands</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_deploy_.html#savebeforedeploy" class="tsd-kind-icon">save<wbr>Before<wbr>Deploy</a></li>
 							</ul>
 						</section>
@@ -116,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">Scm<wbr>File<wbr>Filter<wbr>Storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L46">deploy.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L46">deploy.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -137,17 +138,7 @@
 					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>SCM_<wbr>COMMIT_<wbr>FILE_<wbr>FILTERS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vscdrScmCommitFileFilters"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vscdrScmCommitFileFilters&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L48">deploy.ts:48</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="nextcancelbtncommandid" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagLet">Let</span> next<wbr>Cancel<wbr>Btn<wbr>Command<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">next<wbr>Cancel<wbr>Btn<wbr>Command<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Number.MIN_SAFE_INTEGER</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L49">deploy.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L48">deploy.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,13 +149,13 @@
 					<a name="checkbeforedeploy" class="tsd-anchor"></a>
 					<h3>check<wbr>Before<wbr>Deploy</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">check<wbr>Before<wbr>Deploy<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_.plugin.html" class="tsd-signature-type">Plugin</a>, files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, mappingScopeDirs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, cancelToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.CancellationToken</span>, isCancelling<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Before<wbr>Deploy<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, plugin<span class="tsd-signature-symbol">: </span><a href="../interfaces/_plugins_.plugin.html" class="tsd-signature-type">Plugin</a>, files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, mappingScopeDirs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, cancelToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.CancellationToken</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L52">deploy.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L50">deploy.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -184,21 +175,6 @@
 								<li>
 									<h5>cancelToken: <span class="tsd-signature-type">vscode.CancellationToken</span></h5>
 								</li>
-								<li>
-									<h5>isCancelling: <span class="tsd-signature-type">function</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
@@ -214,7 +190,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L301">deploy.ts:301</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L290">deploy.ts:290</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -245,7 +221,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L387">deploy.ts:387</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L376">deploy.ts:376</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -276,7 +252,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L827">deploy.ts:827</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L876">deploy.ts:876</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -313,7 +289,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L417">deploy.ts:417</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L406">deploy.ts:406</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -346,6 +322,38 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="deployfilestowithprogress" class="tsd-anchor"></a>
+					<h3>deploy<wbr>Files<wbr>ToWith<wbr>Progress</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">deploy<wbr>Files<wbr>ToWith<wbr>Progress<span class="tsd-signature-symbol">(</span>progress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ProgressContext</span>, files<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, fileListReloader<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">deploy_contracts.Reloader</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L426">deploy.ts:426</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>progress: <span class="tsd-signature-type">ProgressContext</span></h5>
+								</li>
+								<li>
+									<h5>files: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+								</li>
+								<li>
+									<h5>fileListReloader: <span class="tsd-signature-type">deploy_contracts.Reloader</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="deployonchange" class="tsd-anchor"></a>
 					<h3>deploy<wbr>OnChange</h3>
@@ -356,7 +364,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L939">deploy.ts:939</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L988">deploy.ts:988</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -387,7 +395,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L961">deploy.ts:961</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L1010">deploy.ts:1010</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,7 +426,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L858">deploy.ts:858</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L907">deploy.ts:907</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -455,7 +463,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L984">deploy.ts:984</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L1033">deploy.ts:1033</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -492,7 +500,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L1130">deploy.ts:1130</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L1179">deploy.ts:1179</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -519,6 +527,37 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="registerdeploycommands" class="tsd-anchor"></a>
+					<h3>register<wbr>Deploy<wbr>Commands</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Deploy<wbr>Commands<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L1244">deploy.ts:1244</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Registers commands for deploy operations.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The extension context.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="savebeforedeploy" class="tsd-anchor"></a>
 					<h3>save<wbr>Before<wbr>Deploy</h3>
@@ -529,7 +568,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/deploy.ts#L1190">deploy.ts:1190</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/deploy.ts#L1456">deploy.ts:1456</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -569,9 +608,6 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_deploy_.html#key_scm_commit_file_filters" class="tsd-kind-icon">KEY_<wbr>SCM_<wbr>COMMIT_<wbr>FILE_<wbr>FILTERS</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_deploy_.html#nextcancelbtncommandid" class="tsd-kind-icon">next<wbr>Cancel<wbr>Btn<wbr>Command<wbr>Id</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_deploy_.html#checkbeforedeploy" class="tsd-kind-icon">check<wbr>Before<wbr>Deploy</a>
 					</li>
@@ -587,6 +623,9 @@
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_deploy_.html#deployfilesto" class="tsd-kind-icon">deploy<wbr>Files<wbr>To</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_deploy_.html#deployfilestowithprogress" class="tsd-kind-icon">deploy<wbr>Files<wbr>ToWith<wbr>Progress</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_deploy_.html#deployonchange" class="tsd-kind-icon">deploy<wbr>OnChange</a>
 					</li>
@@ -601,6 +640,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_deploy_.html#deployuncommitedscmchanges" class="tsd-kind-icon">deploy<wbr>Uncommited<wbr>Scm<wbr>Changes</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_deploy_.html#registerdeploycommands" class="tsd-kind-icon">register<wbr>Deploy<wbr>Commands</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_deploy_.html#savebeforedeploy" class="tsd-kind-icon">save<wbr>Before<wbr>Deploy</a>

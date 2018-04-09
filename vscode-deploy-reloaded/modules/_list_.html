@@ -73,7 +73,6 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_list_.pullallfilesfromdircallbacks.html" class="tsd-kind-icon">Pull<wbr>All<wbr>Files<wbr>From<wbr>Dir<wbr>Callbacks</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_list_.syncfoldersactionoptions.html" class="tsd-kind-icon">Sync<wbr>Folders<wbr>Action<wbr>Options</a></li>
 							</ul>
 						</section>
@@ -97,6 +96,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_list_.html#createselectfileaction" class="tsd-kind-icon">create<wbr>Select<wbr>File<wbr>Action</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_list_.html#listdirectory" class="tsd-kind-icon">list<wbr>Directory</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_list_.html#pullallfilesfromdir" class="tsd-kind-icon">pull<wbr>All<wbr>Files<wbr>From<wbr>Dir</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_list_.html#removefolder" class="tsd-kind-icon">remove<wbr>Folder</a></li>
 							</ul>
 						</section>
 					</div>
@@ -110,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">Sync<wbr>Folders<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/list.ts#L40">list.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/list.ts#L35">list.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -118,7 +118,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, sourceDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, transformer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">deploy_transformers.DataTransformer</span>, cancelBtn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.StatusBarItem</span>, cancelTokenSrc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.CancellationTokenSource</span>, callbacks<span class="tsd-signature-symbol">: </span><a href="../interfaces/_list_.pullallfilesfromdircallbacks.html" class="tsd-signature-type">PullAllFilesFromDirCallbacks</a>, recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, depth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, maxDepth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, sourceDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, transformer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">deploy_transformers.DataTransformer</span>, progress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ProgressContext</span>, recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, depth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, maxDepth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -137,13 +137,7 @@
 												<h5>transformer: <span class="tsd-signature-type">deploy_transformers.DataTransformer</span></h5>
 											</li>
 											<li>
-												<h5>cancelBtn: <span class="tsd-signature-type">vscode.StatusBarItem</span></h5>
-											</li>
-											<li>
-												<h5>cancelTokenSrc: <span class="tsd-signature-type">vscode.CancellationTokenSource</span></h5>
-											</li>
-											<li>
-												<h5>callbacks: <a href="../interfaces/_list_.pullallfilesfromdircallbacks.html" class="tsd-signature-type">PullAllFilesFromDirCallbacks</a></h5>
+												<h5>progress: <span class="tsd-signature-type">ProgressContext</span></h5>
 											</li>
 											<li>
 												<h5>recursive: <span class="tsd-signature-type">boolean</span></h5>
@@ -155,10 +149,7 @@
 												<h5><span class="tsd-flag ts-flagOptional">Optional</span> maxDepth: <span class="tsd-signature-type">number</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span>
-											<span class="tsd-signature-symbol"> | </span>
-											<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span>
-										</h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -174,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">next<wbr>Pull<wbr>Cancel<wbr>Btn<wbr>Command<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Number.MIN_SAFE_INTEGER</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/list.ts#L67">list.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/list.ts#L52">list.ts:52</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -191,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/list.ts#L69">list.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/list.ts#L54">list.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -214,7 +205,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/list.ts#L85">list.ts:85</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/list.ts#L70">list.ts:70</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -240,7 +231,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/list.ts#L144">list.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/list.ts#L129">list.ts:129</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -269,7 +260,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/list.ts#L203">list.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/list.ts#L188">list.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -297,13 +288,13 @@
 					<a name="pullallfilesfromdir" class="tsd-anchor"></a>
 					<h3>pull<wbr>All<wbr>Files<wbr>From<wbr>Dir</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">pull<wbr>All<wbr>Files<wbr>From<wbr>Dir<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, sourceDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, transformer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">deploy_transformers.DataTransformer</span>, cancelBtn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.StatusBarItem</span>, cancelTokenSrc<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.CancellationTokenSource</span>, callbacks<span class="tsd-signature-symbol">: </span><a href="../interfaces/_list_.pullallfilesfromdircallbacks.html" class="tsd-signature-type">PullAllFilesFromDirCallbacks</a>, recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, depth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, maxDepth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">pull<wbr>All<wbr>Files<wbr>From<wbr>Dir<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, sourceDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, targetDir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, transformer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">deploy_transformers.DataTransformer</span>, progress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ProgressContext</span>, recursive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, depth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, maxDepth<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/d1bb9d3/src/list.ts#L787">list.ts:787</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/list.ts#L701">list.ts:701</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -321,13 +312,7 @@
 									<h5>transformer: <span class="tsd-signature-type">deploy_transformers.DataTransformer</span></h5>
 								</li>
 								<li>
-									<h5>cancelBtn: <span class="tsd-signature-type">vscode.StatusBarItem</span></h5>
-								</li>
-								<li>
-									<h5>cancelTokenSrc: <span class="tsd-signature-type">vscode.CancellationTokenSource</span></h5>
-								</li>
-								<li>
-									<h5>callbacks: <a href="../interfaces/_list_.pullallfilesfromdircallbacks.html" class="tsd-signature-type">PullAllFilesFromDirCallbacks</a></h5>
+									<h5>progress: <span class="tsd-signature-type">ProgressContext</span></h5>
 								</li>
 								<li>
 									<h5>recursive: <span class="tsd-signature-type">boolean</span></h5>
@@ -337,6 +322,35 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> maxDepth: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="removefolder" class="tsd-anchor"></a>
+					<h3>remove<wbr>Folder</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Folder<span class="tsd-signature-symbol">(</span>target<span class="tsd-signature-symbol">: </span><a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a>, dir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, progress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ProgressContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/0fbe865/src/list.ts#L970">list.ts:970</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>target: <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a></h5>
+								</li>
+								<li>
+									<h5>dir: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>progress: <span class="tsd-signature-type">ProgressContext</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -358,9 +372,6 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../interfaces/_list_.pullallfilesfromdircallbacks.html" class="tsd-kind-icon">Pull<wbr>All<wbr>Files<wbr>From<wbr>Dir<wbr>Callbacks</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_list_.syncfoldersactionoptions.html" class="tsd-kind-icon">Sync<wbr>Folders<wbr>Action<wbr>Options</a>
 					</li>
@@ -384,6 +395,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_list_.html#pullallfilesfromdir" class="tsd-kind-icon">pull<wbr>All<wbr>Files<wbr>From<wbr>Dir</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_list_.html#removefolder" class="tsd-kind-icon">remove<wbr>Folder</a>
 					</li>
 				</ul>
 			</nav>

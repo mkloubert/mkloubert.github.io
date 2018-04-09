@@ -122,6 +122,7 @@
 									<li><a href="#registerworkspacewatcher-">registerWorkspaceWatcher</a></li>
 									<li><a href="#readall-">readAll</a></li>
 									<li><a href="#sleep-">sleep</a></li>
+									<li><a href="#startwatch-">startWatch</a></li>
 									<li><a href="#toarray-">toArray</a></li>
 									<li><a href="#tobooleansafe-">toBooleanSafe</a></li>
 									<li><a href="#toeol-">toEOL</a></li>
@@ -140,6 +141,7 @@
 									<li><a href="#cacheproviderbase-">CacheProviderBase</a></li>
 									<li><a href="#disposablebase-">DisposableBase</a></li>
 									<li><a href="#memorycache-">MemoryCache</a></li>
+									<li><a href="#stopwatch-">StopWatch</a></li>
 									<li><a href="#workspacebase-">WorkspaceBase</a></li>
 								</ul>
 							</li>
@@ -634,6 +636,13 @@ vscode_helpers.registerWorkspaceWatcher(<span class="hljs-keyword">async</span> 
     <span class="hljs-comment">// is invoked on error</span>
 });
 </code></pre>
+				<h4 id="startwatch-uarr-functions-">startWatch [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> WATCH = vscode_helpers.startWatch();
+
+vscode_helpers.sleep(<span class="hljs-number">1000</span>).then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> MS = WATCH.stop();  <span class="hljs-comment">// 'MS' should be a least 1000    </span>
+});
+</code></pre>
 				<h4 id="tobooleansafe-uarr-functions-">toBooleanSafe [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> bool_1 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">true</span> );  <span class="hljs-comment">// (true)</span>
 <span class="hljs-keyword">const</span> bool_2 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// (false)</span>
@@ -784,6 +793,14 @@ CACHE.has(<span class="hljs-string">'a'</span>);  <span class="hljs-comment">// 
 CACHE.unset(<span class="hljs-string">'a'</span>);
 CACHE.has(<span class="hljs-string">'a'</span>);  <span class="hljs-comment">// (false)</span>
 </code></pre>
+				<h4 id="stopwatch-uarr-classes-">StopWatch [<a href="#classes-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> WATCH = <span class="hljs-keyword">new</span> vscode_helpers.StopWatch();
+WATCH.start();
+
+vscode_helpers.sleep(<span class="hljs-number">1000</span>).then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> MS = WATCH.stop();  <span class="hljs-comment">// 'MS' should be a least 1000    </span>
+});
+</code></pre>
 				<h4 id="workspacebase-uarr-classes-">WorkspaceBase [<a href="#classes-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { ConfigurationChangeEvent, Uri } <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
 
@@ -874,6 +891,9 @@ vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_progress_index_.html">"progress/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_timers_index_.html">"timers/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_workflows_index_.html">"workflows/index"</a>

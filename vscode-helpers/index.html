@@ -157,18 +157,18 @@
 					<li><a href="#support-and-contribute-">Support and contribute</a></li>
 					<li><a href="#documentation-">Documentation</a></li>
 				</ol>
-				<h2 id="install-uarr-table-of-contents-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="install-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>From your project, run the following command:</p>
 				<pre><code class="lang-bash">npm install --save vscode-helpers
 </code></pre>
-				<h2 id="usage-uarr-table-of-contents-">Usage [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="usage-">Usage [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<pre><code class="lang-typescript"><span class="hljs-comment">// plain JavaScript</span>
 <span class="hljs-keyword">const</span> vscode_helpers = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode-helpers'</span>);
 
 <span class="hljs-comment">// the TypeScript way</span>
 <span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> vscode_helpers <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode-helpers'</span>;
 </code></pre>
-				<h2 id="examples-uarr-table-of-contents-">Examples [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="examples-">Examples [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>An example of a <a href="https://code.visualstudio.com/docs/editor/multi-root-workspaces">multi-root workspace</a> ready extension (<code>extension.ts</code>):</p>
 				<pre><code class="lang-typescript"><span class="hljs-meta">'use strict'</span>;
 
@@ -227,8 +227,8 @@
     //<span class="hljs-params">TODO</span>
 }</span>
 </code></pre>
-				<h3 id="functions-uarr-examples-">Functions [<a href="#examples-">&uarr;</a>]</h3>
-				<h4 id="applyfuncfor-uarr-functions-">applyFuncFor [<a href="#functions-">&uarr;</a>]</h4>
+				<h3 id="functions-">Functions [<a href="#examples-">&uarr;</a>]</h3>
+				<h4 id="applyfuncfor-">applyFuncFor [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ = { factor: <span class="hljs-number">1000</span> };
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myTestFunc</span>(<span class="hljs-params">a, b</span>) </span>{
@@ -241,13 +241,13 @@
 
 APPLIED_FUNC(<span class="hljs-number">5979</span>, <span class="hljs-number">23979</span>);  <span class="hljs-comment">// 29958000</span>
 </code></pre>
-				<h4 id="asarray-uarr-functions-">asArray [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="asarray-">asArray [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> ARR_1 = vscode_helpers.asArray([ <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-literal">undefined</span> ]);  <span class="hljs-comment">// [ 0, 1, 3, 4 ]</span>
 <span class="hljs-keyword">const</span> ARR_2 = vscode_helpers.asArray([ <span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-literal">undefined</span> ], <span class="hljs-literal">false</span>);  <span class="hljs-comment">// [ 0, 1, null, 3, 4, undefined ]</span>
 <span class="hljs-keyword">const</span> ARR_3 = vscode_helpers.asArray( <span class="hljs-number">5979</span> );  <span class="hljs-comment">// [ 5979 ]</span>
 <span class="hljs-keyword">const</span> ARR_4 = vscode_helpers.asArray( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// [ ]</span>
 </code></pre>
-				<h4 id="asbuffer-uarr-functions-">asBuffer [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="asbuffer-">asBuffer [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
 <span class="hljs-keyword">const</span> STREAM = fs.createReadStream(<span class="hljs-string">'./my-file.txt'</span>);
@@ -258,21 +258,21 @@ asBuffer( STREAM ).then(<span class="hljs-function">(<span class="hljs-params">d
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
-				<h4 id="aslocaltime-uarr-functions-">asLocalTime [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="aslocaltime-">asLocalTime [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
 
 <span class="hljs-keyword">let</span> utcNow = Moment.utc();
 <span class="hljs-keyword">let</span> localNow = vscode_helpers.asLocalTime( utcNow );  <span class="hljs-comment">// can also be a string</span>
                                                       <span class="hljs-comment">// or Date object</span>
 </code></pre>
-				<h4 id="asutc-uarr-functions-">asUTC [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="asutc-">asUTC [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Moment <span class="hljs-keyword">from</span> <span class="hljs-string">'moment'</span>;
 
 <span class="hljs-keyword">let</span> localNow = Moment();
 <span class="hljs-keyword">let</span> utcNow = vscode_helpers.asUTC( localNow );  <span class="hljs-comment">// can also be a string</span>
                                                 <span class="hljs-comment">// or Date object</span>
 </code></pre>
-				<h4 id="buildworkflow-uarr-functions-">buildWorkflow [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="buildworkflow-">buildWorkflow [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> WORKFLOW = vscode_helpers.buildWorkflow()
     .next(<span class="hljs-function">(<span class="hljs-params">prevValue: <span class="hljs-literal">undefined</span>, context: vscode_helpers.WorkflowActionContext</span>) =&gt;</span> {
               context.value = <span class="hljs-number">1000</span>;
@@ -294,13 +294,13 @@ WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">res
     <span class="hljs-comment">// this only happens on error</span>
 });
 </code></pre>
-				<h4 id="cloneobject-uarr-functions-">cloneObject [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="cloneobject-">cloneObject [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CLONED_OBJ = vscode_helpers.cloneObject({
     mk: <span class="hljs-number">23979</span>,
     tm: <span class="hljs-number">5979</span>,
 });
 </code></pre>
-				<h4 id="cloneobjectflat-uarr-functions-">cloneObjectFlat [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="cloneobjectflat-">cloneObjectFlat [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CLONED_OBJ = vscode_helpers.cloneObjectFlat({
     mk: <span class="hljs-number">23979</span>,
     tm: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a</span>) </span>{
@@ -311,7 +311,7 @@ WORKFLOW.start().then(<span class="hljs-function">(<span class="hljs-params">res
 CLONED_OBJ.mk = <span class="hljs-number">1000</span>;
 CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment">// 11.958.000.000 === 2000 * (5979 * 1000)</span>
 </code></pre>
-				<h4 id="comparevalues-uarr-functions-">compareValues [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="comparevalues-">compareValues [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> VAL_1 = <span class="hljs-number">1</span>;
 <span class="hljs-keyword">const</span> VAL_2 = <span class="hljs-number">2</span>;
 
@@ -321,7 +321,7 @@ CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment
     <span class="hljs-keyword">return</span> vscode_helpers.compareValues(y, x);
 });
 </code></pre>
-				<h4 id="comparevaluesby-uarr-functions-">compareValuesBy [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="comparevaluesby-">compareValuesBy [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ_1 = { sortValue: <span class="hljs-number">1</span> };
 <span class="hljs-keyword">const</span> OBJ_2 = { sortValue: <span class="hljs-number">2</span> };
 
@@ -332,14 +332,14 @@ CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment
                                           <span class="hljs-function"><span class="hljs-params">i</span> =&gt;</span> i.sortValue);
 });
 </code></pre>
-				<h4 id="createdirectoryifneeded-uarr-functions-">createDirectoryIfNeeded [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="createdirectoryifneeded-">createDirectoryIfNeeded [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.createDirectoryIfNeeded(<span class="hljs-string">'/dir/to/create'</span>).then(<span class="hljs-function">(<span class="hljs-params">hasBeenCreated: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
     <span class="hljs-comment">// hasBeenCreated === (false), if directory already exists</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
-				<h4 id="createcompletedaction-uarr-functions-">createCompletedAction [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="createcompletedaction-">createCompletedAction [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loadMyFileAsync</span>(<span class="hljs-params"></span>) </span>{
@@ -352,14 +352,14 @@ CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment
     }</span>);
 }</span>
 </code></pre>
-				<h4 id="createinterval-uarr-functions-">createInterval [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="createinterval-">createInterval [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> INTERVAL = vscode_helpers.createInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">//TODO</span>
 }, <span class="hljs-number">1000</span>);
 
 INTERVAL.dispose();  <span class="hljs-comment">// same as 'clearInterval'</span>
 </code></pre>
-				<h4 id="createlogger-uarr-functions-">createLogger [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="createlogger-">createLogger [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
 <span class="hljs-keyword">const</span> LOGGER = vscode_helpers.createLogger(<span class="hljs-function">(<span class="hljs-params">log</span>) =&gt;</span> {
@@ -368,26 +368,26 @@ INTERVAL.dispose();  <span class="hljs-comment">// same as 'clearInterval'</span
 
 LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 </code></pre>
-				<h4 id="createtimeout-uarr-functions-">createTimeout [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="createtimeout-">createTimeout [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> TIMEOUT = vscode_helpers.createTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">//TODO</span>
 }, <span class="hljs-number">10000</span>);
 
 TIMEOUT.dispose();  <span class="hljs-comment">// same as 'clearTimeout'</span>
 </code></pre>
-				<h4 id="doesmatch-uarr-functions-">doesMatch [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="doesmatch-">doesMatch [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.doesMatch(<span class="hljs-string">'my-file.txt'</span>, <span class="hljs-string">'*.txt'</span>);  <span class="hljs-comment">// (true)</span>
 vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <span class="hljs-string">'*.txt'</span> ]);  <span class="hljs-comment">// (false)</span>
 vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <span class="hljs-string">'*.txt'</span>, <span class="hljs-string">'*.jpg'</span> ]);  <span class="hljs-comment">// (true)</span>
 </code></pre>
-				<h4 id="exists-uarr-functions-">exists [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="exists-">exists [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.exists(<span class="hljs-string">'/path/of/thing/to/check'</span>, <span class="hljs-function">(<span class="hljs-params">doesExist: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
     <span class="hljs-comment">//TODO    </span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
-				<h4 id="foreachasync-uarr-functions-">forEachAsync [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="foreachasync-">forEachAsync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.forEachAsync([ <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span> ], <span class="hljs-keyword">async</span> (item, index) =&gt; {
     <span class="hljs-comment">// [index === 0] =&gt; item === 5979</span>
     <span class="hljs-comment">// [index === 1] =&gt; item === 23979</span>
@@ -399,7 +399,7 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
-				<h4 id="format-uarr-functions-">format [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="format-">format [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-comment">// "MK:23979 + TM: '5979'"</span>
 <span class="hljs-keyword">let</span> str_1 = vscode_helpers.format(
     <span class="hljs-string">'MK:{1} + TM:{0:trim,surround,leading_space}'</span>,
@@ -407,14 +407,14 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
     <span class="hljs-number">23979</span>
 );
 </code></pre>
-				<h4 id="formatarray-uarr-functions-">formatArray [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="formatarray-">formatArray [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-comment">// "MK:23979 + TM: '5979'"</span>
 <span class="hljs-keyword">let</span> str_1 = vscode_helpers.formatArray(
     <span class="hljs-string">'MK:{1} + TM:{0:trim,surround,leading_space}'</span>,
     [ <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span> ]
 );
 </code></pre>
-				<h4 id="from-uarr-functions-">from [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="from-">from [<a href="#functions-">&uarr;</a>]</h4>
 				<p>s. <a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a></p>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> seq = vscode_helpers.from([ <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span> ])  <span class="hljs-comment">// can also be a generator</span>
                                             <span class="hljs-comment">// or string</span>
@@ -427,12 +427,12 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
     <span class="hljs-comment">// [1] '1'</span>
 }
 </code></pre>
-				<h4 id="frommarkdown-uarr-functions-">fromMarkdown [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="frommarkdown-">fromMarkdown [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> htmlFromMarkdown = vscode_helpers.fromMarkdown(
     <span class="hljs-string">'Vessel     | Captain\n-----------|-------------\nNCC-1701   | James T Kirk\nNCC-1701 A | James T Kirk\nNCC-1701 D | Picard'</span>
 );
 </code></pre>
-				<h4 id="glob-uarr-functions-">glob [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="glob-">glob [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.glob([ <span class="hljs-string">'**/*.txt'</span> ], {
     cwd: <span class="hljs-string">'/path/to/directory'</span>,
     ignore: [ <span class="hljs-string">'/log/**/*'</span> ],
@@ -443,14 +443,14 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
-				<h4 id="globsync-uarr-functions-">globSync [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="globsync-">globSync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> matches: <span class="hljs-built_in">string</span>[] = vscode_helpers.globSync([ <span class="hljs-string">'**/*.txt'</span> ], {
     cwd: <span class="hljs-string">'/path/to/directory'</span>,
     ignore: [ <span class="hljs-string">'/log/**/*'</span> ],
     root: <span class="hljs-string">'/path/to/directory'</span>,
 });
 </code></pre>
-				<h4 id="invokeafter-uarr-functions-">invokeAfter [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="invokeafter-">invokeAfter [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.invokeAfter(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">// this is invoked after 5979 milliseconds</span>
     <span class="hljs-keyword">return</span> <span class="hljs-number">23979</span>;
@@ -460,7 +460,7 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
     <span class="hljs-comment">// is invoked on error</span>
 });
 </code></pre>
-				<h4 id="isbinarycontent-uarr-functions-">isBinaryContent [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isbinarycontent-">isBinaryContent [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
 vscode_helpers.isBinaryContent( fs.readFileSync(<span class="hljs-string">'./myPic.jpg'</span>) ).then(<span class="hljs-function">(<span class="hljs-params">isBinary</span>) =&gt;</span> {
@@ -474,7 +474,7 @@ vscode_helpers.isBinaryContent( fs.readFileSync(<span class="hljs-string">'./myT
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
-				<h4 id="isbinarycontentsync-uarr-functions-">isBinaryContentSync [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isbinarycontentsync-">isBinaryContentSync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
 <span class="hljs-comment">// should be (true)</span>
@@ -482,82 +482,82 @@ vscode_helpers.isBinaryContentSync( fs.readFileSync(<span class="hljs-string">'.
 <span class="hljs-comment">// should be (false)</span>
 vscode_helpers.isBinaryContentSync( fs.readFileSync(<span class="hljs-string">'./myText.txt'</span>) );
 </code></pre>
-				<h4 id="isblockdevice-uarr-functions-">isBlockDevice [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isblockdevice-">isBlockDevice [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.isBlockDevice(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isABlockDevice</span>) =&gt;</span> {
     <span class="hljs-comment">// TODO</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 })
 </code></pre>
-				<h4 id="isblockdevicesync-uarr-functions-">isBlockDeviceSync [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isblockdevicesync-">isBlockDeviceSync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_BLOCK_DEVICE: <span class="hljs-built_in">boolean</span> = vscode_helpers.isBlockDeviceSync(<span class="hljs-string">'/path/to/check'</span>);
 </code></pre>
-				<h4 id="ischaracterdevice-uarr-functions-">isCharacterDevice [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="ischaracterdevice-">isCharacterDevice [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.isCharacterDevice(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isACharacterDevice</span>) =&gt;</span> {
     <span class="hljs-comment">// TODO</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 })
 </code></pre>
-				<h4 id="ischaracterdevicesync-uarr-functions-">isCharacterDeviceSync [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="ischaracterdevicesync-">isCharacterDeviceSync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_CHARACTER_DEVICE: <span class="hljs-built_in">boolean</span> = vscode_helpers.isCharacterDeviceSync(<span class="hljs-string">'/path/to/check'</span>);
 </code></pre>
-				<h4 id="isdirectory-uarr-functions-">isDirectory [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isdirectory-">isDirectory [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.isDirectory(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isADirectory</span>) =&gt;</span> {
     <span class="hljs-comment">// TODO</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 })
 </code></pre>
-				<h4 id="isdirectorysync-uarr-functions-">isDirectorySync [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isdirectorysync-">isDirectorySync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_DIRECTORY: <span class="hljs-built_in">boolean</span> = vscode_helpers.isDirectorySync(<span class="hljs-string">'/path/to/check'</span>);
 </code></pre>
-				<h4 id="isemptystring-uarr-functions-">isEmptyString [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isemptystring-">isEmptyString [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.isEmptyString( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// (true)</span>
 vscode_helpers.isEmptyString( <span class="hljs-literal">undefined</span> );  <span class="hljs-comment">// (true)</span>
 vscode_helpers.isEmptyString( <span class="hljs-string">'123'</span> );  <span class="hljs-comment">// (false)</span>
 </code></pre>
-				<h4 id="isfifo-uarr-functions-">isFIFO [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isfifo-">isFIFO [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.isFIFO(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isAFIFO</span>) =&gt;</span> {
     <span class="hljs-comment">// TODO</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 })
 </code></pre>
-				<h4 id="isfifosync-uarr-functions-">isFIFOSync [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isfifosync-">isFIFOSync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_FIFO: <span class="hljs-built_in">boolean</span> = vscode_helpers.isFIFOSync(<span class="hljs-string">'/path/to/check'</span>);
 </code></pre>
-				<h4 id="isfile-uarr-functions-">isFile [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isfile-">isFile [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.isFile(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isAFile</span>) =&gt;</span> {
     <span class="hljs-comment">// TODO</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 })
 </code></pre>
-				<h4 id="isfilesync-uarr-functions-">isFileSync [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="isfilesync-">isFileSync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_FILE: <span class="hljs-built_in">boolean</span> = vscode_helpers.isFileSync(<span class="hljs-string">'/path/to/check'</span>);
 </code></pre>
-				<h4 id="issocket-uarr-functions-">isSocket [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="issocket-">isSocket [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.isSocket(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isASocket</span>) =&gt;</span> {
     <span class="hljs-comment">// TODO</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 })
 </code></pre>
-				<h4 id="issocketsync-uarr-functions-">isSocketSync [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="issocketsync-">isSocketSync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_SOCKET: <span class="hljs-built_in">boolean</span> = vscode_helpers.isSocketSync(<span class="hljs-string">'/path/to/check'</span>);
 </code></pre>
-				<h4 id="issymboliclink-uarr-functions-">isSymbolicLink [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="issymboliclink-">isSymbolicLink [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.isSymbolicLink(<span class="hljs-string">'/path/to/check'</span>).then(<span class="hljs-function">(<span class="hljs-params">isASymbolicLink</span>) =&gt;</span> {
     <span class="hljs-comment">// TODO</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 })
 </code></pre>
-				<h4 id="issymboliclinksync-uarr-functions-">isSymbolicLinkSync [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="issymboliclinksync-">isSymbolicLinkSync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> IS_A_SYMBOLIC_LINK: <span class="hljs-built_in">boolean</span> = vscode_helpers.isSymbolicLinkSync(<span class="hljs-string">'/path/to/check'</span>);
 </code></pre>
-				<h4 id="loadmodule-uarr-functions-">loadModule [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="loadmodule-">loadModule [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">interface</span> MyModule {
     execute(): <span class="hljs-built_in">any</span>;
 }
@@ -566,7 +566,7 @@ vscode_helpers.isEmptyString( <span class="hljs-string">'123'</span> );  <span c
 
 <span class="hljs-keyword">let</span> modResult = mod.execute();
 </code></pre>
-				<h3 id="makenondisposable-uarr-functions-">makeNonDisposable [<a href="#functions-">&uarr;</a>]</h3>
+				<h3 id="makenondisposable-">makeNonDisposable [<a href="#functions-">&uarr;</a>]</h3>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ = {
     dispose: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Disposed!'</span>);
@@ -579,17 +579,17 @@ OBJ_1.dispose();  <span class="hljs-comment">// does nothing</span>
 <span class="hljs-keyword">const</span> OBJ_2 = vscode_helpers.makeNonDisposable( OBJ );
 OBJ_2.dispose();  <span class="hljs-comment">// throws an exception</span>
 </code></pre>
-				<h4 id="normalizestring-uarr-functions-">normalizeString [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="normalizestring-">normalizeString [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>);  <span class="hljs-comment">// 'abc'</span>
 <span class="hljs-keyword">const</span> str_2 = vscode_helpers.normalizeString(<span class="hljs-literal">null</span>);  <span class="hljs-comment">// ''</span>
 <span class="hljs-keyword">const</span> str_3 = vscode_helpers.normalizeString(<span class="hljs-string">'aBc'</span>, <span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> s.troUpperCase());  <span class="hljs-comment">// 'ABC'</span>
 </code></pre>
-				<h4 id="now-uarr-functions-">now [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="now-">now [<a href="#functions-">&uarr;</a>]</h4>
 				<p>s. <a href="https://momentjs.com/timezone/">Moment Timezone</a> for more information about using (optional) timezones.</p>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> NOW = vscode_helpers.now(<span class="hljs-string">'America/New_York'</span>)  <span class="hljs-comment">// optional</span>
                           .format(<span class="hljs-string">'DD.MM.YYYY HH:mm:ss'</span>);
 </code></pre>
-				<h4 id="readall-uarr-functions-">readAll [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="readall-">readAll [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
 <span class="hljs-keyword">const</span> STREAM = fs.createReadStream(<span class="hljs-string">'./my-file.txt'</span>);
@@ -600,7 +600,7 @@ readAll( STREAM ).then(<span class="hljs-function">(<span class="hljs-params">da
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
-				<h4 id="randombytes-uarr-functions-">randomBytes [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="randombytes-">randomBytes [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.randomBytes(<span class="hljs-number">5979</span>).then(<span class="hljs-function">(<span class="hljs-params">bytes</span>) =&gt;</span> {
     <span class="hljs-comment">// 5979 random bytes are stored</span>
     <span class="hljs-comment">// in 'bytes' now</span>
@@ -608,7 +608,7 @@ readAll( STREAM ).then(<span class="hljs-function">(<span class="hljs-params">da
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
-				<h4 id="registerworkspacewatcher-uarr-functions-">registerWorkspaceWatcher [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="registerworkspacewatcher-">registerWorkspaceWatcher [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Path <span class="hljs-keyword">from</span> <span class="hljs-string">'path'</span>;
 <span class="hljs-keyword">import</span> { ConfigurationChangeEvent, Uri } <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
 
@@ -645,26 +645,26 @@ vscode_helpers.registerWorkspaceWatcher(<span class="hljs-keyword">async</span> 
     }
 });
 </code></pre>
-				<h4 id="sleep-uarr-functions-">sleep [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="sleep-">sleep [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.sleep(<span class="hljs-number">23979</span>).then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">// 23979 milliseconds gone</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// is invoked on error</span>
 });
 </code></pre>
-				<h4 id="startwatch-uarr-functions-">startWatch [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="startwatch-">startWatch [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> WATCH = vscode_helpers.startWatch();
 
 vscode_helpers.sleep(<span class="hljs-number">1000</span>).then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-keyword">const</span> MS = WATCH.stop();  <span class="hljs-comment">// 'MS' should be a least 1000    </span>
 });
 </code></pre>
-				<h4 id="tobooleansafe-uarr-functions-">toBooleanSafe [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="tobooleansafe-">toBooleanSafe [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> bool_1 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">true</span> );  <span class="hljs-comment">// (true)</span>
 <span class="hljs-keyword">const</span> bool_2 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// (false)</span>
 <span class="hljs-keyword">const</span> bool_3 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">undefined</span>, <span class="hljs-literal">true</span> );  <span class="hljs-comment">// (true)</span>
 </code></pre>
-				<h4 id="toarray-uarr-functions-">toArray [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="toarray-">toArray [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> myGenerator = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">yield</span> <span class="hljs-number">5979</span>;
     <span class="hljs-keyword">yield</span> <span class="hljs-number">23979</span>;
@@ -673,32 +673,32 @@ vscode_helpers.sleep(<span class="hljs-number">1000</span>).then(<span class="hl
 <span class="hljs-keyword">let</span> arr_1 = vscode_helpers.toArray( myGenerator() );
 <span class="hljs-keyword">let</span> arr_2 = vscode_helpers.toArray( [ <span class="hljs-number">19861222</span>, <span class="hljs-string">'PZSUX'</span> ] );  <span class="hljs-comment">// new array</span>
 </code></pre>
-				<h4 id="toeol-uarr-functions-">toEOL [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="toeol-">toEOL [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { EndOfLine } <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
 
 <span class="hljs-keyword">const</span> eol_1 = vscode_helpers.toEOL();  <span class="hljs-comment">// system's EOL</span>
 <span class="hljs-keyword">const</span> eol_2 = vscode_helpers.toEOL( EndOfLine.CRLF );  <span class="hljs-comment">// \r\n</span>
 </code></pre>
-				<h4 id="tostringsafe-uarr-functions-">toStringSafe [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="tostringsafe-">toStringSafe [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> str_1 = vscode_helpers.toStringSafe( <span class="hljs-number">123</span> );  <span class="hljs-comment">// '123'</span>
 <span class="hljs-keyword">const</span> str_2 = vscode_helpers.toStringSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// ''</span>
 <span class="hljs-keyword">const</span> str_3 = vscode_helpers.toStringSafe( <span class="hljs-literal">undefined</span>, <span class="hljs-string">'abc'</span> );  <span class="hljs-comment">// 'abc'</span>
 </code></pre>
-				<h4 id="tryclearinterval-uarr-functions-">tryClearInterval [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="tryclearinterval-">tryClearInterval [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> timer = setInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">// do something</span>
 }, <span class="hljs-number">5979</span>);
 
 vscode_helpers.tryClearInterval( timer );
 </code></pre>
-				<h4 id="trycleartimeout-uarr-functions-">tryClearTimeout [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="trycleartimeout-">tryClearTimeout [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> timer = setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">// do something</span>
 }, <span class="hljs-number">23979</span>);
 
 vscode_helpers.tryClearTimeout( timer );
 </code></pre>
-				<h4 id="trydispose-uarr-functions-">tryDispose [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="trydispose-">tryDispose [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ = {
     dispose: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
         <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>( <span class="hljs-string">'Could not dispose!'</span> );
@@ -708,7 +708,7 @@ vscode_helpers.tryClearTimeout( timer );
 <span class="hljs-comment">// (false)</span>
 vscode_helpers.tryDispose( OBJ );
 </code></pre>
-				<h4 id="tryremovealllisteners-uarr-functions-">tryRemoveAllListeners [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="tryremovealllisteners-">tryRemoveAllListeners [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
 <span class="hljs-keyword">const</span> STREAM = fs.createReadStream(<span class="hljs-string">'./my-file.txt'</span>);
@@ -727,7 +727,7 @@ STREAM.on(<span class="hljs-string">'data'</span>, <span class="hljs-function">(
     <span class="hljs-comment">//TODO</span>
 });
 </code></pre>
-				<h4 id="tryremovelistener-uarr-functions-">tryRemoveListener [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="tryremovelistener-">tryRemoveListener [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
 <span class="hljs-keyword">const</span> STREAM = fs.createReadStream(<span class="hljs-string">'./my-file.txt'</span>);
@@ -743,11 +743,11 @@ STREAM.once(<span class="hljs-string">'end'</span>, <span class="hljs-function">
                                      <span class="hljs-string">'data'</span>, DATA_LISTENER);
 });
 </code></pre>
-				<h4 id="utcnow-uarr-functions-">utcNow [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="utcnow-">utcNow [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> UTC_NOW = vscode_helpers.utcNow()
                               .format(<span class="hljs-string">'DD.MM.YYYY HH:mm:ss'</span>);
 </code></pre>
-				<h4 id="waitwhile-uarr-functions-">waitWhile [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="waitwhile-">waitWhile [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> counter = <span class="hljs-number">5979</span>;
 
 vscode_helpers.waitWhile(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
@@ -761,7 +761,7 @@ vscode_helpers.waitWhile(<span class="hljs-function"><span class="hljs-params">(
     <span class="hljs-comment">// error occurred</span>
 });
 </code></pre>
-				<h4 id="withprogress-uarr-functions-">withProgress [<a href="#functions-">&uarr;</a>]</h4>
+				<h4 id="withprogress-">withProgress [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { ProgressLocation } <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
 
 vscode_helpers.withProgress(<span class="hljs-function">(<span class="hljs-params">context</span>) =&gt;</span> {
@@ -785,13 +785,13 @@ vscode_helpers.withProgress(<span class="hljs-function">(<span class="hljs-param
     <span class="hljs-comment">// error</span>
 });
 </code></pre>
-				<h3 id="classes-uarr-examples-">Classes [<a href="#examples-">&uarr;</a>]</h3>
-				<h4 id="cacheproviderbase-uarr-classes-">CacheProviderBase [<a href="#classes-">&uarr;</a>]</h4>
+				<h3 id="classes-">Classes [<a href="#examples-">&uarr;</a>]</h3>
+				<h4 id="cacheproviderbase-">CacheProviderBase [<a href="#classes-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">class</span> MyCache <span class="hljs-keyword">extends</span> vscode_helpers.CacheProviderBase {
     <span class="hljs-comment">// implement abstract members here</span>
 }
 </code></pre>
-				<h4 id="disposablebase-uarr-classes-">DisposableBase [<a href="#classes-">&uarr;</a>]</h4>
+				<h4 id="disposablebase-">DisposableBase [<a href="#classes-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">class</span> MyDisposable <span class="hljs-keyword">extends</span> vscode_helpers.MyDisposable {
     <span class="hljs-keyword">protected</span> onDispose() {
         <span class="hljs-comment">// your custom logic</span>
@@ -800,7 +800,7 @@ vscode_helpers.withProgress(<span class="hljs-function">(<span class="hljs-param
 
 vscode_helpers.tryDispose( <span class="hljs-keyword">new</span> MyDisposable() );
 </code></pre>
-				<h4 id="memorycache-uarr-classes-">MemoryCache [<a href="#classes-">&uarr;</a>]</h4>
+				<h4 id="memorycache-">MemoryCache [<a href="#classes-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CACHE = <span class="hljs-keyword">new</span> vscode_helpers.MemoryCache();
 
 CACHE.get(<span class="hljs-string">'a'</span>, <span class="hljs-number">23979</span>);  <span class="hljs-comment">// 23979</span>
@@ -809,7 +809,7 @@ CACHE.has(<span class="hljs-string">'a'</span>);  <span class="hljs-comment">// 
 CACHE.unset(<span class="hljs-string">'a'</span>);
 CACHE.has(<span class="hljs-string">'a'</span>);  <span class="hljs-comment">// (false)</span>
 </code></pre>
-				<h4 id="stopwatch-uarr-classes-">StopWatch [<a href="#classes-">&uarr;</a>]</h4>
+				<h4 id="stopwatch-">StopWatch [<a href="#classes-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> WATCH = <span class="hljs-keyword">new</span> vscode_helpers.StopWatch();
 WATCH.start();
 
@@ -817,7 +817,7 @@ vscode_helpers.sleep(<span class="hljs-number">1000</span>).then(<span class="hl
     <span class="hljs-keyword">const</span> MS = WATCH.stop();  <span class="hljs-comment">// 'MS' should be a least 1000    </span>
 });
 </code></pre>
-				<h4 id="workspacebase-uarr-classes-">WorkspaceBase [<a href="#classes-">&uarr;</a>]</h4>
+				<h4 id="workspacebase-">WorkspaceBase [<a href="#classes-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { ConfigurationChangeEvent, Uri } <span class="hljs-keyword">from</span> <span class="hljs-string">'vscode'</span>;
 
 <span class="hljs-keyword">class</span> MyWorkspace <span class="hljs-keyword">extends</span> vscode_helpers.WorkspaceBase {
@@ -843,8 +843,8 @@ vscode_helpers.sleep(<span class="hljs-number">1000</span>).then(<span class="hl
     }
 }
 </code></pre>
-				<h3 id="constants-and-variables-uarr-examples-">Constants and variables [<a href="#examples-">&uarr;</a>]</h3>
-				<h4 id="events-uarr-constants-and-variables-">EVENTS [<a href="#constants-and-variables-">&uarr;</a>]</h4>
+				<h3 id="constants-and-variables-">Constants and variables [<a href="#examples-">&uarr;</a>]</h3>
+				<h4 id="events-">EVENTS [<a href="#constants-and-variables-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.EVENTS.on(<span class="hljs-string">'myEvent'</span>, <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'myEvent'</span> + (a + b));
 });
@@ -852,7 +852,7 @@ vscode_helpers.sleep(<span class="hljs-number">1000</span>).then(<span class="hl
 vscode_helpers.EVENTS
               .emit(<span class="hljs-string">'myEvent'</span>, <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span>);
 </code></pre>
-				<h4 id="session-uarr-constants-and-variables-">SESSION [<a href="#constants-and-variables-">&uarr;</a>]</h4>
+				<h4 id="session-">SESSION [<a href="#constants-and-variables-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> var_1 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// undefined (at the beginning)</span>
 
 vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs-number">5979</span>;
@@ -861,7 +861,7 @@ vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs
 <span class="hljs-keyword">delete</span> vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];
 <span class="hljs-keyword">let</span> var_3 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// undefined</span>
 </code></pre>
-				<h2 id="support-and-contribute-uarr-table-of-contents-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="support-and-contribute-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the module, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
 				<p>To contribute, you can <a href="https://github.com/mkloubert/vscode-helpers/issues">open an issue</a> and/or fork this repository.</p>
 				<p>To work with the code:</p>
@@ -874,7 +874,7 @@ vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs
 					<li>commit your changes to your new branch and sync it with your forked GitHub repo</li>
 					<li>make a <a href="https://github.com/mkloubert/vscode-helpers/pulls">pull request</a></li>
 				</ul>
-				<h2 id="documentation-uarr-table-of-contents-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="documentation-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>The API documentation can be found <a href="https://mkloubert.github.io/vscode-helpers/">here</a>.</p>
 			</div>
 		</div>

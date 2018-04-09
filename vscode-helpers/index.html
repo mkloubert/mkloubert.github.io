@@ -86,7 +86,9 @@
 									<li><a href="#comparevaluesby-">compareValuesBy</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
 									<li><a href="#createdirectoryifneeded-">createDirectoryIfNeeded</a></li>
+									<li><a href="#createinterval-">createInterval</a></li>
 									<li><a href="#createlogger-">createLogger</a></li>
+									<li><a href="#createtimeout-">createTimeout</a></li>
 									<li><a href="#doesmatch-">doesMatch</a></li>
 									<li><a href="#exists-">exists</a></li>
 									<li><a href="#foreachasync-">forEachAsync</a></li>
@@ -350,6 +352,13 @@ CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment
     }</span>);
 }</span>
 </code></pre>
+				<h4 id="createinterval-uarr-functions-">createInterval [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> INTERVAL = vscode_helpers.createInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-comment">//TODO</span>
+}, <span class="hljs-number">1000</span>);
+
+INTERVAL.dispose();  <span class="hljs-comment">// same as 'clearInterval'</span>
+</code></pre>
 				<h4 id="createlogger-uarr-functions-">createLogger [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
@@ -358,6 +367,13 @@ CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment
 });
 
 LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
+</code></pre>
+				<h4 id="createtimeout-uarr-functions-">createTimeout [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> TIMEOUT = vscode_helpers.createTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-comment">//TODO</span>
+}, <span class="hljs-number">10000</span>);
+
+TIMEOUT.dispose();  <span class="hljs-comment">// same as 'clearTimeout'</span>
 </code></pre>
 				<h4 id="doesmatch-uarr-functions-">doesMatch [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.doesMatch(<span class="hljs-string">'my-file.txt'</span>, <span class="hljs-string">'*.txt'</span>);  <span class="hljs-comment">// (true)</span>

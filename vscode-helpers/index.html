@@ -132,6 +132,7 @@
 									<li><a href="#tryclearinterval-">tryClearInterval</a></li>
 									<li><a href="#trycleartimeout-">tryClearTimeout</a></li>
 									<li><a href="#trydispose-">tryDispose</a></li>
+									<li><a href="#trydisposeanddelete-">tryDisposeAndDelete</a></li>
 									<li><a href="#tryremovealllisteners-">tryRemoveAllListeners</a></li>
 									<li><a href="#tryremovelistener-">tryRemoveListener</a></li>
 									<li><a href="#utcnow-">utcNow</a></li>
@@ -708,6 +709,18 @@ vscode_helpers.tryClearTimeout( timer );
 <span class="hljs-comment">// (false)</span>
 vscode_helpers.tryDispose( OBJ );
 </code></pre>
+				<h4 id="trydisposeanddelete-">tryDisposeAndDelete [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ = {
+    dispose: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        <span class="hljs-comment">//TODO</span>
+    }
+};
+
+<span class="hljs-keyword">const</span> PARENT = { <span class="hljs-string">'obj_key'</span>: OBJ };
+
+vscode_helpers.tryDisposeAndDelete( PARENT, <span class="hljs-string">'obj_key'</span> );
+<span class="hljs-comment">// 'PARENT' should not contain an object in 'obj_key' anymore</span>
+</code></pre>
 				<h4 id="tryremovealllisteners-">tryRemoveAllListeners [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
@@ -766,6 +779,8 @@ vscode_helpers.waitWhile(<span class="hljs-function"><span class="hljs-params">(
 
 vscode_helpers.withProgress(<span class="hljs-function">(<span class="hljs-params">context</span>) =&gt;</span> {
     <span class="hljs-keyword">let</span> res = <span class="hljs-number">0</span>;
+
+    context.increment = <span class="hljs-number">10</span>;  <span class="hljs-comment">// increment by 10% after each update</span>
 
     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
         context.message = <span class="hljs-string">`Task <span class="hljs-subst">${i + 1}</span> of 10 ...`</span>;
@@ -846,7 +861,7 @@ vscode_helpers.sleep(<span class="hljs-number">1000</span>).then(<span class="hl
 				<h3 id="constants-and-variables-">Constants and variables [<a href="#examples-">&uarr;</a>]</h3>
 				<h4 id="events-">EVENTS [<a href="#constants-and-variables-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.EVENTS.on(<span class="hljs-string">'myEvent'</span>, <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> {
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'myEvent'</span> + (a + b));
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'myEvent: '</span> + (a + b));
 });
 
 vscode_helpers.EVENTS

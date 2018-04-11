@@ -88,6 +88,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_disposable_index_.html#makenondisposable" class="tsd-kind-icon">make<wbr>Non<wbr>Disposable</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_disposable_index_.html#trydispose" class="tsd-kind-icon">try<wbr>Dispose</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_disposable_index_.html#trydisposeanddelete" class="tsd-kind-icon">try<wbr>Dispose<wbr>And<wbr>Delete</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,7 +102,7 @@
 					<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>DISPOSED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"disposed"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;disposed&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/28a833d/src/disposable/index.ts#L26">disposable/index.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/disposable/index.ts#L26">disposable/index.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -116,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>DISPOSING<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"disposing"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;disposing&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/28a833d/src/disposable/index.ts#L30">disposable/index.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/disposable/index.ts#L30">disposable/index.ts:30</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -138,7 +139,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/28a833d/src/disposable/index.ts#L139">disposable/index.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/disposable/index.ts#L139">disposable/index.ts:139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -179,7 +180,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/28a833d/src/disposable/index.ts#L167">disposable/index.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/disposable/index.ts#L167">disposable/index.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -198,6 +199,50 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 							<p>Operation was successful or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="trydisposeanddelete" class="tsd-anchor"></a>
+					<h3>try<wbr>Dispose<wbr>And<wbr>Delete</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Dispose<wbr>And<wbr>Delete<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PropertyKey</span>, alwaysDelete<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">vscode.Disposable</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/disposable/index.ts#L188">disposable/index.ts:188</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tries to dispose an object inside another, parent object and deletes it there.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The &quot;other&quot; / parent object.</p>
+									</div>
+								</li>
+								<li>
+									<h5>key: <span class="tsd-signature-type">PropertyKey</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The key inside &#39;obj&#39;, where the disposable object is stored and should be removed.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> alwaysDelete: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">false</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">vscode.Disposable</span>
+							</h4>
+							<p>The disposed and removed object or (false) if failed.</p>
 						</li>
 					</ul>
 				</section>
@@ -260,6 +305,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_disposable_index_.html#trydispose" class="tsd-kind-icon">try<wbr>Dispose</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_disposable_index_.html#trydisposeanddelete" class="tsd-kind-icon">try<wbr>Dispose<wbr>And<wbr>Delete</a>
 					</li>
 				</ul>
 			</nav>

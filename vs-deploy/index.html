@@ -160,7 +160,7 @@
 					<li>russian (thanks to <a href="https://github.com/sag3ll0">sag3ll0</a>!)</li>
 				</ul>
 				<p>If you would like to add another translation, please read <a href="https://github.com/mkloubert/vs-deploy/issues/18">that issue</a> first.</p>
-				<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=RB3WUETWG4QU2"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a> <a href="https://flattr.com/submit/auto?fid=o62pkd&amp;url=https%3A%2F%2Fgithub.com%2Fmkloubert%2Fvs-deploy"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt=""></a></p>
+				<p><a href="https://paypal.me/MarcelKloubert"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a></p>
 				<h2 id="table-of-contents">Table of contents</h2>
 				<ol>
 					<li><a href="#demos-">Demos</a><ul>
@@ -173,6 +173,7 @@
 							<li><a href="#deploy-to-remote-visual-studio-code-instance-">Deploy to remote Visual Studio Code instance</a></li>
 						</ul>
 					</li>
+					<li><a href="#recoded-version-">Recoded version</a></li>
 					<li><a href="#install-">Install</a></li>
 					<li><a href="#how-to-use-">How to use</a><ul>
 							<li><a href="#settings-">Settings</a><ul>
@@ -184,33 +185,35 @@
 						</ul>
 					</li>
 				</ol>
-				<h2 id="demos-uarr-table-of-contents-">Demos [<a href="#table-of-contents">&uarr;</a>]</h2>
-				<h3 id="deploying-to-sftp-uarr-demos-">Deploying to SFTP [<a href="#demos-">&uarr;</a>]</h3>
+				<h2 id="recoded-version-">Recoded version [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>I have started a new and recoded version of that extension, called <a href="https://github.com/mkloubert/vscode-deploy-reloaded">vscode-deploy-reloaded</a>, which is still in a preview, but good beta state.</p>
+				<h2 id="demos-">Demos [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="deploying-to-sftp-">Deploying to SFTP [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo.gif" alt="Demo SFTP"></p>
-				<h3 id="deploy-on-change-uarr-demos-">Deploy on change [<a href="#demos-">&uarr;</a>]</h3>
+				<h3 id="deploy-on-change-">Deploy on change [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo2.gif" alt="Demo Deploy on change"></p>
-				<h3 id="download-pull-from-sftp-uarr-demos-">Download / pull from SFTP [<a href="#demos-">&uarr;</a>]</h3>
+				<h3 id="download-pull-from-sftp-">Download / pull from SFTP [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo6.gif" alt="Demo pull from SFTP"></p>
-				<h3 id="compare-files-uarr-demos-">Compare files [<a href="#demos-">&uarr;</a>]</h3>
+				<h3 id="compare-files-">Compare files [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo7.gif" alt="Demo compare files"></p>
-				<h3 id="check-for-newer-files-uarr-demos-">Check for newer files [<a href="#demos-">&uarr;</a>]</h3>
+				<h3 id="check-for-newer-files-">Check for newer files [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo9.gif" alt="Demo check for newer files"></p>
-				<h3 id="sync-when-open-uarr-demos-">Sync when open [<a href="#demos-">&uarr;</a>]</h3>
+				<h3 id="sync-when-open-">Sync when open [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo10.gif" alt="Demo sync when open"></p>
-				<h3 id="deploy-to-zip-file-uarr-demos-">Deploy to ZIP file [<a href="#demos-">&uarr;</a>]</h3>
+				<h3 id="deploy-to-zip-file-">Deploy to ZIP file [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo4.gif" alt="Demo ZIP"></p>
-				<h3 id="deploy-to-remote-visual-studio-code-instance-uarr-demos-">Deploy to remote Visual Studio Code instance [<a href="#demos-">&uarr;</a>]</h3>
+				<h3 id="deploy-to-remote-visual-studio-code-instance-">Deploy to remote Visual Studio Code instance [<a href="#demos-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo3.gif" alt="Demo Remote"></p>
-				<h2 id="install-uarr-table-of-contents-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="install-">Install [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>Launch VS Code Quick Open (Ctrl+P), paste the following command, and press enter:</p>
 				<pre><code class="lang-bash">ext install vs-deploy
 </code></pre>
 				<p>Or search for things like <code>vs-deploy</code> in your editor:</p>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/screenshot1.png" alt="Screenshot VSCode Extension search"></p>
-				<h2 id="how-to-use-uarr-table-of-contents-">How to use [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="how-to-use-">How to use [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>Detailed information can be found at the <a href="https://github.com/mkloubert/vs-deploy/wiki">wiki</a>.</p>
 				<p>Otherwise...</p>
-				<h3 id="settings-uarr-how-to-use-">Settings [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<h3 id="settings-">Settings [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>Open (or create) your <code>settings.json</code> in your <code>.vscode</code> subfolder of your workspace.</p>
 				<p>Add a <code>deploy</code> section:</p>
 				<pre><code class="lang-json">{
@@ -218,7 +221,7 @@
     }
 }
 </code></pre>
-				<h4 id="packages-uarr-settings-">Packages [<a href="#settings-">&uarr;</a>]</h4>
+				<h4 id="packages-">Packages [<a href="#settings-">&uarr;</a>]</h4>
 				<p>A package is a description of files of your workspace that should be deployed.</p>
 				<p>Add the subsection <code>packages</code> and add one or more entry:</p>
 				<pre><code class="lang-json">{
@@ -241,7 +244,7 @@
 }
 </code></pre>
 				<p>Look at the <a href="https://github.com/mkloubert/vs-deploy/wiki#packages-">wiki</a> to get more information about packages.</p>
-				<h4 id="targets-uarr-settings-">Targets [<a href="#settings-">&uarr;</a>]</h4>
+				<h4 id="targets-">Targets [<a href="#settings-">&uarr;</a>]</h4>
 				<p>A target describes where a file or package should be transfered to.</p>
 				<p>Add the subsection <code>targets</code> and add one or more entry:</p>
 				<pre><code class="lang-json">{
@@ -385,7 +388,7 @@
 }
 </code></pre>
 				<p>Look at the <a href="https://github.com/mkloubert/vs-deploy/wiki#targets-">wiki</a> to get more information about targets.</p>
-				<h3 id="how-to-execute-uarr-how-to-use-">How to execute [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<h3 id="how-to-execute-">How to execute [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>Press <code>F1</code> to open the list of commands and enter one of the following commands:</p>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vs-deploy/master/img/demo5.gif" alt="Demo How to execute"></p>
 				<table>

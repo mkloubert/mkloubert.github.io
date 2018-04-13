@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ApiUserWithCredentials | vscode-deploy-reloaded</title>
+	<title>CanHide | vscode-deploy-reloaded</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_api_.html">&quot;api&quot;</a>
+					<a href="../modules/_contracts_.html">&quot;contracts&quot;</a>
 				</li>
 				<li>
-					<a href="_api_.apiuserwithcredentials.html">ApiUserWithCredentials</a>
+					<a href="_contracts_.canhide.html">CanHide</a>
 				</li>
 			</ul>
-			<h1>Interface ApiUserWithCredentials</h1>
+			<h1>Interface CanHide</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>An API user with credentials.</p>
+						<p>An object that can be hidden.</p>
 					</div>
 				</div>
 			</section>
@@ -80,10 +80,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_api_.apiuserwithpassword.html" class="tsd-signature-type">ApiUserWithPassword</a>
+						<span class="target">CanHide</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">ApiUserWithCredentials</span>
+								<a href="_targets_.target.html" class="tsd-signature-type">Target</a>
+							</li>
+							<li>
+								<a href="_packages_.package.html" class="tsd-signature-type">Package</a>
 							</li>
 						</ul>
 					</li>
@@ -96,9 +99,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_api_.apiuserwithcredentials.html#isactive" class="tsd-kind-icon">is<wbr>Active</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_api_.apiuserwithcredentials.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_api_.apiuserwithcredentials.html#password" class="tsd-kind-icon">password</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_contracts_.canhide.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,50 +107,18 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="isactive" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Active</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_api_.apiuserwithpassword.html">ApiUserWithPassword</a>.<a href="_api_.apiuserwithpassword.html#isactive">isActive</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/80646ed/src/api.ts#L192">api.ts:192</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Is user active or not.</p>
-						</div>
-					</div>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="ishidden" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Hidden</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Hidden<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/80646ed/src/api.ts#L182">api.ts:182</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/80646ed/src/contracts.ts#L105">contracts.ts:105</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets the username.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="password" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> password</h3>
-					<div class="tsd-signature tsd-kind-icon">password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_api_.apiuserwithpassword.html">ApiUserWithPassword</a>.<a href="_api_.apiuserwithpassword.html#password">password</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/80646ed/src/api.ts#L196">api.ts:196</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The password for the user.</p>
+							<p>Is hidden or not.</p>
 						</div>
 					</div>
 				</section>
@@ -162,119 +131,125 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_api_.html">"api"</a>
+						<a href="../modules/_contracts_.html">"contracts"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_api_.apihost.html" class="tsd-kind-icon">Api<wbr>Host</a>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_contracts_.deployevent.html" class="tsd-kind-icon">Deploy<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_contracts_.deployoperation.html" class="tsd-kind-icon">Deploy<wbr>Operation</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_contracts_.filechangetype.html" class="tsd-kind-icon">File<wbr>Change<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_contracts_.actionquickpick.html" class="tsd-kind-icon">Action<wbr>Quick<wbr>Pick</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_api_.apiendpointarguments.html" class="tsd-kind-icon">Api<wbr>Endpoint<wbr>Arguments</a>
+						<a href="_contracts_.button.html" class="tsd-kind-icon">Button</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_api_.apiendpointmodule.html" class="tsd-kind-icon">Api<wbr>Endpoint<wbr>Module</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_api_.apiendpointsettings.html" class="tsd-kind-icon">Api<wbr>Endpoint<wbr>Settings</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_api_.apihostnameanddescription.html" class="tsd-kind-icon">Api<wbr>Host<wbr>Name<wbr>And<wbr>Description</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_api_.apisettings.html" class="tsd-kind-icon">Api<wbr>Settings</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_api_.apiuser.html" class="tsd-kind-icon">Api<wbr>User</a>
+						<a href="_contracts_.buttonwithcustomcommand.html" class="tsd-kind-icon">Button<wbr>With<wbr>Custom<wbr>Command</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_api_.apiuserwithcredentials.html" class="tsd-kind-icon">Api<wbr>User<wbr>With<wbr>Credentials</a>
+						<a href="_contracts_.canhide.html" class="tsd-kind-icon">Can<wbr>Hide</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_api_.apiuserwithcredentials.html#isactive" class="tsd-kind-icon">is<wbr>Active</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_api_.apiuserwithcredentials.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_api_.apiuserwithcredentials.html#password" class="tsd-kind-icon">password</a>
+								<a href="_contracts_.canhide.html#ishidden" class="tsd-kind-icon">is<wbr>Hidden</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_api_.apiuserwithpassword.html" class="tsd-kind-icon">Api<wbr>User<wbr>With<wbr>Password</a>
+						<a href="_contracts_.cancelable.html" class="tsd-kind-icon">Cancelable</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_api_.hostinfo.html" class="tsd-kind-icon">Host<wbr>Info</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.checkforrequirementssettings.html" class="tsd-kind-icon">Check<wbr>For<wbr>Requirements<wbr>Settings</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_api_.markdowndocument.html" class="tsd-kind-icon">Markdown<wbr>Document</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.conditionalitem.html" class="tsd-kind-icon">Conditional<wbr>Item</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_api_.meinfo.html" class="tsd-kind-icon">Me<wbr>Info</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.configuration.html" class="tsd-kind-icon">Configuration</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_api_.popupmessage.html" class="tsd-kind-icon">Popup<wbr>Message</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.document.html" class="tsd-kind-icon">Document</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_api_.vscodeinfo.html" class="tsd-kind-icon">VSCode<wbr>Info</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.encryptable.html" class="tsd-kind-icon">Encryptable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.filefilter.html" class="tsd-kind-icon">File<wbr>Filter</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.import.html" class="tsd-kind-icon">Import</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_contracts_.messageitemwithvalue.html" class="tsd-kind-icon">Message<wbr>Item<wbr>With<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.packagefile.html" class="tsd-kind-icon">Package<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.platformitem.html" class="tsd-kind-icon">Platform<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.requiredextensionsettings.html" class="tsd-kind-icon">Required<wbr>Extension<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.scriptarguments.html" class="tsd-kind-icon">Script<wbr>Arguments</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.shellcommandsettings.html" class="tsd-kind-icon">Shell<wbr>Command<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.startupcommand.html" class="tsd-kind-icon">Startup<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.translator.html" class="tsd-kind-icon">Translator</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.withnameandpath.html" class="tsd-kind-icon">With<wbr>Name<wbr>And<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_contracts_.withoptionalname.html" class="tsd-kind-icon">With<wbr>Optional<wbr>Name</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_api_.html#apiendpoint" class="tsd-kind-icon">Api<wbr>Endpoint</a>
+						<a href="../modules/_contracts_.html#checkforrequirementsentry" class="tsd-kind-icon">Check<wbr>For<wbr>Requirements<wbr>Entry</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_api_.html#apilist" class="tsd-kind-icon">Api<wbr>List</a>
+						<a href="../modules/_contracts_.html#importtype" class="tsd-kind-icon">Import<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_contracts_.html#keyvaluepairs" class="tsd-kind-icon">Key<wbr>Value<wbr>Pairs</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_contracts_.html#reloader" class="tsd-kind-icon">Reloader</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_api_.html#apisettingvalue" class="tsd-kind-icon">Api<wbr>Setting<wbr>Value</a>
+						<a href="../modules/_contracts_.html#shellcommand" class="tsd-kind-icon">Shell<wbr>Command</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_api_.html#apiuserlist" class="tsd-kind-icon">Api<wbr>User<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_api_.html#apiuserlistvalue" class="tsd-kind-icon">Api<wbr>User<wbr>List<wbr>Value</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_api_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
+						<a href="../modules/_contracts_.html#startupcommandvalue" class="tsd-kind-icon">Startup<wbr>Command<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_api_.html#ws_var_apis" class="tsd-kind-icon">WS_<wbr>VAR_<wbr>APIS</a>
+						<a href="../modules/_contracts_.html#default_host" class="tsd-kind-icon">DEFAULT_<wbr>HOST</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_api_.html#x_header_editor_lang" class="tsd-kind-icon">X_<wbr>HEADER_<wbr>EDITOR_<wbr>LANG</a>
+						<a href="../modules/_contracts_.html#event_config_reloaded" class="tsd-kind-icon">EVENT_<wbr>CONFIG_<wbr>RELOADED</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_api_.html#disposeapihosts" class="tsd-kind-icon">dispose<wbr>Api<wbr>Hosts</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_contracts_.html#homedir_subfolder" class="tsd-kind-icon">HOMEDIR_<wbr>SUBFOLDER</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_api_.html#extensiontojsonobject" class="tsd-kind-icon">extension<wbr>ToJson<wbr>Object</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_api_.html#getextensions" class="tsd-kind-icon">get<wbr>Extensions</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_api_.html#gettexteditors" class="tsd-kind-icon">get<wbr>Text<wbr>Editors</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_api_.html#reloadapihosts" class="tsd-kind-icon">reload<wbr>Api<wbr>Hosts</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_api_.html#showapihostquickpick" class="tsd-kind-icon">show<wbr>Api<wbr>Host<wbr>Quick<wbr>Pick</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_api_.html#showquickpickforapihost" class="tsd-kind-icon">show<wbr>Quick<wbr>Pick<wbr>For<wbr>Api<wbr>Host</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_api_.html#texteditortojsonobject" class="tsd-kind-icon">text<wbr>Editor<wbr>ToJson<wbr>Object</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_api_.html#toerrorobject" class="tsd-kind-icon">to<wbr>Error<wbr>Object</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_contracts_.html#zip_comment" class="tsd-kind-icon">ZIP_<wbr>COMMENT</a>
 					</li>
 				</ul>
 			</nav>

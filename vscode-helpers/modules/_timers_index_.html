@@ -96,6 +96,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_timers_index_.html#invokeafter" class="tsd-kind-icon">invoke<wbr>After</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_timers_index_.html#sleep" class="tsd-kind-icon">sleep</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_timers_index_.html#startwatch" class="tsd-kind-icon">start<wbr>Watch</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_timers_index_.html#tryclearinterval" class="tsd-kind-icon">try<wbr>Clear<wbr>Interval</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_timers_index_.html#trycleartimeout" class="tsd-kind-icon">try<wbr>Clear<wbr>Timeout</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_timers_index_.html#waitwhile" class="tsd-kind-icon">wait<wbr>While</a></li>
 							</ul>
 						</section>
@@ -110,7 +112,7 @@
 					<div class="tsd-signature tsd-kind-icon">Invoke<wbr>After<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/timers/index.ts#L29">timers/index.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/timers/index.ts#L30">timers/index.ts:30</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -164,7 +166,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/timers/index.ts#L94">timers/index.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/timers/index.ts#L95">timers/index.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -205,7 +207,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/timers/index.ts#L121">timers/index.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/timers/index.ts#L122">timers/index.ts:122</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -246,7 +248,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/timers/index.ts#L148">timers/index.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/timers/index.ts#L149">timers/index.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -290,7 +292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/timers/index.ts#L188">timers/index.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/timers/index.ts#L189">timers/index.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -318,7 +320,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/timers/index.ts#L197">timers/index.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/timers/index.ts#L198">timers/index.ts:198</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -332,6 +334,70 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="tryclearinterval" class="tsd-anchor"></a>
+					<h3>try<wbr>Clear<wbr>Interval</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Clear<wbr>Interval<span class="tsd-signature-symbol">(</span>intervalId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/timers/index.ts#L209">timers/index.ts:209</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tries to clear an interval.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>intervalId: <span class="tsd-signature-type">Timer</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The interval (ID).</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Operation was successfull or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="trycleartimeout" class="tsd-anchor"></a>
+					<h3>try<wbr>Clear<wbr>Timeout</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">try<wbr>Clear<wbr>Timeout<span class="tsd-signature-symbol">(</span>timeoutId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Timer</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/timers/index.ts#L228">timers/index.ts:228</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Tries to clear a timeout.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>timeoutId: <span class="tsd-signature-type">Timer</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The timeout (ID).</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>Operation was successfull or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="waitwhile" class="tsd-anchor"></a>
 					<h3>wait<wbr>While</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -341,7 +407,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/timers/index.ts#L209">timers/index.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/timers/index.ts#L248">timers/index.ts:248</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -449,6 +515,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_timers_index_.html#startwatch" class="tsd-kind-icon">start<wbr>Watch</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_timers_index_.html#tryclearinterval" class="tsd-kind-icon">try<wbr>Clear<wbr>Interval</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_timers_index_.html#trycleartimeout" class="tsd-kind-icon">try<wbr>Clear<wbr>Timeout</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_timers_index_.html#waitwhile" class="tsd-kind-icon">wait<wbr>While</a>

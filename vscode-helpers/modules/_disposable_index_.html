@@ -89,6 +89,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_disposable_index_.html#makenondisposable" class="tsd-kind-icon">make<wbr>Non<wbr>Disposable</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_disposable_index_.html#trydispose" class="tsd-kind-icon">try<wbr>Dispose</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_disposable_index_.html#trydisposeanddelete" class="tsd-kind-icon">try<wbr>Dispose<wbr>And<wbr>Delete</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_disposable_index_.html#using" class="tsd-kind-icon">using</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_disposable_index_.html#usingsync" class="tsd-kind-icon">using<wbr>Sync</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,7 +104,7 @@
 					<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>DISPOSED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"disposed"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;disposed&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/disposable/index.ts#L26">disposable/index.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/disposable/index.ts#L26">disposable/index.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -117,7 +119,7 @@
 					<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>DISPOSING<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"disposing"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;disposing&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/disposable/index.ts#L30">disposable/index.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/disposable/index.ts#L30">disposable/index.ts:30</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -139,7 +141,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/disposable/index.ts#L139">disposable/index.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/disposable/index.ts#L139">disposable/index.ts:139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -180,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/disposable/index.ts#L167">disposable/index.ts:167</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/disposable/index.ts#L167">disposable/index.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,7 +214,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/disposable/index.ts#L188">disposable/index.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/disposable/index.ts#L188">disposable/index.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -243,6 +245,153 @@
 								<span class="tsd-signature-type">vscode.Disposable</span>
 							</h4>
 							<p>The disposed and removed object or (false) if failed.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="using" class="tsd-anchor"></a>
+					<h3>using</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">using&lt;TObj, TResult&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TObj</span>, func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/disposable/index.ts#L225">disposable/index.ts:225</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invokes a function for a disposable object and keeps sure, that this object will be disposed,
+									even on error.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TObj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Disposable</span></h4>
+								</li>
+								<li>
+									<h4>TResult</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">TObj</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The object.</p>
+									</div>
+								</li>
+								<li>
+									<h5>func: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The function to invoke.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TObj</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>o: <span class="tsd-signature-type">TObj</span></h5>
+														</li>
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TResult</span>
+														<span class="tsd-signature-symbol"> | </span>
+														<span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span>
+													</h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise<TResult> The promise with the result of the function.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="usingsync" class="tsd-anchor"></a>
+					<h3>using<wbr>Sync</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">using<wbr>Sync&lt;TObj, TResult&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TObj</span>, func<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TResult</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/disposable/index.ts#L252">disposable/index.ts:252</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Invokes a function for a disposable object sync and keeps sure, that this object will be disposed,
+									even on error.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>TObj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Disposable</span></h4>
+								</li>
+								<li>
+									<h4>TResult</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">TObj</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The object.</p>
+									</div>
+								</li>
+								<li>
+									<h5>func: <span class="tsd-signature-type">function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The function to invoke.</p>
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>o<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TObj</span>, <span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TResult</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>o: <span class="tsd-signature-type">TObj</span></h5>
+														</li>
+														<li>
+															<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TResult</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TResult</span></h4>
+							<p>TResult The result of the function.</p>
 						</li>
 					</ul>
 				</section>
@@ -308,6 +457,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_disposable_index_.html#trydisposeanddelete" class="tsd-kind-icon">try<wbr>Dispose<wbr>And<wbr>Delete</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_disposable_index_.html#using" class="tsd-kind-icon">using</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_disposable_index_.html#usingsync" class="tsd-kind-icon">using<wbr>Sync</a>
 					</li>
 				</ul>
 			</nav>

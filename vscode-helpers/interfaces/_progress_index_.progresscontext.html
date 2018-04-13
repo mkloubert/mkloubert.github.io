@@ -93,6 +93,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_progress_index_.progresscontext.html#cancellationtoken" class="tsd-kind-icon">cancellation<wbr>Token</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_progress_index_.progresscontext.html#increment" class="tsd-kind-icon">increment</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_progress_index_.progresscontext.html#incrementifneeded" class="tsd-kind-icon">increment<wbr>IfNeeded</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_progress_index_.progresscontext.html#message" class="tsd-kind-icon">message</a></li>
 							</ul>
 						</section>
@@ -107,7 +108,7 @@
 					<div class="tsd-signature tsd-kind-icon">cancellation<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.CancellationToken</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/progress/index.ts#L29">progress/index.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/progress/index.ts#L29">progress/index.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -122,13 +123,63 @@
 					<div class="tsd-signature tsd-kind-icon">increment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/progress/index.ts#L33">progress/index.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/progress/index.ts#L33">progress/index.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The progress value.</p>
+							<p>The increment value.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="incrementifneeded" class="tsd-anchor"></a>
+					<h3>increment<wbr>IfNeeded</h3>
+					<div class="tsd-signature tsd-kind-icon">increment<wbr>IfNeeded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/progress/index.ts#L42">progress/index.ts:42</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Increments the progress value only if an item has not been handled yet.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The item to check.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The new message.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>Value has been increased or not.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>item: <span class="tsd-signature-type">any</span></h5>
+											</li>
+											<li>
+												<h5>message: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
@@ -137,7 +188,7 @@
 					<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/5f23532/src/progress/index.ts#L37">progress/index.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/a78b10c/src/progress/index.ts#L46">progress/index.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -201,6 +252,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_progress_index_.progresscontext.html#increment" class="tsd-kind-icon">increment</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_progress_index_.progresscontext.html#incrementifneeded" class="tsd-kind-icon">increment<wbr>IfNeeded</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_progress_index_.progresscontext.html#message" class="tsd-kind-icon">message</a>

@@ -135,6 +135,8 @@
 									<li><a href="#trydisposeanddelete-">tryDisposeAndDelete</a></li>
 									<li><a href="#tryremovealllisteners-">tryRemoveAllListeners</a></li>
 									<li><a href="#tryremovelistener-">tryRemoveListener</a></li>
+									<li><a href="#using-">using</a></li>
+									<li><a href="#usingsync-">usingSync</a></li>
 									<li><a href="#utcnow-">utcNow</a></li>
 									<li><a href="#waitwhile-">waitWhile</a></li>
 									<li><a href="#withprogress-">withProgress</a></li>
@@ -754,6 +756,37 @@ STREAM.on(<span class="hljs-string">'data'</span>, DATA_LISTENER);
 STREAM.once(<span class="hljs-string">'end'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     vscode_helpers.tryRemoveListener(STREAM,
                                      <span class="hljs-string">'data'</span>, DATA_LISTENER);
+});
+</code></pre>
+				<h4 id="using-">using [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> MY_OBJECT = {
+    value: <span class="hljs-number">5979</span>,
+
+    dispose: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"I have been disposed with value "</span> + <span class="hljs-keyword">this</span>.value);
+    }
+};
+
+vscode_helpers.using(MY_OBJECT, <span class="hljs-function">(<span class="hljs-params">obj</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> obj.value + <span class="hljs-number">23979</span>;
+}).then(<span class="hljs-function">(<span class="hljs-params">result</span>) =&gt;</span> {
+    <span class="hljs-comment">// result === 29958</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// on error</span>
+});
+</code></pre>
+				<h4 id="usingsync-">usingSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> MY_OBJECT = {
+    value: <span class="hljs-number">23979</span>,
+
+    dispose: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"I have been disposed with value "</span> + <span class="hljs-keyword">this</span>.value);
+    }
+};
+
+<span class="hljs-comment">// RESULT === 29958</span>
+<span class="hljs-keyword">const</span> RESULT = vscode_helpers.usingSync(MY_OBJECT, <span class="hljs-function">(<span class="hljs-params">obj</span>) =&gt;</span> {
+    <span class="hljs-keyword">return</span> obj.value + <span class="hljs-number">5979</span>;
 });
 </code></pre>
 				<h4 id="utcnow-">utcNow [<a href="#functions-">&uarr;</a>]</h4>

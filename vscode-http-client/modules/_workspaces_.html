@@ -89,6 +89,13 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_workspaces_.html#openvalue" class="tsd-kind-icon">Open<wbr>Value</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_workspaces_.html#getactiveworkspace" class="tsd-kind-icon">get<wbr>Active<wbr>Workspace</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_workspaces_.html#getallworkspaces" class="tsd-kind-icon">get<wbr>All<wbr>Workspaces</a></li>
+							</ul>
+						</section>
 					</div>
 				</section>
 			</section>
@@ -100,13 +107,81 @@
 					<div class="tsd-signature tsd-kind-icon">Open<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_workspaces_.openentry.html" class="tsd-signature-type">OpenEntry</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/workspaces.ts#L54">workspaces.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/workspaces.ts#L54">workspaces.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>A value for an &#39;open&#39; entry.</p>
 						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="getactiveworkspace" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagLet">Let</span> get<wbr>Active<wbr>Workspace</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Active<wbr>Workspace<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/workspaces.ts#L60">workspaces.ts:60</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A function that returns the active workspace.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="getallworkspaces" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagLet">Let</span> get<wbr>All<wbr>Workspaces</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Workspaces<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/workspaces.ts#L67">workspaces.ts:67</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A function that returns a list of all available workspaces.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>returns</dt>
+							<dd><p>The available workspaces.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -156,6 +231,12 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_workspaces_.html#openvalue" class="tsd-kind-icon">Open<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_workspaces_.html#getactiveworkspace" class="tsd-kind-icon">get<wbr>Active<wbr>Workspace</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_workspaces_.html#getallworkspaces" class="tsd-kind-icon">get<wbr>All<wbr>Workspaces</a>
 					</li>
 				</ul>
 			</nav>

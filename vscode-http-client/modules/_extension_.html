@@ -81,7 +81,9 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_extension_.html#is_unset" class="tsd-kind-icon">IS_<wbr>UNSET</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#key_last_known_default_uri" class="tsd-kind-icon">KEY_<wbr>LAST_<wbr>KNOWN_<wbr>DEFAULT_<wbr>URI</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#activeworkspace" class="tsd-kind-icon">active<wbr>Workspace</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#extension" class="tsd-kind-icon">extension</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#isdeactivating" class="tsd-kind-icon">is<wbr>Deactivating</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#workspacewatcher" class="tsd-kind-icon">workspace<wbr>Watcher</a></li>
@@ -93,10 +95,13 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#activate" class="tsd-kind-icon">activate</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_extension_.html#confirm" class="tsd-kind-icon">confirm</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#deactivate" class="tsd-kind-icon">deactivate</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#getdefaulturifordialogs" class="tsd-kind-icon">get<wbr>Default<wbr>Uri<wbr>For<wbr>Dialogs</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#getusersextensiondir" class="tsd-kind-icon">get<wbr>Users<wbr>Extension<wbr>Dir</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_extension_.html#openfiles" class="tsd-kind-icon">open<wbr>Files</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_extension_.html#savefile" class="tsd-kind-icon">save<wbr>File</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#showerror" class="tsd-kind-icon">show<wbr>Error</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#updateactiveworkspace" class="tsd-kind-icon">update<wbr>Active<wbr>Workspace</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#updatelastknowndefaulturifordialogs" class="tsd-kind-icon">update<wbr>Last<wbr>Known<wbr>Default<wbr>Uri<wbr>For<wbr>Dialogs</a></li>
 							</ul>
 						</section>
 					</div>
@@ -110,7 +115,7 @@
 					<div class="tsd-signature tsd-kind-icon">IS_<wbr>UNSET<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unique symbol</span><span class="tsd-signature-symbol"> =&nbsp;Symbol(&#x27;IS_UNSET&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L49">extension.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L50">extension.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -120,12 +125,32 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="key_last_known_default_uri" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> KEY_<wbr>LAST_<wbr>KNOWN_<wbr>DEFAULT_<wbr>URI</h3>
+					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>LAST_<wbr>KNOWN_<wbr>DEFAULT_<wbr>URI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vschcLastKnownDefaultUri"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vschcLastKnownDefaultUri&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L52">extension.ts:52</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="mergedeep" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> Merge<wbr>Deep</h3>
 					<div class="tsd-signature tsd-kind-icon">Merge<wbr>Deep<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;merge-deep&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L22">extension.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L22">extension.ts:22</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="activeworkspace" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagLet">Let</span> active<wbr>Workspace</h3>
+					<div class="tsd-signature tsd-kind-icon">active<wbr>Workspace<span class="tsd-signature-symbol">:</span> <a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L45">extension.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -135,7 +160,7 @@
 					<div class="tsd-signature tsd-kind-icon">extension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.ExtensionContext</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L45">extension.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L46">extension.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -145,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Deactivating<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L50">extension.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L51">extension.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -155,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Watcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WorkspaceWatcherContext</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L51">extension.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L53">extension.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,13 +191,13 @@
 					<a name="activate" class="tsd-anchor"></a>
 					<h3>activate</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">activate<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">activate<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.ExtensionContext</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L55">extension.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L57">extension.ts:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -181,7 +206,7 @@
 									<h5>context: <span class="tsd-signature-type">vscode.ExtensionContext</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -195,7 +220,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L383">extension.ts:383</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L430">extension.ts:430</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,16 +279,33 @@
 					<a name="deactivate" class="tsd-anchor"></a>
 					<h3>deactivate</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">deactivate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">deactivate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L403">extension.ts:403</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L450">extension.ts:450</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="getdefaulturifordialogs" class="tsd-anchor"></a>
+					<h3>get<wbr>Default<wbr>Uri<wbr>For<wbr>Dialogs</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Uri<wbr>For<wbr>Dialogs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L462">extension.ts:462</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Uri</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -277,7 +319,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L415">extension.ts:415</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L528">extension.ts:528</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -300,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L431">extension.ts:431</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L544">extension.ts:544</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -362,7 +404,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L467">extension.ts:467</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L589">extension.ts:589</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -424,7 +466,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/extension.ts#L497">extension.ts:497</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L625">extension.ts:625</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -442,6 +484,46 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="updateactiveworkspace" class="tsd-anchor"></a>
+					<h3>update<wbr>Active<wbr>Workspace</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Active<wbr>Workspace<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L633">extension.ts:633</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="updatelastknowndefaulturifordialogs" class="tsd-anchor"></a>
+					<h3>update<wbr>Last<wbr>Known<wbr>Default<wbr>Uri<wbr>For<wbr>Dialogs</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Last<wbr>Known<wbr>Default<wbr>Uri<wbr>For<wbr>Dialogs<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Uri</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/extension.ts#L667">extension.ts:667</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <span class="tsd-signature-type">vscode.Uri</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -491,7 +573,13 @@
 						<a href="_extension_.html#is_unset" class="tsd-kind-icon">IS_<wbr>UNSET</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_extension_.html#key_last_known_default_uri" class="tsd-kind-icon">KEY_<wbr>LAST_<wbr>KNOWN_<wbr>DEFAULT_<wbr>URI</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_extension_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_extension_.html#activeworkspace" class="tsd-kind-icon">active<wbr>Workspace</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_extension_.html#extension" class="tsd-kind-icon">extension</a>
@@ -511,6 +599,9 @@
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_extension_.html#deactivate" class="tsd-kind-icon">deactivate</a>
 					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_extension_.html#getdefaulturifordialogs" class="tsd-kind-icon">get<wbr>Default<wbr>Uri<wbr>For<wbr>Dialogs</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_extension_.html#getusersextensiondir" class="tsd-kind-icon">get<wbr>Users<wbr>Extension<wbr>Dir</a>
 					</li>
@@ -522,6 +613,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_extension_.html#showerror" class="tsd-kind-icon">show<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_extension_.html#updateactiveworkspace" class="tsd-kind-icon">update<wbr>Active<wbr>Workspace</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_extension_.html#updatelastknowndefaulturifordialogs" class="tsd-kind-icon">update<wbr>Last<wbr>Known<wbr>Default<wbr>Uri<wbr>For<wbr>Dialogs</a>
 					</li>
 				</ul>
 			</nav>

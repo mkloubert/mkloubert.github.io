@@ -103,6 +103,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_requests_.html#addrequest" class="tsd-kind-icon">add<wbr>Request</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_requests_.html#removerequest" class="tsd-kind-icon">remove<wbr>Request</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_requests_.html#restoresavedrequests" class="tsd-kind-icon">restore<wbr>Saved<wbr>Requests</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_requests_.html#saveopenrequests" class="tsd-kind-icon">save<wbr>Open<wbr>Requests</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_requests_.html#startnewrequest" class="tsd-kind-icon">start<wbr>New<wbr>Request</a></li>
 							</ul>
 						</section>
@@ -117,7 +119,7 @@
 					<div class="tsd-signature tsd-kind-icon">Normalize<wbr>Header<wbr>Case<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&quot;header-case-normalizer&quot;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/requests.ts#L23">requests.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/requests.ts#L23">requests.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -127,7 +129,7 @@
 					<div class="tsd-signature tsd-kind-icon">REQUESTS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_requests_.ihttprequest.html" class="tsd-signature-type">IHTTPRequest</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/requests.ts#L190">requests.ts:190</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/requests.ts#L190">requests.ts:190</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -142,7 +144,7 @@
 					<div class="tsd-signature tsd-kind-icon">nextHTTPRequest<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Number.MIN_SAFE_INTEGER</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/requests.ts#L186">requests.ts:186</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/requests.ts#L186">requests.ts:186</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -159,7 +161,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/requests.ts#L917">requests.ts:917</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/requests.ts#L932">requests.ts:932</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -194,7 +196,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/requests.ts#L932">requests.ts:932</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/requests.ts#L947">requests.ts:947</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -217,6 +219,50 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="restoresavedrequests" class="tsd-anchor"></a>
+					<h3>restore<wbr>Saved<wbr>Requests</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">restore<wbr>Saved<wbr>Requests<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/requests.ts#L970">requests.ts:970</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Restores all saved requests.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="saveopenrequests" class="tsd-anchor"></a>
+					<h3>save<wbr>Open<wbr>Requests</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Open<wbr>Requests<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/requests.ts#L977">requests.ts:977</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Saves all open requests.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="startnewrequest" class="tsd-anchor"></a>
 					<h3>start<wbr>New<wbr>Request</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -226,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/af00aef/src/requests.ts#L959">requests.ts:959</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/8efb8f1/src/requests.ts#L992">requests.ts:992</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -325,6 +371,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_requests_.html#removerequest" class="tsd-kind-icon">remove<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_requests_.html#restoresavedrequests" class="tsd-kind-icon">restore<wbr>Saved<wbr>Requests</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_requests_.html#saveopenrequests" class="tsd-kind-icon">save<wbr>Open<wbr>Requests</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_requests_.html#startnewrequest" class="tsd-kind-icon">start<wbr>New<wbr>Request</a>

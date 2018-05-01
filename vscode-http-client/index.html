@@ -73,6 +73,10 @@
 				<h2 id="table-of-contents">Table of contents</h2>
 				<ol>
 					<li><a href="#install-">Install</a></li>
+					<li><a href="#how-to-use-">How to use</a><ul>
+							<li><a href="#how-to-execute-">How to execute</a></li>
+						</ul>
+					</li>
 					<li><a href="#syntaxes-">Syntaxes</a></li>
 					<li><a href="#support-and-contribute-">Support and contribute</a></li>
 					<li><a href="#related-projects-">Related projects</a><ul>
@@ -85,6 +89,40 @@
 				<pre><code class="lang-bash">ext install vscode-http-client
 </code></pre>
 				<p>Or search for things like <code>vscode-http-client</code> in your editor.</p>
+				<h2 id="how-to-use-">How to use [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="how-to-execute-">How to execute [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Press <code>F1</code> and enter one of the following commands:</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+							<th>command</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>HTTP Client: Create new script ...</code></td>
+							<td>Opens a new editor with an example script.</td>
+							<td><code>extension.http.client.newRequestScript</code></td>
+						</tr>
+						<tr>
+							<td><code>HTTP Client: New HTTP request ...</code></td>
+							<td>Opens a new HTTP request form.</td>
+							<td><code>extension.http.client.newRequest</code></td>
+						</tr>
+						<tr>
+							<td><code>HTTP Client: Send editor content as HTTP request ...</code></td>
+							<td>Uses the content of a visible editor as body for a HTTP request.</td>
+							<td><code>extension.http.client.newRequestForEditor</code></td>
+						</tr>
+						<tr>
+							<td><code>HTTP Client: Send file as HTTP request ...</code></td>
+							<td>Uses a (local) file as body for a HTTP request.</td>
+							<td><code>extension.http.client.newRequestFromFile</code></td>
+						</tr>
+					</tbody>
+				</table>
 				<h2 id="syntaxes-">Syntaxes [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p><a href="https://highlightjs.org/">Syntax highlighting</a> is supported for the following languages:</p>
 				<ul>

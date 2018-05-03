@@ -74,6 +74,7 @@
 				<ol>
 					<li><a href="#install-">Install</a></li>
 					<li><a href="#how-to-use-">How to use</a><ul>
+							<li><a href="#settings-">Settings</a></li>
 							<li><a href="#how-to-execute-">How to execute</a></li>
 						</ul>
 					</li>
@@ -90,6 +91,32 @@
 </code></pre>
 				<p>Or search for things like <code>vscode-http-client</code> in your editor.</p>
 				<h2 id="how-to-use-">How to use [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="settings-">Settings [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Open (or create) your <code>settings.json</code> in your <code>.vscode</code> subfolder of your workspace or edit the global settings (<code>File &gt;&gt; Preferences &gt;&gt; Settings</code>).</p>
+				<p>Add a <code>http.client</code> section:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"http.client"</span>: {
+    }
+}
+</code></pre>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>open</code></td>
+							<td>An array of one or more paths to <code>.http-request</code> files, which should be opened on startup.</td>
+						</tr>
+						<tr>
+							<td><code>openNewOnStartup</code></td>
+							<td><code>(true)</code>, if a new tab with an empty request should be opened on startup. Default: <code>(false)</code></td>
+						</tr>
+					</tbody>
+				</table>
 				<h3 id="how-to-execute-">How to execute [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>Press <code>F1</code> and enter one of the following commands:</p>
 				<table>
@@ -123,6 +150,7 @@
 						</tr>
 					</tbody>
 				</table>
+				<p>There are currently no predefined key bindings for these commands, but you can setup them <a href="https://code.visualstudio.com/docs/getstarted/keybindings">by your own</a>.</p>
 				<h2 id="syntaxes-">Syntaxes [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p><a href="https://highlightjs.org/">Syntax highlighting</a> is supported for the following languages:</p>
 				<ul>

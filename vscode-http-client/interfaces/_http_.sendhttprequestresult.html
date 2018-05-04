@@ -92,10 +92,12 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_.sendhttprequestresult.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_.sendhttprequestresult.html#executiontime" class="tsd-kind-icon">execution<wbr>Time</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_.sendhttprequestresult.html#options" class="tsd-kind-icon">options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_.sendhttprequestresult.html#readrequestbody" class="tsd-kind-icon">read<wbr>Request<wbr>Body</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_.sendhttprequestresult.html#request" class="tsd-kind-icon">request</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_.sendhttprequestresult.html#response" class="tsd-kind-icon">response</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_.sendhttprequestresult.html#starttime" class="tsd-kind-icon">start<wbr>Time</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_.sendhttprequestresult.html#url" class="tsd-kind-icon">url</a></li>
 							</ul>
 						</section>
@@ -110,7 +112,7 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="_requests_.requestdata.html" class="tsd-signature-type">RequestData</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/b10dab9/src/http.ts#L56">http.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/f0d9dad/src/http.ts#L57">http.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -120,12 +122,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="executiontime" class="tsd-anchor"></a>
+					<h3>execution<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">execution<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/f0d9dad/src/http.ts#L61">http.ts:61</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The number of millisconds the &#39;send&#39; operatio needs for the execution.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="options" class="tsd-anchor"></a>
 					<h3>options</h3>
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RequestOptions</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/b10dab9/src/http.ts#L60">http.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/f0d9dad/src/http.ts#L65">http.ts:65</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -140,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">read<wbr>Request<wbr>Body<span class="tsd-signature-symbol">:</span> <a href="../modules/_http_.html#base64reader" class="tsd-signature-type">Base64Reader</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/b10dab9/src/http.ts#L64">http.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/f0d9dad/src/http.ts#L69">http.ts:69</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -155,7 +172,7 @@
 					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ClientRequest</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/b10dab9/src/http.ts#L68">http.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/f0d9dad/src/http.ts#L73">http.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -170,7 +187,7 @@
 					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ClientResponse</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/b10dab9/src/http.ts#L72">http.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/f0d9dad/src/http.ts#L77">http.ts:77</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -180,12 +197,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="starttime" class="tsd-anchor"></a>
+					<h3>start<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/f0d9dad/src/http.ts#L81">http.ts:81</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The start time.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="url" class="tsd-anchor"></a>
 					<h3>url</h3>
 					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Url</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/b10dab9/src/http.ts#L76">http.ts:76</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/f0d9dad/src/http.ts#L85">http.ts:85</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -242,6 +274,9 @@
 								<a href="_http_.sendhttprequestresult.html#data" class="tsd-kind-icon">data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_http_.sendhttprequestresult.html#executiontime" class="tsd-kind-icon">execution<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_http_.sendhttprequestresult.html#options" class="tsd-kind-icon">options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -252,6 +287,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_http_.sendhttprequestresult.html#response" class="tsd-kind-icon">response</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_http_.sendhttprequestresult.html#starttime" class="tsd-kind-icon">start<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_http_.sendhttprequestresult.html#url" class="tsd-kind-icon">url</a>
@@ -271,6 +309,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_http_.html#normalizeheadercase" class="tsd-kind-icon">Normalize<wbr>Header<wbr>Case</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_http_.html#asstringvalue" class="tsd-kind-icon">as<wbr>String<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_http_.html#uriparamstoobject" class="tsd-kind-icon">uri<wbr>Params<wbr>ToObject</a>

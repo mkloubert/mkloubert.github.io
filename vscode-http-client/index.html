@@ -70,17 +70,42 @@
 					<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client"><img src="https://vsmarketplacebadge.apphb.com/installs/mkloubert.vscode-http-client.svg" alt="Installs"></a>
 				<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client#review-details"><img src="https://vsmarketplacebadge.apphb.com/rating-short/mkloubert.vscode-http-client.svg" alt="Rating"></a></p>
 				<p>Simple way to do <a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP requests</a> in <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</p>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vscode-http-client/master/img/demo1.gif" alt="Demo 1"></p>
 				<h2 id="table-of-contents">Table of contents</h2>
 				<ol>
 					<li><a href="#install-">Install</a></li>
 					<li><a href="#how-to-use-">How to use</a><ul>
 							<li><a href="#settings-">Settings</a></li>
-							<li><a href="#how-to-execute-">How to execute</a></li>
+							<li><a href="#how-to-execute-">How to execute</a><ul>
+									<li><a href="#execute-scripts-">Execute scripts</a><ul>
+											<li><a href="#constants-">Constants</a><ul>
+													<li><a href="#cancel-">cancel</a></li>
+													<li><a href="#output-">output</a></li>
+													<li><a href="#progress-">progress</a></li>
+												</ul>
+											</li>
+											<li><a href="#functions-">Functions</a><ul>
+													<li><a href="#alert-">alert</a></li>
+													<li><a href="#from-">from</a></li>
+													<li><a href="#guid-">guid</a></li>
+													<li><a href="#new_request-">new_request</a></li>
+													<li><a href="#now-">now</a></li>
+													<li><a href="#sleep-">sleep</a></li>
+													<li><a href="#uuid-">uuid</a></li>
+													<li><a href="#utc-">utc</a></li>
+												</ul>
+											</li>
+											<li><a href="#modules-">Modules</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li><a href="#syntaxes-">Syntaxes</a></li>
 					<li><a href="#support-and-contribute-">Support and contribute</a></li>
 					<li><a href="#related-projects-">Related projects</a><ul>
+							<li><a href="#node-enumerable-">node-enumerable</a></li>
 							<li><a href="#vscode-helpers-">vscode-helpers</a></li>
 						</ul>
 					</li>
@@ -139,6 +164,11 @@
 							<td><code>extension.http.client.newRequest</code></td>
 						</tr>
 						<tr>
+							<td><code>HTTP Client: New HTTP request (split view)...</code></td>
+							<td>Opens a new HTTP request form by splitting the current view.</td>
+							<td><code>extension.http.client.newRequestSplitView</code></td>
+						</tr>
+						<tr>
 							<td><code>HTTP Client: Send editor content as HTTP request ...</code></td>
 							<td>Uses the content of a visible editor as body for a HTTP request.</td>
 							<td><code>extension.http.client.newRequestForEditor</code></td>
@@ -151,6 +181,214 @@
 					</tbody>
 				</table>
 				<p>There are currently no predefined key bindings for these commands, but you can setup them <a href="https://code.visualstudio.com/docs/getstarted/keybindings">by your own</a>.</p>
+				<h4 id="execute-scripts-">Execute scripts [<a href="#how-to-execute-">&uarr;</a>]</h4>
+				<p>For things, like batch operations, you can execute scripts, using the <a href="https://nodejs.org/en/">Node.js API</a>, which is provided by VS Code.</p>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vscode-http-client/master/img/demo2.gif" alt="Demo 2"></p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> USERS = [{
+    <span class="hljs-attr">id</span>: <span class="hljs-number">5979</span>,
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'TM'</span>
+}, {
+    <span class="hljs-attr">id</span>: <span class="hljs-number">23979</span>,
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'MK'</span>
+}];
+
+<span class="hljs-keyword">const</span> SESSION_ID = uuid();
+<span class="hljs-keyword">const</span> CURRENT_TIME = utc();
+
+<span class="hljs-comment">// show output channel</span>
+output.show();
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; USERS.length; i++) {
+    <span class="hljs-keyword">if</span> (cancel.isCancellationRequested) {
+        <span class="hljs-keyword">break</span>;  <span class="hljs-comment">// user wants to cancel</span>
+    }
+
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">const</span> U = USERS[i];
+
+        <span class="hljs-keyword">const</span> REQUEST = new_request();
+
+        <span class="hljs-comment">// do not show any result</span>
+        <span class="hljs-comment">// in the GUI</span>
+        <span class="hljs-comment">// this is good, if you do many requests</span>
+        REQUEST.noResult(<span class="hljs-literal">true</span>);
+
+        REQUEST.param(<span class="hljs-string">'user'</span>, U.id)  <span class="hljs-comment">// set / overwrite an URL / query parameter           </span>
+               .header(<span class="hljs-string">'X-User-Name'</span>, U.name)  <span class="hljs-comment">// set / overwrite a request header</span>
+               .header(<span class="hljs-string">'X-Date'</span>, CURRENT_TIME)  <span class="hljs-comment">// automatically converts to ISO-8601</span>
+               .header(<span class="hljs-string">'X-Session'</span>, SESSION_ID)
+               .body( <span class="hljs-keyword">await</span> $fs.readFile(<span class="hljs-string">'/path/to/bodies/user_'</span> + U.id + <span class="hljs-string">'.json'</span>) );  <span class="hljs-comment">// set / overwrite body</span>
+
+        <span class="hljs-comment">// you can also use one of the upper setters</span>
+        <span class="hljs-comment">// as getters</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-string">'MK'</span> === REQUEST.header(<span class="hljs-string">'X-User-Name'</span>)) {
+            REQUEST.param(<span class="hljs-string">'debug'</span>, <span class="hljs-string">'true'</span>);
+        }
+
+        output.append(<span class="hljs-string">`Sending request for '<span class="hljs-subst">${ U }</span>' ... `</span>);
+
+        <span class="hljs-keyword">await</span> REQUEST.send();
+
+        output.appendLine(<span class="hljs-string">`[OK]`</span>);
+    } <span class="hljs-keyword">catch</span> (e) {
+        output.appendLine(<span class="hljs-string">`[ERROR: '<span class="hljs-subst">${ $h.toStringSafe(e) }</span>']`</span>);
+    }
+}
+</code></pre>
+				<h5 id="constants-">Constants [<a href="#execute-scripts-">&uarr;</a>]</h5>
+				<h6 id="cancel-">cancel [<a href="#constants-">&uarr;</a>]</h6>
+				<p>Provides the underlying <a href="https://code.visualstudio.com/docs/extensionAPI/vscode-api#CancellationToken">CancellationToken</a> object.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> USER_IDS = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; USER_IDS.length; i++) {
+    <span class="hljs-keyword">if</span> (cancel.isCancellationRequested) {
+        <span class="hljs-keyword">break</span>;  <span class="hljs-comment">// user wants to cancel</span>
+    }
+
+    <span class="hljs-comment">// TODO</span>
+}
+</code></pre>
+				<h6 id="output-">output [<a href="#constants-">&uarr;</a>]</h6>
+				<p>Provides the <a href="https://code.visualstudio.com/docs/extensionAPI/vscode-api#OutputChannel">OutputChannel</a> of the extension.</p>
+				<pre><code class="lang-javascript">output.show();
+
+output.append(<span class="hljs-string">'Hello'</span>);
+output.appendLine(<span class="hljs-string">', TM!'</span>);
+
+output.hide();
+</code></pre>
+				<h6 id="progress-">progress [<a href="#constants-">&uarr;</a>]</h6>
+				<p>Stores the underlying <a href="https://code.visualstudio.com/docs/extensionAPI/vscode-api#_a-nameprogressaspan-classcodeitem-id1166progresslttgtspan">Progress</a> object, provided by <a href="https://code.visualstudio.com/docs/extensionAPI/vscode-api">withProgress()</a> function.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> USER_IDS = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; USER_IDS.length; i++) {
+    <span class="hljs-keyword">const</span> UID = USER_IDS[i];
+
+    progress.report({
+        <span class="hljs-attr">message</span>: <span class="hljs-string">`Executing code for user <span class="hljs-subst">${ i + <span class="hljs-number">1</span> }</span> (ID <span class="hljs-subst">${ USER_ID }</span>) of <span class="hljs-subst">${ USERS.length }</span> ...`</span>,
+        <span class="hljs-attr">increment</span>: <span class="hljs-number">1.0</span> / USERS.length * <span class="hljs-number">100.0</span>
+    });
+
+    <span class="hljs-comment">// TODO</span>
+}
+</code></pre>
+				<h5 id="functions-">Functions [<a href="#execute-scripts-">&uarr;</a>]</h5>
+				<h6 id="alert-">alert [<a href="#functions-">&uarr;</a>]</h6>
+				<p>Shows a (wanring) popup.</p>
+				<pre><code class="lang-javascript">alert(<span class="hljs-string">'Hello!'</span>);
+
+<span class="hljs-comment">// with custom buttons</span>
+<span class="hljs-keyword">switch</span> (<span class="hljs-keyword">await</span> alert(<span class="hljs-string">'Sure?'</span>, <span class="hljs-string">'NO!'</span>, <span class="hljs-string">'Yes'</span>)) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'NO!'</span>:
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'User is UN-SURE!'</span>);
+        <span class="hljs-keyword">break</span>;
+
+    <span class="hljs-keyword">case</span> <span class="hljs-string">'Yes'</span>:
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'User is sure.'</span>);
+        <span class="hljs-keyword">break</span>;
+}
+</code></pre>
+				<h6 id="from-">from [<a href="#functions-">&uarr;</a>]</h6>
+				<p>Creates a new <a href="https://en.wikipedia.org/wiki/Language_Integrated_Query">LINQ style</a> iterator for any iterable object, like arrays, generators or strings. For more information, s. <a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a>.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> SEQUENCE     = <span class="hljs-keyword">from</span>([<span class="hljs-number">1</span>, <span class="hljs-string">'2'</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-string">'5'</span>]);
+<span class="hljs-keyword">const</span> SUB_SEQUENCE = SEQUENCE.where(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> !_.isNil(x))  <span class="hljs-comment">// 1, '2', 3, 4, '5'</span>
+                             .ofType(<span class="hljs-string">'string'</span>);  <span class="hljs-comment">// '2', '5'</span>
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> ITEM <span class="hljs-keyword">of</span> SUB_SEQUENCE) {
+    <span class="hljs-comment">// TODO</span>
+}
+</code></pre>
+				<h6 id="guid-">guid [<a href="#functions-">&uarr;</a>]</h6>
+				<p>Generates a new unique ID, using <a href="https://github.com/kelektiv/node-uuid">node-uuid</a>.</p>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// v1</span>
+<span class="hljs-keyword">const</span> GUID_v1_2 = guid(<span class="hljs-string">'1'</span>);
+<span class="hljs-keyword">const</span> GUID_v1_2 = guid(<span class="hljs-string">'v1'</span>);
+
+<span class="hljs-comment">// v4</span>
+<span class="hljs-keyword">const</span> GUID_v4_1 = guid();
+<span class="hljs-keyword">const</span> GUID_v4_2 = guid(<span class="hljs-string">'4'</span>);
+<span class="hljs-keyword">const</span> GUID_v4_2 = guid(<span class="hljs-string">'v4'</span>);
+
+<span class="hljs-comment">// v5</span>
+<span class="hljs-keyword">const</span> GUID_v5_2 = guid(<span class="hljs-string">'5'</span>);
+<span class="hljs-keyword">const</span> GUID_v5_2 = guid(<span class="hljs-string">'v5'</span>);
+</code></pre>
+				<h6 id="new_request-">new_request [<a href="#functions-">&uarr;</a>]</h6>
+				<p>Creates a new instance of a <a href="https://mkloubert.github.io/vscode-http-client/classes/_http_.httpclient.html">HTTP client</a>, by using the data of the current request form. All important data, like URL, headers or body can be overwritten.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> REQUEST = <span class="hljs-keyword">new</span> new_request();
+
+REQUEST.param(<span class="hljs-string">'user'</span>, <span class="hljs-number">5979</span>)  <span class="hljs-comment">// set / overwrite an URL / query parameter</span>
+       .header(<span class="hljs-string">'X-My-Header'</span>, <span class="hljs-string">'TM'</span>)  <span class="hljs-comment">// set / overwrite a request header</span>
+       .body( <span class="hljs-keyword">await</span> $fs.readFile(<span class="hljs-string">'/path/to/body'</span>) );  <span class="hljs-comment">// set / overwrite body</span>
+
+<span class="hljs-keyword">await</span> REQUEST.send();
+</code></pre>
+				<h6 id="now-">now [<a href="#functions-">&uarr;</a>]</h6>
+				<p>Returns a new instance of a <a href="https://momentjs.com/">Moment.js</a> object, by using an optional parameter for the <a href="https://momentjs.com/timezone/">timezone</a>.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> CURRENT_TIME = now();
+<span class="hljs-built_in">console</span>.log( CURRENT_TIME.format(<span class="hljs-string">'YYYY-MM-DD HH:mm:ss'</span>) );
+
+<span class="hljs-comment">// with timezone</span>
+<span class="hljs-keyword">const</span> CURRENT_TIME_WITH_TIMEZONE = now(<span class="hljs-string">'Europe/Berlin'</span>);
+<span class="hljs-built_in">console</span>.log( CURRENT_TIME_WITH_TIMEZONE.format(<span class="hljs-string">'DD.MM.YYYY HH:mm'</span>) );
+</code></pre>
+				<h6 id="sleep-">sleep [<a href="#functions-">&uarr;</a>]</h6>
+				<p>Waits a number of seconds before continue.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">await</span> sleep();  <span class="hljs-comment">// 1 second</span>
+
+<span class="hljs-keyword">await</span> sleep(<span class="hljs-number">2.5</span>);  <span class="hljs-comment">// 2.5 seconds</span>
+</code></pre>
+				<h6 id="uuid-">uuid [<a href="#functions-">&uarr;</a>]</h6>
+				<p>Alias for <a href="#guid-">guid()</a>.</p>
+				<h6 id="utc-">utc [<a href="#functions-">&uarr;</a>]</h6>
+				<p>Returns a new instance of a <a href="https://momentjs.com/">Moment.js</a> object in <a href="">UTC</a>.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> UTC_NOW = utc();
+
+<span class="hljs-built_in">console</span>.log( UTC_NOW.format(<span class="hljs-string">'YYYY-MM-DD HH:mm:ss'</span>) );
+</code></pre>
+				<h5 id="modules-">Modules [<a href="#execute-scripts-">&uarr;</a>]</h5>
+				<table>
+					<thead>
+						<tr>
+							<th>Constant</th>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>_</code></td>
+							<td><a href="https://lodash.com/">lodash</a></td>
+							<td>A modern JavaScript utility library delivering modularity, performance and extras.</td>
+						</tr>
+						<tr>
+							<td><code>$fs</code></td>
+							<td><a href="https://github.com/jprichardson/node-fs-extra">fs-extra</a></td>
+							<td>Extensions for the <a href="https://nodejs.org/api/fs.html">Node.js file system module</a>, especially for use in <a href="https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise">async Promise</a> context.</td>
+						</tr>
+						<tr>
+							<td><code>$h</code></td>
+							<td><a href="https://github.com/mkloubert/vscode-helpers">vscode-helpers</a></td>
+							<td>A lot of helpers classes and functions.</td>
+						</tr>
+						<tr>
+							<td><code>$linq</code></td>
+							<td><a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a></td>
+							<td>Provides <a href="https://en.wikipedia.org/wiki/Language_Integrated_Query">LINQ-style</a> functions and classes.</td>
+						</tr>
+						<tr>
+							<td><code>$moment</code></td>
+							<td><a href="https://momentjs.com/">Moment.js</a></td>
+							<td>Parse, validate, manipulate, and display dates and times in JavaScript. <a href="https://momentjs.com/timezone/">moment-timezone</a> is already provided.</td>
+						</tr>
+						<tr>
+							<td><code>$vs</code></td>
+							<td><a href="https://code.visualstudio.com/docs/extensionAPI/vscode-api">Visual Studio Code</a></td>
+							<td>VS Code API.</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>You also can include any module, shipped with VS Code, <a href="https://nodejs.org/api/modules.html">Node.js</a>, <a href="https://github.com/mkloubert/vscode-http-client/blob/master/package.json">that extension</a> or any external script, which is available on your current system, by using the <code>require()</code> function.</p>
 				<h2 id="syntaxes-">Syntaxes [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p><a href="https://highlightjs.org/">Syntax highlighting</a> is supported for the following languages:</p>
 				<ul>
@@ -177,6 +415,8 @@
 					<li>make a <a href="https://github.com/mkloubert/vscode-http-client/pulls">pull request</a></li>
 				</ul>
 				<h2 id="related-projects-">Related projects [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="node-enumerable-">node-enumerable [<a href="#related-projects-">&uarr;</a>]</h3>
+				<p><a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a> is a <a href="https://en.wikipedia.org/wiki/Language_Integrated_Query">LINQ</a> implementation for JavaScript, which runs in <a href="https://nodejs.org/">Node.js</a> and browsers.</p>
 				<h3 id="vscode-helpers-">vscode-helpers [<a href="#related-projects-">&uarr;</a>]</h3>
 				<p><a href="https://github.com/mkloubert/vscode-helpers">vscode-helpers</a> is a NPM module, which you can use in your own <a href="https://code.visualstudio.com/docs/extensions/overview">VSCode extension</a> and contains a lot of helpful classes and functions.</p>
 			</div>

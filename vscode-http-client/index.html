@@ -254,8 +254,6 @@ output.show();
 
 output.append(<span class="hljs-string">'Hello'</span>);
 output.appendLine(<span class="hljs-string">', TM!'</span>);
-
-output.hide();
 </code></pre>
 				<h6 id="progress-">progress [<a href="#constants-">&uarr;</a>]</h6>
 				<p>Stores the underlying <a href="https://code.visualstudio.com/docs/extensionAPI/vscode-api#_a-nameprogressaspan-classcodeitem-id1166progresslttgtspan">Progress</a> object, provided by <a href="https://code.visualstudio.com/docs/extensionAPI/vscode-api">withProgress()</a> function.</p>
@@ -301,16 +299,16 @@ output.hide();
 				<h6 id="guid-">guid [<a href="#functions-">&uarr;</a>]</h6>
 				<p>Generates a new unique ID, using <a href="https://github.com/kelektiv/node-uuid">node-uuid</a>.</p>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// v1</span>
-<span class="hljs-keyword">const</span> GUID_v1_2 = guid(<span class="hljs-string">'1'</span>);
+<span class="hljs-keyword">const</span> GUID_v1_1 = guid(<span class="hljs-string">'1'</span>);
 <span class="hljs-keyword">const</span> GUID_v1_2 = guid(<span class="hljs-string">'v1'</span>);
 
 <span class="hljs-comment">// v4</span>
 <span class="hljs-keyword">const</span> GUID_v4_1 = guid();
 <span class="hljs-keyword">const</span> GUID_v4_2 = guid(<span class="hljs-string">'4'</span>);
-<span class="hljs-keyword">const</span> GUID_v4_2 = guid(<span class="hljs-string">'v4'</span>);
+<span class="hljs-keyword">const</span> GUID_v4_3 = guid(<span class="hljs-string">'v4'</span>);
 
 <span class="hljs-comment">// v5</span>
-<span class="hljs-keyword">const</span> GUID_v5_2 = guid(<span class="hljs-string">'5'</span>);
+<span class="hljs-keyword">const</span> GUID_v5_1 = guid(<span class="hljs-string">'5'</span>);
 <span class="hljs-keyword">const</span> GUID_v5_2 = guid(<span class="hljs-string">'v5'</span>);
 </code></pre>
 				<h6 id="new_request-">new_request [<a href="#functions-">&uarr;</a>]</h6>
@@ -328,7 +326,6 @@ REQUEST.param(<span class="hljs-string">'user'</span>, <span class="hljs-number"
 				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> CURRENT_TIME = now();
 <span class="hljs-built_in">console</span>.log( CURRENT_TIME.format(<span class="hljs-string">'YYYY-MM-DD HH:mm:ss'</span>) );
 
-<span class="hljs-comment">// with timezone</span>
 <span class="hljs-keyword">const</span> CURRENT_TIME_WITH_TIMEZONE = now(<span class="hljs-string">'Europe/Berlin'</span>);
 <span class="hljs-built_in">console</span>.log( CURRENT_TIME_WITH_TIMEZONE.format(<span class="hljs-string">'DD.MM.YYYY HH:mm'</span>) );
 </code></pre>

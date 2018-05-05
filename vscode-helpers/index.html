@@ -125,6 +125,8 @@
 									<li><a href="#readall-">readAll</a></li>
 									<li><a href="#sleep-">sleep</a></li>
 									<li><a href="#startwatch-">startWatch</a></li>
+									<li><a href="#tempfile-">tempFile</a></li>
+									<li><a href="#tempfilesync-">tempFileSync</a></li>
 									<li><a href="#toarray-">toArray</a></li>
 									<li><a href="#tobooleansafe-">toBooleanSafe</a></li>
 									<li><a href="#toeol-">toEOL</a></li>
@@ -666,6 +668,26 @@ vscode_helpers.sleep(<span class="hljs-number">1000</span>).then(<span class="hl
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> bool_1 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">true</span> );  <span class="hljs-comment">// (true)</span>
 <span class="hljs-keyword">const</span> bool_2 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">null</span> );  <span class="hljs-comment">// (false)</span>
 <span class="hljs-keyword">const</span> bool_3 = vscode_helpers.toBooleanSafe( <span class="hljs-literal">undefined</span>, <span class="hljs-literal">true</span> );  <span class="hljs-comment">// (true)</span>
+</code></pre>
+				<h4 id="tempfile-">tempFile [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.tempFile(<span class="hljs-function">(<span class="hljs-params">pathToTempFile: <span class="hljs-built_in">string</span></span>) =&gt;</span> {
+    <span class="hljs-comment">//TODO</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">5979</span>;
+}).then(<span class="hljs-function">(<span class="hljs-params">result</span>) =&gt;</span> {
+    <span class="hljs-comment">// result === 5979</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// ERROR!</span>
+});
+</code></pre>
+				<h4 id="tempfilesync-">tempFileSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> result = vscode_helpers.tempFileSync(<span class="hljs-function">(<span class="hljs-params">pathToTempFile: <span class="hljs-built_in">string</span></span>) =&gt;</span> {
+    <span class="hljs-comment">//TODO</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">23979</span>;
+});
+
+<span class="hljs-comment">// result === 23979</span>
 </code></pre>
 				<h4 id="toarray-">toArray [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> myGenerator = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{

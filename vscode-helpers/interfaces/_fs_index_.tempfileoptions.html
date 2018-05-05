@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StopWatch | vscode-helpers</title>
+	<title>TempFileOptions | vscode-helpers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_timers_index_.html">&quot;timers/index&quot;</a>
+					<a href="../modules/_fs_index_.html">&quot;fs/index&quot;</a>
 				</li>
 				<li>
-					<a href="_timers_index_.stopwatch.html">StopWatch</a>
+					<a href="_fs_index_.tempfileoptions.html">TempFileOptions</a>
 				</li>
 			</ul>
-			<h1>Class StopWatch</h1>
+			<h1>Interface TempFileOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A stopwatch.</p>
+						<p>Options for a temp file.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">StopWatch</span>
+						<span class="target">TempFileOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -88,113 +88,79 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_timers_index_.stopwatch.html#_starttime" class="tsd-kind-icon">_start<wbr>Time</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Accessors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_timers_index_.stopwatch.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_timers_index_.stopwatch.html#start" class="tsd-kind-icon">start</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_timers_index_.stopwatch.html#stop" class="tsd-kind-icon">stop</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_fs_index_.tempfileoptions.html#dir" class="tsd-kind-icon">dir</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_fs_index_.tempfileoptions.html#keep" class="tsd-kind-icon">keep</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_fs_index_.tempfileoptions.html#prefix" class="tsd-kind-icon">prefix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_fs_index_.tempfileoptions.html#suffix" class="tsd-kind-icon">suffix</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_starttime" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _start<wbr>Time</h3>
-					<div class="tsd-signature tsd-kind-icon">_start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="dir" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> dir</h3>
+					<div class="tsd-signature tsd-kind-icon">dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/f3a518b/src/timers/index.ts#L50">timers/index.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/f3a518b/src/fs/index.ts#L34">fs/index.ts:34</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The custom directory for the file.</p>
+						</div>
+					</div>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
-					<a name="isrunning" class="tsd-anchor"></a>
-					<h3>is<wbr>Running</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isRunning<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/f3a518b/src/timers/index.ts#L55">timers/index.ts:55</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Gets if the stop watch is running or not.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="keep" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> keep</h3>
+					<div class="tsd-signature tsd-kind-icon">keep<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/f3a518b/src/fs/index.ts#L38">fs/index.ts:38</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Keep temp file or not.</p>
+						</div>
+					</div>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="start" class="tsd-anchor"></a>
-					<h3>start</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/f3a518b/src/timers/index.ts#L64">timers/index.ts:64</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>(Re-)Starts the stop watch.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-							<p>this</p>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="prefix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> prefix</h3>
+					<div class="tsd-signature tsd-kind-icon">prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/f3a518b/src/fs/index.ts#L42">fs/index.ts:42</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The optional prefix for the name of the file.</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="stop" class="tsd-anchor"></a>
-					<h3>stop</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">stop<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/f3a518b/src/timers/index.ts#L74">timers/index.ts:74</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Stops the watch.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The number of milliseconds.</p>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="suffix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> suffix</h3>
+					<div class="tsd-signature tsd-kind-icon">suffix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/f3a518b/src/fs/index.ts#L46">fs/index.ts:46</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The optional suffix for the name of the file.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -213,7 +179,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_events_index_.html">"events/index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_fs_index_.html">"fs/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -228,7 +194,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_progress_index_.html">"progress/index"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_timers_index_.html">"timers/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -243,54 +209,108 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_timers_index_.stopwatch.html" class="tsd-kind-icon">Stop<wbr>Watch</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_fs_index_.tempfileoptions.html" class="tsd-kind-icon">Temp<wbr>File<wbr>Options</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_timers_index_.stopwatch.html#_starttime" class="tsd-kind-icon">_start<wbr>Time</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_fs_index_.tempfileoptions.html#dir" class="tsd-kind-icon">dir</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
-								<a href="_timers_index_.stopwatch.html#isrunning" class="tsd-kind-icon">is<wbr>Running</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_fs_index_.tempfileoptions.html#keep" class="tsd-kind-icon">keep</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_timers_index_.stopwatch.html#start" class="tsd-kind-icon">start</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_fs_index_.tempfileoptions.html#prefix" class="tsd-kind-icon">prefix</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_timers_index_.stopwatch.html#stop" class="tsd-kind-icon">stop</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_fs_index_.tempfileoptions.html#suffix" class="tsd-kind-icon">suffix</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_timers_index_.waitwhileoptions.html" class="tsd-kind-icon">Wait<wbr>While<wbr>Options</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_fs_index_.html#tempfilepath" class="tsd-kind-icon">Temp<wbr>File<wbr>Path</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_timers_index_.html#invokeafteraction" class="tsd-kind-icon">Invoke<wbr>After<wbr>Action</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_timers_index_.html#createinterval" class="tsd-kind-icon">create<wbr>Interval</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_fs_index_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_timers_index_.html#createtimeout" class="tsd-kind-icon">create<wbr>Timeout</a>
+						<a href="../modules/_fs_index_.html#createdirectoryifneeded" class="tsd-kind-icon">create<wbr>Directory<wbr>IfNeeded</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#exists" class="tsd-kind-icon">exists</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#glob" class="tsd-kind-icon">glob</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#globsync" class="tsd-kind-icon">glob<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../modules/_fs_index_.html#invokeforstats" class="tsd-kind-icon">invoke<wbr>For<wbr>Stats</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../modules/_fs_index_.html#invokeforstatssync" class="tsd-kind-icon">invoke<wbr>For<wbr>Stats<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#isblockdevice" class="tsd-kind-icon">is<wbr>Block<wbr>Device</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#isblockdevicesync" class="tsd-kind-icon">is<wbr>Block<wbr>Device<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#ischaracterdevice" class="tsd-kind-icon">is<wbr>Character<wbr>Device</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#ischaracterdevicesync" class="tsd-kind-icon">is<wbr>Character<wbr>Device<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#isdirectory" class="tsd-kind-icon">is<wbr>Directory</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#isdirectorysync" class="tsd-kind-icon">is<wbr>Directory<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#isfifo" class="tsd-kind-icon">isFIFO</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#isfifosync" class="tsd-kind-icon">isFIFOSync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#isfile" class="tsd-kind-icon">is<wbr>File</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#isfilesync" class="tsd-kind-icon">is<wbr>File<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#issocket" class="tsd-kind-icon">is<wbr>Socket</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#issocketsync" class="tsd-kind-icon">is<wbr>Socket<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#issymboliclink" class="tsd-kind-icon">is<wbr>Symbolic<wbr>Link</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_fs_index_.html#issymboliclinksync" class="tsd-kind-icon">is<wbr>Symbolic<wbr>Link<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_fs_index_.html#normalizegloboptions" class="tsd-kind-icon">normalize<wbr>Glob<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_fs_index_.html#normalizetempfileoptions" class="tsd-kind-icon">normalize<wbr>Temp<wbr>File<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_timers_index_.html#invokeafter" class="tsd-kind-icon">invoke<wbr>After</a>
+						<a href="../modules/_fs_index_.html#tempfile" class="tsd-kind-icon">temp<wbr>File</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_timers_index_.html#sleep" class="tsd-kind-icon">sleep</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_fs_index_.html#tempfilesync" class="tsd-kind-icon">temp<wbr>File<wbr>Sync</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_timers_index_.html#startwatch" class="tsd-kind-icon">start<wbr>Watch</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_fs_index_.html#totmpsimpleoptions" class="tsd-kind-icon">to<wbr>Tmp<wbr>Simple<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_timers_index_.html#tryclearinterval" class="tsd-kind-icon">try<wbr>Clear<wbr>Interval</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_timers_index_.html#trycleartimeout" class="tsd-kind-icon">try<wbr>Clear<wbr>Timeout</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_timers_index_.html#waitwhile" class="tsd-kind-icon">wait<wbr>While</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_fs_index_.html#tryunlinktempfile" class="tsd-kind-icon">try<wbr>Unlink<wbr>Temp<wbr>File</a>
 					</li>
 				</ul>
 			</nav>

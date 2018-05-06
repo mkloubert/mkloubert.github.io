@@ -109,6 +109,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_requests_.ihttprequest.html#applyrequest" class="tsd-kind-icon">apply<wbr>Request</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_requests_.ihttprequest.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_requests_.ihttprequest.html#ondidchangevisibility" class="tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Visibility</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_requests_.ihttprequest.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a></li>
@@ -165,12 +166,56 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="applyrequest" class="tsd-anchor"></a>
+					<h3>apply<wbr>Request</h3>
+					<div class="tsd-signature tsd-kind-icon">apply<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L52">requests.ts:52</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Applies request settings to the view.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The data to apply.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The promise that indicates if operation was successful or not.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>requestData<span class="tsd-signature-symbol">: </span><a href="_requests_.requestdata.html" class="tsd-signature-type">RequestData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>requestData: <a href="_requests_.requestdata.html" class="tsd-signature-type">RequestData</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="id" class="tsd-anchor"></a>
 					<h3>id</h3>
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L48">requests.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L56">requests.ts:56</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -185,7 +230,7 @@
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Did<wbr>Change<wbr>Visibility<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L56">requests.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L64">requests.ts:64</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -250,7 +295,7 @@
 					<div class="tsd-signature tsd-kind-icon">post<wbr>Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L65">requests.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L73">requests.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -410,6 +455,9 @@
 								<a href="_requests_.ihttprequest.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_requests_.ihttprequest.html#applyrequest" class="tsd-kind-icon">apply<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_requests_.ihttprequest.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -428,6 +476,9 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_requests_.opencontentdata.html" class="tsd-kind-icon">Open<wbr>Content<wbr>Data</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_requests_.requestdata.html" class="tsd-kind-icon">Request<wbr>Data</a>
 					</li>

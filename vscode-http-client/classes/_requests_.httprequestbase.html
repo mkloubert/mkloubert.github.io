@@ -119,8 +119,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_requests_.httprequestbase.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_requests_.httprequestbase.html#_html" class="tsd-kind-icon">_html</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_requests_.httprequestbase.html#_panel" class="tsd-kind-icon">_panel</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_requests_.httprequestbase.html#_resourceroot" class="tsd-kind-icon">_resource<wbr>Root</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_requests_.httprequestbase.html#_startoptions" class="tsd-kind-icon">_start<wbr>Options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_requests_.httprequestbase.html#_stylechangedlistener" class="tsd-kind-icon">_style<wbr>Changed<wbr>Listener</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_requests_.httprequestbase.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_requests_.httprequestbase.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_requests_.httprequestbase.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
@@ -132,6 +132,7 @@
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_requests_.httprequestbase.html#panel" class="tsd-kind-icon">panel</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_requests_.httprequestbase.html#resourceroots" class="tsd-kind-icon">resource<wbr>Roots</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_requests_.httprequestbase.html#startoptions" class="tsd-kind-icon">start<wbr>Options</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_requests_.httprequestbase.html#view" class="tsd-kind-icon">view</a></li>
 							</ul>
@@ -140,6 +141,7 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_requests_.httprequestbase.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_requests_.httprequestbase.html#applyrequest" class="tsd-kind-icon">apply<wbr>Request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_requests_.httprequestbase.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_requests_.httprequestbase.html#cleanuptimeouts" class="tsd-kind-icon">cleanup<wbr>Timeouts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_requests_.httprequestbase.html#dispose" class="tsd-kind-icon">dispose</a></li>
@@ -184,7 +186,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L209">requests.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L226">requests.ts:226</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -253,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">_html<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L206">requests.ts:206</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L223">requests.ts:223</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -268,17 +270,7 @@
 					<div class="tsd-signature tsd-kind-icon">_panel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.WebviewPanel</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L207">requests.ts:207</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_resourceroot" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _resource<wbr>Root</h3>
-					<div class="tsd-signature tsd-kind-icon">_resource<wbr>Root<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L208">requests.ts:208</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L224">requests.ts:224</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -288,9 +280,40 @@
 					<div class="tsd-signature tsd-kind-icon">_start<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_requests_.startnewrquestoptions.html" class="tsd-signature-type">StartNewRquestOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L209">requests.ts:209</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L225">requests.ts:225</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_stylechangedlistener" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _style<wbr>Changed<wbr>Listener</h3>
+					<div class="tsd-signature tsd-kind-icon">_style<wbr>Changed<wbr>Listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L226">requests.ts:226</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">vscode.Uri</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>uri: <span class="tsd-signature-type">vscode.Uri</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="id" class="tsd-anchor"></a>
@@ -299,7 +322,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_requests_.ihttprequest.html">IHTTPRequest</a>.<a href="../interfaces/_requests_.ihttprequest.html#id">id</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L240">requests.ts:240</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L278">requests.ts:278</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -380,7 +403,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L344">requests.ts:344</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L401">requests.ts:401</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -389,6 +412,28 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">vscode.WebviewPanel</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="resourceroots" class="tsd-anchor"></a>
+					<h3>resource<wbr>Roots</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> resourceRoots<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L420">requests.ts:420</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the root directories for the web view&#39;s resources.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -402,7 +447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L454">requests.ts:454</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L517">requests.ts:517</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -424,7 +469,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L461">requests.ts:461</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L524">requests.ts:524</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -464,6 +509,35 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="applyrequest" class="tsd-anchor"></a>
+					<h3>apply<wbr>Request</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">apply<wbr>Request<span class="tsd-signature-symbol">(</span>requestData<span class="tsd-signature-symbol">: </span><a href="../interfaces/_requests_.requestdata.html" class="tsd-signature-type">RequestData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L240">requests.ts:240</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>inheritdoc</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>requestData: <a href="../interfaces/_requests_.requestdata.html" class="tsd-signature-type">RequestData</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -613,7 +687,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L227">requests.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L251">requests.ts:251</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -645,7 +719,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L245">requests.ts:245</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L283">requests.ts:283</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -667,7 +741,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L262">requests.ts:262</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L312">requests.ts:312</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -813,7 +887,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L288">requests.ts:288</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L338">requests.ts:338</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -863,7 +937,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L310">requests.ts:310</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L360">requests.ts:360</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -885,7 +959,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L319">requests.ts:319</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L376">requests.ts:376</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -917,7 +991,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides DisposableBase.onDispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L325">requests.ts:325</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L382">requests.ts:382</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -940,7 +1014,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L339">requests.ts:339</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L396">requests.ts:396</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -990,7 +1064,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L351">requests.ts:351</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L408">requests.ts:408</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1156,7 +1230,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L365">requests.ts:365</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L430">requests.ts:430</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1187,7 +1261,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/d415999/src/requests.ts#L376">requests.ts:376</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/ee6e762/src/requests.ts#L441">requests.ts:441</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1296,10 +1370,10 @@
 								<a href="_requests_.httprequestbase.html#_panel" class="tsd-kind-icon">_panel</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_requests_.httprequestbase.html#_resourceroot" class="tsd-kind-icon">_resource<wbr>Root</a>
+								<a href="_requests_.httprequestbase.html#_startoptions" class="tsd-kind-icon">_start<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_requests_.httprequestbase.html#_startoptions" class="tsd-kind-icon">_start<wbr>Options</a>
+								<a href="_requests_.httprequestbase.html#_stylechangedlistener" class="tsd-kind-icon">_style<wbr>Changed<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_requests_.httprequestbase.html#id" class="tsd-kind-icon">id</a>
@@ -1320,6 +1394,9 @@
 								<a href="_requests_.httprequestbase.html#panel" class="tsd-kind-icon">panel</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_requests_.httprequestbase.html#resourceroots" class="tsd-kind-icon">resource<wbr>Roots</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_requests_.httprequestbase.html#startoptions" class="tsd-kind-icon">start<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
@@ -1327,6 +1404,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_requests_.httprequestbase.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_requests_.httprequestbase.html#applyrequest" class="tsd-kind-icon">apply<wbr>Request</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="_requests_.httprequestbase.html#cleanupintervals" class="tsd-kind-icon">cleanup<wbr>Intervals</a>
@@ -1418,6 +1498,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_requests_.ihttprequest.html" class="tsd-kind-icon">IHTTPRequest</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_requests_.opencontentdata.html" class="tsd-kind-icon">Open<wbr>Content<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_requests_.requestdata.html" class="tsd-kind-icon">Request<wbr>Data</a>

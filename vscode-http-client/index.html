@@ -86,10 +86,14 @@
 											</li>
 											<li><a href="#functions-">Functions</a><ul>
 													<li><a href="#alert-">alert</a></li>
+													<li><a href="#decode_html-">decode_html</a></li>
+													<li><a href="#encode_html-">encode_html</a></li>
 													<li><a href="#from-">from</a></li>
 													<li><a href="#guid-">guid</a></li>
 													<li><a href="#new_request-">new_request</a></li>
 													<li><a href="#now-">now</a></li>
+													<li><a href="#open_html-">open_html</a></li>
+													<li><a href="#open_markdown-">open_markdown</a></li>
 													<li><a href="#sleep-">sleep</a></li>
 													<li><a href="#uuid-">uuid</a></li>
 													<li><a href="#utc-">utc</a></li>
@@ -100,6 +104,10 @@
 									</li>
 								</ul>
 							</li>
+						</ul>
+					</li>
+					<li><a href="#customizations-">Customizations</a><ul>
+							<li><a href="#css-">CSS</a></li>
 						</ul>
 					</li>
 					<li><a href="#syntaxes-">Syntaxes</a></li>
@@ -153,6 +161,11 @@
 						</tr>
 					</thead>
 					<tbody>
+						<tr>
+							<td><code>HTTP Client: Change style ...</code></td>
+							<td>Changes the CSS style for request forms.</td>
+							<td><code>extension.http.client.changeStyle</code></td>
+						</tr>
 						<tr>
 							<td><code>HTTP Client: Create new script ...</code></td>
 							<td>Opens a new editor with an example script.</td>
@@ -286,6 +299,34 @@ output.appendLine(<span class="hljs-string">', TM!'</span>);
         <span class="hljs-keyword">break</span>;
 }
 </code></pre>
+				<h6 id="decode_html-">decode_html [<a href="#constants-">&uarr;</a>]</h6>
+				<p>Decodes the entities in a HTML string.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> encodedStr = <span class="hljs-string">'&amp;lt;strong&amp;gt;This is a test!&amp;lt;/strong&amp;gt;'</span>;
+
+<span class="hljs-comment">// all entities</span>
+decode_html(encodedStr);  <span class="hljs-comment">// '&lt;strong&gt;This is a test!&lt;/strong&gt;'</span>
+
+<span class="hljs-comment">// HTML 4</span>
+decode_html(encodedStr, <span class="hljs-string">'4'</span>);
+<span class="hljs-comment">// HTML 5</span>
+decode_html(encodedStr, <span class="hljs-string">'5'</span>);
+<span class="hljs-comment">// XML</span>
+decode_html(encodedStr, <span class="hljs-string">'xml'</span>);
+</code></pre>
+				<h6 id="encode_html-">encode_html [<a href="#constants-">&uarr;</a>]</h6>
+				<p>Encodes a string to HTML entities.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> strToEncode = <span class="hljs-string">'&lt;strong&gt;This is a test!&lt;/strong&gt;'</span>;
+
+<span class="hljs-comment">// all entities</span>
+encode_html(strToEncode);  <span class="hljs-comment">// '&amp;lt;strong&amp;gt;This is a test!&amp;lt;/strong&amp;gt;'</span>
+
+<span class="hljs-comment">// HTML 4</span>
+encode_html(strToEncode, <span class="hljs-string">'4'</span>);
+<span class="hljs-comment">// HTML 5</span>
+encode_html(strToEncode, <span class="hljs-string">'5'</span>);
+<span class="hljs-comment">// XML</span>
+encode_html(strToEncode, <span class="hljs-string">'xml'</span>);
+</code></pre>
 				<h6 id="from-">from [<a href="#functions-">&uarr;</a>]</h6>
 				<p>Creates a new <a href="https://en.wikipedia.org/wiki/Language_Integrated_Query">LINQ style</a> iterator for any iterable object, like arrays, generators or strings. For more information, s. <a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a>.</p>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> SEQUENCE     = <span class="hljs-keyword">from</span>([<span class="hljs-number">1</span>, <span class="hljs-string">'2'</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-string">'5'</span>]);
@@ -329,6 +370,84 @@ REQUEST.param(<span class="hljs-string">'user'</span>, <span class="hljs-number"
 <span class="hljs-keyword">const</span> CURRENT_TIME_WITH_TIMEZONE = now(<span class="hljs-string">'Europe/Berlin'</span>);
 <span class="hljs-built_in">console</span>.log( CURRENT_TIME_WITH_TIMEZONE.format(<span class="hljs-string">'DD.MM.YYYY HH:mm'</span>) );
 </code></pre>
+				<h6 id="open_html-">open_html [<a href="#constants-">&uarr;</a>]</h6>
+				<p>Opens a new <a href="https://code.visualstudio.com/docs/extensionAPI/vscode-api#WebviewPanel">HTML tab</a>.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> htmlCode = <span class="hljs-string">`&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+
+    &lt;script&gt;
+
+    const vscode = acquireVsCodeApi();
+
+    &lt;/script&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;div&gt;Hello, TM!&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;`</span>;
+
+<span class="hljs-comment">// the function returns the underlying webview</span>
+<span class="hljs-comment">// s. https://code.visualstudio.com/docs/extensionAPI/vscode-api#WebviewPanel</span>
+html(htmlCode);
+
+<span class="hljs-comment">// with custom title</span>
+html(htmlCode, <span class="hljs-string">'My HTML document'</span>);
+</code></pre>
+				<p>SECURITY HINT: The new tab is opened with the following settings:</p>
+				<pre><code class="lang-json">{
+    enableCommandUris: true,
+    enableFindWidget: true,
+    enableScripts: true,
+    retainContextWhenHidden: true,
+}
+</code></pre>
+				<h6 id="open_markdown-">open_markdown [<a href="#constants-">&uarr;</a>]</h6>
+				<p>Opens a new <a href="https://code.visualstudio.com/docs/extensionAPI/vscode-api#WebviewPanel">HTML tab</a> with parsed <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> content.</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> markdownCode = <span class="hljs-string">`# Header 1
+
+## Header 2
+
+Lorem ipsum dolor sit amet.
+`</span>;
+
+<span class="hljs-comment">// the function returns the underlying webview</span>
+<span class="hljs-comment">// s. https://code.visualstudio.com/docs/extensionAPI/vscode-api#WebviewPanel</span>
+md(markdownCode);
+
+<span class="hljs-comment">// with custom title</span>
+md(markdownCode, <span class="hljs-string">'My Markdown document'</span>);
+
+<span class="hljs-comment">// with custom, optional title and CSS</span>
+md(markdownCode, {
+    <span class="hljs-attr">css</span>: <span class="hljs-string">`
+body {
+  background-color: red;
+}
+`</span>,
+    <span class="hljs-attr">title</span>: <span class="hljs-string">'My Markdown document'</span>
+});
+</code></pre>
+				<p>The parser uses the following <a href="https://marked.js.org/">settings</a>:</p>
+				<pre><code class="lang-json">{
+    breaks: true,
+    gfm: true,
+    mangle: true,
+    silent: true,
+    tables: true,
+    sanitize: true,
+}
+</code></pre>
+				<p>SECURITY HINT: The new tab is opened with the following settings:</p>
+				<pre><code class="lang-json">{
+    enableCommandUris: false,
+    enableFindWidget: false,
+    enableScripts: true,
+    retainContextWhenHidden: true,
+}
+</code></pre>
 				<h6 id="sleep-">sleep [<a href="#functions-">&uarr;</a>]</h6>
 				<p>Waits a number of seconds before continue.</p>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">await</span> sleep();  <span class="hljs-comment">// 1 second</span>
@@ -369,13 +488,23 @@ REQUEST.param(<span class="hljs-string">'user'</span>, <span class="hljs-number"
 							<td>A lot of helpers classes and functions.</td>
 						</tr>
 						<tr>
+							<td><code>$html</code></td>
+							<td><a href="https://github.com/mdevils/node-html-entities">node-html-entities</a></td>
+							<td>HTML / XML parser.</td>
+						</tr>
+						<tr>
 							<td><code>$linq</code></td>
 							<td><a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a></td>
 							<td>Provides <a href="https://en.wikipedia.org/wiki/Language_Integrated_Query">LINQ-style</a> functions and classes.</td>
 						</tr>
 						<tr>
+							<td><code>$md</code></td>
+							<td><a href="https://github.com/markedjs/marked">Marked</a></td>
+							<td><a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> parser.</td>
+						</tr>
+						<tr>
 							<td><code>$moment</code></td>
-							<td><a href="https://momentjs.com/">Moment.js</a></td>
+							<td><a href="https://github.com/markedjs/marked">Moment.js</a></td>
 							<td>Parse, validate, manipulate, and display dates and times in JavaScript. <a href="https://momentjs.com/timezone/">moment-timezone</a> is already provided.</td>
 						</tr>
 						<tr>
@@ -386,18 +515,11 @@ REQUEST.param(<span class="hljs-string">'user'</span>, <span class="hljs-number"
 					</tbody>
 				</table>
 				<p>You also can include any module, shipped with VS Code, <a href="https://nodejs.org/api/modules.html">Node.js</a>, <a href="https://github.com/mkloubert/vscode-http-client/blob/master/package.json">that extension</a> or any external script, which is available on your current system, by using the <code>require()</code> function.</p>
+				<h2 id="customizations-">Customizations [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="css-">CSS [<a href="#customizations-">&uarr;</a>]</h3>
+				<p>You can save a custom CSS file, called <code>custom.css</code>, inside the extension&#39;s folder, which is the sub folder <code>.vscode-http-client</code> inside the current user&#39;s home directory.</p>
 				<h2 id="syntaxes-">Syntaxes [<a href="#table-of-contents">&uarr;</a>]</h2>
-				<p><a href="https://highlightjs.org/">Syntax highlighting</a> is supported for the following languages:</p>
-				<ul>
-					<li>CSS</li>
-					<li>HTML</li>
-					<li>HTTP</li>
-					<li>JavaScript</li>
-					<li>JSON</li>
-					<li>Markdown</li>
-					<li>XML</li>
-					<li>YAML</li>
-				</ul>
+				<p><a href="https://highlightjs.org/">Syntax highlighting</a> is supported all languages, which are supported by <a href="https://highlightjs.org/">highlight.js</a>.</p>
 				<h2 id="support-and-contribute-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the extension, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
 				<p>To contribute, you can <a href="https://github.com/mkloubert/vscode-http-client/issues">open an issue</a> and/or fork this repository.</p>

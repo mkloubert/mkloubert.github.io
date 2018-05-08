@@ -106,6 +106,13 @@
 							</li>
 						</ul>
 					</li>
+					<li><a href="#enhancements-">Enhancements</a><ul>
+							<li><a href="#authorization-">Authorization</a><ul>
+									<li><a href="#basic-auth-">Basic Auth</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
 					<li><a href="#customizations-">Customizations</a><ul>
 							<li><a href="#css-">CSS</a></li>
 						</ul>
@@ -190,6 +197,11 @@
 							<td><code>HTTP Client: Send file as HTTP request ...</code></td>
 							<td>Uses a (local) file as body for a HTTP request.</td>
 							<td><code>extension.http.client.newRequestFromFile</code></td>
+						</tr>
+						<tr>
+							<td><code>HTTP Client: Show help ...</code></td>
+							<td>Shows a new help tab.</td>
+							<td><code>extension.http.client.showHelp</code></td>
 						</tr>
 					</tbody>
 				</table>
@@ -285,7 +297,7 @@ output.appendLine(<span class="hljs-string">', TM!'</span>);
 </code></pre>
 				<h5 id="functions-">Functions [<a href="#execute-scripts-">&uarr;</a>]</h5>
 				<h6 id="alert-">alert [<a href="#functions-">&uarr;</a>]</h6>
-				<p>Shows a (wanring) popup.</p>
+				<p>Shows a (warning) popup.</p>
 				<pre><code class="lang-javascript">alert(<span class="hljs-string">'Hello!'</span>);
 
 <span class="hljs-comment">// with custom buttons</span>
@@ -398,10 +410,10 @@ html(htmlCode, <span class="hljs-string">'My HTML document'</span>);
 </code></pre>
 				<p>SECURITY HINT: The new tab is opened with the following settings:</p>
 				<pre><code class="lang-json">{
-    enableCommandUris: true,
-    enableFindWidget: true,
-    enableScripts: true,
-    retainContextWhenHidden: true,
+    <span class="hljs-attr">"enableCommandUris"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"enableFindWidget"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"enableScripts"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"retainContextWhenHidden"</span>: <span class="hljs-literal">true</span>
 }
 </code></pre>
 				<h6 id="open_markdown-">open_markdown [<a href="#constants-">&uarr;</a>]</h6>
@@ -432,20 +444,20 @@ body {
 </code></pre>
 				<p>The parser uses the following <a href="https://marked.js.org/">settings</a>:</p>
 				<pre><code class="lang-json">{
-    breaks: true,
-    gfm: true,
-    mangle: true,
-    silent: true,
-    tables: true,
-    sanitize: true,
+    <span class="hljs-attr">"breaks"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"gfm"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"mangle"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"silent"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"tables"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"sanitize"</span>: <span class="hljs-literal">true</span>
 }
 </code></pre>
 				<p>SECURITY HINT: The new tab is opened with the following settings:</p>
 				<pre><code class="lang-json">{
-    enableCommandUris: false,
-    enableFindWidget: false,
-    enableScripts: true,
-    retainContextWhenHidden: true,
+    <span class="hljs-attr">"enableCommandUris"</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">"enableFindWidget"</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">"enableScripts"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"retainContextWhenHidden"</span>: <span class="hljs-literal">true</span>
 }
 </code></pre>
 				<h6 id="sleep-">sleep [<a href="#functions-">&uarr;</a>]</h6>
@@ -457,7 +469,7 @@ body {
 				<h6 id="uuid-">uuid [<a href="#functions-">&uarr;</a>]</h6>
 				<p>Alias for <a href="#guid-">guid()</a>.</p>
 				<h6 id="utc-">utc [<a href="#functions-">&uarr;</a>]</h6>
-				<p>Returns a new instance of a <a href="https://momentjs.com/">Moment.js</a> object in <a href="">UTC</a>.</p>
+				<p>Returns a new instance of a <a href="https://momentjs.com/">Moment.js</a> object in <a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>.</p>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> UTC_NOW = utc();
 
 <span class="hljs-built_in">console</span>.log( UTC_NOW.format(<span class="hljs-string">'YYYY-MM-DD HH:mm:ss'</span>) );
@@ -515,6 +527,16 @@ body {
 					</tbody>
 				</table>
 				<p>You also can include any module, shipped with VS Code, <a href="https://nodejs.org/api/modules.html">Node.js</a>, <a href="https://github.com/mkloubert/vscode-http-client/blob/master/package.json">that extension</a> or any external script, which is available on your current system, by using the <code>require()</code> function.</p>
+				<h2 id="enhancements-">Enhancements [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="authorization-">Authorization [<a href="#enhancements-">&uarr;</a>]</h3>
+				<h4 id="basic-auth-">Basic Auth [<a href="#authorization-">&uarr;</a>]</h4>
+				<p>Instead of setting up a <a href="https://en.wikipedia.org/wiki/Basic_access_authentication">Basic Auth</a> request header by using a <a href="https://en.wikipedia.org/wiki/Base64">Base64</a> string like</p>
+				<pre><code class="lang-http"><span class="hljs-attribute">Authorization</span>: Basic bWtsb3ViZXJ0Om15UGFzc3dvcnQ=
+</code></pre>
+				<p>you can use the value as simple plain text, separating username and password by <code>:</code> character:</p>
+				<pre><code class="lang-http"><span class="hljs-attribute">Authorization</span>: Basic mkloubert:mypassword
+</code></pre>
+				<p>Keep in mind: The string right to <code>Basic</code> will be trimmed!</p>
 				<h2 id="customizations-">Customizations [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<h3 id="css-">CSS [<a href="#customizations-">&uarr;</a>]</h3>
 				<p>You can save a custom CSS file, called <code>custom.css</code>, inside the extension&#39;s folder, which is the sub folder <code>.vscode-http-client</code> inside the current user&#39;s home directory.</p>
@@ -548,6 +570,9 @@ body {
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_extension_.html">"extension"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_help_.html">"help"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_html_.html">"html"</a>

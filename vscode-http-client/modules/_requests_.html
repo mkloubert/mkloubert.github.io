@@ -84,6 +84,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_requests_.ihttprequest.html" class="tsd-kind-icon">IHTTPRequest</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_requests_.opencontentdata.html" class="tsd-kind-icon">Open<wbr>Content<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_requests_.requestdata.html" class="tsd-kind-icon">Request<wbr>Data</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_requests_.requestdatabody.html" class="tsd-kind-icon">Request<wbr>Data<wbr>Body</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_requests_.savecontentdata.html" class="tsd-kind-icon">Save<wbr>Content<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_requests_.sendrequestresponse.html" class="tsd-kind-icon">Send<wbr>Request<wbr>Response</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/_requests_.setbodycontentfromfileoptions.html" class="tsd-kind-icon">Set<wbr>Body<wbr>Content<wbr>From<wbr>File<wbr>Options</a></li>
@@ -104,6 +105,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_requests_.html#addrequest" class="tsd-kind-icon">add<wbr>Request</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_requests_.html#fromhttpfile" class="tsd-kind-icon">fromHTTPFile</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_requests_.html#removerequest" class="tsd-kind-icon">remove<wbr>Request</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_requests_.html#restoresavedrequests" class="tsd-kind-icon">restore<wbr>Saved<wbr>Requests</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_requests_.html#saveopenrequests" class="tsd-kind-icon">save<wbr>Open<wbr>Requests</a></li>
@@ -121,7 +123,7 @@
 					<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>WEBVIEWPANEL_<wbr>DISPOSED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"webviewpanel.disposed"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;webviewpanel.disposed&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/4d50c3b/src/requests.ts#L208">requests.ts:208</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/413dea0/src/requests.ts#L213">requests.ts:213</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -136,7 +138,7 @@
 					<div class="tsd-signature tsd-kind-icon">Normalize<wbr>Header<wbr>Case<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&quot;header-case-normalizer&quot;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/4d50c3b/src/requests.ts#L23">requests.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/413dea0/src/requests.ts#L23">requests.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -146,7 +148,7 @@
 					<div class="tsd-signature tsd-kind-icon">REQUESTS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_requests_.ihttprequest.html" class="tsd-signature-type">IHTTPRequest</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/4d50c3b/src/requests.ts#L213">requests.ts:213</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/413dea0/src/requests.ts#L218">requests.ts:218</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -161,7 +163,7 @@
 					<div class="tsd-signature tsd-kind-icon">nextHTTPRequest<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;Number.MIN_SAFE_INTEGER</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/4d50c3b/src/requests.ts#L209">requests.ts:209</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/413dea0/src/requests.ts#L214">requests.ts:214</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -178,7 +180,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/4d50c3b/src/requests.ts#L1214">requests.ts:1214</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/413dea0/src/requests.ts#L1319">requests.ts:1319</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -204,6 +206,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="fromhttpfile" class="tsd-anchor"></a>
+					<h3>fromHTTPFile</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">fromHTTPFile<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_requests_.requestdata.html" class="tsd-signature-type">RequestData</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/413dea0/src/requests.ts#L1334">requests.ts:1334</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a request data object from a HTTP file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>file: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path to the file.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_requests_.requestdata.html" class="tsd-signature-type">RequestData</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The new object or (false) if failed.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="removerequest" class="tsd-anchor"></a>
 					<h3>remove<wbr>Request</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -213,7 +247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/4d50c3b/src/requests.ts#L1229">requests.ts:1229</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/413dea0/src/requests.ts#L1471">requests.ts:1471</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -245,7 +279,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/4d50c3b/src/requests.ts#L1252">requests.ts:1252</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/413dea0/src/requests.ts#L1494">requests.ts:1494</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -267,7 +301,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/4d50c3b/src/requests.ts#L1259">requests.ts:1259</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/413dea0/src/requests.ts#L1501">requests.ts:1501</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -289,7 +323,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/4d50c3b/src/requests.ts#L1274">requests.ts:1274</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-http-client/blob/413dea0/src/requests.ts#L1516">requests.ts:1516</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -365,6 +399,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_requests_.requestdata.html" class="tsd-kind-icon">Request<wbr>Data</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_requests_.requestdatabody.html" class="tsd-kind-icon">Request<wbr>Data<wbr>Body</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_requests_.savecontentdata.html" class="tsd-kind-icon">Save<wbr>Content<wbr>Data</a>
 					</li>
@@ -394,6 +431,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_requests_.html#addrequest" class="tsd-kind-icon">add<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_requests_.html#fromhttpfile" class="tsd-kind-icon">fromHTTPFile</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_requests_.html#removerequest" class="tsd-kind-icon">remove<wbr>Request</a>

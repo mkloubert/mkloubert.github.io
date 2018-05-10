@@ -113,6 +113,7 @@
 							</li>
 						</ul>
 					</li>
+					<li><a href="#http-files-">HTTP files</a></li>
 					<li><a href="#customizations-">Customizations</a><ul>
 							<li><a href="#css-">CSS</a></li>
 						</ul>
@@ -154,6 +155,10 @@
 						<tr>
 							<td><code>openNewOnStartup</code></td>
 							<td><code>(true)</code>, if a new tab with an empty request should be opened on startup. Default: <code>(false)</code></td>
+						</tr>
+						<tr>
+							<td><code>rejectUnauthorized</code></td>
+							<td><code>(true)</code>, to reject unauthorized, self-signed SSL certificates. Default: <code>(false)</code></td>
 						</tr>
 					</tbody>
 				</table>
@@ -228,8 +233,10 @@ output.show();
         <span class="hljs-keyword">break</span>;  <span class="hljs-comment">// user wants to cancel</span>
     }
 
+    <span class="hljs-keyword">const</span> U = USERS[i];
+
     <span class="hljs-keyword">try</span> {
-        <span class="hljs-keyword">const</span> U = USERS[i];
+        output.append(<span class="hljs-string">`Sending request for '<span class="hljs-subst">${ U }</span>' ... `</span>);
 
         <span class="hljs-keyword">const</span> REQUEST = new_request();
 
@@ -249,8 +256,6 @@ output.show();
         <span class="hljs-keyword">if</span> (<span class="hljs-string">'MK'</span> === REQUEST.header(<span class="hljs-string">'X-User-Name'</span>)) {
             REQUEST.param(<span class="hljs-string">'debug'</span>, <span class="hljs-string">'true'</span>);
         }
-
-        output.append(<span class="hljs-string">`Sending request for '<span class="hljs-subst">${ U }</span>' ... `</span>);
 
         <span class="hljs-keyword">await</span> REQUEST.send();
 
@@ -537,11 +542,23 @@ body {
 				<pre><code class="lang-http"><span class="hljs-attribute">Authorization</span>: Basic mkloubert:mypassword
 </code></pre>
 				<p>Keep in mind: The string right to <code>Basic</code> will be trimmed!</p>
+				<h2 id="http-files-">HTTP files [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>Requests can be imported from or to HTTP files.</p>
+				<p>Those files are encoded in <a href="https://en.wikipedia.org/wiki/ASCII">ASCII</a> and their lines are separated by CRLF (<code>\r\n</code>):</p>
+				<pre><code class="lang-http"><span class="hljs-keyword">POST</span> <span class="hljs-string">https://example.com/users/1</span> HTTP/1.1
+<span class="hljs-attribute">Content-type</span>: application/json; charset=utf8
+<span class="hljs-attribute">X-User</span>: 1
+
+<span class="json">{
+    <span class="hljs-attr">"id"</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"mkloubert"</span>
+}</span>
+</code></pre>
 				<h2 id="customizations-">Customizations [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<h3 id="css-">CSS [<a href="#customizations-">&uarr;</a>]</h3>
 				<p>You can save a custom CSS file, called <code>custom.css</code>, inside the extension&#39;s folder, which is the sub folder <code>.vscode-http-client</code> inside the current user&#39;s home directory.</p>
 				<h2 id="syntaxes-">Syntaxes [<a href="#table-of-contents">&uarr;</a>]</h2>
-				<p><a href="https://highlightjs.org/">Syntax highlighting</a> is supported all languages, which are supported by <a href="https://highlightjs.org/">highlight.js</a>.</p>
+				<p><a href="https://highlightjs.org/">Syntax highlighting</a> supports all languages, which are part of <a href="https://highlightjs.org/">highlight.js</a>.</p>
 				<h2 id="support-and-contribute-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the extension, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
 				<p>To contribute, you can <a href="https://github.com/mkloubert/vscode-http-client/issues">open an issue</a> and/or fork this repository.</p>

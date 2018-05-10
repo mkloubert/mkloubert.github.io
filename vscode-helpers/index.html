@@ -123,6 +123,8 @@
 									<li><a href="#randombytes-">randomBytes</a></li>
 									<li><a href="#registerworkspacewatcher-">registerWorkspaceWatcher</a></li>
 									<li><a href="#readall-">readAll</a></li>
+									<li><a href="#size-">size</a></li>
+									<li><a href="#sizeSync-">sizeSync</a></li>
 									<li><a href="#sleep-">sleep</a></li>
 									<li><a href="#startwatch-">startWatch</a></li>
 									<li><a href="#tempfile-">tempFile</a></li>
@@ -649,6 +651,26 @@ vscode_helpers.registerWorkspaceWatcher(<span class="hljs-keyword">async</span> 
         <span class="hljs-keyword">return</span> NEW_WORKSPACE;
     }
 });
+</code></pre>
+				<h4 id="size-">size [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.size(<span class="hljs-string">'/path/to/a/file'</span>).then(<span class="hljs-function">(<span class="hljs-params">fileSize: <span class="hljs-built_in">number</span></span>) =&gt;</span> {
+    <span class="hljs-comment">// 'fileSize' stores the file size in bytes</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// ERROR</span>
+});
+
+<span class="hljs-comment">// use 'stat()' function instead</span>
+<span class="hljs-comment">// s. https://nodejs.org/api/fs.html#fs_fs_stat_path_callback</span>
+vscode_helpers.size(<span class="hljs-string">'/path/to/a/file'</span>, <span class="hljs-literal">false</span>).then(<span class="hljs-function">(<span class="hljs-params">fileSize: <span class="hljs-built_in">number</span></span>) =&gt;</span> {    
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+});
+</code></pre>
+				<h4 id="sizesync-">sizeSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> FILESIZE_1 = vscode_helpers.sizeSync(<span class="hljs-string">'/path/to/a/file'</span>);
+
+<span class="hljs-comment">// use 'statSync()' function instead</span>
+<span class="hljs-comment">// s. https://nodejs.org/api/fs.html#fs_fs_statsync_path</span>
+<span class="hljs-keyword">const</span> FILESIZE_2 = vscode_helpers.sizeSync(<span class="hljs-string">'/path/to/a/file'</span>, <span class="hljs-literal">false</span>);
 </code></pre>
 				<h4 id="sleep-">sleep [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.sleep(<span class="hljs-number">23979</span>).then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {

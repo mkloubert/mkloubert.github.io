@@ -120,6 +120,7 @@
 									<li><a href="#makenondisposable-">makeNonDisposable</a></li>
 									<li><a href="#normalizestring-">normalizeString</a></li>
 									<li><a href="#now-">now</a></li>
+									<li><a href="#openandshowtextdocument-">openAndShowTextDocument</a></li>
 									<li><a href="#randombytes-">randomBytes</a></li>
 									<li><a href="#registerworkspacewatcher-">registerWorkspaceWatcher</a></li>
 									<li><a href="#readall-">readAll</a></li>
@@ -161,6 +162,7 @@
 							</li>
 						</ul>
 					</li>
+					<li><a href="#branches-">Branches</a>     </li>
 					<li><a href="#support-and-contribute-">Support and contribute</a></li>
 					<li><a href="#documentation-">Documentation</a></li>
 				</ol>
@@ -596,6 +598,30 @@ OBJ_2.dispose();  <span class="hljs-comment">// throws an exception</span>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> NOW = vscode_helpers.now(<span class="hljs-string">'America/New_York'</span>)  <span class="hljs-comment">// optional</span>
                           .format(<span class="hljs-string">'DD.MM.YYYY HH:mm:ss'</span>);
 </code></pre>
+				<h4 id="openandshowtextdocument-">openAndShowTextDocument [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-comment">// empty (plain text)</span>
+<span class="hljs-keyword">const</span> EDITOR_1 = <span class="hljs-keyword">await</span> vscode_helpers.openAndShowTextDocument();
+
+<span class="hljs-comment">// from file</span>
+<span class="hljs-keyword">const</span> EDITOR_2 = <span class="hljs-keyword">await</span> vscode_helpers.openAndShowTextDocument(<span class="hljs-string">'/path/to/file'</span>);
+
+<span class="hljs-comment">// with initial content</span>
+<span class="hljs-keyword">const</span> EDITOR_3 = <span class="hljs-keyword">await</span> vscode_helpers.openAndShowTextDocument({
+    language: <span class="hljs-string">'typescript'</span>,
+    content: <span class="hljs-string">`interface Pet {
+    name: string;
+    owner: string;
+}`</span>,
+});
+</code></pre>
+				<h4 id="randombytes-">randomBytes [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.randomBytes(<span class="hljs-number">5979</span>).then(<span class="hljs-function">(<span class="hljs-params">bytes</span>) =&gt;</span> {
+    <span class="hljs-comment">// 5979 random bytes are stored</span>
+    <span class="hljs-comment">// in 'bytes' now</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
+</code></pre>
 				<h4 id="readall-">readAll [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
@@ -603,14 +629,6 @@ OBJ_2.dispose();  <span class="hljs-comment">// throws an exception</span>
 
 readAll( STREAM ).then(<span class="hljs-function">(<span class="hljs-params">data: Buffer</span>) =&gt;</span> {
     <span class="hljs-comment">// all data read</span>
-}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
-    <span class="hljs-comment">// error</span>
-});
-</code></pre>
-				<h4 id="randombytes-">randomBytes [<a href="#functions-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript">vscode_helpers.randomBytes(<span class="hljs-number">5979</span>).then(<span class="hljs-function">(<span class="hljs-params">bytes</span>) =&gt;</span> {
-    <span class="hljs-comment">// 5979 random bytes are stored</span>
-    <span class="hljs-comment">// in 'bytes' now</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
 });
@@ -953,6 +971,29 @@ vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs
 <span class="hljs-keyword">delete</span> vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];
 <span class="hljs-keyword">let</span> var_3 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// undefined</span>
 </code></pre>
+				<h2 id="branches-">Branches [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>minimum Visual Studio Code version</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-helpers/tree/v2">v2</a> (current)</td>
+							<td><code>^1.23.0</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-helpers/tree/v1">v1</a></td>
+							<td><code>^1.22.0</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/mkloubert/vscode-helpers/tree/beta">beta</a></td>
+							<td><code>^1.20.0</code></td>
+						</tr>
+					</tbody>
+				</table>
 				<h2 id="support-and-contribute-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the module, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
 				<p>To contribute, you can <a href="https://github.com/mkloubert/vscode-helpers/issues">open an issue</a> and/or fork this repository.</p>

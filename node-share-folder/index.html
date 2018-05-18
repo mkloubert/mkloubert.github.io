@@ -1,0 +1,403 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>share-folder</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">share-folder</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> share-folder</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 id="node-share-folder">node-share-folder</h1>
+				<p>API and CLI application to run a REST host for sharing files and folders, written for <a href="https://nodejs.org">Node.js 7+</a>.</p>
+				<h2 id="install">Install</h2>
+				<h3 id="as-command-line-tool">As command line tool</h3>
+				<pre><code class="lang-bash">npm install -g share-folder
+</code></pre>
+				<h3 id="as-module">As module</h3>
+				<pre><code class="lang-bash">npm install --save share-folder
+</code></pre>
+				<h2 id="usage">Usage</h2>
+				<h3 id="command-line">Command line</h3>
+				<p>Share current folder:</p>
+				<pre><code class="lang-bash">share-folder
+</code></pre>
+				<p>Show help:</p>
+				<pre><code class="lang-bash">share-folder --?
+</code></pre>
+				<p>Share custom folder:</p>
+				<pre><code class="lang-bash">share-folder /path/to/folder/to/share
+</code></pre>
+				<p>Run in SSL mode:</p>
+				<pre><code class="lang-bash">share-folder --cert=/path/to/ca/file --key=/path/to/key/file
+</code></pre>
+				<p>Define username and password:</p>
+				<pre><code class="lang-bash">share-folder --user=mkloubert --password=P@ssword123!
+</code></pre>
+				<p>Allow clients to write:</p>
+				<pre><code class="lang-bash">share-folder --can-write
+</code></pre>
+				<p>Upload a file:</p>
+				<pre><code class="lang-bash">share-folder --upload /path/to/file/on/remote.txt &lt; ./file-to-upload.txt
+</code></pre>
+				<p>Download a file:</p>
+				<pre><code class="lang-bash">share-folder --download /path/to/file/on/remote.txt &gt; ./downloaded-file.txt
+</code></pre>
+				<p>Remove a file or folder:</p>
+				<pre><code class="lang-bash">share-folder --delete /path/to/file/or/folder/on/remote
+</code></pre>
+				<h3 id="module">Module</h3>
+				<h4 id="run-host">Run host</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> { ShareFolderHost } <span class="hljs-keyword">from</span> <span class="hljs-string">'share-folder'</span>;
+
+<span class="hljs-keyword">const</span> HOST = <span class="hljs-keyword">new</span> ShareFolderHost({
+    port: <span class="hljs-number">44444</span>,  <span class="hljs-comment">// default: 55555</span>
+    root: <span class="hljs-string">'/path/to/root/folder'</span>,
+});
+
+<span class="hljs-keyword">await</span> HOST.start();
+</code></pre>
+				<h4 id="use-client">Use client</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'from'</span>;
+<span class="hljs-keyword">import</span> { ShareFolderClient } <span class="hljs-keyword">from</span> <span class="hljs-string">'share-folder'</span>;
+
+<span class="hljs-keyword">const</span> CLIENT = <span class="hljs-keyword">new</span> ShareFolderClient({
+    host: <span class="hljs-string">'example.com'</span>,
+    port: <span class="hljs-number">44444</span>,
+});
+
+<span class="hljs-comment">// list directory</span>
+<span class="hljs-keyword">const</span> LIST = <span class="hljs-keyword">await</span> CLIENT.list(<span class="hljs-string">'/path/to/directory/on/remote'</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> ITEM of LIST) {
+    <span class="hljs-comment">// TODO</span>
+}
+
+<span class="hljs-comment">// upload a file</span>
+<span class="hljs-keyword">await</span> CLIENT.upload(<span class="hljs-string">'/path/to/file/on/remote.txt'</span>,
+                    fs.readFileSync(<span class="hljs-string">'/path/of/file/to/upload'</span>));
+
+<span class="hljs-comment">// download file</span>
+fs.writeFileSync(
+    <span class="hljs-string">'/path/to/downloaded/file.txt'</span>,
+    <span class="hljs-keyword">await</span> CLIENT.download(<span class="hljs-string">'/path/to/file/on/remote.txt'</span>)
+);
+
+<span class="hljs-comment">// delete file or folder</span>
+<span class="hljs-keyword">await</span> CLIENT.remove(<span class="hljs-string">'/path/to/file/or/folder/on/remote'</span>);
+</code></pre>
+				<h2 id="api">API</h2>
+				<h3 id="-delete-path-to-file-or-folder-to-delete">[DELETE] /path/to/file/or/folder/to/delete</h3>
+				<p>Deletes a file or folder.</p>
+				<p>Example:</p>
+				<pre><code class="lang-http">DELETE /my-file-or-folder
+</code></pre>
+				<p>Possible respose:</p>
+				<pre><code class="lang-http">HTTP/1.1 <span class="hljs-number">200</span> OK
+<span class="hljs-attribute">Connection</span>: close
+<span class="hljs-attribute">Content-Length</span>: 114
+<span class="hljs-attribute">Content-Type</span>: application/json; charset=utf8
+<span class="hljs-attribute">Date</span>: Tue, 15 May 2018 19:25:19 GMT
+<span class="hljs-attribute">ETag</span>: W/"72-oPrCQJagCLUSh2PmGv+W7S+xo4M"
+<span class="hljs-attribute">X-Powered-By</span>: node-share-folder (Express)
+<span class="hljs-attribute">X-Tm-Mk</span>: 1979-09-05T23:09:00.000Z
+
+<span class="json">{
+  <span class="hljs-attr">"ctime"</span>: <span class="hljs-string">"2018-05-15T19:11:17.082Z"</span>,
+  <span class="hljs-attr">"mtime"</span>: <span class="hljs-string">"2018-05-15T19:11:17.082Z"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"my-file-or-folder"</span>,
+  <span class="hljs-attr">"size"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-number">1</span>
+}</span>
+</code></pre>
+				<h3 id="-get-path-to-file-or-folder">[GET] /path/to/file/or/folder</h3>
+				<h4 id="list-a-directory">List a directory</h4>
+				<p>Example:</p>
+				<pre><code class="lang-http">GET /
+</code></pre>
+				<p>Possible respose:</p>
+				<pre><code class="lang-http">HTTP/1.1 <span class="hljs-number">200</span> OK
+<span class="hljs-attribute">Connection</span>: close
+<span class="hljs-attribute">Content-Length</span>: 218
+<span class="hljs-attribute">Content-Type</span>: application/json; charset=utf8
+<span class="hljs-attribute">Date</span>: Tue, 15 May 2018 17:20:59 GMT
+<span class="hljs-attribute">ETag</span>: W/"da-sIP9lRV14VgW0g/mFthDumv5hqE"
+<span class="hljs-attribute">X-Powered-By</span>: node-share-folder (Express)
+<span class="hljs-attribute">X-Share-Folder-Type</span>: d
+<span class="hljs-attribute">X-Tm-Mk</span>: 1979-09-05T23:09:00.000Z
+
+<span class="json">[
+  {
+    <span class="hljs-attr">"ctime"</span>: <span class="hljs-string">"2018-05-15T03:20:43.536Z"</span>,
+    <span class="hljs-attr">"mtime"</span>: <span class="hljs-string">"2018-05-15T03:20:43.536Z"</span>,
+    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"test-folder"</span>,
+    <span class="hljs-attr">"size"</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"type"</span>: <span class="hljs-number">1</span>
+  },
+  {
+    <span class="hljs-attr">"ctime"</span>: <span class="hljs-string">"2018-05-15T17:13:40.979Z"</span>,
+    <span class="hljs-attr">"mtime"</span>: <span class="hljs-string">"2018-05-15T17:13:40.979Z"</span>,
+    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"test-file.txt"</span>,
+    <span class="hljs-attr">"size"</span>: <span class="hljs-number">22</span>,
+    <span class="hljs-attr">"type"</span>: <span class="hljs-number">2</span>
+  }
+]</span>
+</code></pre>
+				<h4 id="get-content-of-a-file">Get content of a file</h4>
+				<p>Example:</p>
+				<pre><code class="lang-http">GET /test-file.txt
+</code></pre>
+				<p>Possible respose:</p>
+				<pre><code class="lang-http">HTTP/1.1 <span class="hljs-number">200</span> OK
+<span class="hljs-attribute">Connection</span>: close
+<span class="hljs-attribute">Content-Length</span>: 1706
+<span class="hljs-attribute">Content-Type</span>: text/plain
+<span class="hljs-attribute">Date</span>: Tue, 15 May 2018 17:22:38 GMT
+<span class="hljs-attribute">ETag</span>: W/"16-MKQSnrz7Udk6d5pTlq5C66K847M"
+<span class="hljs-attribute">X-Powered-By</span>: node-share-folder (Express)
+<span class="hljs-attribute">X-Share-Folder-Type</span>: f
+<span class="hljs-attribute">X-Tm-Mk</span>: 1979-09-05T23:09:00.000Z
+
+<span class="mipsasm">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed <span class="hljs-keyword">diam </span>nonumy <span class="hljs-keyword">eirmod </span>tempor invidunt ut labore et dolore magna aliquyam erat, sed <span class="hljs-keyword">diam </span>voluptua. <span class="hljs-built_in">At</span> vero eos et accusam et <span class="hljs-keyword">justo </span>duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed <span class="hljs-keyword">diam </span>nonumy <span class="hljs-keyword">eirmod </span>tempor invidunt ut labore et dolore magna aliquyam erat, sed <span class="hljs-keyword">diam </span>voluptua. <span class="hljs-built_in">At</span> vero eos et accusam et <span class="hljs-keyword">justo </span>duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed <span class="hljs-keyword">diam </span>nonumy <span class="hljs-keyword">eirmod </span>tempor invidunt ut labore et dolore magna aliquyam erat, sed <span class="hljs-keyword">diam </span>voluptua. <span class="hljs-built_in">At</span> vero eos et accusam et <span class="hljs-keyword">justo </span>duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis <span class="hljs-built_in">at</span> vero eros et accumsan et iusto odio <span class="hljs-keyword">dignissim </span>qui <span class="hljs-keyword">blandit </span>praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed <span class="hljs-keyword">diam </span>nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis <span class="hljs-built_in">at</span> vero eros et accumsan et iusto odio <span class="hljs-keyword">dignissim </span>qui <span class="hljs-keyword">blandit </span>praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </span>
+</code></pre>
+				<h4 id="get-info-of-a-file-or-folder">Get info of a file or folder</h4>
+				<pre><code class="lang-http">GET /test-file.txt?info=1
+</code></pre>
+				<p>Possible response:</p>
+				<pre><code class="lang-http">HTTP/1.1 <span class="hljs-number">200</span> OK
+<span class="hljs-attribute">Connection</span>: close
+<span class="hljs-attribute">Content-Length</span>: 112
+<span class="hljs-attribute">Content-Type</span>: application/json; charset=utf8
+<span class="hljs-attribute">Date</span>: Tue, 15 May 2018 17:38:37 GMT
+<span class="hljs-attribute">ETag</span>: W/"70-z+vwPpHUvk692rkWEZzIZHAhJU4"
+<span class="hljs-attribute">X-Powered-By</span>: node-share-folder (Express)
+<span class="hljs-attribute">X-Tm-Mk</span>: 1979-09-05T23:09:00.000Z
+
+<span class="json">{
+  <span class="hljs-attr">"ctime"</span>: <span class="hljs-string">"2018-05-15T17:24:07.094Z"</span>,
+  <span class="hljs-attr">"mtime"</span>: <span class="hljs-string">"2018-05-15T17:24:07.094Z"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"test.txt"</span>,
+  <span class="hljs-attr">"size"</span>: <span class="hljs-number">1706</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-number">2</span>
+}</span>
+</code></pre>
+				<h3 id="-post-path-to-folder-to-create">[POST] /path/to/folder/to/create</h3>
+				<p>Creates a new directory.</p>
+				<pre><code class="lang-http">POST /my-new-folder
+</code></pre>
+				<p>Possible response:</p>
+				<pre><code class="lang-http">HTTP/1.1 <span class="hljs-number">200</span> OK
+<span class="hljs-attribute">Connection</span>: close
+<span class="hljs-attribute">Content-Length</span>: 101
+<span class="hljs-attribute">Content-Type</span>: application/json; charset=utf8
+<span class="hljs-attribute">Date</span>: Tue, 15 May 2018 19:11:17 GMT
+<span class="hljs-attribute">ETag</span>: W/"65-A0B7XUVLv2NMnQ0vYHwV2lBVbgo"
+<span class="hljs-attribute">X-Powered-By</span>: node-share-folder (Express)
+<span class="hljs-attribute">X-Tm-Mk</span>: 1979-09-05T23:09:00.000Z
+
+<span class="json">{
+  <span class="hljs-attr">"ctime"</span>: <span class="hljs-string">"2018-05-15T19:11:17.082Z"</span>,
+  <span class="hljs-attr">"mtime"</span>: <span class="hljs-string">"2018-05-15T19:11:17.082Z"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"my-new-folder"</span>,
+  <span class="hljs-attr">"size"</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-number">1</span>
+}</span>
+</code></pre>
+				<h3 id="-put-path-to-file">[PUT] /path/to/file</h3>
+				<p>Writes to a file.</p>
+				<pre><code class="lang-http">PUT /my-file
+
+Lorem ispum
+</code></pre>
+				<p>Possible response:</p>
+				<pre><code class="lang-http">HTTP/1.1 <span class="hljs-number">200</span> OK
+<span class="hljs-attribute">Connection</span>: close
+<span class="hljs-attribute">Content-Length</span>: 102
+<span class="hljs-attribute">Content-Type</span>: application/json; charset=utf8
+<span class="hljs-attribute">Date</span>: Tue, 15 May 2018 19:14:11 GMT
+<span class="hljs-attribute">ETag</span>: W/"66-b5W/DNIHdZfEUzg6h+WRj/oDsVA"
+<span class="hljs-attribute">X-Powered-By</span>: node-share-folder (Express)
+<span class="hljs-attribute">X-Tm-Mk</span>: 1979-09-05T23:09:00.000Z
+
+<span class="json">{
+  <span class="hljs-attr">"ctime"</span>: <span class="hljs-string">"2018-05-15T19:14:11.079Z"</span>,
+  <span class="hljs-attr">"mtime"</span>: <span class="hljs-string">"2018-05-15T19:14:11.079Z"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"my-file"</span>,
+  <span class="hljs-attr">"size"</span>: <span class="hljs-number">11</span>,
+  <span class="hljs-attr">"type"</span>: <span class="hljs-number">2</span>
+}</span>
+</code></pre>
+				<h2 id="support-and-contribute">Support and contribute</h2>
+				<p>If you like the module, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
+				<p>To contribute, you can <a href="https://github.com/mkloubert/node-share-folder/issues">open an issue</a> and/or fork this repository.</p>
+				<p>To work with the code:</p>
+				<ul>
+					<li>clone <a href="https://github.com/mkloubert/node-share-folder">this repository</a></li>
+					<li>create and change to a new branch, like <code>git checkout -b my_new_feature</code></li>
+					<li>run <code>npm install</code> from your project folder</li>
+					<li>open that project folder in Visual Studio Code</li>
+					<li>now you can edit and debug there</li>
+					<li>commit your changes to your new branch and sync it with your forked GitHub repo</li>
+					<li>make a <a href="https://github.com/mkloubert/node-share-folder/pulls">pull request</a></li>
+				</ul>
+				<h2 id="related-projects">Related projects</h2>
+				<h3 id="node-enumerable">node-enumerable</h3>
+				<p><a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a> is a <a href="https://en.wikipedia.org/wiki/Language_Integrated_Query">LINQ</a> implementation for JavaScript, which runs in <a href="https://nodejs.org/">Node.js</a> and browsers.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_.html">"cli"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_client_.html">"client"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_helpers_.html">"helpers"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_host_.html">"host"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_index_.html">"index"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

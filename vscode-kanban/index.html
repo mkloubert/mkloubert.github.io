@@ -140,42 +140,54 @@
 					</tbody>
 				</table>
 				<h3 id="handle-events-">Handle events [<a href="#how-to-use-">&uarr;</a>]</h3>
-				<p>For handling events, you can create a JavaScript file, called <code>vscode-kanban.js</code>, inside your <code>.vscode</code> subfolder of your workspace and start with the following skeleton:</p>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// [OPTIONAL]</span>
+				<p>For handling events, you can create a JavaScript file, called <code>vscode-kanban.js</code>, inside your <code>.vscode</code> subfolder of your workspace and start with the following skeleton (s. <a href="https://mkloubert.github.io/vscode-kanban/interfaces/_workspaces_.eventscriptmodule.html">EventScriptModule</a> interface):</p>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// all 'args' parameters are based on</span>
+<span class="hljs-comment">// 'EventScriptFunctionArguments' interface</span>
+<span class="hljs-comment">// </span>
+<span class="hljs-comment">// s. https://mkloubert.github.io/vscode-kanban/interfaces/_workspaces_.eventscriptfunctionarguments.html</span>
+
+
+<span class="hljs-comment">// [OPTIONAL]</span>
 <span class="hljs-comment">// </span>
 <span class="hljs-comment">// Is raised after a CARD has been CREATED.</span>
 exports.onCardCreated = <span class="hljs-keyword">async</span> (args) =&gt; {
+    <span class="hljs-comment">// args.data =&gt; s. https://mkloubert.github.io/vscode-kanban/interfaces/_boards_.cardcreatedeventdata.html</span>
 };
 
 <span class="hljs-comment">// [OPTIONAL]</span>
 <span class="hljs-comment">// </span>
 <span class="hljs-comment">// Is raised after a CARD has been DELETED.</span>
 exports.onCardDeleted = <span class="hljs-keyword">async</span> (args) =&gt; {
+    <span class="hljs-comment">// args.data =&gt; s. https://mkloubert.github.io/vscode-kanban/interfaces/_boards_.carddeletedeventdata.html</span>
 };
 
 <span class="hljs-comment">// [OPTIONAL]</span>
 <span class="hljs-comment">// </span>
 <span class="hljs-comment">// Is raised after a CARD has been MOVED.</span>
 exports.onCardMoved = <span class="hljs-keyword">async</span> (args) =&gt; {
+    <span class="hljs-comment">// args.data =&gt; s. https://mkloubert.github.io/vscode-kanban/interfaces/_boards_.cardmovedeventdata.html</span>
 };
 
 <span class="hljs-comment">// [OPTIONAL]</span>
 <span class="hljs-comment">// </span>
 <span class="hljs-comment">// Is raised after a CARD has been UPDATED.</span>
 exports.onCardUpdated = <span class="hljs-keyword">async</span> (args) =&gt; {
+    <span class="hljs-comment">// args.data =&gt; s. https://mkloubert.github.io/vscode-kanban/interfaces/_boards_.cardupdatedeventdata.html</span>
 };
 
 <span class="hljs-comment">// [OPTIONAL]</span>
 <span class="hljs-comment">// </span>
 <span class="hljs-comment">// Is raised after a column has been cleared.</span>
 exports.onColumnCleared = <span class="hljs-keyword">async</span> (args) =&gt; {
+    <span class="hljs-comment">// args.data =&gt; s. https://mkloubert.github.io/vscode-kanban/interfaces/_boards_.columnclearedeventdata.html</span>
 };
 
 <span class="hljs-comment">// [OPTIONAL]</span>
 <span class="hljs-comment">// </span>
 <span class="hljs-comment">// Generic fallback function, if a function is not defined for an event.</span>
 exports.onEvent = <span class="hljs-keyword">async</span> (args) =&gt; {
-    <span class="hljs-comment">// args.name =&gt; name of the event    </span>
+    <span class="hljs-comment">// args.name =&gt; name of the event</span>
+    <span class="hljs-comment">// args.data =&gt; object with event data  </span>
 };
 </code></pre>
 				<h2 id="support-and-contribute-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
@@ -191,6 +203,7 @@ exports.onEvent = <span class="hljs-keyword">async</span> (args) =&gt; {
 					<li>commit your changes to your new branch and sync it with your forked GitHub repo</li>
 					<li>make a <a href="https://github.com/mkloubert/vscode-kanban/pulls">pull request</a></li>
 				</ul>
+				<p>The complete API documentation can be found <a href="https://mkloubert.github.io/vscode-kanban/">here</a>.</p>
 				<h2 id="related-projects-">Related projects [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<h3 id="vscode-helpers-">vscode-helpers [<a href="#related-projects-">&uarr;</a>]</h3>
 				<p><a href="https://github.com/mkloubert/vscode-helpers">vscode-helpers</a> is a NPM module, which you can use in your own <a href="https://code.visualstudio.com/docs/extensions/overview">VSCode extension</a> and contains a lot of helpful classes and functions.</p>

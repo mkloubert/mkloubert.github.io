@@ -95,6 +95,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.boardcard.html#creation_time" class="tsd-kind-icon">creation_<wbr>time</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.boardcard.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.boardcard.html#prio" class="tsd-kind-icon">prio</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.boardcard.html#tag" class="tsd-kind-icon">tag</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.boardcard.html#title" class="tsd-kind-icon">title</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.boardcard.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
@@ -110,7 +111,7 @@
 					<div class="tsd-signature tsd-kind-icon">assigned<wbr>To<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a15d60d/src/boards.ts#L57">boards.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/boards.ts#L57">boards.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -138,7 +139,7 @@
 					<div class="tsd-signature tsd-kind-icon">creation_<wbr>time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a15d60d/src/boards.ts#L66">boards.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/boards.ts#L66">boards.ts:66</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -150,15 +151,15 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="description" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a15d60d/src/boards.ts#L70">boards.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/boards.ts#L70">boards.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The (optional) description.</p>
+							<p>The (optional) description (data).</p>
 						</div>
 					</div>
 				</section>
@@ -168,7 +169,7 @@
 					<div class="tsd-signature tsd-kind-icon">prio<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a15d60d/src/boards.ts#L74">boards.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/boards.ts#L77">boards.ts:77</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -178,12 +179,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tag" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> tag</h3>
+					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/boards.ts#L81">boards.ts:81</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>User defined data from scripts, e.g.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="title" class="tsd-anchor"></a>
 					<h3>title</h3>
 					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a15d60d/src/boards.ts#L78">boards.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/boards.ts#L85">boards.ts:85</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -198,7 +214,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a15d60d/src/boards.ts#L82">boards.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/boards.ts#L89">boards.ts:89</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -259,6 +275,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_boards_.boardcard.html#prio" class="tsd-kind-icon">prio</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_boards_.boardcard.html#tag" class="tsd-kind-icon">tag</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_boards_.boardcard.html#title" class="tsd-kind-icon">title</a>

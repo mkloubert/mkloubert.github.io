@@ -76,6 +76,7 @@
 					<li><a href="#how-to-use-">How to use</a><ul>
 							<li><a href="#how-to-execute-">How to execute</a></li>
 							<li><a href="#settings-">Settings</a></li>
+							<li><a href="#markdown-support-">Markdown support</a></li>
 							<li><a href="#handle-events-">Handle events</a></li>
 						</ul>
 					</li>
@@ -139,6 +140,24 @@
 						</tr>
 					</tbody>
 				</table>
+				<h3 id="markdown-support-">Markdown support [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p>Card descriptions can be formatted with <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>, which is parsed by <a href="https://github.com/showdownjs/showdown">Showndown</a> library.</p>
+				<p>The extension uses the following <a href="https://github.com/showdownjs/showdown#valid-options">settings</a>:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"completeHTMLDocument"</span>: <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">"encodeEmails"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"ghCodeBlocks"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"ghCompatibleHeaderId"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"headerLevelStart"</span>: <span class="hljs-number">3</span>,
+    <span class="hljs-attr">"openLinksInNewWindow"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"simpleLineBreaks"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"simplifiedAutoLink"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"strikethrough"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"tables"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"tasklists"</span>: <span class="hljs-literal">true</span>
+}
+</code></pre>
+				<p>Code blocks are parsed by <a href="https://highlightjs.org/">highlight.js</a> and all <a href="https://highlightjs.org/static/demo/">provided languages</a> are included and supported.</p>
 				<h3 id="handle-events-">Handle events [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>For handling events, you can create a JavaScript file, called <code>vscode-kanban.js</code>, inside your <code>.vscode</code> subfolder of your workspace and start with the following skeleton (s. <a href="https://mkloubert.github.io/vscode-kanban/interfaces/_workspaces_.eventscriptmodule.html">EventScriptModule</a> interface):</p>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// all 'args' parameters are based on</span>
@@ -146,12 +165,28 @@
 <span class="hljs-comment">// </span>
 <span class="hljs-comment">// s. https://mkloubert.github.io/vscode-kanban/interfaces/_workspaces_.eventscriptfunctionarguments.html</span>
 
+<span class="hljs-comment">// use any Node.js 7 API, s. https://nodejs.org/</span>
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-comment">// use VSCode API, s. https://code.visualstudio.com/docs/extensionAPI/vscode-api</span>
+<span class="hljs-keyword">const</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
 
 <span class="hljs-comment">// [OPTIONAL]</span>
 <span class="hljs-comment">// </span>
 <span class="hljs-comment">// Is raised after a CARD has been CREATED.</span>
 exports.onCardCreated = <span class="hljs-keyword">async</span> (args) =&gt; {
     <span class="hljs-comment">// args.data =&gt; s. https://mkloubert.github.io/vscode-kanban/interfaces/_boards_.cardcreatedeventdata.html</span>
+
+    <span class="hljs-comment">// access a module of that extension</span>
+    <span class="hljs-comment">// s. https://github.com/mkloubert/vscode-kanban/blob/master/package.json</span>
+    <span class="hljs-keyword">const</span> FSExtra = args.require(<span class="hljs-string">'fs-extra'</span>);
+
+    <span class="hljs-comment">// write own data to</span>
+    <span class="hljs-comment">// 'tag' property of a card (args.tag)</span>
+    <span class="hljs-comment">// </span>
+    <span class="hljs-comment">// also works in:</span>
+    <span class="hljs-comment">// - onCardMoved()</span>
+    <span class="hljs-comment">// - onCardUpdated()</span>
+    <span class="hljs-keyword">await</span> args.setTag( <span class="hljs-string">'Any JSON serializable data.'</span> );    
 };
 
 <span class="hljs-comment">// [OPTIONAL]</span>

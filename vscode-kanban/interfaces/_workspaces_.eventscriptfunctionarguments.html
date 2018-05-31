@@ -62,7 +62,7 @@
 					<a href="_workspaces_.eventscriptfunctionarguments.html">EventScriptFunctionArguments</a>
 				</li>
 			</ul>
-			<h1>Interface EventScriptFunctionArguments&lt;TData&gt;</h1>
+			<h1>Interface EventScriptFunctionArguments</h1>
 		</div>
 	</div>
 </header>
@@ -75,14 +75,6 @@
 						<p>Arguments for an event script function.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>TData</h4>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
@@ -102,6 +94,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.eventscriptfunctionarguments.html#data" class="tsd-kind-icon">data</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.eventscriptfunctionarguments.html#file" class="tsd-kind-icon">file</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.eventscriptfunctionarguments.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.eventscriptfunctionarguments.html#require" class="tsd-kind-icon">require</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,10 +105,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="data" class="tsd-anchor"></a>
 					<h3>data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">TData</span></div>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a15d60d/src/workspaces.ts#L88">workspaces.ts:88</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/workspaces.ts#L103">workspaces.ts:103</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -130,7 +123,7 @@
 					<div class="tsd-signature tsd-kind-icon">file<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a15d60d/src/workspaces.ts#L92">workspaces.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/workspaces.ts#L107">workspaces.ts:107</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -145,13 +138,49 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a15d60d/src/workspaces.ts#L96">workspaces.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/workspaces.ts#L111">workspaces.ts:111</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The name of the event.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="require" class="tsd-anchor"></a>
+					<h3>require</h3>
+					<div class="tsd-signature tsd-kind-icon">require<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/workspaces.ts#L115">workspaces.ts:115</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An extended &#39;require()&#39; function, which can also access the modules of that extension.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>id: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -188,11 +217,14 @@
 						<a href="../classes/_workspaces_.workspace.html" class="tsd-kind-icon">Workspace</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_workspaces_.cansetcardtag.html" class="tsd-kind-icon">Can<wbr>Set<wbr>Card<wbr>Tag</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_workspaces_.config.html" class="tsd-kind-icon">Config</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_workspaces_.eventscriptfunctionarguments.html" class="tsd-kind-icon">Event<wbr>Script<wbr>Function<wbr>Arguments</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -204,12 +236,18 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_workspaces_.eventscriptfunctionarguments.html#name" class="tsd-kind-icon">name</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_workspaces_.eventscriptfunctionarguments.html#require" class="tsd-kind-icon">require</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_workspaces_.eventscriptmodule.html" class="tsd-kind-icon">Event<wbr>Script<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_workspaces_.hastag.html" class="tsd-kind-icon">Has<wbr>Tag</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/_workspaces_.html#eventscriptfunction" class="tsd-kind-icon">Event<wbr>Script<wbr>Function</a>

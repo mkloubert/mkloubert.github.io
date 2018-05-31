@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RaiseEvent | vscode-kanban</title>
+	<title>HasTag | vscode-kanban</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,24 +56,31 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_boards_.html">&quot;boards&quot;</a>
+					<a href="../modules/_workspaces_.html">&quot;workspaces&quot;</a>
 				</li>
 				<li>
-					<a href="_boards_.raiseevent.html">RaiseEvent</a>
+					<a href="_workspaces_.hastag.html">HasTag</a>
 				</li>
 			</ul>
-			<h1>Interface RaiseEvent</h1>
+			<h1>Interface HasTag</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>An object that contains a &#39;tag&#39; property.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">RaiseEvent</span>
+						<span class="target">HasTag</span>
 					</li>
 				</ul>
 			</section>
@@ -81,37 +88,31 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_boards_.raiseevent.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_boards_.raiseevent.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.hastag.html#tag" class="tsd-kind-icon">tag</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="data" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tag" class="tsd-anchor"></a>
+					<h3>tag</h3>
+					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/boards.ts#L247">boards.ts:247</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/workspaces.ts#L125">workspaces.ts:125</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/a421f7d/src/boards.ts#L248">boards.ts:248</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The &#39;tag&#39; data.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -121,7 +122,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_boards_.html">"boards"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -136,7 +137,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_test_index_.html">"test/index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_workspaces_.html">"workspaces"</a>
 					</li>
 				</ul>
@@ -144,70 +145,46 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_boards_.kanbanboard.html" class="tsd-kind-icon">Kanban<wbr>Board</a>
+						<a href="../classes/_workspaces_.workspace.html" class="tsd-kind-icon">Workspace</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_boards_.board.html" class="tsd-kind-icon">Board</a>
+						<a href="_workspaces_.cansetcardtag.html" class="tsd-kind-icon">Can<wbr>Set<wbr>Card<wbr>Tag</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_boards_.boardcard.html" class="tsd-kind-icon">Board<wbr>Card</a>
+						<a href="_workspaces_.config.html" class="tsd-kind-icon">Config</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_boards_.cardcreatedeventdata.html" class="tsd-kind-icon">Card<wbr>Created<wbr>Event<wbr>Data</a>
+						<a href="_workspaces_.eventscriptfunctionarguments.html" class="tsd-kind-icon">Event<wbr>Script<wbr>Function<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_boards_.carddeletedeventdata.html" class="tsd-kind-icon">Card<wbr>Deleted<wbr>Event<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_boards_.cardmovedeventdata.html" class="tsd-kind-icon">Card<wbr>Moved<wbr>Event<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_boards_.cardupdatedeventdata.html" class="tsd-kind-icon">Card<wbr>Updated<wbr>Event<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_boards_.columnclearedeventdata.html" class="tsd-kind-icon">Column<wbr>Cleared<wbr>Event<wbr>Data</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_boards_.eventdatawithuniqueid.html" class="tsd-kind-icon">Event<wbr>Data<wbr>With<wbr>Unique<wbr>Id</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_boards_.eventlistenercontext.html" class="tsd-kind-icon">Event<wbr>Listener<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_boards_.openboardoptions.html" class="tsd-kind-icon">Open<wbr>Board<wbr>Options</a>
+						<a href="_workspaces_.eventscriptmodule.html" class="tsd-kind-icon">Event<wbr>Script<wbr>Module</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_boards_.raiseevent.html" class="tsd-kind-icon">Raise<wbr>Event</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_workspaces_.hastag.html" class="tsd-kind-icon">Has<wbr>Tag</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_boards_.raiseevent.html#data" class="tsd-kind-icon">data</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_boards_.raiseevent.html#name" class="tsd-kind-icon">name</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_workspaces_.hastag.html#tag" class="tsd-kind-icon">tag</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_boards_.webviewmessage.html" class="tsd-kind-icon">Web<wbr>View<wbr>Message</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="../modules/_workspaces_.html#eventscriptfunction" class="tsd-kind-icon">Event<wbr>Script<wbr>Function</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_boards_.html#eventlistener" class="tsd-kind-icon">Event<wbr>Listener</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#board_filename" class="tsd-kind-icon">BOARD_<wbr>FILENAME</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_boards_.html#saveboardeventlistener" class="tsd-kind-icon">Save<wbr>Board<wbr>Event<wbr>Listener</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#script_filename" class="tsd-kind-icon">SCRIPT_<wbr>FILENAME</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_boards_.html#newboard" class="tsd-kind-icon">new<wbr>Board</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_workspaces_.html#getallworkspaces" class="tsd-kind-icon">get<wbr>All<wbr>Workspaces</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_boards_.html#openboard" class="tsd-kind-icon">open<wbr>Board</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_boards_.html#known_urls" class="tsd-kind-icon">KNOWN_<wbr>URLS</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workspaces_.html#saveboardto" class="tsd-kind-icon">save<wbr>Board<wbr>To</a>
 					</li>
 				</ul>
 			</nav>

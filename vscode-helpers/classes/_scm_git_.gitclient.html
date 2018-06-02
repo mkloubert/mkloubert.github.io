@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CacheProviderBase | vscode-helpers</title>
+	<title>GitClient | vscode-helpers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_cache_index_.html">&quot;cache/index&quot;</a>
+					<a href="../modules/_scm_git_.html">&quot;scm/git&quot;</a>
 				</li>
 				<li>
-					<a href="_cache_index_.cacheproviderbase.html">CacheProviderBase</a>
+					<a href="_scm_git_.gitclient.html">GitClient</a>
 				</li>
 			</ul>
-			<h1>Class CacheProviderBase</h1>
+			<h1>Class GitClient</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A basic cache provider.</p>
+						<p>A git client.</p>
 					</div>
 				</div>
 			</section>
@@ -80,19 +80,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CacheProviderBase</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="_cache_index_.memorycache.html" class="tsd-signature-type">MemoryCache</a>
-							</li>
-						</ul>
+						<span class="target">GitClient</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_cache_index_.cacheprovider.html" class="tsd-signature-type">CacheProvider</a></li>
+					<li><a href="../interfaces/_scm_index_.sourcecontrolclient.html" class="tsd-signature-type">SourceControlClient</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -100,192 +95,170 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_scm_git_.gitclient.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_scm_git_.gitclient.html#cwd" class="tsd-kind-icon">cwd</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_scm_git_.gitclient.html#executable" class="tsd-kind-icon">executable</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_cache_index_.cacheproviderbase.html#clear" class="tsd-kind-icon">clear</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_cache_index_.cacheproviderbase.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_cache_index_.cacheproviderbase.html#has" class="tsd-kind-icon">has</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_cache_index_.cacheproviderbase.html#set" class="tsd-kind-icon">set</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_cache_index_.cacheproviderbase.html#unset" class="tsd-kind-icon">unset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_scm_git_.gitclient.html#exec" class="tsd-kind-icon">exec</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_scm_git_.gitclient.html#execsync" class="tsd-kind-icon">exec<wbr>Sync</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Git<wbr>Client<span class="tsd-signature-symbol">(</span>executable<span class="tsd-signature-symbol">: </span><a href="../interfaces/_scm_git_.gitexecutable.html" class="tsd-signature-type">GitExecutable</a>, cwd<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_scm_git_.gitclient.html" class="tsd-signature-type">GitClient</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/scm/git.ts#L56">scm/git.ts:56</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initializes a new instance of that class.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>executable: <a href="../interfaces/_scm_git_.gitexecutable.html" class="tsd-signature-type">GitExecutable</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The data of the executable.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> cwd: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_scm_git_.gitclient.html" class="tsd-signature-type">GitClient</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="cwd" class="tsd-anchor"></a>
+					<h3>cwd</h3>
+					<div class="tsd-signature tsd-kind-icon">cwd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/_scm_index_.sourcecontrolclient.html">SourceControlClient</a>.<a href="../interfaces/_scm_index_.sourcecontrolclient.html#cwd">cwd</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/scm/git.ts#L83">scm/git.ts:83</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the current working directory.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="executable" class="tsd-anchor"></a>
+					<h3>executable</h3>
+					<div class="tsd-signature tsd-kind-icon">executable<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_scm_git_.gitexecutable.html" class="tsd-signature-type">GitExecutable</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/scm/git.ts#L63">scm/git.ts:63</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The data of the executable.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="clear" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> clear</h3>
+					<a name="exec" class="tsd-anchor"></a>
+					<h3>exec</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ExecFileOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_index_.execfileresult.html" class="tsd-signature-type">ExecFileResult</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_cache_index_.cacheprovider.html">CacheProvider</a>.<a href="../interfaces/_cache_index_.cacheprovider.html#clear">clear</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/cache/index.ts#L83">cache/index.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/scm/git.ts#L93">scm/git.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Clears the cache.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>chainable</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-							<p>this</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a name="get" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> get</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">get&lt;TValue, TDefault&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">TDefault</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TValue</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">TDefault</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_cache_index_.cacheprovider.html">CacheProvider</a>.<a href="../interfaces/_cache_index_.cacheprovider.html#get">get</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/cache/index.ts#L86">cache/index.ts:86</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Returns a value from the cache.</p>
+									<p>Executes the Git client.</p>
 								</div>
 							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>TValue</h4>
-								</li>
-								<li>
-									<h4>TDefault</h4>
-								</li>
-							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>key: <span class="tsd-signature-type">any</span></h5>
+									<h5>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Arguments for the execution.</p>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> defaultValue: <span class="tsd-signature-type">TDefault</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">ExecFileOptions</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TValue</span>
-								<span class="tsd-signature-symbol"> | </span>
-								<span class="tsd-signature-type">TDefault</span>
-							</h4>
-							<p>The value.</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_index_.execfileresult.html" class="tsd-signature-type">ExecFileResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the result.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="has" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> has</h3>
+					<a name="execsync" class="tsd-anchor"></a>
+					<h3>exec<wbr>Sync</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">has<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">exec<wbr>Sync<span class="tsd-signature-symbol">(</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ExecFileOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_cache_index_.cacheprovider.html">CacheProvider</a>.<a href="../interfaces/_cache_index_.cacheprovider.html#has">has</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/cache/index.ts#L89">cache/index.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/scm/git.ts#L113">scm/git.ts:113</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Checks if the cache contains a value.</p>
+									<p>Executes the Git client (sync).</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>key: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p>Contains value or not.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-					<a name="set" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> set</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">set&lt;TValue&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TValue</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_cache_index_.cacheprovider.html">CacheProvider</a>.<a href="../interfaces/_cache_index_.cacheprovider.html#set">set</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/cache/index.ts#L92">cache/index.ts:92</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Sets a value for an object.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>chainable</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>TValue</h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">any</span></h5>
+									<h5>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Arguments for the execution.</p>
+									</div>
 								</li>
 								<li>
-									<h5>value: <span class="tsd-signature-type">TValue</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">ExecFileOptions</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-							<p>this</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="unset" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> unset</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">unset<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/cache/index.ts#L95">cache/index.ts:95</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>inheritdoc</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">any</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The result.</p>
 						</li>
 					</ul>
 				</section>
@@ -297,7 +270,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_cache_index_.html">"cache/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -324,7 +297,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_progress_index_.html">"progress/index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_scm_git_.html">"scm/git"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -346,32 +319,71 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_cache_index_.cacheproviderbase.html" class="tsd-kind-icon">Cache<wbr>Provider<wbr>Base</a>
+						<a href="_scm_git_.gitclient.html" class="tsd-kind-icon">Git<wbr>Client</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_cache_index_.cacheproviderbase.html#clear" class="tsd-kind-icon">clear</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_scm_git_.gitclient.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-								<a href="_cache_index_.cacheproviderbase.html#get" class="tsd-kind-icon">get</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_scm_git_.gitclient.html#cwd" class="tsd-kind-icon">cwd</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_cache_index_.cacheproviderbase.html#has" class="tsd-kind-icon">has</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
-								<a href="_cache_index_.cacheproviderbase.html#set" class="tsd-kind-icon">set</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_scm_git_.gitclient.html#executable" class="tsd-kind-icon">executable</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_cache_index_.cacheproviderbase.html#unset" class="tsd-kind-icon">unset</a>
+								<a href="_scm_git_.gitclient.html#exec" class="tsd-kind-icon">exec</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_scm_git_.gitclient.html#execsync" class="tsd-kind-icon">exec<wbr>Sync</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_cache_index_.memorycache.html" class="tsd-kind-icon">Memory<wbr>Cache</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/_scm_git_.executable.html" class="tsd-kind-icon">Executable</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_cache_index_.cacheprovider.html" class="tsd-kind-icon">Cache<wbr>Provider</a>
+						<a href="../interfaces/_scm_git_.gitexecutable.html" class="tsd-kind-icon">Git<wbr>Executable</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#asstring" class="tsd-kind-icon">as<wbr>String</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#findexecutablesync" class="tsd-kind-icon">find<wbr>Executable<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#findgitdarwinsync" class="tsd-kind-icon">find<wbr>Git<wbr>Darwin<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#findgitpathsync" class="tsd-kind-icon">find<wbr>Git<wbr>Path<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#findgitwin32sync" class="tsd-kind-icon">find<wbr>Git<wbr>Win32<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#findspecificgitsync" class="tsd-kind-icon">find<wbr>Specific<wbr>Git<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#findsystemgitwin32sync" class="tsd-kind-icon">find<wbr>System<wbr>Git<wbr>Win32<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#parseversion" class="tsd-kind-icon">parse<wbr>Version</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#runcommandsync" class="tsd-kind-icon">run<wbr>Command<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_scm_git_.html#rundownpathsync" class="tsd-kind-icon">run<wbr>Down<wbr>Path<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_scm_git_.html#tryfindgitpath" class="tsd-kind-icon">try<wbr>Find<wbr>Git<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_scm_git_.html#tryfindgitpathsync" class="tsd-kind-icon">try<wbr>Find<wbr>Git<wbr>Path<wbr>Sync</a>
 					</li>
 				</ul>
 			</nav>

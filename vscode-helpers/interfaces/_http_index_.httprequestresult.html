@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WorkspaceConfigSource | vscode-helpers</title>
+	<title>HTTPRequestResult | vscode-helpers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_workspaces_index_.html">&quot;workspaces/index&quot;</a>
+					<a href="../modules/_http_index_.html">&quot;http/index&quot;</a>
 				</li>
 				<li>
-					<a href="_workspaces_index_.workspaceconfigsource.html">WorkspaceConfigSource</a>
+					<a href="_http_index_.httprequestresult.html">HTTPRequestResult</a>
 				</li>
 			</ul>
-			<h1>Interface WorkspaceConfigSource</h1>
+			<h1>Interface HTTPRequestResult</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Stores data of configuration source.</p>
+						<p>A result of a HTTP request.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">WorkspaceConfigSource</span>
+						<span class="target">HTTPRequestResult</span>
 					</li>
 				</ul>
 			</section>
@@ -91,8 +91,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_index_.workspaceconfigsource.html#resource" class="tsd-kind-icon">resource</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_index_.workspaceconfigsource.html#section" class="tsd-kind-icon">section</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#code" class="tsd-kind-icon">code</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#readbody" class="tsd-kind-icon">read<wbr>Body</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#request" class="tsd-kind-icon">request</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#response" class="tsd-kind-icon">response</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#url" class="tsd-kind-icon">url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#version" class="tsd-kind-icon">version</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,32 +106,122 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="resource" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> resource</h3>
-					<div class="tsd-signature tsd-kind-icon">resource<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Uri</span></div>
+					<a name="code" class="tsd-anchor"></a>
+					<h3>code</h3>
+					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/workspaces/index.ts#L53">workspaces/index.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/http/index.ts#L46">http/index.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets the resource URI.</p>
+							<p>The (status) code.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="section" class="tsd-anchor"></a>
-					<h3>section</h3>
-					<div class="tsd-signature tsd-kind-icon">section<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="readbody" class="tsd-anchor"></a>
+					<h3>read<wbr>Body</h3>
+					<div class="tsd-signature tsd-kind-icon">read<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/workspaces/index.ts#L57">workspaces/index.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/http/index.ts#L50">http/index.ts:50</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets the name of the section.</p>
+							<p>Reads and returns the body (data).</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="request" class="tsd-anchor"></a>
+					<h3>request</h3>
+					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RequestOptions</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RequestOptions</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/http/index.ts#L54">http/index.ts:54</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The options of the request.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="response" class="tsd-anchor"></a>
+					<h3>response</h3>
+					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ClientResponse</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/http/index.ts#L58">http/index.ts:58</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The response context.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="status" class="tsd-anchor"></a>
+					<h3>status</h3>
+					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/http/index.ts#L62">http/index.ts:62</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The status (message).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="url" class="tsd-anchor"></a>
+					<h3>url</h3>
+					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Url</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/http/index.ts#L66">http/index.ts:66</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The request URL.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="version" class="tsd-anchor"></a>
+					<h3>version</h3>
+					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/163c726/src/http/index.ts#L70">http/index.ts:70</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The HTTP version.</p>
 						</div>
 					</div>
 				</section>
@@ -153,7 +248,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_html_index_.html">"html/index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_http_index_.html">"http/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -177,54 +272,75 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workflows_index_.html">"workflows/index"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workspaces_index_.html">"workspaces/index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_workspaces_index_.workspacewatcherevent.html" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_workspaces_index_.workspacebase.html" class="tsd-kind-icon">Workspace<wbr>Base</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_workspaces_index_.workspace.html" class="tsd-kind-icon">Workspace</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_workspaces_index_.workspaceconfigsource.html" class="tsd-kind-icon">Workspace<wbr>Config<wbr>Source</a>
+						<a href="_http_index_.httprequestresult.html" class="tsd-kind-icon">HTTPRequest<wbr>Result</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_workspaces_index_.workspaceconfigsource.html#resource" class="tsd-kind-icon">resource</a>
+								<a href="_http_index_.httprequestresult.html#code" class="tsd-kind-icon">code</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_workspaces_index_.workspaceconfigsource.html#section" class="tsd-kind-icon">section</a>
+								<a href="_http_index_.httprequestresult.html#readbody" class="tsd-kind-icon">read<wbr>Body</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_http_index_.httprequestresult.html#request" class="tsd-kind-icon">request</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_http_index_.httprequestresult.html#response" class="tsd-kind-icon">response</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_http_index_.httprequestresult.html#status" class="tsd-kind-icon">status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_http_index_.httprequestresult.html#url" class="tsd-kind-icon">url</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_http_index_.httprequestresult.html#version" class="tsd-kind-icon">version</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_workspaces_index_.workspacecontext.html" class="tsd-kind-icon">Workspace<wbr>Context</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_http_index_.html#httprequestbody" class="tsd-kind-icon">HTTPRequest<wbr>Body</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_workspaces_index_.workspacewatchercontext.html" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Context</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_http_index_.html#httprequestoptions" class="tsd-kind-icon">HTTPRequest<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_workspaces_index_.html#workspacewatcher" class="tsd-kind-icon">Workspace<wbr>Watcher</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_http_index_.html#httprequesturl" class="tsd-kind-icon">HTTPRequestURL</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_workspaces_index_.html#workspacewatchercompleteaction" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Complete<wbr>Action</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_http_index_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_workspaces_index_.html#workspacewatcherresult" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Result</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_http_index_.html#normalizeheadercase" class="tsd-kind-icon">Normalize<wbr>Header<wbr>Case</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_workspaces_index_.html#registerworkspacewatcher" class="tsd-kind-icon">register<wbr>Workspace<wbr>Watcher</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_http_index_.html#delete" class="tsd-kind-icon">DELETE</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_http_index_.html#get" class="tsd-kind-icon">GET</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_http_index_.html#patch" class="tsd-kind-icon">PATCH</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_http_index_.html#post" class="tsd-kind-icon">POST</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_http_index_.html#put" class="tsd-kind-icon">PUT</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_http_index_.html#request" class="tsd-kind-icon">request</a>
 					</li>
 				</ul>
 			</nav>

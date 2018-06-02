@@ -86,16 +86,21 @@
 									<li><a href="#comparevaluesby-">compareValuesBy</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
 									<li><a href="#createdirectoryifneeded-">createDirectoryIfNeeded</a></li>
+									<li><a href="#creategitclient-">createGitClient</a></li>
+									<li><a href="#creategitclientsync-">createGitClientSync</a></li>
 									<li><a href="#createinterval-">createInterval</a></li>
 									<li><a href="#createlogger-">createLogger</a></li>
 									<li><a href="#createtimeout-">createTimeout</a></li>
+									<li><a href="#delete-">DELETE</a></li>
 									<li><a href="#doesmatch-">doesMatch</a></li>
+									<li><a href="#execfile-">execFile</a></li>
 									<li><a href="#exists-">exists</a></li>
 									<li><a href="#foreachasync-">forEachAsync</a></li>
 									<li><a href="#format-">format</a></li>
 									<li><a href="#formatarray-">formatArray</a></li>
 									<li><a href="#from-">from</a></li>
 									<li><a href="#frommarkdown-">fromMarkdown</a></li>
+									<li><a href="#get-">GET</a></li>
 									<li><a href="#glob-">glob</a></li>
 									<li><a href="#globsync-">globSync</a></li>
 									<li><a href="#invokeafter-">invokeAfter</a></li>
@@ -121,9 +126,13 @@
 									<li><a href="#normalizestring-">normalizeString</a></li>
 									<li><a href="#now-">now</a></li>
 									<li><a href="#openandshowtextdocument-">openAndShowTextDocument</a></li>
+									<li><a href="#patch-">PATCH</a></li>
+									<li><a href="#post-">POST</a></li>
+									<li><a href="#put-">PUT</a></li>
 									<li><a href="#randombytes-">randomBytes</a></li>
 									<li><a href="#registerworkspacewatcher-">registerWorkspaceWatcher</a></li>
 									<li><a href="#readall-">readAll</a></li>
+									<li><a href="#request-">request</a></li>
 									<li><a href="#size-">size</a></li>
 									<li><a href="#sizeSync-">sizeSync</a></li>
 									<li><a href="#sleep-">sleep</a></li>
@@ -138,6 +147,8 @@
 									<li><a href="#trycleartimeout-">tryClearTimeout</a></li>
 									<li><a href="#trydispose-">tryDispose</a></li>
 									<li><a href="#trydisposeanddelete-">tryDisposeAndDelete</a></li>
+									<li><a href="#trycreategitclient-">tryCreateGitClient</a></li>
+									<li><a href="#trycreategitclientsync-">tryCreateGitClientSync</a></li>
 									<li><a href="#tryremovealllisteners-">tryRemoveAllListeners</a></li>
 									<li><a href="#tryremovelistener-">tryRemoveListener</a></li>
 									<li><a href="#using-">using</a></li>
@@ -157,6 +168,7 @@
 							</li>
 							<li><a href="#constants-and-variables-">Constants and variables</a><ul>
 									<li><a href="#events-">EVENTS</a></li>
+									<li><a href="#is_-">IS_*</a></li>
 									<li><a href="#session-">SESSION</a></li>
 								</ul>
 							</li>
@@ -341,13 +353,6 @@ CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment
                                           <span class="hljs-function"><span class="hljs-params">i</span> =&gt;</span> i.sortValue);
 });
 </code></pre>
-				<h4 id="createdirectoryifneeded-">createDirectoryIfNeeded [<a href="#functions-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript">vscode_helpers.createDirectoryIfNeeded(<span class="hljs-string">'/dir/to/create'</span>).then(<span class="hljs-function">(<span class="hljs-params">hasBeenCreated: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
-    <span class="hljs-comment">// hasBeenCreated === (false), if directory already exists</span>
-}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
-    <span class="hljs-comment">// error</span>
-});
-</code></pre>
 				<h4 id="createcompletedaction-">createCompletedAction [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
@@ -360,6 +365,35 @@ CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment
         }</span>);
     }</span>);
 }</span>
+</code></pre>
+				<h4 id="createdirectoryifneeded-">createDirectoryIfNeeded [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.createDirectoryIfNeeded(<span class="hljs-string">'/dir/to/create'</span>).then(<span class="hljs-function">(<span class="hljs-params">hasBeenCreated: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
+    <span class="hljs-comment">// hasBeenCreated === (false), if directory already exists</span>
+}, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+    <span class="hljs-comment">// error</span>
+});
+</code></pre>
+				<h4 id="creategitclient-">createGitClient [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> CLIENT = <span class="hljs-keyword">await</span> vscode_helpers.createGitClient();
+
+    <span class="hljs-keyword">const</span> STD_OUT: <span class="hljs-built_in">string</span> = (<span class="hljs-keyword">await</span> CLIENT.exec([ <span class="hljs-string">'--version'</span> ])).stdOut;
+
+    <span class="hljs-built_in">console</span>.log( STD_OUT );
+} <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-comment">// no git client found</span>
+}
+</code></pre>
+				<h4 id="creategitclientsync-">createGitClientSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> CLIENT = vscode_helpers.createGitClientSync();
+
+    <span class="hljs-built_in">console</span>.log(
+        CLIENT.execSync([ <span class="hljs-string">'--version'</span> ]);
+    );
+} <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-comment">// no git client found</span>
+}
 </code></pre>
 				<h4 id="createinterval-">createInterval [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> INTERVAL = vscode_helpers.createInterval(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
@@ -384,10 +418,19 @@ LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
 
 TIMEOUT.dispose();  <span class="hljs-comment">// same as 'clearTimeout'</span>
 </code></pre>
+				<h4 id="delete-">DELETE [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> RESULT = <span class="hljs-keyword">await</span> vscode_helpers.DELETE(<span class="hljs-string">'https://example.com/api/users/19861222'</span>);
+</code></pre>
 				<h4 id="doesmatch-">doesMatch [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.doesMatch(<span class="hljs-string">'my-file.txt'</span>, <span class="hljs-string">'*.txt'</span>);  <span class="hljs-comment">// (true)</span>
 vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <span class="hljs-string">'*.txt'</span> ]);  <span class="hljs-comment">// (false)</span>
 vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <span class="hljs-string">'*.txt'</span>, <span class="hljs-string">'*.jpg'</span> ]);  <span class="hljs-comment">// (true)</span>
+</code></pre>
+				<h4 id="execfile-">execFile [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> RESULT = <span class="hljs-keyword">await</span> vscode_helpers.execFile(<span class="hljs-string">'/path/to/execiutable'</span>, [ <span class="hljs-string">'--version'</span> ]);
+
+<span class="hljs-keyword">const</span> STD_ERR = RESULT.stdErr;
+<span class="hljs-keyword">const</span> STD_OUT = RESULT.stdOut;
 </code></pre>
 				<h4 id="exists-">exists [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.exists(<span class="hljs-string">'/path/of/thing/to/check'</span>, <span class="hljs-function">(<span class="hljs-params">doesExist: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
@@ -439,6 +482,13 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
 				<h4 id="frommarkdown-">fromMarkdown [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> htmlFromMarkdown = vscode_helpers.fromMarkdown(
     <span class="hljs-string">'Vessel     | Captain\n-----------|-------------\nNCC-1701   | James T Kirk\nNCC-1701 A | James T Kirk\nNCC-1701 D | Picard'</span>
+);
+</code></pre>
+				<h4 id="get-">GET [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> RESULT = <span class="hljs-keyword">await</span> vscode_helpers.GET(<span class="hljs-string">'https://example.com/api/users/5979'</span>);
+
+<span class="hljs-keyword">const</span> USER_DATA = <span class="hljs-built_in">JSON</span>.parse(
+    (<span class="hljs-keyword">await</span> RESULT.readBody()).toString(<span class="hljs-string">'utf8'</span>)
 );
 </code></pre>
 				<h4 id="glob-">glob [<a href="#functions-">&uarr;</a>]</h4>
@@ -614,6 +664,29 @@ OBJ_2.dispose();  <span class="hljs-comment">// throws an exception</span>
 }`</span>,
 });
 </code></pre>
+				<h4 id="patch-">PATCH [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> RESULT = <span class="hljs-keyword">await</span> vscode_helpers.PATCH(<span class="hljs-string">'https://example.com/api/users/23979'</span>, <span class="hljs-built_in">JSON</span>.stringify({
+    displayName: <span class="hljs-string">'Marcel Kloubert'</span>,
+}), {
+    <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json; charset=utf8'</span>,
+});
+</code></pre>
+				<h4 id="post-">POST [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> RESULT = <span class="hljs-keyword">await</span> vscode_helpers.PUT(<span class="hljs-string">'https://example.com/api/users/23979'</span>, <span class="hljs-built_in">JSON</span>.stringify({
+    displayName: <span class="hljs-string">'Marcel Kloubert'</span>,
+    userName: <span class="hljs-string">'mkloubert'</span>,
+    country: <span class="hljs-string">'Germany'</span>,
+}), {
+    <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json; charset=utf8'</span>,
+});
+</code></pre>
+				<h4 id="put-">PUT [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> RESULT = <span class="hljs-keyword">await</span> vscode_helpers.PUT(<span class="hljs-string">'https://example.com/api/users/23979'</span>, <span class="hljs-built_in">JSON</span>.stringify({
+    displayName: <span class="hljs-string">'Marcel Kloubert'</span>,
+}), {
+    <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json; charset=utf8'</span>,
+});
+</code></pre>
 				<h4 id="randombytes-">randomBytes [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.randomBytes(<span class="hljs-number">5979</span>).then(<span class="hljs-function">(<span class="hljs-params">bytes</span>) =&gt;</span> {
     <span class="hljs-comment">// 5979 random bytes are stored</span>
@@ -668,6 +741,15 @@ vscode_helpers.registerWorkspaceWatcher(<span class="hljs-keyword">async</span> 
 
         <span class="hljs-keyword">return</span> NEW_WORKSPACE;
     }
+});
+</code></pre>
+				<h4 id="request-">request [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> RESULT = <span class="hljs-keyword">await</span> vscode_helpers.request(<span class="hljs-string">'POST'</span>, <span class="hljs-string">'https://example.com/api/users/23979'</span>, <span class="hljs-built_in">JSON</span>.stringify({
+    displayName: <span class="hljs-string">'Marcel Kloubert'</span>,
+    userName: <span class="hljs-string">'mkloubert'</span>,
+    country: <span class="hljs-string">'Germany'</span>,
+}), {
+    <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json; charset=utf8'</span>,
 });
 </code></pre>
 				<h4 id="size-">size [<a href="#functions-">&uarr;</a>]</h4>
@@ -762,6 +844,28 @@ vscode_helpers.tryClearInterval( timer );
 }, <span class="hljs-number">23979</span>);
 
 vscode_helpers.tryClearTimeout( timer );
+</code></pre>
+				<h4 id="trycreategitclient-">tryCreateGitClient [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CLIENT = <span class="hljs-keyword">await</span> vscode_helpers.tryCreateGitClient();
+
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">false</span> !== CLIENT) {
+    <span class="hljs-keyword">const</span> STD_OUT: <span class="hljs-built_in">string</span> = (<span class="hljs-keyword">await</span> CLIENT.exec([ <span class="hljs-string">'--version'</span> ])).stdOut;
+
+    <span class="hljs-built_in">console</span>.log( STD_OUT );
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// no git client found</span>
+}
+</code></pre>
+				<h4 id="trycreategitclientsync-">tryCreateGitClientSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CLIENT = vscode_helpers.tryCreateGitClientSync();
+
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">false</span> !== CLIENT) {
+    <span class="hljs-built_in">console</span>.log(
+        CLIENT.execSync([ <span class="hljs-string">'--version'</span> ]);
+    );
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// no git client found</span>
+}
 </code></pre>
 				<h4 id="trydispose-">tryDispose [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> OBJ = {
@@ -962,6 +1066,15 @@ vscode_helpers.sleep(<span class="hljs-number">1000</span>).then(<span class="hl
 vscode_helpers.EVENTS
               .emit(<span class="hljs-string">'myEvent'</span>, <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span>);
 </code></pre>
+				<h4 id="is_-">IS_* [<a href="#constants-and-variables-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.IS_AIX;  <span class="hljs-comment">// AIX</span>
+vscode_helpers.IS_FREE_BSD;  <span class="hljs-comment">// Free BSD</span>
+vscode_helpers.IS_LINUX;  <span class="hljs-comment">// Linux</span>
+vscode_helpers.IS_MAC;  <span class="hljs-comment">// Mac OS</span>
+vscode_helpers.IS_OPEN_BSD;  <span class="hljs-comment">// Open BSD</span>
+vscode_helpers.IS_SUNOS;  <span class="hljs-comment">// Sun OS</span>
+vscode_helpers.IS_WINDOWS;  <span class="hljs-comment">// Windows</span>
+</code></pre>
 				<h4 id="session-">SESSION [<a href="#constants-and-variables-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> var_1 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// undefined (at the beginning)</span>
 
@@ -1033,6 +1146,9 @@ vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs
 						<a href="modules/_html_index_.html">"html/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_http_index_.html">"http/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_index_.html">"index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -1040,6 +1156,12 @@ vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_progress_index_.html">"progress/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_scm_git_.html">"scm/git"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_scm_index_.html">"scm/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_timers_index_.html">"timers/index"</a>

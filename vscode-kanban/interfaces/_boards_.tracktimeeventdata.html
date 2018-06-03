@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>EventDataWithUniqueId | vscode-kanban</title>
+	<title>TrackTimeEventData | vscode-kanban</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_boards_.html">&quot;boards&quot;</a>
 				</li>
 				<li>
-					<a href="_boards_.eventdatawithuniqueid.html">EventDataWithUniqueId</a>
+					<a href="_boards_.tracktimeeventdata.html">TrackTimeEventData</a>
 				</li>
 			</ul>
-			<h1>Interface EventDataWithUniqueId</h1>
+			<h1>Interface TrackTimeEventData</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Event data with an unique ID.</p>
+						<p>Data of a &#39;track time&#39; event.</p>
 					</div>
 				</div>
 			</section>
@@ -80,22 +80,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">EventDataWithUniqueId</span>
+						<a href="_boards_.eventdatawithuniqueid.html" class="tsd-signature-type">EventDataWithUniqueId</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<a href="_boards_.cardcreatedeventdata.html" class="tsd-signature-type">CardCreatedEventData</a>
-							</li>
-							<li>
-								<a href="_boards_.carddeletedeventdata.html" class="tsd-signature-type">CardDeletedEventData</a>
-							</li>
-							<li>
-								<a href="_boards_.cardmovedeventdata.html" class="tsd-signature-type">CardMovedEventData</a>
-							</li>
-							<li>
-								<a href="_boards_.cardupdatedeventdata.html" class="tsd-signature-type">CardUpdatedEventData</a>
-							</li>
-							<li>
-								<a href="_boards_.tracktimeeventdata.html" class="tsd-signature-type">TrackTimeEventData</a>
+								<span class="target">TrackTimeEventData</span>
 							</li>
 						</ul>
 					</li>
@@ -108,7 +96,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.eventdatawithuniqueid.html#uid" class="tsd-kind-icon">uid</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.tracktimeeventdata.html#card" class="tsd-kind-icon">card</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.tracktimeeventdata.html#column" class="tsd-kind-icon">column</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_boards_.tracktimeeventdata.html#uid" class="tsd-kind-icon">uid</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,10 +107,41 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="card" class="tsd-anchor"></a>
+					<h3>card</h3>
+					<div class="tsd-signature tsd-kind-icon">card<span class="tsd-signature-symbol">:</span> <a href="_boards_.boardcard.html" class="tsd-signature-type">BoardCard</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/b1d32a2/src/boards.ts#L279">boards.ts:279</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The card with the current data.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="column" class="tsd-anchor"></a>
+					<h3>column</h3>
+					<div class="tsd-signature tsd-kind-icon">column<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/b1d32a2/src/boards.ts#L283">boards.ts:283</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name of the column where the card has been updated.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="uid" class="tsd-anchor"></a>
 					<h3>uid</h3>
 					<div class="tsd-signature tsd-kind-icon">uid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="_boards_.eventdatawithuniqueid.html">EventDataWithUniqueId</a>.<a href="_boards_.eventdatawithuniqueid.html#uid">uid</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/b1d32a2/src/boards.ts#L187">boards.ts:187</a></li>
 						</ul>
@@ -191,18 +212,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_boards_.columnclearedeventdata.html" class="tsd-kind-icon">Column<wbr>Cleared<wbr>Event<wbr>Data</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_boards_.eventdatawithuniqueid.html" class="tsd-kind-icon">Event<wbr>Data<wbr>With<wbr>Unique<wbr>Id</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_boards_.eventdatawithuniqueid.html#uid" class="tsd-kind-icon">uid</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_boards_.eventlistenercontext.html" class="tsd-kind-icon">Event<wbr>Listener<wbr>Context</a>
 					</li>
@@ -212,9 +224,24 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_boards_.raiseevent.html" class="tsd-kind-icon">Raise<wbr>Event</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_boards_.tracktimeeventdata.html" class="tsd-kind-icon">Track<wbr>Time<wbr>Event<wbr>Data</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_boards_.tracktimeeventdata.html#card" class="tsd-kind-icon">card</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_boards_.tracktimeeventdata.html#column" class="tsd-kind-icon">column</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_boards_.tracktimeeventdata.html#uid" class="tsd-kind-icon">uid</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_boards_.webviewmessage.html" class="tsd-kind-icon">Web<wbr>View<wbr>Message</a>
 					</li>

@@ -78,6 +78,12 @@
 							<li><a href="#settings-">Settings</a></li>
 							<li><a href="#markdown-support-">Markdown support</a></li>
 							<li><a href="#handle-events-">Handle events</a></li>
+							<li><a href="#time-tracking-">Time tracking</a><ul>
+									<li><a href="#simple-time-tracking-">Simple time tracking</a></li>
+									<li><a href="#toggl-">Toggl</a></li>
+									<li><a href="#custom-time-tracking-">Custom time tracking</a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 					<li><a href="#support-and-contribute-">Support and contribute</a></li>
@@ -138,6 +144,10 @@
 							<td><code>openOnStartup</code></td>
 							<td>Opens a board, after a workspace (folder) has been loaded. Default: <code>(false)</code></td>
 						</tr>
+						<tr>
+							<td><code>trackTime</code></td>
+							<td>Settings for <a href="#time-tracking-">time tracking</a> feature. Default: <code>(false)</code></td>
+						</tr>
 					</tbody>
 				</table>
 				<h3 id="markdown-support-">Markdown support [<a href="#how-to-use-">&uarr;</a>]</h3>
@@ -159,7 +169,7 @@
 </code></pre>
 				<p>Code blocks are parsed by <a href="https://highlightjs.org/">highlight.js</a> and all <a href="https://highlightjs.org/static/demo/">provided languages</a> are included and supported.</p>
 				<h3 id="handle-events-">Handle events [<a href="#how-to-use-">&uarr;</a>]</h3>
-				<p>For handling events, you can create a JavaScript file, called <code>vscode-kanban.js</code>, inside your <code>.vscode</code> subfolder of your workspace and start with the following skeleton (s. <a href="https://mkloubert.github.io/vscode-kanban/interfaces/_workspaces_.eventscriptmodule.html">EventScriptModule</a> interface):</p>
+				<p>For handling events, you can create a <a href="https://nodejs.org/">Node.js</a> JavaScript file, called <code>vscode-kanban.js</code>, inside your <code>.vscode</code> subfolder of your workspace and start with the following skeleton (s. <a href="https://mkloubert.github.io/vscode-kanban/interfaces/_workspaces_.eventscriptmodule.html">EventScriptModule</a> interface):</p>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// all 'args' parameters are based on</span>
 <span class="hljs-comment">// 'EventScriptFunctionArguments' interface</span>
 <span class="hljs-comment">// </span>
@@ -219,11 +229,104 @@ exports.onColumnCleared = <span class="hljs-keyword">async</span> (args) =&gt; {
 
 <span class="hljs-comment">// [OPTIONAL]</span>
 <span class="hljs-comment">// </span>
+<span class="hljs-comment">// Is raised when an user clicks on a card's 'Track Time' button.</span>
+<span class="hljs-comment">// This requires global extension / workspace setting 'canTrackTime' to be set to (true).</span>
+exports.onTrackTime = <span class="hljs-keyword">async</span> (args) =&gt; {
+    <span class="hljs-comment">// args =&gt; https://mkloubert.github.io/vscode-kanban/interfaces/_workspaces_.eventscriptfunctionarguments.html</span>
+    <span class="hljs-comment">// args.data =&gt; s. https://mkloubert.github.io/vscode-kanban/interfaces/_boards_.tracktimeeventarguments.html</span>
+};
+
+
+<span class="hljs-comment">// [OPTIONAL]</span>
+<span class="hljs-comment">// </span>
 <span class="hljs-comment">// Generic fallback function, if a function is not defined for an event.</span>
 exports.onEvent = <span class="hljs-keyword">async</span> (args) =&gt; {
     <span class="hljs-comment">// args.name =&gt; name of the event</span>
     <span class="hljs-comment">// args.data =&gt; object with event data  </span>
 };
+</code></pre>
+				<h3 id="time-tracking-">Time tracking [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<h3 id="simple-time-tracking-">Simple time tracking [<a href="#time-tracking-">&uarr;</a>]</h3>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vscode-kanban/master/img/demo3.gif" alt="Demo 3"></p>
+				<p>Set the value of <code>trackTime</code> inside your <code>.vscode/settings.json</code> to <code>(true)</code>:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"kanban"</span>: {
+        <span class="hljs-attr">"trackTime"</span>: <span class="hljs-literal">true</span>
+    }
+}
+</code></pre>
+				<p>This will run a simple workflow, which writes all required data to the <code>tag</code> property of the underlying card (s. <code>.vscode/vscode-kanban.json</code>).</p>
+				<h3 id="toggl-">Toggl [<a href="#time-tracking-">&uarr;</a>]</h3>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vscode-kanban/master/img/demo4.gif" alt="Demo 4"></p>
+				<p>To use the build-in <a href="https://www.toggl.com/">Toggl</a> integration, you have to setup your personal API token, which can you find in your profile settings:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"kanban"</span>: {
+        <span class="hljs-attr">"trackTime"</span>: {
+            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"toggl"</span>,
+            <span class="hljs-attr">"token"</span>: <span class="hljs-string">"&lt;YOUR-API-TOKEN&gt;"</span>
+        }
+    }
+}
+</code></pre>
+				<p>If you do not want (or if you not able) to save the token in the settings, you can define the path to a text file, which contains it.</p>
+				<p>For example, create a text file inside your home directory, like <code>toggl.txt</code>, and write the token there. After that, you must define the path of the text file in the settings (<code>.vscode/settings.json</code>):</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"kanban"</span>: {
+        <span class="hljs-attr">"trackTime"</span>: {
+            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"toggl"</span>,
+            <span class="hljs-attr">"token"</span>: <span class="hljs-string">"toggl.txt"</span>
+        }
+    }
+}
+</code></pre>
+				<p>You also can define an absolute path, like <code>D:/toggl/api-token.txt</code> or <code>/home/mkloubert/toggl-api-token.txt</code>.</p>
+				<p>For the case, your board belongs to a specific Toggl project and you know its ID, you can define it explicitly:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"kanban"</span>: {
+        <span class="hljs-attr">"trackTime"</span>: {
+            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"toggl"</span>,
+            <span class="hljs-attr">"token"</span>: <span class="hljs-string">"&lt;API-TOKEN&gt;"</span>,
+
+            <span class="hljs-attr">"project"</span>: <span class="hljs-number">123</span>
+        }
+    }
+}
+</code></pre>
+				<h3 id="custom-time-tracking-">Custom time tracking [<a href="#time-tracking-">&uarr;</a>]</h3>
+				<p>For handling &#39;track time&#39; events, you can create or edit a <a href="https://nodejs.org/">Node.js</a> JavaScript file, called <code>vscode-kanban.js</code>, inside your <code>.vscode</code> subfolder of your workspace and add the following function:</p>
+				<pre><code class="lang-javascript">exports.onTrackTime = <span class="hljs-keyword">async</span> (args) =&gt; {
+    <span class="hljs-comment">// args =&gt; https://mkloubert.github.io/vscode-kanban/interfaces/_workspaces_.eventscriptfunctionarguments.html</span>
+    <span class="hljs-comment">// args.data =&gt; s. https://mkloubert.github.io/vscode-kanban/interfaces/_boards_.tracktimeeventarguments.html</span>
+
+    <span class="hljs-comment">// use any Node.js 7 API, s. https://nodejs.org/</span>
+    <span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+
+    <span class="hljs-comment">// use VSCode API, s. https://code.visualstudio.com/docs/extensionAPI/vscode-api</span>
+    <span class="hljs-keyword">const</span> vscode = <span class="hljs-built_in">require</span>(<span class="hljs-string">'vscode'</span>);
+
+    <span class="hljs-comment">// access a module of that extension</span>
+    <span class="hljs-comment">// s. https://github.com/mkloubert/vscode-kanban/blob/master/package.json</span>
+    <span class="hljs-keyword">const</span> moment = args.require(<span class="hljs-string">'moment'</span>);
+
+    <span class="hljs-comment">// options from the settings, s. below</span>
+    <span class="hljs-keyword">const</span> OPTS = args.options;
+
+
+    <span class="hljs-comment">// start implement your workflow here</span>
+};
+</code></pre>
+				<p>You also have to update the extension settings:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"kanban"</span>: {
+        <span class="hljs-attr">"trackTime"</span>: {
+            <span class="hljs-attr">"type"</span>: <span class="hljs-string">"script"</span>,
+            <span class="hljs-attr">"options"</span>: {
+                <span class="hljs-attr">"MK"</span>: <span class="hljs-number">239.79</span>,
+                <span class="hljs-attr">"TM"</span>: <span class="hljs-string">"5979"</span>
+            }
+        }
+    }
+}
 </code></pre>
 				<h2 id="support-and-contribute-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the extension, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
@@ -264,6 +367,9 @@ exports.onEvent = <span class="hljs-keyword">async</span> (args) =&gt; {
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_test_index_.html">"test/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_toggl_.html">"toggl"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_workspaces_.html">"workspaces"</a>

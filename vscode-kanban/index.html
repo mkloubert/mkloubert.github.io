@@ -71,6 +71,7 @@
 				<a href="https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-kanban#review-details"><img src="https://vsmarketplacebadge.apphb.com/rating-short/mkloubert.vscode-kanban.svg" alt="Rating"></a></p>
 				<p><a href="https://en.wikipedia.org/wiki/Kanban_board">Kanban board</a> for <a href="https://code.visualstudio.com/">Visual Studio Code</a>.</p>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vscode-kanban/master/img/demo1.gif" alt="Demo 1"></p>
+				<h2 id="table-of-contents">Table of contents</h2>
 				<ol>
 					<li><a href="#install-">Install</a></li>
 					<li><a href="#how-to-use-">How to use</a><ul>
@@ -84,6 +85,10 @@
 									<li><a href="#custom-time-tracking-">Custom time tracking</a></li>
 								</ul>
 							</li>
+						</ul>
+					</li>
+					<li><a href="#customization-">Customization</a><ul>
+							<li><a href="#css-">CSS</a></li>
 						</ul>
 					</li>
 					<li><a href="#support-and-contribute-">Support and contribute</a></li>
@@ -139,6 +144,10 @@
 						<tr>
 							<td><code>noSystemUser</code></td>
 							<td>Do not detect username of operating system. Default: <code>(false)</code></td>
+						</tr>
+						<tr>
+							<td><code>noTimeTrackingIfIdle</code></td>
+							<td>Do not show &#39;track time&#39; button, if a card is stored in &#39;Todo&#39; or &#39;Done&#39;. Default: <code>(false)</code></td>
 						</tr>
 						<tr>
 							<td><code>openOnStartup</code></td>
@@ -328,6 +337,10 @@ exports.onEvent = <span class="hljs-keyword">async</span> (args) =&gt; {
     }
 }
 </code></pre>
+				<h2 id="customization-">Customization [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="css-">CSS [<a href="#customization-">&uarr;</a>]</h3>
+				<p>If you want to style your board, you can create a file, called <code>vscode-kanban.css</code>, inside your <code>.vscode</code> sub folder of the underlying workspace or your home directory.</p>
+				<p>Have a look at the files <a href="https://github.com/mkloubert/vscode-kanban/blob/master/src/res/css/board.css">board.css</a> and <a href="https://github.com/mkloubert/vscode-kanban/blob/master/src/res/css/style.css">style.css</a> to get an idea of the CSS classes, that are used.</p>
 				<h2 id="support-and-contribute-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the extension, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
 				<p>To contribute, you can <a href="https://github.com/mkloubert/vscode-kanban/issues">open an issue</a> and/or fork this repository.</p>

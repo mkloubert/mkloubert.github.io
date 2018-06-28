@@ -107,7 +107,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_boards_.kanbanboard.html#_timeouts" class="tsd-kind-icon">_TIMEOUTS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_boards_.kanbanboard.html#_openoptions" class="tsd-kind-icon">_open<wbr>Options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_boards_.kanbanboard.html#_panel" class="tsd-kind-icon">_panel</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_boards_.kanbanboard.html#_saveboardeventlistener" class="tsd-kind-icon">_save<wbr>Board<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_boards_.kanbanboard.html#_saveboardeventlisteners" class="tsd-kind-icon">_save<wbr>Board<wbr>Event<wbr>Listeners</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_boards_.kanbanboard.html#_saveboardfiltereventlisteners" class="tsd-kind-icon">_save<wbr>Board<wbr>Filter<wbr>Event<wbr>Listeners</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_boards_.kanbanboard.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_boards_.kanbanboard.html#isdisposing" class="tsd-kind-icon">is<wbr>Disposing</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_boards_.kanbanboard.html#isinfinalizestate" class="tsd-kind-icon">is<wbr>InFinalize<wbr>State</a></li>
@@ -143,6 +144,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-protected"><a href="_boards_.kanbanboard.html#ondispose" class="tsd-kind-icon">on<wbr>Dispose</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_boards_.kanbanboard.html#onloaded" class="tsd-kind-icon">on<wbr>Loaded</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_boards_.kanbanboard.html#onsaveboard" class="tsd-kind-icon">on<wbr>Save<wbr>Board</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_boards_.kanbanboard.html#onsaveboardfilter" class="tsd-kind-icon">on<wbr>Save<wbr>Board<wbr>Filter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_boards_.kanbanboard.html#once" class="tsd-kind-icon">once</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_boards_.kanbanboard.html#open" class="tsd-kind-icon">open</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_boards_.kanbanboard.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a></li>
@@ -215,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">_open<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_boards_.openboardoptions.html" class="tsd-signature-type">OpenBoardOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L310">boards.ts:310</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L364">boards.ts:364</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -225,17 +227,27 @@
 					<div class="tsd-signature tsd-kind-icon">_panel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.WebviewPanel</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L311">boards.ts:311</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L365">boards.ts:365</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="_saveboardeventlistener" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _save<wbr>Board<wbr>Event<wbr>Listener</h3>
-					<div class="tsd-signature tsd-kind-icon">_save<wbr>Board<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">:</span> <a href="../modules/_boards_.html#saveboardeventlistener" class="tsd-signature-type">SaveBoardEventListener</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="_saveboardeventlisteners" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _save<wbr>Board<wbr>Event<wbr>Listeners</h3>
+					<div class="tsd-signature tsd-kind-icon">_save<wbr>Board<wbr>Event<wbr>Listeners<span class="tsd-signature-symbol">:</span> <a href="../modules/_boards_.html#saveboardeventlistener" class="tsd-signature-type">SaveBoardEventListener</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L312">boards.ts:312</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L366">boards.ts:366</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_saveboardfiltereventlisteners" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _save<wbr>Board<wbr>Filter<wbr>Event<wbr>Listeners</h3>
+					<div class="tsd-signature tsd-kind-icon">_save<wbr>Board<wbr>Filter<wbr>Event<wbr>Listeners<span class="tsd-signature-symbol">:</span> <a href="../modules/_boards_.html#saveboardfiltereventlistener" class="tsd-signature-type">SaveBoardFilterEventListener</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L367">boards.ts:367</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -294,7 +306,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from EventEmitter.defaultMaxListeners</p>
 						<ul>
-							<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:707</li>
+							<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:712</li>
 						</ul>
 					</aside>
 				</section>
@@ -311,7 +323,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L317">boards.ts:317</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L372">boards.ts:372</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -333,7 +345,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L885">boards.ts:885</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L1187">boards.ts:1187</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -355,7 +367,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L892">boards.ts:892</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L1194">boards.ts:1194</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -377,7 +389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L954">boards.ts:954</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L1335">boards.ts:1335</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -404,7 +416,7 @@
 								<p>Inherited from EventEmitter.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:709</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:714</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -502,7 +514,7 @@
 								<p>Inherited from EventEmitter.emit</p>
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:719</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:724</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -530,7 +542,7 @@
 								<p>Inherited from EventEmitter.eventNames</p>
 								<p>Overrides EventEmitter.eventNames</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:720</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:725</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -547,7 +559,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L324">boards.ts:324</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L379">boards.ts:379</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -566,7 +578,7 @@
 								<p>Inherited from EventEmitter.getMaxListeners</p>
 								<p>Overrides EventEmitter.getMaxListeners</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:717</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:722</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -583,7 +595,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L622">boards.ts:622</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L838">boards.ts:838</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -615,7 +627,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L603">boards.ts:603</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L819">boards.ts:819</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">vscode.Uri</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -632,7 +644,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L649">boards.ts:649</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L865">boards.ts:865</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -656,7 +668,7 @@
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<p>Overrides EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:721</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:726</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -681,7 +693,7 @@
 								<p>Inherited from EventEmitter.listeners</p>
 								<p>Overrides EventEmitter.listeners</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:718</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:723</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -706,7 +718,7 @@
 								<p>Inherited from EventEmitter.on</p>
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:710</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:715</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -733,7 +745,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides DisposableBase.onDispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L656">boards.ts:656</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L873">boards.ts:873</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -755,7 +767,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L662">boards.ts:662</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L880">boards.ts:880</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -772,7 +784,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L720">boards.ts:720</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L938">boards.ts:938</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -784,6 +796,37 @@
 							<ul class="tsd-parameters">
 								<li>
 									<h5>listener: <a href="../modules/_boards_.html#saveboardeventlistener" class="tsd-signature-type">SaveBoardEventListener</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The listener to add.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onsaveboardfilter" class="tsd-anchor"></a>
+					<h3>on<wbr>Save<wbr>Board<wbr>Filter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Save<wbr>Board<wbr>Filter<span class="tsd-signature-symbol">(</span>listener<span class="tsd-signature-symbol">: </span><a href="../modules/_boards_.html#saveboardfiltereventlistener" class="tsd-signature-type">SaveBoardFilterEventListener</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L955">boards.ts:955</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds a listener for a &#39;save board&#39; event.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>listener: <a href="../modules/_boards_.html#saveboardfiltereventlistener" class="tsd-signature-type">SaveBoardFilterEventListener</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>The listener to add.</p>
 									</div>
@@ -805,7 +848,7 @@
 								<p>Inherited from EventEmitter.once</p>
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:711</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:716</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -831,7 +874,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L737">boards.ts:737</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L972">boards.ts:972</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -860,7 +903,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L899">boards.ts:899</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L1201">boards.ts:1201</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -894,7 +937,7 @@
 								<p>Inherited from EventEmitter.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:712</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:717</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -922,7 +965,7 @@
 								<p>Inherited from EventEmitter.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:713</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:718</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -948,7 +991,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L908">boards.ts:908</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L1210">boards.ts:1210</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -974,7 +1017,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L929">boards.ts:929</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L1231">boards.ts:1231</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -993,7 +1036,7 @@
 								<p>Inherited from EventEmitter.removeAllListeners</p>
 								<p>Overrides EventEmitter.removeAllListeners</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:715</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:720</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1018,7 +1061,7 @@
 								<p>Inherited from EventEmitter.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:714</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:719</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1046,7 +1089,7 @@
 								<p>Inherited from EventEmitter.setMaxListeners</p>
 								<p>Overrides EventEmitter.setMaxListeners</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:716</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:721</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1070,7 +1113,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:706</li>
+									<li>Defined in M:/VS Code/proj/vscode-kanban/node_modules/@types/node/index.d.ts:711</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1140,7 +1183,10 @@
 								<a href="_boards_.kanbanboard.html#_panel" class="tsd-kind-icon">_panel</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_boards_.kanbanboard.html#_saveboardeventlistener" class="tsd-kind-icon">_save<wbr>Board<wbr>Event<wbr>Listener</a>
+								<a href="_boards_.kanbanboard.html#_saveboardeventlisteners" class="tsd-kind-icon">_save<wbr>Board<wbr>Event<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_boards_.kanbanboard.html#_saveboardfiltereventlisteners" class="tsd-kind-icon">_save<wbr>Board<wbr>Filter<wbr>Event<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_boards_.kanbanboard.html#isdisposed" class="tsd-kind-icon">is<wbr>Disposed</a>
@@ -1217,6 +1263,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_boards_.kanbanboard.html#onsaveboard" class="tsd-kind-icon">on<wbr>Save<wbr>Board</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_boards_.kanbanboard.html#onsaveboardfilter" class="tsd-kind-icon">on<wbr>Save<wbr>Board<wbr>Filter</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_boards_.kanbanboard.html#once" class="tsd-kind-icon">once</a>
 							</li>
@@ -1261,6 +1310,9 @@
 						<a href="../interfaces/_boards_.boardcard.html" class="tsd-kind-icon">Board<wbr>Card</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_boards_.boardcardcontent.html" class="tsd-kind-icon">Board<wbr>Card<wbr>Content</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_boards_.boardsettings.html" class="tsd-kind-icon">Board<wbr>Settings</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -1297,10 +1349,19 @@
 						<a href="../interfaces/_boards_.webviewmessage.html" class="tsd-kind-icon">Web<wbr>View<wbr>Message</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_boards_.html#boardcardcontentvalue" class="tsd-kind-icon">Board<wbr>Card<wbr>Content<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_boards_.html#eventlistener" class="tsd-kind-icon">Event<wbr>Listener</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/_boards_.html#saveboardeventlistener" class="tsd-kind-icon">Save<wbr>Board<wbr>Event<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_boards_.html#saveboardfiltereventlistener" class="tsd-kind-icon">Save<wbr>Board<wbr>Filter<wbr>Event<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_boards_.html#board_colmns" class="tsd-kind-icon">BOARD_<wbr>COLMNS</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/_boards_.html#newboard" class="tsd-kind-icon">new<wbr>Board</a>

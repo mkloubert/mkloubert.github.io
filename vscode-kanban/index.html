@@ -78,6 +78,12 @@
 							<li><a href="#how-to-execute-">How to execute</a></li>
 							<li><a href="#settings-">Settings</a></li>
 							<li><a href="#markdown-support-">Markdown support</a></li>
+							<li><a href="#diagrams-and-charts-">Diagrams and charts</a></li>
+							<li><a href="#filter-">Filter</a><ul>
+									<li><a href="#constants-">Constants</a></li>
+									<li><a href="#functions-">Functions</a></li>
+								</ul>
+							</li>
 							<li><a href="#handle-events-">Handle events</a></li>
 							<li><a href="#time-tracking-">Time tracking</a><ul>
 									<li><a href="#simple-time-tracking-">Simple time tracking</a></li>
@@ -91,6 +97,7 @@
 							<li><a href="#css-">CSS</a></li>
 						</ul>
 					</li>
+					<li><a href="#logs-">Logs</a></li>
 					<li><a href="#support-and-contribute-">Support and contribute</a></li>
 					<li><a href="#related-projects-">Related projects</a><ul>
 							<li><a href="#vscode-helpers-">vscode-helpers</a></li>
@@ -138,6 +145,26 @@
 					</thead>
 					<tbody>
 						<tr>
+							<td><code>cleanupExports</code></td>
+							<td>Remove existing export files, before regenerate them. Default: <code>(true)</code></td>
+						</tr>
+						<tr>
+							<td><code>exportOnSave</code></td>
+							<td>Export cards to external Markdown files on save or not. Default: <code>(false)</code></td>
+						</tr>
+						<tr>
+							<td><code>exportPath</code></td>
+							<td>The custom path where export files, like cards, should be stored. Relative paths will be mapped to the <code>.vscode</code> subfolder of the underlying workspace. Default: <code>.vscode</code> subfolder of the underlying workspace.</td>
+						</tr>
+						<tr>
+							<td><code>globals</code></td>
+							<td>Custom data, which can be used inside the extension, like <a href="#handle-events-">event scripts</a>.</td>
+						</tr>
+						<tr>
+							<td><code>maxExportNameLength</code></td>
+							<td>The maximum size of the name of an export file. Default: <code>48</code></td>
+						</tr>
+						<tr>
 							<td><code>noScmUser</code></td>
 							<td>Do not detect username via source control manager like Git. Default: <code>(false)</code></td>
 						</tr>
@@ -177,6 +204,274 @@
 }
 </code></pre>
 				<p>Code blocks are parsed by <a href="https://highlightjs.org/">highlight.js</a> and all <a href="https://highlightjs.org/static/demo/">provided languages</a> are included and supported.</p>
+				<h3 id="diagrams-and-charts-">Diagrams and charts [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vscode-kanban/master/img/demo7.gif" alt="Demo 7"></p>
+				<p>Card descriptions can also include diagrams and charts, using a language parsed and rendered by <a href="https://github.com/knsv/mermaid">mermaid</a>.</p>
+				<p>Those diagram / chart descriptions has to be put into a Markdown code block, which uses <code>mermaid</code> as language:</p>
+				<pre><code>Example graph:
+
+```mermaid
+graph TD;
+    A--&gt;B;
+    A--&gt;C;
+    B--&gt;D;
+    C--&gt;D;
+```
+</code></pre><h3 id="filter-">Filter [<a href="#how-to-use-">&uarr;</a>]</h3>
+				<p><img src="https://raw.githubusercontent.com/mkloubert/vscode-kanban/master/img/demo8.gif" alt="Demo 8"></p>
+				<p>Cards can be filtered by using a powerful language, provided by <a href="https://github.com/joewalnes/filtrex#expressions">filtrex</a> library.</p>
+				<h3 id="constants-">Constants [<a href="#filter-">&uarr;</a>]</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+							<th>Example</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>assigned_to</code></td>
+							<td>The value that indicates where the current card is assigned to.</td>
+							<td><code>assigned_to == &quot;Marcel&quot; or assigned_to == &quot;Tanja&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>cat</code></td>
+							<td>Short version of <code>category</code>.</td>
+							<td><code>cat == &quot;My Category&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>category</code></td>
+							<td>Stores the unparsed category value of the current card.</td>
+							<td><code>category == &quot;My Category&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>description</code></td>
+							<td>The description of the current card.</td>
+							<td><code>description == &quot;My description&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>details</code></td>
+							<td>The details of the current card.</td>
+							<td><code>details == &quot;My details&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>id</code></td>
+							<td>The ID of the card.</td>
+							<td><code>id == &quot;20180628102654_516121916_3f99e5abbe05420e1e5114d235ded3a2&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>is_bug</code></td>
+							<td>Is <code>(true)</code> if card type is <code>Bug / issue</code>.</td>
+							<td><code>not is_bug</code></td>
+						</tr>
+						<tr>
+							<td><code>is_emerg</code></td>
+							<td>Short version of <code>is_emergency</code>.</td>
+							<td><code>is_emerg or is_bug</code></td>
+						</tr>
+						<tr>
+							<td><code>is_emergency</code></td>
+							<td>Is <code>(true)</code> if card type is <code>Emergency</code>.</td>
+							<td><code>is_emergency or is_bug</code></td>
+						</tr>
+						<tr>
+							<td><code>is_issue</code></td>
+							<td>Alias of <code>is_bug</code>.</td>
+							<td><code>is_bug or is_issue</code></td>
+						</tr>
+						<tr>
+							<td><code>is_note</code></td>
+							<td>Is <code>(true)</code> if card type is <code>Note / task</code>.</td>
+							<td><code>not is_note</code></td>
+						</tr>
+						<tr>
+							<td><code>is_task</code></td>
+							<td>Alias of <code>is_note</code>.</td>
+							<td><code>not is_task</code></td>
+						</tr>
+						<tr>
+							<td><code>prio</code></td>
+							<td>Short version of <code>priority</code>.</td>
+							<td><code>prio &gt; 10</code></td>
+						</tr>
+						<tr>
+							<td><code>priority</code></td>
+							<td>Stores the priority value.</td>
+							<td><code>priority &gt; 10</code></td>
+						</tr>
+						<tr>
+							<td><code>no</code></td>
+							<td><code>(false)</code></td>
+							<td><code>no == false</code></td>
+						</tr>
+						<tr>
+							<td><code>now</code></td>
+							<td>The current local time as UNIX timestamp.</td>
+							<td><code>now &gt; 305413740</code></td>
+						</tr>
+						<tr>
+							<td><code>tag</code></td>
+							<td>The tag value.</td>
+							<td><code>tag == &quot;by MK&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>time</code></td>
+							<td>The (creation) time of the card as UNIX timestamp (UTC).</td>
+							<td><code>time &gt; 305413740</code></td>
+						</tr>
+						<tr>
+							<td><code>title</code></td>
+							<td>The title of the card.</td>
+							<td><code>title == &quot;My card title&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>type</code></td>
+							<td>The type of the card (lower case).</td>
+							<td><code>type == &quot;bug&quot; or type == &quot;emergency&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>utc</code></td>
+							<td>The current UTC time as UNIX timestamp.</td>
+							<td><code>utc &gt; 305413740</code></td>
+						</tr>
+						<tr>
+							<td><code>yes</code></td>
+							<td><code>(true)</code></td>
+							<td><code>yes == true</code></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="functions-">Functions [<a href="#filter-">&uarr;</a>]</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Description</th>
+							<th>Example</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>concat(...args)</code></td>
+							<td>Handles arguments as strings and concats them to one string.</td>
+							<td><code>concat(5, &quot;9.1&quot;, 979) == &quot;59.1979&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>contains(val, searchFor: string)</code></td>
+							<td>Handles a value as a string and searches for a sub string (case insensitive).</td>
+							<td><code>contains(assigned_to, &quot;Marcel&quot;)</code></td>
+						</tr>
+						<tr>
+							<td><code>debug(val, result? = true)</code></td>
+							<td>Logs a value.</td>
+							<td><code>debug( concat(title, &quot;: &quot;, id) )</code></td>
+						</tr>
+						<tr>
+							<td><code>float(val)</code></td>
+							<td>Converts a value to a float number.</td>
+							<td><code>float(&quot;5.979&quot;) == 5.979</code></td>
+						</tr>
+						<tr>
+							<td><code>int(val)</code></td>
+							<td>Short version of <code>integer()</code>.</td>
+							<td><code>int(&quot;5.979&quot;) == 5</code></td>
+						</tr>
+						<tr>
+							<td><code>integer(val)</code></td>
+							<td>Converts a value to an integer number.</td>
+							<td><code>integer(&quot;5.979&quot;) == 5</code></td>
+						</tr>
+						<tr>
+							<td><code>is_after(date, alsoSame?: bool = false)</code></td>
+							<td><code>(true)</code>, if a card has been created after a specific time.</td>
+							<td><code>is_after(&quot;1979-09-05&quot;)</code></td>
+						</tr>
+						<tr>
+							<td><code>is_assigned_to(val)</code></td>
+							<td><code>(true)</code>, if a card is assigned to someone (case insensitive).</td>
+							<td><code>is_assigned_to(&quot;Marcel Kloubert&quot;)</code></td>
+						</tr>
+						<tr>
+							<td><code>is_before(date, alsoSame?: bool = false)</code></td>
+							<td><code>(true)</code>, if a card has been created before a specific time.</td>
+							<td><code>is_before(&quot;2019-09-05&quot;)</code></td>
+						</tr>
+						<tr>
+							<td><code>is_cat(name: string)</code></td>
+							<td>Short version of <code>is_category()</code>.</td>
+							<td><code>is_cat(&quot;My category&quot;)</code></td>
+						</tr>
+						<tr>
+							<td><code>is_category(name: string)</code></td>
+							<td><code>(true)</code>, if a card belongs to a specific category (case insensitive).</td>
+							<td><code>is_category(&quot;My category&quot;)</code></td>
+						</tr>
+						<tr>
+							<td><code>is_empty(val)</code></td>
+							<td>Converts a value to a string and checks if value is empty or contains whitespace only.</td>
+							<td><code>is_empty(assigned_to)</code></td>
+						</tr>
+						<tr>
+							<td><code>is_nan(val, asInt?: bool = false)</code></td>
+							<td>Checks if a value is NOT a number.</td>
+							<td><code>is_nan(prio)</code></td>
+						</tr>
+						<tr>
+							<td><code>is_nil(val)</code></td>
+							<td>Checks if a value is <code>(null)</code> or <code>(undefined)</code>.</td>
+							<td><code>is_nil(category)</code></td>
+						</tr>
+						<tr>
+							<td><code>is_older(days: number, alsoSameDay?: bool = false)</code></td>
+							<td><code>(true)</code>, if a card is older than a specific number of days.</td>
+							<td><code>is_older(30)</code></td>
+						</tr>
+						<tr>
+							<td><code>is_younger(days: number, alsoSameDay?: bool = false)</code></td>
+							<td><code>(true)</code>, if a card is younger than a specific number of days.</td>
+							<td><code>is_younger(30)</code></td>
+						</tr>
+						<tr>
+							<td><code>norm(val)</code></td>
+							<td>Short version of <code>normalize()</code>.</td>
+							<td><code>norm(&quot; Marcel Kloubert &quot;) == &quot;&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>normalize(val)</code></td>
+							<td>Converts a value to a string and converts the characters to lower case by removing leading and ending whitespaces.</td>
+							<td><code>norm(&quot; Marcel Kloubert &quot;) == &quot;marcel lloubert&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>number(val)</code></td>
+							<td>Alias of number.</td>
+							<td><code>number(&quot;5.979&quot;) == 5.979</code></td>
+						</tr>
+						<tr>
+							<td><code>regex(val, pattern: string, flags?: string)</code></td>
+							<td><code>(true)</code> if a value matches a regular expression. s. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">RegExp</a></td>
+							<td>`regex(assigned_to, &quot;^(marcel</td>
+							<td>tanja)&quot;, &quot;i&quot;)`</td>
+						</tr>
+						<tr>
+							<td><code>str(val)</code></td>
+							<td>Converts a value to a string.</td>
+							<td><code>str(59.79) == &quot;59.79&quot;</code></td>
+						</tr>
+						<tr>
+							<td><code>str_invoke(val, methods: string, ...args)</code></td>
+							<td>Handles a value as string and invokes methods for it. s. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></td>
+							<td><code>str_invoke(assigned_to, &quot;trim,toLowerCase&quot;) == &quot;marcel&quot; or str_invoke(assigned_to, &quot;indexOf&quot;, &#39;Marcel&#39;) &gt; -1</code></td>
+						</tr>
+						<tr>
+							<td><code>unix(val, isUTC?: bool = true)</code></td>
+							<td>Returns the UNIX timestamp of a date/time value.</td>
+							<td><code>time &gt; unix(&quot;1979-09-05 23:09:00&quot;)</code></td>
+						</tr>
+					</tbody>
+				</table>
+				<p>For more functions, s. <a href="https://github.com/joewalnes/filtrex#expressions">Expressions</a>.</p>
+				<p>If a filter expression is invalid or its execution fails, a <a href="#logs-">log entry</a> will be written.</p>
 				<h3 id="handle-events-">Handle events [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p>For handling events, you can create a <a href="https://nodejs.org/">Node.js</a> JavaScript file, called <code>vscode-kanban.js</code>, inside your <code>.vscode</code> subfolder of your workspace and start with the following skeleton (s. <a href="https://mkloubert.github.io/vscode-kanban/interfaces/_workspaces_.eventscriptmodule.html">EventScriptModule</a> interface):</p>
 				<pre><code class="lang-javascript"><span class="hljs-comment">// all 'args' parameters are based on</span>
@@ -341,6 +636,8 @@ exports.onEvent = <span class="hljs-keyword">async</span> (args) =&gt; {
 				<h3 id="css-">CSS [<a href="#customization-">&uarr;</a>]</h3>
 				<p>If you want to style your board, you can create a file, called <code>vscode-kanban.css</code>, inside your <code>.vscode</code> sub folder of the underlying workspace or your home directory.</p>
 				<p>Have a look at the files <a href="https://github.com/mkloubert/vscode-kanban/blob/master/src/res/css/board.css">board.css</a> and <a href="https://github.com/mkloubert/vscode-kanban/blob/master/src/res/css/style.css">style.css</a> to get an idea of the CSS classes, that are used.</p>
+				<h2 id="logs-">Logs [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<p>Log files are stored inside the <code>.vscode-kanban/.logs</code> subfolder of the user&#39;s home directory, separated by day.</p>
 				<h2 id="support-and-contribute-">Support and contribute [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>If you like the extension, you can support the project by sending a <a href="https://paypal.me/MarcelKloubert">donation via PayPal</a> to <a href="https://github.com/mkloubert">me</a>.</p>
 				<p>To contribute, you can <a href="https://github.com/mkloubert/vscode-kanban/issues">open an issue</a> and/or fork this repository.</p>

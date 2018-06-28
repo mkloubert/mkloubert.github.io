@@ -81,6 +81,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_boards_.board.html" class="tsd-kind-icon">Board</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_boards_.boardcard.html" class="tsd-kind-icon">Board<wbr>Card</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_boards_.boardcardcontent.html" class="tsd-kind-icon">Board<wbr>Card<wbr>Content</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_boards_.boardsettings.html" class="tsd-kind-icon">Board<wbr>Settings</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_boards_.cardcreatedeventdata.html" class="tsd-kind-icon">Card<wbr>Created<wbr>Event<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_boards_.carddeletedeventdata.html" class="tsd-kind-icon">Card<wbr>Deleted<wbr>Event<wbr>Data</a></li>
@@ -98,8 +99,16 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_boards_.html#boardcardcontentvalue" class="tsd-kind-icon">Board<wbr>Card<wbr>Content<wbr>Value</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_boards_.html#eventlistener" class="tsd-kind-icon">Event<wbr>Listener</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_boards_.html#saveboardeventlistener" class="tsd-kind-icon">Save<wbr>Board<wbr>Event<wbr>Listener</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_boards_.html#saveboardfiltereventlistener" class="tsd-kind-icon">Save<wbr>Board<wbr>Filter<wbr>Event<wbr>Listener</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_boards_.html#board_colmns" class="tsd-kind-icon">BOARD_<wbr>COLMNS</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -121,12 +130,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="boardcardcontentvalue" class="tsd-anchor"></a>
+					<h3>Board<wbr>Card<wbr>Content<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">Board<wbr>Card<wbr>Content<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_boards_.boardcardcontent.html" class="tsd-signature-type">BoardCardContent</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L122">boards.ts:122</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Possible values for a &quot;board card content&quot;.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="eventlistener" class="tsd-anchor"></a>
 					<h3>Event<wbr>Listener</h3>
 					<div class="tsd-signature tsd-kind-icon">Event<wbr>Listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L200">boards.ts:200</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L229">boards.ts:229</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -162,7 +186,7 @@
 					<div class="tsd-signature tsd-kind-icon">Save<wbr>Board<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L281">boards.ts:281</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L318">boards.ts:318</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -197,6 +221,68 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="saveboardfiltereventlistener" class="tsd-anchor"></a>
+					<h3>Save<wbr>Board<wbr>Filter<wbr>Event<wbr>Listener</h3>
+					<div class="tsd-signature tsd-kind-icon">Save<wbr>Board<wbr>Filter<wbr>Event<wbr>Listener<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L326">boards.ts:326</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An listener for a &#39;save board filter&#39; event.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The filter to save.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The underling board.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-alias tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>filter: <span class="tsd-signature-type">string</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="board_colmns" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> BOARD_<wbr>COLMNS</h3>
+					<div class="tsd-signature tsd-kind-icon">BOARD_<wbr>COLMNS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;todo&#x27;,&#x27;in-progress&#x27;,&#x27;testing&#x27;,&#x27;done&#x27;,]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L348">boards.ts:348</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>List of board card columns.</p>
+						</div>
+					</div>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
@@ -210,7 +296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L964">boards.ts:964</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L1345">boards.ts:1345</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -233,7 +319,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L980">boards.ts:980</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L1361">boards.ts:1361</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -261,7 +347,7 @@
 					<div class="tsd-signature tsd-kind-icon">KNOWN_<wbr>URLS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L300">boards.ts:300</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L354">boards.ts:354</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
@@ -270,7 +356,7 @@
 						<div class="tsd-signature tsd-kind-icon">github<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;https://github.com/mkloubert/vscode-kanban&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L301">boards.ts:301</a></li>
+								<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L355">boards.ts:355</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -280,7 +366,7 @@
 						<div class="tsd-signature tsd-kind-icon">paypal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;https://paypal.me/MarcelKloubert&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L302">boards.ts:302</a></li>
+								<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L356">boards.ts:356</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -290,7 +376,7 @@
 						<div class="tsd-signature tsd-kind-icon">twitter<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;https://twitter.com/mjkloubert&quot;</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/boards.ts#L303">boards.ts:303</a></li>
+								<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L357">boards.ts:357</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -338,6 +424,9 @@
 						<a href="../interfaces/_boards_.boardcard.html" class="tsd-kind-icon">Board<wbr>Card</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_boards_.boardcardcontent.html" class="tsd-kind-icon">Board<wbr>Card<wbr>Content</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_boards_.boardsettings.html" class="tsd-kind-icon">Board<wbr>Settings</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -374,10 +463,19 @@
 						<a href="../interfaces/_boards_.webviewmessage.html" class="tsd-kind-icon">Web<wbr>View<wbr>Message</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_boards_.html#boardcardcontentvalue" class="tsd-kind-icon">Board<wbr>Card<wbr>Content<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_boards_.html#eventlistener" class="tsd-kind-icon">Event<wbr>Listener</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_boards_.html#saveboardeventlistener" class="tsd-kind-icon">Save<wbr>Board<wbr>Event<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_boards_.html#saveboardfiltereventlistener" class="tsd-kind-icon">Save<wbr>Board<wbr>Filter<wbr>Event<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_boards_.html#board_colmns" class="tsd-kind-icon">BOARD_<wbr>COLMNS</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_boards_.html#newboard" class="tsd-kind-icon">new<wbr>Board</a>

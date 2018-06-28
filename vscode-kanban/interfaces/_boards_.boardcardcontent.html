@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GenerateHtmlDocumentOptions | vscode-kanban</title>
+	<title>BoardCardContent | vscode-kanban</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_html_.html">&quot;html&quot;</a>
+					<a href="../modules/_boards_.html">&quot;boards&quot;</a>
 				</li>
 				<li>
-					<a href="_html_.generatehtmldocumentoptions.html">GenerateHtmlDocumentOptions</a>
+					<a href="_boards_.boardcardcontent.html">BoardCardContent</a>
 				</li>
 			</ul>
-			<h1>Interface GenerateHtmlDocumentOptions</h1>
+			<h1>Interface BoardCardContent</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Options for &#39;generateHtmlDocument()&#39; function.</p>
+						<p>Data of a &quot;board card content&quot;.</p>
 					</div>
 				</div>
 			</section>
@@ -80,18 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_html_.headerbuttonresolver.html" class="tsd-signature-type">HeaderButtonResolver</a>
-					</li>
-					<li>
-						<a href="_html_.resourceuriresolver.html" class="tsd-signature-type">ResourceUriResolver</a>
-					</li>
-					<li>
-						<a href="_html_.withtitle.html" class="tsd-signature-type">WithTitle</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">GenerateHtmlDocumentOptions</span>
-							</li>
-						</ul>
+						<span class="target">BoardCardContent</span>
 					</li>
 				</ul>
 			</section>
@@ -102,12 +91,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_html_.generatehtmldocumentoptions.html#getcontent" class="tsd-kind-icon">get<wbr>Content</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_html_.generatehtmldocumentoptions.html#getfooter" class="tsd-kind-icon">get<wbr>Footer</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_html_.generatehtmldocumentoptions.html#getheaderbuttons" class="tsd-kind-icon">get<wbr>Header<wbr>Buttons</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_html_.generatehtmldocumentoptions.html#getresourceuri" class="tsd-kind-icon">get<wbr>Resource<wbr>Uri</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_html_.generatehtmldocumentoptions.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_html_.generatehtmldocumentoptions.html#title" class="tsd-kind-icon">title</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.boardcardcontent.html#content" class="tsd-kind-icon">content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_boards_.boardcardcontent.html#mime" class="tsd-kind-icon">mime</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,115 +101,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getcontent" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> get<wbr>Content</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<a name="content" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> content</h3>
+					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/html.ts#L62">html.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L112">boards.ts:112</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The function that generates the (body) content.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>returns</dt>
-							<dd><p>The content.</p>
-							</dd>
-						</dl>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="getfooter" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> get<wbr>Footer</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Footer<span class="tsd-signature-symbol">:</span> <a href="../modules/_html_.html#getfooterfunction" class="tsd-signature-type">GetFooterFunction</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/html.ts#L66">html.ts:66</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The function that generates additional footer content.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="getheaderbuttons" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> get<wbr>Header<wbr>Buttons</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Header<wbr>Buttons<span class="tsd-signature-symbol">:</span> <a href="../modules/_html_.html#getheaderbuttonsfunction" class="tsd-signature-type">GetHeaderButtonsFunction</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_html_.headerbuttonresolver.html">HeaderButtonResolver</a>.<a href="_html_.headerbuttonresolver.html#getheaderbuttons">getHeaderButtons</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/html.ts#L102">html.ts:102</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Custom function to generate header buttons.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="getresourceuri" class="tsd-anchor"></a>
-					<h3>get<wbr>Resource<wbr>Uri</h3>
-					<div class="tsd-signature tsd-kind-icon">get<wbr>Resource<wbr>Uri<span class="tsd-signature-symbol">:</span> <a href="../modules/_html_.html#getresourceurifunction" class="tsd-signature-type">GetResourceUriFunction</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_html_.resourceuriresolver.html">ResourceUriResolver</a>.<a href="_html_.resourceuriresolver.html#getresourceuri">getResourceUri</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/html.ts#L112">html.ts:112</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The function that returns the URI of a web view resource.</p>
+							<p>The content.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="mime" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> mime</h3>
+					<div class="tsd-signature tsd-kind-icon">mime<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/html.ts#L70">html.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/boards.ts#L116">boards.ts:116</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The (internal) name of the document.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="title" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> title</h3>
-					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_html_.withtitle.html">WithTitle</a>.<a href="_html_.withtitle.html#title">title</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/html.ts#L122">html.ts:122</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The optional title.</p>
+							<p>The MIME type.</p>
 						</div>
 					</div>
 				</section>
@@ -236,13 +138,13 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_boards_.html">"boards"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_extension_.html">"extension"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_html_.html">"html"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -261,74 +163,89 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_html_.generatefooteroptions.html" class="tsd-kind-icon">Generate<wbr>Footer<wbr>Options</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_boards_.kanbanboard.html" class="tsd-kind-icon">Kanban<wbr>Board</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_html_.generateheaderoptions.html" class="tsd-kind-icon">Generate<wbr>Header<wbr>Options</a>
+						<a href="_boards_.board.html" class="tsd-kind-icon">Board</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_boards_.boardcard.html" class="tsd-kind-icon">Board<wbr>Card</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_html_.generatehtmldocumentoptions.html" class="tsd-kind-icon">Generate<wbr>Html<wbr>Document<wbr>Options</a>
+						<a href="_boards_.boardcardcontent.html" class="tsd-kind-icon">Board<wbr>Card<wbr>Content</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_html_.generatehtmldocumentoptions.html#getcontent" class="tsd-kind-icon">get<wbr>Content</a>
+								<a href="_boards_.boardcardcontent.html#content" class="tsd-kind-icon">content</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_html_.generatehtmldocumentoptions.html#getfooter" class="tsd-kind-icon">get<wbr>Footer</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_html_.generatehtmldocumentoptions.html#getheaderbuttons" class="tsd-kind-icon">get<wbr>Header<wbr>Buttons</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_html_.generatehtmldocumentoptions.html#getresourceuri" class="tsd-kind-icon">get<wbr>Resource<wbr>Uri</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_html_.generatehtmldocumentoptions.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_html_.generatehtmldocumentoptions.html#title" class="tsd-kind-icon">title</a>
+								<a href="_boards_.boardcardcontent.html#mime" class="tsd-kind-icon">mime</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_html_.generatenavbarheaderoptions.html" class="tsd-kind-icon">Generate<wbr>Nav<wbr>Bar<wbr>Header<wbr>Options</a>
+						<a href="_boards_.boardsettings.html" class="tsd-kind-icon">Board<wbr>Settings</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_html_.headerbuttonresolver.html" class="tsd-kind-icon">Header<wbr>Button<wbr>Resolver</a>
+						<a href="_boards_.cardcreatedeventdata.html" class="tsd-kind-icon">Card<wbr>Created<wbr>Event<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_html_.resourceuriresolver.html" class="tsd-kind-icon">Resource<wbr>Uri<wbr>Resolver</a>
+						<a href="_boards_.carddeletedeventdata.html" class="tsd-kind-icon">Card<wbr>Deleted<wbr>Event<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_html_.withtitle.html" class="tsd-kind-icon">With<wbr>Title</a>
+						<a href="_boards_.cardmovedeventdata.html" class="tsd-kind-icon">Card<wbr>Moved<wbr>Event<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_boards_.cardupdatedeventdata.html" class="tsd-kind-icon">Card<wbr>Updated<wbr>Event<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_boards_.columnclearedeventdata.html" class="tsd-kind-icon">Column<wbr>Cleared<wbr>Event<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_boards_.eventdatawithuniqueid.html" class="tsd-kind-icon">Event<wbr>Data<wbr>With<wbr>Unique<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_boards_.eventlistenercontext.html" class="tsd-kind-icon">Event<wbr>Listener<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_boards_.openboardoptions.html" class="tsd-kind-icon">Open<wbr>Board<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_boards_.raiseevent.html" class="tsd-kind-icon">Raise<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_boards_.tracktimeeventdata.html" class="tsd-kind-icon">Track<wbr>Time<wbr>Event<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_boards_.webviewmessage.html" class="tsd-kind-icon">Web<wbr>View<wbr>Message</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_html_.html#getfooterfunction" class="tsd-kind-icon">Get<wbr>Footer<wbr>Function</a>
+						<a href="../modules/_boards_.html#boardcardcontentvalue" class="tsd-kind-icon">Board<wbr>Card<wbr>Content<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_html_.html#getheaderbuttonsfunction" class="tsd-kind-icon">Get<wbr>Header<wbr>Buttons<wbr>Function</a>
+						<a href="../modules/_boards_.html#eventlistener" class="tsd-kind-icon">Event<wbr>Listener</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_html_.html#getresourceurifunction" class="tsd-kind-icon">Get<wbr>Resource<wbr>Uri<wbr>Function</a>
+						<a href="../modules/_boards_.html#saveboardeventlistener" class="tsd-kind-icon">Save<wbr>Board<wbr>Event<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_boards_.html#saveboardfiltereventlistener" class="tsd-kind-icon">Save<wbr>Board<wbr>Filter<wbr>Event<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_boards_.html#board_colmns" class="tsd-kind-icon">BOARD_<wbr>COLMNS</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_html_.html#generatefooter" class="tsd-kind-icon">generate<wbr>Footer</a>
+						<a href="../modules/_boards_.html#newboard" class="tsd-kind-icon">new<wbr>Board</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_html_.html#generateheader" class="tsd-kind-icon">generate<wbr>Header</a>
+						<a href="../modules/_boards_.html#openboard" class="tsd-kind-icon">open<wbr>Board</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_html_.html#generatehtmldocument" class="tsd-kind-icon">generate<wbr>Html<wbr>Document</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_html_.html#generatenavbarheader" class="tsd-kind-icon">generate<wbr>Nav<wbr>Bar<wbr>Header</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_html_.html#getdocumenttitle" class="tsd-kind-icon">get<wbr>Document<wbr>Title</a>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_boards_.html#known_urls" class="tsd-kind-icon">KNOWN_<wbr>URLS</a>
 					</li>
 				</ul>
 			</nav>

@@ -80,11 +80,13 @@
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_extension_.webviewmessage.html" class="tsd-kind-icon">Web<wbr>View<wbr>Message</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_extension_.html#extension_dir" class="tsd-kind-icon">EXTENSION_<wbr>DIR</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#key_last_known_version" class="tsd-kind-icon">KEY_<wbr>LAST_<wbr>KNOWN_<wbr>VERSION</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#isdeactivating" class="tsd-kind-icon">is<wbr>Deactivating</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#logger" class="tsd-kind-icon">logger</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#packagefile-1" class="tsd-kind-icon">package<wbr>File</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#workspacewatcher" class="tsd-kind-icon">workspace<wbr>Watcher</a></li>
 							</ul>
@@ -95,23 +97,41 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#activate" class="tsd-kind-icon">activate</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_extension_.html#createnewworkspace" class="tsd-kind-icon">create<wbr>New<wbr>Workspace</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#deactivate" class="tsd-kind-icon">deactivate</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#getextensiondir" class="tsd-kind-icon">get<wbr>Extension<wbr>Dir</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#getlogger" class="tsd-kind-icon">get<wbr>Logger</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#getwebviewresourceuris" class="tsd-kind-icon">get<wbr>Web<wbr>View<wbr>Resource<wbr>Uris</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#open" class="tsd-kind-icon">open</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#savetofile" class="tsd-kind-icon">save<wbr>ToFile</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_extension_.html#showerror" class="tsd-kind-icon">show<wbr>Error</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="extension_dir" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> EXTENSION_<wbr>DIR</h3>
+					<div class="tsd-signature tsd-kind-icon">EXTENSION_<wbr>DIR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">".vscode-kanban"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;.vscode-kanban&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L109">extension.ts:109</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name of the extension&#39;s directory inside the user&#39;s home directory.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="key_last_known_version" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> KEY_<wbr>LAST_<wbr>KNOWN_<wbr>VERSION</h3>
 					<div class="tsd-signature tsd-kind-icon">KEY_<wbr>LAST_<wbr>KNOWN_<wbr>VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vsckbLastKnownVersion"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vsckbLastKnownVersion&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/extension.ts#L105">extension.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L111">extension.ts:111</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,7 +141,17 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Deactivating<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/extension.ts#L104">extension.ts:104</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L110">extension.ts:110</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="logger" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagLet">Let</span> logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Logger</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L112">extension.ts:112</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -131,7 +161,7 @@
 					<div class="tsd-signature tsd-kind-icon">package<wbr>File<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_extension_.packagefile.html" class="tsd-signature-type">PackageFile</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/extension.ts#L106">extension.ts:106</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L113">extension.ts:113</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -141,7 +171,7 @@
 					<div class="tsd-signature tsd-kind-icon">workspace<wbr>Watcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">WorkspaceWatcherContext</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_workspaces_.workspace.html" class="tsd-signature-type">Workspace</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/extension.ts#L107">extension.ts:107</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L114">extension.ts:114</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,7 +188,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/extension.ts#L109">extension.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L116">extension.ts:116</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -181,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/extension.ts#L272">extension.ts:272</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L367">extension.ts:367</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -207,10 +237,56 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/extension.ts#L287">extension.ts:287</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L382">extension.ts:382</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getextensiondir" class="tsd-anchor"></a>
+					<h3>get<wbr>Extension<wbr>Dir</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Extension<wbr>Dir<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L395">extension.ts:395</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the full path of the extension&#39;s directory.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The extension&#39;s directory.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getlogger" class="tsd-anchor"></a>
+					<h3>get<wbr>Logger</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Logger<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Logger</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L408">extension.ts:408</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the global logger.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Logger</span></h4>
+							<p>The logger.</p>
 						</li>
 					</ul>
 				</section>
@@ -224,7 +300,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/extension.ts#L300">extension.ts:300</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L417">extension.ts:417</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -247,7 +323,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/extension.ts#L322">extension.ts:322</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L439">extension.ts:439</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -272,6 +348,43 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="savetofile" class="tsd-anchor"></a>
+					<h3>save<wbr>ToFile</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">save<wbr>ToFile<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L554">extension.ts:554</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Saves data to a file and creates the directory, if needed.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path to the file.</p>
+									</div>
+								</li>
+								<li>
+									<h5>data: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The data to save.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="showerror" class="tsd-anchor"></a>
 					<h3>show<wbr>Error</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -281,7 +394,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/daf395e/src/extension.ts#L436">extension.ts:436</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/extension.ts#L569">extension.ts:569</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -350,11 +463,17 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_extension_.webviewmessage.html" class="tsd-kind-icon">Web<wbr>View<wbr>Message</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_extension_.html#extension_dir" class="tsd-kind-icon">EXTENSION_<wbr>DIR</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_extension_.html#key_last_known_version" class="tsd-kind-icon">KEY_<wbr>LAST_<wbr>KNOWN_<wbr>VERSION</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_extension_.html#isdeactivating" class="tsd-kind-icon">is<wbr>Deactivating</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_extension_.html#logger" class="tsd-kind-icon">logger</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_extension_.html#packagefile-1" class="tsd-kind-icon">package<wbr>File</a>
@@ -372,10 +491,19 @@
 						<a href="_extension_.html#deactivate" class="tsd-kind-icon">deactivate</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_extension_.html#getextensiondir" class="tsd-kind-icon">get<wbr>Extension<wbr>Dir</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_extension_.html#getlogger" class="tsd-kind-icon">get<wbr>Logger</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_extension_.html#getwebviewresourceuris" class="tsd-kind-icon">get<wbr>Web<wbr>View<wbr>Resource<wbr>Uris</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_extension_.html#open" class="tsd-kind-icon">open</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_extension_.html#savetofile" class="tsd-kind-icon">save<wbr>ToFile</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_extension_.html#showerror" class="tsd-kind-icon">show<wbr>Error</a>

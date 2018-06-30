@@ -103,6 +103,7 @@
 									<li><a href="#get-">GET</a></li>
 									<li><a href="#glob-">glob</a></li>
 									<li><a href="#globsync-">globSync</a></li>
+									<li><a href="#guid-">guid</a></li>
 									<li><a href="#invokeafter-">invokeAfter</a></li>
 									<li><a href="#isbinarycontent-">isBinaryContent</a></li>
 									<li><a href="#isbinarycontentsync-">isBinaryContentSync</a></li>
@@ -130,8 +131,10 @@
 									<li><a href="#post-">POST</a></li>
 									<li><a href="#put-">PUT</a></li>
 									<li><a href="#randombytes-">randomBytes</a></li>
+									<li><a href="#range-">range</a></li>
 									<li><a href="#registerworkspacewatcher-">registerWorkspaceWatcher</a></li>
 									<li><a href="#readall-">readAll</a></li>
+									<li><a href="#repeat-">repeat</a></li>
 									<li><a href="#request-">request</a></li>
 									<li><a href="#size-">size</a></li>
 									<li><a href="#sizeSync-">sizeSync</a></li>
@@ -154,6 +157,7 @@
 									<li><a href="#using-">using</a></li>
 									<li><a href="#usingsync-">usingSync</a></li>
 									<li><a href="#utcnow-">utcNow</a></li>
+									<li><a href="#uuid-">uuid</a></li>
 									<li><a href="#waitwhile-">waitWhile</a></li>
 									<li><a href="#withprogress-">withProgress</a></li>
 								</ul>
@@ -169,6 +173,7 @@
 							<li><a href="#constants-and-variables-">Constants and variables</a><ul>
 									<li><a href="#events-">EVENTS</a></li>
 									<li><a href="#is_-">IS_*</a></li>
+									<li><a href="#queue-">QUEUE</a></li>
 									<li><a href="#session-">SESSION</a></li>
 								</ul>
 							</li>
@@ -509,6 +514,17 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
     root: <span class="hljs-string">'/path/to/directory'</span>,
 });
 </code></pre>
+				<h4 id="guid-">guid [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> guid_v4_1 = vscode_helpers.guid();
+<span class="hljs-keyword">let</span> guid_v4_2 = vscode_helpers.guid(<span class="hljs-string">'4'</span>);
+<span class="hljs-keyword">let</span> guid_v4_3 = vscode_helpers.guid(<span class="hljs-string">'v4'</span>);
+
+<span class="hljs-keyword">let</span> guid_v5_1 = vscode_helpers.guid(<span class="hljs-string">'5'</span>);
+<span class="hljs-keyword">let</span> guid_v5_2 = vscode_helpers.guid(<span class="hljs-string">'v5'</span>);
+
+<span class="hljs-keyword">let</span> guid_v1_1 = vscode_helpers.guid(<span class="hljs-string">'1'</span>);
+<span class="hljs-keyword">let</span> guid_v1_2 = vscode_helpers.guid(<span class="hljs-string">'v1'</span>);
+</code></pre>
 				<h4 id="invokeafter-">invokeAfter [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.invokeAfter(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
     <span class="hljs-comment">// this is invoked after 5979 milliseconds</span>
@@ -672,7 +688,7 @@ OBJ_2.dispose();  <span class="hljs-comment">// throws an exception</span>
 });
 </code></pre>
 				<h4 id="post-">POST [<a href="#functions-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> RESULT = <span class="hljs-keyword">await</span> vscode_helpers.PUT(<span class="hljs-string">'https://example.com/api/users/23979'</span>, <span class="hljs-built_in">JSON</span>.stringify({
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> RESULT = <span class="hljs-keyword">await</span> vscode_helpers.POST(<span class="hljs-string">'https://example.com/api/users/23979'</span>, <span class="hljs-built_in">JSON</span>.stringify({
     displayName: <span class="hljs-string">'Marcel Kloubert'</span>,
     userName: <span class="hljs-string">'mkloubert'</span>,
     country: <span class="hljs-string">'Germany'</span>,
@@ -688,11 +704,21 @@ OBJ_2.dispose();  <span class="hljs-comment">// throws an exception</span>
 });
 </code></pre>
 				<h4 id="randombytes-">randomBytes [<a href="#functions-">&uarr;</a>]</h4>
-				<pre><code class="lang-typescript">vscode_helpers.randomBytes(<span class="hljs-number">5979</span>).then(<span class="hljs-function">(<span class="hljs-params">bytes</span>) =&gt;</span> {
+				<pre><code class="lang-typescript">vscode_helpers.randomBytes(<span class="hljs-number">5979</span>).then(<span class="hljs-function">(<span class="hljs-params">bytes: Buffer</span>) =&gt;</span> {
     <span class="hljs-comment">// 5979 random bytes are stored</span>
     <span class="hljs-comment">// in 'bytes' now</span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
+});
+</code></pre>
+				<h4 id="range-">range [<a href="#functions-">&uarr;</a>]</h4>
+				<p>s. <a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a></p>
+				<pre><code class="lang-typescript">vscode_helpers.range(<span class="hljs-number">1</span>, <span class="hljs-number">5</span>).forEach(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> {
+    <span class="hljs-comment">// x[0] === 1</span>
+    <span class="hljs-comment">// x[1] === 2</span>
+    <span class="hljs-comment">// x[2] === 3</span>
+    <span class="hljs-comment">// x[3] === 4</span>
+    <span class="hljs-comment">// x[4] === 5</span>
 });
 </code></pre>
 				<h4 id="readall-">readAll [<a href="#functions-">&uarr;</a>]</h4>
@@ -741,6 +767,13 @@ vscode_helpers.registerWorkspaceWatcher(<span class="hljs-keyword">async</span> 
 
         <span class="hljs-keyword">return</span> NEW_WORKSPACE;
     }
+});
+</code></pre>
+				<h4 id="repeat-">repeat [<a href="#functions-">&uarr;</a>]</h4>
+				<p>s. <a href="https://github.com/mkloubert/node-enumerable">node-enumerable</a></p>
+				<pre><code class="lang-typescript"><span class="hljs-comment">// 5979 'TM' strings</span>
+vscode_helpers.repeat(<span class="hljs-string">'TM'</span>, <span class="hljs-number">5979</span>).forEach(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> {
+    <span class="hljs-comment">//TODO</span>
 });
 </code></pre>
 				<h4 id="request-">request [<a href="#functions-">&uarr;</a>]</h4>
@@ -959,6 +992,17 @@ vscode_helpers.using(MY_OBJECT, <span class="hljs-function">(<span class="hljs-p
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> UTC_NOW = vscode_helpers.utcNow()
                               .format(<span class="hljs-string">'DD.MM.YYYY HH:mm:ss'</span>);
 </code></pre>
+				<h4 id="uuid-">uuid [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> uuid_v4_1 = vscode_helpers.uuid();
+<span class="hljs-keyword">let</span> uuid_v4_2 = vscode_helpers.uuid(<span class="hljs-string">'4'</span>);
+<span class="hljs-keyword">let</span> uuid_v4_3 = vscode_helpers.uuid(<span class="hljs-string">'v4'</span>);
+
+<span class="hljs-keyword">let</span> uuid_v5_1 = vscode_helpers.uuid(<span class="hljs-string">'5'</span>);
+<span class="hljs-keyword">let</span> uuid_v5_2 = vscode_helpers.uuid(<span class="hljs-string">'v5'</span>);
+
+<span class="hljs-keyword">let</span> uuid_v1_1 = vscode_helpers.uuid(<span class="hljs-string">'1'</span>);
+<span class="hljs-keyword">let</span> uuid_v1_2 = vscode_helpers.uuid(<span class="hljs-string">'v1'</span>);
+</code></pre>
 				<h4 id="waitwhile-">waitWhile [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> counter = <span class="hljs-number">5979</span>;
 
@@ -1074,6 +1118,23 @@ vscode_helpers.IS_MAC;  <span class="hljs-comment">// Mac OS</span>
 vscode_helpers.IS_OPEN_BSD;  <span class="hljs-comment">// Open BSD</span>
 vscode_helpers.IS_SUNOS;  <span class="hljs-comment">// Sun OS</span>
 vscode_helpers.IS_WINDOWS;  <span class="hljs-comment">// Windows</span>
+</code></pre>
+				<h4 id="queue-">QUEUE [<a href="#constants-and-variables-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.range(<span class="hljs-number">0</span>, <span class="hljs-number">5979</span>).forEach(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> {
+
+    vscode_helpers.QUEUE.add(<span class="hljs-keyword">async</span> () =&gt; {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> vscode_helpers.invokeAfter(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+            <span class="hljs-keyword">return</span> x * <span class="hljs-number">23979</span>;
+        }, <span class="hljs-number">100</span>));
+    }).then(<span class="hljs-function">(<span class="hljs-params">result: <span class="hljs-built_in">number</span></span>) =&gt;</span> {
+        <span class="hljs-comment">// succeeded</span>
+
+        <span class="hljs-built_in">console</span>.log( <span class="hljs-string">`QUEUE result of '<span class="hljs-subst">${ x }</span>': <span class="hljs-subst">${ result }</span>`</span> );
+    }).catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+        <span class="hljs-comment">// error</span>
+    });
+
+});
 </code></pre>
 				<h4 id="session-">SESSION [<a href="#constants-and-variables-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">let</span> var_1 = vscode_helpers.SESSION[<span class="hljs-string">'a'</span>];  <span class="hljs-comment">// undefined (at the beginning)</span>

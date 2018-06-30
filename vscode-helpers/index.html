@@ -96,6 +96,8 @@
 									<li><a href="#doesmatch-">doesMatch</a></li>
 									<li><a href="#execfile-">execFile</a></li>
 									<li><a href="#exists-">exists</a></li>
+									<li><a href="#fastglob-">fastGlob</a></li>
+									<li><a href="#fastglobsync-">fastGlobSync</a></li>
 									<li><a href="#foreachasync-">forEachAsync</a></li>
 									<li><a href="#format-">format</a></li>
 									<li><a href="#formatarray-">formatArray</a></li>
@@ -470,6 +472,18 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
     <span class="hljs-comment">//TODO    </span>
 }, <span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-comment">// error</span>
+});
+</code></pre>
+				<h4 id="fastglob-">fastGlob [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> MATCHES = <span class="hljs-keyword">await</span> vscode_helpers.fastGlob([ <span class="hljs-string">'**/*.txt'</span> ], {
+    cwd: <span class="hljs-string">'/path/to/directory'</span>,
+    ignore: [ <span class="hljs-string">'/log/**/*'</span> ],
+});
+</code></pre>
+				<h4 id="fastglobsync-">fastGlobSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> MATCHES = vscode_helpers.fastGlobSync([ <span class="hljs-string">'**/*.txt'</span> ], {
+    cwd: <span class="hljs-string">'/path/to/directory'</span>,
+    ignore: [ <span class="hljs-string">'/log/**/*'</span> ],
 });
 </code></pre>
 				<h4 id="foreachasync-">forEachAsync [<a href="#functions-">&uarr;</a>]</h4>

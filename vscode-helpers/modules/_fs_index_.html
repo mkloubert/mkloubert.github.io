@@ -73,12 +73,15 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_fs_index_.ifastglobentry.html" class="tsd-kind-icon">IFast<wbr>Glob<wbr>Entry</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_fs_index_.tempfileoptions.html" class="tsd-kind-icon">Temp<wbr>File<wbr>Options</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_fs_index_.html#fastglobentryitem" class="tsd-kind-icon">Fast<wbr>Glob<wbr>Entry<wbr>Item</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_fs_index_.html#fastgloboptions" class="tsd-kind-icon">Fast<wbr>Glob<wbr>Options</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_fs_index_.html#tempfilepath" class="tsd-kind-icon">Temp<wbr>File<wbr>Path</a></li>
 							</ul>
 						</section>
@@ -93,6 +96,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_fs_index_.html#createdirectoryifneeded" class="tsd-kind-icon">create<wbr>Directory<wbr>IfNeeded</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_fs_index_.html#exists" class="tsd-kind-icon">exists</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_fs_index_.html#fastglob" class="tsd-kind-icon">fast<wbr>Glob</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_fs_index_.html#fastglobsync" class="tsd-kind-icon">fast<wbr>Glob<wbr>Sync</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_fs_index_.html#glob" class="tsd-kind-icon">glob</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_fs_index_.html#globsync" class="tsd-kind-icon">glob<wbr>Sync</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="_fs_index_.html#invokeforstats" class="tsd-kind-icon">invoke<wbr>For<wbr>Stats</a></li>
@@ -124,15 +129,35 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="fastglobentryitem" class="tsd-anchor"></a>
+					<h3>Fast<wbr>Glob<wbr>Entry<wbr>Item</h3>
+					<div class="tsd-signature tsd-kind-icon">Fast<wbr>Glob<wbr>Entry<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_fs_index_.ifastglobentry.html" class="tsd-signature-type">IFastGlobEntry</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L28">fs/index.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="fastgloboptions" class="tsd-anchor"></a>
+					<h3>Fast<wbr>Glob<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">Fast<wbr>Glob<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">FastGlob.Options</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L30">fs/index.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="tempfilepath" class="tsd-anchor"></a>
 					<h3>Temp<wbr>File<wbr>Path</h3>
 					<div class="tsd-signature tsd-kind-icon">Temp<wbr>File<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L49">fs/index.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L59">fs/index.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -145,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">Merge<wbr>Deep<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;merge-deep&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L21">fs/index.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L22">fs/index.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -162,7 +187,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L58">fs/index.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L68">fs/index.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -194,7 +219,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L77">fs/index.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L87">fs/index.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -217,6 +242,76 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="fastglob" class="tsd-anchor"></a>
+					<h3>fast<wbr>Glob</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">fast<wbr>Glob<span class="tsd-signature-symbol">(</span>patterns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">FastGlob.Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_fs_index_.html#fastglobentryitem" class="tsd-signature-type">FastGlobEntryItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L109">fs/index.ts:109</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fast version of &#39;node-glob&#39;.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>patterns: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>One or more patterns to search for.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">FastGlob.Options</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_fs_index_.html#fastglobentryitem" class="tsd-signature-type">FastGlobEntryItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Promise with the found files / directories.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="fastglobsync" class="tsd-anchor"></a>
+					<h3>fast<wbr>Glob<wbr>Sync</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">fast<wbr>Glob<wbr>Sync<span class="tsd-signature-symbol">(</span>patterns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">FastGlob.Options</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_fs_index_.html#fastglobentryitem" class="tsd-signature-type">FastGlobEntryItem</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L121">fs/index.ts:121</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Fast version of &#39;node-glob&#39; (sync).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>patterns: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>One or more patterns to search for.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">FastGlob.Options</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_fs_index_.html#fastglobentryitem" class="tsd-signature-type">FastGlobEntryItem</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The found files / directories.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="glob" class="tsd-anchor"></a>
 					<h3>glob</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -226,7 +321,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L99">fs/index.ts:99</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L133">fs/index.ts:133</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -261,7 +356,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L147">fs/index.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L181">fs/index.ts:181</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -296,7 +391,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L165">fs/index.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L199">fs/index.ts:199</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -352,7 +447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L185">fs/index.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L219">fs/index.ts:219</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -408,7 +503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L213">fs/index.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L247">fs/index.ts:247</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -443,7 +538,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L229">fs/index.ts:229</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L263">fs/index.ts:263</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -478,7 +573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L245">fs/index.ts:245</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L279">fs/index.ts:279</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -513,7 +608,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L261">fs/index.ts:261</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L295">fs/index.ts:295</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -548,7 +643,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L277">fs/index.ts:277</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L311">fs/index.ts:311</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -583,7 +678,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L293">fs/index.ts:293</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L327">fs/index.ts:327</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -618,7 +713,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L309">fs/index.ts:309</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L343">fs/index.ts:343</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -653,7 +748,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L325">fs/index.ts:325</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L359">fs/index.ts:359</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -688,7 +783,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L341">fs/index.ts:341</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L375">fs/index.ts:375</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -723,7 +818,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L357">fs/index.ts:357</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L391">fs/index.ts:391</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -758,7 +853,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L373">fs/index.ts:373</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L407">fs/index.ts:407</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -793,7 +888,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L389">fs/index.ts:389</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L423">fs/index.ts:423</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -828,7 +923,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L405">fs/index.ts:405</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L439">fs/index.ts:439</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -863,7 +958,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L421">fs/index.ts:421</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L455">fs/index.ts:455</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -898,7 +993,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L429">fs/index.ts:429</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L463">fs/index.ts:463</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -924,7 +1019,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L444">fs/index.ts:444</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L478">fs/index.ts:478</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -947,7 +1042,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L477">fs/index.ts:477</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L511">fs/index.ts:511</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -982,7 +1077,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L492">fs/index.ts:492</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L526">fs/index.ts:526</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1017,7 +1112,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L507">fs/index.ts:507</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L541">fs/index.ts:541</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1079,7 +1174,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L574">fs/index.ts:574</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L608">fs/index.ts:608</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1138,7 +1233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L557">fs/index.ts:557</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L591">fs/index.ts:591</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1161,7 +1256,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/14fda62/src/fs/index.ts#L591">fs/index.ts:591</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/ae84554/src/fs/index.ts#L625">fs/index.ts:625</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1232,7 +1327,16 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_fs_index_.ifastglobentry.html" class="tsd-kind-icon">IFast<wbr>Glob<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_fs_index_.tempfileoptions.html" class="tsd-kind-icon">Temp<wbr>File<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_fs_index_.html#fastglobentryitem" class="tsd-kind-icon">Fast<wbr>Glob<wbr>Entry<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_fs_index_.html#fastgloboptions" class="tsd-kind-icon">Fast<wbr>Glob<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_fs_index_.html#tempfilepath" class="tsd-kind-icon">Temp<wbr>File<wbr>Path</a>
@@ -1245,6 +1349,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_fs_index_.html#exists" class="tsd-kind-icon">exists</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_fs_index_.html#fastglob" class="tsd-kind-icon">fast<wbr>Glob</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_fs_index_.html#fastglobsync" class="tsd-kind-icon">fast<wbr>Glob<wbr>Sync</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_fs_index_.html#glob" class="tsd-kind-icon">glob</a>

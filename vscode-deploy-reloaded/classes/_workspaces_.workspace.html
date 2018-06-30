@@ -111,6 +111,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_apis" class="tsd-kind-icon">_APIS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_auto_deploy_queue" class="tsd-kind-icon">_AUTO_<wbr>DEPLOY_<wbr>QUEUE</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_config_file_watchers" class="tsd-kind-icon">_CONFIG_<wbr>FILE_<wbr>WATCHERS</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_deactivate_auto_deploy_for_queue" class="tsd-kind-icon">_DEACTIVATE_<wbr>AUTO_<wbr>DEPLOY_<wbr>FOR_<wbr>QUEUE</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#_deploy_queue" class="tsd-kind-icon">_DEPLOY_<wbr>QUEUE</a></li>
@@ -220,6 +221,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#executeonstartup" class="tsd-kind-icon">execute<wbr>OnStartup</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="_workspaces_.workspace.html#filterconditionalitems" class="tsd-kind-icon">filter<wbr>Conditional<wbr>Items</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#findfilesbyfilter" class="tsd-kind-icon">find<wbr>Files<wbr>ByFilter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#findfilesbyfilterfast" class="tsd-kind-icon">find<wbr>Files<wbr>ByFilter<wbr>Fast</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_workspaces_.workspace.html#getallswitchoptions" class="tsd-kind-icon">get<wbr>All<wbr>Switch<wbr>Options</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getapihosts" class="tsd-kind-icon">get<wbr>Api<wbr>Hosts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_workspaces_.workspace.html#getdeleteplugins" class="tsd-kind-icon">get<wbr>Delete<wbr>Plugins</a></li>
@@ -325,7 +327,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides WorkspaceBase.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L375">workspaces.ts:375</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L377">workspaces.ts:377</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -373,7 +375,17 @@
 					<div class="tsd-signature tsd-kind-icon">_APIS<span class="tsd-signature-symbol">:</span> <a href="_api_.apihost.html" class="tsd-signature-type">ApiHost</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L324">workspaces.ts:324</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L325">workspaces.ts:325</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_auto_deploy_queue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _AUTO_<wbr>DEPLOY_<wbr>QUEUE</h3>
+					<div class="tsd-signature tsd-kind-icon">_AUTO_<wbr>DEPLOY_<wbr>QUEUE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PQueue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DefaultAddOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;deploy_helpers.createQueue()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L326">workspaces.ts:326</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -383,7 +395,7 @@
 					<div class="tsd-signature tsd-kind-icon">_CONFIG_<wbr>FILE_<wbr>WATCHERS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.FileSystemWatcher</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L329">workspaces.ts:329</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L331">workspaces.ts:331</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -393,7 +405,7 @@
 					<div class="tsd-signature tsd-kind-icon">_DEACTIVATE_<wbr>AUTO_<wbr>DEPLOY_<wbr>FOR_<wbr>QUEUE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PQueue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DefaultAddOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;deploy_helpers.createQueue()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L334">workspaces.ts:334</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L336">workspaces.ts:336</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -403,7 +415,7 @@
 					<div class="tsd-signature tsd-kind-icon">_DEPLOY_<wbr>QUEUE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PQueue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DefaultAddOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;deploy_helpers.createQueue()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L335">workspaces.ts:335</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L337">workspaces.ts:337</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -445,7 +457,7 @@
 					<div class="tsd-signature tsd-kind-icon">_LOGGER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ActionLogger</span><span class="tsd-signature-symbol"> =&nbsp;new deploy_log.ActionLogger()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L352">workspaces.ts:352</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L354">workspaces.ts:354</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -455,7 +467,7 @@
 					<div class="tsd-signature tsd-kind-icon">_OLD_<wbr>ENV_<wbr>VARS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L353">workspaces.ts:353</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L355">workspaces.ts:355</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -465,7 +477,7 @@
 					<div class="tsd-signature tsd-kind-icon">_OUTPUT_<wbr>CHANNEL<span class="tsd-signature-symbol">:</span> <a href="_output_.outputchannelwrapper.html" class="tsd-signature-type">OutputChannelWrapper</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L354">workspaces.ts:354</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L356">workspaces.ts:356</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -475,7 +487,7 @@
 					<div class="tsd-signature tsd-kind-icon">_PACKAGE_<wbr>BUTTONS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.packagewithbutton.html" class="tsd-signature-type">PackageWithButton</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L355">workspaces.ts:355</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L357">workspaces.ts:357</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -485,7 +497,7 @@
 					<div class="tsd-signature tsd-kind-icon">_QUEUE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PQueue</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DefaultAddOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;deploy_helpers.createQueue()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L357">workspaces.ts:357</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L359">workspaces.ts:359</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -495,7 +507,7 @@
 					<div class="tsd-signature tsd-kind-icon">_SWITCH_<wbr>BUTTONS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.targetwithbutton.html" class="tsd-signature-type">TargetWithButton</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_workspaces_.switchtarget.html" class="tsd-signature-type">SwitchTarget</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L364">workspaces.ts:364</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L366">workspaces.ts:366</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -505,7 +517,7 @@
 					<div class="tsd-signature tsd-kind-icon">_TCP_<wbr>PROXIES<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_proxies_.tcpproxydestinationcontext.html" class="tsd-signature-type">TcpProxyDestinationContext</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L369">workspaces.ts:369</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L371">workspaces.ts:371</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -520,7 +532,7 @@
 					<div class="tsd-signature tsd-kind-icon">_TCP_<wbr>PROXY_<wbr>BUTTONS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.tcpproxybutton.html" class="tsd-signature-type">TcpProxyButton</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L370">workspaces.ts:370</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L372">workspaces.ts:372</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -530,7 +542,7 @@
 					<div class="tsd-signature tsd-kind-icon">_TCP_<wbr>PROXY_<wbr>FILTERS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_proxies_.tcpproxyremotefiltercontext.html" class="tsd-signature-type">TcpProxyRemoteFilterContext</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L371">workspaces.ts:371</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L373">workspaces.ts:373</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -540,7 +552,7 @@
 					<div class="tsd-signature tsd-kind-icon">_TCP_<wbr>PROXY_<wbr>LOGGERS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_proxies_.tcpproxyloggingcontext.html" class="tsd-signature-type">TcpProxyLoggingContext</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L372">workspaces.ts:372</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L374">workspaces.ts:374</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -550,7 +562,7 @@
 					<div class="tsd-signature tsd-kind-icon">_TCP_<wbr>PROXY_<wbr>NAMES_<wbr>AND_<wbr>DESCS<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_proxies_.tcpproxynameanddescriptionresolvercontext.html" class="tsd-signature-type">TcpProxyNameAndDescriptionResolverContext</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L373">workspaces.ts:373</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L375">workspaces.ts:375</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -576,7 +588,7 @@
 					<div class="tsd-signature tsd-kind-icon">_config<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.workspacesettings.html" class="tsd-signature-type">WorkspaceSettings</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L328">workspaces.ts:328</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L330">workspaces.ts:330</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -591,7 +603,7 @@
 					<div class="tsd-signature tsd-kind-icon">_config<wbr>Source<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.workspaceconfigsource.html" class="tsd-signature-type">WorkspaceConfigSource</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L333">workspaces.ts:333</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L335">workspaces.ts:335</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -606,7 +618,7 @@
 					<div class="tsd-signature tsd-kind-icon">_git<wbr>Folder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L336">workspaces.ts:336</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L338">workspaces.ts:338</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -616,7 +628,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Deploy<wbr>OnChange<wbr>Freezed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L337">workspaces.ts:337</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L339">workspaces.ts:339</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -626,7 +638,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Deploy<wbr>OnSave<wbr>Freezed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L338">workspaces.ts:338</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L340">workspaces.ts:340</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -636,7 +648,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Initialized<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L342">workspaces.ts:342</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L344">workspaces.ts:344</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -651,7 +663,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Reloading<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L346">workspaces.ts:346</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L348">workspaces.ts:348</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -666,7 +678,7 @@
 					<div class="tsd-signature tsd-kind-icon">_is<wbr>Remove<wbr>OnChange<wbr>Freezed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L347">workspaces.ts:347</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L349">workspaces.ts:349</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -676,7 +688,7 @@
 					<div class="tsd-signature tsd-kind-icon">_last<wbr>Config<wbr>Update<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L351">workspaces.ts:351</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L353">workspaces.ts:353</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -691,7 +703,7 @@
 					<div class="tsd-signature tsd-kind-icon">_packages<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_packages_.package.html" class="tsd-signature-type">Package</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L356">workspaces.ts:356</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L358">workspaces.ts:358</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -701,7 +713,7 @@
 					<div class="tsd-signature tsd-kind-icon">_root<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L358">workspaces.ts:358</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L360">workspaces.ts:360</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -711,7 +723,7 @@
 					<div class="tsd-signature tsd-kind-icon">_selected<wbr>Switches<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L359">workspaces.ts:359</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L361">workspaces.ts:361</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -721,7 +733,7 @@
 					<div class="tsd-signature tsd-kind-icon">_start<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment.Moment</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L363">workspaces.ts:363</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L365">workspaces.ts:365</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -736,7 +748,7 @@
 					<div class="tsd-signature tsd-kind-icon">_targets<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_targets_.target.html" class="tsd-signature-type">Target</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L365">workspaces.ts:365</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L367">workspaces.ts:367</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -746,7 +758,7 @@
 					<div class="tsd-signature tsd-kind-icon">_translator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">i18next.TranslationFunction</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L374">workspaces.ts:374</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L376">workspaces.ts:376</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -756,7 +768,7 @@
 					<div class="tsd-signature tsd-kind-icon">_workspace<wbr>Session<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L375">workspaces.ts:375</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L377">workspaces.ts:377</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -766,7 +778,7 @@
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.workspacecontext.html" class="tsd-signature-type">WorkspaceContext</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L386">workspaces.ts:386</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L388">workspaces.ts:388</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -792,7 +804,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L384">workspaces.ts:384</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L386">workspaces.ts:386</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -855,7 +867,7 @@
 					<div class="tsd-signature tsd-kind-icon">state<span class="tsd-signature-symbol">:</span> <a href="_workspaces_.workspacememento.html" class="tsd-signature-type">WorkspaceMemento</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4663">workspaces.ts:4663</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4703">workspaces.ts:4703</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -870,7 +882,7 @@
 					<div class="tsd-signature tsd-kind-icon">vars<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">deploy_contracts.KeyValuePairs</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4934">workspaces.ts:4934</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4974">workspaces.ts:4974</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -903,7 +915,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L433">workspaces.ts:433</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L435">workspaces.ts:435</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -925,7 +937,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L708">workspaces.ts:708</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L710">workspaces.ts:710</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -948,7 +960,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides WorkspaceBase.configSource</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L715">workspaces.ts:715</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L717">workspaces.ts:717</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -970,7 +982,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L995">workspaces.ts:995</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L997">workspaces.ts:997</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -992,7 +1004,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1093">workspaces.ts:1093</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1095">workspaces.ts:1095</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1014,7 +1026,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1972">workspaces.ts:1972</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2012">workspaces.ts:2012</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1039,7 +1051,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1979">workspaces.ts:1979</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2019">workspaces.ts:2019</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1061,7 +1073,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2462">workspaces.ts:2462</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2502">workspaces.ts:2502</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1084,7 +1096,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2470">workspaces.ts:2470</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2510">workspaces.ts:2510</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1097,7 +1109,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2473">workspaces.ts:2473</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2513">workspaces.ts:2513</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1126,7 +1138,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2482">workspaces.ts:2482</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2522">workspaces.ts:2522</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1139,7 +1151,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2485">workspaces.ts:2485</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2525">workspaces.ts:2525</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1167,7 +1179,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2581">workspaces.ts:2581</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2621">workspaces.ts:2621</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1189,7 +1201,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2629">workspaces.ts:2629</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2669">workspaces.ts:2669</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1212,7 +1224,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2636">workspaces.ts:2636</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2676">workspaces.ts:2676</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1225,7 +1237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2639">workspaces.ts:2639</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2679">workspaces.ts:2679</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1253,7 +1265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2648">workspaces.ts:2648</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2688">workspaces.ts:2688</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1275,7 +1287,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2831">workspaces.ts:2831</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2871">workspaces.ts:2871</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1297,7 +1309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2977">workspaces.ts:2977</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3017">workspaces.ts:3017</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1319,7 +1331,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2984">workspaces.ts:2984</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3024">workspaces.ts:3024</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1341,7 +1353,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L3119">workspaces.ts:3119</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3159">workspaces.ts:3159</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1364,7 +1376,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides WorkspaceBase.rootPath</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4414">workspaces.ts:4414</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4454">workspaces.ts:4454</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1386,7 +1398,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4432">workspaces.ts:4432</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4472">workspaces.ts:4472</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1408,7 +1420,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4459">workspaces.ts:4459</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4499">workspaces.ts:4499</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1430,7 +1442,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4656">workspaces.ts:4656</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4696">workspaces.ts:4696</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1452,7 +1464,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4668">workspaces.ts:4668</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4708">workspaces.ts:4708</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1474,7 +1486,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4927">workspaces.ts:4927</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4967">workspaces.ts:4967</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1527,7 +1539,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L403">workspaces.ts:403</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L405">workspaces.ts:405</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1565,7 +1577,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L419">workspaces.ts:419</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L421">workspaces.ts:421</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1597,7 +1609,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L444">workspaces.ts:444</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L446">workspaces.ts:446</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1628,7 +1640,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L509">workspaces.ts:509</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L511">workspaces.ts:511</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1651,7 +1663,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L605">workspaces.ts:605</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L607">workspaces.ts:607</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1697,7 +1709,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L687">workspaces.ts:687</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L689">workspaces.ts:689</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1714,7 +1726,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L696">workspaces.ts:696</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L698">workspaces.ts:698</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1754,7 +1766,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L724">workspaces.ts:724</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L726">workspaces.ts:726</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1777,7 +1789,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L757">workspaces.ts:757</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L759">workspaces.ts:759</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1800,7 +1812,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L761">workspaces.ts:761</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L763">workspaces.ts:763</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1828,7 +1840,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L824">workspaces.ts:824</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L826">workspaces.ts:826</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1885,7 +1897,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L871">workspaces.ts:871</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L873">workspaces.ts:873</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1925,7 +1937,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L884">workspaces.ts:884</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L886">workspaces.ts:886</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1962,7 +1974,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L898">workspaces.ts:898</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L900">workspaces.ts:900</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1999,7 +2011,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L910">workspaces.ts:910</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L912">workspaces.ts:912</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2039,7 +2051,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L921">workspaces.ts:921</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L923">workspaces.ts:923</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2070,7 +2082,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L940">workspaces.ts:940</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L942">workspaces.ts:942</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2101,7 +2113,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L962">workspaces.ts:962</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L964">workspaces.ts:964</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2132,7 +2144,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L985">workspaces.ts:985</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L987">workspaces.ts:987</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2166,7 +2178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1013">workspaces.ts:1013</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1015">workspaces.ts:1015</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2221,7 +2233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1027">workspaces.ts:1027</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1029">workspaces.ts:1029</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2238,7 +2250,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1045">workspaces.ts:1045</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1047">workspaces.ts:1047</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2255,7 +2267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1053">workspaces.ts:1053</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1055">workspaces.ts:1055</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2319,7 +2331,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1107">workspaces.ts:1107</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1109">workspaces.ts:1109</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2354,7 +2366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1118">workspaces.ts:1118</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1120">workspaces.ts:1120</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2377,7 +2389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1210">workspaces.ts:1210</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1212">workspaces.ts:1212</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2421,7 +2433,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1261">workspaces.ts:1261</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1263">workspaces.ts:1263</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2446,6 +2458,41 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="findfilesbyfilterfast" class="tsd-anchor"></a>
+					<h3>find<wbr>Files<wbr>ByFilter<wbr>Fast</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Files<wbr>ByFilter<wbr>Fast<span class="tsd-signature-symbol">(</span>filter<span class="tsd-signature-symbol">: </span><a href="../interfaces/_contracts_.filefilter.html" class="tsd-signature-type">FileFilter</a>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">deploy_helpers.FastGlobOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IFastGlobEntry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1297">workspaces.ts:1297</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds files inside that workspace.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>filter: <a href="../interfaces/_contracts_.filefilter.html" class="tsd-signature-type">FileFilter</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The filter to use.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <span class="tsd-signature-type">deploy_helpers.FastGlobOptions</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IFastGlobEntry</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The promise with the found files.</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="getallswitchoptions" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>All<wbr>Switch<wbr>Options</h3>
@@ -2456,7 +2503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1287">workspaces.ts:1287</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1327">workspaces.ts:1327</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2479,7 +2526,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1318">workspaces.ts:1318</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1358">workspaces.ts:1358</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2502,7 +2549,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1331">workspaces.ts:1331</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1371">workspaces.ts:1371</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2534,7 +2581,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1348">workspaces.ts:1348</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1388">workspaces.ts:1388</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2566,7 +2613,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1363">workspaces.ts:1363</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1403">workspaces.ts:1403</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2589,7 +2636,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1378">workspaces.ts:1378</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1418">workspaces.ts:1418</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2621,7 +2668,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1416">workspaces.ts:1416</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1456">workspaces.ts:1456</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2644,7 +2691,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1522">workspaces.ts:1522</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1562">workspaces.ts:1562</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2676,7 +2723,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1535">workspaces.ts:1535</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1575">workspaces.ts:1575</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2727,7 +2774,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1552">workspaces.ts:1552</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1592">workspaces.ts:1592</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2759,7 +2806,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1570">workspaces.ts:1570</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1610">workspaces.ts:1610</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2781,7 +2828,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1580">workspaces.ts:1580</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1620">workspaces.ts:1620</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -2798,7 +2845,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1606">workspaces.ts:1606</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1646">workspaces.ts:1646</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2830,7 +2877,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1623">workspaces.ts:1623</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1663">workspaces.ts:1663</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2865,7 +2912,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1656">workspaces.ts:1656</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1696">workspaces.ts:1696</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2888,7 +2935,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1663">workspaces.ts:1663</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1703">workspaces.ts:1703</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2911,7 +2958,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1677">workspaces.ts:1677</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1717">workspaces.ts:1717</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_workspaces_.switchstaterepowithcollection.html" class="tsd-signature-type">SwitchStateRepoWithCollection</a></h4>
@@ -2928,7 +2975,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1694">workspaces.ts:1694</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1734">workspaces.ts:1734</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2951,7 +2998,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1707">workspaces.ts:1707</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1747">workspaces.ts:1747</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2986,7 +3033,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1729">workspaces.ts:1729</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1769">workspaces.ts:1769</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3021,7 +3068,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1747">workspaces.ts:1747</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1787">workspaces.ts:1787</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3043,7 +3090,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1766">workspaces.ts:1766</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1806">workspaces.ts:1806</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3085,7 +3132,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1804">workspaces.ts:1804</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1844">workspaces.ts:1844</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3120,7 +3167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1836">workspaces.ts:1836</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1876">workspaces.ts:1876</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3143,7 +3190,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1850">workspaces.ts:1850</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1890">workspaces.ts:1890</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3175,7 +3222,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1865">workspaces.ts:1865</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1905">workspaces.ts:1905</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3198,7 +3245,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1876">workspaces.ts:1876</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L1916">workspaces.ts:1916</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3220,7 +3267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L1983">workspaces.ts:1983</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2023">workspaces.ts:2023</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3243,7 +3290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2041">workspaces.ts:2041</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2081">workspaces.ts:2081</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3266,7 +3313,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2099">workspaces.ts:2099</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2139">workspaces.ts:2139</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3289,7 +3336,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2348">workspaces.ts:2348</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2388">workspaces.ts:2388</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3312,7 +3359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2176">workspaces.ts:2176</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2216">workspaces.ts:2216</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3335,7 +3382,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2434">workspaces.ts:2434</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2474">workspaces.ts:2474</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3391,7 +3438,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2498">workspaces.ts:2498</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2538">workspaces.ts:2538</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3423,7 +3470,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2545">workspaces.ts:2545</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2585">workspaces.ts:2585</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3449,7 +3496,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2569">workspaces.ts:2569</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2609">workspaces.ts:2609</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3481,7 +3528,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2592">workspaces.ts:2592</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2632">workspaces.ts:2632</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3513,7 +3560,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2606">workspaces.ts:2606</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2646">workspaces.ts:2646</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3545,7 +3592,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2622">workspaces.ts:2622</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2662">workspaces.ts:2662</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3577,7 +3624,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2659">workspaces.ts:2659</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2699">workspaces.ts:2699</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3615,7 +3662,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2671">workspaces.ts:2671</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2711">workspaces.ts:2711</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3694,7 +3741,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2794">workspaces.ts:2794</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2834">workspaces.ts:2834</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3754,7 +3801,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2840">workspaces.ts:2840</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2880">workspaces.ts:2880</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3786,7 +3833,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides WorkspaceBase.onDidChangeConfiguration</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2875">workspaces.ts:2875</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2915">workspaces.ts:2915</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3817,7 +3864,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2879">workspaces.ts:2879</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2919">workspaces.ts:2919</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3846,7 +3893,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2927">workspaces.ts:2927</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2967">workspaces.ts:2967</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3878,7 +3925,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides DisposableBase.onDispose</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2940">workspaces.ts:2940</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L2980">workspaces.ts:2980</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3929,7 +3976,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L2995">workspaces.ts:2995</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3035">workspaces.ts:3035</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4023,7 +4070,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L3085">workspaces.ts:3085</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3125">workspaces.ts:3125</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4060,7 +4107,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L3097">workspaces.ts:3097</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3137">workspaces.ts:3137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4100,7 +4147,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L3109">workspaces.ts:3109</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3149">workspaces.ts:3149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4134,7 +4181,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L3123">workspaces.ts:3123</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3163">workspaces.ts:3163</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -4151,7 +4198,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L3259">workspaces.ts:3259</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3299">workspaces.ts:3299</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4179,7 +4226,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L3610">workspaces.ts:3610</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3650">workspaces.ts:3650</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4201,7 +4248,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L3645">workspaces.ts:3645</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3685">workspaces.ts:3685</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -4218,7 +4265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L3839">workspaces.ts:3839</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3879">workspaces.ts:3879</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4241,7 +4288,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4234">workspaces.ts:4234</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4274">workspaces.ts:4274</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -4258,7 +4305,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4320">workspaces.ts:4320</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4360">workspaces.ts:4360</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -4281,7 +4328,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L3886">workspaces.ts:3886</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L3926">workspaces.ts:3926</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -4351,7 +4398,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4361">workspaces.ts:4361</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4401">workspaces.ts:4401</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4382,7 +4429,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4390">workspaces.ts:4390</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4430">workspaces.ts:4430</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4445,7 +4492,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4445">workspaces.ts:4445</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4485">workspaces.ts:4485</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4504,7 +4551,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4467">workspaces.ts:4467</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4507">workspaces.ts:4507</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -4521,7 +4568,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4477">workspaces.ts:4477</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4517">workspaces.ts:4517</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -4538,7 +4585,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4489">workspaces.ts:4489</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4529">workspaces.ts:4529</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4579,7 +4626,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4509">workspaces.ts:4509</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4549">workspaces.ts:4549</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4611,7 +4658,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4561">workspaces.ts:4561</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4601">workspaces.ts:4601</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4652,7 +4699,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4582">workspaces.ts:4582</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4622">workspaces.ts:4622</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4682,7 +4729,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4603">workspaces.ts:4603</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4643">workspaces.ts:4643</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4723,7 +4770,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4623">workspaces.ts:4623</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4663">workspaces.ts:4663</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4776,7 +4823,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4673">workspaces.ts:4673</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4713">workspaces.ts:4713</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4808,7 +4855,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4741">workspaces.ts:4741</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4781">workspaces.ts:4781</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4843,7 +4890,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4696">workspaces.ts:4696</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4736">workspaces.ts:4736</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4878,7 +4925,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4762">workspaces.ts:4762</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4802">workspaces.ts:4802</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4913,7 +4960,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4792">workspaces.ts:4792</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4832">workspaces.ts:4832</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -4930,7 +4977,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/fb65002/src/workspaces.ts#L4862">workspaces.ts:4862</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-deploy-reloaded/blob/8e84971/src/workspaces.ts#L4902">workspaces.ts:4902</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -4989,6 +5036,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_workspaces_.workspace.html#_apis" class="tsd-kind-icon">_APIS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_workspaces_.workspace.html#_auto_deploy_queue" class="tsd-kind-icon">_AUTO_<wbr>DEPLOY_<wbr>QUEUE</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_workspaces_.workspace.html#_config_file_watchers" class="tsd-kind-icon">_CONFIG_<wbr>FILE_<wbr>WATCHERS</a>
@@ -5286,6 +5336,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_workspaces_.workspace.html#findfilesbyfilter" class="tsd-kind-icon">find<wbr>Files<wbr>ByFilter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_workspaces_.workspace.html#findfilesbyfilterfast" class="tsd-kind-icon">find<wbr>Files<wbr>ByFilter<wbr>Fast</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_workspaces_.workspace.html#getallswitchoptions" class="tsd-kind-icon">get<wbr>All<wbr>Switch<wbr>Options</a>

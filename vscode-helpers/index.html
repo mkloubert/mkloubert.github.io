@@ -90,6 +90,7 @@
 									<li><a href="#creategitclientsync-">createGitClientSync</a></li>
 									<li><a href="#createinterval-">createInterval</a></li>
 									<li><a href="#createlogger-">createLogger</a></li>
+									<li><a href="#createqueue-">createQueue</a></li>
 									<li><a href="#createtimeout-">createTimeout</a></li>
 									<li><a href="#delete-">DELETE</a></li>
 									<li><a href="#doesmatch-">doesMatch</a></li>
@@ -415,6 +416,33 @@ INTERVAL.dispose();  <span class="hljs-comment">// same as 'clearInterval'</span
 });
 
 LOGGER.info(<span class="hljs-string">'Hello, LOG!'</span>);
+</code></pre>
+				<h4 id="createqueue-">createQueue [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-comment">/**
+ * (Default) Options:
+ * 
+ * {
+ *     autoStart: true,
+ *     concurrency: 1,
+ * }
+ */</span>
+<span class="hljs-keyword">const</span> MY_QUEUE = vscode_helpers.createQueue();
+
+vscode_helpers.range(<span class="hljs-number">0</span>, <span class="hljs-number">23979</span>).forEach(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> {
+
+    MY_QUEUE.add(<span class="hljs-keyword">async</span> () =&gt; {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> vscode_helpers.invokeAfter(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+            <span class="hljs-keyword">return</span> x * <span class="hljs-number">5979</span>;
+        }, <span class="hljs-number">100</span>));
+    }).then(<span class="hljs-function">(<span class="hljs-params">result: <span class="hljs-built_in">number</span></span>) =&gt;</span> {
+        <span class="hljs-comment">// succeeded</span>
+
+        <span class="hljs-built_in">console</span>.log( <span class="hljs-string">`MY_QUEUE result of '<span class="hljs-subst">${ x }</span>': <span class="hljs-subst">${ result }</span>`</span> );
+    }).catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
+        <span class="hljs-comment">// error</span>
+    });
+
+});
 </code></pre>
 				<h4 id="createtimeout-">createTimeout [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> TIMEOUT = vscode_helpers.createTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {

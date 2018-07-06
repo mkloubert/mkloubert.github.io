@@ -94,6 +94,7 @@
 						</ul>
 					</li>
 					<li><a href="#customization-">Customization</a><ul>
+							<li><a href="#columns-">Columns</a></li>
 							<li><a href="#css-">CSS</a></li>
 						</ul>
 					</li>
@@ -145,8 +146,16 @@
 					</thead>
 					<tbody>
 						<tr>
+							<td><code>canExecute</code></td>
+							<td>Indicates if an execute button should be shown on every card, which invokes an <code>onExecute()</code> function inside the underlying <code>.vscode/vscode-kanban.js</code> script file (s. <a href="#handle-events-">Handle events</a>). Default: <code>(false)</code></td>
+						</tr>
+						<tr>
 							<td><code>cleanupExports</code></td>
 							<td>Remove existing export files, before regenerate them. Default: <code>(true)</code></td>
+						</tr>
+						<tr>
+							<td><code>columns</code></td>
+							<td>Custom <a href="#columns-">column</a> settings.</td>
 						</tr>
 						<tr>
 							<td><code>exportOnSave</code></td>
@@ -220,7 +229,7 @@ graph TD;
 </code></pre><h3 id="filter-">Filter [<a href="#how-to-use-">&uarr;</a>]</h3>
 				<p><img src="https://raw.githubusercontent.com/mkloubert/vscode-kanban/master/img/demo8.gif" alt="Demo 8"></p>
 				<p>Cards can be filtered by using a powerful language, provided by <a href="https://github.com/joewalnes/filtrex#expressions">filtrex</a> library.</p>
-				<h3 id="constants-">Constants [<a href="#filter-">&uarr;</a>]</h3>
+				<h4 id="constants-">Constants [<a href="#filter-">&uarr;</a>]</h4>
 				<table>
 					<thead>
 						<tr>
@@ -342,7 +351,7 @@ graph TD;
 						</tr>
 					</tbody>
 				</table>
-				<h3 id="functions-">Functions [<a href="#filter-">&uarr;</a>]</h3>
+				<h4 id="functions-">Functions [<a href="#filter-">&uarr;</a>]</h4>
 				<table>
 					<thead>
 						<tr>
@@ -352,6 +361,16 @@ graph TD;
 						</tr>
 					</thead>
 					<tbody>
+						<tr>
+							<td><code>all(val, ...args)</code></td>
+							<td>Handles a value as string and checks if all string arguments can be found inside it (case insensitive).</td>
+							<td><code>all(assigned_to, &quot;kloubert&quot;, &quot;Marcel&quot;)</code></td>
+						</tr>
+						<tr>
+							<td><code>any(val, ...args)</code></td>
+							<td>Handles a value as string and checks if any string argument can be found inside it (case insensitive).</td>
+							<td><code>any(assigned_to, &quot;Tanja&quot;, &quot;Marcel&quot;)</code></td>
+						</tr>
 						<tr>
 							<td><code>concat(...args)</code></td>
 							<td>Handles arguments as strings and concats them to one string.</td>
@@ -364,7 +383,7 @@ graph TD;
 						</tr>
 						<tr>
 							<td><code>debug(val, result? = true)</code></td>
-							<td>Logs a value.</td>
+							<td><a href="#logs-">Logs</a> a value.</td>
 							<td><code>debug( concat(title, &quot;: &quot;, id) )</code></td>
 						</tr>
 						<tr>
@@ -435,22 +454,22 @@ graph TD;
 						<tr>
 							<td><code>norm(val)</code></td>
 							<td>Short version of <code>normalize()</code>.</td>
-							<td><code>norm(&quot; Marcel Kloubert &quot;) == &quot;&quot;</code></td>
+							<td><code>norm(&quot; Marcel Kloubert &quot;) == &quot;marcel kloubert&quot;</code></td>
 						</tr>
 						<tr>
 							<td><code>normalize(val)</code></td>
 							<td>Converts a value to a string and converts the characters to lower case by removing leading and ending whitespaces.</td>
-							<td><code>norm(&quot; Marcel Kloubert &quot;) == &quot;marcel lloubert&quot;</code></td>
+							<td><code>normalize(&quot; Marcel Kloubert &quot;) == &quot;marcel kloubert&quot;</code></td>
 						</tr>
 						<tr>
 							<td><code>number(val)</code></td>
-							<td>Alias of number.</td>
+							<td>Alias of <code>float()</code>.</td>
 							<td><code>number(&quot;5.979&quot;) == 5.979</code></td>
 						</tr>
 						<tr>
 							<td><code>regex(val, pattern: string, flags?: string)</code></td>
 							<td><code>(true)</code> if a value matches a regular expression. s. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">RegExp</a></td>
-							<td>`regex(assigned_to, &quot;^(marcel</td>
+							<td>`regex(assigned_to, &quot;^(marcel\</td>
 							<td>tanja)&quot;, &quot;i&quot;)`</td>
 						</tr>
 						<tr>
@@ -461,7 +480,7 @@ graph TD;
 						<tr>
 							<td><code>str_invoke(val, methods: string, ...args)</code></td>
 							<td>Handles a value as string and invokes methods for it. s. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></td>
-							<td><code>str_invoke(assigned_to, &quot;trim,toLowerCase&quot;) == &quot;marcel&quot; or str_invoke(assigned_to, &quot;indexOf&quot;, &#39;Marcel&#39;) &gt; -1</code></td>
+							<td><code>str_invoke(assigned_to, &quot;trim,toLowerCase&quot;) == &quot;marcel&quot; or str_invoke(assigned_to, &quot;indexOf&quot;, &quot;Marcel&quot;) &gt; -1</code></td>
 						</tr>
 						<tr>
 							<td><code>unix(val, isUTC?: bool = true)</code></td>
@@ -529,6 +548,15 @@ exports.onCardUpdated = <span class="hljs-keyword">async</span> (args) =&gt; {
 <span class="hljs-comment">// Is raised after a column has been cleared.</span>
 exports.onColumnCleared = <span class="hljs-keyword">async</span> (args) =&gt; {
     <span class="hljs-comment">// args.data =&gt; s. https://mkloubert.github.io/vscode-kanban/interfaces/_boards_.columnclearedeventdata.html</span>
+};
+
+<span class="hljs-comment">// [OPTIONAL]</span>
+<span class="hljs-comment">// </span>
+<span class="hljs-comment">// Is raised when an user clicks on a card's 'Execute' button.</span>
+<span class="hljs-comment">// This requires global extension / workspace setting 'canExecute' to be set to (true).</span>
+exports.onExecute = <span class="hljs-keyword">async</span> (args) =&gt; {
+    <span class="hljs-comment">// args =&gt; https://mkloubert.github.io/vscode-kanban/interfaces/_workspaces_.eventscriptfunctionarguments.html</span>
+    <span class="hljs-comment">// args.data =&gt; s. https://mkloubert.github.io/vscode-kanban/interfaces/_boards_.executecardeventarguments.html</span>
 };
 
 <span class="hljs-comment">// [OPTIONAL]</span>
@@ -633,6 +661,19 @@ exports.onEvent = <span class="hljs-keyword">async</span> (args) =&gt; {
 }
 </code></pre>
 				<h2 id="customization-">Customization [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="columns-">Columns [<a href="#customization-">&uarr;</a>]</h3>
+				<p>An example of setting up custom column names:</p>
+				<pre><code class="lang-json">{
+    <span class="hljs-attr">"kanban"</span>: {
+        <span class="hljs-attr">"columns"</span>: {
+            <span class="hljs-attr">"done"</span>: <span class="hljs-string">"Finished"</span>,
+            <span class="hljs-attr">"inProgress"</span>: <span class="hljs-string">"Work"</span>,
+            <span class="hljs-attr">"testing"</span>: <span class="hljs-string">"Currently Testing"</span>,
+            <span class="hljs-attr">"todo"</span>: <span class="hljs-string">"Ideas and TODOs"</span>
+        }
+    }
+}
+</code></pre>
 				<h3 id="css-">CSS [<a href="#customization-">&uarr;</a>]</h3>
 				<p>If you want to style your board, you can create a file, called <code>vscode-kanban.css</code>, inside your <code>.vscode</code> sub folder of the underlying workspace or your home directory.</p>
 				<p>Have a look at the files <a href="https://github.com/mkloubert/vscode-kanban/blob/master/src/res/css/board.css">board.css</a> and <a href="https://github.com/mkloubert/vscode-kanban/blob/master/src/res/css/style.css">style.css</a> to get an idea of the CSS classes, that are used.</p>

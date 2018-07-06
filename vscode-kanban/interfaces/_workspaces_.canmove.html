@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TimeTrackingByScriptSettings | vscode-kanban</title>
+	<title>CanMove | vscode-kanban</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -59,10 +59,10 @@
 					<a href="../modules/_workspaces_.html">&quot;workspaces&quot;</a>
 				</li>
 				<li>
-					<a href="_workspaces_.timetrackingbyscriptsettings.html">TimeTrackingByScriptSettings</a>
+					<a href="_workspaces_.canmove.html">CanMove</a>
 				</li>
 			</ul>
-			<h1>Interface TimeTrackingByScriptSettings</h1>
+			<h1>Interface CanMove</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Settings for tracking time by script.</p>
+						<p>Arguments for an event script function, which can move the underlying card.</p>
 					</div>
 				</div>
 			</section>
@@ -80,12 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_workspaces_.timetrackingsettings.html" class="tsd-signature-type">TimeTrackingSettings</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">TimeTrackingByScriptSettings</span>
-							</li>
-						</ul>
+						<span class="target">CanMove</span>
 					</li>
 				</ul>
 			</section>
@@ -96,8 +91,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.timetrackingbyscriptsettings.html#options" class="tsd-kind-icon">options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_workspaces_.timetrackingbyscriptsettings.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.canmove.html#movetodone" class="tsd-kind-icon">move<wbr>ToDone</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.canmove.html#movetoinprogress" class="tsd-kind-icon">move<wbr>ToIn<wbr>Progress</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.canmove.html#movetotesting" class="tsd-kind-icon">move<wbr>ToTesting</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_.canmove.html#movetotodo" class="tsd-kind-icon">move<wbr>ToTodo</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,34 +103,179 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="options" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> options</h3>
-					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="movetodone" class="tsd-anchor"></a>
+					<h3>move<wbr>ToDone</h3>
+					<div class="tsd-signature tsd-kind-icon">move<wbr>ToDone<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L283">workspaces.ts:283</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L47">workspaces.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Options for the script.</p>
+							<p>Moves the underlying card to &#39;Done&#39; column.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The custom card.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The promise that indicates if operation was successful or not.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>card<span class="tsd-signature-symbol">?: </span><a href="../modules/_workspaces_.html#cardargument" class="tsd-signature-type">CardArgument</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> card: <a href="../modules/_workspaces_.html#cardargument" class="tsd-signature-type">CardArgument</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="type" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="movetoinprogress" class="tsd-anchor"></a>
+					<h3>move<wbr>ToIn<wbr>Progress</h3>
+					<div class="tsd-signature tsd-kind-icon">move<wbr>ToIn<wbr>Progress<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_workspaces_.timetrackingsettings.html">TimeTrackingSettings</a>.<a href="_workspaces_.timetrackingsettings.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L293">workspaces.ts:293</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L55">workspaces.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The type.</p>
+							<p>Moves the underlying card to &#39;In Progress&#39; column.</p>
 						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The custom card.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The promise that indicates if operation was successful or not.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>card<span class="tsd-signature-symbol">?: </span><a href="../modules/_workspaces_.html#cardargument" class="tsd-signature-type">CardArgument</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> card: <a href="../modules/_workspaces_.html#cardargument" class="tsd-signature-type">CardArgument</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="movetotesting" class="tsd-anchor"></a>
+					<h3>move<wbr>ToTesting</h3>
+					<div class="tsd-signature tsd-kind-icon">move<wbr>ToTesting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L63">workspaces.ts:63</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Moves the underlying card to &#39;Testing&#39; column.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The custom card.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The promise that indicates if operation was successful or not.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>card<span class="tsd-signature-symbol">?: </span><a href="../modules/_workspaces_.html#cardargument" class="tsd-signature-type">CardArgument</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> card: <a href="../modules/_workspaces_.html#cardargument" class="tsd-signature-type">CardArgument</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="movetotodo" class="tsd-anchor"></a>
+					<h3>move<wbr>ToTodo</h3>
+					<div class="tsd-signature tsd-kind-icon">move<wbr>ToTodo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L71">workspaces.ts:71</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Moves the underlying card to &#39;Todo&#39; column.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The custom card.</p>
+							</dd>
+							<dt>returns</dt>
+							<dd><p>The promise that indicates if operation was successful or not.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>card<span class="tsd-signature-symbol">?: </span><a href="../modules/_workspaces_.html#cardargument" class="tsd-signature-type">CardArgument</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> card: <a href="../modules/_workspaces_.html#cardargument" class="tsd-signature-type">CardArgument</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</section>
@@ -172,9 +314,27 @@
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_workspaces_.workspace.html" class="tsd-kind-icon">Workspace</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_workspaces_.canmove.html" class="tsd-kind-icon">Can<wbr>Move</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_workspaces_.canmove.html#movetodone" class="tsd-kind-icon">move<wbr>ToDone</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_workspaces_.canmove.html#movetoinprogress" class="tsd-kind-icon">move<wbr>ToIn<wbr>Progress</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_workspaces_.canmove.html#movetotesting" class="tsd-kind-icon">move<wbr>ToTesting</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_workspaces_.canmove.html#movetotodo" class="tsd-kind-icon">move<wbr>ToTodo</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_workspaces_.cansetcardtag.html" class="tsd-kind-icon">Can<wbr>Set<wbr>Card<wbr>Tag</a>
 					</li>
@@ -193,21 +353,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_workspaces_.hastag.html" class="tsd-kind-icon">Has<wbr>Tag</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_workspaces_.timetrackingbyscriptsettings.html" class="tsd-kind-icon">Time<wbr>Tracking<wbr>ByScript<wbr>Settings</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_workspaces_.timetrackingbyscriptsettings.html#options" class="tsd-kind-icon">options</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_workspaces_.timetrackingbyscriptsettings.html#type" class="tsd-kind-icon">type</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="_workspaces_.timetrackingsettings.html" class="tsd-kind-icon">Time<wbr>Tracking<wbr>Settings</a>
 					</li>

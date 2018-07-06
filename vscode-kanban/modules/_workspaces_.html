@@ -79,6 +79,7 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_workspaces_.canmove.html" class="tsd-kind-icon">Can<wbr>Move</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_workspaces_.cansetcardtag.html" class="tsd-kind-icon">Can<wbr>Set<wbr>Card<wbr>Tag</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_workspaces_.config.html" class="tsd-kind-icon">Config</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_workspaces_.eventscriptfunctionarguments.html" class="tsd-kind-icon">Event<wbr>Script<wbr>Function<wbr>Arguments</a></li>
@@ -92,7 +93,9 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_workspaces_.html#cardargument" class="tsd-kind-icon">Card<wbr>Argument</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_workspaces_.html#eventscriptfunction" class="tsd-kind-icon">Event<wbr>Script<wbr>Function</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_workspaces_.html#executecardeventarguments" class="tsd-kind-icon">Execute<wbr>Card<wbr>Event<wbr>Arguments</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_workspaces_.html#timetrackingsettingvalue" class="tsd-kind-icon">Time<wbr>Tracking<wbr>Setting<wbr>Value</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_workspaces_.html#tracktimeeventarguments" class="tsd-kind-icon">Track<wbr>Time<wbr>Event<wbr>Arguments</a></li>
 							</ul>
@@ -121,13 +124,28 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="cardargument" class="tsd-anchor"></a>
+					<h3>Card<wbr>Argument</h3>
+					<div class="tsd-signature tsd-kind-icon">Card<wbr>Argument<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_boards_.boardcard.html" class="tsd-signature-type">BoardCard</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L34">workspaces.ts:34</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A possible value for an argument, which represents a card.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 					<a name="eventscriptfunction" class="tsd-anchor"></a>
 					<h3>Event<wbr>Script<wbr>Function</h3>
 					<div class="tsd-signature tsd-kind-icon">Event<wbr>Script<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L131">workspaces.ts:131</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L204">workspaces.ts:204</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -163,12 +181,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="executecardeventarguments" class="tsd-anchor"></a>
+					<h3>Execute<wbr>Card<wbr>Event<wbr>Arguments</h3>
+					<div class="tsd-signature tsd-kind-icon">Execute<wbr>Card<wbr>Event<wbr>Arguments<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.eventscriptfunctionarguments.html" class="tsd-signature-type">EventScriptFunctionArguments</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_workspaces_.cansetcardtag.html" class="tsd-signature-type">CanSetCardTag</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_workspaces_.hastag.html" class="tsd-signature-type">HasTag</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_workspaces_.canmove.html" class="tsd-signature-type">CanMove</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L257">workspaces.ts:257</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Event argument for an &#39;execute&#39; event.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="timetrackingsettingvalue" class="tsd-anchor"></a>
 					<h3>Time<wbr>Tracking<wbr>Setting<wbr>Value</h3>
 					<div class="tsd-signature tsd-kind-icon">Time<wbr>Tracking<wbr>Setting<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_workspaces_.timetrackingsettings.html" class="tsd-signature-type">TimeTrackingSettings</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L212">workspaces.ts:212</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L299">workspaces.ts:299</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -180,10 +213,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="tracktimeeventarguments" class="tsd-anchor"></a>
 					<h3>Track<wbr>Time<wbr>Event<wbr>Arguments</h3>
-					<div class="tsd-signature tsd-kind-icon">Track<wbr>Time<wbr>Event<wbr>Arguments<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.eventscriptfunctionarguments.html" class="tsd-signature-type">EventScriptFunctionArguments</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_workspaces_.cansetcardtag.html" class="tsd-signature-type">CanSetCardTag</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_workspaces_.hastag.html" class="tsd-signature-type">HasTag</a></div>
+					<div class="tsd-signature tsd-kind-icon">Track<wbr>Time<wbr>Event<wbr>Arguments<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_workspaces_.eventscriptfunctionarguments.html" class="tsd-signature-type">EventScriptFunctionArguments</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_workspaces_.cansetcardtag.html" class="tsd-signature-type">CanSetCardTag</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_workspaces_.hastag.html" class="tsd-signature-type">HasTag</a><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/_workspaces_.canmove.html" class="tsd-signature-type">CanMove</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L217">workspaces.ts:217</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L304">workspaces.ts:304</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -201,7 +234,7 @@
 					<div class="tsd-signature tsd-kind-icon">BOARD_<wbr>CARD_<wbr>EXPORT_<wbr>FILE_<wbr>EXT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"card.md"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;card.md&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L220">workspaces.ts:220</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L307">workspaces.ts:307</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -211,7 +244,7 @@
 					<div class="tsd-signature tsd-kind-icon">BOARD_<wbr>FILENAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vscode-kanban.json"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vscode-kanban.json&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L219">workspaces.ts:219</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L306">workspaces.ts:306</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -221,7 +254,7 @@
 					<div class="tsd-signature tsd-kind-icon">EVENT_<wbr>TRACK_<wbr>TIME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"track_time"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;track_time&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L221">workspaces.ts:221</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L308">workspaces.ts:308</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -231,7 +264,7 @@
 					<div class="tsd-signature tsd-kind-icon">FILTER_<wbr>FILENAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vscode-kanban.filter"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vscode-kanban.filter&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L222">workspaces.ts:222</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L309">workspaces.ts:309</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -241,7 +274,7 @@
 					<div class="tsd-signature tsd-kind-icon">Humanize<wbr>Duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> =&nbsp;require(&#x27;humanize-duration&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L21">workspaces.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L21">workspaces.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -251,7 +284,7 @@
 					<div class="tsd-signature tsd-kind-icon">SCRIPT_<wbr>FILENAME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"vscode-kanban.js"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;vscode-kanban.js&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L223">workspaces.ts:223</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L310">workspaces.ts:310</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -261,7 +294,7 @@
 					<div class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Workspaces<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L230">workspaces.ts:230</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L317">workspaces.ts:317</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -303,7 +336,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L746">workspaces.ts:746</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L954">workspaces.ts:954</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -326,7 +359,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/5dfa654/src/workspaces.ts#L913">workspaces.ts:913</a></li>
+									<li>Defined in <a href="https://github.com/mkloubert/vscode-kanban/blob/6fce784/src/workspaces.ts#L1121">workspaces.ts:1121</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -379,6 +412,9 @@
 						<a href="../classes/_workspaces_.workspace.html" class="tsd-kind-icon">Workspace</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_workspaces_.canmove.html" class="tsd-kind-icon">Can<wbr>Move</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_workspaces_.cansetcardtag.html" class="tsd-kind-icon">Can<wbr>Set<wbr>Card<wbr>Tag</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
@@ -402,8 +438,14 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/_workspaces_.timetrackingsettings.html" class="tsd-kind-icon">Time<wbr>Tracking<wbr>Settings</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_workspaces_.html#cardargument" class="tsd-kind-icon">Card<wbr>Argument</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_workspaces_.html#eventscriptfunction" class="tsd-kind-icon">Event<wbr>Script<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_workspaces_.html#executecardeventarguments" class="tsd-kind-icon">Execute<wbr>Card<wbr>Event<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_workspaces_.html#timetrackingsettingvalue" class="tsd-kind-icon">Time<wbr>Tracking<wbr>Setting<wbr>Value</a>

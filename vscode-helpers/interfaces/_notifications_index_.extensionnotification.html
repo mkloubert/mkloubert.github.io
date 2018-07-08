@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HTTPRequestResult | vscode-helpers</title>
+	<title>ExtensionNotification | vscode-helpers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_http_index_.html">&quot;http/index&quot;</a>
+					<a href="../modules/_notifications_index_.html">&quot;notifications/index&quot;</a>
 				</li>
 				<li>
-					<a href="_http_index_.httprequestresult.html">HTTPRequestResult</a>
+					<a href="_notifications_index_.extensionnotification.html">ExtensionNotification</a>
 				</li>
 			</ul>
-			<h1>Interface HTTPRequestResult</h1>
+			<h1>Interface ExtensionNotification</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A result of a HTTP request.</p>
+						<p>An extension notification.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">HTTPRequestResult</span>
+						<span class="target">ExtensionNotification</span>
 					</li>
 				</ul>
 			</section>
@@ -91,13 +91,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#code" class="tsd-kind-icon">code</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#readbody" class="tsd-kind-icon">read<wbr>Body</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#request" class="tsd-kind-icon">request</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#response" class="tsd-kind-icon">response</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#status" class="tsd-kind-icon">status</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#url" class="tsd-kind-icon">url</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_http_index_.httprequestresult.html#version" class="tsd-kind-icon">version</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_notifications_index_.extensionnotification.html#content" class="tsd-kind-icon">content</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_notifications_index_.extensionnotification.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_notifications_index_.extensionnotification.html#link" class="tsd-kind-icon">link</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_notifications_index_.extensionnotification.html#max_version" class="tsd-kind-icon">max_<wbr>version</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_notifications_index_.extensionnotification.html#min_version" class="tsd-kind-icon">min_<wbr>version</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_notifications_index_.extensionnotification.html#time" class="tsd-kind-icon">time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_notifications_index_.extensionnotification.html#title" class="tsd-kind-icon">title</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_notifications_index_.extensionnotification.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_notifications_index_.extensionnotification.html#valid_from" class="tsd-kind-icon">valid_<wbr>from</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_notifications_index_.extensionnotification.html#valid_until" class="tsd-kind-icon">valid_<wbr>until</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,122 +109,173 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="code" class="tsd-anchor"></a>
-					<h3>code</h3>
-					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="content" class="tsd-anchor"></a>
+					<h3>content</h3>
+					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/http/index.ts#L46">http/index.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/notifications/index.ts#L30">notifications/index.ts:30</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The (status) code.</p>
+							<p>The content.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="readbody" class="tsd-anchor"></a>
-					<h3>read<wbr>Body</h3>
-					<div class="tsd-signature tsd-kind-icon">read<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/http/index.ts#L50">http/index.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/notifications/index.ts#L34">notifications/index.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Reads and returns the body (data).</p>
+							<p>The ID.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="link" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> link</h3>
+					<div class="tsd-signature tsd-kind-icon">link<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/notifications/index.ts#L38">notifications/index.ts:38</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Link</p>
 						</div>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
-							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
-								</ul>
-								<ul class="tsd-descriptions">
-									<li class="tsd-description">
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
-									</li>
-								</ul>
+							<li class="tsd-parameter">
+								<h5>href<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The URL of the link.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> text<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The display text of the link.</p>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="request" class="tsd-anchor"></a>
-					<h3>request</h3>
-					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RequestOptions</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">RequestOptions</span></div>
+					<a name="max_version" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max_<wbr>version</h3>
+					<div class="tsd-signature tsd-kind-icon">max_<wbr>version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/http/index.ts#L54">http/index.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/notifications/index.ts#L51">notifications/index.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The options of the request.</p>
+							<p>The maximum extension version.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="response" class="tsd-anchor"></a>
-					<h3>response</h3>
-					<div class="tsd-signature tsd-kind-icon">response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ClientResponse</span></div>
+					<a name="min_version" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> min_<wbr>version</h3>
+					<div class="tsd-signature tsd-kind-icon">min_<wbr>version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/http/index.ts#L58">http/index.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/notifications/index.ts#L55">notifications/index.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The response context.</p>
+							<p>The minimum extension version.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="status" class="tsd-anchor"></a>
-					<h3>status</h3>
-					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="time" class="tsd-anchor"></a>
+					<h3>time</h3>
+					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/http/index.ts#L62">http/index.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/notifications/index.ts#L59">notifications/index.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The status (message).</p>
+							<p>The time stamp.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="url" class="tsd-anchor"></a>
-					<h3>url</h3>
-					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Url</span></div>
+					<a name="title" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> title</h3>
+					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/http/index.ts#L66">http/index.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/notifications/index.ts#L63">notifications/index.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The request URL.</p>
+							<p>The optional title.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="version" class="tsd-anchor"></a>
-					<h3>version</h3>
-					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/http/index.ts#L70">http/index.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/notifications/index.ts#L75">notifications/index.ts:75</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The HTTP version.</p>
+							<p>The type.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="valid_from" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> valid_<wbr>from</h3>
+					<div class="tsd-signature tsd-kind-icon">valid_<wbr>from<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/notifications/index.ts#L67">notifications/index.ts:67</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The time, the message starts to &quot;live&quot;.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="valid_until" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> valid_<wbr>until</h3>
+					<div class="tsd-signature tsd-kind-icon">valid_<wbr>until<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/1262c99/src/notifications/index.ts#L71">notifications/index.ts:71</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The time, while the message &quot;lives&quot;.</p>
 						</div>
 					</div>
 				</section>
@@ -251,7 +305,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_html_index_.html">"html/index"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_http_index_.html">"http/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -260,7 +314,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_logging_index_.html">"logging/index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_notifications_index_.html">"notifications/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -288,65 +342,53 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_http_index_.httprequestresult.html" class="tsd-kind-icon">HTTPRequest<wbr>Result</a>
+						<a href="_notifications_index_.extensionnotification.html" class="tsd-kind-icon">Extension<wbr>Notification</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_http_index_.httprequestresult.html#code" class="tsd-kind-icon">code</a>
+								<a href="_notifications_index_.extensionnotification.html#content" class="tsd-kind-icon">content</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_http_index_.httprequestresult.html#readbody" class="tsd-kind-icon">read<wbr>Body</a>
+								<a href="_notifications_index_.extensionnotification.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_http_index_.httprequestresult.html#request" class="tsd-kind-icon">request</a>
+								<a href="_notifications_index_.extensionnotification.html#link" class="tsd-kind-icon">link</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_http_index_.httprequestresult.html#response" class="tsd-kind-icon">response</a>
+								<a href="_notifications_index_.extensionnotification.html#max_version" class="tsd-kind-icon">max_<wbr>version</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_http_index_.httprequestresult.html#status" class="tsd-kind-icon">status</a>
+								<a href="_notifications_index_.extensionnotification.html#min_version" class="tsd-kind-icon">min_<wbr>version</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_http_index_.httprequestresult.html#url" class="tsd-kind-icon">url</a>
+								<a href="_notifications_index_.extensionnotification.html#time" class="tsd-kind-icon">time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_http_index_.httprequestresult.html#version" class="tsd-kind-icon">version</a>
+								<a href="_notifications_index_.extensionnotification.html#title" class="tsd-kind-icon">title</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_notifications_index_.extensionnotification.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_notifications_index_.extensionnotification.html#valid_from" class="tsd-kind-icon">valid_<wbr>from</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="_notifications_index_.extensionnotification.html#valid_until" class="tsd-kind-icon">valid_<wbr>until</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_http_index_.html#httprequestbody" class="tsd-kind-icon">HTTPRequest<wbr>Body</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_http_index_.html#httprequestoptions" class="tsd-kind-icon">HTTPRequest<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_http_index_.html#httprequesturl" class="tsd-kind-icon">HTTPRequestURL</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_notifications_index_.filterextensionnotificationsoptions.html" class="tsd-kind-icon">Filter<wbr>Extension<wbr>Notifications<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_http_index_.html#mergedeep" class="tsd-kind-icon">Merge<wbr>Deep</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_http_index_.html#normalizeheadercase" class="tsd-kind-icon">Normalize<wbr>Header<wbr>Case</a>
+						<a href="../modules/_notifications_index_.html#compareversions" class="tsd-kind-icon">Compare<wbr>Versions</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_http_index_.html#delete" class="tsd-kind-icon">DELETE</a>
+						<a href="../modules/_notifications_index_.html#filterextensionnotifications" class="tsd-kind-icon">filter<wbr>Extension<wbr>Notifications</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_http_index_.html#get" class="tsd-kind-icon">GET</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_http_index_.html#patch" class="tsd-kind-icon">PATCH</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_http_index_.html#post" class="tsd-kind-icon">POST</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_http_index_.html#put" class="tsd-kind-icon">PUT</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_http_index_.html#request" class="tsd-kind-icon">request</a>
+						<a href="../modules/_notifications_index_.html#getextensionnotifications" class="tsd-kind-icon">get<wbr>Extension<wbr>Notifications</a>
 					</li>
 				</ul>
 			</nav>

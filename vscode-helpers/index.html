@@ -100,12 +100,17 @@
 									<li><a href="#exists-">exists</a></li>
 									<li><a href="#fastglob-">fastGlob</a></li>
 									<li><a href="#fastglobsync-">fastGlobSync</a></li>
+									<li><a href="#filterextensionnotifications-">filterExtensionNotifications</a></li>
 									<li><a href="#foreachasync-">forEachAsync</a></li>
 									<li><a href="#format-">format</a></li>
 									<li><a href="#formatarray-">formatArray</a></li>
 									<li><a href="#from-">from</a></li>
 									<li><a href="#frommarkdown-">fromMarkdown</a></li>
 									<li><a href="#get-">GET</a></li>
+									<li><a href="#getextensionnotifications-">getExtensionNotifications</a></li>
+									<li><a href="#getextensionroot-">getExtensionRoot</a></li>
+									<li><a href="#getpackagefile-">getPackageFile</a></li>
+									<li><a href="#getpackagefilesync-">getPackageFileSync</a></li>
 									<li><a href="#glob-">glob</a></li>
 									<li><a href="#globsync-">globSync</a></li>
 									<li><a href="#guid-">guid</a></li>
@@ -141,6 +146,7 @@
 									<li><a href="#readall-">readAll</a></li>
 									<li><a href="#repeat-">repeat</a></li>
 									<li><a href="#request-">request</a></li>
+									<li><a href="#setextensionroot-">setExtensionRoot</a></li>
 									<li><a href="#size-">size</a></li>
 									<li><a href="#sizeSync-">sizeSync</a></li>
 									<li><a href="#sleep-">sleep</a></li>
@@ -510,6 +516,22 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
     ignore: [ <span class="hljs-string">'/log/**/*'</span> ],
 });
 </code></pre>
+				<h4 id="filterextensionnotifications-">filterExtensionNotifications [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> ALL_NOTIFICATIONS: vscode_helpers.ExtensionNotification[] =
+    <span class="hljs-keyword">await</span> vscode_helpers.getExtensionNotifications(<span class="hljs-string">'https://mkloubert.github.io/notifications/vscode-deploy-reloaded.json'</span>);
+
+<span class="hljs-keyword">const</span> FILTERED_NOTIFICATION = vscode_helpers.filterExtensionNotifications(
+    ALL_NOTIFICATIONS, {
+        <span class="hljs-string">'version'</span>: <span class="hljs-string">'1.0.0'</span>  <span class="hljs-comment">// version of the current extension</span>
+    }
+);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> NOTE of FILTERED_NOTIFICATION) {
+    <span class="hljs-built_in">console</span>.log(
+        NOTE.title
+    );
+}
+</code></pre>
 				<h4 id="foreachasync-">forEachAsync [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.forEachAsync([ <span class="hljs-number">5979</span>, <span class="hljs-number">23979</span> ], <span class="hljs-keyword">async</span> (item, index) =&gt; {
     <span class="hljs-comment">// [index === 0] =&gt; item === 5979</span>
@@ -560,6 +582,37 @@ vscode_helpers.doesMatch(<span class="hljs-string">'my-picture.jpg'</span>, [ <s
 
 <span class="hljs-keyword">const</span> USER_DATA = <span class="hljs-built_in">JSON</span>.parse(
     (<span class="hljs-keyword">await</span> RESULT.readBody()).toString(<span class="hljs-string">'utf8'</span>)
+);
+</code></pre>
+				<h4 id="getextensionnotifications-">getExtensionNotifications [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> NOTIFICATIONS: vscode_helpers.ExtensionNotification[] =
+    <span class="hljs-keyword">await</span> vscode_helpers.getExtensionNotifications(<span class="hljs-string">'https://mkloubert.github.io/notifications/vscode-deploy-reloaded.json'</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> NOTE of NOTIFICATIONS) {
+    <span class="hljs-built_in">console</span>.log(
+        NOTE.title
+    );
+}
+</code></pre>
+				<h4 id="getextensionroot-">getExtensionRoot [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-built_in">console</span>.log(
+    vscode_helpers.getExtensionRoot()
+);
+</code></pre>
+				<h4 id="getpackagefile-">getPackageFile [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> PACKAGE_JSON: vscode_helpers.PackageFile =
+    <span class="hljs-keyword">await</span> vscode_helpers.getPackageFile();
+
+<span class="hljs-built_in">console</span>.log(
+    PACKAGE_JSON.name + <span class="hljs-string">' '</span> + PACKAGE_JSON.version
+);
+</code></pre>
+				<h4 id="getpackagefilesync-">getPackageFileSync [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> PACKAGE_JSON: vscode_helpers.PackageFile =
+    vscode_helpers.getPackageFileSync();
+
+<span class="hljs-built_in">console</span>.log(
+    PACKAGE_JSON.name + <span class="hljs-string">' '</span> + PACKAGE_JSON.version
 );
 </code></pre>
 				<h4 id="glob-">glob [<a href="#functions-">&uarr;</a>]</h4>
@@ -850,6 +903,15 @@ vscode_helpers.repeat(<span class="hljs-string">'TM'</span>, <span class="hljs-n
 }), {
     <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json; charset=utf8'</span>,
 });
+</code></pre>
+				<h4 id="setextensionroot-">setExtensionRoot [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript">vscode_helpers.setExtensionRoot(
+    __dirname
+);
+
+<span class="hljs-built_in">console</span>.log(
+    vscode_helpers.getExtensionRoot()
+);
 </code></pre>
 				<h4 id="size-">size [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.size(<span class="hljs-string">'/path/to/a/file'</span>).then(<span class="hljs-function">(<span class="hljs-params">fileSize: <span class="hljs-built_in">number</span></span>) =&gt;</span> {
@@ -1283,6 +1345,9 @@ vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_logging_index_.html">"logging/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_notifications_index_.html">"notifications/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_progress_index_.html">"progress/index"</a>

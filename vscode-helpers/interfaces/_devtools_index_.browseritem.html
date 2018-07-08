@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Logger | vscode-helpers</title>
+	<title>BrowserItem | vscode-helpers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_logging_index_.html">&quot;logging/index&quot;</a>
+					<a href="../modules/_devtools_index_.html">&quot;devtools/index&quot;</a>
 				</li>
 				<li>
-					<a href="_logging_index_.logger.html">Logger</a>
+					<a href="_devtools_index_.browseritem.html">BrowserItem</a>
 				</li>
 			</ul>
-			<h1>Interface Logger</h1>
+			<h1>Interface BrowserItem</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A logger.</p>
+						<p>A browser item.</p>
 					</div>
 				</div>
 			</section>
@@ -81,9 +81,17 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="tsd-signature-type">EventEmitter</span>
+					</li>
+					<li>
+						<span class="tsd-signature-type">Disposable</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">Logger</span>
+								<span class="target">BrowserItem</span>
+								<ul class="tsd-hierarchy">
+									<li>
+										<a href="_devtools_index_.browserpage.html" class="tsd-signature-type">BrowserPage</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</li>
@@ -92,164 +100,112 @@
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/_logging_index_.actionlogger.html" class="tsd-signature-type">ActionLogger</a></li>
-					<li><a href="../classes/_logging_index_.loggerbase.html" class="tsd-signature-type">LoggerBase</a></li>
+					<li><a href="../classes/_devtools_index_.browserframeimpl.html" class="tsd-signature-type">BrowserFrameImpl</a></li>
+					<li><a href="../classes/_devtools_index_.browseritembase.html" class="tsd-signature-type">BrowserItemBase</a></li>
+					<li><a href="../classes/_devtools_index_.browserpageimpl.html" class="tsd-signature-type">BrowserPageImpl</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_index_.logger.html#alert" class="tsd-kind-icon">alert</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_index_.logger.html#crit" class="tsd-kind-icon">crit</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_index_.logger.html#debug" class="tsd-kind-icon">debug</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_index_.logger.html#emerg" class="tsd-kind-icon">emerg</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_index_.logger.html#err" class="tsd-kind-icon">err</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_index_.logger.html#info" class="tsd-kind-icon">info</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_index_.logger.html#log" class="tsd-kind-icon">log</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_index_.logger.html#notice" class="tsd-kind-icon">notice</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_index_.logger.html#trace" class="tsd-kind-icon">trace</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_logging_index_.logger.html#warn" class="tsd-kind-icon">warn</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_devtools_index_.browseritem.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_devtools_index_.browseritem.html#connect" class="tsd-kind-icon">connect</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_devtools_index_.browseritem.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_devtools_index_.browseritem.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_devtools_index_.browseritem.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_devtools_index_.browseritem.html#send" class="tsd-kind-icon">send</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_devtools_index_.browseritem.html#socketuri" class="tsd-kind-icon">socket<wbr>Uri</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#emit" class="tsd-kind-icon">emit</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#listeners" class="tsd-kind-icon">listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#on" class="tsd-kind-icon">on</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#once" class="tsd-kind-icon">once</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_logging_index_.logger.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#emit" class="tsd-kind-icon">emit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#listeners" class="tsd-kind-icon">listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#once" class="tsd-kind-icon">once</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="_devtools_index_.browseritem.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-static"><a href="_devtools_index_.browseritem.html#from" class="tsd-kind-icon">from</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-interface tsd-is-inherited">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Browser<wbr>Item<span class="tsd-signature-symbol">(</span>callOnDispose<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_devtools_index_.browseritem.html" class="tsd-signature-type">BrowserItem</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Disposable.__constructor</p>
+								<ul>
+									<li>Defined in M:/VS Code/proj/vscode-helpers/node_modules/vscode/vscode.d.ts:1383</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new Disposable calling the provided function
+									on dispose.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>callOnDispose: <span class="tsd-signature-type">Function</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Function that disposes something.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_devtools_index_.browseritem.html" class="tsd-signature-type">BrowserItem</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="alert" class="tsd-anchor"></a>
-					<h3>alert</h3>
-					<div class="tsd-signature tsd-kind-icon">alert<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_index_.html#typedlogaction" class="tsd-signature-type">TypedLogAction</a></div>
+					<a name="close" class="tsd-anchor"></a>
+					<h3>close</h3>
+					<div class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/logging/index.ts#L64">logging/index.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/devtools/index.ts#L39">devtools/index.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Logs an alert message.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="crit" class="tsd-anchor"></a>
-					<h3>crit</h3>
-					<div class="tsd-signature tsd-kind-icon">crit<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_index_.html#typedlogaction" class="tsd-signature-type">TypedLogAction</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/logging/index.ts#L68">logging/index.ts:68</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Logs a critical message.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="debug" class="tsd-anchor"></a>
-					<h3>debug</h3>
-					<div class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_index_.html#typedlogaction" class="tsd-signature-type">TypedLogAction</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/logging/index.ts#L72">logging/index.ts:72</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Logs a debug message.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="emerg" class="tsd-anchor"></a>
-					<h3>emerg</h3>
-					<div class="tsd-signature tsd-kind-icon">emerg<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_index_.html#typedlogaction" class="tsd-signature-type">TypedLogAction</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/logging/index.ts#L76">logging/index.ts:76</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Logs an emergency message.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="err" class="tsd-anchor"></a>
-					<h3>err</h3>
-					<div class="tsd-signature tsd-kind-icon">err<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_index_.html#typedlogaction" class="tsd-signature-type">TypedLogAction</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/logging/index.ts#L80">logging/index.ts:80</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Logs an error message.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="info" class="tsd-anchor"></a>
-					<h3>info</h3>
-					<div class="tsd-signature tsd-kind-icon">info<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_index_.html#typedlogaction" class="tsd-signature-type">TypedLogAction</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/logging/index.ts#L84">logging/index.ts:84</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Logs an info message.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="log" class="tsd-anchor"></a>
-					<h3>log</h3>
-					<div class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/logging/index.ts#L92">logging/index.ts:92</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Logs a message.</p>
+							<p>Closes the connection to the item.</p>
 						</div>
 						<dl class="tsd-comment-tags">
-							<dt>param</dt>
-							<dd><p>type.</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>The message to log.</p>
-							</dd>
-							<dt>param</dt>
-							<dd><p>The additional tag.</p>
+							<dt>returns</dt>
+							<dd><p>The promise that indicates if operation was successful or not.</p>
 							</dd>
 						</dl>
 					</div>
@@ -258,26 +214,11 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/_logging_index_.logtype.html" class="tsd-signature-type">LogType</a>, msg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, tag<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
-										<h4 class="tsd-parameters-title">Parameters</h4>
-										<ul class="tsd-parameters">
-											<li>
-												<h5>type: <a href="../enums/_logging_index_.logtype.html" class="tsd-signature-type">LogType</a></h5>
-											</li>
-											<li>
-												<h5>msg: <span class="tsd-signature-type">any</span></h5>
-											</li>
-											<li>
-												<h5><span class="tsd-flag ts-flagOptional">Optional</span> tag: <span class="tsd-signature-type">string</span></h5>
-											</li>
-										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span>
-											<span class="tsd-signature-symbol"> | </span>
-											<span class="tsd-signature-type">void</span>
-										</h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -285,47 +226,150 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="notice" class="tsd-anchor"></a>
-					<h3>notice</h3>
-					<div class="tsd-signature tsd-kind-icon">notice<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_index_.html#typedlogaction" class="tsd-signature-type">TypedLogAction</a></div>
+					<a name="connect" class="tsd-anchor"></a>
+					<h3>connect</h3>
+					<div class="tsd-signature tsd-kind-icon">connect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/logging/index.ts#L97">logging/index.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/devtools/index.ts#L45">devtools/index.ts:45</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Logs a note message.</p>
+							<p>Options a connection to the item.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>returns</dt>
+							<dd><p>The promise that indicates if operation was successful or not.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="description" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/devtools/index.ts#L33">devtools/index.ts:33</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The description.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="trace" class="tsd-anchor"></a>
-					<h3>trace</h3>
-					<div class="tsd-signature tsd-kind-icon">trace<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_index_.html#typedlogaction" class="tsd-signature-type">TypedLogAction</a></div>
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/logging/index.ts#L101">logging/index.ts:101</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/devtools/index.ts#L49">devtools/index.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Logs a trace message.</p>
+							<p>The ID of the item.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="warn" class="tsd-anchor"></a>
-					<h3>warn</h3>
-					<div class="tsd-signature tsd-kind-icon">warn<span class="tsd-signature-symbol">:</span> <a href="../modules/_logging_index_.html#typedlogaction" class="tsd-signature-type">TypedLogAction</a></div>
+					<a name="isconnected" class="tsd-anchor"></a>
+					<h3>is<wbr>Connected</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Connected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/logging/index.ts#L105">logging/index.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/devtools/index.ts#L53">devtools/index.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Logs a warning message.</p>
+							<p>Indicates if a connection to the item has been established or not.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="send" class="tsd-anchor"></a>
+					<h3>send</h3>
+					<div class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/devtools/index.ts#L61">devtools/index.ts:61</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Invokes a method for the item.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>param</dt>
+							<dd><p>The method to invoke.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>Parameters for the method.</p>
+							</dd>
+							<dt>param</dt>
+							<dd><p>The optional callback.</p>
+							</dd>
+						</dl>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>method<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, params<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../modules/_devtools_index_.html#sendtobrowseritemcallback" class="tsd-signature-type">SendToBrowserItemCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>method: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> params: <span class="tsd-signature-type">any</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../modules/_devtools_index_.html#sendtobrowseritemcallback" class="tsd-signature-type">SendToBrowserItemCallback</a></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="socketuri" class="tsd-anchor"></a>
+					<h3>socket<wbr>Uri</h3>
+					<div class="tsd-signature tsd-kind-icon">socket<wbr>Uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/devtools/index.ts#L65">devtools/index.ts:65</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Gets the underyling (web) socket URI.</p>
 						</div>
 					</div>
 				</section>
@@ -356,6 +400,29 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="dispose" class="tsd-anchor"></a>
+					<h3>dispose</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Disposable.dispose</p>
+								<ul>
+									<li>Defined in M:/VS Code/proj/vscode-helpers/node_modules/vscode/vscode.d.ts:1395</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Dispose this object.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -653,6 +720,42 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-static">
+					<a name="from" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> from</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>disposableLikes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Disposable</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Disposable.from</p>
+								<ul>
+									<li>Defined in M:/VS Code/proj/vscode-helpers/node_modules/vscode/vscode.d.ts:1383</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Combine many disposable-likes into one. Use this method
+										when having objects with a dispose function which are not
+									instances of Disposable.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>disposableLikes: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Objects that have at least a <code>dispose</code>-function member.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Disposable</span></h4>
+							<p>Returns a new disposable which, upon dispose, will
+							dispose all provided disposables.</p>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -664,7 +767,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_cache_index_.html">"cache/index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_devtools_index_.html">"devtools/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -685,7 +788,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_index_.html">"index"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_logging_index_.html">"logging/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -710,107 +813,107 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_logging_index_.logtype.html" class="tsd-kind-icon">Log<wbr>Type</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_devtools_index_.browserframeimpl.html" class="tsd-kind-icon">Browser<wbr>Frame<wbr>Impl</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_devtools_index_.browseritembase.html" class="tsd-kind-icon">Browser<wbr>Item<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_devtools_index_.browserpageimpl.html" class="tsd-kind-icon">Browser<wbr>Page<wbr>Impl</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_logging_index_.actionlogger.html" class="tsd-kind-icon">Action<wbr>Logger</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_logging_index_.loggerbase.html" class="tsd-kind-icon">Logger<wbr>Base</a>
+						<a href="../classes/_devtools_index_.devtoolsclient.html" class="tsd-kind-icon">Dev<wbr>Tools<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_logging_index_.logcontext.html" class="tsd-kind-icon">Log<wbr>Context</a>
+						<a href="_devtools_index_.browserframe.html" class="tsd-kind-icon">Browser<wbr>Frame</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_logging_index_.logger.html" class="tsd-kind-icon">Logger</a>
+						<a href="_devtools_index_.browseritem.html" class="tsd-kind-icon">Browser<wbr>Item</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_index_.logger.html#alert" class="tsd-kind-icon">alert</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_devtools_index_.browseritem.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_index_.logger.html#crit" class="tsd-kind-icon">crit</a>
+								<a href="_devtools_index_.browseritem.html#close" class="tsd-kind-icon">close</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_index_.logger.html#debug" class="tsd-kind-icon">debug</a>
+								<a href="_devtools_index_.browseritem.html#connect" class="tsd-kind-icon">connect</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_index_.logger.html#emerg" class="tsd-kind-icon">emerg</a>
+								<a href="_devtools_index_.browseritem.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_index_.logger.html#err" class="tsd-kind-icon">err</a>
+								<a href="_devtools_index_.browseritem.html#id" class="tsd-kind-icon">id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_index_.logger.html#info" class="tsd-kind-icon">info</a>
+								<a href="_devtools_index_.browseritem.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_index_.logger.html#log" class="tsd-kind-icon">log</a>
+								<a href="_devtools_index_.browseritem.html#send" class="tsd-kind-icon">send</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_index_.logger.html#notice" class="tsd-kind-icon">notice</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_index_.logger.html#trace" class="tsd-kind-icon">trace</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_logging_index_.logger.html#warn" class="tsd-kind-icon">warn</a>
+								<a href="_devtools_index_.browseritem.html#socketuri" class="tsd-kind-icon">socket<wbr>Uri</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+								<a href="_devtools_index_.browseritem.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#emit" class="tsd-kind-icon">emit</a>
+								<a href="_devtools_index_.browseritem.html#dispose" class="tsd-kind-icon">dispose</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
+								<a href="_devtools_index_.browseritem.html#emit" class="tsd-kind-icon">emit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+								<a href="_devtools_index_.browseritem.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
+								<a href="_devtools_index_.browseritem.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#listeners" class="tsd-kind-icon">listeners</a>
+								<a href="_devtools_index_.browseritem.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#on" class="tsd-kind-icon">on</a>
+								<a href="_devtools_index_.browseritem.html#listeners" class="tsd-kind-icon">listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#once" class="tsd-kind-icon">once</a>
+								<a href="_devtools_index_.browseritem.html#on" class="tsd-kind-icon">on</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
+								<a href="_devtools_index_.browseritem.html#once" class="tsd-kind-icon">once</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
+								<a href="_devtools_index_.browseritem.html#prependlistener" class="tsd-kind-icon">prepend<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
+								<a href="_devtools_index_.browseritem.html#prependoncelistener" class="tsd-kind-icon">prepend<wbr>Once<wbr>Listener</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+								<a href="_devtools_index_.browseritem.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_logging_index_.logger.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+								<a href="_devtools_index_.browseritem.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_devtools_index_.browseritem.html#setmaxlisteners" class="tsd-kind-icon">set<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited tsd-is-static">
+								<a href="_devtools_index_.browseritem.html#from" class="tsd-kind-icon">from</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_logging_index_.html#logaction" class="tsd-kind-icon">Log<wbr>Action</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_devtools_index_.browserpage.html" class="tsd-kind-icon">Browser<wbr>Page</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_devtools_index_.devtoolsclientoptions.html" class="tsd-kind-icon">Dev<wbr>Tools<wbr>Client<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_logging_index_.html#logfilter" class="tsd-kind-icon">Log<wbr>Filter</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/_logging_index_.html#typedlogaction" class="tsd-kind-icon">Typed<wbr>Log<wbr>Action</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_logging_index_.html#createlogger" class="tsd-kind-icon">create<wbr>Logger</a>
+						<a href="../modules/_devtools_index_.html#sendtobrowseritemcallback" class="tsd-kind-icon">Send<wbr>ToBrowser<wbr>Item<wbr>Callback</a>
 					</li>
 				</ul>
 			</nav>

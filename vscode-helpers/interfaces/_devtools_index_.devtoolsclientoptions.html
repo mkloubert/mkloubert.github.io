@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WorkspaceConfigSource | vscode-helpers</title>
+	<title>DevToolsClientOptions | vscode-helpers</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_workspaces_index_.html">&quot;workspaces/index&quot;</a>
+					<a href="../modules/_devtools_index_.html">&quot;devtools/index&quot;</a>
 				</li>
 				<li>
-					<a href="_workspaces_index_.workspaceconfigsource.html">WorkspaceConfigSource</a>
+					<a href="_devtools_index_.devtoolsclientoptions.html">DevToolsClientOptions</a>
 				</li>
 			</ul>
-			<h1>Interface WorkspaceConfigSource</h1>
+			<h1>Interface DevToolsClientOptions</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Stores data of configuration source.</p>
+						<p>Options for a DevTools client.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">WorkspaceConfigSource</span>
+						<span class="target">DevToolsClientOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -91,8 +91,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_index_.workspaceconfigsource.html#resource" class="tsd-kind-icon">resource</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_workspaces_index_.workspaceconfigsource.html#section" class="tsd-kind-icon">section</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_devtools_index_.devtoolsclientoptions.html#host" class="tsd-kind-icon">host</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_devtools_index_.devtoolsclientoptions.html#port" class="tsd-kind-icon">port</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,32 +101,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="resource" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> resource</h3>
-					<div class="tsd-signature tsd-kind-icon">resource<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">vscode.Uri</span></div>
+					<a name="host" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
+					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/workspaces/index.ts#L53">workspaces/index.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/devtools/index.ts#L99">devtools/index.ts:99</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets the resource URI.</p>
+							<p>The host address.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="section" class="tsd-anchor"></a>
-					<h3>section</h3>
-					<div class="tsd-signature tsd-kind-icon">section<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="port" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
+					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/workspaces/index.ts#L57">workspaces/index.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/mkloubert/vscode-helpers/blob/440cf27/src/devtools/index.ts#L103">devtools/index.ts:103</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Gets the name of the section.</p>
+							<p>The TCP host.</p>
 						</div>
 					</div>
 				</section>
@@ -141,7 +141,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_cache_index_.html">"cache/index"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_devtools_index_.html">"devtools/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -180,54 +180,51 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workflows_index_.html">"workflows/index"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workspaces_index_.html">"workspaces/index"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_workspaces_index_.workspacewatcherevent.html" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Event</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_devtools_index_.browserframeimpl.html" class="tsd-kind-icon">Browser<wbr>Frame<wbr>Impl</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_devtools_index_.browseritembase.html" class="tsd-kind-icon">Browser<wbr>Item<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_devtools_index_.browserpageimpl.html" class="tsd-kind-icon">Browser<wbr>Page<wbr>Impl</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_workspaces_index_.workspacebase.html" class="tsd-kind-icon">Workspace<wbr>Base</a>
+						<a href="../classes/_devtools_index_.devtoolsclient.html" class="tsd-kind-icon">Dev<wbr>Tools<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_workspaces_index_.workspace.html" class="tsd-kind-icon">Workspace</a>
+						<a href="_devtools_index_.browserframe.html" class="tsd-kind-icon">Browser<wbr>Frame</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_devtools_index_.browseritem.html" class="tsd-kind-icon">Browser<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_devtools_index_.browserpage.html" class="tsd-kind-icon">Browser<wbr>Page</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_workspaces_index_.workspaceconfigsource.html" class="tsd-kind-icon">Workspace<wbr>Config<wbr>Source</a>
+						<a href="_devtools_index_.devtoolsclientoptions.html" class="tsd-kind-icon">Dev<wbr>Tools<wbr>Client<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_workspaces_index_.workspaceconfigsource.html#resource" class="tsd-kind-icon">resource</a>
+								<a href="_devtools_index_.devtoolsclientoptions.html#host" class="tsd-kind-icon">host</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_workspaces_index_.workspaceconfigsource.html#section" class="tsd-kind-icon">section</a>
+								<a href="_devtools_index_.devtoolsclientoptions.html#port" class="tsd-kind-icon">port</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_workspaces_index_.workspacecontext.html" class="tsd-kind-icon">Workspace<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_workspaces_index_.workspacewatchercontext.html" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Context</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_workspaces_index_.html#workspacewatcher" class="tsd-kind-icon">Workspace<wbr>Watcher</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_workspaces_index_.html#workspacewatchercompleteaction" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Complete<wbr>Action</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_workspaces_index_.html#workspacewatcherresult" class="tsd-kind-icon">Workspace<wbr>Watcher<wbr>Result</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/_workspaces_index_.html#registerworkspacewatcher" class="tsd-kind-icon">register<wbr>Workspace<wbr>Watcher</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/_devtools_index_.html#sendtobrowseritemcallback" class="tsd-kind-icon">Send<wbr>ToBrowser<wbr>Item<wbr>Callback</a>
 					</li>
 				</ul>
 			</nav>

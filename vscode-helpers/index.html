@@ -84,7 +84,9 @@
 									<li><a href="#cloneobjectflat-">cloneObjectFlat</a></li>
 									<li><a href="#comparevalues-">compareValues</a></li>
 									<li><a href="#comparevaluesby-">compareValuesBy</a></li>
+									<li><a href="#createchromeclient-">createChromeClient</a></li>
 									<li><a href="#createcompletedaction-">createCompletedAction</a></li>
+									<li><a href="#createdevtoolsclient-">createDevToolsClient</a></li>
 									<li><a href="#createdirectoryifneeded-">createDirectoryIfNeeded</a></li>
 									<li><a href="#creategitclient-">createGitClient</a></li>
 									<li><a href="#creategitclientsync-">createGitClientSync</a></li>
@@ -361,6 +363,17 @@ CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment
                                           <span class="hljs-function"><span class="hljs-params">i</span> =&gt;</span> i.sortValue);
 });
 </code></pre>
+				<h4 id="createchromeclient-">createChromeClient [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CLIENT = vscode_helpers.createChromeClient({
+    host: <span class="hljs-string">'localhost'</span>,
+    port: <span class="hljs-number">9222</span>,
+});
+
+<span class="hljs-keyword">const</span> PAGES = <span class="hljs-keyword">await</span> CLIENT.getPages();
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> P of PAGES) {
+    <span class="hljs-comment">//TODO</span>
+}
+</code></pre>
 				<h4 id="createcompletedaction-">createCompletedAction [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript"><span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">'fs'</span>;
 
@@ -373,6 +386,17 @@ CLONED_OBJ.tm(<span class="hljs-number">2000</span>);  <span class="hljs-comment
         }</span>);
     }</span>);
 }</span>
+</code></pre>
+				<h4 id="createdevtoolsclient-">createDevToolsClient [<a href="#functions-">&uarr;</a>]</h4>
+				<pre><code class="lang-typescript"><span class="hljs-keyword">const</span> CLIENT = vscode_helpers.createDevToolsClient({
+    host: <span class="hljs-string">'localhost'</span>,
+    port: <span class="hljs-number">9222</span>,
+});
+
+<span class="hljs-keyword">const</span> PAGES = <span class="hljs-keyword">await</span> CLIENT.getPages();
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> P of PAGES) {
+    <span class="hljs-comment">//TODO</span>
+}
 </code></pre>
 				<h4 id="createdirectoryifneeded-">createDirectoryIfNeeded [<a href="#functions-">&uarr;</a>]</h4>
 				<pre><code class="lang-typescript">vscode_helpers.createDirectoryIfNeeded(<span class="hljs-string">'/dir/to/create'</span>).then(<span class="hljs-function">(<span class="hljs-params">hasBeenCreated: <span class="hljs-built_in">boolean</span></span>) =&gt;</span> {
@@ -1235,6 +1259,9 @@ vscode_helpers.SESSION[<span class="hljs-string">'a'</span>] = <span class="hljs
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_cache_index_.html">"cache/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_devtools_index_.html">"devtools/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_disposable_index_.html">"disposable/index"</a>

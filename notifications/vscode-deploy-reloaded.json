@@ -1,0 +1,13 @@
+[
+    {
+        "id": "20180708_f0a8ca17b4fd4d008dad508fe8bc1774",
+        "content": "The 'uuid' NPM module is deprecated and going to be removed as dependency from 'package.json' in the future versions of 'vscode-deploy-reloaded'.",
+        "link": {
+            "href": "https://github.com/mkloubert/vscode-deploy-reloaded/wiki/Deprecated#uuid",
+            "text": "Learn how to migrate ..."
+        },
+        "time": "2018-07-08T00:00:00.000Z",
+        "valid_until": "2018-10-07T23:59:59.999Z",
+        "type": "warning"
+    }
+]

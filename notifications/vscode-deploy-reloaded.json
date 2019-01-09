@@ -1,16 +1,15 @@
 [
     {
-        "id": "20180708_f0a8ca17b4fd4d008dad508fe8bc1774",
-        "title": "[DEPRECATED] 'uuid' NPM module",
-        "content": "'uuid' NPM module is deprecated and going to be removed as dependency from 'package.json' in the future versions of the extension.",
+        "id": "20190109_4cc392c51cb44bd2a9871773ac25dd73",
+        "title": "[NEW EXTENSION] 'vscode-powertools'",
+        "content": "'vscode-powertools' extends VSCode without the need of creating separate extensions.",
         "link": {
-            "href": "https://github.com/mkloubert/vscode-deploy-reloaded/wiki/Deprecated#uuid",
-            "text": "Learn how to migrate ..."
+            "href": "https://marketplace.visualstudio.com/items?itemName=ego-digital.vscode-powertools",
+            "text": "Open In Marketplace ..."
         },
-        "time": "2018-07-08T00:00:00.000Z",
+        "time": "2019-01-09T00:00:00.000Z",
         "min_version": "0.84.0",
-        "valid_from": "2018-07-08T00:00:00.000Z",
-        "valid_until": "2018-10-07T23:59:59.999Z",
-        "type": "warning"
+        "valid_from": "2019-01-09T00:00:00.000Z",
+        "type": "info"
     }
 ]

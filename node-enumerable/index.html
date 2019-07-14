@@ -67,7 +67,7 @@
 				<p><a href="https://www.npmjs.com/package/node-enumerable"><img src="https://img.shields.io/npm/v/node-enumerable.svg" alt="npm"></a>
 				<a href="https://www.npmjs.com/package/node-enumerable"><img src="https://img.shields.io/npm/dt/node-enumerable.svg?label=npm%20downloads" alt="npm"></a></p>
 				<h1 id="node-enumerable">node-enumerable</h1>
-				<p><a href="https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015">ES6</a> ready <a href="https://en.wikipedia.org/wiki/Language_Integrated_Query">LINQ</a> library written in <a href="https://www.typescriptlang.org/">TypeScript</a>.</p>
+				<p><a href="https://en.wikipedia.org/wiki/ECMAScript#8th_Edition_-_ECMAScript_2017">ES2017</a> ready <a href="https://en.wikipedia.org/wiki/Language_Integrated_Query">LINQ</a> library written in <a href="https://www.typescriptlang.org/">TypeScript</a>.</p>
 				<p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=9BX9ZJCAJHQ8U"><img src="https://img.shields.io/badge/Donate-PayPal-green.svg" alt="Donate"></a> <a href="https://flattr.com/submit/auto?fid=o62pkd&amp;url=https%3A%2F%2Fgithub.com%2Fmkloubert%2Fnode-enumerable"><img src="https://api.flattr.com/button/flattr-badge-large.png" alt=""></a></p>
 				<h2 id="table-of-contents">Table of contents</h2>
 				<ol>
@@ -124,20 +124,19 @@
 					<li><a href="#license-">License</a></li>
 					<li><a href="#tests-">Tests</a></li>
 				</ol>
-				<h2 id="requirements-uarr-table-of-contents-">Requirements [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="requirements-">Requirements [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<ul>
-					<li>an <a href="https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015">ES6</a> compatible environment like <a href="https://en.wikipedia.org/wiki/ECMAScript#Implementations">modern browsers</a> or <a href="https://nodejs.org/en/">NodeJS</a></li>
+					<li>an <a href="https://en.wikipedia.org/wiki/ECMAScript#8th_Edition_-_ECMAScript_2017">ES2017</a> compatible environment like <a href="https://en.wikipedia.org/wiki/ECMAScript#Implementations">modern browsers</a> or <a href="https://nodejs.org/en/">NodeJS</a></li>
 					<li><a href="https://www.typescriptlang.org/">TypeScript</a> 2.3 or later (ONLY when using <a href="https://github.com/mkloubert/node-enumerable/blob/master/index.d.ts">defintion files</a>)</li>
 				</ul>
-				<h2 id="installation-uarr-table-of-contents-">Installation [<a href="#table-of-contents">&uarr;</a>]</h2>
-				<h3 id="nodejs-uarr-installation-">NodeJS [<a href="#installation-">&uarr;</a>]</h3>
+				<h2 id="installation-">Installation [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="nodejs-">NodeJS [<a href="#installation-">&uarr;</a>]</h3>
 				<p>Run</p>
-				<pre><code class="lang-bash">npm install node-enumerable --save
-</code></pre>
+				<pre><code class="language-bash">npm install node-enumerable --save</code></pre>
 				<p>inside project folder to install the module.</p>
-				<h3 id="browser-uarr-installation-">Browser [<a href="#installation-">&uarr;</a>]</h3>
+				<h3 id="browser-">Browser [<a href="#installation-">&uarr;</a>]</h3>
 				<p>Download the latest version from <a href="https://github.com/mkloubert/node-enumerable/releases">here</a>.</p>
-				<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- node-enumerable --&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"js/enumerable.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
@@ -156,11 +155,10 @@
 
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
-</code></pre>
-				<h2 id="usage-uarr-table-of-contents-">Usage [<a href="#table-of-contents">&uarr;</a>]</h2>
-				<h3 id="create-a-sequence-uarr-usage-">Create a sequence [<a href="#usage-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> Enumerable = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-enumerable'</span>);
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+				<h2 id="usage-">Usage [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="create-a-sequence-">Create a sequence [<a href="#usage-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> Enumerable = <span class="hljs-built_in">require</span>(<span class="hljs-string">'node-enumerable'</span>);
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> *<span class="hljs-title">testGenerator</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">yield</span> <span class="hljs-number">111</span>;
@@ -213,10 +211,9 @@
         <span class="hljs-comment">// a same argument</span>
 
 <span class="hljs-comment">// create empty sequence</span>
-<span class="hljs-keyword">let</span> seq9 = Enumerable.empty();
-</code></pre>
-				<h3 id="work-with-them-uarr-usage-">Work with them [<a href="#usage-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-number">5979</span>, <span class="hljs-number">23979</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">'23979'</span>, <span class="hljs-number">1781</span>, <span class="hljs-number">241279</span>);
+<span class="hljs-keyword">let</span> seq9 = Enumerable.empty();</code></pre>
+				<h3 id="work-with-them-">Work with them [<a href="#usage-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-number">5979</span>, <span class="hljs-number">23979</span>, <span class="hljs-literal">null</span>, <span class="hljs-string">'23979'</span>, <span class="hljs-number">1781</span>, <span class="hljs-number">241279</span>);
 
 <span class="hljs-keyword">let</span> newSeq = seq.where(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> x !== <span class="hljs-literal">null</span>)  <span class="hljs-comment">// remove all elements that are (null)</span>
                 .skip(<span class="hljs-number">1</span>)  <span class="hljs-comment">// skip one element (5979)</span>
@@ -233,11 +230,10 @@
     <span class="hljs-comment">// [0] 1781</span>
     <span class="hljs-comment">// [1] 23979</span>
     <span class="hljs-built_in">console</span>.log(item);
-}
-</code></pre>
+}</code></pre>
 				<p>Most methods are chainable as in <a href="https://en.wikipedia.org/wiki/.NET_Framework">.NET</a> context.</p>
-				<h4 id="async-operations-uarr-work-with-them-">Async operations [<a href="#work-with-them-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> FS = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+				<h4 id="async-operations-">Async operations [<a href="#work-with-them-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> FS = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
 <span class="hljs-keyword">const</span> Path = <span class="hljs-built_in">require</span>(<span class="hljs-string">'path'</span>);
 
 <span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-string">'file1.txt'</span>, <span class="hljs-string">'file2.txt'</span>, <span class="hljs-string">'file3.txt'</span>, <span class="hljs-string">'file4.txt'</span>);
@@ -285,14 +281,13 @@ seq.async(<span class="hljs-function">(<span class="hljs-params">context</span>)
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Number of loaded files: '</span> + counter);  <span class="hljs-comment">// 2</span>
 }).catch(<span class="hljs-function">(<span class="hljs-params">err</span>) =&gt;</span> {
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'One action failed: '</span> + err);
-});
-</code></pre>
+});</code></pre>
 				<p>The <code>context</code> argument of the <code>async()</code> method uses the <a href="https://mkloubert.github.io/node-enumerable/interfaces/_index_.enumerable.asyncactioncontext.html">AsyncActionContext</a> interface.</p>
-				<h2 id="playground-demos-uarr-table-of-contents-">Playground / demos [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="playground-demos-">Playground / demos [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>You can test all features in <a href="https://mkloubert.github.io/demos/node-enumerable/">your browser</a>.</p>
-				<h2 id="examples-uarr-table-of-contents-">Examples [<a href="#table-of-contents">&uarr;</a>]</h2>
-				<h3 id="filters-uarr-examples-">Filters [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// distinct()</span>
+				<h2 id="examples-">Examples [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h3 id="filters-">Filters [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-comment">// distinct()</span>
 <span class="hljs-comment">// 1, 2, 4, 3</span>
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">4</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
           .distinct();
@@ -325,10 +320,9 @@ Enumerable.create(<span class="hljs-number">5</span>, <span class="hljs-number">
 <span class="hljs-comment">// where()</span>
 <span class="hljs-comment">// 1, 2, 3</span>
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
-          .where(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> x &lt; <span class="hljs-number">4</span>);
-</code></pre>
-				<h3 id="sort-elements-uarr-examples-">Sort elements [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// orderBy(), thenBy()</span>
+          .where(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> x &lt; <span class="hljs-number">4</span>);</code></pre>
+				<h3 id="sort-elements-">Sort elements [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-comment">// orderBy(), thenBy()</span>
 <span class="hljs-comment">//</span>
 <span class="hljs-comment">// "apple", "grape", "mango", "banana",</span>
 <span class="hljs-comment">// "orange", "blueberry", "raspberry", "passionfruit"</span>
@@ -346,10 +340,9 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
 <span class="hljs-comment">// rand()</span>
 <span class="hljs-comment">// e.g.: 2, 5, 7, 8, 0, 4, 6, 9, 3, 1</span>
 Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>)
-          .rand();  <span class="hljs-comment">// alt: shuffle()</span>
-</code></pre>
-				<h3 id="take-skip-elements-uarr-examples-">Take / skip elements [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// skip()</span>
+          .rand();  <span class="hljs-comment">// alt: shuffle()</span></code></pre>
+				<h3 id="take-skip-elements-">Take / skip elements [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-comment">// skip()</span>
 <span class="hljs-comment">// 3, 4</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
           .skip(<span class="hljs-number">3</span>);
@@ -372,10 +365,9 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
 <span class="hljs-comment">// takeWhile()</span>
 <span class="hljs-comment">// 22, 33, 44</span>
 Enumerable.create(<span class="hljs-number">22</span>, <span class="hljs-number">33</span>, <span class="hljs-number">44</span>, <span class="hljs-number">55</span>)
-          .takeWhile(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> x &lt; <span class="hljs-number">50</span>);
-</code></pre>
-				<h3 id="get-one-element-uarr-examples-">Get one element [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// elementAt()</span>
+          .takeWhile(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> x &lt; <span class="hljs-number">50</span>);</code></pre>
+				<h3 id="get-one-element-">Get one element [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-comment">// elementAt()</span>
 <span class="hljs-comment">// 33</span>
 Enumerable.create(<span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span>, <span class="hljs-number">44</span>)
           .elementAt(<span class="hljs-number">2</span>);
@@ -413,17 +405,15 @@ Enumerable.create(<span class="hljs-number">11</span>, <span class="hljs-number"
 <span class="hljs-comment">// singleOrDefault()</span>
 <span class="hljs-comment">// 11</span>
 Enumerable.create(<span class="hljs-number">11</span>)
-          .singleOrDefault(<span class="hljs-string">'YS'</span>);
-</code></pre>
+          .singleOrDefault(<span class="hljs-string">'YS'</span>);</code></pre>
 				<p>All methods with NO <code>OrDefault</code> suffix will throw exceptions if no element was found.</p>
 				<p>You also can use a function as first argument for all of these methods that works as filter / condition:</p>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// first()</span>
+				<pre><code class="language-javascript"><span class="hljs-comment">// first()</span>
 <span class="hljs-comment">// 22</span>
 Enumerable.create(<span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span>, <span class="hljs-number">44</span>)
-          .first(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> x &gt;= <span class="hljs-number">20</span>);
-</code></pre>
-				<h3 id="accumulators-uarr-examples-">Accumulators [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-typescript"><span class="hljs-comment">// aggregate()</span>
+          .first(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> x &gt;= <span class="hljs-number">20</span>);</code></pre>
+				<h3 id="accumulators-">Accumulators [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-typescript"><span class="hljs-comment">// aggregate()</span>
 <span class="hljs-comment">// " Marcel Joachim Kloubert"</span>
 Enumerable.create(<span class="hljs-string">'Marcel'</span>, <span class="hljs-string">'Joachim'</span>, <span class="hljs-string">'Kloubert'</span>)
           .aggregate(<span class="hljs-function">(<span class="hljs-params">accumulator, item</span>) =&gt;</span> {
@@ -437,10 +427,9 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
 
 <span class="hljs-comment">// "M., Tanja"</span>
 Enumerable.create(<span class="hljs-string">'M.'</span>, <span class="hljs-string">'Tanja'</span>)
-          .joinToString(<span class="hljs-string">', '</span>);
-</code></pre>
-				<h3 id="minimum-maximum-values-uarr-examples-">Minimum / maximum values [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-typescript"><span class="hljs-comment">// max()</span>
+          .joinToString(<span class="hljs-string">', '</span>);</code></pre>
+				<h3 id="minimum-maximum-values-">Minimum / maximum values [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-typescript"><span class="hljs-comment">// max()</span>
 <span class="hljs-comment">// 3</span>
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>)
           .max(); 
@@ -448,10 +437,9 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
 <span class="hljs-comment">// min()</span>
 <span class="hljs-comment">// 1</span>
 Enumerable.create(<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
-          .min();
-</code></pre>
-				<h3 id="joins-uarr-examples-">Joins [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-typescript"><span class="hljs-keyword">class</span> Person {
+          .min();</code></pre>
+				<h3 id="joins-">Joins [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-typescript"><span class="hljs-keyword">class</span> Person {
     <span class="hljs-keyword">constructor</span>(<span class="hljs-params">name: <span class="hljs-built_in">string</span></span>) {
         <span class="hljs-keyword">this</span>.name = name;
     }
@@ -517,10 +505,9 @@ Enumerable.from(persons)
                 <span class="hljs-function">(<span class="hljs-params">pet</span>) =&gt;</span> pet.owner.name,
                 <span class="hljs-function">(<span class="hljs-params">person, pet</span>) =&gt;</span> {
                     <span class="hljs-keyword">return</span> <span class="hljs-string">'Owner: '</span> + person.name + <span class="hljs-string">'; Pet: '</span> + pet.name;
-                });
-</code></pre>
-				<h3 id="groupings-uarr-examples-">Groupings [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// groupBy()</span>
+                });</code></pre>
+				<h3 id="groupings-">Groupings [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-comment">// groupBy()</span>
 Enumerable.create(<span class="hljs-string">"grape"</span>, <span class="hljs-string">"passionfruit"</span>, <span class="hljs-string">"blueberry"</span>,
                   <span class="hljs-string">"apple"</span>, <span class="hljs-string">"banana"</span>)
           .groupBy(<span class="hljs-function"><span class="hljs-params">fruit</span> =&gt;</span> fruit[<span class="hljs-number">0</span>].toLowerCase())
@@ -537,10 +524,9 @@ Enumerable.create(<span class="hljs-string">"grape"</span>, <span class="hljs-st
 
                     <span class="hljs-comment">// grouping[3].key = 'a'</span>
                     <span class="hljs-comment">// grouping[3][0] = 'apple'</span>
-                });
-</code></pre>
-				<h3 id="projection-uarr-examples-">Projection [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// flatten()</span>
+                });</code></pre>
+				<h3 id="projection-">Projection [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-comment">// flatten()</span>
 <span class="hljs-comment">// 1, (false), 3, 44, '555', 66.6, (true)</span>
 Enumerable.from( [ [ <span class="hljs-number">1</span>, <span class="hljs-literal">false</span>, <span class="hljs-number">3</span> ], <span class="hljs-number">44</span>, [ <span class="hljs-string">'555'</span>, <span class="hljs-number">66.6</span>, <span class="hljs-literal">true</span> ] ] )
           .flatten();
@@ -561,10 +547,9 @@ Enumerable.create(<span class="hljs-string">'Marcel'</span>, <span class="hljs-s
           .zip([<span class="hljs-string">'Kloubert'</span>, <span class="hljs-string">'Gates'</span>, <span class="hljs-string">'Einstein'</span>, <span class="hljs-string">'Adenauer'</span>],
                (firstName, lastName) =&gt; {
                    <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${firstName}</span> <span class="hljs-subst">${lastName}</span>`</span>;
-               });
-</code></pre>
-				<h3 id="checks-conditions-uarr-examples-">Checks / conditions [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// all()</span>
+               });</code></pre>
+				<h3 id="checks-conditions-">Checks / conditions [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-comment">// all()</span>
 <span class="hljs-comment">// (false)</span>
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-string">'3'</span>, <span class="hljs-number">4</span>)
           .all(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> <span class="hljs-keyword">typeof</span> x !== <span class="hljs-string">"string"</span>);
@@ -587,10 +572,9 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
 <span class="hljs-comment">// sequenceEqual()</span>
 <span class="hljs-comment">// (false)         </span>
 Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>)
-          .sequenceEqual([<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>]);
-</code></pre>
-				<h3 id="conversions-uarr-examples-">Conversions [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// toArray()</span>
+          .sequenceEqual([<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">2</span>]);</code></pre>
+				<h3 id="conversions-">Conversions [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-comment">// toArray()</span>
 <span class="hljs-keyword">let</span> jsArray = Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)
                         .toArray();
 
@@ -606,10 +590,9 @@ Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">
 <span class="hljs-comment">// lookup['K'][0] = 'Konrad'</span>
 <span class="hljs-comment">// lookup['M'][0] = 'Marcel'</span>
 <span class="hljs-keyword">let</span> lookup = Enumerable.create(<span class="hljs-string">'Bill'</span>, <span class="hljs-string">'Marcel'</span>, <span class="hljs-string">'barney'</span>, <span class="hljs-string">'Albert'</span>, <span class="hljs-string">'Konrad'</span>)
-                       .toLookup(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x[<span class="hljs-number">0</span>].toUpperCase());
-</code></pre>
-				<h3 id="count-uarr-examples-">Count [<a href="#examples-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// 3</span>
+                       .toLookup(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x[<span class="hljs-number">0</span>].toUpperCase());</code></pre>
+				<h3 id="count-">Count [<a href="#examples-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-comment">// 3</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
           .count();  <span class="hljs-comment">// a second call will return 0</span>
                      <span class="hljs-comment">// if reset() method is not called</span>
@@ -639,10 +622,9 @@ Enumerable.isUndefinedNullOrEmpty(
 );
 Enumerable.isUndefinedNullOrEmpty(
     Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-literal">true</span>, <span class="hljs-literal">false</span>)
-);
-</code></pre>
-				<h3 id="math-uarr-math-">Math [<a href="#math-">&uarr;</a>]</h3>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// abs()</span>
+);</code></pre>
+				<h3 id="math-">Math [<a href="#math-">&uarr;</a>]</h3>
+				<pre><code class="language-javascript"><span class="hljs-comment">// abs()</span>
 <span class="hljs-comment">// 1, 22.57, 444, NaN, -333.85, NaN</span>
 Enumerable.create(<span class="hljs-number">-1</span>, <span class="hljs-number">22.57</span>, <span class="hljs-number">444</span>, <span class="hljs-literal">true</span>, <span class="hljs-number">-333.85</span>, <span class="hljs-literal">false</span>)
           .abs();
@@ -725,11 +707,10 @@ Enumerable.create(<span class="hljs-number">111</span>, <span class="hljs-number
 <span class="hljs-comment">// tanH()</span>
 <span class="hljs-comment">// 0, 0.46, -0.76</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">0.5</span>, <span class="hljs-number">-1</span>)
-          .tanH();  <span class="hljs-comment">// complement: arcTanH()</span>
-</code></pre>
-				<h3 id="more-uarr-examples-">More [<a href="#examples-">&uarr;</a>]</h3>
-				<h4 id="assert-uarr-more-">assert [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq1 = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+          .tanH();  <span class="hljs-comment">// complement: arcTanH()</span></code></pre>
+				<h3 id="more-">More [<a href="#examples-">&uarr;</a>]</h3>
+				<h4 id="assert-">assert [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-keyword">let</span> seq1 = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
 seq1.assert(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> {
     <span class="hljs-keyword">return</span> x % <span class="hljs-number">2</span> !== <span class="hljs-number">1</span>;
 });  <span class="hljs-comment">// will throw an exception</span>
@@ -740,38 +721,34 @@ seq2.assertAll(<span class="hljs-function">(<span class="hljs-params">x</span>) 
     <span class="hljs-keyword">return</span> x % <span class="hljs-number">2</span> !== <span class="hljs-number">1</span>;
 });  <span class="hljs-comment">// will throw an aggregated exception</span>
      <span class="hljs-comment">// at the end</span>
-     <span class="hljs-comment">// for all odd values</span>
-</code></pre>
-				<h4 id="chunk-uarr-more-">chunk [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
+     <span class="hljs-comment">// for all odd values</span></code></pre>
+				<h4 id="chunk-">chunk [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>);
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> chunk <span class="hljs-keyword">of</span> seq.chunk(<span class="hljs-number">3</span>)) {
     <span class="hljs-comment">// [0] =&gt; [0, 1, 2]</span>
     <span class="hljs-comment">// [1] =&gt; [3, 4, 5]</span>
     <span class="hljs-comment">// [2] =&gt; [6, 7, 8]</span>
     <span class="hljs-comment">// [3] =&gt; [9]</span>
-}
-</code></pre>
-				<h4 id="clone-uarr-more-">clone [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> father = Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+}</code></pre>
+				<h4 id="clone-">clone [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-keyword">let</span> father = Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
 
 <span class="hljs-comment">// create 3 clones of 'father'</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> child <span class="hljs-keyword">of</span> father.clone(<span class="hljs-number">3</span>)) {
     <span class="hljs-comment">//TODO</span>
 }
 
-<span class="hljs-comment">// alt: father.clone().take(3)</span>
-</code></pre>
-				<h4 id="concat-concatarray-uarr-more-">concat / concatArray [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// 0, 1, 2, 'PZ', 'TM', 'MK'</span>
+<span class="hljs-comment">// alt: father.clone().take(3)</span></code></pre>
+				<h4 id="concat-concatarray-">concat / concatArray [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-comment">// 0, 1, 2, 'PZ', 'TM', 'MK'</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
           .concat([<span class="hljs-string">'PZ'</span>], [<span class="hljs-string">'TM'</span>, <span class="hljs-string">'MK'</span>]);  <span class="hljs-comment">// alt: append()</span>
 
 <span class="hljs-comment">// 0, 111, 222, 'pz', 'tm', 'mk'</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">111</span>, <span class="hljs-number">222</span>)
-          .concatArray([ [ <span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span> ], [ <span class="hljs-string">'mk'</span> ] ]);  <span class="hljs-comment">// alt: appendArray()</span>
-</code></pre>
-				<h4 id="consume-uarr-more-">consume [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createIteratorAndStorage</span>(<span class="hljs-params">size</span>) </span>{
+          .concatArray([ [ <span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span> ], [ <span class="hljs-string">'mk'</span> ] ]);  <span class="hljs-comment">// alt: appendArray()</span></code></pre>
+				<h4 id="consume-">consume [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createIteratorAndStorage</span>(<span class="hljs-params">size</span>) </span>{
     <span class="hljs-keyword">let</span> storage = [];
 
     <span class="hljs-keyword">return</span> {
@@ -789,13 +766,12 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
 }
 
 <span class="hljs-keyword">const</span> OBJ = createIteratorAndStorage(<span class="hljs-number">100</span>);
-d
+
 <span class="hljs-keyword">const</span> SEQ = Enumerable.from(OBJ.iterator);
 SEQ.consume();  <span class="hljs-comment">// enumerates the 'iterator' in OBJ</span>
-                <span class="hljs-comment">// and fills the 'storage' in OBJ</span>
-</code></pre>
-				<h4 id="defaultifempty-defaultarrayifempty-uarr-more-">defaultIfEmpty / defaultArrayIfEmpty [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// 0, 1, 2</span>
+                <span class="hljs-comment">// and fills the 'storage' in OBJ</span></code></pre>
+				<h4 id="defaultifempty-defaultarrayifempty-">defaultIfEmpty / defaultArrayIfEmpty [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-comment">// 0, 1, 2</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
           .defaultIfEmpty(<span class="hljs-string">'PZ'</span>, <span class="hljs-string">'TM'</span>, <span class="hljs-string">'MK'</span>);
 
@@ -810,10 +786,9 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
 
 <span class="hljs-comment">// 'pz', 'tm', 'mk'</span>
 Enumerable.empty()
-          .defaultArrayIfEmpty([<span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span>, <span class="hljs-string">'mk'</span>]);
-</code></pre>
-				<h4 id="forall-uarr-more-">forAll [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [];
+          .defaultArrayIfEmpty([<span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span>, <span class="hljs-string">'mk'</span>]);</code></pre>
+				<h4 id="forall-">forAll [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-keyword">let</span> arr = [];
 
 <span class="hljs-keyword">try</span> {
     <span class="hljs-comment">// alt: eachAll()</span>
@@ -836,19 +811,17 @@ Enumerable.empty()
 
 <span class="hljs-comment">// arr[0] === 1</span>
 <span class="hljs-comment">// arr[1] === 3</span>
-<span class="hljs-comment">// arr[2] === 5</span>
-</code></pre>
-				<h4 id="intersperse-interspersearray-uarr-more-">intersperse / intersperseArray [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// 0, '-', 1, '-', 2</span>
+<span class="hljs-comment">// arr[2] === 5</span></code></pre>
+				<h4 id="intersperse-interspersearray-">intersperse / intersperseArray [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-comment">// 0, '-', 1, '-', 2</span>
 Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>)
           .intersperse(<span class="hljs-string">'-'</span>);
 
 <span class="hljs-comment">// -- or --</span>
 Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>)
-          .intersperseArray( [<span class="hljs-string">'-'</span>] );
-</code></pre>
-				<h4 id="pipe-uarr-more-">pipe [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr1 = [];
+          .intersperseArray( [<span class="hljs-string">'-'</span>] );</code></pre>
+				<h4 id="pipe-">pipe [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-keyword">let</span> arr1 = [];
 <span class="hljs-keyword">let</span> arr2 = [];
 
 <span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>).pipe(<span class="hljs-function">(<span class="hljs-params">x</span>) =&gt;</span> {
@@ -859,10 +832,9 @@ Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3
 }
 
 <span class="hljs-comment">// arr1 = [10, 20, 30]</span>
-<span class="hljs-comment">// arr2 = [1, 2, 3]</span>
-</code></pre>
-				<h4 id="popfrom-shiftfrom-uarr-more-">popFrom / shiftFrom [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr1 = [ <span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span> ];
+<span class="hljs-comment">// arr2 = [1, 2, 3]</span></code></pre>
+				<h4 id="popfrom-shiftfrom-">popFrom / shiftFrom [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-keyword">let</span> arr1 = [ <span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">33</span> ];
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> Enumerable.popFrom(arr1)) {
     <span class="hljs-comment">// [0] 33</span>
     <span class="hljs-comment">// [1] 22</span>
@@ -876,26 +848,23 @@ Enumerable.range(<span class="hljs-number">0</span>, <span class="hljs-number">3
     <span class="hljs-comment">// [1] 222</span>
     <span class="hljs-comment">// [2] 333</span>
 }
-<span class="hljs-comment">// arr2 is empty now</span>
-</code></pre>
-				<h4 id="prepend-prependarray-uarr-more-">prepend / prependArray [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// 'PZ', 'TM', 'MK', 0, 1, 2</span>
+<span class="hljs-comment">// arr2 is empty now</span></code></pre>
+				<h4 id="prepend-prependarray-">prepend / prependArray [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-comment">// 'PZ', 'TM', 'MK', 0, 1, 2</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
           .prepend([<span class="hljs-string">'PZ'</span>], [<span class="hljs-string">'TM'</span>, <span class="hljs-string">'MK'</span>]);
 
 <span class="hljs-comment">// 'pz', 'tm', 'mk', 0, 111, 222</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">111</span>, <span class="hljs-number">222</span>)
-          .prependArray([ [ <span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span> ], [ <span class="hljs-string">'mk'</span> ] ]);
-</code></pre>
-				<h4 id="pushto-uarr-more-">pushTo [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [];
+          .prependArray([ [ <span class="hljs-string">'pz'</span>, <span class="hljs-string">'tm'</span> ], [ <span class="hljs-string">'mk'</span> ] ]);</code></pre>
+				<h4 id="pushto-">pushTo [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-keyword">let</span> arr = [];
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
           .pushTo(arr);
 
-<span class="hljs-comment">// arr: [0, 1, 2]</span>
-</code></pre>
-				<h4 id="random-uarr-more-">random [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> value <span class="hljs-keyword">of</span> Enumerable.random(<span class="hljs-number">10</span>)) {
+<span class="hljs-comment">// arr: [0, 1, 2]</span></code></pre>
+				<h4 id="random-">random [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> value <span class="hljs-keyword">of</span> Enumerable.random(<span class="hljs-number">10</span>)) {
     <span class="hljs-comment">// 10 random numbers</span>
     <span class="hljs-comment">// between 0 and 1</span>
 }
@@ -904,10 +873,9 @@ Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">
                                     v =&gt; v * <span class="hljs-number">5979</span>)) {
     <span class="hljs-comment">// 23979 random numbers</span>
     <span class="hljs-comment">// between 0 and 5979</span>
-}
-</code></pre>
-				<h4 id="reset-uarr-more-">reset [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
+}</code></pre>
+				<h4 id="reset-">reset [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-keyword">let</span> seq = Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
 
 seq.each(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> {
              <span class="hljs-built_in">console</span>.log(x);
@@ -916,26 +884,23 @@ seq.each(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</s
 seq.reset()
    .each(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> {
              <span class="hljs-built_in">console</span>.log(x * <span class="hljs-number">2</span>);
-         });
-</code></pre>
-				<h4 id="trace-uarr-more-">trace [<a href="#more-">&uarr;</a>]</h4>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// write items via 'console.trace()'</span>
+         });</code></pre>
+				<h4 id="trace-">trace [<a href="#more-">&uarr;</a>]</h4>
+				<pre><code class="language-javascript"><span class="hljs-comment">// write items via 'console.trace()'</span>
 Enumerable.create(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>)
           .trace();
 
 <span class="hljs-comment">// with formatter</span>
 Enumerable.create(<span class="hljs-number">1.2</span>, <span class="hljs-number">2.3</span>, <span class="hljs-number">3.45</span>)
-          .trace(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> <span class="hljs-string">'Item: '</span> + x);
-</code></pre>
-				<h2 id="documentation-uarr-table-of-contents-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
+          .trace(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> <span class="hljs-string">'Item: '</span> + x);</code></pre>
+				<h2 id="documentation-">Documentation [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>The API documentation can be found <a href="https://mkloubert.github.io/node-enumerable/interfaces/_index_.enumerable.ienumerable.html">here</a>.</p>
-				<h2 id="license-uarr-table-of-contents-">License [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="license-">License [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p><a href="https://raw.githubusercontent.com/mkloubert/node-enumerable/master/LICENSE">MIT license</a></p>
-				<h2 id="tests-uarr-table-of-contents-">Tests [<a href="#table-of-contents">&uarr;</a>]</h2>
+				<h2 id="tests-">Tests [<a href="#table-of-contents">&uarr;</a>]</h2>
 				<p>Go to the module folder and run</p>
-				<pre><code class="lang-bash">tsc
-npm <span class="hljs-built_in">test</span>
-</code></pre>
+				<pre><code class="language-bash">tsc
+npm <span class="hljs-built_in">test</span></code></pre>
 				<p>to start unit tests from <code>test/</code> subfolder.</p>
 			</div>
 		</div>
